@@ -1,0 +1,17 @@
+# Local student data and generated classroom artifacts
+/学生近期数据/学生成绩数据.md
+/学生近期数据/提问历史记录.json
+/输出/
+
+# Local archives, temporary files, and editor state
+/archive.zip
+/temp_files.txt
+/.trae/
+/tools/ffmpeg/
+/tools/.pptx-build/node_modules/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.key
+*.pem
