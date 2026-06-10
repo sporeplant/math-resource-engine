@@ -1,0 +1,4 @@
+interface:
+  display_name: "Courseware Collab"
+  short_description: "Run the teacher-confirmed courseware workflow."
+  default_prompt: "Use courseware-collab for a math lesson and follow the project confirmation gates before generating courseware."
