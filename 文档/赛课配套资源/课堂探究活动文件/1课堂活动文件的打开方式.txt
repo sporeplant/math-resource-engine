@@ -1,0 +1,4 @@
+方式一：双击打开GeoGebraGeometry.exe等待安装完成即可直接打开。（文件在配套资料文件夹）
+方式二：
+1、打开网站：https://www.geogebra.org/geometry
+2、点击左上角的三条横杠，打开本地文件。

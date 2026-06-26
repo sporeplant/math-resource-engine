@@ -195,7 +195,7 @@ def match_textbook_courseware(
             errors.append("Courseware should mention '统计的一般过程'")
 
     # Step 5: Check page breaks around key content
-    pages = courseware_text.split('<div style="page-break-after: always;"></div>')
+    pages = re.split(r"(?m)^---\s*$", courseware_text)
     if len(pages) < 3:
         warnings.append("Courseware too few pages for full content coverage")
 
@@ -256,6 +256,11 @@ def validate(
 
     courseware_text = read_text(courseware_path)
     meta = parse_front_matter(courseware_text)
+    if not meta and courseware_path.name.endswith("_课件.md"):
+        meta = {
+            "content_type": "courseware",
+            "lesson_name": courseware_path.stem.removesuffix("_课件"),
+        }
 
     if meta.get("content_type") != "courseware":
         errors.append(f"Not a courseware file: content_type is {meta.get('content_type')}")
