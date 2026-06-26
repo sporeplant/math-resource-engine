@@ -1,5 +1,7 @@
 # `/lesson` 命令定义
 
+> **归档状态：archived。** 本命令不再执行。教学设计统一使用 `/lesson-collab`。
+
 > 最后更新：2026-05-29
 
 ---
@@ -61,7 +63,7 @@ created_at: ""
 教师人工审核通过后，将教学设计元数据改为：
 
 ```yaml
-review_status: human_approved
+review_status: 审核通过
 ```
 
 只有人工审核通过后的教学设计才能作为 `/courseware` 的输入。

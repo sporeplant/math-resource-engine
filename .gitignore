@@ -1,7 +1,9 @@
 # Local student data and generated classroom artifacts
-/学生近期数据/学生成绩数据.md
-/学生近期数据/提问历史记录.json
+/学生近期数据/
 /输出/
+
+# Knowledge base (large files, synced via OneDrive)
+/知识库/
 
 # Local archives, temporary files, and editor state
 /archive.zip
@@ -9,6 +11,7 @@
 /.trae/
 /tools/ffmpeg/
 /tools/.pptx-build/node_modules/
+/tools/mineru-cli/
 __pycache__/
 *.py[cod]
 .env
