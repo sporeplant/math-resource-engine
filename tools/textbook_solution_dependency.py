@@ -46,7 +46,7 @@ def parse_front_matter(text: str) -> tuple[dict[str, str], dict[str, list[str]]]
 def find_project_root(path: Path) -> Path:
     start = path if path.is_dir() else path.parent
     for candidate in (start, *start.parents):
-        if (candidate / "AGENTS.md").exists() and (candidate / "知识库").is_dir():
+        if (candidate / "AGENTS.md").exists() and (candidate / "knowledge").is_dir():
             return candidate
     return start
 
@@ -164,7 +164,7 @@ def validate_dependency(
     _, lists = parse_front_matter(output_text)
     source_files = lists.get("source_files", [])
     registered = next(
-        (item for item in source_files if "知识库/教材参考解答/" in item.replace("\\", "/")),
+        (item for item in source_files if "knowledge/solutions/" in item.replace("\\", "/")),
         None,
     )
     if not registered and not (
@@ -183,13 +183,10 @@ def validate_dependency(
     if not solution_path.exists():
         errors.append(f"textbook solution file does not exist: {solution_path}")
         return errors
-    if solution_path.parent.name != "教材参考解答" or not solution_path.name.startswith("教材参考解答_"):
+    if solution_path.parent.name != "solutions" or not solution_path.name.startswith("solution-"):
         errors.append(f"invalid textbook solution path: {solution_path}")
 
-    expected_name = (
-        f"教材参考解答_{output_meta.get('lesson_id', '')}_"
-        f"{output_meta.get('lesson_name', '')}.md"
-    )
+    expected_name = f"solution-{output_meta.get('lesson_id', '')}.md"
     if solution_path.name != expected_name:
         errors.append(
             "textbook solution filename does not match lesson_id and lesson_name: "

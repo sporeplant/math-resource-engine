@@ -1,4 +1,0 @@
-interface:
-  display_name: "教材问题解答技能"
-  short_description: "按教材原文顺序生成全部问题与任务的完整可追溯参考解答"
-  default_prompt: "Use $textbook-question-solutions to generate complete reference solutions for every question in the selected textbook lesson."

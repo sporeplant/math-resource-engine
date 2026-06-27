@@ -63,14 +63,14 @@ class TextbookSolutionDependencyTests(unittest.TestCase):
         self.temp_dir = tempfile.TemporaryDirectory()
         self.root = Path(self.temp_dir.name)
         (self.root / "AGENTS.md").write_text("test", encoding="utf-8")
-        self.solution_dir = self.root / "知识库" / "教材参考解答"
+        self.solution_dir = self.root / "knowledge" / "solutions"
         self.solution_dir.mkdir(parents=True)
-        self.solution = self.solution_dir / "教材参考解答_22.4_频数分布与直方图.md"
+        self.solution = self.solution_dir / "solution-22.4.md"
         self.solution.write_text(SOLUTION, encoding="utf-8")
-        self.output_dir = self.root / "输出"
+        self.output_dir = self.root / "outputs"
         self.output_dir.mkdir()
         self.output = self.output_dir / "22.4_教学设计.md"
-        self.relative_solution = "知识库/教材参考解答/教材参考解答_22.4_频数分布与直方图.md"
+        self.relative_solution = "knowledge/solutions/solution-22.4.md"
 
     def tearDown(self) -> None:
         self.temp_dir.cleanup()
@@ -84,11 +84,11 @@ class TextbookSolutionDependencyTests(unittest.TestCase):
         self.assertEqual([], self.validate(downstream(self.relative_solution)))
 
     def test_missing_registration_fails(self) -> None:
-        errors = self.validate(downstream("输出/其他文件.md"))
+        errors = self.validate(downstream("outputs/其他文件.md"))
         self.assertTrue(any("source_files must register" in error for error in errors))
 
     def test_missing_file_fails(self) -> None:
-        errors = self.validate(downstream("知识库/教材参考解答/教材参考解答_22.4_缺失.md"))
+        errors = self.validate(downstream("knowledge/solutions/solution-22.4-missing.md"))
         self.assertTrue(any("does not exist" in error for error in errors))
 
     def test_lesson_id_mismatch_fails(self) -> None:
@@ -107,9 +107,9 @@ class TextbookSolutionDependencyTests(unittest.TestCase):
         )
 
     def test_filename_must_match_lesson(self) -> None:
-        wrong_name = self.solution_dir / "教材参考解答_22.4_其他名称.md"
+        wrong_name = self.solution_dir / "solution-22.4-other.md"
         wrong_name.write_text(SOLUTION, encoding="utf-8")
-        errors = self.validate(downstream("知识库/教材参考解答/教材参考解答_22.4_其他名称.md"))
+        errors = self.validate(downstream("knowledge/solutions/solution-22.4-other.md"))
         self.assertTrue(any("filename does not match" in error for error in errors))
 
     def test_reference_answer_must_preserve_answer_source(self) -> None:

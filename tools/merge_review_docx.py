@@ -245,7 +245,7 @@ def merge_docx(inputs: list[Path], output: Path, add_note: bool = True) -> dict[
 
     body = document.getroot().find("w:body", NS)
     if body is None:
-        raise RuntimeError("基础文档缺少 word/document.xml 的 body")
+        raise RuntimeError("基础docs缺少 word/document.xml 的 body")
     sect_pr = body.find("w:sectPr", NS)
     if sect_pr is not None:
         body.remove(sect_pr)

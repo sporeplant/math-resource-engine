@@ -1,9 +1,9 @@
 # Local student data and generated classroom artifacts
-/学生近期数据/
-/输出/
+/students/
+/outputs/
 
 # Knowledge base (large files, synced via OneDrive)
-/知识库/
+/knowledge/
 
 # Local archives, temporary files, and editor state
 /archive.zip

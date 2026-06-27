@@ -15,7 +15,7 @@ except ModuleNotFoundError:
     from tools.review_math_utils import validate_math_markup
 
 
-EXPECTED_OUTPUT_PARTS = ("输出", "八下复习讲义")
+EXPECTED_OUTPUT_PARTS = ("outputs", "八下复习讲义")
 REQUIRED_META = {
     "content_type": "review_lesson",
     "command": "复习讲义",
@@ -265,7 +265,7 @@ def validate(path: Path) -> ValidationResult:
         meta = parse_front_matter(front_matter)
 
     if not is_under_expected_output(path):
-        errors.append("输出路径必须位于 输出/八下复习讲义/")
+        errors.append("outputs路径必须位于 outputs/g8-reviews/")
 
     for key, expected in REQUIRED_META.items():
         actual = meta.get(key)

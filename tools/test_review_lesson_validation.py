@@ -14,7 +14,7 @@ except (ModuleNotFoundError, ImportError):
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-GOOD_SAMPLE = REPO_ROOT / "输出" / "八下复习讲义" / "第04讲_一次函数_复习讲义.md"
+GOOD_SAMPLE = REPO_ROOT / "outputs" / "g8-reviews" / "review-04.md"
 
 
 def make_review_lesson(question_count: int = 24, overview_count: int | None = None, unbalanced: bool = False, image: str = "") -> str:
@@ -27,8 +27,8 @@ def make_review_lesson(question_count: int = 24, overview_count: int | None = No
         "command: 复习讲义",
         "workflow_version: v2",
         "source_files:",
-        '  - "知识库/复习讲义/03讲.md"',
-        '  - "知识库/复习讲义/04.md"',
+        '  - "knowledge/reviews/03讲.md"',
+        '  - "knowledge/reviews/04.md"',
         'created_at: "2026-06-16 08:00"',
         "---",
         "",

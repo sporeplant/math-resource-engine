@@ -306,7 +306,7 @@ def check_common(path: Path, text: str, errors: list[str]) -> dict[str, str]:
     if meta.get("content_type") not in {"courseware", "review_lesson"} and re.search(r"!\[[^\]]*\]\([^)]+\)", text):
         errors.append("Markdown image syntax is forbidden; use <img src=\"./images/...\">")
 
-    for bad in ["../知识库/教材原文/images", "../知识库/练习册题库/images", "assets/images", "输出/{lesson_id}/assets"]:
+    for bad in ["../knowledge/textbooks/images", "../knowledge/workbooks/images", "assets/images", "outputs/{lesson_id}/assets"]:
         if bad in text:
             errors.append(f"forbidden image path fragment: {bad}")
 
@@ -1069,7 +1069,7 @@ def validate_courseware_textbook_consistency(
         if meta.get("content_type") == "courseware":
             # Auto-find textbook
             courseware_dir = courseware_path.parent
-            textbook_dir = courseware_dir.parent / "知识库" / "教材原文"
+            textbook_dir = courseware_dir.parent / "knowledge" / "教材原文"
             lesson_name = meta.get("lesson_name", "")
 
             textbook_path = textbook_file if textbook_file and textbook_file.exists() else None
@@ -1140,7 +1140,7 @@ def validate_activity_textbook_order(
                         break
 
     if textbook_file is None:
-        textbook_dir = project_root / "知识库" / "教材原文"
+        textbook_dir = project_root / "knowledge" / "教材原文"
         if textbook_dir.exists():
             lesson_name = lesson_meta.get("lesson_name", "")
             patterns = [f"*{lesson_name.replace('.', '').replace('(', '').replace(')', '')}*.md", "*.md"]
@@ -1181,8 +1181,8 @@ def validate_lesson_timing(
         from tools.validate_lesson_timing import validate_timing
 
     project_root = lesson_path.parent.parent
-    profile_path = runtime_profile or project_root / "学生近期数据" / "教学运行画像.md"
-    log_path = timing_log or project_root / "学生近期数据" / "课堂活动耗时日志.md"
+    profile_path = runtime_profile or project_root / "students" / "教学运行画像.md"
+    log_path = timing_log or project_root / "students" / "课堂活动耗时日志.md"
     result = validate_timing(lesson_path, profile_path, log_path)
     errors.extend([f"[LessonTiming] {error}" for error in result.errors])
     warnings.extend([f"[LessonTiming] {warning}" for warning in result.warnings])

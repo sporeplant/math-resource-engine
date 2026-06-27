@@ -4,9 +4,9 @@
 复习讲义整理脚本
 
 要求：
-1. 输入知识库中的知识点讲解不能丢
-2. 每个题目必须源自给定的知识库文件内容
-3. 生成的文件需要通过配图验证器
+1. 输入knowledge中的知识点讲解不能丢
+2. 每个题目必须源自给定的knowledge文件内容
+3. 生成的文件需要通过配图validators
 
 讲义结构：
 1. 知识点讲解与对应例题（有几个知识点配几个例题）
@@ -32,8 +32,8 @@ except ModuleNotFoundError:
 class ReviewLessonProcessor:
     def __init__(self):
         self.base_dir = Path(__file__).parent.parent
-        self.knowledge_dir = self.base_dir / "知识库" / "复习讲义"
-        self.output_dir = self.base_dir / "输出" / "八下复习讲义"
+        self.knowledge_dir = self.base_dir / "knowledge" / "复习讲义"
+        self.output_dir = self.base_dir / "outputs" / "八下复习讲义"
         self.images_dir = self.output_dir / "images"
         self.rules_file = self.knowledge_dir / "复习讲义编写规则.md"
         self.output_dir.mkdir(parents=True, exist_ok=True)
@@ -81,7 +81,7 @@ class ReviewLessonProcessor:
         return None
     
     def copy_image_to_output(self, img_path):
-        """复制图片到输出目录，返回新的相对路径"""
+        """复制图片到outputs目录，返回新的相对路径"""
         if not img_path.exists():
             return None
         
@@ -130,11 +130,11 @@ class ReviewLessonProcessor:
         return images_map
     
     def validate_output(self, output_path):
-        """运行复习讲义专用验证器和通用输出验证器。"""
+        """运行复习讲义专用validators和通用outputsvalidators。"""
         validators = [
             ("复习课讲义结构验证", self.base_dir / "tools" / "validate_review_lesson.py"),
             ("复习讲义兼容验证", self.base_dir / "tools" / "validate_review_handout.py"),
-            ("通用输出验证", self.base_dir / "tools" / "validate_output.py"),
+            ("通用outputs验证", self.base_dir / "tools" / "validate_output.py"),
         ]
         messages = []
         passed = True
@@ -478,7 +478,7 @@ class ReviewLessonProcessor:
             print(f"✓ {valid_msg}")
         else:
             print(f"✗ {valid_msg}")
-            print("请检查输出文件中的结构、题源、图片和公式标记")
+            print("请检查outputs文件中的结构、题源、图片和公式标记")
         
         return f"复习讲义已生成：{output_path}\n验证结果：{valid_msg}"
 

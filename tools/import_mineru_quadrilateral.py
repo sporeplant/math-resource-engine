@@ -366,7 +366,7 @@ def main() -> int:
     parser.add_argument("--mineru-root", default=r"C:\Users\Administrator\MinerU")
     parser.add_argument(
         "--target-dir",
-        default=r"C:\Users\Administrator\OneDrive\math-resource-engine\知识库\复习讲义\四边形专题",
+        default=r"C:\Users\Administrator\OneDrive\math-resource-engine\knowledge\reviews\quadrilaterals",
     )
     args = parser.parse_args()
 

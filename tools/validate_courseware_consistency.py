@@ -219,7 +219,7 @@ def parse_front_matter(text: str) -> dict[str, str]:
 
 def find_textbook_source(lesson_name: str) -> Path | None:
     """Try to find the corresponding textbook source file."""
-    textbook_dir = Path(__file__).parent.parent / "知识库" / "教材原文"
+    textbook_dir = Path(__file__).parent.parent / "knowledge" / "教材原文"
     if not textbook_dir.exists():
         return None
 

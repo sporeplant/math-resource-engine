@@ -3,7 +3,7 @@ from lxml import etree
 from docx.shared import Cm
 
 nsmap = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'
-doc = Document(r'输出/复习讲义/01_统计调查与直方图_复习讲义_含答案.docx')
+doc = Document(r'outputs/reviews/docx-90d59119.docx')
 
 # Fix sections: single column, A4, narrow margins
 for section in doc.sections:
@@ -51,5 +51,5 @@ for i, table in enumerate(doc.tables):
 
     print(f'Table {i}: {len(table.rows)}r x {len(table.columns)}c fixed')
 
-doc.save(r'输出/复习讲义/01_统计调查与直方图_复习讲义_含答案.docx')
+doc.save(r'outputs/reviews/docx-90d59119.docx')
 print('Done')

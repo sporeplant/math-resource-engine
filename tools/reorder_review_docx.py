@@ -290,7 +290,7 @@ def reorder_docx(input_path: Path, output_path: Path) -> dict[str, int]:
     document = parse_xml(entries[DOCUMENT_XML])
     body = document.getroot().find("w:body", NS)
     if body is None:
-        raise RuntimeError("文档缺少 word/document.xml 的 body")
+        raise RuntimeError("docs缺少 word/document.xml 的 body")
 
     sect_pr = body.find("w:sectPr", NS)
     new_elements, stats = build_reordered_body(document)

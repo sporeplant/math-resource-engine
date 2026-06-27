@@ -1,0 +1,258 @@
+# 项目目录结构
+
+> 最后更新：2026-06-08
+> 引用方式：对话中直接说文件名即可，如"orchestrator/workflow-registry.md"
+
+---
+
+## 根目录
+
+| 文件 | 说明 |
+|------|------|
+| `AGENTS.md` | 系统核心规则、红线、禁止事项 |
+| `CLAUDE.md` | 入口文件，引导读取 AGENTS.md |
+
+---
+
+## docs（命令定义）
+
+```
+docs/
+├── lesson命令定义.md           /lesson 归档说明
+├── lesson-collab命令定义.md    /lesson-collab 命令
+├── lesson-collab命令定义.md    /lesson-collab 命令
+├── courseware命令定义.md       /courseware 归档说明
+├── courseware-collab命令定义.md /courseware-collab 命令
+├── 临界生命令定义.md            /临界生 命令
+├── 临界生分工表填写说明.md
+└── 系统术语表.md
+```
+
+---
+
+## orchestrator（核心协议）
+
+```
+orchestrator/
+├── 工作流注册表.md        ← 所有工作流的唯一权威来源
+├── skills调用协议.md         ← 强制步骤链
+├── skills注册表.md
+├── skillsoutputs合约.md
+├── outputs合约.md
+├── 文件注册表.md
+├── 质量门.md
+├── 前检查清单.md
+├── 审核协议.md
+├── 图片引用协议.md
+├── 规则.md
+├── 教学法.md
+├── 任务分类器.md
+├── 状态机.md
+├── 系统.md
+├── 依赖图.md
+├── 运行时模式.md
+├── 上下文注入.md
+├── 上下文缓存策略.md
+├── 知识注册表.md
+├── 知识检索策略.md
+├── 课时模板注册表.md
+├── 课时生成合约.md
+├── 课时调度器.md
+├── 课程映射.md
+├── validators注册表.md
+├── validators执行顺序.md
+├── 智能体角色.md
+├── 指令协议.md
+├── 提示协议.md
+├── 版本控制.md
+├── 命名约定.md
+├── 元数据模式.md
+├── 教学策略路由.md
+├── 路由.md
+├── 学情适配策略.md
+├── outputs流水线.md
+├── 流水线.md
+├── 数据源策略.md
+├── 资源清单.md
+├── tools-2使用策略.md
+├── 执行策略.md
+├── 重试策略.md
+├── 回退策略.md
+├── 失败分类.md
+├── 错误处理.md
+├── 安全规则.md
+├── 生产约束.md
+├── 系统限制.md
+├── 自反思协议.md
+├── 会话记忆.md
+├── 可追溯性.md
+├── 最终发布策略.md
+├── 人工审核接口.md
+├── 跨skills合约.md
+├── 一致性矩阵.md
+├── 数学验证策略.md
+├── 提示压缩.md
+├── 提示版本控制.md
+├── RAG准备.md
+├── 上下文优先级.md
+└── 工作流.md
+```
+
+---
+
+## skills
+
+```
+skills/
+├── 教材分析skills/
+│   ├── skills.md
+│   └── 检查清单.md
+├── 知识分析skills/
+│   ├── skills.md
+│   └── 检查清单.md
+├── 学习目标skills/
+│   ├── skills.md
+│   ├── 检查清单.md
+│   └── 失败案例.md
+├── 评价设计skills/
+│   ├── skills.md
+│   └── 检查清单.md
+├── 活动设计skills/
+│   ├── skills.md
+│   └── 检查清单.md
+├── 问题链设计skills/
+│   ├── skills.md
+│   └── 检查清单.md
+├── 教学设计skills/
+│   ├── skills.md
+│   └── 检查清单.md
+├── 课件设计skills/
+│   ├── skills.md
+│   └── 检查清单.md
+├── 分层提问skills/
+│   ├── skills.md
+│   └── 检查清单.md
+├── 参考答案生成skills/
+│   ├── skills.md
+│   └── 检查清单.md
+├── 图片资源skills/
+│   └── skills.md
+├── 提问质量skills/
+│   ├── skills.md
+│   └── 检查清单.md
+├── 教学活动质量检查skills/
+│   └── skills.md
+├── 习题分析skills/
+│   ├── skills.md
+│   └── 检查清单.md
+└── 临界生帮扶表skills/
+    ├── skills.md
+    └── 检查清单.md
+```
+
+---
+
+## validators
+
+```
+validators/
+├── 数学validators/验证规则.md
+├── 教学法validators/验证规则.md
+├── 学习目标validators/验证规则.md
+├── 评价validators/验证规则.md
+├── 活动validators/验证规则.md
+├── 教学设计validators/验证规则.md
+├── 课件validators/验证规则.md
+├── 参考答案validators/验证规则.md
+├── 图片资源validators/验证规则.md
+├── 学情适配validators/验证规则.md
+├── 一致性validators/验证规则.md
+└── 教师教法validators/验证规则.md
+```
+
+---
+
+## knowledge
+
+```
+knowledge/
+├── 教材原文/
+│   ├── 教材原文_教材课时分配.md    ← 课时分配总表
+│   ├── 教材原文_22.1_统计的初步认识.md
+│   ├── …（按章节编号命名）
+│   └── 第21章知识图谱.md
+├── 练习册题库/
+│   ├── 练习册_22.1_统计的初步认识.md
+│   └── …（按章节编号命名）
+├── 课程标准/
+│   └── 2025数学新课标.md
+└── 课型/
+    ├── 新授课.md
+    ├── 习题课.md
+    ├── 复习课.md
+    ├── 数学活动课.md
+    └── 试卷讲评课.md
+```
+
+---
+
+## 学生数据
+
+```
+students/
+├── 学生成绩数据.md
+├── 提问历史记录.json
+├── 模板.md
+├── 示例.md
+├── 使用说明.md
+└── support/
+    └── 临界生分工表模板.md
+```
+
+---
+
+## outputs
+
+```
+outputs/
+├── 22.1第一课时_完整教学设计.md
+├── 22.1第一课时_课件.md
+├── 22.1第一课时_课堂提问参考答案.md
+├── 22.2_数据的收集(第1课时)_教学设计.md
+├── 22.2_数据的收集(第1课时)_课件.md
+├── 22.2_数据的收集(第1课时)_课堂提问参考答案.md
+├── 22.2_数据的收集(第2课时)_教学设计.md
+├── 22.2_数据的收集(第2课时)_课件.md
+├── 22.2_数据的收集(第2课时)_课堂提问参考答案.md
+├── 22.2_数据的收集(第2课时)_验证报告.md
+├── 22.2_数据的收集(第2课时)_学生选取结果.md
+├── 22.3_数据的整理与描述(第1课时)_教学设计.md
+├── 22.3_数据的整理与描述(第1课时)_课件.md
+├── 22.3_数据的整理与描述(第1课时)_课堂提问参考答案.md
+├── 22.3_数据的整理与描述(第2课时)_教学设计.md
+├── 22.3_数据的整理与描述(第2课时)_课件.md
+├── 22.3_数据的整理与描述(第2课时)_课堂提问参考答案.md
+├── 22.4_频数分布与直方图_教学设计.md
+└── images/                 ← 课件引用图片
+```
+
+---
+
+## tools-2脚本
+
+```
+tools/
+├── validate_output.py
+├── validate_courseware_consistency.py
+├── validate_activity_textbook_order.py
+├── export_excel.py
+├── video_split.py
+├── video_transcribe.py
+├── 视频内容处理工作流.md
+└── ffmpeg/
+```
+
+引用示例：
+- 说"帮我看 `skills/objectives/SKILL.md`" → 我会去读对应文件
+- 说"打开 `orchestrator/workflow-registry.md` 的课题确认部分" → 我会读指定部分
+- 说"/lesson-collab 22.4" → 我会按协作命令定义执行工作流

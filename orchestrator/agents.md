@@ -1,0 +1,70 @@
+﻿# Agent角色
+
+定义系统中各Agent的职责边界。
+
+---
+
+## Main Agent
+
+**职责**：
+- 接收和解析用户指令
+- 调用 task_classifier 进行任务分类
+- 调用 context_injection 注入知识
+- 协调各Skill Agent的执行顺序
+- 管理状态流转（state_machine）
+- 处理错误和异常（error_handling）
+- 最终outputs发布
+
+**边界**：不直接参与具体设计outputs
+
+---
+
+## Skill Agent
+
+**职责**：
+- 接收Main Agent分配的任务
+- 读取对应的 skills.md 规则
+- 接收上游outputs和注入的知识
+- 执行具体的设计任务
+- 按outputs模板生成outputs
+- 执行自检流程
+
+**边界**：不进行审核，不跨Skill执行
+
+---
+
+## Validator Agent
+
+**职责**：
+- 接收Skill Agent的outputs
+- 读取对应的 验证规则.md 检查项
+- 执行质量审核
+- 生成审核报告
+- 返回审核结果（通过/有条件通过/不通过）
+
+**边界**：不修改outputs，不执行设计任务
+
+---
+
+## Knowledge Agent
+
+**职责**：
+- 管理 knowledge/ 目录下的所有知识文件
+- 根据 context_injection 的规则检索知识
+- 按上下文优先级裁剪知识内容
+- 处理知识冲突
+- 记录知识使用情况
+
+**边界**：不参与设计决策，仅提供知识
+
+---
+
+## Review Agent
+
+**职责**：
+- 接收用户或系统的人工复核请求
+- 审查审核报告和修改记录
+- 决定是否允许发布
+- 记录人工复核结果
+
+**边界**：仅在触发人工复核条件时介入，不参与日常流水线
