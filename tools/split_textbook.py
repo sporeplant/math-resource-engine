@@ -383,6 +383,7 @@ def main():
     parser.add_argument('input_file', help='MinerU 输出的 Markdown 文件路径')
     parser.add_argument('--outdir', help='输出目录（默认与输入文件同目录）')
     parser.add_argument('--yes', '-y', action='store_true', help='跳过确认，直接拆分')
+    parser.add_argument('--flat', action='store_true', help='平铺输出（不创建 ch{N}/ 子目录，图片路径保持 images/）')
     args = parser.parse_args()
 
     input_path = os.path.abspath(args.input_file)
@@ -392,6 +393,8 @@ def main():
 
     outdir = os.path.abspath(args.outdir) if args.outdir else os.path.dirname(input_path)
     os.makedirs(outdir, exist_ok=True)
+
+    subdir = not args.flat
 
     with open(input_path, 'r', encoding='utf-8') as f:
         text = f.read()
@@ -436,12 +439,15 @@ def main():
 
     splits = build_splits(lines, chapter, sections, section_order, activities, reviews)
 
+    chapter_outdir = outdir
+    if subdir:
+        chapter_outdir = os.path.join(outdir, f'ch{chapter["num"]}')
+        os.makedirs(chapter_outdir, exist_ok=True)
+
     written = []
     for sp in splits:
-        # Gather content
         content_parts = []
         if sp['is_first_lesson'] and sp.get('intro_start', 0) < sp.get('intro_end', 0):
-            # Prepend chapter intro
             intro = ''.join(lines[sp['intro_start']:sp['intro_end']])
             if intro.strip():
                 content_parts.append(intro)
@@ -450,12 +456,15 @@ def main():
 
         content = ''.join(content_parts).rstrip('\n') + '\n'
 
-        outpath = os.path.join(outdir, sp['filename'])
+        if subdir:
+            content = content.replace('](images/', '](../images/')
+
+        outpath = os.path.join(chapter_outdir, sp['filename'])
         with open(outpath, 'w', encoding='utf-8') as f:
             f.write(content)
         written.append(sp['filename'])
 
-    print(f'完成！拆分 {len(written)} 个文件 → {outdir}')
+    print(f'完成！拆分 {len(written)} 个文件 → {chapter_outdir}')
     for f in written:
         print(f'  {f}')
 
