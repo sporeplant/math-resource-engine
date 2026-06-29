@@ -1,0 +1,4 @@
+# 初中数学教学资源系统
+
+本项目的完整指令和红线规则见 `AGENTS.md`。
+每次任务开始前，请先读取 `AGENTS.md` 和 `orchestrator/skill-protocol.md`。

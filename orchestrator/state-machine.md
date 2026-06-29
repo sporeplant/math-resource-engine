@@ -1,0 +1,78 @@
+# 状态机
+
+状态机服务于 `orchestrator/workflow-registry.md`，不定义独立流程。
+
+---
+
+## 1. `/lesson-collab` 状态
+
+| 状态 | 说明 |
+|------|------|
+| LESSON_INIT | 接收 `/lesson-collab` 输入，读取规则 |
+| SOURCE_DISCOVERY | 探索教材、习题和来源字段 |
+| OUTCOME_DESIGN | 生成分层学习目标 |
+| OUTCOME_VALIDATE | 审核学习目标 |
+| ASSESSMENT_DESIGN | 生成评价任务 |
+| ASSESSMENT_VALIDATE | 审核评价任务 |
+| ACTIVITY_DESIGN | 生成学习活动 |
+| ACTIVITY_VALIDATE | 审核学习活动 |
+| LESSON_DESIGN | 整合完整教学设计 |
+| LESSON_VALIDATE | 教学设计审核 |
+| PEDAGOGY_VALIDATE | 教学法审核 |
+| MATH_VALIDATE | 数学审核 |
+| ADAPTATION_VALIDATE | 学情适配审核 |
+| QUESTION_QUALITY_VALIDATE | 提问质量审查 |
+| CONSISTENCY_CHECK | 教学评一致性校验 |
+| LESSON_PENDING_REVIEW | outputs教学设计并等待人工审核 |
+
+---
+
+## 2. 人工审核状态
+
+| 状态 | 说明 |
+|------|------|
+| HUMAN_REVIEW_PENDING | 教师尚未审核 |
+| HUMAN_REVIEW_APPROVED | 教师已人工审核通过 |
+| HUMAN_REVIEW_REJECTED | 教师退回修改 |
+
+人工审核状态由教学设计 YAML front matter 的 `review_status` 字段表示：
+
+- `pending_human_review`
+- `审核通过`
+- `rejected`
+
+系统不得自动把 `pending_human_review` 改为 `审核通过`。
+
+---
+
+## 3. `/courseware-collab` 状态
+
+| 状态 | 说明 |
+|------|------|
+| COURSEWARE_INIT | 接收 `/courseware-collab` 输入，读取规则 |
+| APPROVED_LESSON_LOAD | 读取人工审核通过的教学设计 |
+| COURSEWARE_PRECHECK | 检查 `review_status: 审核通过` |
+| IMAGE_RULE_LOAD | 读取图片规则 |
+| QUESTION_SOURCE_LOAD | 读取题源清单 |
+| LAYERED_QUESTION_ASSIGN | 分层提问分配 |
+| QUESTION_REFERENCE_WRITE | 生成课堂提问参考答案 |
+| COURSEWARE_WRITE | 生成 Markdown 课件 |
+| COURSEWARE_VALIDATE | 课件验证 |
+| IMAGE_VALIDATE | 图片验证 |
+| COURSEWARE_COMPLETE | outputs课件与课堂提问参考答案 |
+
+---
+
+## 4. 终止条件
+
+正常终止：
+
+- `/lesson-collab` 到达 `LESSON_PENDING_REVIEW`。
+- `/courseware-collab` 到达 `COURSEWARE_COMPLETE`。
+
+强制停止：
+
+- `/courseware-collab` 读取到的教学设计不是 `审核通过`。
+- 任一硬性质量门不通过。
+- 同一节点连续 3 次不通过。
+- 用户主动中断。
