@@ -25,7 +25,7 @@
 | `knowledge/workbooks/{章节}.md` | `knowledge/workbooks/images/` | `./images/文件名` |
 | `outputs/{课时名}_完整教学设计.md` | `outputs/images/` | `./images/文件名` |
 | `outputs/{课时名}_课件.md` | `outputs/images/` | `./images/文件名` |
-| `outputs/{课时名}_课堂提问参考答案.md` | `outputs/images/` | `./images/文件名` |
+| `outputs/{课时名}_课堂提问调度稿.md` | `outputs/images/` | `./images/文件名` |
 
 路径必须指向真实存在的文件，生成后需通过图片资源validators校验。
 

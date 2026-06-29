@@ -14,9 +14,9 @@
 | 教材分析skills | 分析教材知识结构 | 教材章节内容 | 教材分析报告（10个维度） | 无（独立） | 无 | active | v1.0 |
 | 习题分析skills | 分析习题与解题 | knowledge/workbooks/ 对应章节 + 常见错误 | 习题分析报告（8个维度） | 无（独立，outputs供给评价、活动、课件） | 无 | active | v1.0 |
 | 课件设计skills | 设计 Markdown 课件，内含分层提问 | 人工审核通过的课时设计方案、学生成绩数据 | Markdown 课件（含分层提问） | 教学设计skills, 分层提问skills, 图片资源skills | 课件validators | active | v2.0 |
-| 协作式课件skills | 通过确认门生成课件与课堂提问参考答案 | 人工审核通过的教学设计、教材、学生数据、教师逐门确认 | Markdown 课件 + 课堂提问参考答案 | 课件设计skills, 参考答案生成skills, 分层提问skills | 课件validators, 参考答案validators | active | v1.0 |
+| 协作式课件skills | 通过确认门生成课件与课堂提问调度稿 | 人工审核通过的教学设计、教材、学生数据、教师逐门确认 | Markdown 课件 + 课堂提问调度稿 | 课件设计skills, 课堂提问调度稿生成skills, 分层提问skills | 课件validators, 课堂提问调度稿validators | active | v1.0 |
 | 分层提问skills | 提供分层提问规则，分配学生姓名 | 学生成绩数据、提问历史记录 | 学生选取结果、更新提问历史 | 无 | 无 | active | v1.0 |
-| 参考答案生成skills | 生成课堂提问参考答案文件 | 教学设计、学生选取结果、题源 | {课时名}_课堂提问参考答案.md | 分层提问skills、习题分析skills | 参考答案validators | active | v1.0 |
+| 课堂提问调度稿生成skills | 生成课堂提问调度稿文件 | 教学设计、学生选取结果、题源 | {课时名}_课堂提问调度稿.md | 分层提问skills、习题分析skills | 课堂提问调度稿validators | active | v1.0 |
 | 教材问题解答skills | 按教材顺序生成全部问题的参考解答 | 教材课时原文、教材图片、前置教材知识 | 教材问题参考解答文件 | 无（独立） | 教材问题解答validators | active | v1.0 |
 | 复习课讲义整理skills | 合并新授课讲义生成综合复习讲义 | 讲义编号或名称、源讲义文件 | 复习讲义 Markdown 文件 | 复习课讲义整理skills本体规则 | 复习讲义validators | active | v1.0 |
 | 板书设计skills | 设计板书布局 | 课时设计方案 | 板书布局方案 | 教学设计skills | 无 | archived | v1.0 |

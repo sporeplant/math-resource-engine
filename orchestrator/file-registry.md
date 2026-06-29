@@ -10,7 +10,7 @@
 |------|----------|
 | 教学设计 | `outputs/{课时名}_教学设计.md` |
 | Markdown 课件 | `outputs/{课时名}_课件.md` |
-| 课堂提问参考答案 | `outputs/{课时名}_课堂提问参考答案.md` |
+| 课堂提问调度稿 | `outputs/{课时名}_课堂提问调度稿.md` |
 | 教材问题参考解答 | `knowledge/solutions/solution-{lesson_id}.md` |
 | outputs图片 | `outputs/images/{图片文件名}` |
 | 临界生分工表 | `support/临界生分工表-YYYY-MM-DD.md` |
@@ -60,7 +60,7 @@
 21.8-tixing-20260529
 ```
 
-同一课时的教学设计、课件、课堂提问参考答案必须使用同一个 `lesson_id`。
+同一课时的教学设计、课件、课堂提问调度稿必须使用同一个 `lesson_id`。
 
 ---
 

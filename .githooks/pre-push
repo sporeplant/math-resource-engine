@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "=== pre-push: run tests ==="
+python -m unittest discover -s tools -p "test_*.py" -v

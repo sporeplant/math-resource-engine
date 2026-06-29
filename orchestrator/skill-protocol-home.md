@@ -89,7 +89,7 @@ outputs：
 禁止：
 
 - 生成课件。
-- 生成课堂提问参考答案。
+- 生成课堂提问调度稿。
 - 执行课件validators。
 - 自动标记 `审核通过`。
 - 在用户未确认课题前直接开始生成教学设计。
@@ -207,7 +207,7 @@ outputs：
 - 忽略教师修改意见直接使用原草稿继续。
 - 将确认门交互过程写入最终教学设计正文。
 - 生成课件。
-- 生成课堂提问参考答案。
+- 生成课堂提问调度稿。
 - 执行课件validators。
 - 自动标记 `审核通过`。
 - 在用户未确认课题前直接开始生成教学设计。
@@ -250,11 +250,11 @@ outputs：
 - `orchestrator/review-protocol.md`
 - `knowledge/textbooks/教材原文_教材课时分配.md`（课题确认阶段）
 - `skills/tier-ask/SKILL.md` 和 `检查清单.md`
-- `skills/answers/SKILL.md` 和 `检查清单.md`
+- `skills/question-dispatch/SKILL.md` 和 `检查清单.md`
 - `skills/courseware/SKILL.md` 和 `检查清单.md`
 - `skills/images/SKILL.md`
 - `validators/courseware/rules.md`
-- `validators/answers/rules.md`
+- `validators/question-dispatch/rules.md`
 - `validators/images/rules.md`
 - `outputs/{课时名}_完整教学设计.md`
 - 对应章节题源文件、学生成绩数据、提问历史记录
@@ -267,16 +267,16 @@ outputs：
 outputs：
 
 - `outputs/{课时名}_课件.md`
-- `outputs/{课时名}_课堂提问参考答案.md`
+- `outputs/{课时名}_课堂提问调度稿.md`
 
 执行流程：
 
 1. 课题确认：解析课时名称，匹配教材课时分配表，检查教学设计状态，等待用户确认
 2. 读取并验证人工审核通过的教学设计
 3. 调用分层提问skills，分配学生姓名，outputs学生选取结果
-4. 调用参考答案生成skills，生成参考答案文件
+4. 调用课堂提问调度稿生成skills，生成课堂提问调度稿文件
 5. 调用课件设计skills，生成课件
-6. 依次执行验证：参考答案validators → 课件validators → 图片资源validators
+6. 依次执行验证：课堂提问调度稿validators → 课件validators → 图片资源validators
 7. 验证通过后outputs
 
 禁止：
@@ -322,7 +322,7 @@ outputs：
   → 教师审核分配合理性
   → 教师确认后继续
   ↓
-生成课堂提问参考答案
+生成课堂提问调度稿
   ↓
 生成 Markdown 课件（基于确认的结构、提问、选人）
   ↓
@@ -330,7 +330,7 @@ outputs：
   ↓
 图片验证
   ↓
-outputs课件与课堂提问参考答案
+outputs课件与课堂提问调度稿
 ```
 
 **确认门交互规范：**
@@ -340,7 +340,7 @@ outputs课件与课堂提问参考答案
 3. 教师确认后才可进入下一步
 4. 教师修改意见必须被完整采纳，AI 修订后重新呈现
 5. 确认后的内容作为下游的锁定输入，不可回退修改（除非后续环节发现逻辑矛盾）
-6. 每个确认门的确认结果记录在课堂提问参考答案 YAML front matter 的 `collab_gates` 字段；学生课件保持 Typora 纯 Markdown
+6. 每个确认门的确认结果记录在课堂提问调度稿 YAML front matter 的 `collab_gates` 字段；学生课件保持 Typora 纯 Markdown
 
 强制读取：
 
@@ -348,12 +348,12 @@ outputs课件与课堂提问参考答案
 - 额外读取 `orchestrator/workflow-registry.md` §4a 中的确认门交互协议和呈现模板
 - `knowledge/solutions/solution-{lesson_id}.md`
 
-教材参考解答必须在读取教学设计和进入确认门1前校验文件存在、`content_type: textbook_solution`、`lesson_id` 匹配并通过教材问题解答validators。缺失或校验失败时终止本次任务。教材题答案按 `question_id` 复用，练习册题继续使用原题源；课堂提问参考答案的 `source_files` 必须登记该文件。
+教材参考解答必须在读取教学设计和进入确认门1前校验文件存在、`content_type: textbook_solution`、`lesson_id` 匹配并通过教材问题解答validators。缺失或校验失败时终止本次任务。教材题答案按 `question_id` 复用，练习册题继续使用原题源；课堂提问调度稿的 `source_files` 必须登记该文件。
 
 outputs：
 
-- 按 §3 的课件与课堂提问参考答案outputs规范执行
-- 课堂提问参考答案 YAML front matter 包含 `collab_gates` 字段；学生课件不设置 YAML
+- 按 §3 的课件与课堂提问调度稿outputs规范执行
+- 课堂提问调度稿 YAML front matter 包含 `collab_gates` 字段；学生课件不设置 YAML
 
 禁止：
 

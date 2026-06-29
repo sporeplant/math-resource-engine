@@ -15,7 +15,7 @@
 - outputs `outputs/{课时名}_完整教学设计.md`
 - `review_status: pending_human_review`
 
-`/lesson-collab` 不生成课件、不生成课堂提问参考答案、不执行课件validators。
+`/lesson-collab` 不生成课件、不生成课堂提问调度稿、不执行课件validators。
 
 ### `/courseware-collab`
 
@@ -27,7 +27,7 @@
 `/courseware-collab` 只生成：
 
 - `outputs/{课时名}_课件.md`
-- `outputs/{课时名}_课堂提问参考答案.md`
+- `outputs/{课时名}_课堂提问调度稿.md`
 
 ---
 
@@ -77,4 +77,4 @@
 - 上游教学设计为 `审核通过`。
 - 课件验证通过。
 - 图片验证通过。
-- 课堂提问参考答案与课件提问一致。
+- 课堂提问调度稿与课件提问一致。

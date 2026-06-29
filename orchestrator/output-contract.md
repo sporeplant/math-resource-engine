@@ -1,18 +1,18 @@
 # outputs合约
 
-教学设计、教师参考答案、教材参考解答和复习讲义使用 YAML front matter。学生投屏课件为 Typora 纯 Markdown，不设置 YAML front matter。
+教学设计、教师调度稿、教材参考解答和复习讲义使用 YAML front matter。学生投屏课件为 Typora 纯 Markdown，不设置 YAML front matter。
 
 ---
 
 ## 1. outputs目录
 
-教学设计、课件、课堂提问参考答案和复习讲义写入 `outputs/`；教材问题参考解答作为knowledge资产写入 `knowledge/solutions/`：
+教学设计、课件、课堂提问调度稿和复习讲义写入 `outputs/`；教材问题参考解答作为knowledge资产写入 `knowledge/solutions/`：
 
 | 产物 | 文件名 |
 |------|--------|
 | 教学设计 | `outputs/{课时名}_教学设计.md` |
 | Markdown 课件 | `outputs/{课时名}_课件.md` |
-| 课堂提问参考答案 | `outputs/{课时名}_课堂提问参考答案.md` |
+| 课堂提问调度稿 | `outputs/{课时名}_课堂提问调度稿.md` |
 | 教材问题参考解答 | `knowledge/solutions/solution-{lesson_id}.md` |
 | 复习讲义 | `outputs/g8-reviews/{讲义编号}_{讲义名称}_复习讲义.md` |
 | outputs图片 | `outputs/images/{图片文件名}` |
@@ -21,11 +21,11 @@
 
 ## 2. YAML 元数据
 
-每个outputs Markdown 必须以如下结构开头：
+除学生投屏课件外，教学设计、课堂提问调度稿和复习讲义等 outputs Markdown 必须以如下结构开头：
 
 ```yaml
 ---
-content_type: lesson | courseware | question_reference | review_lesson
+content_type: lesson | courseware | question_dispatch | review_lesson
 lesson_id: ""
 lesson_name: ""
 command: lesson-collab | courseware-collab | 复习讲义
@@ -77,7 +77,7 @@ created_at: ""
 ### 字段规则
 
 - `content_type`：outputs类型。
-- `lesson_id`：课时唯一标识，同一课时的教学设计、课件、课堂提问参考答案必须一致。
+- `lesson_id`：课时唯一标识，同一课时的教学设计、课件、课堂提问调度稿必须一致。
 - `lesson_name`：课时名称，与文件名主体一致。
 - `command`：生成该文件的命令。
 - `workflow_version`：当前固定为 `v2`。
@@ -95,7 +95,7 @@ created_at: ""
 |--------------|----------|------|
 | lesson | `/lesson-collab` | 教学设计 |
 | courseware | `/courseware-collab` | Markdown 课件 |
-| question_reference | `/courseware-collab` | 教师手持课堂提问参考答案 |
+| question_dispatch | `/courseware-collab` | 教师手持课堂提问调度稿 |
 | textbook_solution | `/教材问题解答` | 教材全部问题的参考解答knowledge |
 | review_lesson | `/复习讲义` | 综合复习讲义 |
 

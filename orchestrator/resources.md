@@ -11,7 +11,7 @@
 ## `/courseware-collab` 必生成文件
 
 - [ ] Markdown课件 — `outputs/{课时名}_课件.md`
-- [ ] 课堂提问参考答案 — `outputs/{课时名}_课堂提问参考答案.md`
+- [ ] 课堂提问调度稿 — `outputs/{课时名}_课堂提问调度稿.md`
 
 ## `/临界生` 必生成文件
 

@@ -28,7 +28,7 @@
 
 ## 2. 正式生成任务入口
 
-当任务涉及教学目标、评价设计、活动设计、教学设计、课件、作业、课堂提问参考答案或教材问题解答等正式教学资源产出时，必须按 `orchestrator/skill-protocol.md` 路由，并读取对应 Skill 定义、检查清单、outputs合约和 Validator。
+当任务涉及教学目标、评价设计、活动设计、教学设计、课件、作业、课堂提问调度稿或教材问题解答等正式教学资源产出时，必须按 `orchestrator/skill-protocol.md` 路由，并读取对应 Skill 定义、检查清单、outputs合约和 Validator。
 
 普通代码维护、仓库整理、规则讨论、docs审阅和非正式问答不强制执行完整教学资源生成链，但不得违背本文件第 3 节的硬红线。
 
@@ -54,7 +54,7 @@
 | 学生主体、伪探究、满堂灌、小台阶快反馈 | `skills/activities/checklist.md`、`validators/activities/rules.md`、`validators/pedagogy/rules.md` |
 | 提问质量、看图说话、事实复读、封闭确认 | `skills/ask-check/checklist.md`、`validators/ask-check/rules.md` |
 | 教材顺序、教材对应位置 | `skills/activities/checklist.md`、`tools/validate_activity_textbook_order.py` |
-| 课堂练习、检测题数量、参考答案页 | `skills/activities/checklist.md`、`skills/courseware/checklist.md`、`skills/answers/checklist.md`、`tools/validate_output.py` |
+| 课堂练习、检测题数量、调度稿答案页 | `skills/activities/checklist.md`、`skills/courseware/checklist.md`、`skills/question-dispatch/checklist.md`、`tools/validate_output.py` |
 | 题源字段与多题引用格式 | `orchestrator/output-contract.md`、`orchestrator/skill-contract.md`、`tools/validate_output.py` |
 | 课标注入、学情注入 | `orchestrator/precheck.md`、`orchestrator/skill-protocol.md`、对应 Skill 检查清单 |
 | 40 分钟课时上限 | `orchestrator/quality-gates.md`、`validators/timing/rules.md`、`tools/validate_lesson_timing.py` |
@@ -71,8 +71,8 @@
 | 模式 | 触发方式 | 权限范围 | 用途 |
 | ---- | -------- | -------- | ---- |
 | **运营模式**（默认） | 每次对话自动进入 | 仅可读写 `outputs/`、`students/`、`tools/`、`support/` | 日常教学设计、课件生成等正式任务 |
-| **开发模式** | 用户输入 `/dev` | 在运营模式基础上，额外可读写 `knowledge/` | 维护knowledge内容（如教材资料、学情数据等） |
-| **系统设置模式** | 用户输入 `/sys` | 可读写所有文件，包括 `AGENTS.md`、`orchestrator/`、`skills/`、`validators/` | 修改工作流、skills定义、验证规则、outputs合约等核心配置 |
+| **开发模式** | 用户输入 `run dev` | 在运营模式基础上，额外可读写 `knowledge/` | 维护knowledge内容（如教材资料、学情数据等） |
+| **系统设置模式** | 用户输入 `run sys` | 可读写所有文件，包括 `AGENTS.md`、`orchestrator/`、`skills/`、`validators/` | 修改工作流、skills定义、验证规则、outputs合约等核心配置 |
 
 ### 5.2 文件权限矩阵
 
@@ -87,9 +87,9 @@
 
 ### 5.3 模式切换
 
-- 用户输入 `/dev` → 进入开发模式，回复"已切换到开发模式，可以修改knowledge"
-- 用户输入 `/sys` → 进入系统设置模式，回复"已切换到系统设置模式，可以修改工作流、skills、validators等核心配置"
-- 用户输入 `/ops` → 切换到运营模式，回复"已切换到运营模式，核心规则文件和knowledge已锁定"
+- 用户输入 `run dev` → 进入开发模式，回复"已切换到开发模式，可以修改knowledge"
+- 用户输入 `run sys` → 进入系统设置模式，回复"已切换到系统设置模式，可以修改工作流、skills、validators等核心配置"
+- 用户输入 `run ops` → 切换到运营模式，回复"已切换到运营模式，核心规则文件和knowledge已锁定"
 - 每次新对话默认进入运营模式
 
 ### 5.4 模式下的保护行为
@@ -98,8 +98,8 @@
 
 1. **拒绝修改**，不执行写入操作
 2. **根据当前模式提示用户**：
-   - 运营模式下："当前为运营模式，核心规则文件和knowledge已锁定。如需修改knowledge，请先输入 `/dev` 切换到开发模式；如需修改工作流、skills、validators等核心配置，请先输入 `/sys` 切换到系统设置模式。"
-   - 开发模式下："当前为开发模式，工作流、skills、validators等核心配置仍受保护。如需修改，请先输入 `/sys` 切换到系统设置模式。"
+   - 运营模式下："当前为运营模式，核心规则文件和knowledge已锁定。如需修改knowledge，请先输入 `run dev` 切换到开发模式；如需修改工作流、skills、validators等核心配置，请先输入 `run sys` 切换到系统设置模式。"
+   - 开发模式下："当前为开发模式，工作流、skills、validators等核心配置仍受保护。如需修改，请先输入 `run sys` 切换到系统设置模式。"
 
 ### 5.5 禁止事项
 

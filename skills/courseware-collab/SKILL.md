@@ -2,7 +2,7 @@
 name: courseware-collab
 description: >
   Use for /courseware-collab or equivalent requests to generate a collaborative
-  Markdown courseware file and classroom-question reference from a human-approved
+  Markdown courseware file and classroom-question dispatch from a human-approved
   lesson design. Runs three confirmation gates: structure, question quality, and
   student assignment.
 ---
@@ -12,7 +12,7 @@ description: >
 ## 1. 边界
 
 - 只消费 `content_type: lesson` 且 `review_status: 审核通过` 的教学设计。
-- 只生成 `outputs/{课时名}_课件.md` 与 `outputs/{课时名}_课堂提问参考答案.md`。
+- 只生成 `outputs/{课时名}_课件.md` 与 `outputs/{课时名}_课堂提问调度稿.md`。
 - 不重新生成学习目标、评价任务、活动设计或教学设计。
 - 图片只允许引用outputs文件同级 `./images/{文件名}`，禁止 Markdown 图片语法。
 - 学生姓名只来自 `students/scores.md`，禁止虚构。
@@ -48,9 +48,9 @@ description: >
 
 ### 生成与验证前读取
 
-- `skills/answers/SKILL.md` 与 `skills/answers/checklist.md`
+- `skills/question-dispatch/SKILL.md` 与 `skills/question-dispatch/checklist.md`
 - `skills/images/SKILL.md`
-- `validators/answers/rules.md`
+- `validators/question-dispatch/rules.md`
 - `validators/courseware/rules.md`
 - `validators/images/rules.md`
 
@@ -60,9 +60,9 @@ description: >
 2. 确认门1：课件结构规划。页面顺序必须对应教学设计 `lesson_flow`，并标注教材对应位置、页面用途和教材材料来源。必须同时呈现“教材材料转化清单”，逐项说明教材原文中的背景、原始数据、表格、图片、练习题干或题干摘要安排到哪一页；缺失任一支撑作答材料时不得进入确认。
 3. 确认门2：课堂提问设计。呈现前必须按提问质量skills自检；低质量、冗余或脱节问题必须先删除、合并或改写。每个问题必须标注“材料锚点页”，证明学生在课件内可见材料基础上可以作答；缺少材料锚点的问题必须回退到确认门1补页或补材料。
 4. 确认门3：分层提问分配。按学生成绩数据和提问历史记录分配真实学生，遵守 `skip`、`priority` 与不重复规则。
-5. 基于已确认的结构、提问、学生分配生成课堂提问参考答案。
+5. 基于已确认的结构、提问、学生分配生成课堂提问调度稿。
 6. 基于已确认内容生成 Markdown 课件。生成前必须执行“教材材料锚点复核”：逐页核对确认门1材料清单与确认门2问题锚点是否全部落入课件正文。
-7. 依次执行参考答案验证、课件验证、图片验证和 `tools/validate_output.py`。
+7. 依次执行课堂提问调度稿验证、课件验证、图片验证和 `tools/validate_output.py`。
 
 教师未确认当前确认门前，不得进入下一步；教师提出修改意见时，必须修订并重新呈现当前确认门。
 
@@ -79,8 +79,8 @@ description: >
 
 - 学生课件按“问题页 → 按需备用提示页 → 答案/归纳页”排列。
 - 问题页不得提前显示提示、答案或教师参考预期。
-- 备用提示必须另页分级呈现，并重复对应 `ASK_*` 编号；无须提示时可不生成提示页。
-- `教师参考预期` 只写入课堂提问参考答案，不得写入学生课件。
+- 备用提示可另页分级呈现，但学生课件不得显示 `ASK_*` 编号；无须提示时可不生成提示页。
+- `教师参考预期`、具体学生姓名、备用学生和即时调整规则只写入课堂提问调度稿，不得写入学生课件。
 
 确认门1必须额外包含“教材材料转化清单”：
 
@@ -125,14 +125,14 @@ collab_gates:
     teacher_notes: ""
 ```
 
-课堂提问参考答案必须引用同一 `lesson_id`、`lesson_name` 和同一上游教学设计文件。
+课堂提问调度稿必须引用同一 `lesson_id`、`lesson_name` 和同一上游教学设计文件。
 
 ## 6. 验证命令
 
 最终outputs前运行：
 
 ```powershell
-python tools/validate_output.py outputs/{课时名}_课件.md --lesson-file outputs/{课时名}_教学设计.md --question-reference outputs/{课时名}_课堂提问参考答案.md --students-file students/scores.md
+python tools/validate_output.py outputs/{课时名}_课件.md --lesson-file outputs/{课时名}_教学设计.md --question-reference outputs/{课时名}_课堂提问调度稿.md --students-file students/scores.md
 ```
 
 验证不通过时，回退到对应确认门或生成步骤修正，不得交付不合格文件。

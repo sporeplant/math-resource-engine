@@ -55,11 +55,11 @@
 | IMAGE_RULE_LOAD | 读取图片规则 |
 | QUESTION_SOURCE_LOAD | 读取题源清单 |
 | LAYERED_QUESTION_ASSIGN | 分层提问分配 |
-| QUESTION_REFERENCE_WRITE | 生成课堂提问参考答案 |
+| QUESTION_DISPATCH_WRITE | 生成课堂提问调度稿 |
 | COURSEWARE_WRITE | 生成 Markdown 课件 |
 | COURSEWARE_VALIDATE | 课件验证 |
 | IMAGE_VALIDATE | 图片验证 |
-| COURSEWARE_COMPLETE | outputs课件与课堂提问参考答案 |
+| COURSEWARE_COMPLETE | outputs课件与课堂提问调度稿 |
 
 ---
 
