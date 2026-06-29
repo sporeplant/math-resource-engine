@@ -37,6 +37,17 @@ def staged_files() -> list[Path]:
     return [REPO_ROOT / f for f in result.stdout.splitlines() if f]
 
 
+def added_staged_files() -> set[Path]:
+    result = subprocess.run(
+        ['git', 'diff', '--cached', '--name-only', '--diff-filter=A'],
+        capture_output=True, text=True, cwd=REPO_ROOT,
+    )
+    if result.returncode != 0:
+        print(f"git error: {result.stderr}", file=sys.stderr)
+        sys.exit(1)
+    return {(REPO_ROOT / f).resolve() for f in result.stdout.splitlines() if f}
+
+
 def check_name(name: str) -> list[str]:
     errors = []
     if CHINESE_PATTERN.search(name):
@@ -70,6 +81,7 @@ def check_content(path: Path) -> list[str]:
 def check_all(paths: list[Path]) -> list[str]:
     errors = []
     checked = set()
+    added_paths = added_staged_files()
     for path in paths:
         if not path.exists():
             continue
@@ -79,8 +91,9 @@ def check_all(paths: list[Path]) -> list[str]:
         checked.add(resolved)
 
         rel = path.relative_to(REPO_ROOT) if path.is_relative_to(REPO_ROOT) else path
-        for part in rel.parts:
-            errors.extend(check_name(part))
+        if resolved in added_paths:
+            for part in rel.parts:
+                errors.extend(check_name(part))
         if path.is_file() and path.suffix == '.md':
             errors.extend(check_content(path))
     return errors
