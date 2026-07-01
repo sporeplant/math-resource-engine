@@ -9,7 +9,7 @@ lesson_id: 20.4.1
 | y/° | 0 | 36 | 96 | 132 | 144 |
 
 
-<img src="../images/bc2108834c3803af3c15fa0a75c0512a564b06b84e21050c1e04d73ec9a6f7dc.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bc2108834c3803af3c15fa0a75c0512a564b06b84e21050c1e04d73ec9a6f7dc.jpg" style="max-width:100%;"/>
 图20.4-1
 
 (1) 请在平面直角坐标系中, 分别以上表中的每对对应数值为横坐标和纵坐标, 描点连线, 画出图象. 
@@ -20,7 +20,7 @@ lesson_id: 20.4.1
 
 由这些对应值画出的图象，如图 20.4-2 所示. 
 
-<img src="../images/88cad33b2e109edb4d128ab153fcdbc122ec2b0486fe7df72734383cfaa79952.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/88cad33b2e109edb4d128ab153fcdbc122ec2b0486fe7df72734383cfaa79952.jpg" style="max-width:100%;"/>
 图20.4-2
 
 由表格给出的数据可以看出, 体重为 $0 \mathrm{~kg}$ 时, 台秤指针指向 $0^{\circ}$ , 每增加 $5 \mathrm{~kg}$ , 台秤指针按顺时针方向旋转 $12^{\circ}$ , 所以 $y$ 是 $x$ 的正比例函数。根据已知条件可得 
@@ -91,7 +91,7 @@ $$
 
 4. 如图, 水平放置的容器内有 $210 \mathrm{~mm}$ 高的水。现有若干个质地相同的两种规格的球, 需将它们逐一放入容器中。已知每放入一个大球, 水面升高 $4 \mathrm{~mm}$ ; 每放入一个小球, 水面升高 $3 \mathrm{~mm}$ 。假定放入 6 个大球后, 再开始放入小球, 且放入容器中的所有球都完全浸没在水中, 而水不溢出。设放入小球的个数为 $x$ , 水面的高度为 $y \mathrm{~mm}$ 。 
 
-<img src="../images/873c3171550219a29c330103f8276511c177e66e667c8c7249f1cc54e58bae20.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/873c3171550219a29c330103f8276511c177e66e667c8c7249f1cc54e58bae20.jpg" style="max-width:100%;"/>
 (第4题)
 
 (1) 求 $y$ 与 $x$ 之间的函数关系式. (不必写出 $x$ 的取值范围) 

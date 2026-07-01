@@ -101,7 +101,7 @@ $\therefore a + b$ 的平方根为 $\pm { \sqrt { 4 + 1 } } = \pm { \sqrt { 5 } 
 
 1. 正比例函数的图像与性质：
 
-<table><tr><td>k的取值k&gt;0</td><td>经过象限一、三</td><td>大致图像<img src="images/a3ade3b0838b624bd04f7ff63a2c26ed3c12796d4ea970a2278f8d9b17b15f6a.jpg"/></td><td>y随x的变化情况y随x的增大而增大</td></tr><tr><td>k&lt;0</td><td>二、四</td><td><img src="images/4d90a708cfaebd32e2a160172ca35ea978ffde6eb9de06e397a572a400c46b9d.jpg"/></td><td>y随x的增大而减小</td></tr></table>
+<table><tr><td>k的取值k&gt;0</td><td>经过象限一、三</td><td>大致图像<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a3ade3b0838b624bd04f7ff63a2c26ed3c12796d4ea970a2278f8d9b17b15f6a.jpg"/></td><td>y随x的变化情况y随x的增大而增大</td></tr><tr><td>k&lt;0</td><td>二、四</td><td><img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4d90a708cfaebd32e2a160172ca35ea978ffde6eb9de06e397a572a400c46b9d.jpg"/></td><td>y随x的增大而减小</td></tr></table>
 
 正比例函数的图像是必经过 原点 的一条直线。在画正比例函数图像时，还需确定除原点外的另一个点即可。
 

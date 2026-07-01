@@ -9,7 +9,7 @@ lesson_id: 20.1.1
 | 路程/km | 0.2 | 0.4 | 0.6 | 0.8 | 1 | ... | 3.5 |
 
 
-<img src="../images/1d938f2a875b5558bfc2552ed31413d81aefc042e078c03b3c283634c9d33d59.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1d938f2a875b5558bfc2552ed31413d81aefc042e078c03b3c283634c9d33d59.jpg" style="max-width:100%;"/>
 
 (1) 小明行驶的路程和时间成正比例吗？为什么？ 
 
@@ -49,7 +49,7 @@ s 与 t 之间的函数关系式为：s=0.2t.
 
 例 2 有一块 10 公顷的成熟麦田，用一台收割速度为 0.5 公顷/时的小麦收割机来收割. 
 
-<img src="../images/615d4b18b9e4cdfb73f408dabfb82cd9c2822c2e990001054af30976bac758f8.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/615d4b18b9e4cdfb73f408dabfb82cd9c2822c2e990001054af30976bac758f8.jpg" style="max-width:100%;"/>
 
 (1) 求收割面积 $y$ (公顷) 与收割时间 $x(\mathrm{h})$ 之间的函数关系式. 
 

@@ -123,7 +123,7 @@ source_type: textbook
 
 **原题**：画频数分布直方图。
 
-<img src="./images/f01de117d09a9c643fb0ad7636dc4ff80eb59a4dee8061d2ee7bc1ed09cb0a52.jpg" width="55%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f01de117d09a9c643fb0ad7636dc4ff80eb59a4dee8061d2ee7bc1ed09cb0a52.jpg" width="55%">
 
 **参考解答**：横轴表示全年月平均用电量，按组距 20 标出各组；纵轴表示频数。依次画高为 5、10、15、12、5、3 的相邻小长方形。检验时，各柱对应的组界、组距和柱高应与频数分布表一致。
 
@@ -165,7 +165,7 @@ source_type: textbook
 
 练习共用图：
 
-<img src="./images/ff4ecd374db12bf0125ad0afa1992fbb96b5dd1ad2dd6b74a26b0a8785bd8d1e.jpg" width="70%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ff4ecd374db12bf0125ad0afa1992fbb96b5dd1ad2dd6b74a26b0a8785bd8d1e.jpg" width="70%">
 
 ```yaml
 question_id: "22.4-练习-1"
@@ -262,7 +262,7 @@ source_type: textbook
 
 A组第1题共用图：
 
-<img src="./images/ecb6cead8bee31141ae3de57a3f6e1529a77c0f303efcf61232147c50482ee27.jpg" width="60%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ecb6cead8bee31141ae3de57a3f6e1529a77c0f303efcf61232147c50482ee27.jpg" width="60%">
 
 ```yaml
 question_id: "22.4-习题A-1-1"

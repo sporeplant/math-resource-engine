@@ -228,7 +228,7 @@ D．80分以上的学生有 14名
 
 【典例 1】我校有 2000 名学生参加“我为大运添风采”为主题的知识竞赛，赛后随机抽取部分参赛学生的 成绩进行整理并制作成图表如下： 
 
-<table><tr><td colspan="3">频率分布统计表</td><td>频率分布直方图</td></tr><tr><td>分数段</td><td>频数</td><td>频率</td><td rowspan="5"><img src="../images/11b2464ec5411b8e10f792482d579888e94292ab6a8397cd701fefbf3ae00e55.jpg"/></td></tr><tr><td>60≤x&lt;70</td><td>40</td><td>0.40</td></tr><tr><td>70≤x&lt;80</td><td>35</td><td>y</td></tr><tr><td>80≤x&lt;90</td><td>x</td><td>0.15</td></tr><tr><td>90≤x&lt;100</td><td>10</td><td>0.10</td></tr></table>
+<table><tr><td colspan="3">频率分布统计表</td><td>频率分布直方图</td></tr><tr><td>分数段</td><td>频数</td><td>频率</td><td rowspan="5"><img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/11b2464ec5411b8e10f792482d579888e94292ab6a8397cd701fefbf3ae00e55.jpg"/></td></tr><tr><td>60≤x&lt;70</td><td>40</td><td>0.40</td></tr><tr><td>70≤x&lt;80</td><td>35</td><td>y</td></tr><tr><td>80≤x&lt;90</td><td>x</td><td>0.15</td></tr><tr><td>90≤x&lt;100</td><td>10</td><td>0.10</td></tr></table>
 
 请根据上述信息，解答下列问题： 
 

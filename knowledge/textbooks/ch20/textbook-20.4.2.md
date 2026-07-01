@@ -24,7 +24,7 @@ type: 教材原文
 
 某航班托运行李的费用 $y$ (元)与托运行李的质量 $x(\mathrm{kg})$ 之间的函数关系如图20.4-3所示. 
 
-<img src="../images/8068624772255dbcd4f443e75785d2a222d89fd7b5c1482ede12ef4daae50c5d.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8068624772255dbcd4f443e75785d2a222d89fd7b5c1482ede12ef4daae50c5d.jpg" style="max-width:100%;"/>
 图20.4-3
 
 (1) 求 $y$ 与 $x$ 之间的函数关系式. 
@@ -33,7 +33,7 @@ type: 教材原文
 
 例 1 一森林警察驾驶警车沿森林公路巡逻，在公路旁的某加油站加满油后，以 40 km/h 的速度匀速行驶。已知警车加满油后，油箱中的余油量 y(L)与行驶时间 x(h)之间的函数关系图象是图 20.4-4 所示的直线 l 的一部分。 
 
-<img src="../images/79dae7acbef0f4ff63a4255c7450f730e3f2f23924e5953a902bb347b04bc7aa.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/79dae7acbef0f4ff63a4255c7450f730e3f2f23924e5953a902bb347b04bc7aa.jpg" style="max-width:100%;"/>
 图20.4-4
 
 (1) 求直线 l 的函数表达式. 
@@ -115,7 +115,7 @@ $$
 
 1. 汽车在刹车后都会由于惯性继续向前滑行一段距离，我们将其称为“刹车距离”。某型号轿车的刹车距离 $y(\mathrm{m})$ 与速度 $x(\mathrm{km/h})$ 之间的函数关系如图所示。 
 
-<img src="../images/5841f2e47d5cfabc0f46d276179224fec59aa192bccb17e2ef80fd7b553f8c13.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5841f2e47d5cfabc0f46d276179224fec59aa192bccb17e2ef80fd7b553f8c13.jpg" style="max-width:100%;"/>
 (第1题)
 
 (1) 写出 y 与 x 之间的函数关系式. 
@@ -124,7 +124,7 @@ $$
 
 2. 某水果批发商为了解市场行情, 对经销的一种水果进行了市场调查。在调查中发现: 经销这种水果一天的利润 $y$ (元)与这天的销售量 $x(\mathrm{kg})$ 之间的函数关系如图所示。 
 
-<img src="../images/7e373841b02070cae8df794bd8ba8b65c9f87be3f8da316d619df8026f98dd1f.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7e373841b02070cae8df794bd8ba8b65c9f87be3f8da316d619df8026f98dd1f.jpg" style="max-width:100%;"/>
 (第2题)
 
 (1) 求 $y$ 与 $x$ 之间的函数关系式. 
@@ -135,7 +135,7 @@ $$
 
 3. 一辆汽车将一批货物从甲地运往乙地, 到达乙地卸货后立即返回。设汽车从甲地出发的时间为 $x(\mathrm{h})$ , 汽车与甲地之间的路程为 $y(\mathrm{km})$ , $y$ 与 $x$ 之间的函数关系如图所示。 
 
-<img src="../images/974a2ac067498ebe95dd232dc0224992e6d385bf5afe538824fab7ca2d13da3b.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/974a2ac067498ebe95dd232dc0224992e6d385bf5afe538824fab7ca2d13da3b.jpg" style="max-width:100%;"/>
 (第3题)
 
 (1) 这辆汽车往返的速度是否相同？请说明理由。 
@@ -148,7 +148,7 @@ $$
 
 4. 某市为鼓励市民节约用水，自来水公司采用分段收费标准收费。每月收取水费 $y$ (元)与用水量 $x(t)$ 之间的函数关系如图所示。 
 
-<img src="../images/711df0ed7fc4ba19fbe66538f948bbc3005caf24ba9af318dede416e2f757fec.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/711df0ed7fc4ba19fbe66538f948bbc3005caf24ba9af318dede416e2f757fec.jpg" style="max-width:100%;"/>
 (第4题)
 
 (1) 小兰家 7 月份用水 7 t，应交水费多少元？ 

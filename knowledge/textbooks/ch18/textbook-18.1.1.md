@@ -17,7 +17,7 @@ lesson_id: 18.1.1
 (第1题)
 
 
-<img src="../images/275f9c4653831138b1ec3120e846025a88b263998653a8c383aa48a7b4960f26.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/275f9c4653831138b1ec3120e846025a88b263998653a8c383aa48a7b4960f26.jpg" style="max-width:100%;"/>
 (第2题)
 
 2. 如图, 如何描述小明家相对于学校的位置? 学校相对于小明家的位置又该怎样描述? 
@@ -28,7 +28,7 @@ lesson_id: 18.1.1
 
 1. 如图, 国际象棋棋盘由纵横各 8 格、颜色深浅交错排列的 64 个小方格组成, 棋子可以在这些方格中移动。列和行分别用字母和数字标记, 按照先列后行的顺序, “白车” 所在方格 $A$ 的位置可用 $(c, 3)$ 表示。 
 
-<img src="../images/550a3c2103665359d9f50d8a9207fc33faacfea9fb80256867afe24c5b3f14f6.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/550a3c2103665359d9f50d8a9207fc33faacfea9fb80256867afe24c5b3f14f6.jpg" style="max-width:100%;"/>
 (第1题)
 
 (1) 按照上述规定, “白后” 和 “黑车” 所在方格的位置应该如何表示呢? 
@@ -39,12 +39,12 @@ lesson_id: 18.1.1
 
 2. 如图, 以学校为参照点, 请用方位角和实际距离分别表示新华书店、少年宫和超市的位置。 
 
-<img src="../images/297cfef71e5de846639b51245c82f60dcb9de8c442d809398641e8e9eabdaa04.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/297cfef71e5de846639b51245c82f60dcb9de8c442d809398641e8e9eabdaa04.jpg" style="max-width:100%;"/>
 (第2题)
 
 3. 如图, 甲船从码头 $A$ 出发, 沿北偏东 $35^{\circ}$ 的方向行驶可以直达小岛 $C$ . 码头 $B$ 在码头 $A$ 的正东方向, 当乙船与甲船分别从码头 $B$ , $A$ 同时等速出发, 并直接驶向小岛 $C$ 时, 两船可以同时到达. (水流速度忽略不计) 
 
-<img src="../images/a32b126ad89eed01446ba5c663dccaf0c0c4b58bd2f9ac1f01e41c14c404910d.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a32b126ad89eed01446ba5c663dccaf0c0c4b58bd2f9ac1f01e41c14c404910d.jpg" style="max-width:100%;"/>
 (第3题)
 
 (1) 请在图中画出小岛 C 的位置。 

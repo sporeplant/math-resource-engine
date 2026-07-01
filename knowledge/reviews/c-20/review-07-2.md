@@ -883,7 +883,7 @@ $$
 
 22．【阅读材料】为了保护学生的视力，学校的课桌、椅的高度都是按一定的关系配套设计的．为了了解学校新添置的一批课桌、椅高度的配套设计情况，小明所在的综合实践小组进行了调查研究，他们发现可以根据人的身高调节课桌、椅的高度，且课桌的高度 y（cm）与对应的椅子高度（不含靠背）x（cm）符合一次函数关系，他们测量了一套符合条件的课桌、椅对应的四档高度，数据如下表：
 
-<table><tr><td>档次/高度</td><td>第一档</td><td>第二档</td><td>第三档</td><td>第四档</td></tr><tr><td>椅高x/cm</td><td>37.0</td><td>40.0</td><td>42.0</td><td>45.0</td></tr><tr><td>桌高y/cm</td><td>68.0</td><td>74.0</td><td>78.0</td><td><img src="images/3d1645bf52ebc47c304c8de7a77df40b8e9b6bcef4c2fd9843b4589beb70c538.jpg"/></td></tr></table>
+<table><tr><td>档次/高度</td><td>第一档</td><td>第二档</td><td>第三档</td><td>第四档</td></tr><tr><td>椅高x/cm</td><td>37.0</td><td>40.0</td><td>42.0</td><td>45.0</td></tr><tr><td>桌高y/cm</td><td>68.0</td><td>74.0</td><td>78.0</td><td><img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3d1645bf52ebc47c304c8de7a77df40b8e9b6bcef4c2fd9843b4589beb70c538.jpg"/></td></tr></table>
 
 根据阅读材料，完成下列各题：
 

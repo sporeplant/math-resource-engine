@@ -6,9 +6,9 @@ chapter_name: 四边形
 section_name: 四边形与特殊四边形
 lesson_id: 21.9.1
 ---:|:---:|
-   | <img src="../images/72c9736cb9fe512c785af1ace9c42e12f37f7bf883c81ffcfec22d2cfdfab187.jpg" width="35%"> | <img src="../images/3f5b8ad5b5ce4e36e6c3853ddc92c024844768979546faee835c079537a453c6.jpg" width="35%"> |
+   | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/72c9736cb9fe512c785af1ace9c42e12f37f7bf883c81ffcfec22d2cfdfab187.jpg" width="35%"> | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3f5b8ad5b5ce4e36e6c3853ddc92c024844768979546faee835c079537a453c6.jpg" width="35%"> |
    | (1) | (2) |
-   | <img src="../images/c0fc4ddfab50519b50f0597961dadaadfa4a1511025b1027bc06ad2d4ce76aeb.jpg" width="35%"> | <img src="../images/49d7d21d39c368a23db25a265e7ef2be920256c96b88ee41f1b4f61484dc8d10.jpg" width="35%"> |
+   | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c0fc4ddfab50519b50f0597961dadaadfa4a1511025b1027bc06ad2d4ce76aeb.jpg" width="35%"> | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/49d7d21d39c368a23db25a265e7ef2be920256c96b88ee41f1b4f61484dc8d10.jpg" width="35%"> |
    | (3) | (4) |
 
 

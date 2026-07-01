@@ -21,7 +21,7 @@ type: 教材原文
 ---
 
 # 一、知识结构
-<img src="../images/428156bc0a722cf93820ed182d402d237c38efdc4545470aa5b74bf32b5f18ef.jpg" width="35%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/428156bc0a722cf93820ed182d402d237c38efdc4545470aa5b74bf32b5f18ef.jpg" width="35%">
 
 # 二、总结与反思
 
@@ -36,7 +36,7 @@ type: 教材原文
 # 3. 特殊四边形之间的关系。
 
 从一般到特殊是人们认识事物的一种常用的方法。四边形、平行四边形、矩形、菱形、正方形和梯形，它们之间具有的一般与特殊的关系如下图所示。了解它们之间的相互关系，分析它们的共性和特性，有利于更好地理解有关概念。 
-<img src="../images/8291b6d9f089e1b2511d79766bf5fa85c2362fb1fd5c54a4219b159bc202987e.jpg" width="35%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8291b6d9f089e1b2511d79766bf5fa85c2362fb1fd5c54a4219b159bc202987e.jpg" width="35%">
 
 # 复习题
 
@@ -59,14 +59,14 @@ type: 教材原文
 26 cm，则下底长为____。 
 
 2. 如图, 一多边形木板锯掉不过顶点的一个角后, 得到的新多边形木板的内角和是 $2160^{\circ}$ 。那么, 原来的多边形木板的边数是多少? 
-<img src="../images/90eddfdf91ee17dbaefebb56139604a369f8e4c8af6703a1a814cde1319f3450.jpg" width="35%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/90eddfdf91ee17dbaefebb56139604a369f8e4c8af6703a1a814cde1319f3450.jpg" width="35%">
 (第2题)
 
 
 3. 在□ABCD中，已知∠A的度数是∠B的2倍。求∠C，∠D的度数。 
 
 4. 如图, 在 $\square ABCD$ 中, $E$ , $F$ 分别是 $AD$ , $BC$ 的中点. 连接 $EF$ , $AF$ , $EC$ . 图中共有多少个平行四边形? 请把它们列举出来. 
-<img src="../images/d962081d9916987f27675714c0e513a556c7df879f4b9377123aaba5cc2b0fdf.jpg" width="35%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d962081d9916987f27675714c0e513a556c7df879f4b9377123aaba5cc2b0fdf.jpg" width="35%">
 (第4题)
 
 

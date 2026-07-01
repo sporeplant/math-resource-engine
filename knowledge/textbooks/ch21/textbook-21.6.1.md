@@ -6,9 +6,9 @@ chapter_name: 四边形
 section_name: 菱形
 lesson_id: 21.6.1
 ---:|:---:|
-| <img src="../images/4148685225be9f1a461be774a417fba8f255a86d507e2d2e90c557734af64f81.jpg" width="35%"><br>(1) | <img src="../images/43190eb024e9ed1d144f79a057471e983143132533882990ee0d0c1af339a99d.jpg" width="35%"><br>(1) |
-| <img src="../images/fd260838b277dd0be906fae951d557de25ec3559795e89bf23fa47eeefd78e70.jpg" width="35%"><br>(2) | <img src="../images/6c13342a9121037e1050255102eb0d252f00ad496627635fbdaffd78b59ad8bc.jpg" width="35%"><br>(2) |
-| <img src="../images/f845cdafb7ba3052e2fbbae2b21d492ca8abfe15eac40f1daced8dc338ee2fd4.jpg" width="35%"><br>(3) | <img src="../images/6a361cf5d599aa0ac983a499810347c791416a15ccb83e6faec6d183d842fc57.jpg" width="35%"><br>(3) |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4148685225be9f1a461be774a417fba8f255a86d507e2d2e90c557734af64f81.jpg" width="35%"><br>(1) | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/43190eb024e9ed1d144f79a057471e983143132533882990ee0d0c1af339a99d.jpg" width="35%"><br>(1) |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/fd260838b277dd0be906fae951d557de25ec3559795e89bf23fa47eeefd78e70.jpg" width="35%"><br>(2) | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6c13342a9121037e1050255102eb0d252f00ad496627635fbdaffd78b59ad8bc.jpg" width="35%"><br>(2) |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f845cdafb7ba3052e2fbbae2b21d492ca8abfe15eac40f1daced8dc338ee2fd4.jpg" width="35%"><br>(3) | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6a361cf5d599aa0ac983a499810347c791416a15ccb83e6faec6d183d842fc57.jpg" width="35%"><br>(3) |
 
 
 图21.6-1

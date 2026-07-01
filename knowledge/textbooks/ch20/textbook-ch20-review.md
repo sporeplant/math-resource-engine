@@ -37,14 +37,14 @@ lesson_id: ch20-activity-review
 
 (3) 小明在此次比赛中的速度是多少? 
 
-<img src="../images/9e0577decb18b74fedf14c2e243e01453a3f4960d59e6327f6846c12911a3590.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9e0577decb18b74fedf14c2e243e01453a3f4960d59e6327f6846c12911a3590.jpg" style="max-width:100%;"/>
 (第7题)
 
 # B 组
 
 8. A, B两地之间的路程为 $60 \mathrm{~km}$ , 甲、乙二人分别骑自行车和摩托车沿相同路线匀速行驶,由A地到达B地。他们行驶的路程 $s(\mathrm{km})$ 与甲出发后的时间 $t(\mathrm{h})$ 之间的函数关系如图所示。 
 
-<img src="../images/3675433a36043a66441a742d001bf144eb01a76618f5a55b2f3e301ee26c02c3.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3675433a36043a66441a742d001bf144eb01a76618f5a55b2f3e301ee26c02c3.jpg" style="max-width:100%;"/>
 (第8题)
 
 (1) 乙比甲晚出发几小时? 乙比甲早到几小时? 
@@ -84,7 +84,7 @@ lesson_id: ch20-activity-review
 
 12. 李虹和张惠平时的耐力与速度相差无几。来口阵目味上，老师设计了一个400 m 的赛跑方案，让李虹从起跑就全速前进，而让张惠留着后劲儿，待到剩下最后 100 m 时再加速，并跟踪记录了赛跑的全过程。赛跑的全过程如图所示。 
 
-<img src="../images/9fa6dc7f9c40c2d385e7ca31f3903900b14d71be206e2993817a3f0ec34476f2.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9fa6dc7f9c40c2d385e7ca31f3903900b14d71be206e2993817a3f0ec34476f2.jpg" style="max-width:100%;"/>
 (第 12 题)
 
 (1) 你从这幅图中读出了哪些信息？ 

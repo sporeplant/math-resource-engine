@@ -69,7 +69,7 @@ D． $y = 2 x ^ { 2 } + 1$
 
 1. 正比例函数的图像与性质：
 
-<table><tr><td>k的取值</td><td>经过象限</td><td>大致图像</td><td>y随x的变化情况</td></tr><tr><td>k&gt;0</td><td>____</td><td><img src="images/9b23083225fee233a296b82bbd7c8dd8d0e834d4ee2f4359d98990ebef678498.jpg"/></td><td>y随x的增大而____</td></tr><tr><td>k&lt;0</td><td>____</td><td><img src="images/68d88501a4f6a1388c3eecf731ef5752cb4bf6c709d5820c247599f605ca68d2.jpg"/></td><td>y随x的增大而____</td></tr></table>
+<table><tr><td>k的取值</td><td>经过象限</td><td>大致图像</td><td>y随x的变化情况</td></tr><tr><td>k&gt;0</td><td>____</td><td><img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9b23083225fee233a296b82bbd7c8dd8d0e834d4ee2f4359d98990ebef678498.jpg"/></td><td>y随x的增大而____</td></tr><tr><td>k&lt;0</td><td>____</td><td><img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/68d88501a4f6a1388c3eecf731ef5752cb4bf6c709d5820c247599f605ca68d2.jpg"/></td><td>y随x的增大而____</td></tr></table>
 
 正比例函数的图像是必经过 的一条直线。在画正比例函数图像时，还需确定除原点外的另一个点即可。
 

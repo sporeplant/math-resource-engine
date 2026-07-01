@@ -88,7 +88,7 @@ lesson_id: 18.2.1
 
 1. 在给出的平面直角坐标系中, 写出 $A, B, C, D, E, F, G$ 各点的坐标。 
 
-<img src="../images/9cb81b8f125fee43ecc66b1c2a8d88e38db414fa89383ad77e663420e87705e4.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9cb81b8f125fee43ecc66b1c2a8d88e38db414fa89383ad77e663420e87705e4.jpg" style="max-width:100%;"/>
 (第1题)
 
 2. 新中国从这里走来！西柏坡是见证革命历史、领略领袖风采的著名爱国主义教育基地。 
@@ -97,7 +97,7 @@ lesson_id: 18.2.1
 
 (2) 请写出一种建立平面直角坐标系的方法, 使得表示西柏坡青少年文明园所在位置的点的横坐标大于 0 , 纵坐标小于 0 。 
 
-<img src="../images/0e554bef4f37f0b1b259af750d4dc258751ec8e781b0c91d356eb113c1062ac1.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0e554bef4f37f0b1b259af750d4dc258751ec8e781b0c91d356eb113c1062ac1.jpg" style="max-width:100%;"/>
 (第2题)
 
 3. 先画出平面直角坐标系，再描出下列各点： 
@@ -130,7 +130,7 @@ $$
 
 (2) 用坐标写出由点 O 到点 A 的其他最短路径. 
 
-<img src="../images/3141311bdcef50c41f2acb6e2e9e0aac80691e4d97243d9ab85695fab333c66f.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3141311bdcef50c41f2acb6e2e9e0aac80691e4d97243d9ab85695fab333c66f.jpg" style="max-width:100%;"/>
 (第 5 题)
 
 

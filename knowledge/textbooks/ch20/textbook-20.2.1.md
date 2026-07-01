@@ -42,7 +42,7 @@ lesson_id: 20.2.1
 
 在平面直角坐标系中，过点(0,1)和点(2,0)画直线，即得一次函数 $y=-\frac{1}{2}x+1$ 的图象，如图 20.2-3 所示. 
 
-<img src="../images/d604cfc4319fb4152c528b43355089ea2dc281254fbddbd4ff49c956c43872a4.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d604cfc4319fb4152c528b43355089ea2dc281254fbddbd4ff49c956c43872a4.jpg" style="max-width:100%;"/>
 图20.2-3
 
 # 练习
@@ -80,6 +80,6 @@ lesson_id: 20.2.1
 
 4. 今有一根弹簧, 不悬挂重物时的长度为 $12 \mathrm{~cm}$ 。悬挂的重物每增加 $1 \mathrm{~kg}$ (重物不超过 $8 \mathrm{~kg}$ ), 弹簧的长度就增加 $0.5 \mathrm{~cm}$ 。写出弹簧的长度 $y (\mathrm{cm})$ 和悬挂物的质量 $x (\mathrm{kg})$ 之间的函数关系式, 指出自变量的取值范围, 并画出这个函数的图象。 
 
-<img src="../images/9298c33d69e9e9cd5aabc47b25bb2b9c2199a27cd8d71ea29e5b13b24a41f5f2.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9298c33d69e9e9cd5aabc47b25bb2b9c2199a27cd8d71ea29e5b13b24a41f5f2.jpg" style="max-width:100%;"/>
 
 

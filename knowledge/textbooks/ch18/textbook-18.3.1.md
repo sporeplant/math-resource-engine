@@ -34,7 +34,7 @@ lesson_id: 18.3.1
 
 (2) 说明你建立这个平面直角坐标系的理由. 
 
-<img src="../images/ff76ddfc835ed4ec2e45385230009c5814a102cbbb13c00d31223986870dfe84.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ff76ddfc835ed4ec2e45385230009c5814a102cbbb13c00d31223986870dfe84.jpg" style="max-width:100%;"/>
 图18.3-3
 
 # 练习
@@ -73,7 +73,7 @@ lesson_id: 18.3.1
 
 3. 如图，请建立适当的平面直角坐标系，并用坐标表示各旅游景点的位置。 
 
-<img src="../images/a1363d394cc60ddee61c51feba1ea57560da0139a85d82f39dcfe8eb10b3e474.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a1363d394cc60ddee61c51feba1ea57560da0139a85d82f39dcfe8eb10b3e474.jpg" style="max-width:100%;"/>
 (第3题)
 
 # B 组
@@ -82,7 +82,7 @@ lesson_id: 18.3.1
 
 5. 在一次夏令营活动中, 老师将一份行动计划藏在没有任何标记的点 $C$ 处, 只告诉大家点 $A$ 和点 $B$ 处各是一棵树, 坐标分别为 (0, 0), (30, 10), 点 $C$ 的坐标为 (20, 20). 请确定点 $C$ 的位置, 尽快找到这份行动计划. (单位: m) 
 
-<img src="../images/c81e3ebd001f4e1a4f36e93d6f14e344a91526ae9e1f65feec662dc5c01f2ffd.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c81e3ebd001f4e1a4f36e93d6f14e344a91526ae9e1f65feec662dc5c01f2ffd.jpg" style="max-width:100%;"/>
 (第 5 题)
 
 

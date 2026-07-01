@@ -40,7 +40,7 @@ type: 教材原文
 
 3. 从 A 城市向 B 城市行驶的某高速列车，出发 10 min 后速度达到了 330 km/h，此时已行驶 15 km，之后按 330 km/h 的速度继续匀速驶向 B 城市。设列车从 A 城市出发后行驶的时间为 $t(\mathrm{h})(t > \frac{1}{6}\mathrm{~h})$ ，行驶的路程为 $s(\mathrm{km})$ ，求用 t 表示 s 的函数表达式。 
 
-<img src="../images/377b280d7e7d68635706f00e6495168dfa44bdb26398a5b2a696b1c321f15dc3.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/377b280d7e7d68635706f00e6495168dfa44bdb26398a5b2a696b1c321f15dc3.jpg" style="max-width:100%;"/>
 
 在上面的问题中，我们分别得到了函数表达式： 
 
@@ -73,7 +73,7 @@ $$
 
 (1) 求 $h$ 与 $x$ 之间的函数关系式. $h$ 是 $x$ 的一次函数吗? 如果是一次函数, 请指出相应的 $k$ 与 $b$ 的值. 
 
-<img src="../images/9d5519f5c545b0a320ade91cfe4cbcffd758617912739fbcc2ccadabf71f590c.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9d5519f5c545b0a320ade91cfe4cbcffd758617912739fbcc2ccadabf71f590c.jpg" style="max-width:100%;"/>
 图20.1-1
 
 (2) 当 $h=\sqrt{3}$ 时，求 x 的值. 

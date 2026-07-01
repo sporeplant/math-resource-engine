@@ -124,7 +124,7 @@ D． $x > - 3$ 且 $x \neq 3$
 
 【典例 1】小亮爸爸到加油站加油，如图是所用的加油机上的数据显示牌，金额随着数量的变化而变化．则下列判断正确的是（ ）
 
-<table><tr><td rowspan="3"><img src="images/b7cd1da9ed0fefe3064f3ed1e3586c64bf4a2a174062d6ca3b76e3a6048eeb17.jpg"/></td><td>金额/元</td></tr><tr><td>数量/升</td></tr><tr><td>单价/(元/升))</td></tr></table>
+<table><tr><td rowspan="3"><img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b7cd1da9ed0fefe3064f3ed1e3586c64bf4a2a174062d6ca3b76e3a6048eeb17.jpg"/></td><td>金额/元</td></tr><tr><td>数量/升</td></tr><tr><td>单价/(元/升))</td></tr></table>
 
 A．金额是自变量
 

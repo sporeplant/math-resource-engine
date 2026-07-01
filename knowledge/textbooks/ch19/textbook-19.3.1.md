@@ -19,7 +19,7 @@ lesson_id: 19.3.1
 
 通过上面的“做一做”，我们发现在这个问题中，声速与气温这两个变量之间的函数关系，既可以用数值表来表示，也可以用图19.3-1中的图形来表示，还可以用函数表达式 $y = \frac{3}{5} x + 331$ 来表示. 
 
-<img src="../images/8ded16a42c723fe3bfd486bd277c6b739891c156a085b26f687b964efc005825.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8ded16a42c723fe3bfd486bd277c6b739891c156a085b26f687b964efc005825.jpg" style="max-width:100%;"/>
 图19.3-1
 
 一般地, 我们把一个函数的自变量 $x$ 的值与对应的函数 $y$ 的值分别作为点的横坐标和纵坐标, 在平面直角坐标系中描点, 所有这些点组成的图形就叫作这个函数的图象 (image)。如图 19.3-1 中的图形就是函数 $y = \frac{3}{5} x + 331$ 的图象。 
@@ -42,13 +42,13 @@ lesson_id: 19.3.1
 
 (3) 连线。用平滑的曲线将这些点连接起来, 即得函数的图象, 如图 19.3-2 所示. 
 
-<img src="../images/4f202f7c77086132e10ebbf08d4601b4ee784760722b8a8c5207cc178e4e85a7.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4f202f7c77086132e10ebbf08d4601b4ee784760722b8a8c5207cc178e4e85a7.jpg" style="max-width:100%;"/>
 图19.3-2
 
 
 用计算器可以求出任何一个非负数的算术平方根，显示器显示的结果随输入数的变化而变化。设输入的数为 $x$ ，显示的结果为 $y$ ，程序如图19.3-3所示。 
 
-<img src="../images/5340f554248d6063717acc53abee0d83c8e92a0a3971542f262110c5469b863d.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5340f554248d6063717acc53abee0d83c8e92a0a3971542f262110c5469b863d.jpg" style="max-width:100%;"/>
 图19.3-3
 
 （1）请写出 y 与 x 之间的函数关系式，并指出自变量的取值范围. 
@@ -71,7 +71,7 @@ lesson_id: 19.3.1
 
 (2) 观察图象, 说明气温变化的趋势. 
 
-<img src="../images/9a6176b96e04c5265bb5459a8d473278756d9c5a743186c5037f7b31279a182c.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9a6176b96e04c5265bb5459a8d473278756d9c5a743186c5037f7b31279a182c.jpg" style="max-width:100%;"/>
 (第1题)
 
 2. 小莉和父母出去散步, 从家出发 $20 \mathrm{~min}$ 后到达离家 $900 \mathrm{~m}$ 的书店, 母亲随即按原速度返回, 父亲停留 $10 \mathrm{~min}$ 后, 用了 $15 \mathrm{~min}$ 回到家。请根据关于小莉父亲或母亲距家的路程 $y(\mathrm{m})$ 和离家时间 $x(\mathrm{min})$ 的函数的图象回答: 
@@ -103,7 +103,7 @@ lesson_id: 19.3.1
 
 2. 一辆汽车行驶在路途中。出发时, 油箱内存油 $40 \mathrm{~L}$ 。行驶若干小时后, 司机停车吃饭, 饭后继续行驶一段时间后到某加油站准备加油。图中表示的是该过程中油箱里剩余油量 $Q(\mathrm{L})$ 与行驶时间 $t(\mathrm{h})$ 之间的函数关系。 
 
-<img src="../images/39df72d8f761e76f5f6c437e6ecda78f48ba27bd42b53f3035f50d9f9fcad149.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/39df72d8f761e76f5f6c437e6ecda78f48ba27bd42b53f3035f50d9f9fcad149.jpg" style="max-width:100%;"/>
 (第2题)
 
 (1) 行驶几小时后司机开始吃饭？吃饭用了多长时间？ 
@@ -141,7 +141,7 @@ lesson_id: 19.3.1
 
 5. 在用表达式和图象这两种方式表达玩具车以 $1 \mathrm{~m} / \mathrm{s}$ 的速度匀速行驶的过程时, 得到了表达式 $y = x$ 和如图所示的函数图象. 
 
-<img src="../images/9b828e56e599c6fa2d058f840e425e3db01bf51da5613cf100917ce0d338ddcb.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9b828e56e599c6fa2d058f840e425e3db01bf51da5613cf100917ce0d338ddcb.jpg" style="max-width:100%;"/>
 (第 5 题)
 
 (1) 请从图象上任意找出 5 个点，并写出这 5 个点的坐标. 
@@ -154,7 +154,7 @@ lesson_id: 19.3.1
 
 6、周老师上下班一直坚持步行。已知学校到周老师家的路程为 2000 m。一天，周老师下班后以 45 m/min 的速度从学校往家走，走到距学校 900 m 时遇到朋友，停下来聊了 20 min，之后以 110 m/min 的速度走回了家。在周老师回家的过程中，距家的路程 s(m) 与所用时间 t(min) 之间的关系如图所示。 
 
-<img src="../images/4323e6870fb8332b739fb41af71006cc0179f257912d3e45c8d5ec6dffba7500.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4323e6870fb8332b739fb41af71006cc0179f257912d3e45c8d5ec6dffba7500.jpg" style="max-width:100%;"/>
 (第6题)
 
 (1) 求 a, b, c 的值. 

@@ -96,7 +96,7 @@ source_type: textbook
 
 **原题**：（3）条形统计图、扇形统计图、折线统计图、直方图分别描述数据哪方面的特征？
 
-<img src="./images/b108ae4cf1b0b6674076b499951490e5c502ae5053f2c2578197c3b9e05f24ab.jpg" width="80%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b108ae4cf1b0b6674076b499951490e5c502ae5053f2c2578197c3b9e05f24ab.jpg" width="80%">
 
 **参考解答**：
 

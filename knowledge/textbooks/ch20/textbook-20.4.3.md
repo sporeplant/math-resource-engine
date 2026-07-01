@@ -52,7 +52,7 @@ $$
 
 (2) 以上两个函数的图象如图 20.4-5 所示。两个函数图象的交点坐标是 (5, 50)，即甲出发 $5 \mathrm{~h}$ 后被乙追上（或乙出发 $2 \mathrm{~h}$ 后追上甲）。此时，两人距离出发地 $50 \mathrm{~km}$ 。 
 
-<img src="../images/85b9c862b791e3c5e3a638cdb680820a4d0386cc61887e022c26d1d18937249c.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/85b9c862b791e3c5e3a638cdb680820a4d0386cc61887e022c26d1d18937249c.jpg" style="max-width:100%;"/>
 图20.4-5
 
 # 大家谈谈
@@ -106,7 +106,7 @@ $$
 
 (2) 在同一平面直角坐标系中, 分别画出 $y = 3000x$ , $y = 2000x + 40000$ 这两个函数的图象. 
 
-<img src="../images/89a31ea0842b572e012487e08eb5dddb398a6fb7e44116c367009032b5ba7ba8.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/89a31ea0842b572e012487e08eb5dddb398a6fb7e44116c367009032b5ba7ba8.jpg" style="max-width:100%;"/>
 
 观察图象可知，当租用40个月时，甲、乙两家的租金相同；当租用时间超过40个月时，租乙家的房屋更合算；当租用时间少于40个月时，租甲家的房屋更合算。 
 
@@ -124,7 +124,7 @@ $$
 
 2、A, B两地之间的路程为 $36 \mathrm{~km}$ , 甲、乙二人分别从 A 地和 B 地同时出发, 相向而行. 他们距 A 地的路程 $s(\mathrm{km})$ 和出发后的时间 $t(\mathrm{h})$ 之间的函数关系如图所示. 
 
-<img src="../images/d1a2a038320dc4217400f0e1d01a2f36ac52ed48e83543f9f5941eefb1901de0.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d1a2a038320dc4217400f0e1d01a2f36ac52ed48e83543f9f5941eefb1901de0.jpg" style="max-width:100%;"/>
 (第2题)
 
 (1) 甲行驶了几小时到达 B 地，乙行驶了几小时到达 A 地？ 
@@ -143,7 +143,7 @@ $$
 
 (1) 分别求甲、乙两架无人机的上升高度 $y$ 与上升时间 $x$ 之间的函数关系式. 
 
-<img src="../images/09fb25afc235ff16254be84b53d3d5a4e94284bb467e99a2020d16ed36861766.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/09fb25afc235ff16254be84b53d3d5a4e94284bb467e99a2020d16ed36861766.jpg" style="max-width:100%;"/>
 (第2题)
 
 (2)上升多长时间时,甲无人机比乙无人机高 $24 \mathrm{~m}$ ? 

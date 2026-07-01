@@ -13,7 +13,7 @@ lesson_id: 19.2.1
 
 (2) 图 19.2-1 是某市冬季某天的气温变化图. 
 
-<img src="../images/9f158daf24882eaf6a07fbf7e1f24d6beb0d7e611220dc01ec71731f31ea8ce4.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9f158daf24882eaf6a07fbf7e1f24d6beb0d7e611220dc01ec71731f31ea8ce4.jpg" style="max-width:100%;"/>
 图19.2-1
 
 观察这个气温变化图，你能找到 3 时、9 时和 16 时对应的温度吗？你能得到这天 24 小时内任意时刻对应的温度吗？ 
@@ -92,7 +92,7 @@ lesson_id: 19.2.1
 
 (1) 写出小球的速度 $v(\mathrm{m} / \mathrm{s})$ 和滚动的时间 $t(\mathrm{s})$ 之间的函数关系式，并指出其中的自变量和函数。 
 
-<img src="../images/c252edd2af03759b485bcd746d303d32d2ac5d904ea8bdc5e9ff0fb09555ce45.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c252edd2af03759b485bcd746d303d32d2ac5d904ea8bdc5e9ff0fb09555ce45.jpg" style="max-width:100%;"/>
 (第3题)
 
 (2) 当小球滚动了 $3.5 \mathrm{~s}$ 时, 其速度是多少? 

@@ -72,7 +72,7 @@ source_type: textbook
 
 **原题**：画一个三角形,使它的两条边长分别是 $2.5\text{ cm}$, $1.5\text{ cm}$,并且使长为 $1.5\text{ cm}$ 的这条边所对的角是 $30^\circ$.
 
-<img src="./images/4765aa10cb55889807e1645cf899d7be96eaf525429daf91d71f0406a539c533.jpg" width="75%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4765aa10cb55889807e1645cf899d7be96eaf525429daf91d71f0406a539c533.jpg" width="75%">
 
 **参考解答**：教材图13.3-3给出两种符合条件的三角形。它们都有一条边长为 $2.5\text{ cm}$，另一条边长为 $1.5\text{ cm}$，且长为 $1.5\text{ cm}$ 的边所对的角为 $30^\circ$，但两个三角形形状不同。因此，两条边和其中一边的对角分别相等时，两个三角形不一定全等。
 
@@ -110,8 +110,8 @@ source_type: textbook
 
 **原题**：如图,在 $\triangle ABC$ 和 $\triangle A'B'C'$ 中, $AB=A'B'$, $\angle B=\angle B'$, $BC=B'C'$. 将 $\triangle ABC$ 叠放在 $\triangle A'B'C'$ 上,使顶点 $B$ 与顶点 $B'$ 重合,边 $BC$ 落在边 $B'C'$ 上,点 $A$ 与点 $A'$ 在边 $B'C'$ 的同侧.那么,点 $C$ 与点 $C'$ 是否重合,边 $BC$ 与边 $B'C'$ 是否重合? 边 $BA$ 是否落在边 $B'A'$ 上,点 $A$ 与点 $A'$ 是否重合?
 
-<img src="./images/540b597be31fdb82cb006fd19fbeecc6d13d9303f5cbbc289c50f86b6b3e6564.jpg" width="35%">
-<img src="./images/b1b3dfddc2ed3fa48423808683e4a50ab564e6d47a9859bdc6a52fae72116545.jpg" width="35%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/540b597be31fdb82cb006fd19fbeecc6d13d9303f5cbbc289c50f86b6b3e6564.jpg" width="35%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b1b3dfddc2ed3fa48423808683e4a50ab564e6d47a9859bdc6a52fae72116545.jpg" width="35%">
 
 **参考解答**：
 
@@ -170,8 +170,8 @@ source_type: textbook
 
 **原题**：图13.3-5是一种测量tools-2的示意图。其中 $AB$ 与 $CD$ 的中点 $O$ 被固定在一起, $AB$, $CD$ 可以绕点 $O$ 张合。在图13.3-6中,要想知道玻璃瓶的内径是多少,只要量出 $BD$ 的长就可以了。你知道这是为什么吗? 请把你的想法和同学交流一下。
 
-<img src="./images/8509d6f4efabb71db6f551b8be5cda10abd27cf66d0d56fe3d98942c20b6ea7d.jpg" width="35%">
-<img src="./images/31012a0e3c6afbf41a426d4e4bcbed105cc62991c478a08f43e5c2541e316cd3.jpg" width="35%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8509d6f4efabb71db6f551b8be5cda10abd27cf66d0d56fe3d98942c20b6ea7d.jpg" width="35%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/31012a0e3c6afbf41a426d4e4bcbed105cc62991c478a08f43e5c2541e316cd3.jpg" width="35%">
 
 **参考解答**：因为 $O$ 是 $AB$ 与 $CD$ 的中点，所以 $AO=BO$，$CO=DO$。又因为 $\angle AOC$ 与 $\angle BOD$ 是对顶角，所以 $\angle AOC=\angle BOD$。在 $\triangle AOC$ 和 $\triangle BOD$ 中，
 
@@ -200,7 +200,7 @@ source_type: textbook
 
 **原题**：已知:如图13.3-7, $AD//BC$, $AD=CB$。求证: $\triangle ADC\cong\triangle CBA$。
 
-<img src="./images/e1dcd7d49439a0180d1c3d05de582732657349b8d1ee0c062a021f5fe07ec9e3.jpg" width="45%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e1dcd7d49439a0180d1c3d05de582732657349b8d1ee0c062a021f5fe07ec9e3.jpg" width="45%">
 
 **参考解答**：
 
@@ -239,7 +239,7 @@ source_type: textbook
 
 **原题**：判断图（1）中的 $\triangle AEC$ 与 $\triangle ADB$ 是否全等,并说明理由。已知条件是 $AB=AC$, $AD=AE$。
 
-<img src="./images/6212758f79797cec2bb5eb24113305806a74a689d2a3a6694ba9052d1a117eff.jpg" width="45%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6212758f79797cec2bb5eb24113305806a74a689d2a3a6694ba9052d1a117eff.jpg" width="45%">
 
 **参考解答**：全等。因为 $AB=AC$，$AD=AE$，且 $\angle EAC$ 与 $\angle DAB$ 都是由射线 $AB$ 与 $AC$ 形成的角，所以 $\angle EAC=\angle DAB$。在 $\triangle AEC$ 和 $\triangle ADB$ 中，
 
@@ -268,7 +268,7 @@ source_type: textbook
 
 **原题**：判断图（2）中的 $\triangle ABC$ 与 $\triangle BAD$ 是否全等,并说明理由。已知条件是 $\angle BAC=\angle ABD$, $AC=BD$。
 
-<img src="./images/cedb99f162e0cdbdb194256905739ff076186cde5bd1686aafe708cb290986f5.jpg" width="45%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/cedb99f162e0cdbdb194256905739ff076186cde5bd1686aafe708cb290986f5.jpg" width="45%">
 
 **参考解答**：全等。因为 $AB=BA$，$\angle BAC=\angle ABD$，$AC=BD$。在 $\triangle ABC$ 和 $\triangle BAD$ 中，
 
@@ -297,7 +297,7 @@ source_type: textbook
 
 **原题**：判断图（3）中的 $\triangle ABD$ 与 $\triangle ACE$ 是否全等,并说明理由。已知条件是 $AB=AC$, $AD=AE$, $BE=CD$。
 
-<img src="./images/c9a8c1b09b917e5cd233486968286b5c4fc2c8490ace742eac858b60af227acf.jpg" width="45%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c9a8c1b09b917e5cd233486968286b5c4fc2c8490ace742eac858b60af227acf.jpg" width="45%">
 
 **参考解答**：全等。因为 $BE=CD$，且 $BE=BD+DE$，$CD=CE+DE$，所以 $BD=CE$。在 $\triangle ABE$ 和 $\triangle ACD$ 中，
 
@@ -336,7 +336,7 @@ source_type: textbook
 
 **原题**：已知:如图, $AB=AC$, $AD=AE$, $BD$ 与 $CE$ 相交于点 $O$。求证: $\angle B=\angle C$。
 
-<img src="./images/33c28da7c0e4a74013f0444c3d91c4e719b39f10e0d4de34d9994864b476f3c1.jpg" width="45%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/33c28da7c0e4a74013f0444c3d91c4e719b39f10e0d4de34d9994864b476f3c1.jpg" width="45%">
 
 **参考解答**：
 
@@ -371,7 +371,7 @@ source_type: textbook
 
 **原题**：已知:如图, $AC$、$BD$ 相交于点 $O$,且 $AO=CO$, $BO=DO$。求证: $AB=CD$。
 
-<img src="./images/6c1f4f13be42abcd2efb3a9eb31e25ba4a6fb65af6d459e400599573990ef8ca.jpg" width="45%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6c1f4f13be42abcd2efb3a9eb31e25ba4a6fb65af6d459e400599573990ef8ca.jpg" width="45%">
 
 **参考解答**：
 
@@ -406,7 +406,7 @@ source_type: textbook
 
 **原题**：已知:如图, $AC=DB$, $\angle ACB=\angle DBC$。求证: $\triangle ABC\cong\triangle DCB$。
 
-<img src="./images/b249d945d813f64000164ec87e6a26ae160eee7b091bc482afd56636b44a5466.jpg" width="45%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b249d945d813f64000164ec87e6a26ae160eee7b091bc482afd56636b44a5466.jpg" width="45%">
 
 **参考解答**：
 
@@ -437,7 +437,7 @@ source_type: textbook
 
 **原题**：已知:如图, $AC=DE$, $BC=DF$, $AC//DE$。求证: $AB//FE$。
 
-<img src="./images/ff57caaa05eb6e184429cf16ef67715e86dc3d74860636518c1e91079c776bd8.jpg" width="45%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ff57caaa05eb6e184429cf16ef67715e86dc3d74860636518c1e91079c776bd8.jpg" width="45%">
 
 **参考解答**：
 
@@ -472,7 +472,7 @@ source_type: textbook
 
 **原题**：已知:如图, $AB=AD$, $AC=AE$, $\angle BAD=\angle CAE$。求证: $\angle B=\angle D$。
 
-<img src="./images/34ceff65d3d9985c6b57c72432a15c689e50e72bc139d12f9206da0ddab10c03.jpg" width="45%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/34ceff65d3d9985c6b57c72432a15c689e50e72bc139d12f9206da0ddab10c03.jpg" width="45%">
 
 **参考解答**：
 
@@ -511,7 +511,7 @@ source_type: textbook
 
 **原题**：已知:如图, $AB=AC$, $BE=CE$, $AE$ 的延长线交 $BC$ 于点 $D$。求证: $BD=CD$。
 
-<img src="./images/b1749e92732f5695ab7e0ca14b2e5f6320ed55be46a5976fcfe5a3ac336958d0.jpg" width="45%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b1749e92732f5695ab7e0ca14b2e5f6320ed55be46a5976fcfe5a3ac336958d0.jpg" width="45%">
 
 **参考解答**：
 
@@ -558,7 +558,7 @@ source_type: textbook
 
 **原题**：如图,有一个池塘,要测量池塘岸边 $A$, $B$ 两点间的距离。请设计一个可行的测量方案,按照设计的方案画出图形,并说明理由。
 
-<img src="./images/a2c92289569121a9073cd6d449d039fbed548e0c6a62995f857b944b3efafea4.jpg" width="45%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a2c92289569121a9073cd6d449d039fbed548e0c6a62995f857b944b3efafea4.jpg" width="45%">
 
 **参考解答**：
 

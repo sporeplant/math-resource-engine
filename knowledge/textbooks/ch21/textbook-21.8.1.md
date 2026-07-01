@@ -6,15 +6,15 @@ chapter_name: 四边形
 section_name: 梯形
 lesson_id: 21.8.1
 ---:|:---:|
-| <img src="../images/03cfbf31dc0c95c7d21971b7899bf171250f4fe4535884d4f8dfabb267601d79.jpg" width="35%"><br>中式家具 | <img src="../images/5ce2e19dedf7631e99fd1cbfcc66975651af933a5a74b2ab1ee3f9d6f330560b.jpg" width="35%"><br>龙门起重机 |
-| <img src="../images/de8a6e26d8777752f2c309192fe8b722c363897ff5307255985faa1492c8f486.jpg" width="35%"><br>足球门 | <img src="../images/f53d77f15cc34cea8c12e61dfd61eb8efd3d736b0c056e911ccb88e62201c6f5.jpg" width="35%"><br>挡车器 |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/03cfbf31dc0c95c7d21971b7899bf171250f4fe4535884d4f8dfabb267601d79.jpg" width="35%"><br>中式家具 | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5ce2e19dedf7631e99fd1cbfcc66975651af933a5a74b2ab1ee3f9d6f330560b.jpg" width="35%"><br>龙门起重机 |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/de8a6e26d8777752f2c309192fe8b722c363897ff5307255985faa1492c8f486.jpg" width="35%"><br>足球门 | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f53d77f15cc34cea8c12e61dfd61eb8efd3d736b0c056e911ccb88e62201c6f5.jpg" width="35%"><br>挡车器 |
 
 
 从上面的图片中，可以抽象出如下一类四边形. 
 | | |
 |:---:|:---:|
-| <img src="../images/67482fe2d351ae7531424212008ba3a588ab75e386d85a550d70c859f2bb5503.jpg" width="35%"> | <img src="../images/786ad19087df87d55553ce77bcdceaeb1d1974728cff664e4998710d3e0fe299.jpg" width="35%"> |
-| <img src="../images/afd012008b38d9b5643a218d218cee8f4254f6d9b45f82d0c997a57387389ddd.jpg" width="35%"> | |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/67482fe2d351ae7531424212008ba3a588ab75e386d85a550d70c859f2bb5503.jpg" width="35%"> | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/786ad19087df87d55553ce77bcdceaeb1d1974728cff664e4998710d3e0fe299.jpg" width="35%"> |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/afd012008b38d9b5643a218d218cee8f4254f6d9b45f82d0c997a57387389ddd.jpg" width="35%"> | |
 我们把只有一组对边平行的四边形叫作梯形(trapezoid). 
 ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/18a4a41d96866b9970a6b72f3ec6638fc93808d4379c840ce18b1bafa03de744.jpg)
 在梯形中，平行的两边叫作梯形的底，通常把较短的底叫作上底，较长的底叫作下底；不平行的两边叫作梯形的腰；梯形上底和下底之间的垂线段叫作梯形的高。 
@@ -22,8 +22,8 @@ lesson_id: 21.8.1
 如图 21.8-1, 在梯形 $ABCD$ 中, $DC$ 和 $AB$ 分别是梯形的上底和下底, $AD$ 和 $BC$ 都是梯形的腰, $DE \perp AB$ 于点 $E$ , $DE$ 是梯形的高. 
 | | |
 |:---:|:---:|
-| <img src="../images/209df9bda8604ada3186ac79b3031d3d4dca00231e34953bbf9827edd59925de.jpg" width="35%"><br>图21.8-1 | <img src="../images/b7d7dfc22f04e0f7914ad1715f58773ebc1da9b78fce31ba38af63a08b52e0b2.jpg" width="35%"><br>直角梯形 |
-| <img src="../images/8dd53b8aebbe890b91a0928a6dc5cbe1cd4c771671805709f3304c95e3d5c6a4.jpg" width="35%"><br>等腰梯形 | |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/209df9bda8604ada3186ac79b3031d3d4dca00231e34953bbf9827edd59925de.jpg" width="35%"><br>图21.8-1 | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b7d7dfc22f04e0f7914ad1715f58773ebc1da9b78fce31ba38af63a08b52e0b2.jpg" width="35%"><br>直角梯形 |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8dd53b8aebbe890b91a0928a6dc5cbe1cd4c771671805709f3304c95e3d5c6a4.jpg" width="35%"><br>等腰梯形 | |
 
 
 图21.8-2
@@ -56,7 +56,7 @@ $\therefore A D = E C.$
 $\therefore E C = B C.$ $\therefore \angle C E B = \angle B.$ $\because \quad C E / / A D,$ $\therefore \angle C E B = \angle A.$ $\therefore \angle A = \angle B.$
 | | |
 |:---:|:---:|
-| <img src="../images/aeb71c7604fd28d91790372e6bf982afeee8592310bd5e5f42c9e0aae4d6bbbe.jpg" width="35%"><br>图21.8-3 | <img src="../images/da1821b52f351501cd2a7d49b6e34ce8931def13afc82e6e93ffd915bf9cdf73.jpg" width="35%"><br>图21.8-4 |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/aeb71c7604fd28d91790372e6bf982afeee8592310bd5e5f42c9e0aae4d6bbbe.jpg" width="35%"><br>图21.8-3 | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/da1821b52f351501cd2a7d49b6e34ce8931def13afc82e6e93ffd915bf9cdf73.jpg" width="35%"><br>图21.8-4 |
 
 
 想一想: 如果把例 1 已知条件中的 "AD = BC" 换成 " $\angle A = \angle B$ ", 你能证出 $AD = BC$ 吗? 
@@ -87,7 +87,7 @@ $\therefore F C = \sqrt {D C ^ {2} - D F ^ {2}} = \sqrt {2 0 ^ {2} - 1 0 ^ {2}} 
 1. 如图, 在梯形 $ABCD$ 中, 已知 $AB \parallel CD$ , 点 $E$ 在边 $AB$ 上, $CE \parallel AD$ , $AE = 5$ , $\triangle BCE$ 的周长为 27、求梯形 $ABCD$ 的周长. 
 | | |
 |:---:|:---:|
-| <img src="../images/464df40eb82294f7c9203b255c2f6a33272f4c500bd38ba79fba316067d0b694.jpg" width="35%"><br>(第1题) | <img src="../images/1f54fd979fdabf32a65a2e3528c17da3e3ada64786d6274b9c2f88d28b243d0b.jpg" width="35%"><br>(第2题) |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/464df40eb82294f7c9203b255c2f6a33272f4c500bd38ba79fba316067d0b694.jpg" width="35%"><br>(第1题) | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1f54fd979fdabf32a65a2e3528c17da3e3ada64786d6274b9c2f88d28b243d0b.jpg" width="35%"><br>(第2题) |
 
 
 2. 如图, 在直角梯形 $ABCD$ 中, $AB \parallel DC$ , $\angle A = 90^{\circ}$ , $AB = 10$ , $BC = 13$ , $DC = 15$ , 求梯形的高. 
@@ -99,7 +99,7 @@ $\therefore F C = \sqrt {D C ^ {2} - D F ^ {2}} = \sqrt {2 0 ^ {2} - 1 0 ^ {2}} 
 1. 如图是一个机械设备上已损坏零件的平面图, 四边形 $ABCD$ 是梯形, $AD \parallel BC$ . 经过测量得到 $\angle A = 122^{\circ}$ , $\angle D = 114^{\circ}$ , $\angle B$ 和 $\angle C$ 由于已经损坏, 不便测量. 你能求出 $\angle B$ 和 $\angle C$ 的度数吗? 请说明理由. 
 | | |
 |:---:|:---:|
-| <img src="../images/ae6fd097529f4ad30560ef72a1a35c62c65e049b98af00029cb49225843f68b8.jpg" width="35%"><br>(第1题) | <img src="../images/99cf07bcb68b56716f2616764ac0d6b8b34c12cb0dfb37b490eccc0e27e4e82d.jpg" width="35%"><br>(第2题) |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ae6fd097529f4ad30560ef72a1a35c62c65e049b98af00029cb49225843f68b8.jpg" width="35%"><br>(第1题) | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/99cf07bcb68b56716f2616764ac0d6b8b34c12cb0dfb37b490eccc0e27e4e82d.jpg" width="35%"><br>(第2题) |
 
 
 2. 如图, 在梯形 $ABCD$ 中, $AB \parallel CD$ , 对角线 $AC$ 与 $BD$ 相交于点 $O$ . 从图中找出所有面积相等的三角形, 并说明理由. 

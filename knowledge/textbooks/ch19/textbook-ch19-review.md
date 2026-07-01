@@ -109,7 +109,7 @@ lesson_id: ch19-activity-review
 
 13. 下图是人体每小时排出的汗液量和尿液量随环境温度变化的曲线。请观察图象，然后回答： 
 
-<img src="../images/976e246cede2b0093199959eceae1ac788f48f544c5d4c961f5e657483fe43f1.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/976e246cede2b0093199959eceae1ac788f48f544c5d4c961f5e657483fe43f1.jpg" style="max-width:100%;"/>
 (第 13 题)
 
 (1) 随着环境温度的升高，汗液量和尿液量分别有什么变化？ 

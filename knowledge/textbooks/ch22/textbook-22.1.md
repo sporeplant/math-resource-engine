@@ -6,7 +6,7 @@ chapter_name: 数据的收集与整理
 section_name: 统计的初步认识
 lesson_id: 22.1.1
 ---:|:---:|
-| <img src="../images/0c6295653a22683a7240c1a1b1800edd1ac292595c21ba7eb2873011c43bce4f.jpg" width="35%"> | <img src="../images/251c982eda29fa405a44c077df91089e514bdfd61f5e7f3028fe5d3d80a0c9cd.jpg" width="35%"> |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0c6295653a22683a7240c1a1b1800edd1ac292595c21ba7eb2873011c43bce4f.jpg" width="35%"> | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/251c982eda29fa405a44c077df91089e514bdfd61f5e7f3028fe5d3d80a0c9cd.jpg" width="35%"> |
 
 # 22.1 统计的初步认识
 
@@ -47,7 +47,7 @@ lesson_id: 22.1.1
 为了更直观地看出统计表中的信息，将统计结果绘制成如下统计图. 
 | | |
 |:---:|:---:|
-| <img src="../images/90f0664110b619d0a1953e4d90440a5278f39bb25802b0c7454c36eb3bb44617.jpg" width="35%"><br>图22.1-1 | <img src="../images/1762ca18ec87d59cd4ef8b5c280a6e094a921bcfc57bd4a555878944a3f4eaec.jpg" width="35%"><br>图22.1-2 |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/90f0664110b619d0a1953e4d90440a5278f39bb25802b0c7454c36eb3bb44617.jpg" width="35%"><br>图22.1-1 | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1762ca18ec87d59cd4ef8b5c280a6e094a921bcfc57bd4a555878944a3f4eaec.jpg" width="35%"><br>图22.1-2 |
 
 如图22.1-1和图22.1-2所示是绘制的条形统计图和扇形统计图. 
 

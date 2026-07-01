@@ -6,7 +6,7 @@ chapter_name: 数据的收集与整理
 section_name: 回顾与反思
 lesson_id: ch22-review-2
 ---:|:---:|
-| <img src="../images/6887c1d01e98d208aa2db5b9d760f94c70ecb87c02d93a6123df67a02a1c87bb.jpg" width="35%"><br>(1) | <img src="../images/d07c950f5c496fb802d5f1e4c4d020574509910746cd45410128bc7d2ba2c02c.jpg" width="35%"><br>(2) |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6887c1d01e98d208aa2db5b9d760f94c70ecb87c02d93a6123df67a02a1c87bb.jpg" width="35%"><br>(1) | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d07c950f5c496fb802d5f1e4c4d020574509910746cd45410128bc7d2ba2c02c.jpg" width="35%"><br>(2) |
 
 (第9题)
 

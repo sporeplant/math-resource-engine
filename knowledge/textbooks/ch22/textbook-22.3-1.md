@@ -6,7 +6,7 @@ chapter_name: 数据的收集与整理
 section_name: 数据的整理与分析
 lesson_id: 22.3.1
 ---:|:---:|
-| <img src="../images/43eb6a2e37a6d9fe6c1269af4b46915436d0ce068287ea1cdbf5dd21120ccd1e.jpg" width="35%"><br>图22.3-1 | <img src="../images/8f6c47c14964fd887ff5ad347577e65abd636deaae11af507a5c7c01be9e3348.jpg" width="35%"><br>图22.3-2 |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/43eb6a2e37a6d9fe6c1269af4b46915436d0ce068287ea1cdbf5dd21120ccd1e.jpg" width="35%"><br>图22.3-1 | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8f6c47c14964fd887ff5ad347577e65abd636deaae11af507a5c7c01be9e3348.jpg" width="35%"><br>图22.3-2 |
 
 我们常用圆和扇形来表示整体和部分的关系，即用圆表示整体，各个扇形的大小表示各部分所占的百分比. 
 
@@ -85,7 +85,7 @@ D(高度近视) $360^{\circ} \times 2\% = 7.2^{\circ}$ .
 4. 图(1)和图(2)分别是甲、乙两户居民家庭某年10月份支出情况的统计图。已知乙户居民10月份的总支出为6300元。 
 | | |
 |:---:|:---:|
-| <img src="../images/ae5f4a3b4692ce0695bcdea75e9ba2dd9c5e1285a731bc636b47df16dbf1181d.jpg" width="35%"><br>(1) | <img src="../images/aa0bf1e4a1362e12325cb35a30de72f52628a8e7c7180c4fbb66412b3a60d811.jpg" width="35%"><br>(2) |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ae5f4a3b4692ce0695bcdea75e9ba2dd9c5e1285a731bc636b47df16dbf1181d.jpg" width="35%"><br>(1) | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/aa0bf1e4a1362e12325cb35a30de72f52628a8e7c7180c4fbb66412b3a60d811.jpg" width="35%"><br>(2) |
 
 (第4题)
 

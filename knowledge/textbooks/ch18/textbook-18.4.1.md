@@ -20,7 +20,7 @@ lesson_id: 18.4.1
 
 例如图 18.4-2, 在平面直角坐标系中, 长方形 $ABCD$ 各顶点的坐标分别为 $A(-2, 1)$ , $B(2, 1)$ , $C(2, 3)$ , $D(-2, 3)$ . 将长方形 $ABCD$ 沿 $x$ 轴方向向右平移 5 个单位长度, 得到长方形 $A_{1}B_{1}C_{1}D_{1}$ . 请写出长方形 $A_{1}B_{1}C_{1}D_{1}$ 各顶点的坐标, 并指出对应顶点坐标的变化规律. 
 
-<img src="../images/02bc6e0f7784b2506a9b4c8961dcee91cb85355aecf06ede4c1a5d8bbccbca9b.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/02bc6e0f7784b2506a9b4c8961dcee91cb85355aecf06ede4c1a5d8bbccbca9b.jpg" style="max-width:100%;"/>
 图18.4-2
 
 解：长方形 $A_{1}B_{1}C_{1}D_{1}$ 各顶点的坐标分别为： 

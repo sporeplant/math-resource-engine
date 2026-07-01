@@ -24,14 +24,14 @@ type: 教材原文
 
 如图 18.2-6, 平面直角坐标系的两条坐标轴将平面分成了四个部分,从右上方的部分开始, 按逆时针方向, 各部分依次叫作第一象限、第二象限、第三象限和第四象限。坐标轴上的点不属于任何一个象限。 
 
-<img src="../images/baf7f708e2b47a31b5c1ff013d233179a4809fd81042d09f66f606db567c1154.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/baf7f708e2b47a31b5c1ff013d233179a4809fd81042d09f66f606db567c1154.jpg" style="max-width:100%;"/>
 图18.2-6
 
 # 一起探究
 
 如图18.2-7，八边形 $ABCDEFGH$ 与两条坐标轴的交点分别是 $M$ ， $N, P, Q$ 四点。 
 
-<img src="../images/0236a9bbf0656aaf14542f92490277f974b91b82ca71c7dc2397dc33e97d3185.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0236a9bbf0656aaf14542f92490277f974b91b82ca71c7dc2397dc33e97d3185.jpg" style="max-width:100%;"/>
 图18.2-7
 
 (1) 分别写出各点的坐标. 
@@ -72,7 +72,7 @@ $$
 
 关于 y 轴对称的点分别是点 A 和点 J，点 B 和点 I，点 C 和点 H，点 D 和点 G，点 E 和点 F，点 L 和点 K。关于原点对称的点分别是点 A 和点 G，点 B 和点 H，点 C 和点 I，点 D 和点 J，点 E 和点 K，点 F 和点 L。 
 
-<img src="../images/4a404ce67dbe79aea437f83a0e3d02332dadb784e21c1054025aa9d4d57c0139.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4a404ce67dbe79aea437f83a0e3d02332dadb784e21c1054025aa9d4d57c0139.jpg" style="max-width:100%;"/>
 图18.2-8
 
 # 练习

@@ -11,7 +11,7 @@ lesson_id: 19.4.1
 
 并根据上表绘制了一条曲线，如下图. 
 
-<img src="../images/fa8c61d3e30d971d8ace48ea61f8554fcf356e8feee54a285cb136c3e1601952.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/fa8c61d3e30d971d8ace48ea61f8554fcf356e8feee54a285cb136c3e1601952.jpg" style="max-width:100%;"/>
 
 这就是著名的艾宾浩斯遗忘曲线。这条曲线告诉我们：遗忘的进程是不均衡的，但是有显著的规律，这就是先快后慢。你看，在前面几小时里遗忘的速度是多么快呀！到6天以后，遗忘的速度就变得很慢。这条曲线给我们什么启示呢？学习的知识如果不及时复习，一天后大约只能记住开始的三分之一了！因此，我们要尊重科学，及时复习，与遗忘抗争，巩固记忆。 
 
@@ -76,7 +76,7 @@ lesson_id: 19.4.1
 
 问题： 
 
-<img src="../images/d44fa49f6c06cc4216162f3660cb63274ef4aa6f6ae2af6302fc8d72b732cd4c.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d44fa49f6c06cc4216162f3660cb63274ef4aa6f6ae2af6302fc8d72b732cd4c.jpg" style="max-width:100%;"/>
 (第2题)
 
 (1) 一天售出多少个这种电子元件时盈利最多, 最多盈利多少元? 
@@ -91,14 +91,14 @@ lesson_id: 19.4.1
 
 2. 如图是某地区学生的平均体重(kg)随年龄(岁)变化的图象。 
 
-<img src="../images/3237a0a999f1cd5bf971a5ef03db21cbc345011a3261fc90e12e1cba4830c431.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3237a0a999f1cd5bf971a5ef03db21cbc345011a3261fc90e12e1cba4830c431.jpg" style="max-width:100%;"/>
 (第1题)
 
 (1) 在哪个年龄段，女生的平均体重略高于男生的平均体重？ 
 
 (2) 从哪个年龄开始, 男生的平均体重超过了女生的平均体重? 
 
-<img src="../images/9a4a4cc86b2139d7bea0d8a69cd97633651ec36082429f9764cc13aeb7f5f204.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9a4a4cc86b2139d7bea0d8a69cd97633651ec36082429f9764cc13aeb7f5f204.jpg" style="max-width:100%;"/>
 (第2题)
 
 3. 为改善市民的居住环境, 某市在老旧房屋改造中, 除解决原有居民的住房需求外, 还对外销售一部分楼盘。已知一栋楼共有 30 层, 从第 8 层开始, 售价 $y$ (元/平方米)与楼层 $x (8 \leqslant x \leqslant 30$ , $x$ 为整数)之间的关系如下表: 
@@ -132,7 +132,7 @@ lesson_id: 19.4.1
 
 5. “三北”防护林工程经过建设者数十年的奋斗，在水土保持、防风固沙、农田保护等方面取得了显著的成效。某气象站观察一场沙尘暴从发生到结束的全过程如下：开始时，风速按一定的速度匀速增大；经过荒漠地时，风速增大得比较快；一段时间后，风速保持不变；经过防风林时， 风速开始逐渐减小，直至为零。如图所示是风速与时间之间关系的图象。请结合图象回答下列问题： 
 
-<img src="../images/64918913b22c28250a21f001967c70f228eec10e2f598aed914823baa402c8f8.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/64918913b22c28250a21f001967c70f228eec10e2f598aed914823baa402c8f8.jpg" style="max-width:100%;"/>
 (第 5 题)
 
 (1) 沙尘暴从开始发生到结束，共经历了多长时间？ 

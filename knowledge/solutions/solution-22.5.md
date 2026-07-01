@@ -48,7 +48,7 @@ source_type: textbook
 
 **原题**：如果身高用 $y(\mathrm{cm})$ 表示，小臂长用 $x(\mathrm{cm})$ 表示，在图22.5-1所示的平面直角坐标系中，描出各对数值 $(x, y)$ 所对应的点.
 
-<img src="./images/bf3a4dfe0fc250f491dc10602ea392b9193ed854ad9338d5b534a26a520a4cfd.jpg" width="75%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bf3a4dfe0fc250f491dc10602ea392b9193ed854ad9338d5b534a26a520a4cfd.jpg" width="75%">
 
 **参考解答**：在坐标系中依次描出
 $(23.0,156.2)$、$(23.3,158.1)$、$(24.0,159.8)$、$(24.5,160.2)$、$(24.8,161.3)$、$(25.0,163.2)$、$(25.6,164.5)$、$(26.0,167.2)$、$(26.5,169.5)$、$(27.0,170.0)$。
@@ -87,7 +87,7 @@ source_type: textbook
 
 **原题**：(2) 你能用一条直线来描述这种变化趋势吗? 如果能, 应怎样确定这条直线以及对应的一次函数呢?
 
-<img src="./images/e2106297f15f207a5feb869866fb1f0bb0fd68cbba34f091a68212751856fc31.jpg" width="75%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e2106297f15f207a5feb869866fb1f0bb0fd68cbba34f091a68212751856fc31.jpg" width="75%">
 
 **参考解答**：能。先画一条直线，使其整体上与各数据点较接近；再在直线上选取两点，如 $(24.0,159.8)$ 和 $(27.0,170.0)$。设直线对应的一次函数为 $y=kx+b$，则
 
@@ -217,7 +217,7 @@ source_type: textbook
 
 (1) 设计统计表记录数据，并在平面直角坐标系中描出点 $(x, y)$ .
 
-<img src="./images/fd1b959e57fa4f0a7c7c9841796b7095407f64738aedb45abf89d2b75aa1ece9.jpg" width="30%">
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/fd1b959e57fa4f0a7c7c9841796b7095407f64738aedb45abf89d2b75aa1ece9.jpg" width="30%">
 
 **参考解答**：本题需使用实际测量数据，不虚构班级数据。可采用下表记录：
 

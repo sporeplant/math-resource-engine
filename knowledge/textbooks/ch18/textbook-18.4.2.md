@@ -48,7 +48,7 @@ $O(0, 0)$ , $A(2, 6)$ , $B(6, 6)$ , $C(8, 0)$ .
 
 1. $\triangle ABC$ 在平面直角坐标系中的位置如图所示. 
 
-<img src="../images/e6d11a70ec024a8a044cadaf3141e134d9c9d31c48c3542b286a80034f76a092.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e6d11a70ec024a8a044cadaf3141e134d9c9d31c48c3542b286a80034f76a092.jpg" style="max-width:100%;"/>
 (第1题)
 
 (1) 作与 $\triangle ABC$ 关于 $x$ 轴成轴对称的 $\triangle A_{1}B_{1}C_{1}$ , 并写出 $\triangle A_{1}B_{1}C_{1}$ 各顶点的坐标. 
@@ -82,7 +82,7 @@ $O(0, 0)$ , $A(2, 6)$ , $B(6, 6)$ , $C(8, 0)$ .
 
 2. (1) 在如图所示的平面直角坐标系中, 分别描出点 $A, B, C$ 关于原点 $O$ 的对称点 $A_{1}, B_{1}, C_{1}$ , 写出点 $A_{1}, B_{1}, C_{1}$ 的坐标, 并分别依次连接点 $A, B, C, A$ 和点 $A_{1}, B_{1}, C_{1}, A_{1}$ . 
 
-<img src="../images/121cc0e19087dfb95963ec84139e2e316f4f1ad07d1e1f739b7a0d65cda8b28e.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/121cc0e19087dfb95963ec84139e2e316f4f1ad07d1e1f739b7a0d65cda8b28e.jpg" style="max-width:100%;"/>
 (第2题)
 
 (2) 描述 $\triangle ABC$ 和 $\triangle A_{1}B_{1}C_{1}$ 各对应顶点坐标之间的关系. 

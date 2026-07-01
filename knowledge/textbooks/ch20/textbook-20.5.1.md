@@ -34,7 +34,7 @@ type: 教材原文
 
 (2) 若 $\left\{\begin{aligned}x &=a,\\ y &=b\end{aligned}\right.$ 是二元一次方程 $x + y = 1$ 的一组解，则坐标为 $(a, b)$ 的点是否在一次函数 $y = -x + 1$ 的图象上？ 
 
-<img src="../images/49fa36c0586d6a565bdc55bbf1ffa096023a36cf9e54e11a9e6dfa2565ee0571.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/49fa36c0586d6a565bdc55bbf1ffa096023a36cf9e54e11a9e6dfa2565ee0571.jpg" style="max-width:100%;"/>
 图20.5-1
 
 通过上面的探究活动, 我们发现: 以二元一次方程 $x + y = 1$ 的解为坐标的点都在一次函数 $y = -x + 1$ 的图象上; 反过来, 一次函数 $y = -x + 1$ 图象上点的坐标都是二元一次方程 $x + y = 1$ 的解. 
@@ -53,7 +53,7 @@ type: 教材原文
 
 (2) 我们知道, 一次函数 $y = -\frac{2}{3} x + 3$ 图象上任意一点的坐标都是二元一次方程 ${2x} + {3y} = 9$ 的解. 同理, 一次函数 $y = x - 2$ 图象上任意一点的坐标也都是二元一次方程 $x - y = 2$ 的解. 所以, 直线 ${l}_{1}$ 
 
-<img src="../images/6c9963bf4de223b0b7bdbe023ea2317f144f31bdf7cdd963efcb5cc3cc5ef2bb.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6c9963bf4de223b0b7bdbe023ea2317f144f31bdf7cdd963efcb5cc3cc5ef2bb.jpg" style="max-width:100%;"/>
 图20.5-2
 
 与直线 $l_{2}$ 的交点 P 的坐标就是二元一次方程 $2x + 3y = 9$ 和 x - y = 2 的公共解，即为二元一次方程组 $\left\{\begin{aligned}&2x + 3y = 9,\\ &x - y = 2\end{aligned}\right.$ 的解. 因此，解方程组 $\left\{\begin{aligned}y&=-\frac{2}{3}x+3,\\ y&=x-2,\end{aligned}\right.$ 得 $\left\{\begin{aligned}x&=3,\\ y&=1.\end{aligned}\right.$ 
@@ -98,6 +98,6 @@ type: 教材原文
 
 (3) 依据图象信息, 确定不等式 $k x + b > - x + 4$ 的解集. 
 
-<img src="../images/8c6a9b35d1139cc07cb874e855bb8022ced536ff6d2db8a4266fb049afbea0b3.jpg" style="max-width:100%;"/>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8c6a9b35d1139cc07cb874e855bb8022ced536ff6d2db8a4266fb049afbea0b3.jpg" style="max-width:100%;"/>
 (第5题)
 

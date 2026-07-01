@@ -6,7 +6,7 @@ chapter_name: 数据的收集与整理
 section_name: 数据的整理与分析
 lesson_id: 22.3.2
 ----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="../images/9c2466b5fac3aa4dd6147e2cced47e70ef5635d6815516230d51174f9645bde9.jpg" width="35%"><br>图22.3-6 | <img src="../images/bda5781a57e9b94dd43716a596d1dbf5ab2e769b214d661d00fe58977a4f92f7.jpg" width="35%"><br>图22.3-7 |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9c2466b5fac3aa4dd6147e2cced47e70ef5635d6815516230d51174f9645bde9.jpg" width="35%"><br>图22.3-6 | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bda5781a57e9b94dd43716a596d1dbf5ab2e769b214d661d00fe58977a4f92f7.jpg" width="35%"><br>图22.3-7 |
 
 (1) 请根据统计图所反映的信息填写下表. 
 
@@ -62,7 +62,7 @@ lesson_id: 22.3.2
 
 |                                                              |                                                              |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="../images/e57c539ab7965ecf5c148347b05bb86c7d0c3953f5d7a586c63fcfd3b2829408.jpg" width="35%"> | <img src="../images/608d07e756f2bd88c39f3aaae3cdb5789b289b42e135133b386d1865ae640b30.jpg" width="35%"> |
+| <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e57c539ab7965ecf5c148347b05bb86c7d0c3953f5d7a586c63fcfd3b2829408.jpg" width="35%"> | <img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/608d07e756f2bd88c39f3aaae3cdb5789b289b42e135133b386d1865ae640b30.jpg" width="35%"> |
 |                           (第3题)                            |                                                              |
 
 (1) 分别计算各学段男、女生视力不良率. 
