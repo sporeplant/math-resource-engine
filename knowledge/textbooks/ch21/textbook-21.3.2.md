@@ -113,7 +113,7 @@ type: 教材原文
 # A 组
 
 1. 已知：如图，\(D, E\) 分别为 \(\triangle ABC\) 的边 \(AB\) 和边 \(AC\) 的中点，延长 \(DE\) 到点 \(F\)，使 \(EF = DE\)，连接 \(CF\)。求证：四边形 \(BCFD\) 是平行四边形。
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e5e92c8d6fc9df455f500f6a5d684baec72b33b414c0705a7f5ecef8c8e767d4e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/604b8f16dcffe90934a1d5a5d0a927352a3227dfe173f277d0410d905a4af850.jpg)
 （第1题）
 
 2. 如图，已知三点 \(A, B, C\)。画平行四边形，使其三个顶点分别是点 \(A, B, C\)。

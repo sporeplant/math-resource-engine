@@ -47,7 +47,7 @@ type: 教材原文
 求证：四边形 \(ABCD\) 是平行四边形。
 ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4e74f93cc74de2217c45b2b3214d550236b7913997e281423798285e7645d080.jpg)
 图21.3-1
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/91ddb85242f26652868eeb3d173bfe975f04f6bff8825413274e9fb1fcadac1.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/604b8f16dcffe90934a1d5a5d0a927352a3227dfe173f277d0410d905a4af850.jpg)
 图21.3-2
 
 证明：如图21.3-2，连接 \(BD\)。

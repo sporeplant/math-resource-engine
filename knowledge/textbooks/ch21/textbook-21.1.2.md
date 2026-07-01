@@ -9,7 +9,7 @@ lesson_id: 21.1.1
 | 四边形 | 4 | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/94ecc1e415a434790f21b40db5c67c337041ed537c01e7a6d695f751e17b8968.jpg) | 2 | 360° |
 | 五边形 | 5 | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0a9dbe89ca638e61381b3e700bd79a1cd4cdb42bb3f2437a87fd31c01f7e454e.jpg) | | |
 | 六边形 | 6 | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6a32adb26c63235197b74b5207da91ed18b9844ecbab7f3b9e0e97998a578019.jpg) | | |
-| 七边形 | 7 | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2b46590b99fa0e621a82183d8254445bd5ea2d270a2383c8f0503b552e7b7a4a.jpg) | | |
+| 七边形 | 7 | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/23061ae74c1eabac296c59f297711a593d9f2569a28f67500a8ba1102dea94b4.jpg) | | |
 | ⋮ | ⋮ | ⋮ | ⋮ | ⋮ |
 | \(n\)边形 | \(n\) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/863b002ef065723b40344d346f358706d3e3f91b04f1a4777e90d47b3d09f0ca.jpg) | | |
 

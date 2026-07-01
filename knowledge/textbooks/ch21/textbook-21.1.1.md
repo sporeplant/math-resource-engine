@@ -83,7 +83,7 @@ type: 教材原文
 \(\therefore \angle BAD + \angle B + \angle BCD + \angle D = 360^{\circ}\)。
 ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a38aaa8dfee7a74c729cc7027cbd95cd4e2c5ce49842acc48bf9295770baa04e.jpg)
 图21.1-4
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c2b075b28f12fded8747a0e24d9cb05653f2faa978c0bb70fcccd7a706093147.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/23061ae74c1eabac296c59f297711a593d9f2569a28f67500a8ba1102dea94b4.jpg)
 图21.1-5
 
 还有其他证明方法吗？
