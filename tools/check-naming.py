@@ -14,22 +14,34 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
-CHINESE_PATTERN = re.compile(r'[\u4e00-\u9fff\u3400-\u4dbf\uff00-\uffef]')
-HASH_ONLY_PATTERN = re.compile(r'^doc?-?[0-9a-f]{8,}$', re.IGNORECASE)
+CHINESE_PATTERN = re.compile(r"[\u4e00-\u9fff\u3400-\u4dbf\uff00-\uffef]")
+HASH_ONLY_PATTERN = re.compile(r"^doc?-?[0-9a-f]{8,}$", re.IGNORECASE)
+UPPERCASE_EXCEPTIONS = {
+    "SKILL.md",
+    "checklist.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "README.md",
+    "Makefile",
+}
 OLD_DIRS = [
-    '知识库/', '输出/', '学生近期数据/',
-    '主控/', '技能/', '验证器/',
-    '知识库', '输出', '学生近期数据',
-    '主控', '技能', '验证器',
+    "知识库/",
+    "输出/",
+    "学生近期数据/",
+    "主控/",
+    "技能/",
+    "验证器/",
 ]
 
-CHINESE_IMG_RE = re.compile(r'!\[.*?\]\(.*?[\u4e00-\u9fff].*?\)')
+CHINESE_IMG_RE = re.compile(r"!\[.*?\]\(.*?[\u4e00-\u9fff].*?\)")
 
 
 def staged_files() -> list[Path]:
     result = subprocess.run(
-        ['git', 'diff', '--cached', '--name-only', '--diff-filter=ACMR'],
-        capture_output=True, text=True, cwd=REPO_ROOT,
+        ["git", "diff", "--cached", "--name-only", "--diff-filter=ACMR"],
+        capture_output=True,
+        text=True,
+        cwd=REPO_ROOT,
     )
     if result.returncode != 0:
         print(f"git error: {result.stderr}", file=sys.stderr)
@@ -39,8 +51,10 @@ def staged_files() -> list[Path]:
 
 def added_staged_files() -> set[Path]:
     result = subprocess.run(
-        ['git', 'diff', '--cached', '--name-only', '--diff-filter=A'],
-        capture_output=True, text=True, cwd=REPO_ROOT,
+        ["git", "diff", "--cached", "--name-only", "--diff-filter=A"],
+        capture_output=True,
+        text=True,
+        cwd=REPO_ROOT,
     )
     if result.returncode != 0:
         print(f"git error: {result.stderr}", file=sys.stderr)
@@ -52,11 +66,11 @@ def check_name(name: str) -> list[str]:
     errors = []
     if CHINESE_PATTERN.search(name):
         errors.append(f"  contains Chinese characters: {name}")
-    if ' ' in name:
+    if " " in name:
         errors.append(f"  contains space: {name}")
-    if '_' in name:
+    if "_" in name:
         errors.append(f"  contains underscore: {name}")
-    if name != name.lower():
+    if name != name.lower() and name not in UPPERCASE_EXCEPTIONS:
         errors.append(f"  contains uppercase: {name}")
     stem = Path(name).stem
     if HASH_ONLY_PATTERN.match(stem):
@@ -67,7 +81,7 @@ def check_name(name: str) -> list[str]:
 def check_content(path: Path) -> list[str]:
     errors = []
     try:
-        text = path.read_text(encoding='utf-8')
+        text = path.read_text(encoding="utf-8")
     except (UnicodeDecodeError, OSError):
         return []
     for old in OLD_DIRS:
@@ -94,21 +108,29 @@ def check_all(paths: list[Path]) -> list[str]:
         if resolved in added_paths:
             for part in rel.parts:
                 errors.extend(check_name(part))
-        if path.is_file() and path.suffix == '.md':
+        if path.is_file() and path.suffix == ".md":
             errors.extend(check_content(path))
     return errors
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Check file naming and content references.")
-    parser.add_argument('files', nargs='*', type=Path, help='Files to check (default: staged files)')
-    parser.add_argument('--all', action='store_true', help='Check all tracked files instead of staged')
+    parser = argparse.ArgumentParser(
+        description="Check file naming and content references."
+    )
+    parser.add_argument(
+        "files", nargs="*", type=Path, help="Files to check (default: staged files)"
+    )
+    parser.add_argument(
+        "--all", action="store_true", help="Check all tracked files instead of staged"
+    )
     args = parser.parse_args()
 
     if args.all:
         result = subprocess.run(
-            ['git', 'ls-files'],
-            capture_output=True, text=True, cwd=REPO_ROOT,
+            ["git", "ls-files"],
+            capture_output=True,
+            text=True,
+            cwd=REPO_ROOT,
         )
         if result.returncode != 0:
             print(f"git error: {result.stderr.strip()}", file=sys.stderr)
@@ -133,5 +155,5 @@ def main() -> int:
     return 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sys.exit(main())

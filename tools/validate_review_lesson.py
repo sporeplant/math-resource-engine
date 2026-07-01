@@ -17,7 +17,6 @@ if str(_project_root) not in sys.path:
 
 from tools.review_math_utils import validate_math_markup
 
-
 REQUIRED_SECTIONS = [
     "例题讲解",
     "当堂练习",
@@ -42,14 +41,24 @@ def check_yaml_frontmatter(text: str) -> list[str]:
         errors.append("YAML 前置元数据未闭合（缺少结尾 ---）")
         return errors
     frontmatter = text[3:end]
-    required = ["content_type", "lesson_id", "lesson_name", "command", "workflow_version", "source_files", "created_at"]
+    required = [
+        "content_type",
+        "lesson_id",
+        "lesson_name",
+        "command",
+        "workflow_version",
+        "source_files",
+        "created_at",
+    ]
     for key in required:
         if key not in frontmatter:
             errors.append(f"YAML 缺少必填字段: {key}")
     if "homework_count" in frontmatter:
         m = re.search(r"homework_count:\s*(\d+)", frontmatter)
         if m and int(m.group(1)) != REQUIRED_HOMEWORK_COUNT:
-            errors.append(f"homework_count 应为 {REQUIRED_HOMEWORK_COUNT}，实际为 {m.group(1)}")
+            errors.append(
+                f"homework_count 应为 {REQUIRED_HOMEWORK_COUNT}，实际为 {m.group(1)}"
+            )
     return errors
 
 
@@ -73,20 +82,25 @@ def check_question_numbering(text: str) -> list[str]:
     for i, num in enumerate(numbers):
         expected = i + 1
         if num != expected:
-            errors.append(f"题号不连续：期望第 {expected} 题为 {expected}．，实际为 {num}．")
+            errors.append(
+                f"题号不连续：期望第 {expected} 题为 {expected}．，实际为 {num}．"
+            )
             break
     return errors
 
 
 def check_image_paths(text: str, md_path: Path) -> list[str]:
     errors = []
-    images_dir = md_path.parent / "images"
+    knowledge_images = md_path.resolve().parents[2] / "knowledge" / "images"
     pattern = re.compile(r"!\[\]\((images/[^)]+)\)")
     for m in pattern.finditer(text):
         rel_path = m.group(1)
         img_path = md_path.parent / rel_path
         if not img_path.exists():
-            errors.append(f"图片文件不存在: {rel_path}")
+            # Fallback: check knowledge/images/
+            img_name = Path(rel_path).name
+            if not (knowledge_images / img_name).exists():
+                errors.append(f"图片文件不存在: {rel_path}")
     return errors
 
 
@@ -155,13 +169,21 @@ def validate(path: str | Path) -> list[str]:
     for number, stem in question_lines:
         if not stem.strip():
             all_errors.append(f"question {number} has empty stem")
-    frontmatter = text[3:text.find("---", 3)] if text.startswith("---") and text.find("---", 3) != -1 else ""
+    frontmatter = (
+        text[3 : text.find("---", 3)]
+        if text.startswith("---") and text.find("---", 3) != -1
+        else ""
+    )
     if re.search(r"(?m)^review_status\s*:", frontmatter):
         all_errors.append("review_lesson must not set review_status")
+    knowledge_images = md_path.resolve().parents[2] / "knowledge" / "images"
     for image_path in re.findall(r"!\[[^\]]*\]\(([^)]+)\)", text):
         normalized = image_path.strip().replace("\\", "/")
-        if normalized.startswith("images/") and not (md_path.parent / normalized).exists():
-            all_errors.append(f"image file does not exist: {normalized}")
+        if normalized.startswith("images/"):
+            if not (md_path.parent / normalized).exists():
+                img_name = Path(normalized).name
+                if not (knowledge_images / img_name).exists():
+                    all_errors.append(f"image file does not exist: {normalized}")
     return all_errors
 
 

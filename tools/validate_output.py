@@ -39,7 +39,7 @@ VALID_LESSON_COMMANDS = {"lesson-collab"}
 QUESTION_HINTS = ["题目", "例题", "练习", "作业", "评价任务"]
 VALID_EMOJIS = {"📐", "🎯", "📖", "✏️", "📝", "💡", "🤔", "💬"}
 VALID_COURSEWARE_COMMANDS = {"courseware-collab"}
-PAGE_BREAK = '---'
+PAGE_BREAK = "---"
 MAX_EMOJIS_PER_PAGE = 1
 MAX_MERMAID_NODES = 6
 MAX_LINES_PER_PAGE = 7
@@ -50,6 +50,7 @@ INLINE_STUDENT_QUESTION = re.compile(r"请[^\n：:]{1,12}同学(?:回答|代表�
 
 class Page(NamedTuple):
     """A single page in the courseware."""
+
     content: str
     start_line: int
     end_line: int
@@ -62,36 +63,44 @@ def split_pages(text: str) -> list[Page]:
     current_start = 0
     for i, line in enumerate(lines):
         if line.strip() == PAGE_BREAK:
-            pages.append(Page("".join(lines[current_start:i+1]), current_start, i))
+            pages.append(Page("".join(lines[current_start : i + 1]), current_start, i))
             current_start = i + 1
     if current_start < len(lines):
-        pages.append(Page("".join(lines[current_start:]), current_start, len(lines)-1))
+        pages.append(
+            Page("".join(lines[current_start:]), current_start, len(lines) - 1)
+        )
     return pages
 
 
 def count_emojis(text: str) -> int:
     """Count emoji characters in text."""
-    emoji_pattern = re.compile(r'[\U00010000-\U0010ffff]', flags=re.UNICODE)
+    emoji_pattern = re.compile(r"[\U00010000-\U0010ffff]", flags=re.UNICODE)
     return len(emoji_pattern.findall(text))
 
 
 def extract_mermaid_diagrams(text: str) -> list[str]:
     """Extract mermaid diagram code blocks from text."""
-    mermaid_blocks = re.findall(r'```mermaid\s*([\s\S]*?)\s*```', text)
+    mermaid_blocks = re.findall(r"```mermaid\s*([\s\S]*?)\s*```", text)
     return mermaid_blocks
 
 
 def count_mermaid_nodes(mermaid_code: str) -> int:
     """Count nodes in a mermaid flowchart (approximate)."""
     # Count lines that look like node definitions
-    node_lines = re.findall(r'^\s*[A-Za-z0-9_\-]+\s*\[.*?\]', mermaid_code, re.MULTILINE)
-    node_lines2 = re.findall(r'^\s*[A-Za-z0-9_\-]+\s*\(.*?\)', mermaid_code, re.MULTILINE)
+    node_lines = re.findall(
+        r"^\s*[A-Za-z0-9_\-]+\s*\[.*?\]", mermaid_code, re.MULTILINE
+    )
+    node_lines2 = re.findall(
+        r"^\s*[A-Za-z0-9_\-]+\s*\(.*?\)", mermaid_code, re.MULTILINE
+    )
     return len(node_lines) + len(node_lines2)
 
 
 def extract_title_emoji(page_content: str) -> str | None:
     """Extract the emoji from the page title (first heading)."""
-    heading_match = re.search(r'^#{1,3}\s*([\U00010000-\U0010ffff])', page_content, re.MULTILINE)
+    heading_match = re.search(
+        r"^#{1,3}\s*([\U00010000-\U0010ffff])", page_content, re.MULTILINE
+    )
     if heading_match:
         return heading_match.group(1)
     return None
@@ -130,11 +139,13 @@ def strip_front_matter(text: str) -> str:
     end = text.find("\n---", 4)
     if end == -1:
         return text
-    return text[end + 4:].lstrip()
+    return text[end + 4 :].lstrip()
 
 
 def extract_markdown_section(text: str, heading: str) -> str:
-    match = re.search(rf"(?ms)^##\s+{re.escape(heading)}\s*$([\s\S]*?)(?=^##\s|\Z)", text)
+    match = re.search(
+        rf"(?ms)^##\s+{re.escape(heading)}\s*$([\s\S]*?)(?=^##\s|\Z)", text
+    )
     return match.group(1) if match else ""
 
 
@@ -154,12 +165,19 @@ def scoped_forbidden_blocks(text: str, meta: dict[str, str]) -> list[tuple[str, 
         for label, section in [
             ("objectives", extract_markdown_section(structured, "objectives")),
             ("assessment", extract_markdown_section(structured, "assessment")),
-            ("consistency_matrix", extract_markdown_section(structured, "consistency_matrix")),
+            (
+                "consistency_matrix",
+                extract_markdown_section(structured, "consistency_matrix"),
+            ),
         ]:
             if section:
                 blocks.append((label, section))
         return blocks
-    if content_type in {"courseware_reference", "reference_answer", "question_reference"}:
+    if content_type in {
+        "courseware_reference",
+        "reference_answer",
+        "question_reference",
+    }:
         blocks = []
         for label in ["学习目标", "评价标准", "成功标准", "评分要点"]:
             pattern = rf"(?ms)^#+\s+.*{re.escape(label)}.*$([\s\S]*?)(?=^#+\s|\Z)"
@@ -176,7 +194,9 @@ def scoped_forbidden_blocks(text: str, meta: dict[str, str]) -> list[tuple[str, 
     return []
 
 
-def check_scoped_forbidden_terms(text: str, meta: dict[str, str], errors: list[str]) -> None:
+def check_scoped_forbidden_terms(
+    text: str, meta: dict[str, str], errors: list[str]
+) -> None:
     for label, block in scoped_forbidden_blocks(text, meta):
         for term in FORBIDDEN_TERMS:
             if term in block:
@@ -190,7 +210,9 @@ def check_required_layers(text: str, meta: dict[str, str], errors: list[str]) ->
     content_type = meta.get("content_type")
     if content_type not in LAYER_REQUIRED_CONTENT_TYPES:
         return
-    scan_text = extract_lesson_structured_layer(text) if content_type == "lesson" else text
+    scan_text = (
+        extract_lesson_structured_layer(text) if content_type == "lesson" else text
+    )
     for layer in REQUIRED_LAYERS:
         if layer not in scan_text:
             errors.append(f"missing layer: {layer}")
@@ -198,7 +220,7 @@ def check_required_layers(text: str, meta: dict[str, str], errors: list[str]) ->
 
 def source_window(lines: list[str], start: int, size: int = 10) -> str:
     window: list[str] = []
-    for line in lines[start:start + size]:
+    for line in lines[start : start + size]:
         if window and re.match(r"^#{1,6}\s+", line):
             break
         window.append(line)
@@ -209,15 +231,30 @@ def has_complete_source_fields(block: str) -> bool:
     has_source_id = bool(re.search(r"(?m)\bsource_id\s*[:：]\s*\S+", block))
     has_source_type = bool(re.search(r"(?m)\bsource_type\s*[:：]\s*\S+", block))
     has_question_id = bool(re.search(r"(?m)\bquestion_id\s*[:：]\s*\S+", block))
-    has_question_ids = bool(re.search(r"(?m)\bquestion_ids\s*[:：]\s*(?:\S+|\n\s*-\s*\S+)", block))
-    comma_joined = bool(re.search(r"(?m)\bquestion_id\s*[:：]\s*[\"']?[^\"'\n,]+,\s*[^\"'\n]+", block))
-    return has_source_id and has_source_type and (has_question_id or has_question_ids) and not comma_joined
+    has_question_ids = bool(
+        re.search(r"(?m)\bquestion_ids\s*[:：]\s*(?:\S+|\n\s*-\s*\S+)", block)
+    )
+    comma_joined = bool(
+        re.search(r"(?m)\bquestion_id\s*[:：]\s*[\"']?[^\"'\n,]+,\s*[^\"'\n]+", block)
+    )
+    return (
+        has_source_id
+        and has_source_type
+        and (has_question_id or has_question_ids)
+        and not comma_joined
+    )
 
 
-def check_question_source_fields(text: str, meta: dict[str, str], errors: list[str]) -> None:
+def check_question_source_fields(
+    text: str, meta: dict[str, str], errors: list[str]
+) -> None:
     if meta.get("content_type") in {"courseware", "review_lesson"}:
         return
-    scan_text = extract_lesson_structured_layer(text) if meta.get("content_type") == "lesson" else text
+    scan_text = (
+        extract_lesson_structured_layer(text)
+        if meta.get("content_type") == "lesson"
+        else text
+    )
     lines = scan_text.splitlines()
     question_line_pattern = re.compile(
         r"(?:题目|例题|练习|作业|评价任务|教材练习第\d+题|[AB]组第\d+题|question_text)"
@@ -235,11 +272,15 @@ def check_question_source_fields(text: str, meta: dict[str, str], errors: list[s
         seen_blocks.add(block_key)
         if not has_complete_source_fields(block):
             excerpt = re.sub(r"\s+", " ", block).strip()[:80]
-            errors.append(f"question-like block missing complete source fields: {excerpt}")
+            errors.append(
+                f"question-like block missing complete source fields: {excerpt}"
+            )
 
 
 def extract_img_paths(text: str) -> list[str]:
-    html_paths = re.findall(r"<img\s+[^>]*src=[\"']([^\"']+)[\"'][^>]*>", text, flags=re.I)
+    html_paths = re.findall(
+        r"<img\s+[^>]*src=[\"']([^\"']+)[\"'][^>]*>", text, flags=re.I
+    )
     markdown_paths = re.findall(r"!\[[^\]]*\]\(([^)]+)\)", text)
     return html_paths + markdown_paths
 
@@ -249,7 +290,9 @@ def extract_minutes(text: str) -> list[int]:
     for line in text.splitlines():
         if re.search(r"duration\s*[:：]", line, flags=re.I):
             continue
-        match = re.match(r"\s*-?\s*(?:time|时间)\s*[:：]\s*(\d+)\s*分钟", line, flags=re.I)
+        match = re.match(
+            r"\s*-?\s*(?:time|时间)\s*[:：]\s*(\d+)\s*分钟", line, flags=re.I
+        )
         if match:
             minutes.append(int(match.group(1)))
             continue
@@ -272,7 +315,11 @@ def parse_students(path: Path | None) -> set[str]:
 
 def extract_called_students(text: str) -> list[str]:
     names = re.findall(r"请\[([^\]]+)\]同学", text)
-    names.extend(re.findall(r"^\|\s*([^|\s]+)\s*\|\s*(?:基础层|中间层|拓展层)\s*\|", text, flags=re.M))
+    names.extend(
+        re.findall(
+            r"^\|\s*([^|\s]+)\s*\|\s*(?:基础层|中间层|拓展层)\s*\|", text, flags=re.M
+        )
+    )
     return [name.strip() for name in names if name.strip() and name.strip() != "学生"]
 
 
@@ -284,7 +331,14 @@ def check_common(path: Path, text: str, errors: list[str]) -> dict[str, str]:
         errors.append("missing YAML front matter")
         return meta
 
-    required_keys = ["content_type", "lesson_id", "lesson_name", "command", "workflow_version", "created_at"]
+    required_keys = [
+        "content_type",
+        "lesson_id",
+        "lesson_name",
+        "command",
+        "workflow_version",
+        "created_at",
+    ]
     if meta.get("content_type") not in {"textbook_solution", "review_lesson"}:
         required_keys.append("review_status")
     for key in required_keys:
@@ -303,10 +357,19 @@ def check_common(path: Path, text: str, errors: list[str]) -> dict[str, str]:
     if meta.get("review_status") and meta["review_status"] not in VALID_REVIEW_STATUS:
         errors.append(f"invalid review_status: {meta['review_status']}")
 
-    if meta.get("content_type") not in {"courseware", "review_lesson"} and re.search(r"!\[[^\]]*\]\([^)]+\)", text):
-        errors.append("Markdown image syntax is forbidden; use <img src=\"./images/...\">")
+    if meta.get("content_type") not in {"courseware", "review_lesson"} and re.search(
+        r"!\[[^\]]*\]\([^)]+\)", text
+    ):
+        errors.append(
+            'Markdown image syntax is forbidden; use <img src="./images/...">'
+        )
 
-    for bad in ["../knowledge/textbooks/images", "../knowledge/workbooks/images", "assets/images", "outputs/{lesson_id}/assets"]:
+    for bad in [
+        "../knowledge/textbooks/images",
+        "../knowledge/workbooks/images",
+        "assets/images",
+        "outputs/{lesson_id}/assets",
+    ]:
         if bad in text:
             errors.append(f"forbidden image path fragment: {bad}")
 
@@ -316,7 +379,10 @@ def check_common(path: Path, text: str, errors: list[str]) -> dict[str, str]:
                 errors.append(f"image path must start with ./images/: {img_path}")
                 continue
             if not (path.parent / img_path).exists():
-                errors.append(f"image file does not exist: {img_path}")
+                img_name = Path(img_path).name
+                knowledge_images = path.resolve().parents[2] / "knowledge" / "images"
+                if not (knowledge_images / img_name).exists():
+                    errors.append(f"image file does not exist: {img_path}")
 
     if "图片待确认" in text:
         errors.append("image placeholder remains in final output")
@@ -331,15 +397,23 @@ def check_lesson(text: str, meta: dict[str, str], errors: list[str]) -> None:
     if meta.get("content_type") == "lesson":
         if meta.get("command") not in VALID_LESSON_COMMANDS:
             errors.append("lesson output must have command: lesson-collab")
-        if meta.get("review_status") not in {"pending_human_review", "审核通过", "rejected"}:
-            errors.append("lesson review_status must be pending_human_review, 审核通过, or rejected")
+        if meta.get("review_status") not in {
+            "pending_human_review",
+            "审核通过",
+            "rejected",
+        }:
+            errors.append(
+                "lesson review_status must be pending_human_review, 审核通过, or rejected"
+            )
 
     minutes = extract_minutes(text)
     if minutes and sum(minutes) > 40:
         errors.append(f"lesson time exceeds 40 minutes: {sum(minutes)}")
 
     if meta.get("content_type") == "lesson" and re.search(r"请\[[^\]]+\]同学", text):
-        errors.append("lesson design must not contain concrete student names in questions")
+        errors.append(
+            "lesson design must not contain concrete student names in questions"
+        )
 
 
 def check_lesson_dual_layer(text: str, meta: dict[str, str], errors: list[str]) -> None:
@@ -356,7 +430,7 @@ def check_lesson_dual_layer(text: str, meta: dict[str, str], errors: list[str]) 
         errors.append("lesson must contain the required folded 完整结构化设计 layer")
         return
 
-    implementation = body[:details_match.start()]
+    implementation = body[: details_match.start()]
     structured = details_match.group(1)
 
     required_implementation = [
@@ -372,10 +446,14 @@ def check_lesson_dual_layer(text: str, meta: dict[str, str], errors: list[str]) 
         if heading not in implementation:
             errors.append(f"lesson implementation layer missing heading: {heading}")
     if not re.search(r"(?m)^###\s*\d+分钟流程总览\s*$", implementation):
-        errors.append("lesson implementation layer missing '{duration}分钟流程总览' heading")
+        errors.append(
+            "lesson implementation layer missing '{duration}分钟流程总览' heading"
+        )
     expected_table_header = "| 时间 | 教学环节 | 学生主要任务 | 教师支持 | 达成结果 |"
     if expected_table_header not in implementation:
-        errors.append("lesson implementation layer missing the required five-column flow table")
+        errors.append(
+            "lesson implementation layer missing the required five-column flow table"
+        )
 
     backend_patterns = {
         "learning objective ID": r"\bLO-[BME]-\d{2}\b",
@@ -413,7 +491,9 @@ def check_lesson_dual_layer(text: str, meta: dict[str, str], errors: list[str]) 
     if overview_match:
         overview_rows = [
             int(value)
-            for value in re.findall(r"(?m)^\|\s*(\d+)\s*分钟\s*\|", overview_match.group(1))
+            for value in re.findall(
+                r"(?m)^\|\s*(\d+)\s*分钟\s*\|", overview_match.group(1)
+            )
         ]
         if not overview_rows:
             errors.append("lesson implementation flow table has no timed activity rows")
@@ -440,10 +520,14 @@ def check_lesson_dual_layer(text: str, meta: dict[str, str], errors: list[str]) 
     implementation_question_match = re.search(
         r"(?m)^###\s+本课要解决的问题\s*$\s*([^\n]+)", implementation
     )
-    structured_question_match = re.search(r"(?m)^-\s*core_question\s*:\s*(.+?)\s*$", structured)
+    structured_question_match = re.search(
+        r"(?m)^-\s*core_question\s*:\s*(.+?)\s*$", structured
+    )
     if implementation_question_match and structured_question_match:
         implementation_question = implementation_question_match.group(1).strip()
-        structured_question = structured_question_match.group(1).strip().strip('"').strip("'")
+        structured_question = (
+            structured_question_match.group(1).strip().strip('"').strip("'")
+        )
         if implementation_question != structured_question:
             errors.append("dual-layer core question mismatch")
 
@@ -460,7 +544,9 @@ def check_lesson_dual_layer(text: str, meta: dict[str, str], errors: list[str]) 
                 )
 
 
-def check_courseware(text: str, meta: dict[str, str], errors: list[str], lesson_file: Path | None) -> None:
+def check_courseware(
+    text: str, meta: dict[str, str], errors: list[str], lesson_file: Path | None
+) -> None:
     if meta.get("content_type") != "courseware":
         return
     rendered_body = strip_front_matter(text)
@@ -472,9 +558,21 @@ def check_courseware(text: str, meta: dict[str, str], errors: list[str], lesson_
         errors.append("Typora courseware must not contain fenced code blocks")
     if re.search(r"<!--[\s\S]*?-->", rendered_body):
         errors.append("student-facing courseware must not contain HTML comments")
-    for production_label in ["遮盖区", "点击显示", "教师操作", "reveal-step", "图片待确认", "占位符", "source_id", "source_type", "question_id"]:
+    for production_label in [
+        "遮盖区",
+        "点击显示",
+        "教师操作",
+        "reveal-step",
+        "图片待确认",
+        "占位符",
+        "source_id",
+        "source_type",
+        "question_id",
+    ]:
         if production_label in rendered_body:
-            errors.append(f"student-facing courseware contains production-control label: {production_label}")
+            errors.append(
+                f"student-facing courseware contains production-control label: {production_label}"
+            )
     if re.search(r"ASK[_-][BME][_-]\d{2}", rendered_body):
         errors.append("student-facing courseware must not display backend ASK IDs")
     if meta.get("command") not in VALID_COURSEWARE_COMMANDS:
@@ -497,7 +595,11 @@ def check_courseware(text: str, meta: dict[str, str], errors: list[str], lesson_
             errors.append("upstream lesson file must have content_type: lesson")
         if lesson_meta.get("review_status") != "审核通过":
             errors.append("upstream lesson must be review_status: 审核通过")
-        if meta.get("lesson_id") and lesson_meta.get("lesson_id") and meta.get("lesson_id") != lesson_meta.get("lesson_id"):
+        if (
+            meta.get("lesson_id")
+            and lesson_meta.get("lesson_id")
+            and meta.get("lesson_id") != lesson_meta.get("lesson_id")
+        ):
             errors.append("courseware lesson_id does not match upstream lesson")
 
 
@@ -508,10 +610,10 @@ def check_courseware_material_anchors(pages: list[Page], errors: list[str]) -> N
         if not question_match:
             continue
 
-        visible_before = page.content[:question_match.start()]
+        visible_before = page.content[: question_match.start()]
         anchor_text = re.sub(r"^#{1,6}\s+.*$", "", visible_before, flags=re.MULTILINE)
         anchor_text = re.sub(r"\s+", "", anchor_text)
-        question = page.content[question_match.end():].splitlines()[0].strip()
+        question = page.content[question_match.end() :].splitlines()[0].strip()
 
         if len(anchor_text) < 12:
             errors.append(
@@ -520,8 +622,12 @@ def check_courseware_material_anchors(pages: list[Page], errors: list[str]) -> N
             continue
 
         if re.search(r"这四类|上面四类", question):
-            cells = [cell.strip() for cell in re.findall(r"\|([^|\n]+)", visible_before)]
-            meaningful_cells = [cell for cell in cells if cell and not set(cell) <= {"-", ":"}]
+            cells = [
+                cell.strip() for cell in re.findall(r"\|([^|\n]+)", visible_before)
+            ]
+            meaningful_cells = [
+                cell for cell in cells if cell and not set(cell) <= {"-", ":"}
+            ]
             if len(meaningful_cells) < 4:
                 errors.append(
                     f"courseware page {page_number}: four-category question must list all four categories before the question"
@@ -535,7 +641,9 @@ def check_courseware_material_anchors(pages: list[Page], errors: list[str]) -> N
                     f"courseware page {page_number}: '各数字' must identify digits 0 to 9 and the source context"
                 )
 
-        if "前一个环节" in question and not re.search(r"→|收集数据.*整理数据", visible_before, re.DOTALL):
+        if "前一个环节" in question and not re.search(
+            r"→|收集数据.*整理数据", visible_before, re.DOTALL
+        ):
             errors.append(
                 f"courseware page {page_number}: process-reference question must show the process before the question"
             )
@@ -546,7 +654,9 @@ def check_courseware_material_anchors(pages: list[Page], errors: list[str]) -> N
             )
 
 
-def check_required_practice_pages(text: str, lesson_file: Path | None, errors: list[str]) -> None:
+def check_required_practice_pages(
+    text: str, lesson_file: Path | None, errors: list[str]
+) -> None:
     """Ensure every lesson practice item has an explicit student task page."""
     if not lesson_file or not lesson_file.exists():
         return
@@ -565,12 +675,16 @@ def check_required_practice_pages(text: str, lesson_file: Path | None, errors: l
     )
     pages = split_pages(text)
     if required and len(required) < 4:
-        errors.append(f"courseware practice/check task count too low: {len(required)}, min 4")
+        errors.append(
+            f"courseware practice/check task count too low: {len(required)}, min 4"
+        )
     for item in required:
         matching_pages = [
             (index, page.content)
             for index, page in enumerate(pages)
-            if item in page.content and "### 📝" in page.content and "参考答案" not in page.content
+            if item in page.content
+            and "### 📝" in page.content
+            and "参考答案" not in page.content
         ]
         if not matching_pages:
             errors.append(f"courseware missing explicit practice task page for {item}")
@@ -581,7 +695,7 @@ def check_required_practice_pages(text: str, lesson_file: Path | None, errors: l
                 errors.append(f"practice task page for {item} missing {marker}")
         answer_pages = [
             page.content
-            for page in pages[task_index + 1:]
+            for page in pages[task_index + 1 :]
             if item in page.content and "参考答案" in page.content
         ]
         if not answer_pages:
@@ -604,14 +718,18 @@ def check_courseware_group_a(text: str, pages: list[Page], errors: list[str]) ->
         errors.append("courseware missing learning objectives page")
 
     # Rule 3: Four-page example structure check (at least one example)
-    example_pattern = re.compile(r'题目.*提问.*推理.*证明', re.DOTALL)
+    example_pattern = re.compile(r"题目.*提问.*推理.*证明", re.DOTALL)
     has_example_structure = bool(example_pattern.search(text))
     # This is a softer check - we don't fail on it but we can warn if needed
 
     # Rule 4: Summary with three questions (三问三答)
-    has_summary_table = bool(re.search(r'层次.*问题', text)) and ("基础层" in text and "中间层" in text and "拓展层" in text)
+    has_summary_table = bool(re.search(r"层次.*问题", text)) and (
+        "基础层" in text and "中间层" in text and "拓展层" in text
+    )
     if not has_summary_table:
-        errors.append("courseware missing 三问三答 summary table (基础层/中间层/拓展层)")
+        errors.append(
+            "courseware missing 三问三答 summary table (基础层/中间层/拓展层)"
+        )
 
     # Rule 5: Homework page exists (必做/选作/挑战)
     has_homework = "必做" in text and ("选作" in text or "挑战" in text)
@@ -644,13 +762,17 @@ def check_courseware_group_b(text: str, pages: list[Page], errors: list[str]) ->
         # Rule B1: Max 1 emoji per page
         emoji_count = count_emojis(page.content)
         if emoji_count > MAX_EMOJIS_PER_PAGE:
-            errors.append(f"page {i}: too many emojis ({emoji_count}), max {MAX_EMOJIS_PER_PAGE}")
+            errors.append(
+                f"page {i}: too many emojis ({emoji_count}), max {MAX_EMOJIS_PER_PAGE}"
+            )
             group_b_violations += 1
 
         # Rule B2: Title has valid emoji
         title_emoji = extract_title_emoji(page.content)
         if title_emoji and title_emoji not in VALID_EMOJIS:
-            errors.append(f"page {i}: invalid title emoji {title_emoji}, should be one of {sorted(VALID_EMOJIS)}")
+            errors.append(
+                f"page {i}: invalid title emoji {title_emoji}, should be one of {sorted(VALID_EMOJIS)}"
+            )
             group_b_violations += 1
 
         # Rule B3: Mermaid diagram node count <= 6
@@ -658,58 +780,77 @@ def check_courseware_group_b(text: str, pages: list[Page], errors: list[str]) ->
         for j, mermaid_code in enumerate(mermaid_blocks, 1):
             node_count = count_mermaid_nodes(mermaid_code)
             if node_count > MAX_MERMAID_NODES:
-                errors.append(f"page {i}: mermaid diagram {j} has {node_count} nodes, max {MAX_MERMAID_NODES}")
+                errors.append(
+                    f"page {i}: mermaid diagram {j} has {node_count} nodes, max {MAX_MERMAID_NODES}"
+                )
                 group_b_violations += 1
 
         # Rule B4: No consecutive pure text pages > 3
         # This is checked globally later
 
         # Rule B5: Time limit format check
-        has_time_limit = bool(re.search(r'（\s*限时\s*\d+\s*分钟\s*）', page.content))
-        has_activity = any(keyword in page.content for keyword in ["✏️", "🗣️", "小组讨论"])
-        if has_activity and not has_time_limit and "课堂检测" not in page.content and "小结" not in page.content:
+        has_time_limit = bool(re.search(r"（\s*限时\s*\d+\s*分钟\s*）", page.content))
+        has_activity = any(
+            keyword in page.content for keyword in ["✏️", "🗣️", "小组讨论"]
+        )
+        if (
+            has_activity
+            and not has_time_limit
+            and "课堂检测" not in page.content
+            and "小结" not in page.content
+        ):
             # Soft check - don't count as violation for now
             pass
 
         # Rule B6: Scoring annotation check
-        has_scoring = bool(re.search(r'评分[:：]', page.content))
-        has_exercise = any(keyword in page.content for keyword in ["练习", "检测", "作业"])
+        has_scoring = bool(re.search(r"评分[:：]", page.content))
+        has_exercise = any(
+            keyword in page.content for keyword in ["练习", "检测", "作业"]
+        )
         if has_exercise and not has_scoring:
             # Soft check
             pass
 
         # Rule B7: Question format check
         question_format_ok = True
-        question_matches = re.findall(r'【.*?层提问】', page.content)
+        question_matches = re.findall(r"【.*?层提问】", page.content)
         if question_matches:
             for q_match in question_matches:
-                if not re.match(r'【(基础|中间|拓展)层提问】', q_match):
+                if not re.match(r"【(基础|中间|拓展)层提问】", q_match):
                     errors.append(f"page {i}: invalid question format: {q_match}")
                     group_b_violations += 1
                     question_format_ok = False
 
         # Rule B8: No teacher/student action prompts
         if "教师：" in page.content or "学生：" in page.content:
-            errors.append(f'page {i}: contains teacher/student action prompts ("教师：" or "学生：")')
+            errors.append(
+                f'page {i}: contains teacher/student action prompts ("教师：" or "学生：")'
+            )
             group_b_violations += 1
 
     # Check consecutive pure text pages globally
     consecutive_text_pages = 0
     for page in pages:
-        has_visual = bool(re.search(r'!\[|备用提示|^\|.*\|$', page.content, re.MULTILINE))
+        has_visual = bool(
+            re.search(r"!\[|备用提示|^\|.*\|$", page.content, re.MULTILINE)
+        )
         if not has_visual:
             consecutive_text_pages += 1
             if consecutive_text_pages > 3:
-                errors.append(f"more than 3 consecutive pure text pages (no mermaid/images)")
+                errors.append(
+                    f"more than 3 consecutive pure text pages (no mermaid/images)"
+                )
                 group_b_violations += 1
                 break
         else:
             consecutive_text_pages = 0
 
     # Rule B9: No numbered steps in proofs (1. 2. 3.)
-    proof_step_pattern = re.compile(r'^\s*\d+\.\s+', re.MULTILINE)
+    proof_step_pattern = re.compile(r"^\s*\d+\.\s+", re.MULTILINE)
     if proof_step_pattern.search(text):
-        errors.append("proof/calculation steps should not use numbered lists (1. 2. 3.)")
+        errors.append(
+            "proof/calculation steps should not use numbered lists (1. 2. 3.)"
+        )
         group_b_violations += 1
 
     # If Group B violations >=3, mark as failed
@@ -726,21 +867,29 @@ def check_reference_answer(text: str, meta: dict[str, str], errors: list[str]) -
     group_a_errors = []
 
     # Rule A1: Metadata complete
-    required_meta = ["content_type", "lesson_id", "lesson_name", "source_files", "created_at"]
+    required_meta = [
+        "content_type",
+        "lesson_id",
+        "lesson_name",
+        "source_files",
+        "created_at",
+    ]
     for key in required_meta:
         if key not in meta or not meta[key]:
             group_a_errors.append(f"missing metadata: {key}")
 
     # Rule A2: Title correct
-    title_pattern = re.compile(r'^#\s+.+?\s+课堂提问参考答案', re.MULTILINE)
+    title_pattern = re.compile(r"^#\s+.+?\s+课堂提问参考答案", re.MULTILINE)
     if not title_pattern.search(text):
-        group_a_errors.append("missing or incorrect title: should be '{lesson_name} 课堂提问参考答案'")
+        group_a_errors.append(
+            "missing or incorrect title: should be '{lesson_name} 课堂提问参考答案'"
+        )
 
     # Rule A3: Random pool selection record exists and is table
     if "随机池选取记录" not in text:
         group_a_errors.append("missing random pool selection record section")
     else:
-        table_pattern = re.compile(r'\|.*选取学生.*\|', re.MULTILINE)
+        table_pattern = re.compile(r"\|.*选取学生.*\|", re.MULTILINE)
         if not table_pattern.search(text):
             group_a_errors.append("random pool selection record should be a table")
 
@@ -756,22 +905,26 @@ def check_reference_answer(text: str, meta: dict[str, str], errors: list[str]) -
     if "评分量规" not in text:
         group_a_errors.append("missing 评分量规 section")
     else:
-        rubric_table_pattern = re.compile(r'\|.*维度.*评分标准.*\|', re.MULTILINE)
+        rubric_table_pattern = re.compile(r"\|.*维度.*评分标准.*\|", re.MULTILINE)
         if not rubric_table_pattern.search(text):
             group_a_errors.append("scoring rubric should be a table")
 
     # Rule A7: All questions have source annotations
-    question_source_pattern = re.compile(r'source_id.*source_type.*question_id', re.DOTALL)
+    question_source_pattern = re.compile(
+        r"source_id.*source_type.*question_id", re.DOTALL
+    )
     if not question_source_pattern.search(text):
         # Check individual questions
-        question_count = len(re.findall(r'(题目|例题|练习|问题)', text))
-        source_count = len(re.findall(r'source_id|source_type|question_id', text))
+        question_count = len(re.findall(r"(题目|例题|练习|问题)", text))
+        source_count = len(re.findall(r"source_id|source_type|question_id", text))
         if question_count > 0 and source_count < question_count // 2:
-            group_a_errors.append("questions missing source annotations (source_id/source_type/question_id)")
+            group_a_errors.append(
+                "questions missing source annotations (source_id/source_type/question_id)"
+            )
 
     # Rule A8: Math formulas use LaTeX
-    latex_pattern = re.compile(r'\$.*?\$')
-    formula_pattern = re.compile(r'[+\-×÷=≠≤≥≈√∑∫∞π]')
+    latex_pattern = re.compile(r"\$.*?\$")
+    formula_pattern = re.compile(r"[+\-×÷=≠≤≥≈√∑∫∞π]")
     has_formulas = bool(formula_pattern.search(text))
     has_latex = bool(latex_pattern.search(text))
     if has_formulas and not has_latex:
@@ -787,31 +940,39 @@ def check_reference_answer(text: str, meta: dict[str, str], errors: list[str]) -
     # Rule B1: Section A has three layers
     has_all_layers = "基础层" in text and "中间层" in text and "拓展层" in text
     if not has_all_layers:
-        errors.append("[Group B] missing layer sections in 板块A (基础层/中间层/拓展层)")
+        errors.append(
+            "[Group B] missing layer sections in 板块A (基础层/中间层/拓展层)"
+        )
         group_b_violations += 1
 
     # Rule B2: Question ID format correct
-    question_ids = re.findall(r'ASK-[BME]-\d+', text)
+    question_ids = re.findall(r"ASK-[BME]-\d+", text)
     for qid in question_ids:
-        if not re.match(r'ASK-[BME]-\d{2}', qid):
-            errors.append(f"[Group B] invalid question ID format: {qid}, should be ASK-[BME]-XX")
+        if not re.match(r"ASK-[BME]-\d{2}", qid):
+            errors.append(
+                f"[Group B] invalid question ID format: {qid}, should be ASK-[BME]-XX"
+            )
             group_b_violations += 1
 
     # Rule B3: Answers have clear bullet points
-    answer_sections = re.findall(r'参考答案[\s\S]*?(?=\n\n##|\n\n---|$)', text)
+    answer_sections = re.findall(r"参考答案[\s\S]*?(?=\n\n##|\n\n---|$)", text)
     for ans in answer_sections:
-        bullet_count = len(re.findall(r'^[-*]\s+', ans, re.MULTILINE))
+        bullet_count = len(re.findall(r"^[-*]\s+", ans, re.MULTILINE))
         if bullet_count < 2 and len(ans.splitlines()) > 5:
-            errors.append("[Group B] answer should have clear bullet points (3-5 points recommended)")
+            errors.append(
+                "[Group B] answer should have clear bullet points (3-5 points recommended)"
+            )
             group_b_violations += 1
             break
 
     # Rule B4: Scoring points are clear and quantifiable
-    scoring_sections = re.findall(r'评分要点[\s\S]*?(?=\n\n##|\n\n---|$)', text)
+    scoring_sections = re.findall(r"评分要点[\s\S]*?(?=\n\n##|\n\n---|$)", text)
     for scoring in scoring_sections:
-        has_points = bool(re.search(r'\d+.*分', scoring))
+        has_points = bool(re.search(r"\d+.*分", scoring))
         if not has_points:
-            errors.append("[Group B] scoring points should be clear and quantifiable (with scores)")
+            errors.append(
+                "[Group B] scoring points should be clear and quantifiable (with scores)"
+            )
             group_b_violations += 1
             break
 
@@ -819,25 +980,33 @@ def check_reference_answer(text: str, meta: dict[str, str], errors: list[str]) -
     lines = text.splitlines()
     estimated_pages = len(lines) // 40  # Rough estimate
     if estimated_pages > 6:
-        errors.append(f"[Group B] document too long (estimated {estimated_pages} pages), should be ≤6 pages")
+        errors.append(
+            f"[Group B] document too long (estimated {estimated_pages} pages), should be ≤6 pages"
+        )
         group_b_violations += 1
 
     # Rule B6: Scoring rubric has dimensions
     has_dimensions = all(dim in text for dim in ["准确性", "完整性", "表达力"])
     if not has_dimensions:
-        errors.append("[Group B] scoring rubric should have dimensions: 准确性/完整性/表达力")
+        errors.append(
+            "[Group B] scoring rubric should have dimensions: 准确性/完整性/表达力"
+        )
         group_b_violations += 1
 
     # Rule B7: Section B covers examples and exercises from lesson flow
     # This is a softer check - we just verify section B exists with some content
-    section_b_content = re.search(r'板块B[\s\S]*?(?=评分量规|$)', text, re.DOTALL)
+    section_b_content = re.search(r"板块B[\s\S]*?(?=评分量规|$)", text, re.DOTALL)
     if section_b_content and len(section_b_content.group(0).strip()) < 100:
-        errors.append("[Group B] 板块B content too thin, should cover examples and exercises")
+        errors.append(
+            "[Group B] 板块B content too thin, should cover examples and exercises"
+        )
         group_b_violations += 1
 
     # Rule B8: Answers show complete reasoning for step problems
     # Check for answers that have multiple steps
-    multi_step_pattern = re.compile(r'首先|然后|接着|最后|1\.|2\.|3\.|第一步|第二步', re.MULTILINE)
+    multi_step_pattern = re.compile(
+        r"首先|然后|接着|最后|1\.|2\.|3\.|第一步|第二步", re.MULTILINE
+    )
     has_multi_step = bool(multi_step_pattern.search(text))
     if not has_multi_step and len(text) > 1000:
         # Only warn if document is long enough to have multi-step problems
@@ -850,7 +1019,9 @@ def check_reference_answer(text: str, meta: dict[str, str], errors: list[str]) -
         errors.append(f"[Group B] violations: {group_b_violations} (>=4)")
 
 
-def check_question_reference(text: str, errors: list[str], students_file: Path | None) -> None:
+def check_question_reference(
+    text: str, errors: list[str], students_file: Path | None
+) -> None:
     students = parse_students(students_file)
     called = extract_called_students(text)
     if students:
@@ -868,8 +1039,10 @@ def check_lesson_ask_prompt_order(text: str, errors: list[str]) -> None:
     ask_pattern = re.compile(r"(?m)^\s*-?\s*(ASK[_-][BME][_-]\d{2})\s*$")
     matches = list(ask_pattern.finditer(text))
     for index, match in enumerate(matches):
-        block_end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
-        block = text[match.end():block_end]
+        block_end = (
+            matches[index + 1].start() if index + 1 < len(matches) else len(text)
+        )
+        block = text[match.end() : block_end]
         question = re.search(r"(?m)^\s*-?\s*提问[：:]", block)
         hint = re.search(r"(?m)^\s*-?\s*备用提示(?:\d+)?[：:]", block)
         expected = re.search(r"(?m)^\s*-?\s*教师参考预期[：:]", block)
@@ -880,7 +1053,12 @@ def check_lesson_ask_prompt_order(text: str, errors: list[str]) -> None:
             errors.append(f"{match.group(1)} missing 分级备用提示 field")
         if not expected:
             errors.append(f"{match.group(1)} missing 教师参考预期 field")
-        if question and hint and expected and not (question.start() < hint.start() < expected.start()):
+        if (
+            question
+            and hint
+            and expected
+            and not (question.start() < hint.start() < expected.start())
+        ):
             errors.append(
                 f"{match.group(1)} field order must be 提问 -> 备用提示 -> 教师参考预期"
             )
@@ -913,12 +1091,14 @@ def check_courseware_question_reveal_order(text: str, errors: list[str]) -> None
                 default=-1,
             )
             hint_pos = min(
-                (m.start() for m in re.finditer(r"备用提示(?:\d+)?[：:]", page.content)),
+                (
+                    m.start()
+                    for m in re.finditer(r"备用提示(?:\d+)?[：:]", page.content)
+                ),
                 default=-1,
             )
             answer_positions = [
-                m.start()
-                for m in re.finditer(r"(?:答案|归纳)[：:]", page.content)
+                m.start() for m in re.finditer(r"(?:答案|归纳)[：:]", page.content)
             ]
             if question_pos < 0 or hint_pos < 0 or question_pos >= hint_pos:
                 errors.append(
@@ -944,8 +1124,10 @@ def check_reference_ask_prompt_order(text: str, errors: list[str]) -> None:
     )
     matches = list(pattern.finditer(text))
     for index, match in enumerate(matches):
-        block_end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
-        block = text[match.end():block_end]
+        block_end = (
+            matches[index + 1].start() if index + 1 < len(matches) else len(text)
+        )
+        block = text[match.end() : block_end]
         question = re.search(r"(?m)^\s*\*{0,2}(?:问题|提问)\*{0,2}[：:]", block)
         hint = re.search(r"(?m)^\s*\*{0,2}备用提示(?:\d+)?\*{0,2}[：:]", block)
         answer = re.search(r"(?m)^\s*\*{0,2}参考答案\*{0,2}[：:]", block)
@@ -953,13 +1135,19 @@ def check_reference_ask_prompt_order(text: str, errors: list[str]) -> None:
         if not question:
             errors.append(f"{match.group(1)} reference block missing 问题 field")
         if not hint:
-            errors.append(f"{match.group(1)} reference block missing 分级备用提示 field")
+            errors.append(
+                f"{match.group(1)} reference block missing 分级备用提示 field"
+            )
         if not answer:
             errors.append(f"{match.group(1)} reference block missing 参考答案 field")
         if not scoring:
             errors.append(f"{match.group(1)} reference block missing 评分要点 field")
-        if question and hint and answer and scoring and not (
-            question.start() < hint.start() < answer.start() < scoring.start()
+        if (
+            question
+            and hint
+            and answer
+            and scoring
+            and not (question.start() < hint.start() < answer.start() < scoring.start())
         ):
             errors.append(
                 f"{match.group(1)} reference field order must be 问题 -> 备用提示 -> 参考答案 -> 评分要点"
@@ -972,21 +1160,31 @@ def check_ask_prompt_order(text: str, meta: dict[str, str], errors: list[str]) -
         check_lesson_ask_prompt_order(text, errors)
     elif content_type == "courseware":
         check_courseware_question_reveal_order(text, errors)
-    elif content_type in {"question_reference", "courseware_reference", "reference_answer"}:
+    elif content_type in {
+        "question_reference",
+        "courseware_reference",
+        "reference_answer",
+    }:
         check_reference_ask_prompt_order(text, errors)
 
 
-def check_learning_objectives(text: str, meta: dict[str, str], errors: list[str]) -> None:
+def check_learning_objectives(
+    text: str, meta: dict[str, str], errors: list[str]
+) -> None:
     """Check learning objectives rules."""
     # Only check learning objectives for lesson content type
     if meta.get("content_type") != "lesson":
         return
-    
+
     # First, find objectives section
-    objectives_section = re.search(r'## objectives[\s\S]*?(?=## assessment|## 问题链设计|$)', text, re.DOTALL)
+    objectives_section = re.search(
+        r"## objectives[\s\S]*?(?=## assessment|## 问题链设计|$)", text, re.DOTALL
+    )
     if not objectives_section:
         # Try alternative pattern
-        objectives_section = re.search(r'(### 基础层[\s\S]*?(?=## assessment|## 问题链设计|$))', text, re.DOTALL)
+        objectives_section = re.search(
+            r"(### 基础层[\s\S]*?(?=## assessment|## 问题链设计|$))", text, re.DOTALL
+        )
 
     if not objectives_section:
         # No objectives section found, skip detailed checks
@@ -998,19 +1196,69 @@ def check_learning_objectives(text: str, meta: dict[str, str], errors: list[str]
     obj_text = objectives_section.group(0)
 
     # Valid action verbs by level (from skill definition)
-    basic_verbs = {"说出", "辨认", "识别", "回忆", "复述", "写出", "画出", "计算", "模仿", "画出", "陈述", "列举", "匹配", "选择"}
-    intermediate_verbs = {"解释", "说明", "归纳", "概括", "比较", "分类", "推断", "转化", "改写", "完成", "解决", "证明", "描述", "阐述", "应用", "演绎"}
-    advanced_verbs = {"分析", "评价", "创造", "设计", "构建", "生成", "假设", "论证", "批判", "综合", "鉴赏", "策划", "创新", "发明", "推导"}
+    basic_verbs = {
+        "说出",
+        "辨认",
+        "识别",
+        "回忆",
+        "复述",
+        "写出",
+        "画出",
+        "计算",
+        "模仿",
+        "画出",
+        "陈述",
+        "列举",
+        "匹配",
+        "选择",
+    }
+    intermediate_verbs = {
+        "解释",
+        "说明",
+        "归纳",
+        "概括",
+        "比较",
+        "分类",
+        "推断",
+        "转化",
+        "改写",
+        "完成",
+        "解决",
+        "证明",
+        "描述",
+        "阐述",
+        "应用",
+        "演绎",
+    }
+    advanced_verbs = {
+        "分析",
+        "评价",
+        "创造",
+        "设计",
+        "构建",
+        "生成",
+        "假设",
+        "论证",
+        "批判",
+        "综合",
+        "鉴赏",
+        "策划",
+        "创新",
+        "发明",
+        "推导",
+    }
     all_valid_verbs = basic_verbs | intermediate_verbs | advanced_verbs
 
     # Check each layer
     for layer_name, layer_verbs, layer_header in [
-        ("基础层", basic_verbs, r'### 基础层'),
-        ("中间层", intermediate_verbs, r'### 中间层'),
-        ("拓展层", advanced_verbs, r'### 拓展层')
+        ("基础层", basic_verbs, r"### 基础层"),
+        ("中间层", intermediate_verbs, r"### 中间层"),
+        ("拓展层", advanced_verbs, r"### 拓展层"),
     ]:
         # Find layer section
-        layer_match = re.search(rf'{layer_header}[\s\S]*?(?=### |## |$)', obj_text, re.DOTALL)
+        layer_match = re.search(
+            rf"{layer_header}[\s\S]*?(?=### |## |$)", obj_text, re.DOTALL
+        )
         if not layer_match:
             errors.append(f"missing {layer_name} objectives section")
             continue
@@ -1018,7 +1266,9 @@ def check_learning_objectives(text: str, meta: dict[str, str], errors: list[str]
         layer_content = layer_match.group(0)
 
         # Extract objectives (look for LO-[BME]-XX pattern or bullet points
-        objectives = re.findall(r'[-*]\s*(?:LO-[BME]-\d+[：:]\s*([^\n]+)|([^\n]+))', layer_content)
+        objectives = re.findall(
+            r"[-*]\s*(?:LO-[BME]-\d+[：:]\s*([^\n]+)|([^\n]+))", layer_content
+        )
         objectives = [obj[0] or obj[1] for obj in objectives if obj[0] or obj[1]]
 
         # Check each objective
@@ -1028,18 +1278,24 @@ def check_learning_objectives(text: str, meta: dict[str, str], errors: list[str]
 
             # Rule 1: Contains "能" (can have preamble before it)
             if "能" not in obj:
-                errors.append(f"{layer_name} objective should contain '能': {obj[:50]}...")
+                errors.append(
+                    f"{layer_name} objective should contain '能': {obj[:50]}..."
+                )
 
             # Rule 2: Has valid action verb
             has_valid_verb = any(verb in obj for verb in all_valid_verbs)
             if not has_valid_verb:
-                errors.append(f"{layer_name} objective missing valid action verb: {obj[:50]}...")
+                errors.append(
+                    f"{layer_name} objective missing valid action verb: {obj[:50]}..."
+                )
 
             # Rule 3: No forbidden terms already checked by scoped validator
 
-    total_objectives = len(re.findall(r'[-*]\s*`?LO-[BME]-\d+`?[：:]', obj_text))
+    total_objectives = len(re.findall(r"[-*]\s*`?LO-[BME]-\d+`?[：:]", obj_text))
     if total_objectives > 6:
-        errors.append(f"too many learning objectives ({total_objectives}); total must be 6 or fewer")
+        errors.append(
+            f"too many learning objectives ({total_objectives}); total must be 6 or fewer"
+        )
 
     # Check overall: Objectives support后续评价 design
     has_assessment = "## assessment" in text or "### 基础层评价" in text
@@ -1057,29 +1313,30 @@ def validate_courseware_textbook_consistency(
     """Validate courseware against textbook source for consistency."""
     try:
         # Try to import the consistency validator
+        from pathlib import Path
+
         from validate_courseware_consistency import (
             validate as validate_consistency,
         )
-        from pathlib import Path
 
         courseware_text = read_text(courseware_path)
         meta = parse_front_matter(courseware_text)
         if not meta and courseware_path.name.endswith("_课件.md"):
-            meta = {"content_type": "courseware", "lesson_name": courseware_path.stem.removesuffix("_课件")}
+            meta = {
+                "content_type": "courseware",
+                "lesson_name": courseware_path.stem.removesuffix("_课件"),
+            }
         if meta.get("content_type") == "courseware":
             # Auto-find textbook
             courseware_dir = courseware_path.parent
             textbook_dir = courseware_dir.parent / "knowledge" / "教材原文"
             lesson_name = meta.get("lesson_name", "")
 
-            textbook_path = textbook_file if textbook_file and textbook_file.exists() else None
+            textbook_path = (
+                textbook_file if textbook_file and textbook_file.exists() else None
+            )
             # Common filename patterns
-            patterns = [
-                f"*{lesson_name}*.md",
-                "*22.1*.md",
-                "*统计*.md",
-                "*数据*.md"
-            ]
+            patterns = [f"*{lesson_name}*.md", "*22.1*.md", "*统计*.md", "*数据*.md"]
             if textbook_path is None:
                 for pattern in patterns:
                     matches = list(textbook_dir.glob(pattern))
@@ -1089,9 +1346,7 @@ def validate_courseware_textbook_consistency(
 
             if textbook_path and textbook_path.exists():
                 cons_errors, cons_warnings = validate_consistency(
-                    courseware_path,
-                    textbook_path,
-                    auto_find=False
+                    courseware_path, textbook_path, auto_find=False
                 )
                 errors.extend([f"[Consistency] {e}" for e in cons_errors])
                 warnings.extend([f"[Consistency] {w}" for w in cons_warnings])
@@ -1119,11 +1374,15 @@ def validate_activity_textbook_order(
     has_position_field = "教材对应位置" in lesson_text
 
     if not has_lesson_flow:
-        warnings.append("[ActivityOrder] lesson_flow section not found, skipping textbook order check")
+        warnings.append(
+            "[ActivityOrder] lesson_flow section not found, skipping textbook order check"
+        )
         return
 
     if not has_position_field:
-        warnings.append("[ActivityOrder] 教学设计中未找到'教材对应位置'字段，跳过教材顺序检查")
+        warnings.append(
+            "[ActivityOrder] 教学设计中未找到'教材对应位置'字段，跳过教材顺序检查"
+        )
         return
 
     project_root = lesson_path.parent.parent
@@ -1143,7 +1402,10 @@ def validate_activity_textbook_order(
         textbook_dir = project_root / "knowledge" / "教材原文"
         if textbook_dir.exists():
             lesson_name = lesson_meta.get("lesson_name", "")
-            patterns = [f"*{lesson_name.replace('.', '').replace('(', '').replace(')', '')}*.md", "*.md"]
+            patterns = [
+                f"*{lesson_name.replace('.', '').replace('(', '').replace(')', '')}*.md",
+                "*.md",
+            ]
             for pattern in patterns:
                 matches = sorted(textbook_dir.glob(pattern))
                 if matches:
@@ -1158,6 +1420,7 @@ def validate_activity_textbook_order(
         from validate_activity_textbook_order import (
             validate as validate_order,
         )
+
         order_errors, order_warnings = validate_order(lesson_path, textbook_file)
         errors.extend([f"[ActivityOrder] {e}" for e in order_errors])
         warnings.extend([f"[ActivityOrder] {w}" for w in order_warnings])
@@ -1194,7 +1457,16 @@ def validate_lesson_timing(
         )
 
 
-def validate(path: Path, lesson_file: Path | None, question_reference: Path | None, students_file: Path | None, textbook_file: Path | None = None, textbook_solution: Path | None = None, runtime_profile: Path | None = None, timing_log: Path | None = None) -> tuple[list[str], list[str]]:
+def validate(
+    path: Path,
+    lesson_file: Path | None,
+    question_reference: Path | None,
+    students_file: Path | None,
+    textbook_file: Path | None = None,
+    textbook_solution: Path | None = None,
+    runtime_profile: Path | None = None,
+    timing_log: Path | None = None,
+) -> tuple[list[str], list[str]]:
     text = read_text(path)
     errors: list[str] = []
     warnings: list[str] = []
@@ -1250,7 +1522,16 @@ def main() -> int:
     parser.add_argument("--timing-log", type=Path)
     args = parser.parse_args()
 
-    errors, warnings = validate(args.file, args.lesson_file, args.question_reference, args.students_file, args.textbook_file, args.textbook_solution, args.runtime_profile, args.timing_log)
+    errors, warnings = validate(
+        args.file,
+        args.lesson_file,
+        args.question_reference,
+        args.students_file,
+        args.textbook_file,
+        args.textbook_solution,
+        args.runtime_profile,
+        args.timing_log,
+    )
 
     if warnings:
         print("Warnings:")
