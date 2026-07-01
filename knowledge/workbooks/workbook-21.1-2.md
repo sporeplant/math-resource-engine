@@ -19,13 +19,13 @@
 # 1. 选择题.
 
 (1)下列多边形中，内角和为 $540^{\circ}$ 的是（） 
-![](./images/371ae06adb1dfbe78b2fcf5082efb6837b515bac5409a55175656ac867d98397.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/371ae06adb1dfbe78b2fcf5082efb6837b515bac5409a55175656ac867d98397.jpg)
 A
-![](./images/c1f96fab7084919ef3c4446725f09b6c8f3d5e9a431155e9c64065909e444306.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c1f96fab7084919ef3c4446725f09b6c8f3d5e9a431155e9c64065909e444306.jpg)
 B
-![](./images/1f989351d8f63e7dec5e7fc4af3c5e0ea5061c3c9d4d7bed3c6a8273eee709ff.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1f989351d8f63e7dec5e7fc4af3c5e0ea5061c3c9d4d7bed3c6a8273eee709ff.jpg)
 C
-![](./images/57d31c7bcfb5c62ba0b8543882bce28b00c90a37fe6858b54e1bb15ec776c7cf.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/57d31c7bcfb5c62ba0b8543882bce28b00c90a37fe6858b54e1bb15ec776c7cf.jpg)
 D
 
 
@@ -90,7 +90,7 @@ C. 8
 D. 9 
 
 (8)如图, 小磊从点 $A$ 处出发, 沿直线前进 $5 \mathrm{~m}$ 后向左转 $\theta$ , 接着沿直线前进 $5 \mathrm{~m}$ 后, 再向左转 $\theta \cdots \cdots$ 如此下去, 当他第一次回到点 $A$ 处时, 发现自己走了 $60 \mathrm{~m}$ , 则 $\theta$ 的度数为 ( ) 
-![](./images/0fb2940cf9962fab9ede83986bd7a5264f1c49b71db98465bbe80eaa45ac9b64.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0fb2940cf9962fab9ede83986bd7a5264f1c49b71db98465bbe80eaa45ac9b64.jpg)
 第 1(8)题
 
 
@@ -111,7 +111,7 @@ D. $36^{\circ}$
 (3)有一个五边形，它的四个外角分别为 $111^{\circ}$ ， $80^{\circ}$ ， $30^{\circ}$ ， $129^{\circ}$ ，则与第五个外角相邻的内角的度数为____。 
 
 (4)如图, 含 $30^{\circ}$ 的直角三角板的直角边 $AC$ , $BC$ 分别经过正八边形的两个顶点, 则 $\angle 1 + \angle 2 =$ ____. 
-![](./images/8fc2fcd344e8b56bf3e19e4ab9804115b94a60f9b74e18df51decc541448afed.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8fc2fcd344e8b56bf3e19e4ab9804115b94a60f9b74e18df51decc541448afed.jpg)
 第 2(4) 题
 
 
@@ -124,12 +124,12 @@ D. $36^{\circ}$
 3. 若一个多边形的每个内角都比它相邻外角的 4 倍多 $30^{\circ}$ , 求这个多边形的内角和及其对角线的总条数. 
 
 4. 已知：如图，五边形 $ABCDE$ 的内角都相等， $EF$ 平分 $\angle AED$ 。求证： $EF \perp BC$ . 
-![](./images/5937b3f92b3ac6a3eb71fb78bd7172f882a3b7a54ed5f203969fdd49ae8503fe.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5937b3f92b3ac6a3eb71fb78bd7172f882a3b7a54ed5f203969fdd49ae8503fe.jpg)
 第4题
 
 
 5. 如图, 在五边形 $ABCDE$ 中, $\angle C = 100^{\circ}$ , $\angle D = 75^{\circ}$ , $\angle E = 135^{\circ}$ , $AP$ 平分 $\angle EAB$ , $BP$ 平分 $\angle ABC$ . 求 $\angle P$ 的度数. 
-![](./images/1a248d0c43c24418730f5f22271c9cb4c2c5bafb09ae1f780287911dbb0a67eb.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1a248d0c43c24418730f5f22271c9cb4c2c5bafb09ae1f780287911dbb0a67eb.jpg)
 第5题
 
 

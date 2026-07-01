@@ -19,7 +19,7 @@
 1. 选择题. 
 
 (1)如图是以正方形的边长为直径，在正方形内画半圆得到的图形。该图形的对称轴有（） 
-![](./images/078354e54a01faee2ecb41cbdeb30dbb9c3d9fea4086456f0b2ce4c93314a071.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/078354e54a01faee2ecb41cbdeb30dbb9c3d9fea4086456f0b2ce4c93314a071.jpg)
 第1(1)题
 
 
@@ -32,7 +32,7 @@ C. 6 条
 D. 8 条 
 
 (2) 如图, 四边形 $OABC$ 是正方形, $O, C$ 两点的坐标分别为 $(0, 0)$ , $(0, 6)$ , 点 $B$ 在第一象限, 则点 $B$ 的坐标为 ( ) 
-![](./images/8bc37904e4b1d9bb3feba177959a9342836025b83eeb8119e618489b01e3d574.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8bc37904e4b1d9bb3feba177959a9342836025b83eeb8119e618489b01e3d574.jpg)
 第1(2)题
 
 
@@ -45,7 +45,7 @@ C. (6, 6)
 D. (0, 6) 
 
 (3)如图, 正方形 $ABCD$ 的边长为 $4 \mathrm{~cm}$ , 则图中阴影部分的面积为 ( ) 
-![](./images/3d0b9e51a8c7f1143690541beb3507907fe82ea3e1629426d88f62bf41cadf6e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3d0b9e51a8c7f1143690541beb3507907fe82ea3e1629426d88f62bf41cadf6e.jpg)
 第1(3)题
 
 
@@ -70,7 +70,7 @@ D. 对角线互相垂直
 (5)如图, 正方形 $ABCD$ 的对角线 $AC$ , $BD$ 相交于点 $O$ . 下列结论中, 正确的个数为 ( ) 
 
 ①AB=BC=CD=DA；②AO=BO=CO=DO；③AC⊥BD. 
-![](./images/fbd69d90fc95fb0a5858bd31d379135cca59f96e9ac5821ee576ce577f4d8dd4.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/fbd69d90fc95fb0a5858bd31d379135cca59f96e9ac5821ee576ce577f4d8dd4.jpg)
 第1(5)题
 
 
@@ -83,7 +83,7 @@ C. 2
 D. 3 
 
 (6)如图，将 n 个边长都为 2 的正方形按如图所示的方式摆放，点 $A_{1}, A_{2}, \cdots, A_{n}$ 分别为正方形的对称中心，则这 n 个正方形重叠部分(阴影)的面积之和是（） 
-![](./images/3a37bbab24493cbf2da7776c1c75129210c51ce56c8e6bbe235472a96b4d5f97.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3a37bbab24493cbf2da7776c1c75129210c51ce56c8e6bbe235472a96b4d5f97.jpg)
 第1(6)题
 
 
@@ -102,7 +102,7 @@ D. $4n$
 第二步：从长方形纸片 BCFE 上剪去长方形纸条 CFGH. 
 
 若长方形纸条 AEFD 和长方形纸条 CFGH 的面积相等，则 AB 的长为（） 
-![](./images/6261c879cbbf0718a55ba7726dd27738bc851b9f4fd212e6aa1aed8edb5a8517.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6261c879cbbf0718a55ba7726dd27738bc851b9f4fd212e6aa1aed8edb5a8517.jpg)
 第1(7)题
 
 
@@ -119,24 +119,24 @@ D. $90 \mathrm{~em}$
 (1)已知正方形的边长为4，则这个正方形一条对角线的长为____。 
 
 (2)如图, 正方形 $ABCD$ 的面积为 4, $E$ , $F$ , $G$ , $H$ 分别为边 $AB$ , $BC$ , $CD$ , $AD$ 的中点, 则四边形 $EFGH$ 的面积为 ____. 
-![](./images/a994b37e632e5265c72175bbbb2dc1607d31a67b635ce7869ea8a3f97ebbcd64.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a994b37e632e5265c72175bbbb2dc1607d31a67b635ce7869ea8a3f97ebbcd64.jpg)
 第 2(2) 题
 
 
 (3)如图, 在正方形 $ABCD$ 中, $E$ 是对角线 $BD$ 上一点, $AE$ 的延长线交 $CD$ 于点 $F$ , 连接 $CE$ . 若 $\angle BAE = 56^{\circ}$ , 则 $\angle CEF$ 的度数为 ____. 
-![](./images/8442ef5352b7935856a5a3ae8f8b326e3899b3e8186d692f31a31765cef00e25.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8442ef5352b7935856a5a3ae8f8b326e3899b3e8186d692f31a31765cef00e25.jpg)
 第 2(3) 题
 
 
 (4)如图，正方形 ABCD 在平面直角坐标系中，点 A 的坐标为 $(0, 4)$ ，点 B 的坐标为 $(-3, 0)$ ，则点 C 的坐标为 ____. 
-![](./images/7168b7a14589c2916d9280ea6c73270da49adc0fa3ee264e8fbcc35fc0836efb.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7168b7a14589c2916d9280ea6c73270da49adc0fa3ee264e8fbcc35fc0836efb.jpg)
 第2(4)题
 
 
 # 数学思考
 
 3. 已知：如图，在正方形 $ABCD$ 中，对角线 $AC, BD$ 相交于点 $O, E, F$ 分别是边 $BC, CD$ 上的点，且 $\angle EOF = 90^\circ$ 。求证： $CE = DF$ . 
-![](./images/b9f3388b4fc1cb25890bde785c89610655ed38b500ca04535927933b38a8b120.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b9f3388b4fc1cb25890bde785c89610655ed38b500ca04535927933b38a8b120.jpg)
 第3题
 
 
@@ -147,7 +147,7 @@ D. $90 \mathrm{~em}$
 (2)若 $BE = AF$ ，求证： $BE \perp AF$ . 
 
 (3)若 $BE \perp AF$ , 求证: $BE = AF$ . 
-![](./images/3833fc76f87b512d8eae1d741a631d36287919ec513644de23fe510f7400b726.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3833fc76f87b512d8eae1d741a631d36287919ec513644de23fe510f7400b726.jpg)
 第4题
 
 

@@ -23,7 +23,7 @@
 # 1. 选择题.
 
 (1) 如图, 在 $\square ABCD$ 中, $AB = 4$ , $BC = 6$ , 将线段 $AB$ 水平向右平移 $a$ 个单位长度得到线段 $EF$ . 若四边形 $ECDF$ 为菱形, 则 $a$ 的值为 ( ) 
-![](./images/7f62ad5d63c0dc65d53f2d207031325349db7ceed6e8ecbb8289d4b71991179e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7f62ad5d63c0dc65d53f2d207031325349db7ceed6e8ecbb8289d4b71991179e.jpg)
 第1(1)题
 
 
@@ -36,7 +36,7 @@ C. 3
 D. 4 
 
 (2) 如图, 添加下列一个条件, 能使 $\square ABCD$ 为菱形的是 ( ) 
-![](./images/36ab3bda0fddc334fff5ac81153a468fe3cb371c1861785f65146aa0eae27b91.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/36ab3bda0fddc334fff5ac81153a468fe3cb371c1861785f65146aa0eae27b91.jpg)
 第1(2)题
 
 
@@ -69,7 +69,7 @@ C. 20
 D. 15 
 
 (4)如图, 以点 $A$ 为圆心、适当长为半径画弧, 交 $\angle A$ 的两边于点 $M$ , $N$ , 再分别以点 $M$ , $N$ 为圆心, 以 $AM$ 长为半径画弧, 两弧相交于点 $B$ , 连接 $MB$ , $NB$ . 若 $\angle A = 40^{\circ}$ , 则 $\angle MBN$ 的度数为 ( ) 
-![](./images/798f2ebdc168ed634823e47d30c95075b8b601d3f0a2736436678826138e7560.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/798f2ebdc168ed634823e47d30c95075b8b601d3f0a2736436678826138e7560.jpg)
 第 1(4) 题
 
 
@@ -82,7 +82,7 @@ C. ${60}^{ \circ  }$
 D. ${140}^{ \circ  }$ 
 
 (5)如图， $\square ABCD$ 的对角线 $AC, BD$ 相交于点 $O$ 。添加下列条件后，不能证明 $\square ABCD$ 是菱形的是 （） 
-![](./images/f4dca6b4b329951652a22cfb5a7625abec80bd9b860e9524f8594ebdf01da09b.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f4dca6b4b329951652a22cfb5a7625abec80bd9b860e9524f8594ebdf01da09b.jpg)
 第1(5)题
 
 
@@ -95,7 +95,7 @@ C. $OA^2 +OD^2 = AD^2$
 D. $AD^{2} + OA^{2} = OD^{2}$ 
 
 (6)如图, 四边形 $ABCD$ 是矩形, $DE \parallel AC$ , $CE \parallel BD$ , $AC = 4$ , 则四边形 $OCED$ 的周长为 ( ) 
-![](./images/b053de92634c860b566bf829c67249af121c368ab86c763be1a0dba69c1cc955.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b053de92634c860b566bf829c67249af121c368ab86c763be1a0dba69c1cc955.jpg)
 第1(6)题
 
 
@@ -134,24 +134,24 @@ D. 甲、乙均不正确
 2. 填空题. 
 
 (1)如图, $AC$ 为矩形 $ABCD$ 的对角线, 将边 $AB$ 沿 $AE$ 折叠, 使点 $B$ 落在 $AC$ 上的点 $M$ 处, 将边 $CD$ 沿 $CF$ 折叠, 使点 $D$ 落在 $AC$ 上的点 $N$ 处. 当 $\angle BAE =$ ____时, 四边形 $AECF$ 是菱形. 
-![](./images/ef723966d483773ccc3cb9c0686f682280b43635f69b7ce7b26543ff2b56a18c.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ef723966d483773ccc3cb9c0686f682280b43635f69b7ce7b26543ff2b56a18c.jpg)
 第2(1)题
 
 
 (2)如图，点 A, B 的坐标分别为(5,0)，(1,3)，C 是平面直角坐标系内一点. 
 
 若以 O, A, B, C 四点为顶点的四边形是菱形，则点 C 的坐标为 ____. 
-![](./images/ea4dfcc23cbba053fde13c907430e8351544389177b45c8a75b3afa8ba9657cb.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ea4dfcc23cbba053fde13c907430e8351544389177b45c8a75b3afa8ba9657cb.jpg)
 第2(2)题
 
 
 (3)如图， $\square ABCD$ 的对角线 $AC, BD$ 相交于点 $O$ ，且 $AB = 5, OA = 3, OB = 4$ . 过点 $B$ 作 $BE \perp CD$ 于点 $E$ ，则 $BE$ 的长为 ____. 
-![](./images/29fce8bc97c817bc2dc3b651cc250eec37113c7d7c58b8521e7250a498d6da6d.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/29fce8bc97c817bc2dc3b651cc250eec37113c7d7c58b8521e7250a498d6da6d.jpg)
 第 2(3) 题
 
 
 (4)由四边形四条边的中点组成的四边形叫作原四边形的中点四边形。如图，四边形ABCD是矩形，取矩形ABCD四条边的中点得到中点四边形 $A_{1}B_{1}C_{1}D_{1}$ ，再取四边形 $A_{1}B_{1}C_{1}D_{1}$ 四条边的中点得到中点四边形 $A_{2}B_{2}C_{2}D_{2}\cdots\cdots$ 按此规律继续取下去。若矩形ABCD的面积为1，则得到的中点四边形 $A_{n}B_{n}C_{n}D_{n}$ 的面积为____。 
-![](./images/df9d62122ed8c9782095e0acd3d163424c9df4b17ba6e2b0430b761cabd2cc6d.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/df9d62122ed8c9782095e0acd3d163424c9df4b17ba6e2b0430b761cabd2cc6d.jpg)
 第 2(4) 题
 
 
@@ -162,7 +162,7 @@ D. 甲、乙均不正确
 # 数学思考
 
 3. 已知：如图，在 $\square ABCD$ 中， $E, F$ 分别是 $AD, BC$ 上的点，且 $DE = BF, AC \perp EF$ . 求证：四边形 $AECF$ 是菱形. 
-![](./images/61621264261b9583abda0f0a98ac584a1ec0d039bdb649cf2193c955df8d6047.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/61621264261b9583abda0f0a98ac584a1ec0d039bdb649cf2193c955df8d6047.jpg)
 第3题
 
 
@@ -171,7 +171,7 @@ D. 甲、乙均不正确
 (1)求证： $\triangle ODE \cong \triangle OBF$ . 
 
 (2) 若 $EF \perp BD$ , $DE = 15 \mathrm{~cm}$ , 求四边形 BEDF 的周长. 
-![](./images/6fc61b6531fbcb88ea4042cfd71435d44cb5e515e98fa2fca047b9411c25aebf.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6fc61b6531fbcb88ea4042cfd71435d44cb5e515e98fa2fca047b9411c25aebf.jpg)
 第4题
 
 
