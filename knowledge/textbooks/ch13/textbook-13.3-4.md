@@ -100,8 +100,6 @@ lesson_id: 13.3.4
 
 观察可知，将 $\triangle ECF$ 绕点 $E$ 旋转 $180^{\circ}$ ，它可与 $\triangle EAD$ 重合. 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0df63a5465d80c202630e1c1c316dbf9cd1e62d1e1a8dd083f89e65cb66fca2e.jpg)
-
 
 ## 做一做
 
@@ -115,8 +113,6 @@ lesson_id: 13.3.4
 
 图13.3-14
 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5b8b9f1352f2c4ed8a0980a5941c029bd1e9de44d2c76b94bb2a2ee03457c48b.jpg)
 
 
 ## 练习

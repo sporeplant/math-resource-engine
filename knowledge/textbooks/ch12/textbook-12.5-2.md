@@ -34,8 +34,6 @@ $$
 
 答：每件服装的原价为 200 元. 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/62d7331fd3d10d3b4149e069020802e435d517494cc37e8edaf093c89e535f5e.jpg)
-
 
 ## 练习
 

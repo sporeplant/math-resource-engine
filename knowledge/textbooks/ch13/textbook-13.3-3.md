@@ -72,8 +72,6 @@ lesson_id: 13.3.3
 ∴ $\angle ABC = \angle E$ （两直线平行，同位角相等）
 在 $\triangle ABC$ 和 $\triangle DEF$ 中， $\because \left\{\begin{aligned}\angle A &= \angle FDE, \\AB &= DE, \\\angle ABC &= \angle E,\end{aligned}\right.$ ∴ $\triangle ABC \cong \triangle DEF$ (ASA). 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/02fda85d0ffb387dadf1a3b4a246ee2a9573c4e817481e48cf236beab95e7aaa.jpg)
-
 
 ## 练习
 
@@ -160,4 +158,3 @@ lesson_id: 13.3.3
 
 6. 已知：如图，点 $D$ 在 $\triangle ABC$ 的边 $BC$ 上， $BE \perp AD$ ， $CF \perp AD$ ，垂足分别为 $E$ ， $F$ ， $BE = CF$ 。请判断 $AD$ 是不是 $\triangle ABC$ 的中线。如果是，请给出证明。 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/801a2f36409b5c6d988219b62752a8541dbececa6ddc09e901071cc6eb4b254e.jpg)

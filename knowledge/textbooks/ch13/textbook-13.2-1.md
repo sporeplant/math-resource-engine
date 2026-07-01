@@ -11,8 +11,6 @@ lesson_id: 13.2.1
 
 图形的形状和大小是几何研究的重要内容。本节我们来研究形状相同、大小相等的这类图形。 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/73b0b2a92dce8948d2dfa9c45847fa8806106aaf9333f2c9906c04f4945eec2c.jpg)
-
 
 ## 观察与思考
 
@@ -77,8 +75,6 @@ lesson_id: 13.2.1
 
 表示两个三角形全等时，通常把表示对应顶点的字母写在对应的位置上. 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c90638e21efe9305c6934d5947e8d26a0268f214c17a1d6b52c884112b1d3661.jpg)
-
 
 ## 大家谈谈
 
@@ -106,8 +102,6 @@ lesson_id: 13.2.1
 解：（1）边 AB 和边 DE，边 BC 和边 EF，边 AC 和边 DF 分别是对应边； $\angle A$ 和 $\angle D$ ， $\angle B$ 和 $\angle DEF$ ， $\angle ACB$ 和 $\angle F$ 分别是对应角. 
 
 (2) 在 $\triangle ABC$ 中， $\because \angle A + \angle B + \angle ACB = 180^{\circ}$ （三角形内角和定理）， $\therefore \angle ACB = 180^{\circ} - \angle A - \angle B = 180^{\circ} - 78^{\circ} - 35^{\circ} = 67^{\circ}$ . $\because \triangle ABC \cong \triangle DEF$ （已知）， $\therefore \angle F = \angle ACB = 67^{\circ}, EF = BC = 18.$ （全等三角形的对应边相等，对应角相等） 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d2a0fa1d6979fdca5468d97b2aaaa7bf1b1eda3328f249e9b3d73664da5d1d39.jpg)
 
 
 ## 练习

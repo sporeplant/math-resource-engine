@@ -50,8 +50,6 @@ lesson_id: ch12-review-1
 
 4. 解分式方程一定要验根. 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c12661fa155a8da2634795db1b050c0c6c9d45d0ec7b649955fa0f5ab7056aeb.jpg)
-
 
 ## 复习题
 

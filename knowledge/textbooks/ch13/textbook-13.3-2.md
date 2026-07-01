@@ -57,8 +57,6 @@ lesson_id: 13.3.2
 
 当两边和它们的夹角分别相等时，这两个三角形是否全等呢？ 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a4bdeabc57c5f1dcfe0fb39a84caf7384346463c42b5d82dfcc0bdf90ce0880d.jpg)
-
 
 ## 一起探究
 
@@ -81,8 +79,6 @@ lesson_id: 13.3.2
 ## 基本事实二 两边及其夹角分别相等的两个三角形全等.
 
 基本事实二可简记为“边角边”或“SAS”. 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/66e9229c8362a9fad9a71ac4a9b4b707dfa7045ce9f3a66d6ea22641ccf8a32a.jpg)
 
 
 ## 大家谈谈
@@ -117,8 +113,6 @@ lesson_id: 13.3.2
 
 图13.3-7
 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/80bb89a5183c7c00818e77414de649f952244b4127f679ea661e8450e7cbe97d.jpg)
 
 
 ## 练习
@@ -229,4 +223,3 @@ lesson_id: 13.3.2
 
 有两角和一边分别相等的两个三角形全等吗？ 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0dc2a56593c35e14ade4f22834f0bca73e40a0b96134db674f62a3d1d556ec9f.jpg)

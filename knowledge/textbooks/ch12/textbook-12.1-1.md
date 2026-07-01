@@ -24,8 +24,6 @@ lesson_id: 12.1.1
 
 从整式到分式，如同从整数到分数，都是源于现实世界的客观需要. 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/231af635f5e91cfd57d61f91f3d4e2dafe28696f0accae560d98f2172acdaf93.jpg)
-
 
 ## 做一做
 
@@ -55,8 +53,6 @@ $$
 
 在分数中，分母不能等于0．同样，在分式中，分母也不能等于0，即当分式的分母等于0时，分式没有意义．如分式 $\frac{1}{x-5}$ ，当 $x-5\neq0$ ，即 $x\neq5$ 时，它有意义；当x-5=0，即x=5时，它没有意义. 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/abbf472c93c073bd0dad94a451c178f94ae6d31e63eec8dca335e5f40fee454d.jpg)
-
 
 ## 大家谈谈
 
@@ -67,8 +63,6 @@ $$
 $$
 
 如无特别说明，本章出现的分式都有意义. 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9c6ff10d9ca07b24ff4d1c3ce132fdfaa07bcb7bc30013954bfcde184302e818.jpg)
 
 
 ## 观察与思考
@@ -86,8 +80,6 @@ $$
 分式的分子和分母同乘(或除以)一个不等于0的整式，分式的值不变. 
 
 $\frac{A}{B} = \frac{A \times M}{B \times M}, \frac{A}{B} = \frac{A \div M}{B \div M}$ . 其中， $M$ 是不等于 0 的整式. 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3103487f74d0017c6dd96dfb6f558ef980187fe4a2beb7003db7df73aa756ed4.jpg)
 
 
 ## 做一做
@@ -124,4 +116,3 @@ $\frac{A}{B} = \frac{A \times M}{B \times M}, \frac{A}{B} = \frac{A \div M}{B \d
 
 利用分式的基本性质也可以将分式化简. 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8b91613be564de09c4160e1bd745dbf8242a39ca29cbeb1d36ac04191912bab1.jpg)

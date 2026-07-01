@@ -13,8 +13,6 @@ lesson_id: 13.3.1
 
 我们知道，三条边分别相等、三个角分别相等的两个三角形全等，但我们希望能用较少的条件来判定两个三角形全等。这样的条件应当是怎样的呢？ 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/34ac4aee3c3e6a8033af5a60538303d032b656497429b1f6a15596d827b344c1.jpg)
-
 
 ## 观察与思考
 
@@ -22,17 +20,15 @@ lesson_id: 13.3.1
 
 | 边和角的相等条件 | 对应的图形 | 是否全等 |
 | --- | --- | --- |
-| BC=B'C' |  |  |
-| \angle B=\angle B' |  |  |
-| AB=A'B'BC=B'C' |  |  |
-| BC=B'C'\angle B=\angle B' |  |  |
-| \angle A=\angle B'A'C'\angle B=\angle B' |  |  |
+| $BC=B'C'$ |  |  |
+| $\angle B=\angle B'$ |  |  |
+| $AB=A'B'$ $BC=B'C'$ |  |  |
+| $BC=B'C'$ $\angle B=\angle B'$ |  |  |
+| $\angle A=\angle B'A'C'$ $\angle B=\angle B'$ |  |  |
 
 2. 有三个角分别相等的两个三角形一定全等吗？说说你的理由. 
 
 3. 小亮认为，判断两个三角形全等的较少条件，只有以下三种情况才有可能：三条边分别相等，或两条边和一个角分别相等，或两个角和一条边分别相等。你认为这种说法对吗？ 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c9a308642be2ed2181f25ef35040c3ebf1ac71d6dcd27e48f9c9e8d26d5dcd39.jpg)
 
 
 ## 一起探究
@@ -73,14 +69,10 @@ lesson_id: 13.3.1
 ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/89b58ad1983ce2ebe9a1f4c709948e082d777a7106818766b6d6194614f4a28b.jpg)
 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/baa1c8b50ec80572873b2b76ff581428fed49057f819e36a09e8aa052bb71ddb.jpg)
-
 
 ## 大家谈谈
 
 回顾 “作一个角等于已知角” 的方法，并说说作图的依据. 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e15359f2815977b8e63f9acbd5f7ee21d2384af25b25ef0eeb2279307071476f.jpg)
 
 
 ## 练习
@@ -156,4 +148,3 @@ A组
 
 两条边和一个角分别相等的两个三角形是不是全等的呢？ 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b0654abe3819a02918c6eacbf67ac0b9d86d97dd46a35e979be61efcf3d9972d.jpg)

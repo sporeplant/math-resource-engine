@@ -62,7 +62,7 @@ $$
 
 答：这次训练，小芳的平均速度是小雯平均速度的 1.25 倍. 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/486c9df064e3bb6be4c33dc202dd43d52ad4705626789793ca143b5e90a3700c.jpg)
+
 
 
 ## 练习

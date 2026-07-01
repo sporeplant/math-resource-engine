@@ -41,8 +41,6 @@ lesson_id: ch13-review-1
 
 2. 证明过程中的每一步都要有依据。这些依据是已学过的基本事实、定义和定理等。 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8cbafe78d959c18883eba19b1c7ff14fa22dc3c2d947ee8ec0db5301600b6c11.jpg)
-
 
 ## 复习题
 

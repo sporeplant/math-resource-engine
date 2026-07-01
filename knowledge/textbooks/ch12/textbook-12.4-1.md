@@ -11,8 +11,6 @@ lesson_id: 12.4.1
 
 我们在用方程解决实际问题时，会遇到一些分母中含有未知数的方程。这就是我们将要学习的分式方程。 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3093dbbf823b5a4b34249bce0e81c2f9895e14572f2e5acf7b5d0035cf67e6a4.jpg)
-
 
 ## 做一做
 
@@ -26,16 +24,12 @@ lesson_id: 12.4.1
 
 由此，我们得到了方程： $\frac{10x + 4}{40 + x} = \frac{4}{7}$ ， $\frac{16}{x} +\frac{36}{1.5x} = 10.$ 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c2f6f0e58b5367148d88c00bac537e9c17da045e4e8ff2e43ae99c71eed2104b.jpg)
-
 
 ## 大家谈谈
 
 上面得到的方程与我们已学过的方程有什么不同？这两个方程有哪些共同特点？ 
 
 像 $\frac{10x+4}{40+x}=\frac{4}{7}$ 和 $\frac{16}{x}+\frac{36}{1.5x}=10$ 这样，分母中含有未知数的方程，叫作分式方程(fractional equation). 使得分式方程两边相等的未知数的值，叫作分式方程的解(也叫作分式方程的根). 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bdffeebaa33b71216d00967c4930cb2956ead1ad3d24f7dd6869bd6dfb62c071.jpg)
 
 
 ## 观察与思考
@@ -82,8 +76,6 @@ $$
 
 解分式方程时一定要注意验根. 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d7865e3ba1b059dfeeb88b9c143c1921201ad5d881ada8cfb46a5c85b1854f3d.jpg)
-
 
 ## 练习
 
@@ -118,8 +110,6 @@ $$
 ## C组
 
 4. 已知 A, B 是数轴上关于原点对称的两点，它们表示的数分别是 $\frac{x}{x-2}$ 和 $\frac{x^{2}-4x+4}{2x-x^{2}}$ . 求 x 的值. 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/84a34235fff24b98052fcc3c68f55f1eaeabde5e34caa132f714226613f6af71.jpg)
 
 
 ## 读一读

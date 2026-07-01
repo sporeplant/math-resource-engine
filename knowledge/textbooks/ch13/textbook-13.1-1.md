@@ -29,8 +29,6 @@ lesson_id: 13.1.1
 
 命题，有真命题，也有假命题。要判断一个命题是假命题，只要举出反例即可；要判断一个命题是真命题，则需要推理论证，即证明。 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a6a33dfb08079f812317f24c7320813ca3f82c68b81a99125a045200ff6a4fcd.jpg)
-
 
 ## 观察与思考
 
@@ -47,8 +45,6 @@ lesson_id: 13.1.1
 像这样，一个命题的条件和结论分别为另一个命题的结论和条件的两个命题，称为互逆命题. 
 
 在两个互逆的命题中，如果我们将其中一个命题称为原命题，那么另一个命题就是这个原命题的逆命题(converse proposition). 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/24dbe85f38cf965ef03d94ce0c6a2aba5675ed9c18ee36414bb5f40d27586e76.jpg)
 
 
 ## 做一做
@@ -114,8 +110,6 @@ $\because b//c$ （已知），
 
 如果一个定理的逆命题是真命题，那么这个逆命题也可以称为原定理的逆定理(converse theorem). 一个定理和它的逆定理是互逆定理. 如“两直线平行，内错角相等”与“内错角相等，两直线平行”，“两直线平行，同旁内角互补”与“同旁内角互补，两直线平行”都是互逆定理. 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ab6787dd58241fd713ce6b63c9cfaf88e9f706ae98851ee85873ab2aa2cd6569.jpg)
-
 
 ## 做一做
 
@@ -126,7 +120,7 @@ $\because b//c$ （已知），
 ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2d7394e087c787b90cacab5aae4edd0505ef5c27349dc67192b969b7a1376060.jpg)
 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f5e0b940dd4153a05c0c32989c8dc89c55eedbbdf85f440639f79782a3a460b2.jpg)
+
 
 
 

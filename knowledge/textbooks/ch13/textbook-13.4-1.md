@@ -63,8 +63,6 @@ lesson_id: 13.4.1
 ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/099321660eca1d075d5976d96f6f00ec45513863eaf14dceacc69c3f6fe4eb36.jpg)
 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7a44b3290c3ef581830f7ccc23df9c133fd055e5a738d9025ecb942d40a90351.jpg)
-
 
 ## 做一做
 
@@ -92,8 +90,6 @@ lesson_id: 13.4.1
 
 图13.4-3
 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f052d2f72f16941a46ea10c23ea10810a9339953fe3892395b104e5b7cd3fa0a.jpg)
 
 
 ## 练习

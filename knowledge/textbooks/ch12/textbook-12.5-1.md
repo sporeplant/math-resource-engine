@@ -13,8 +13,6 @@ lesson_id: 12.5.1
 
 小红和小丽分别将 9000 字和 7500 字的两篇文稿录入计算机，所用时间相同。已知两人每分钟录入字数的和是 220，那么两人平均每分钟各录入多少字？ 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8f35d1c8220b4611cabafa5b3a12b115b358f40fb54f9f137375be191c375484.jpg)
-
 
 ## 一起探究
 
@@ -52,8 +50,6 @@ $$
 
 请说说用分式方程解决实际问题的一般步骤。它与用一元一次方程以及二元一次方程组解决实际问题的一般步骤有哪些异同？ 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d61a829be51901210b23abee097d4a03bd383bf9d600c27d1cdce23696f09378.jpg)
-
 
 ## 练习
 
@@ -77,4 +73,3 @@ $$
 
 今年父亲的年龄是儿子年龄的 3 倍，5 年后父亲和儿子年龄的比是 22:9. 求父亲和儿子今年的年龄. 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5be65db8c3b620d59778650894de8577a1bf62d566b6a1a59b45b8b161d2c95f.jpg)

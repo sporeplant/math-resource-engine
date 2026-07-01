@@ -21,6 +21,19 @@
 | 数学活动 | `textbook-ch{章号}-{活动名称}.md` | `textbook-ch12-橙汁与苹果汁的多少.md` |
 | 回顾与反思 | `textbook-ch{章号}-review-{课时号}.md` | `textbook-ch12-review-1.md` |
 
+每个输出文件必须写入 YAML front matter：
+
+```yaml
+---
+content_type: textbook_original
+textbook_version: JJ2022
+semester: 8A
+chapter_name: 平面直角坐标系
+section_name: 位置的确定
+lesson_id: 18.1.1
+---
+```
+
 ## 4. 处理步骤
 
 ### 步骤 1：HTML 表格转 Markdown
@@ -35,14 +48,24 @@
 - 回顾与反思：`## 第X章回顾与反思（第N课时）`
 - 子标题（不拆分）：做一做、大家谈谈、观察与思考、练习、习题、A/B/C组、读一读、一起探究、法则、知识结构、总结与反思、注意事项、编号条目等
 
-以结构化格式呈现课时分配表，要求用户确认后再拆分。
+以结构化格式呈现课时分配表，并同时呈现每个输出文件将写入的 YAML 元信息，要求用户确认后再拆分。
 
-### 步骤 3：按课时拆分
+### 步骤 3：元信息生成
+
+- `content_type` 固定为 `textbook_original`，除非用户明确指定其他值
+- `textbook_version` 默认 `JJ2022`
+- `semester` 必须由用户提供，如 `8A`、`8B`、`9A`
+- `chapter_name` 默认使用识别到的章标题，可由用户指定覆盖
+- `section_name` 使用识别到的小节名称；回顾与反思写 `回顾与反思`；数学活动写活动名称
+- `lesson_id` 标准课时写 `{章号}.{节号}.{课时号}`，如 `18.1.1`；回顾与反思写 `ch{章号}-review-{课时号}`；数学活动写 `ch{章号}-activity-{序号}`
+
+### 步骤 4：按课时拆分
 
 - 章引言自动归入第一个小节的第一个课时
 - 每个课时对应一个独立文件
 - 数学活动单独文件
 - 回顾与反思拆分课时
+- 使用分章子目录输出时，图片路径必须从 `images/` 或 `./images/` 修正为 `../images/`，同时兼容 Markdown 图片和 HTML `<img>` 标签
 
 ## 5. 章节结构呈现格式
 
@@ -79,26 +102,36 @@ MinerU 可能将 `12.5` 误识别为 `05`。若检测到课时号前缀数字小
 
 - 禁止将子标题（做一做、练习、习题等）作为独立课时拆分
 - 禁止遗漏章引言（必须归入第一课时）
-- 禁止跳过用户确认直接拆分
+- 禁止跳过用户确认直接拆分；如使用 `-y`，必须显式提供必要元信息（至少 `--semester`）
 - 禁止修改教材原文内容（仅做格式转换和拆分）
+- 禁止输出缺少 YAML front matter 的课时文件
 
 ## 8. 调用方式
 
 ```bash
-python tools/split_textbook.py <MinerU文件路径> [--outdir <输出目录>] [-y]
+python tools/split_textbook.py <MinerU文件路径> [--outdir <输出目录>] [--semester 8A] [-y]
 ```
 
 | 参数 | 说明 |
 |------|------|
 | `input_file` | MinerU 输出的 Markdown 文件路径（必填） |
 | `--outdir` | 输出目录（可选，默认与输入文件同目录） |
+| `--semester` | 学期标识，如 `8A`、`8B`、`9A`；`-y` 模式必填 |
+| `--textbook-version` | 教材版本标识，默认 `JJ2022` |
+| `--content-type` | 内容类型，默认 `textbook_original` |
+| `--chapter-name` | 章名称覆盖值，默认使用识别到的章标题 |
+| `--flat` | 平铺输出，不创建 `ch{N}/` 子目录，图片路径保持原样 |
 | `-y` / `--yes` | 跳过确认，直接拆分（可选） |
 
 ## 9. 自检流程
 
 - [ ] HTML 表格是否全部转换为 Markdown 原生格式
 - [ ] 章节结构分析是否正确（课时数、活动数、复习课时数）
-- [ ] 用户是否已确认拆分方案
+- [ ] 是否呈现并确认每个输出文件的 YAML 元信息
+- [ ] `semester`、`textbook_version`、`chapter_name` 是否正确
+- [ ] `section_name` 与 `lesson_id` 是否逐文件正确
+- [ ] 用户是否已确认拆分方案和元信息
 - [ ] 章引言是否归入第一课时文件
 - [ ] 文件命名是否符合规则
 - [ ] 子标题（做一做、练习等）未独立拆分
+- [ ] 分章子目录输出时，图片路径是否修正为 `../images/`

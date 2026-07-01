@@ -42,14 +42,10 @@ $$
 \begin{array}{l} = \frac {x - 4}{x (x - 2) ^ {2}} \cdot \frac {x ^ {2}}{x - 4} \\ = \frac {x}{(x - 2) ^ {2}}. \end{array}
 $$
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3d20807f35e1f9d0f25a42abde89dd6f545252a91a2ffcf0671d6616d1ad09c9.jpg)
-
 
 ## 做一做
 
 当 $a = -\frac{2}{5}$ 时，求 $\frac{1}{a + 1} -\frac{a^2 + 6a + 9}{a^2 - 1}\cdot \frac{a - 1}{(a + 3)(a + 1)}$ 的值. 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/510fda50be7384e01703e7ed108aff11355891d7b52616e27ee0b89accd6601c.jpg)
 
 
 ## 练习
