@@ -54,7 +54,7 @@ lesson_id: 21.1.1
 例 2 如图 21.1-10，小亮从点 \(O\) 处出发，前进 \(5 \mathrm{m}\) 后向右转 \(20^{\circ}\)，再前进 \(5 \mathrm{m}\) 后又向右转 \(20^{\circ}\)，这样走 \(n\) 次后，恰好回到点 \(O\) 处。
 
 （1）小亮走出的这个 \(n\) 边形的每个内角是多少度，内角和是多少度？
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/fe2d95cdff7b4c6caf4fb3293751db62d8892c0b9e619cedf9c7c3f828d08df.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9c9bd2c2670e0c2e1ad71f67ce704cd882af9d060935d22aa94ce196513c0605.jpg)
 图21.1-10
 
 （2）小亮走出的这个 \(n\) 边形的周长是多少米？
@@ -89,7 +89,7 @@ lesson_id: 21.1.1
 3. 过某个多边形一个顶点的对角线共有10条，求这个多边形的内角和。
 
 4. 某模板如图所示，规定：\(AB, CD\) 的延长线应相交成 \(80^{\circ}\) 的角。因交点不在板上，不便测量，工人师傅测得 \(\angle BAE = 122^{\circ}, \angle DCF = 155^{\circ}\)。此时 \(AB, CD\) 的延长线相交所成的角是否符合规定？为什么？
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/34c7c2157e898113da1a3037da370eb1e04a3fef971cd88590ba8c01a9871ee.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/250b083f679a6d0e71fbbf9aab30965c9bfb4fa071855ea64a0fbefde8a1390c.jpg)
 （第4题）
 
 # B 组

@@ -117,7 +117,7 @@ type: 教材原文
 （第1题）
 
 2. 如图，已知三点 \(A, B, C\)。画平行四边形，使其三个顶点分别是点 \(A, B, C\)。
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/15a36c2fe642c51c35d829a4394b94d354b64e03310aec5b639e03775289410.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6182917a9292150907907a5760215bd38608993e48a436d24c86ffb5440cc75c.jpg)
 （第2题）
 ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/89332b4ca1fb08f7027c5f515bd6588f1c355769cb9787c23cc9659de31c43ad.jpg)
 （第3题）
@@ -129,7 +129,7 @@ type: 教材原文
 4. 已知：如图，在 \(\square ABCD\) 的各边 \(AB, BC, CD, DA\) 上分别取点 \(K, L, M, N\)，使 \(AK = CM\)，\(BL = DN\)。求证：四边形 \(KLMN\) 是平行四边形。
 ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c3f976641aa3898384713e899a65b4f79c1fb4edb51c3e8544c51919ea75c996.jpg)
 （第 4 题）
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/fca8513837de9507f53d47c62a8e3caa7f64bb004adae77ab68b8ba0d03706f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/24024099d1f4a2383106cb10eca270172d0c6c861fdeec75745788960e2f3a1f.jpg)
 （第5题）
 
 5. 已知：如图，\(\square ABCD\) 的对角线 \(AC, BD\) 相交于点 \(O\)，\(EF\) 过点 \(O\) 交 \(AD\) 于点 \(E\)，交 \(BC\) 于点 \(F\)，\(G\) 是 \(OA\) 的中点，\(H\) 是 \(OC\) 的中点。求证：四边形 \(EGFH\) 是平行四边形。

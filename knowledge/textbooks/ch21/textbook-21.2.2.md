@@ -82,7 +82,7 @@ type: 教材原文
 1. 如图，在 \(\square ABCD\) 中，\(AB = 5 \mathrm{cm}\)，\(AC = 6 \mathrm{cm}\)，\(BD = 8 \mathrm{cm}\)。求 \(\triangle AOB\) 和 \(\triangle AOD\) 的周长。
 ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3d4b0a3328b73b1ab5cec08f0dde13a415ed40e7b858f95a3f2bc2096fbd9d8f.jpg)
 （第1题）
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8296742a0cc6ef61381ced2468ce9a8529c73bbd18852ab040ea1badfbd1bad0fb.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/24024099d1f4a2383106cb10eca270172d0c6c861fdeec75745788960e2f3a1f.jpg)
 （第2题）
 
 2. 如图，\(\square ABCD\) 的对角线 \(AC, BD\) 相交于点 \(O\)，过点 \(O\) 的直线分别交 \(AD\) 和 \(BC\) 于点 \(E, F\)，\(\square ABCD\) 的面积为 24。求图中阴影部分的面积。
@@ -108,7 +108,7 @@ type: 教材原文
 4. 已知：如图，\(\square ABCD\) 的对角线 \(AC, BD\) 相交于点 \(O\)，\(M\) 为 \(OA\) 的中点，\(N\) 为 \(OC\) 的中点。求证：\(BM = DN\)，\(BM \parallel DN\)。
 ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/be46551c27775949514ac24ec5f751d83c0ee0fab6e1886b6478b613fc3005ae.jpg)
 （第 4 题）
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a724a30830faad0fd9da7a6526ddc345100f18d60a774bccdc2185c6da97c374.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/67a16581299f85290921bb9db63c58204f9c067ada873f43875a9deffdc35039.jpg)
 （第 5 题）
 
 5. 如图，在 \(\square ABCD\) 中，对角线 \(AC, BD\) 相交于点 \(O\)，过点 \(O\) 的直线 \(EF \perp AC\)，分别交 \(DC, AB\) 于点 \(E, F\)，连接 \(AE\)。已知 \(\square ABCD\) 的周长是 18，求 \(\triangle ADE\) 的周长。

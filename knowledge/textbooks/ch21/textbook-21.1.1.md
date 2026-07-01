@@ -119,11 +119,11 @@ type: 教材原文
 图21.1-8
 
 在日常生活中，四边形的不稳定性有着广泛的应用，下列图片反映了四边形不稳定性的部分应用。除此之外，你还能举出哪些应用四边形不稳定性的例子？
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/69bb594f3b8bb49848d17f531dc295bf11fa6a75f6353201ed76a94e0c221ea0.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/07e3803a131cd652555fd667970022217b0a02790e36ab6318f2ff428ca8c2a8.jpg)
 衣帽架
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/12616c1aa2ce6dfef82e36c4aebcbcd77763f8d71ffb333a6fbd6f69272df825.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/900d444d06b5416d9f26e162757c261e6da7fbcbc88e042e65c2541a1c7257d5.jpg)
 伸缩门
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ceee539cd3216f4f610fa35233f0ccd8cba1b67e31d8856f2df7058c8fcd4ba4.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/171ce16ad89833276e555f24f09dc486d50396624e3515036a03e3c278bb69eb.jpg)
 升降台
 
 # 练习
@@ -149,7 +149,7 @@ type: 教材原文
 # B 组
 
 4. 如图，由四条射线围成的四边形形状保持不变，面积不断缩小。
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d30fcd137d633fe95dd66afa50e716cc5437bc230d7d5d219934adb35a85559.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/fd9a16e95392d7e57ff5dfa51bcebd2cfc9459932d5b4798d0697c3cd4499c78.jpg)
 （第 4 题）
 
 （1）在四边形面积缩小的过程中，四边形各外角的大小是否发生了变化？
@@ -161,7 +161,7 @@ type: 教材原文
 5. 在四边形的四个内角中，最多可以有几个锐角，最多可以有几个钝角，最多可以有几个直角？为什么？
 
 6. 如图，在四边形 \(ABCD\) 中，\(\angle A = \angle C = 90^{\circ}\)，\(BE\) 平分 \(\angle ABC\)，\(DF\) 平分 \(\angle ADC\)。\(BE\) 与 \(DF\) 有怎样的位置关系？为什么？
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5e3a7741301241b75af3fc2ca71e5e21f9979b997f9bf3afd8ce64a2c3c4610.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/93b8e1ff07a1690c94d5edfe835063ead49c73b7ac05119167da276e99853b2d.jpg)
 （第6题）
 
 # 第一课时结束

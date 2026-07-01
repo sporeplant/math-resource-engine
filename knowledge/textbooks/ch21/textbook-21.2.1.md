@@ -32,9 +32,9 @@ type: 教材原文
 在我们的周围存在着许多四边形。观察下列图片，从中抽象出四边形，并就它们的共同特征和不同特性，和同学交流你的看法。
 ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0c7ba4d3ac5d4703e8e485befaadc47492a6ae028f89d2aabeb55734250448a9.jpg)
 瓷砖图案
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a49c03347d3368e32066921a648e9c8e94f97a355bafc58c7c8d30bed950535.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b1ca3d8420780d68f6b3cbfa4cfce95ff0d63773c51aef782c9dc0db1a3fae68.jpg)
 教室
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5f830da696ecbd975fdbc91cb083f38605ba6e8081e628b744b6306f5be82863.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/900d444d06b5416d9f26e162757c261e6da7fbcbc88e042e65c2541a1c7257d5.jpg)
 伸缩门
 ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a903eb4338ef488cd77bc8ec0fbab7b519ef3c7ac1cfc21f9f823ea53f3ece34.jpg)
 晾衣架
@@ -42,13 +42,13 @@ type: 教材原文
 上面图片中的四边形可以归类为以下四种：
 ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/36500bb9731ff56af2a46a14e0f8c0e47c34d5a57434b58f2b770d41e1658641.jpg)
 ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3cb39f1f3a76e48a55cc422ddb12983e901af90442814fc5c7e1ad7a3c16a5d0.jpg)
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8d7d9fd2d8303f405918704a7187fe622af4a93de72d69496b159382e68b24be.jpg)
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6a4ff5fdc34093953bbae87f7793c9dc906f14bf91b2a6abd55e8c8b3242c00.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b0b08c7231449629fb294a213ee266c64f84bda43ce507ac75078e20717c46b7.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bfb2be92f72eed3dcc9ae91059e53df6b0734519a24c90ca3e158f7efeca4305.jpg)
 
 我们把两组对边分别平行的四边形叫作平行四边形（parallelogram），连接平行四边形不相邻的两个顶点的线段叫作平行四边形的对角线（diagonal）。
 ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/431c5da317397f8b2fb4daafa1288c21595f21e8f4b7b8a0265d576723355592.jpg)
 如图 21.2-1，四边形 \(ABCD\) 是平行四边形，记作“\(\square ABCD\)”，读作“平行四边形 \(ABCD\)”。线段 \(AC, BD\) 为 \(\square ABCD\) 的两条对角线。
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b3b7f8ee650fc5dc8072da4b6620f1bda8e514cb99fc555634de3b4fc1dba67.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0fa341d336dd285518b32834cbe8068ef622628424717db43b5a820a77f481e6.jpg)
 图21.2-1
 
 如图21.2-2，在半透明的纸上画一个\(\square ABCD\)，对角线AC，BD相交于点O，再复制一个相同的图形。将两个图形完全重合，用大头针钉在点O处。使下面的图形不动，将上面的图形绕点O旋转 \(180^{\circ}\)。
@@ -135,7 +135,7 @@ type: 教材原文
 1. 如图，在 \(\square ABCD\) 中，对角线 \(AC, BD\) 相交于点 \(O\)，过点 \(O\) 的直线 \(EF\) 交 \(AB\) 于点 \(E\)，交 \(CD\) 于点 \(F\)。图中全等的三角形有哪几对？为什么？
 ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e3a1570e4468fe4619e6a1b7dbda2f9d15e9a2ae3973f4863e845a79cf45298b.jpg)
 （第1题）
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/825de36d9165f33f7ab39d6540d273406d5101960c22e03b7ce8058a9b9dca933.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ad699d471bb409d9a5bd6372136065b2d2a677ecea8bf69830b8fa2948642b58.jpg)
 （第2题）
 
 2. 如图，在 \(\square ABCD\) 中，\(AC\) 平分 \(\angle DAB\)，\(AB = 3\)。求 \(\square ABCD\) 的周长。
@@ -149,9 +149,9 @@ type: 教材原文
 1. 已知一个平行四边形，其相邻两角的差是 \(40^{\circ}\)。求该平行四边形各角的度数。
 
 2. 如图，四边形 \(ABCD\) 是平行四边形，\(CE \perp BA\)，交 \(BA\) 的延长线于点 \(E\)，\(\angle EAD = 46^{\circ}\)。求 \(\angle BCE\) 和 \(\angle D\) 的度数。
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2a58204b63fdd313b96149c9aa5bffaa9976a6a8392afb08d11e7e244be81889.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f10ad6feb56177eba01c7717971f9ba2015831fc0a9dbaa3b83aa73d759e40d6.jpg)
 （第2题）
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9d135b41323ed8ee30af0cb2b83203aec75e9844ec3ca62a13ba759191630e0.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/920798fd2bd18dc3be17e11cd3e62f6d98925c63a9be18d6c9d85c60fb76b086.jpg)
 （第3题）
 
 3. 如图，在 \(\square ABCD\) 中，点 \(E, F\) 在对角线 \(BD\) 上，且 \(BE = DF\)。猜想 \(AE\) 与 \(CF\) 有怎样的数量关系，并对你的猜想给出证明。
