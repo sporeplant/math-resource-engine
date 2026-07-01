@@ -78,9 +78,9 @@ D．它的图象经过第二、四象限
 
 （2）设点 $\left( a , \quad - 3 \right)$ 在这个函数的图象上，求 a 的值
 
-![](images/93511ac539d98248f5f1224f95b639fa6cbecd33b65b8ae340a73d152ae741bb.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/93511ac539d98248f5f1224f95b639fa6cbecd33b65b8ae340a73d152ae741bb.jpg)
 
-![](images/c1290940cf584499f583f0d8473c1595e1d7f893d232745c0a6946394ca86afa.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c1290940cf584499f583f0d8473c1595e1d7f893d232745c0a6946394ca86afa.jpg)
 
 ## 知识点04 一次函数的定义
 
@@ -197,13 +197,13 @@ D．图象与 y 轴的交点坐标是（0，1）
 
 13．已知 k＞0，则一次函数 $y = - k x + k$ 的图象可能是（ ）
 
-![](images/65539a98f70027c52bb78aaee66ac80f1de0797bc60c81f283c7edbbac8ee7d1.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/65539a98f70027c52bb78aaee66ac80f1de0797bc60c81f283c7edbbac8ee7d1.jpg)
 
-![](images/0995b8ff3c02dd122f79468c287c5b33858ff8985c8cb1ddea95c5a10d9f2830.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0995b8ff3c02dd122f79468c287c5b33858ff8985c8cb1ddea95c5a10d9f2830.jpg)
 
-![](images/ac518848c95d106e668603b1f81e5fbc41b91a02a026e838b9e7e5347009a873.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ac518848c95d106e668603b1f81e5fbc41b91a02a026e838b9e7e5347009a873.jpg)
 
-![](images/8040dfdcbdd3a2f6a4f1d5b431507d4fe4d5c903f521474010c70e465e583269.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8040dfdcbdd3a2f6a4f1d5b431507d4fe4d5c903f521474010c70e465e583269.jpg)
 
 14．已知点（3，y1），（﹣7，y2）都在直线 $y = - 2 x + 1$ 上，则 y1，y2 的大小关系为（ ）
 
@@ -285,13 +285,13 @@ D．点（﹣2，1）和（2，n）均在函数图象上，则 $n { > } 0$
 
 22．若点 $( m , \ n )$ 在第二象限，则一次函数 $y = n x + m - n$ 的图象可能是（ ）
 
-![](images/7ec63bcd5c5f4947d66c1fc923bc4f703e34b18743f959d5a4fbe1d7feac8d57.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7ec63bcd5c5f4947d66c1fc923bc4f703e34b18743f959d5a4fbe1d7feac8d57.jpg)
 
-![](images/11d11a4011780bb6c698135befa3a4fd918375350a30228f6d065ff6211d8dda.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/11d11a4011780bb6c698135befa3a4fd918375350a30228f6d065ff6211d8dda.jpg)
 
-![](images/b50ce599c395219d112b6a2a3b7bb1dee430c2c571fedf5b048ac9154bd030eb.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b50ce599c395219d112b6a2a3b7bb1dee430c2c571fedf5b048ac9154bd030eb.jpg)
 
-![](images/bbab1f0bccadfdc3be335b72c488b952174a1cbbb8994fed8a2a120c78c3ed7d.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bbab1f0bccadfdc3be335b72c488b952174a1cbbb8994fed8a2a120c78c3ed7d.jpg)
 
 23．点 $A \ ( x _ { 1 } , \ y _ { 1 } )$ 和 $B \ ( x _ { 2 } , \ y _ { 2 } )$ 都在直线 $y = - \ 3 x + 2$ 上，且 $x _ { 1 } { < } x _ { 2 }$ ，则 y1 与 y2 的关系是（ ）
 
