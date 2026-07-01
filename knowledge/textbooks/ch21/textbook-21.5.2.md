@@ -1,0 +1,137 @@
+﻿---
+content_type: textbook_original
+textbook_version: JJ2022
+semester: 8B
+chapter_name: 四边形
+section_name: 矩形
+lesson_id: 21.5.1
+---
+chapter: 第21章
+chapter_num: 21.5.2
+date: '2026-05-17'
+grade: 八年级
+lesson_type: 教材原文
+source: 冀教版八年级下数学教材
+tags:
+- 教材
+- 数学
+- 第21章
+title: 矩形（第二课时）
+type: 教材原文
+---
+
+# 矩形（第二课时）
+
+# 第二课时开始
+
+
+下面我们来探究矩形的判定条件. 
+
+# 一起探究
+
+1. 我们已经知道, 矩形的四个角都是直角. 反过来, 一个四边形有几个角是直角, 就能判定它是矩形呢? 观察图 21.5-4, 提出你的猜想. 
+![](../images/242e3e644d73fadc0b41d244d52bd4a37946a6fe9712a5177069a26318865ebd.jpg)
+![](../images/ce55cfe7fb63bda76b7fbd849a03367c10a2db534cbb1f8f806026d0d6417c08.jpg)
+![](../images/b3906d4618739e6d886e5cf259f9eba2d7c45c315f4f9463951382cd4e72aaf9.jpg)
+图21.5-4
+
+
+2. 矩形的对角线相等。那么，对角线相等的平行四边形是矩形吗？ 
+
+通过探究，我们发现：有三个角是直角的四边形是矩形；对角线相等的平行四边形是矩形. 
+
+
+# 做一做
+
+求证：有三个角是直角的四边形是矩形. 
+
+现在，我们来证明对角线相等的平行四边形是矩形. 
+
+已知：如图21.5-5，在□ABCD中，AC=BD. 
+
+求证：□ABCD 是矩形。 
+
+证明：∵ 四边形 ABCD 是平行四边形， 
+$\therefore A D \parallel B C, A D = B C.$
+在 $\triangle ABD$ 和 $\triangle BAC$ 中， 
+$\because A D = B C, A B = B A, B D = A C,$$\therefore \triangle A B D \cong \triangle B A C.$$\therefore \angle D A B = \angle C B A.$
+又∵ AD∥BC, 
+$\therefore \angle D A B + \angle C B A = 1 8 0 ^ {\circ}.$$\therefore \angle D A B = \angle C B A = 9 0 ^ {\circ}.$
+∴ □ABCD 是矩形. 
+![](../images/5d1ea51141a6c7edecea22a01a307968a85fe1c8e4af9a24a4301d51db6cb281.jpg)
+图21.5-5
+
+
+# 矩形的判定定理
+
+有三个角是直角的四边形是矩形. 
+
+对角线相等的平行四边形是矩形. 
+
+例 2 已知: 如图 21.5-6, 在矩形 $ABCD$ 中, $E$ , $F$ , $G$ , $H$ 分别为 $OA$ , $OB$ , $OC$ , $OD$ 的中点. 
+
+求证：四边形 EFGH 是矩形. 
+![](../images/529925bbaf1b595471aaa579474afbf8f860935a0dd802f55b06e6399d9c309f.jpg)
+图21.5-6
+
+
+证明：∵ 四边形 ABCD 是矩形， 
+
+∴ AC=BD，且 OA=OC，OB=OD。 
+
+$\therefore OA=OC=OB=OD.$ 
+
+又∵ E, F, G, H 分别为 OA, OB, OC, OD 的中点， 
+$\therefore O E = O G = O F = O H.$
+∴ 四边形 EFGH 是平行四边形. 
+
+又∵ $EG=OE+OG=OF+OH=HF,$ 
+
+∴ 四边形 EFGH 是矩形. 
+
+
+# 大家谈谈
+
+在例 2 中，如果四边形 ABCD 是平行四边形，那么四边形 EFGH 是平行四边形吗？说说你的理由. 
+
+# 练习
+
+1. 指出下列说法是否正确. 
+
+(1) 有一个角为直角的四边形是矩形. 
+
+(2) 两条对角线相等的四边形是矩形. 
+
+(3) 两条对角线互相垂直的四边形是矩形. 
+
+(4) 四个角皆为直角的四边形是矩形. 
+
+2. 已知: 如图, $AB = AC$ , $D$ 为 $BC$ 的中点, 四边形 $AEDB$ 是平行四边形. 求证: 四边形 $AECD$ 是矩形. 
+![](../images/88d3f49bab3710e251aafa31b98a414b52d4653c7c50879cc40e18e3ec626315.jpg)
+(第2题)
+
+
+# 习题
+
+# A 组
+
+1. 已知一矩形对角线的长为 $10 \mathrm{~cm}$ , 求顺次连接该矩形四边中点所得的四边形的周长. 
+
+2. 如图, 矩形 $ABCD$ 的两条对角线 $AC$ , $BD$ 的夹角为 $60^{\circ}$ , $AC+AB=12$ . 求 $AC$ 和 $AB$ 的长。 
+![](../images/f5441e0978cb67ec2c66f890d61083c5cd9a7c6f7692e5f66f6a4a539a642252.jpg)
+(第2题)
+
+
+3. 小亮想检验一块木板是不是矩形。现仅有一根足够长的细绳，你能想办法帮他进行检验吗？请说明理由。 
+
+# B 组
+
+4. 已知: 如图, $AB = AC$ , $AD \perp BC$ , 垂足为 $D$ , $AN$ 是 $\triangle ABC$ 的外角 $\angle CAM$ 的平分线, $CE \perp AN$ , 垂足为 $E$ . 求证: 四边形 $ADCE$ 是矩形。 
+![](../images/7fdc4b432dc5fa6130a6dfc1eb076171bcaae3a18031f8ad2d5388f34a69d60f.jpg)
+(第4题)
+![](../images/dd20e9fb4ca7936f6a53b3f423b2ca0e531165f19a378589f00530d57dcbfd43.jpg)
+(第 5 题)
+
+
+5. 如图, 在矩形 $ABCD$ 中, $AC$ , $BD$ 相交于点 $O$ , $AE$ 平分 $\angle BAD$ , 交 $BC$ 于点 $E$ , $\angle CAE = 15^{\circ}$ . 求 $\angle BOE$ 的度数.
+
