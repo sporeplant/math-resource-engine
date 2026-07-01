@@ -49,8 +49,8 @@ class TableToMD(HTMLParser):
             self.rows.append(self.row)
         elif self.active and tag in ("td", "th"):
             self.in_cell = False
-            cs = int(self.attrs.get("colspan", 1))
-            rs = int(self.attrs.get("rowspan", 1))
+            cs = int(self.attrs.get("colspan") or 1)
+            rs = int(self.attrs.get("rowspan") or 1)
             text = fix_cell_formula(self.cell.strip().replace("\n", " "))
             self.row.append((text, cs, rs))
 
@@ -308,7 +308,6 @@ def analyze_structure(lines):
     section_order = []  # ordered keys
     activities = []  # [(heading_text, start_line)]
     reviews = []  # [{'lesson': str, 'start_line': int}]
-    current_section = None
 
     for i, line in enumerate(lines):
         if not line.startswith("## "):
@@ -342,9 +341,9 @@ def analyze_structure(lines):
                 sections[key] = {"name": name, "lessons": []}
                 section_order.append(key)
             sections[key]["lessons"].append(lesson)
-            current_section = key
             continue
 
+        # Review (standard variant)
         m = OCR_SECTION_RE.match(s)
         if m:
             prefix = m.group(1).lstrip("0")
@@ -363,10 +362,9 @@ def analyze_structure(lines):
                 sections[key] = {"name": name, "lessons": []}
                 section_order.append(key)
             sections[key]["lessons"].append(lesson)
-            current_section = key
             continue
 
-        # Review
+        # Review (OCR variant)
         m = REVIEW_RE.match(s)
         if m:
             reviews.append({"lesson": _cn(m.group(1)), "start_line": i})
@@ -395,24 +393,6 @@ def build_splits(
 
     # Chapter intro → merge into first lesson of first section
     intro_lines = (0, chapter.get("intro_end", 0))
-
-    # Build section splits
-    all_section_headings = []
-    # Find actual line numbers of section headings
-    section_map = {}
-    activity_start_lines = {a["start_line"] for a in activities}
-    review_start_lines = {r["start_line"] for r in reviews}
-
-    for i, line in enumerate(lines):
-        if not line.startswith("## "):
-            continue
-        s = line.strip()
-        if SECTION_RE.match(s) or OCR_SECTION_RE.match(s):
-            all_section_headings.append((i, s))
-        elif REVIEW_RE.match(s):
-            pass  # handled separately
-        elif CHAPTER_RE.match(s):
-            pass  # handled separately
 
     # Now create the actual lesson files
     # First, find all "lesson boundary" indices

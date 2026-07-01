@@ -8,7 +8,6 @@ Usage:
 """
 
 import argparse
-import os
 import re
 import sys
 from pathlib import Path
@@ -121,7 +120,7 @@ def main():
                 print(f"    - Icon: {h}")
         all_removed.update(removed)
 
-    print(f"\n--- Summary ---")
+    print("\n--- Summary ---")
     print(f"  Files modified: {modified_count}")
     print(f"  Icon references removed: {len(all_removed)}")
 

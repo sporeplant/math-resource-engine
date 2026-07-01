@@ -718,9 +718,7 @@ def check_courseware_group_a(text: str, pages: list[Page], errors: list[str]) ->
         errors.append("courseware missing learning objectives page")
 
     # Rule 3: Four-page example structure check (at least one example)
-    example_pattern = re.compile(r"题目.*提问.*推理.*证明", re.DOTALL)
-    has_example_structure = bool(example_pattern.search(text))
-    # This is a softer check - we don't fail on it but we can warn if needed
+    # (soft check - pattern presence is noted but not strictly enforced)
 
     # Rule 4: Summary with three questions (三问三答)
     has_summary_table = bool(re.search(r"层次.*问题", text)) and (
@@ -812,14 +810,12 @@ def check_courseware_group_b(text: str, pages: list[Page], errors: list[str]) ->
             pass
 
         # Rule B7: Question format check
-        question_format_ok = True
         question_matches = re.findall(r"【.*?层提问】", page.content)
         if question_matches:
             for q_match in question_matches:
                 if not re.match(r"【(基础|中间|拓展)层提问】", q_match):
                     errors.append(f"page {i}: invalid question format: {q_match}")
                     group_b_violations += 1
-                    question_format_ok = False
 
         # Rule B8: No teacher/student action prompts
         if "教师：" in page.content or "学生：" in page.content:
@@ -838,7 +834,7 @@ def check_courseware_group_b(text: str, pages: list[Page], errors: list[str]) ->
             consecutive_text_pages += 1
             if consecutive_text_pages > 3:
                 errors.append(
-                    f"more than 3 consecutive pure text pages (no mermaid/images)"
+                    "more than 3 consecutive pure text pages (no mermaid/images)"
                 )
                 group_b_violations += 1
                 break
@@ -1313,7 +1309,6 @@ def validate_courseware_textbook_consistency(
     """Validate courseware against textbook source for consistency."""
     try:
         # Try to import the consistency validator
-        from pathlib import Path
 
         from validate_courseware_consistency import (
             validate as validate_consistency,
@@ -1508,7 +1503,7 @@ def validate(
 
 def main() -> int:
     try:
-        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
     except AttributeError:
         pass
     parser = argparse.ArgumentParser(description="Validate Markdown output hard rules.")
