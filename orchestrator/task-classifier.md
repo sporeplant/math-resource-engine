@@ -88,6 +88,7 @@ outputs：
 
 局部任务包括：
 
+- 教材原文拆解类任务：当用户要求“分割/拆分/切分/拆解”教材 Markdown 大文件，或路径包含 `knowledge/textbooks/`、`textbooks`、`教材原文`、`MinerU` 时，必须优先路由到 `skills/textbook-split/SKILL.md`，读取其检查清单，并按该技能先呈现结构和元信息预览。
 - 学习目标类任务
 - 评价设计类任务
 - 活动设计类任务

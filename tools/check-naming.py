@@ -23,7 +23,11 @@ UPPERCASE_EXCEPTIONS = {
     "CLAUDE.md",
     "README.md",
     "Makefile",
+    "posture_break_guard_README.md",
 }
+
+# File extensions that follow platform conventions, exempt from naming rules
+EXTENSION_EXEMPTIONS = {".exe", ".ps1", ".sln"}
 OLD_DIRS = [
     "知识库/",
     "输出/",
@@ -64,6 +68,9 @@ def added_staged_files() -> set[Path]:
 
 def check_name(name: str) -> list[str]:
     errors = []
+    suffix = Path(name).suffix.lower()
+    if suffix in EXTENSION_EXEMPTIONS:
+        return errors
     if CHINESE_PATTERN.search(name):
         errors.append(f"  contains Chinese characters: {name}")
     if " " in name:
