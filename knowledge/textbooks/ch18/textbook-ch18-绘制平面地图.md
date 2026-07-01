@@ -23,4 +23,3 @@ lesson_id: ch18-activity-1
 
 小组合作，共同完成所选场景平面地图的绘制工作。在班内展示交流，取长补短，进一步修订和完善各组所绘制的平面地图。 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4ca59e85b93526751a2e8f8a8769ca3cb240e70e1ded1e4e44f9c937cb42a96f.jpg)
