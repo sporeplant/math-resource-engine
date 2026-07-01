@@ -23,4 +23,4 @@
 | 图片资源skills | 定义图片引用、路径、布局的全局规则 | 教材源文件 | 图片引用规则集 | 无（独立，被课件设计skills、教材文件、习题文件等多处引用） | 图片资源validators | active | v1.0 |
 | 数学活动课设计skills | 为综合与实践领域生成项目式学习活动方案 | 核心知识领域、年级、课时 | 活动方案（含四阶段流程、评价量规、任务单） | 无（独立应用，替代标准课时流程） | 无 | archived | v1.0 |
 | 临界生帮扶表skills | 根据学生成绩和学习内容生成临界生分工帮扶表 | 责任教师、任教班级、教材章节、学生成绩数据 | 临界生分工表-YYYY-MM-DD.md | 无（独立） | 无 | active | v1.0 |
-| DOCX排版导出skills | 将 Markdown 讲义导出为 A4 双栏 DOCX | Markdown 讲义文件路径 | DOCX 文件 | Pandoc, python-docx, matplotlib | 无 | active | v1.0 |
+| DOCX导出skills | 将 Markdown 复习讲义/教师版解析导出为单栏或 A4 双栏紧凑 DOCX | Markdown 文件路径、输出模式（single/compact/both） | `{文件名}.docx`、`{文件名}_分栏压缩.docx` | tools/review_docx_pipeline.py, tools/md2docx.py, tools/compact_review_docx.py, Pandoc, python-docx, matplotlib | 无 | active | v1.0 |

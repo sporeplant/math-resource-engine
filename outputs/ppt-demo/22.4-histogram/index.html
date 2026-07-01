@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>22.4 频数分布与直方图 · HTML课件样例</title>
+  <style>
+    :root{
+      --paper:#fafaf8;
+      --ink:#0a0a0a;
+      --muted:#666;
+      --line:#d8d8d4;
+      --blue:#002fa7;
+      --blue-light:#e8eefc;
+      --grey:#f0f0ec;
+      --font:"Inter","Helvetica Neue","Noto Sans SC","Microsoft YaHei",Arial,sans-serif;
+      --mono:"JetBrains Mono","Cascadia Code",Consolas,monospace;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--font)}
+    body::before{content:"";position:fixed;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;opacity:.26;pointer-events:none}
+    #deck{position:fixed;inset:0;display:flex;transition:transform .55s cubic-bezier(.77,0,.175,1);z-index:2}
+    .slide{position:relative;flex:0 0 100vw;width:100vw;height:100vh;padding:5vh 5vw 7vh;background:rgba(250,250,248,.94);display:flex;flex-direction:column;overflow:hidden}
+    .slide.accent{background:var(--blue);color:#fff}
+    .slide.grey{background:rgba(240,240,236,.96)}
+    .chrome,.foot{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center;color:currentColor;opacity:.72}
+    .foot{margin-top:auto;border-top:1px solid currentColor;padding-top:18px;opacity:.56}
+    .kicker{font-family:var(--mono);font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);font-weight:600;margin-bottom:2vh}
+    .accent .kicker{color:#fff;opacity:.75}
+    h1,h2,h3,p{margin:0}
+    h1{font-weight:200;font-size:min(8.4vw,14vh);line-height:.96;letter-spacing:-.04em}
+    h2{font-weight:200;font-size:min(5.4vw,9vh);line-height:1.03;letter-spacing:-.03em}
+    h3{font-weight:300;font-size:min(2.4vw,4.6vh);line-height:1.18}
+    .lead{font-size:min(2.2vw,4vh);line-height:1.42;color:var(--muted);max-width:64vw}
+    .accent .lead{color:rgba(255,255,255,.82)}
+    .canvas{flex:1;display:grid;gap:28px;align-content:center;min-height:0}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:4vw;align-items:center}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .card{border:1px solid var(--line);background:#fff;padding:28px;min-height:150px;display:flex;flex-direction:column;gap:16px}
+    .card strong{font-size:28px;font-weight:500;color:var(--blue)}
+    .card p{font-size:20px;line-height:1.55;color:#333}
+    .big-statement{font-weight:200;font-size:min(6.8vw,12vh);line-height:1.02;letter-spacing:-.04em;max-width:74vw}
+    .data-cloud{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;font-family:var(--mono);font-size:18px;color:#333}
+    .data-cloud span{border:1px solid var(--line);padding:12px;text-align:center;background:#fff}
+    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:stretch}
+    .step{background:#fff;border:1px solid var(--line);padding:24px;position:relative;min-height:220px}
+    .step .num{font-family:var(--mono);font-size:14px;color:var(--blue);letter-spacing:.14em;margin-bottom:42px}
+    .step .title{font-size:28px;font-weight:400;line-height:1.18}
+    .blank-table{border:1px solid var(--ink);background:#fff;display:grid;grid-template-columns:repeat(5,1fr);margin-top:22px}
+    .blank-table div{min-height:44px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:13px;color:var(--muted)}
+    .blank-table div:nth-child(5n){border-right:0}
+    .flow{display:grid;grid-template-columns:1fr 120px 1.2fr;gap:24px;align-items:center}
+    table{border-collapse:collapse;width:100%;font-size:20px;background:#fff}
+    th,td{border:1px solid var(--line);padding:14px 16px;text-align:center}
+    th{background:var(--blue);color:#fff;font-weight:500}
+    .arrow{font-size:64px;text-align:center;color:var(--blue);font-weight:200}
+    .histogram{height:330px;border-left:2px solid var(--ink);border-bottom:2px solid var(--ink);display:flex;align-items:flex-end;gap:0;padding:0 18px 0 18px;background:#fff;position:relative}
+    .bar{width:18%;background:var(--blue);margin:0;border-right:1px solid #fff;display:flex;align-items:flex-start;justify-content:center;color:#fff;font-family:var(--mono);font-size:13px;padding-top:8px}
+    .bar:nth-child(1){height:34%}.bar:nth-child(2){height:62%}.bar:nth-child(3){height:88%}.bar:nth-child(4){height:54%}.bar:nth-child(5){height:28%}
+    .axis-label{position:absolute;font-family:var(--mono);font-size:12px;color:var(--muted)}
+    .axis-y{left:10px;top:8px}.axis-x{right:12px;bottom:8px}
+    .compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--ink);background:#fff}
+    .compare .side{padding:34px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:20px}.compare .side:last-child{border-right:0}
+    .compare h3{color:var(--blue);font-weight:400}.compare ul{font-size:22px;line-height:1.7;margin:0;padding-left:1.2em;color:#333}
+    .practice{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:stretch}
+    .source{font-family:var(--mono);font-size:15px;line-height:1.6;background:#101010;color:#fff;padding:22px;white-space:pre-wrap}
+    .checklist{display:grid;gap:18px;font-size:24px}.checkitem{display:flex;gap:18px;align-items:flex-start;background:#fff;border:1px solid var(--line);padding:22px}.mark{font-family:var(--mono);color:var(--blue);font-weight:700}
+    .chain{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:26px;line-height:1.35}.chain span{padding:14px 18px;border:1px solid rgba(255,255,255,.7);background:rgba(255,255,255,.1)}
+    #nav{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:5;display:flex;gap:8px}.dot{width:34px;height:6px;border:0;background:#aaa;cursor:pointer}.dot.active{background:var(--blue)}.accent-dot.active{background:#fff}
+  </style>
+</head>
+<body>
+  <main id="deck">
+    <section class="slide accent" data-layout="cover">
+      <div class="chrome"><span>22.4</span><span>01 / 09</span></div>
+      <div class="canvas">
+        <div>
+          <div class="kicker">data literacy · histogram</div>
+          <h1>频数分布<br>与直方图</h1>
+        </div>
+        <p class="lead">从“一堆数据”到“看见分布”</p>
+      </div>
+      <div class="foot"><span>数据的整理与表达</span><span>mre html deck trial</span></div>
+    </section>
+
+    <section class="slide" data-layout="statement">
+      <div class="chrome"><span>problem</span><span>02 / 09</span></div>
+      <div class="canvas grid-2">
+        <div>
+          <div class="kicker">问题情境</div>
+          <p class="big-statement">数据越多，<br>越需要整理。</p>
+        </div>
+        <div class="data-cloud" aria-label="原始数据示例">
+          <span>154</span><span>161</span><span>158</span><span>166</span><span>159</span><span>172</span>
+          <span>163</span><span>157</span><span>168</span><span>160</span><span>165</span><span>171</span>
+          <span>156</span><span>162</span><span>169</span><span>164</span><span>155</span><span>167</span>
+        </div>
+      </div>
+      <div class="foot"><span>原始数据记录每一个是多少</span><span>能一眼判断集中范围吗？</span></div>
+    </section>
+
+    <section class="slide grey" data-layout="process">
+      <div class="chrome"><span>process</span><span>03 / 09</span></div>
+      <div class="canvas">
+        <div>
+          <div class="kicker">数据整理任务</div>
+          <h2>从原始数据到频数分布表</h2>
+        </div>
+        <div class="process">
+          <div class="step"><div class="num">STEP 01</div><div class="title">确定数据范围</div></div>
+          <div class="step"><div class="num">STEP 02</div><div class="title">合理分组</div></div>
+          <div class="step"><div class="num">STEP 03</div><div class="title">统计每组频数</div></div>
+          <div class="step"><div class="num">STEP 04</div><div class="title">填写频数分布表</div></div>
+        </div>
+        <div class="blank-table">
+          <div>组别</div><div>150-155</div><div>155-160</div><div>160-165</div><div>165-170</div>
+          <div>频数</div><div></div><div></div><div></div><div></div>
+        </div>
+      </div>
+      <div class="foot"><span>先整理，再表达</span><span>保留学生填写空间</span></div>
+    </section>
+
+    <section class="slide" data-layout="cards">
+      <div class="chrome"><span>concepts</span><span>04 / 09</span></div>
+      <div class="canvas">
+        <div>
+          <div class="kicker">核心概念</div>
+          <h2>三个词，连起统计表达</h2>
+        </div>
+        <div class="grid-3">
+          <div class="card"><strong>频数</strong><p>落在某一范围内的数据个数。</p></div>
+          <div class="card"><strong>组距</strong><p>每一组两个端点之间的距离。</p></div>
+          <div class="card"><strong>频数分布表</strong><p>用表格表示各组数据出现次数的整理结果。</p></div>
+        </div>
+      </div>
+      <div class="foot"><span>概念不脱离例子</span><span>用学生语言复述</span></div>
+    </section>
+
+    <section class="slide grey" data-layout="diagram">
+      <div class="chrome"><span>table to chart</span><span>05 / 09</span></div>
+      <div class="canvas">
+        <div>
+          <div class="kicker">直方图生成</div>
+          <h2>频数分布表如何变成直方图？</h2>
+        </div>
+        <div class="flow">
+          <table>
+            <thead><tr><th>数据分组</th><th>频数</th></tr></thead>
+            <tbody><tr><td>150-155</td><td>3</td></tr><tr><td>155-160</td><td>7</td></tr><tr><td>160-165</td><td>10</td></tr><tr><td>165-170</td><td>6</td></tr><tr><td>170-175</td><td>2</td></tr></tbody>
+          </table>
+          <div class="arrow">→</div>
+          <div class="histogram">
+            <span class="axis-label axis-y">频数</span><span class="axis-label axis-x">数据分组</span>
+            <div class="bar">3</div><div class="bar">7</div><div class="bar">10</div><div class="bar">6</div><div class="bar">2</div>
+          </div>
+        </div>
+      </div>
+      <div class="foot"><span>横轴：数据分组 · 纵轴：频数</span><span>矩形高度对应频数</span></div>
+    </section>
+
+    <section class="slide" data-layout="compare">
+      <div class="chrome"><span>compare</span><span>06 / 09</span></div>
+      <div class="canvas">
+        <div>
+          <div class="kicker">易错辨析</div>
+          <h2>条形统计图 ≠ 频数分布直方图</h2>
+        </div>
+        <div class="compare">
+          <div class="side"><h3>条形统计图</h3><ul><li>横轴表示类别</li><li>矩形可以分开</li><li>重点是比较不同类别</li></ul></div>
+          <div class="side"><h3>频数分布直方图</h3><ul><li>横轴表示数据范围</li><li>矩形通常连续排列</li><li>重点是观察整体分布</li></ul></div>
+        </div>
+      </div>
+      <div class="foot"><span>看横轴，就能先判断图的类型</span><span>追问：为什么连续？</span></div>
+    </section>
+
+    <section class="slide grey" data-layout="practice">
+      <div class="chrome"><span>practice</span><span>07 / 09</span></div>
+      <div class="canvas practice">
+        <div>
+          <div class="kicker">课堂练习</div>
+          <h2>根据频数分布表完成直方图</h2>
+          <p class="lead">并回答：人数最多的数据范围是哪一组？</p>
+        </div>
+        <div class="card">
+          <strong>反馈点</strong>
+          <p>1. 横轴分组是否等距<br>2. 纵轴频数是否准确<br>3. 矩形高度是否对应频数</p>
+          <div class="source">source_id: textbook-22.4
+source_type: textbook
+question_id: "22.4-practice-1"</div>
+        </div>
+      </div>
+      <div class="foot"><span>练习页保留题源</span><span>先做图，再解释</span></div>
+    </section>
+
+    <section class="slide" data-layout="checklist">
+      <div class="chrome"><span>check</span><span>08 / 09</span></div>
+      <div class="canvas">
+        <div>
+          <div class="kicker">课堂检测</div>
+          <h2>读表、作图、解释分布</h2>
+        </div>
+        <div class="checklist">
+          <div class="checkitem"><span class="mark">01</span><span>给出一个频数分布表，判断哪一组频数最大。</span></div>
+          <div class="checkitem"><span class="mark">02</span><span>指出一个直方图中的错误，并说明理由。</span></div>
+          <div class="source">source_id: classroom-check-22.4
+source_type: teacher_created
+question_ids: ["22.4-check-1", "22.4-check-2"]</div>
+        </div>
+      </div>
+      <div class="foot"><span>即时反馈</span><span>错误诊断优先于讲解答案</span></div>
+    </section>
+
+    <section class="slide accent" data-layout="closing">
+      <div class="chrome"><span>summary</span><span>09 / 09</span></div>
+      <div class="canvas">
+        <div>
+          <div class="kicker">小结回扣</div>
+          <h2>看见分布，需要一条整理链</h2>
+        </div>
+        <div class="chain"><span>原始数据</span><span>→</span><span>分组</span><span>→</span><span>频数统计</span><span>→</span><span>频数分布表</span><span>→</span><span>直方图</span><span>→</span><span>解释分布</span></div>
+        <p class="lead">下一次看到一组大量数据时，你会先做什么？</p>
+      </div>
+      <div class="foot"><span>22.4 histogram</span><span>课堂结束问题</span></div>
+    </section>
+  </main>
+  <nav id="nav" aria-label="slide navigation"></nav>
+  <script>
+    const deck = document.getElementById('deck');
+    const slides = [...document.querySelectorAll('.slide')];
+    const nav = document.getElementById('nav');
+    let current = 0;
+    slides.forEach((_, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'dot';
+      btn.type = 'button';
+      btn.ariaLabel = `转到第 ${i + 1} 页`;
+      btn.addEventListener('click', () => go(i));
+      nav.appendChild(btn);
+    });
+    function go(index){
+      current = Math.max(0, Math.min(slides.length - 1, index));
+      deck.style.transform = `translateX(${-current * 100}vw)`;
+      [...nav.children].forEach((dot, i) => {
+        dot.classList.toggle('active', i === current);
+        dot.classList.toggle('accent-dot', slides[current].classList.contains('accent'));
+      });
+    }
+    window.addEventListener('keydown', (event) => {
+      if(event.key === 'ArrowRight' || event.key === 'PageDown' || event.key === ' ') go(current + 1);
+      if(event.key === 'ArrowLeft' || event.key === 'PageUp') go(current - 1);
+      if(event.key === 'Home') go(0);
+      if(event.key === 'End') go(slides.length - 1);
+    });
+    window.addEventListener('wheel', (event) => {
+      if(Math.abs(event.deltaY) < 30) return;
+      go(current + (event.deltaY > 0 ? 1 : -1));
+    }, {passive:true});
+    go(0);
+  </script>
+</body>
+</html>

@@ -14,6 +14,7 @@ description: Generate complete, traceable Chinese reference solutions for every 
 3. 读取本目录 `skills.md` 和 `检查清单.md`。
 4. 读取目标课时对应的完整教材原文及其图片。
 5. 读取 `validators/solutions/rules.md`。
+6. 读取 `knowledge/chapter-knowledge-points.yaml` 获取本章核心关键词。
 
 ## 执行流程
 
@@ -23,7 +24,8 @@ description: Generate complete, traceable Chinese reference solutions for every 
 4. 判断教材是否已经给出解答：使用 `答案来源: 教材原文` 或 `答案来源: AI参考推导`。
 5. 按题型模板逐题作答，不改写原题，不改变教材顺序，不补造题目。
 6. 对计算、推理、证明、图形和结论进行复核。
-7. 执行检查清单与专用validators，通过后写入规定目录。
+7. 运行 `python tools/check_solution_knowledge.py --chapter {章号}` 检查知识点一致性，复核未命中题目并修正真问题。
+8. 执行检查清单与专用validators，通过后写入规定目录。
 
 ## 异常处理
 

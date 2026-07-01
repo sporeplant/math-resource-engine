@@ -1,12 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Convert reference-answer Markdown to DOCX using raw XML (same style as compact_review_docx.py)."""
+"""Legacy Markdown-to-DOCX converter.
+
+Deprecated: prefer `tools/review_docx_pipeline.py` for review exports.
+This file is kept only for backward compatibility with older commands.
+"""
 
 from __future__ import annotations
 
 import argparse
 import re
 import shutil
+import sys
 import tempfile
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
@@ -210,6 +215,11 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main() -> int:
+    print(
+        "警告: tools/md_to_docx.py 是旧版简化转换器；新任务请使用 "
+        "tools/review_docx_pipeline.py。",
+        file=sys.stderr,
+    )
     parser = build_parser()
     args = parser.parse_args()
     input_path = Path(args.input).expanduser().resolve()
