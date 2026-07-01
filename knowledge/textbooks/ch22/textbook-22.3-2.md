@@ -35,7 +35,7 @@ lesson_id: 22.3.2
 # A 组
 
 1. 北京一年四季分明，而昆明则四季如春。依据两个城市历年 12 个月的月平均气温资料绘制的折线统计图如下： 
-   ![](C:/Users/Administrator/OneDrive/math-resource-engine/%25E7%259F%25A5%25E8%25AF%2586%25E5%25BA%2593/%25E6%2595%2599%25E6%259D%2590%25E5%258E%259F%25E6%2596%2587/images/bbf32dd20c2647b4fc3429ed6b70727bbd6d7d1d86e2b2a9cd25ee2395845fbd.jpg)
+   ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bbf32dd20c2647b4fc3429ed6b70727bbd6d7d1d86e2b2a9cd25ee2395845fbd.jpg)
    (第1题)
 
 (1) 从总体上看, 两个城市的月平均气温有怎样的变化趋势? 它们之间最明显的差别是什么? 
