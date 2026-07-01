@@ -51,7 +51,7 @@ $$
 
 例 4 八年级(1)班的同学在体育课上进行长跑训练, 小芳跑完 $1000 \mathrm{~m}$ 用了 $t \mathrm{~s}$ , 小雯用相同的时间跑完了 $800 \mathrm{~m}$ . 这次训练, 小芳的平均速度是小雯平均速度的多少倍? 
 
-![](../images/c709846b9fbf6ae75fe63572ba62d5f916e2e0c0c99d804c4118c9b4af303df6.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c709846b9fbf6ae75fe63572ba62d5f916e2e0c0c99d804c4118c9b4af303df6.jpg)
 
 
 解：小芳的平均速度为 $\frac{1000}{t} \mathrm{~m/s}$ ，小雯的平均速度为 $\frac{800}{t} \mathrm{~m/s}$ . 
@@ -62,7 +62,7 @@ $$
 
 答：这次训练，小芳的平均速度是小雯平均速度的 1.25 倍. 
 
-![](../images/486c9df064e3bb6be4c33dc202dd43d52ad4705626789793ca143b5e90a3700c.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/486c9df064e3bb6be4c33dc202dd43d52ad4705626789793ca143b5e90a3700c.jpg)
 
 
 ## 练习
@@ -89,7 +89,7 @@ $$
 
 （1）当圆锥的高扩大到原来的 $a$ 倍而底面积不变时，变化后的圆锥的体积是原来的多少倍？ 
 
-![](../images/3d02bedb9199543ba5270e86621493a27f32df91b942a148d971e0f980ceefb5.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3d02bedb9199543ba5270e86621493a27f32df91b942a148d971e0f980ceefb5.jpg)
 
 
 (2) 当圆锥的底面积扩大到原来的 $a$ 倍而体积不变时，（第2题）变化后的圆锥的高是原来的几分之一？ 

@@ -10,7 +10,7 @@
 
 ## 思维导图
 
-![](../images/fce87753d716e42ebe396b356f80f6fbfdb4d5eb1d3742de918336d45bfa4dea.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/fce87753d716e42ebe396b356f80f6fbfdb4d5eb1d3742de918336d45bfa4dea.jpg)
 
 <details>
 <summary>flowchart</summary>
@@ -150,9 +150,9 @@ D． $x > - 3$ 且 $x \neq 3$
 
 故选：D
 
-![](../images/06fe15802acc7e5d430dde5bb1a98e6699376022105c0f1f233ddd85206b7865.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/06fe15802acc7e5d430dde5bb1a98e6699376022105c0f1f233ddd85206b7865.jpg)
 
-![](../images/f7dc16d4f12dff3bef084e6a1daf3185efd155664f0e0708e9e3a9b914e8457c.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f7dc16d4f12dff3bef084e6a1daf3185efd155664f0e0708e9e3a9b914e8457c.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -383,7 +383,7 @@ $$
 
 【变式 4】根据如图所示的程序计算函数 y 的值，若输入 x 的值是 8，则outputs y 的值是﹣3，若输入 x 的值是﹣8，则outputs y 的值是（ ）
 
-![](../images/2d95956471c4dbff256c5015e143b99f9fda848b799b0a22a5954fa71de051c3.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2d95956471c4dbff256c5015e143b99f9fda848b799b0a22a5954fa71de051c3.jpg)
 
 <details>
 <summary>flowchart</summary>
@@ -417,9 +417,9 @@ $$
 
 故选：C
 
-![](../images/56fff142c0b9250175af9e41d32a2affe73aeea5ed6fdbc67f1410b700978afa.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/56fff142c0b9250175af9e41d32a2affe73aeea5ed6fdbc67f1410b700978afa.jpg)
 
-![](../images/6838b4c3a5ac6199054899a9b7815830a6f01f35a8c64d8d99c64c5fa69fd322.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6838b4c3a5ac6199054899a9b7815830a6f01f35a8c64d8d99c64c5fa69fd322.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -504,7 +504,7 @@ D． $Q = 0 . 2 t - 4 0$
 
 其中所有正确结论的序号是（
 
-![](../images/5771c99e612880fcdfec616404a0576d4e323fc92131a262a2906efb57e10634.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5771c99e612880fcdfec616404a0576d4e323fc92131a262a2906efb57e10634.jpg)
 
 <details>
 <summary>natural_image</summary>
@@ -586,7 +586,7 @@ $$
 
 9．用如图所示的程序框图来计算函数 y 的值，当输入 x为﹣1 和 7 时，outputs y 的值相等，则 b 的值是（ ）
 
-![](../images/74215d78efc1d78d6ba49423a67ab5ed4bd0e230a856034cbfc4d03f62f947b5.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/74215d78efc1d78d6ba49423a67ab5ed4bd0e230a856034cbfc4d03f62f947b5.jpg)
 
 <details>
 <summary>flowchart</summary>
@@ -633,7 +633,7 @@ $$
 
 其中正确的结论是（ ）
 
-![](../images/b0cc78587f346250784f9df50f0911fad2320b3761e2f762916a3fc800471959.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b0cc78587f346250784f9df50f0911fad2320b3761e2f762916a3fc800471959.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -655,7 +655,7 @@ D．②④
 
 【解答】解：在 BC 段，所用的时间是 5 秒，路程是 150 米，则速度是 30 米/秒．故②正确；
 
-![](../images/23c0a5088720d64aed0208fd17b72fb33c4c53ac44a0da655e749de960616dc8.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/23c0a5088720d64aed0208fd17b72fb33c4c53ac44a0da655e749de960616dc8.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -709,7 +709,7 @@ $$
 
 边高为 b，写出杯子总高度 h 随着杯子数量 n（自变量）的变化规律 $\scriptstyle h = a n + b$
 
-![](../images/5f5c6a579c4c5895d440a134c966ad4256c2f838d9528206c900964864e27fac.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5f5c6a579c4c5895d440a134c966ad4256c2f838d9528206c900964864e27fac.jpg)
 
 <details>
 <summary>natural_image</summary>
@@ -770,7 +770,7 @@ $$
 （2）当输入 x 的值为﹣1 时，求outputs y 的值；  
 （3）当outputs y 的值为 12 时，求输入 x 的值
 
-![](../images/b9d0bb1619feba8ffa42df9df34388f67377b6288a4833accf99bf3f0d5f4b77.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b9d0bb1619feba8ffa42df9df34388f67377b6288a4833accf99bf3f0d5f4b77.jpg)
 
 <details>
 <summary>flowchart</summary>

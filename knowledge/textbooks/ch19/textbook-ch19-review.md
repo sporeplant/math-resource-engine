@@ -26,7 +26,7 @@ lesson_id: ch19-activity-review
 
 | | |
 |:---:|:---:|
-| ![](../images/ef6a4900a7137bd913b02d989d6feed37651102890f4e41aa0cdb7d878c43aec.jpg) | ![](../images/8977e5f6ddbecac3bdc4c59c62a02094780f402c0a2af484bdaf91c4ef6f7c9d.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ef6a4900a7137bd913b02d989d6feed37651102890f4e41aa0cdb7d878c43aec.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8977e5f6ddbecac3bdc4c59c62a02094780f402c0a2af484bdaf91c4ef6f7c9d.jpg) |
 | (第 5 题) | (第6题) |
 
 
@@ -63,7 +63,7 @@ lesson_id: ch19-activity-review
 
 | | | | |
 |:---:|:---:|:---:|:---:|
-| ![](../images/f12ba684f490e18a6437666b646bb6bc40b4c6d9a03a168d27ac27e0b0a1159d.jpg) | ![](../images/2f6ad9e21e97d0f129bd3cdbce577602dc296b013b3e39129432c675bd52b751.jpg) | ![](../images/9c8c377e13a2c893e20294655af967362b922a530a1ee47e553ed10df6810ea1.jpg) | ![](../images/40c2dbda95d82dc8bd9a6fab7b501ef29e57b95d50feea9a8847093de2ce9488.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f12ba684f490e18a6437666b646bb6bc40b4c6d9a03a168d27ac27e0b0a1159d.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2f6ad9e21e97d0f129bd3cdbce577602dc296b013b3e39129432c675bd52b751.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9c8c377e13a2c893e20294655af967362b922a530a1ee47e553ed10df6810ea1.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/40c2dbda95d82dc8bd9a6fab7b501ef29e57b95d50feea9a8847093de2ce9488.jpg) |
 | (1) | (2) | (3) | (4) |
 
 

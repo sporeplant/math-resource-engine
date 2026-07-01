@@ -75,7 +75,7 @@ $$
 
 | | |
 |:---:|:---:|
-| ![](../images/b3f32508683b5b2f6d39b908a210befddb4770b5caa9cdaadffdca3b5a10b960.jpg) | ![](../images/318122cffb1b58b46a01a4a5c9267fc6b23d8a637c7464be18bfec3e84376392.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b3f32508683b5b2f6d39b908a210befddb4770b5caa9cdaadffdca3b5a10b960.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/318122cffb1b58b46a01a4a5c9267fc6b23d8a637c7464be18bfec3e84376392.jpg) |
 | (第1题) | (第2题) |
 
 

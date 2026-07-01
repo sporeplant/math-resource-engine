@@ -11,7 +11,7 @@ lesson_id: 12.3.1
 
 我们已经学习了分式的乘法运算和除法运算。那么，怎样进行分式的加法运算和减法运算呢？ 
 
-![](../images/7b22fdb7dc57c269d17b448c930c13dbb586a23d1402cdd6023b9f1b359cc661.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7b22fdb7dc57c269d17b448c930c13dbb586a23d1402cdd6023b9f1b359cc661.jpg)
 
 
 ## 一起探究
@@ -58,7 +58,7 @@ $$
 \begin{array}{r l} & = \frac {a ^ {2} - 2 a b + b ^ {2}}{a ^ {2} - b ^ {2}} \\ & = \frac {(a - b) ^ {2}}{(a + b) (a - b)} \\ & = \frac {a - b}{a + b}. \end{array}
 $$
 
-![](../images/f9a23bdeaa140f034423554bb6f0aae521c227d8fb9c854ff6f477e086f12eb9.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f9a23bdeaa140f034423554bb6f0aae521c227d8fb9c854ff6f477e086f12eb9.jpg)
 
 
 ## 观察与思考
@@ -97,7 +97,7 @@ $$
 
 解：(1) $\frac{b^2}{4a^2} -\frac{c}{a} = \frac{b^2}{4a^2} -\frac{4ac}{4a^2} = \frac{b^2 - 4ac}{4a^2}.$ (2） $\frac{1}{xz} +\frac{x}{2y} = \frac{2y}{2xyz} +\frac{x^2z}{2xyz} = \frac{2y + x^2z}{2xyz}.$ 
 
-![](../images/fdbad793b7b8aa25555688760433b31f94f7b9addf9c160b0965c900de520138.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/fdbad793b7b8aa25555688760433b31f94f7b9addf9c160b0965c900de520138.jpg)
 
 
 ## 练习
@@ -131,7 +131,7 @@ B 组
 
 (2) 小明和小华在计算机上打文稿的时间分别为 $2 \mathrm{~h}$ 和 $3 \mathrm{~h}$ , 他们共打文稿多少千字? 
 
-![](../images/af9a5278e12d3fca9b6eb65942055965e9932ee948e05697c7a3fc4cb548818b.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/af9a5278e12d3fca9b6eb65942055965e9932ee948e05697c7a3fc4cb548818b.jpg)
 
 
 （3）如果小明比小华打字快，那么小明比小华平均每小时多打多少千字？ 

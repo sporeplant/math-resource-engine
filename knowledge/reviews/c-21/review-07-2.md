@@ -12,7 +12,7 @@
 
 1．如图，在平行四边形 \(A B C D\) 中，将 \(\triangle A B C\) 沿着 AC 所在的直线折叠得到 \(\triangle A B^{\prime} C, B^{\prime}\) ′C 交 AD 于点 E，连接 \(B^{\prime} D _ { \mathrm { : } }\) ，若 \(\angle B = 60^{\circ}\) ， \(\angle A C B = 45^{\circ}\) °， \(A C = \sqrt { 6 }\) ，则 \(B^{\prime} \ D\) 的长是（ ）
 
-![](../images/f0a247c5baa5af009bd0ae59ac2a720de4d30ef4a0e64b777df382db6ddc8f36.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f0a247c5baa5af009bd0ae59ac2a720de4d30ef4a0e64b777df382db6ddc8f36.jpg)
 
 A．1
 
@@ -66,7 +66,7 @@ $\(\therefore B^{\prime} D = \sqrt {B^{\prime} E^{2} + D E^{2}} = \sqrt {2}. $\)
 
 2．如图，将▱ ABCD 折叠，使点 D、C 分别落在点 F、E 处（点 F、E 都在 AB 所在的直线上），折痕为 MN，若 \(\angle A M F = 50^{\circ}\) °，则 \(\angle A = 65^{\circ}\)
 
-![](../images/8d308126d18998d59cad779d0575d20a7bcf4cbfecd80f2cd499c7d9d3e1e118.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8d308126d18998d59cad779d0575d20a7bcf4cbfecd80f2cd499c7d9d3e1e118.jpg)
 
 【解答】解：∵四边形 ABCD 是平行四边形，
 
@@ -100,7 +100,7 @@ $\(\therefore \angle F M N = \angle D M N = \angle A = 65^{\circ}, $\)
 
 3．如图，将▱ ABCD 沿对角线 AC 折叠，使点 B 落在 \(B^{\prime}\) ′处，若 \(\angle 1 = \angle 2 = 44^{\circ}\) °，则\(\angle B\) 为（ ）
 
-![](../images/473766db2ed05f1464dfe3c4311c9fb1285a0fd4f4a8482e3bc7f60d1b3dce7f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/473766db2ed05f1464dfe3c4311c9fb1285a0fd4f4a8482e3bc7f60d1b3dce7f.jpg)
 
 A． \(66^{\circ}\)
 
@@ -134,7 +134,7 @@ $\(\therefore \angle B = 180^{\circ} - \angle 2 - \angle B A C = 180^{\circ} - 4
 
 4．如图，在▱ ABCD 中，E 为边 CD 上一点，将 \(\triangle A D E\) 沿 AE 折叠至 \(\triangle A D^{\prime}\) ′E 处， \(A D^{\prime}\) ′与 CE 交于点 F．若\(\angle B = 52^{\circ}\) ， \(\angle D A E = 20^{\circ}\) ，则 \(\angle F E D^{\prime}\) 的大小为 \(36^\circ\)
 
-![](../images/74e7f95992dc55e0053723ff0e8f57159326c21151e2ed214845afdc1777be6b.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/74e7f95992dc55e0053723ff0e8f57159326c21151e2ed214845afdc1777be6b.jpg)
 
 【解答】解：∵四边形 ABCD 是平行四边形，
 
@@ -156,7 +156,7 @@ $\(\therefore \angle F E D^{\prime} = 108^{\circ} - 72^{\circ} = 36^{\circ}; $\)
 
 5．如图，P 是平行四边形纸片 ABCD 的 BC 边上一点，以过点 P 的直线为折痕折叠纸片，使点 C，D 落在纸片所在平面上 \(C^{\prime}, D^{\prime}\) 处，折痕与 AD 边交于点 M；再以过点 P 的直线为折痕折叠纸片，使点 B 恰好落在 \(C^{\prime} \mathrm { ~ \ } P\) 边上 \(B^{\prime}\) 处，折痕与 AB 边交于点 N．若 \(\angle M P C = 74^{\circ}\) ，则 \(\angle N P B^{\prime} = \underline { { { 16 } } }^{\circ}\)
 
-![](../images/049898301fbd87751edd11863f533e469218cea7d7611f311696252b322b0696.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/049898301fbd87751edd11863f533e469218cea7d7611f311696252b322b0696.jpg)
 
 【解答】解：
 
@@ -184,7 +184,7 @@ $\(\therefore \angle N P B^{\prime} = \frac {1}{2} \angle B P B^{\prime} = 16^{\
 
 6．如图，矩形 ABCD 沿对角线 BD 折叠，已知长 \(B C = 8 c m\) ，宽 AB＝6cm，那么折叠后重合部分的面积是（ ）
 
-![](../images/fb25a95c41092452f44682e00e0ed0ae39d76433747b2856575f34eb5934eb2e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/fb25a95c41092452f44682e00e0ed0ae39d76433747b2856575f34eb5934eb2e.jpg)
 
 A． \(48 c m^{2}\)
 
@@ -240,7 +240,7 @@ $\(\therefore S_{\triangle B D E} = D E \times C D \div 2 = 18. 75 c m^{2}. $\)
 
 7．如图，长方形纸片 ABCD，E 为 CD 边上一点，将纸片沿 BE 折叠，点 C 落在点 C'处，将纸片沿 AE 折叠，点 D 落在点 D'处，且 D'恰好在线段 BE 上．若 \(\angle A E C = \alpha { \mathrm { : } }\) ，则 \(\angle C E B =\) （ ）
 
-![](../images/6e00fb97caba3f083a9d05eb7f91acec2e4a4194a45e47453adffa67c85e487a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6e00fb97caba3f083a9d05eb7f91acec2e4a4194a45e47453adffa67c85e487a.jpg)
 
 A． \(60^{\circ} - \frac { 2 } { 3 } a\)
 
@@ -303,7 +303,7 @@ $\((\angle D A C + \angle B A C) = \frac {1}{2} \times 90^{\circ} = 45^{\circ}; 
 
 9．如图，在矩形 ABCD 中，M 是 BC 上一点，将\(\triangle ABM\) 沿 AM 折叠，使点 B 落在 B'处，若 \(\angle A M B = \alpha\) ，则\(\angle B^{\prime} A D\) 等于（ ）
 
-![](../images/4aca6403226b6692ec4df2d99bff949f099f4ada1485c6dc11d3f6ec193f1093.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4aca6403226b6692ec4df2d99bff949f099f4ada1485c6dc11d3f6ec193f1093.jpg)
 
 A． \(\alpha - 90^{\circ}\)
 
@@ -331,7 +331,7 @@ $\(\therefore \angle D A M = \angle A M B = \alpha, \quad \angle B A M = 90^{\ci
 
 10．如图，已知长方形纸片 ABCD，点 E 和点 F 分别在边 AD 和 BC 上，且 \(\angle E F G = 37^{\circ}\) °点 H 和点 G 分别是边 AD 和 BC 上的动点，现将纸片两端分别沿 EF，GH 折叠至如图所示的位置，若 \(E F \parallel G H ;\) ，则 \(\angle K H D\) 的度数为（ ）
 
-![](../images/0bf8320c8d2ee07d3fa1b0756500e20d9e51b62afd834dfb7d4e23c725b40baa.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0bf8320c8d2ee07d3fa1b0756500e20d9e51b62afd834dfb7d4e23c725b40baa.jpg)
 
 A． \(37^{\circ}\)
 
@@ -375,7 +375,7 @@ $\(\therefore \angle K H D = 360^{\circ} - \angle K H G - \angle D H G = 360^{\c
 ② \(G H \bot G D_{1},\)  
 ③当 \(M N \parallel E F\) 时， \(\angle A E F = 120^{\circ}\) °
 
-![](../images/b301d2cb7206da2ea5ac8206c720c68e31bd8b1a8a2172da49f095e278764fab.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b301d2cb7206da2ea5ac8206c720c68e31bd8b1a8a2172da49f095e278764fab.jpg)
 
 A．①②
 
@@ -429,7 +429,7 @@ $\(\because \angle A E F + \angle G E F = 180^{\circ}, $\)
 
 10．如图，在菱形纸片 ABCD 中， \(\angle A = 60^{\circ}\) °，点 E 在 BC 边上，将菱形纸片 ABCD 沿 DE 折叠，点 C 对应点为点 \(C^{\prime}\) ，且 \(D C^{\prime}\) 是 AB 的垂直平分线，则 \(\angle D E C\) 的大小为（ ）
 
-![](../images/31bcce56dc8e9474cdd8c5a99f16e87a314b3b11883c4ae573a87beff095bd0f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/31bcce56dc8e9474cdd8c5a99f16e87a314b3b11883c4ae573a87beff095bd0f.jpg)
 
 A． \(30^{\circ}\)
 
@@ -469,11 +469,11 @@ $\(\therefore \angle P D C = 90^{\circ}, $\)
 
 故选：D．
 
-![](../images/ac0cde78eaa74171b656b55a58304f5c111920d49289a589744f953a1f24ae85.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ac0cde78eaa74171b656b55a58304f5c111920d49289a589744f953a1f24ae85.jpg)
 
 11．如图，菱形 ABCD 中， \(\angle A = 120^{\circ}\) °，E 是 AD 上的点，沿 BE 折叠 \(\triangle A B E\) ，点 A 恰好落在 BD 上的点 F，那么 \(\angle B F C\) 的度数是 \(75^\circ\)
 
-![](../images/5b33ea62303296dc3e706c62f8e54b725527fe604cab5753707e486b0ef463f8.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5b33ea62303296dc3e706c62f8e54b725527fe604cab5753707e486b0ef463f8.jpg)
 
 【解答】解：∵四边形 ABCD 是菱形，
 
@@ -505,7 +505,7 @@ $\(\therefore \angle B F C = \angle B C F = (180^{\circ} - 30^{\circ}) \div 2 = 
 
 12．如图，菱形 ABCD 中， \(\angle D = 120^{\circ}\) °，点 E 在边 CD 上，将菱形沿直线 AE 翻折，使点 D 恰好落在对角线 AC 上，连接 \(B D^{\prime}\) ′，则 \(\angle A D^{\prime} B = 75^{\circ}\)
 
-![](../images/ec8b58a77eed8deb4552ff0ac41271444f00056e946e7eac7f162de88b8be0d2.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ec8b58a77eed8deb4552ff0ac41271444f00056e946e7eac7f162de88b8be0d2.jpg)
 
 【解答】解：∵四边形 ABCD 是菱形，
 
@@ -555,7 +555,7 @@ $\(\therefore \angle A D^{\prime} B = \angle A B D^{\prime} = \frac {1}{2} (180^
 
 （2）若点 E 是 AB 的中点，则 DF 的长为 \(- \frac { 14 } { 5 } -\)
 
-![](../images/1ac78b689088cce239579b09f16f3282a71bbb46cd5ba796d3a1ae40171988f0.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1ac78b689088cce239579b09f16f3282a71bbb46cd5ba796d3a1ae40171988f0.jpg)
 
 【解答】解：（1）由翻折可得 \(\angle A E D = \angle D E G, \angle B E F = \angle H E F\) ，
 
@@ -607,7 +607,7 @@ $\(\because \angle E G D + \angle E H F = \angle A + \angle B = 180^{\circ}, $\)
 
 过点 D 作 \(D M \bot B C\) ，交 BC 的延长线于点 M
 
-![](../images/0a63b952855fd28ffe5c7cda7ba2ee88927b93d439db0edd452f865ea6eea710.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0a63b952855fd28ffe5c7cda7ba2ee88927b93d439db0edd452f865ea6eea710.jpg)
 
 
 $\(\because \angle A = 120^{\circ}, A B = 2, $\)
@@ -641,7 +641,7 @@ $\(\therefore D F = \frac {14}{5}. $\)
 
 14．如图，在正方形 ABCD 中，点 E，F 分别在边 AB，CD 上， \(\angle E F C = 120^{\circ}\) °，若将四边形 EBCF 沿 EF折叠，点 B 恰好落在 AD 边上，则 \(\angle A E B^{\prime}\) 为（ ）
 
-![](../images/7020a6f6d37324a914e3074ed34bf6fd4be0d3a8b6a7f2cfb7bd31e60f1cab58.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7020a6f6d37324a914e3074ed34bf6fd4be0d3a8b6a7f2cfb7bd31e60f1cab58.jpg)
 
 A． \(70^{\circ}\)
 
@@ -683,7 +683,7 @@ $\(\therefore \angle A E B^{\prime} = 180^{\circ} - \angle B E F - \angle F E B^
 
 15．如图，把正方形纸片 ABCD 沿对边中点所在的直线对折后展开，折痕为 MN，再过点 B 折叠纸片，使点 A 落在 MN 上的点 F 处，折痕为 BE．若 FN＝3，则正方形纸片的边长为 \(\underline { { 2 \sqrt { 3 } } } .\)
 
-![](../images/a3a35fc32fcc6049d069e8cc7e58850ca272f2051aaa8cbde6d40af4afb86a33.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a3a35fc32fcc6049d069e8cc7e58850ca272f2051aaa8cbde6d40af4afb86a33.jpg)
 
 【解答】解：设正方形纸片的边长为 x，则 \(B F = A B = x, B N = { \frac { 1 } { 2 } } B C = { \frac { 1 } { 2 } } x\) ，
 
@@ -697,7 +697,7 @@ $\(\therefore x = 2 \sqrt {3}, $\)
 
 16．如图，在正方形 ABCD 中，E 为边 BC 上一点，将 \(\triangle A B E\) 沿 AE 折叠至 \(\triangle A B^{\prime} E\) 处，BE 与 AC 交于点 F，若 \(\angle E F C = 69^{\circ}\) °，则\(\angle CAE\) 的大小为（ ）
 
-![](../images/966f7bf2ce89acc1f764d9deb8281177ee12c3bec7a2e0341dc07dc928f2e03d.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/966f7bf2ce89acc1f764d9deb8281177ee12c3bec7a2e0341dc07dc928f2e03d.jpg)
 
 A． \(10^{\circ}\)
 
@@ -727,7 +727,7 @@ $\(\therefore \angle E A C = 45 - 33 = 12^{\circ}. $\)
 
 17．如图，正方形纸片 ABCD 的边长为 12，E 是边 CD 上一点，连接 AE，折叠该纸片，使点 A 落在 AE 上的 G 点，并使折痕经过点 B，折痕 BF 与 AE 交于点 H，点 F 在 AD 上，若 DE＝5，则 AH 的长为 \(- \frac { 60 } { 13 } -\)
 
-![](../images/8730451ce3e57159c99e5952397484f01a59cfd39680eb6381722b59a0bbf3bb.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8730451ce3e57159c99e5952397484f01a59cfd39680eb6381722b59a0bbf3bb.jpg)
 
 【解答】解：∵四边形 ABCD 为正方形，
 
@@ -781,7 +781,7 @@ $\(\therefore A H = \frac {60}{13}, $\)
 
 18．如图，将正方形纸片 ABCD 折叠，使点 D 落在边 AB 上的 D'处，点 C 落在 C'处，若 \(\angle A D^{\prime} M = 50^{\circ}\) °，则\(\angle M N C\) '的度数为（ ）
 
-![](../images/eec6ceadc4b8419dc57524ae34bd9dc6fc3bc0d0d3c1f2ad3e03fe1c56efa461.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/eec6ceadc4b8419dc57524ae34bd9dc6fc3bc0d0d3c1f2ad3e03fe1c56efa461.jpg)
 
 A． \(100^{\circ}\)
 

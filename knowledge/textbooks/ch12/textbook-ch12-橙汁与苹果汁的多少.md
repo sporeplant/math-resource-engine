@@ -11,7 +11,7 @@ lesson_id: ch12-activity-橙汁与苹果汁的多少
 
 有甲、乙两个杯子，分别盛了体积相同的橙汁与苹果汁。将这两种果汁进行部分混合，把甲杯中的苹果汁与橙汁的体积比记为 $m$ ，乙杯中的橙汁与苹果汁的体积比记为 $n$ 。通过操作和计算，比较 $m, n$ 的大小。 
 
-![](../images/5b38e6e71001e143ab9415410df4fe45d7093026ce571085bf9d469acbb5e26f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5b38e6e71001e143ab9415410df4fe45d7093026ce571085bf9d469acbb5e26f.jpg)
 
 
 活动一： 

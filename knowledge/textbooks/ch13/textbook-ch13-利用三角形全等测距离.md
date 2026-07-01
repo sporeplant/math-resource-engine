@@ -13,7 +13,7 @@ lesson_id: ch13-activity-2
 
 古人测量河宽的方法：先面向河对岸站好，然后调整帽子，使视线通过帽檐正好落在对岸岸边；接着，保持头部姿势不变，向后转，这时视线落在了自己所在岸上的某一点；最后，用步测出自己与那个点之间的距离，这个距离就是河宽，如下图所示。这实际上就是利用了三角形全等的判定和性质。 
 
-![](../images/a2d571840a6fc8932d79e8b5bc7c32e70819c5522a143bc5f2cfbf10ef7d7f8c.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a2d571840a6fc8932d79e8b5bc7c32e70819c5522a143bc5f2cfbf10ef7d7f8c.jpg)
 
 
 活动一： 

@@ -6,7 +6,7 @@
 
 ## 思维导图
 
-![](../images/0e900f93d20bbb0e8024d9a7419bd249892714303ffd56b9998e230501fad23e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0e900f93d20bbb0e8024d9a7419bd249892714303ffd56b9998e230501fad23e.jpg)
 
 
 ## 知识点01 多边形的认识
@@ -21,35 +21,35 @@
 
 题型考点：判断图形。 
 
-![](../images/959770b70523e2135b4e0c431b424f11acc8f2d758d4d376a53561ac316bfda9.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/959770b70523e2135b4e0c431b424f11acc8f2d758d4d376a53561ac316bfda9.jpg)
 
 
 ## 【即学即练 1】
 
 1. 如图所示的图形中，属于多边形的有（ ）个 
 
-![](../images/3c8cc07b54877009340dc8a8a88dbe28922c0587882e59215a64a7cba5a2637d.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3c8cc07b54877009340dc8a8a88dbe28922c0587882e59215a64a7cba5a2637d.jpg)
 
 
 A．3 
 
-![](../images/d854bb5630d81c811af7fd60ded9e4730e083ad24ec89bfff8d857429649b5f7.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d854bb5630d81c811af7fd60ded9e4730e083ad24ec89bfff8d857429649b5f7.jpg)
 
 
 B．4 
 
-![](../images/65d06c8e3335cf2af6bd393012b106018c3c1bfc95033cd1ccd5d55a6019674a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/65d06c8e3335cf2af6bd393012b106018c3c1bfc95033cd1ccd5d55a6019674a.jpg)
 
 
-![](../images/0eb9f762b78663d9dc3836a144220696e7c943af91839493f5e6c57c00f14aca.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0eb9f762b78663d9dc3836a144220696e7c943af91839493f5e6c57c00f14aca.jpg)
 
 
 C．5 
 
-![](../images/1d93cbd6842f95480fbe522bd3eea3a9f8af1a7cb3f8d0f10960524d04861125.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1d93cbd6842f95480fbe522bd3eea3a9f8af1a7cb3f8d0f10960524d04861125.jpg)
 
 
-![](../images/11c7497b6c6531d6409207f3217db9ac35fa1e13d461f9e7d83b1d16be84af76.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/11c7497b6c6531d6409207f3217db9ac35fa1e13d461f9e7d83b1d16be84af76.jpg)
 
 
 D．6 
@@ -60,13 +60,13 @@ D．6
 
 1. 多边形的对角线计算： 
 
-![](../images/afdf1454332a7050f94c659bde45bc5a9496341fedb7b875a4a93d2725afa68c.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/afdf1454332a7050f94c659bde45bc5a9496341fedb7b875a4a93d2725afa68c.jpg)
 
 
-![](../images/a6dcbb8b91a53b37eeb149dc17132040b70ad216083d8912b6b68cbce211c319.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a6dcbb8b91a53b37eeb149dc17132040b70ad216083d8912b6b68cbce211c319.jpg)
 
 
-![](../images/91fef3fb960fa4e796ff1c25716f3bca4d449c4aed487aaf780196cf8cc4a5b8.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/91fef3fb960fa4e796ff1c25716f3bca4d449c4aed487aaf780196cf8cc4a5b8.jpg)
 
 
 总结规律：若多边形的边数为n，则多边形一个顶点的对角线条数为  条，多边形所有的对角 线条数为 $- { \frac { n ( n - 3 ) } { 2 } }$ 条。 
@@ -165,7 +165,7 @@ $$
 
 如图，在 $\triangle A B C$ 中， $\angle C = 7 0 ^ { \circ }$ ，沿图中虚线截去 $\angle C$ ，则 $\angle 1 + \angle 2 = { \left( \begin{array} { l l l } { \quad } & { \quad } & { } \end{array} \right) }$ 
 
-![](../images/de0244a26637a3dc3a1ca065488aa3ef09e1ebeb5f2fe97f8c19e8b6a4b24caf.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/de0244a26637a3dc3a1ca065488aa3ef09e1ebeb5f2fe97f8c19e8b6a4b24caf.jpg)
 
 
 A $1 4 0 ^ { \circ }$ B $1 8 0 ^ { \circ }$ C $2 5 0 ^ { \circ }$ D $3 6 0 ^ { \circ }$ 
@@ -180,7 +180,7 @@ $$
 
 故选：C 
 
-![](../images/0da92414ad052fc5fd50f1e9ef47ece39a9f52362081bbf095d180ec7dc19e29.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0da92414ad052fc5fd50f1e9ef47ece39a9f52362081bbf095d180ec7dc19e29.jpg)
 
 
 变式 1： 
@@ -247,7 +247,7 @@ $$
 
 如图，小明从点 A 出发沿直线前进 10 米到达点 B，向左转 $4 5 ^ { \circ }$ 后又沿直线前进 10 米到达点 C，再向左转 $4 5 ^ { \circ }$ 后沿直线前进10米到达点D…照这样走下去，小明第一次回到出发点A时所走的路程为（ ） 
 
-![](../images/8c6a3609e321f7bc1d67b242693227ecc5d0792776bb307ad2153cc51e328a03.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8c6a3609e321f7bc1d67b242693227ecc5d0792776bb307ad2153cc51e328a03.jpg)
 
 
 A．100 米 B．80 米 C．60 米 D．40 米 
@@ -290,14 +290,14 @@ n最小是3， $a ^ { \circ }$ 最大是 $1 2 0 ^ { \circ }$
 
 如图，平面上两个正方形与正五边形都有一条公共边，则 α 的度数为（ ） 
 
-![](../images/2df8427f03666cb307c30cf88837a22cba625f8e5fa727f5a091f3c071efd0b0.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2df8427f03666cb307c30cf88837a22cba625f8e5fa727f5a091f3c071efd0b0.jpg)
 
 
 A $3 6 ^ { \circ }$ B $9 2 ^ { \circ }$ C $1 4 4 ^ { \circ }$ D $1 5 0 ^ { \circ }$ 
 
 【解答】解：如图， 
 
-![](../images/364491f342e81c6ebca34a6bf2439629198e5dcb2bc1ef315ba0d4983f820dde.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/364491f342e81c6ebca34a6bf2439629198e5dcb2bc1ef315ba0d4983f820dde.jpg)
 
 
 ∵正五边形的每个内角是 $1 0 8 ^ { \circ }$ ，正方形的每个内角 $9 0 ^ { \circ }$ 
@@ -316,14 +316,14 @@ $$
 
 如图，由一个正六边形和正五边形组成的图形中，∠ABC的度数应是（ ） 
 
-![](../images/d89b48914d0bf7d046a65a4582984763f453870b199e6382e3436825a23537ac.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d89b48914d0bf7d046a65a4582984763f453870b199e6382e3436825a23537ac.jpg)
 
 
 A $7 2 ^ { \circ }$ B $8 4 ^ { \circ }$ C $8 2 ^ { \circ }$ D $9 4 ^ { \circ }$ 
 
 【解答】解：如图， 
 
-![](../images/69310e88e4e2c26f4edd34da11365f92cc5e2fa38edfb86679ffdb5268ea215a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/69310e88e4e2c26f4edd34da11365f92cc5e2fa38edfb86679ffdb5268ea215a.jpg)
 
 
 由题意得： $\angle 3 = 3 6 0 ^ { \circ } \div 6 = 6 0 ^ { \circ } , \angle 4 = 3 6 0 ^ { \circ } \div 5 = 7 2 ^ { \circ }$ 
@@ -338,7 +338,7 @@ A $7 2 ^ { \circ }$ B $8 4 ^ { \circ }$ C $8 2 ^ { \circ }$ D $9 4 ^ { \circ }$
 
 如图，正六边形 ABCDEF和正五边形 GHCDL的边CD 重合，DH 的延长线与AB交于点 P，则∠BPD的度 数是（ ） 
 
-![](../images/0f53473bfac3f1eed7a747a58ffec202f8212802fb6539fd3d48049047c5f7c5.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0f53473bfac3f1eed7a747a58ffec202f8212802fb6539fd3d48049047c5f7c5.jpg)
 
 
 A $8 3 ^ { \circ }$ B $8 4 ^ { \circ }$ C $8 5 ^ { \circ }$ D $8 6 ^ { \circ }$ 
@@ -351,7 +351,7 @@ A $8 3 ^ { \circ }$ B $8 4 ^ { \circ }$ C $8 5 ^ { \circ }$ D $8 6 ^ { \circ }$
 
 把边长相等的正六边形 ABCDEF 和正五边形 GHCDM 的 CD 边重合，按照如图的方式叠合在一起，延长 MG 交 AF 于点 N，则 $\angle A N G$ 等于（ ） 
 
-![](../images/1353e6ab0b82d3fd2dd3baacaf75ebe3c44d66325c4e77a170f27ed5f9f1cdf3.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1353e6ab0b82d3fd2dd3baacaf75ebe3c44d66325c4e77a170f27ed5f9f1cdf3.jpg)
 
 
 A $1 4 0 ^ { \circ }$ B $1 4 4 ^ { \circ }$ C $1 4 8 ^ { \circ }$ D $1 5 0 ^ { \circ }$ 
@@ -360,7 +360,7 @@ A $1 4 0 ^ { \circ }$ B $1 4 4 ^ { \circ }$ C $1 4 8 ^ { \circ }$ D $1 5 0 ^ { \
 
 故选：B 
 
-![](../images/a11f824c0b0301005c50095d16319772995acf6f7d5a01bc49a64da6625afab0.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a11f824c0b0301005c50095d16319772995acf6f7d5a01bc49a64da6625afab0.jpg)
 
 
 ## 05
@@ -379,7 +379,7 @@ A $1 4 0 ^ { \circ }$ B $1 4 4 ^ { \circ }$ C $1 4 8 ^ { \circ }$ D $1 5 0 ^ { \
 
 3．如图， $\angle C + \angle D + \angle E - \angle A - \angle B$ 的度数是（ ） 
 
-![](../images/c1a89a80446b6d87644a18bc4119c3f64f288b58f3e36ad7acf2ac0aba916ae7.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c1a89a80446b6d87644a18bc4119c3f64f288b58f3e36ad7acf2ac0aba916ae7.jpg)
 
 
 A $1 8 0 ^ { \circ }$ B $2 4 0 ^ { \circ }$ C $3 0 0 ^ { \circ }$ D $3 6 0 ^ { \circ }$ 
@@ -394,14 +394,14 @@ A $7 2 0 ^ { \circ }$ B $9 0 0 ^ { \circ }$ C $1 0 8 0 ^ { \circ }$ D $1 4 4 0 ^
 
 5．如图，四边形 ABCD 为一矩形纸带，点 E、F 分别在边 AB、CD 上，将纸带沿 EF 折叠，点 A、D 的对 应点分别为A'、D'，若 $\angle 2 = 3 5 ^ { \circ }$ ，则∠1的度数为（ ） 
 
-![](../images/7f6976d2f887c4d0dbc0b80cf6da085fae55fe28aeafa8b8d3eb78da17a05574.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7f6976d2f887c4d0dbc0b80cf6da085fae55fe28aeafa8b8d3eb78da17a05574.jpg)
 
 
 A $6 2 . 5 ^ { \circ }$ B $7 2 . 5 ^ { \circ }$ C $5 5 ^ { \circ }$ D $4 5 ^ { \circ }$ 
 
 【解答】解： $\because \angle 2 = 3 5 ^ { \circ }$ $\therefore \angle A E A ^ { \prime } = 1 8 0 ^ { \circ } \quad - 3 5 ^ { \circ } = 1 4 5 ^ { \circ }$ ∴由折叠性质可得： $\angle A E F { = } \angle A ^ { \prime } E F { = } { \frac { 1 } { 2 } } \angle A E A ^ { \prime } = 7 2 . 5 ^ { \circ }$ $\because A B / / C D ,$ $\therefore \angle 2 = \angle A E F = 7 2 . 5 ^ { \circ }$ 故选：B 
 
-![](../images/601d5a009aa6e26a83fad6a932a289f3e20859433be9c035e33eb55d7a65d80a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/601d5a009aa6e26a83fad6a932a289f3e20859433be9c035e33eb55d7a65d80a.jpg)
 
 
 6．如图，奇奇先从点 A 出发前进 4m，向右转 $1 5 ^ { \circ }$ ，再前进 4m，又向右转 $1 5 ^ { \circ }$ ，…，这样一直走下去， 他第一次回到出发点A时，一共走了（ ） A 15° 15 A．24m B．48m C．64m D．96m 
@@ -412,7 +412,7 @@ A $6 2 . 5 ^ { \circ }$ B $7 2 . 5 ^ { \circ }$ C $5 5 ^ { \circ }$ D $4 5 ^ { \
 
 8．如图，在五边形ABCDE 中， $A E / / C D$ $\angle 1 = 5 0 ^ { \circ }$ $\angle 2 = 7 0 ^ { \circ }$ ，则 $\angle 3$ 的度数是（ ） 
 
-![](../images/eaabc2a96e6be52e4057d6b665eae4a2648a3e006df8b069a2c6630ea07d657d.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/eaabc2a96e6be52e4057d6b665eae4a2648a3e006df8b069a2c6630ea07d657d.jpg)
 
 
 A $4 0 ^ { \circ }$ B $5 0 ^ { \circ }$ C $6 0 ^ { \circ }$ D $7 0 ^ { \circ }$ 
@@ -421,19 +421,19 @@ A $4 0 ^ { \circ }$ B $5 0 ^ { \circ }$ C $6 0 ^ { \circ }$ D $7 0 ^ { \circ }$
 
 9．如图所示， $\angle A + \angle B + \angle C + \angle D + \angle E + \angle F =$ 
 
-![](../images/07ae3e60976969b2d998a12ac2ef428b0fd2ee34d5b367beeb32dd24e83234ba.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/07ae3e60976969b2d998a12ac2ef428b0fd2ee34d5b367beeb32dd24e83234ba.jpg)
 
 
 【解答】解：如图，连接AD， 
 
-![](../images/7d44e6c881487e6b82d6613ddf653959c4f09c31be724eabe581dd73a71304bd.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7d44e6c881487e6b82d6613ddf653959c4f09c31be724eabe581dd73a71304bd.jpg)
 
 
 $\because \angle E + \angle F + \angle E M F = \angle M A D + \angle M D A + \angle A M D = 1 8 0 ^ { \circ } ~ , ~ \angle E M F = \angle A M D ,$ $\therefore \angle E + \angle F = \angle M A D + \angle M D A ,$ $\therefore \angle A + \angle B + \angle C + \angle D + \angle E + \angle F$ $= \angle B A M + \angle B + \angle C + \angle C D M + \angle M A D + \angle M D A$ $= \angle D A B + \angle B + \angle C + \angle A D C$ $= 3 6 0 ^ { \circ }$ 故答案为：360 
 
 10．如图，正五边形ABCDE的对角线BD、CE 相交于点F，则 $\angle C F D$ 的度数为 
 
-![](../images/a3ca24cb026fbe828d12a540e1a1921db5a60050850140374dcf429a22d2c276.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a3ca24cb026fbe828d12a540e1a1921db5a60050850140374dcf429a22d2c276.jpg)
 
 
 【解答】解：∵五边形ABCDE为正五边形， 
@@ -454,7 +454,7 @@ $$
 
 11．如图，四边形 ABOC 中， $\angle B A C \ H \angle B O C$ 的角平分线相交于点 P，若 $\angle B = 1 6 ^ { \circ } , \angle C = 4 2 ^ { \circ }$ ，则 $\angle P$ ＝ 
 
-![](../images/7524c84a6fd87f213d78e905bc1078fe70c4a59ee69138e2bad945fcd96cf316.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7524c84a6fd87f213d78e905bc1078fe70c4a59ee69138e2bad945fcd96cf316.jpg)
 
 
 【解答】解：延长CO 交AB于点 $D , ~ O C \bot A P$ 交于点E， 
@@ -481,7 +481,7 @@ $$
 
 12．将正六边形与正方形按如图所示摆放，且正六边形的边AB与正方形的边CD在同一条直线上，则 $\angle B O C$ 的度数是 
 
-![](../images/928c9e24b2c0a9d7c2ad530a07c35e44b9b275c8a824961dcad62577093e9545.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/928c9e24b2c0a9d7c2ad530a07c35e44b9b275c8a824961dcad62577093e9545.jpg)
 
 
 【解答】解：∵图中六边形为正六边形， 
@@ -522,21 +522,21 @@ $\therefore \angle O C B = 9 0 ^ { \circ }$
 
 14．已知，如图，AD与BC 交于点O 
 
-![](../images/23688daaf662e04d956efe88c551987afd0ed88e11de20d6d20ebded78a70075.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/23688daaf662e04d956efe88c551987afd0ed88e11de20d6d20ebded78a70075.jpg)
 
 
 
 图1
 
 
-![](../images/b9ee066b4aaaec95fdf97f60e8ca666addb02e0a8e89048eb15c3f4c33c299de.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b9ee066b4aaaec95fdf97f60e8ca666addb02e0a8e89048eb15c3f4c33c299de.jpg)
 
 
 
 图2
 
 
-![](../images/f74c589cac4446ffe16ea9ec89b8f81a96997f3c9d0c1eb839cfc0b8a1c6a56c.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f74c589cac4446ffe16ea9ec89b8f81a96997f3c9d0c1eb839cfc0b8a1c6a56c.jpg)
 
 
 
@@ -589,7 +589,7 @@ $$
 
 故答案为： $1 0 0 ^ { \circ }$ 
 
-![](../images/267ae8d13890d10be6703cfc613a5076c64fbd5aa4137b8d6c260d7a22751aac.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/267ae8d13890d10be6703cfc613a5076c64fbd5aa4137b8d6c260d7a22751aac.jpg)
 
 
 
@@ -598,21 +598,21 @@ $$
 
 15．如图，四边形ABCD中， $\angle C = 9 0 ^ { \circ }$ ，BE平分 $\angle A B C$ ，BE、CD 交于 G 点 
 
-![](../images/6a4a6c74ca135e97a8a60dca31878482030212d2cd03201d3f10ffd2dd2cf6d2.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6a4a6c74ca135e97a8a60dca31878482030212d2cd03201d3f10ffd2dd2cf6d2.jpg)
 
 
 
 图1
 
 
-![](../images/9fce8be500b65a8269b7cf3717654a22fbccfe9693391a0116e51de134a54348.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9fce8be500b65a8269b7cf3717654a22fbccfe9693391a0116e51de134a54348.jpg)
 
 
 
 图2
 
 
-![](../images/339e88e235ecc249bb0505213af325d8c829733a5840d835115039cb0d2cfe63.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/339e88e235ecc249bb0505213af325d8c829733a5840d835115039cb0d2cfe63.jpg)
 
 
 
@@ -653,7 +653,7 @@ $\therefore \angle 3 = \angle 4 = \frac { 1 } { 2 } \angle A D C ,$ $\therefore 
 
 （2）延长AB、DF交于点 M，如图所示： 
 
-![](../images/94a018a3f7e84ce210a668f15330b1b5816de26f715a0223345ee6475251f27e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/94a018a3f7e84ce210a668f15330b1b5816de26f715a0223345ee6475251f27e.jpg)
 
 
 $\because \angle A N D - \angle G B C = 4 5 ^ { \circ }$ $\therefore \angle A N D = \angle 2 + 4 5 ^ { \circ }$ $\therefore \angle D A N = 1 8 0 ^ { \circ } \quad - \angle A N D - \angle 3$ $= 1 8 0 ^ { \circ } - \angle 2 - 4 5 ^ { \circ } - \angle 3$ $= 1 3 5 ^ { \circ } - \angle 2 - \angle 3 ,$ $\because B E$ 平分 $\angle A B C ,$ $\therefore \angle 1 = \angle 2 = \frac { 1 } { 2 } \angle A B C ,$ $\because D F$ 平分 $\angle A D C ,$ $\therefore \angle 3 = \angle 4 = \frac { 1 } { 2 } \angle A D C ,$ $\because \angle B F M = \angle C F D = 9 0 ^ { \circ } - \angle 4 = 9 0 ^ { \circ } - \angle 3 ,$ $\therefore \angle A M N = \angle A B C - \angle B F M = 2 \angle 2 - 9 0 ^ { \circ } + \angle 3 ,$ $\therefore \angle B A N = \angle A N D \cdot \angle A M N$ $= 4 5 ^ { \circ } + \angle 2 - 2 \angle 2 + 9 0 ^ { \circ } - \angle 3$ $= 1 3 5 ^ { \circ } - \angle 2 - \angle 3 ,$ $\therefore \angle D A N { = } \angle B A N ,$ $\therefore A N$ 平分 $\angle B A D .$ 

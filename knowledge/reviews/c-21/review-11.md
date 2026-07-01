@@ -6,7 +6,7 @@
 
 梯形的分类: 
 
-![](../images/7d21d4277e6d07551b5ae82717e291fa6ecdb6eabd5cf065feaac00dce4fde23.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7d21d4277e6d07551b5ae82717e291fa6ecdb6eabd5cf065feaac00dce4fde23.jpg)
 
 等腰梯形性质：1）等腰梯形的两底平行，两腰相等； 
 
@@ -40,7 +40,7 @@
 
 6）过上底中点平移两腰.构造两个平行四边形和一个三角形. 
 
-![](../images/ac13c234c46eab30a7c3ab8e894ca5b25c550427124ce7f9f9deb6beb8a12ceb.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ac13c234c46eab30a7c3ab8e894ca5b25c550427124ce7f9f9deb6beb8a12ceb.jpg)
 
 ## 提升·必考题型归纳
 
@@ -48,7 +48,7 @@
 
 【变式 1-3】（2023·四川达州·统考二模）如图，在梯形 ABCD 中， $AD \parallel BC$ ，点 E 在 BC 上，且 $AB \parallel DE$ ， 
 
-![](../images/389515fd636753d6d52fe21aca3223c92ffe73dbb7afdecc3cff3f5591950413.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/389515fd636753d6d52fe21aca3223c92ffe73dbb7afdecc3cff3f5591950413.jpg)
 
 (1)试判断四边形ABED的形状，并说明理由； 
 
@@ -62,21 +62,21 @@
 
 【例 3】（2023 上·上海静安·八年级上海市风华初级中学校考期末）如图，四边形 ABCD 中， $AD \parallel BC$ ，E 是边 CD 的中点，如果 AE 平分 $\angle BAD$ ，那么下列结论中不一定成立的是（） 
 
-![](../images/4b2e754b61b22d031910caaa6da9734083c7a281a8989cca1e4950fee08cb00d.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4b2e754b61b22d031910caaa6da9734083c7a281a8989cca1e4950fee08cb00d.jpg)
 
 A. $BE$ 平分 $\angle ABC$ B. $\angle AEB = 90^{\circ}$ C. $AE = \frac{1}{2} AB$ D. $AB = AD + BC$ 
 
 【变式 3-1】（2023 下·江苏南京·八年级统考期中）在探索平面图形的性质时，往往需通过剪拼的方式帮助我们寻找解题思路. 
 
-![](../images/18650a2f93d11cecc352d9607f41304f0ba12514f454e120ee07f9204e761eeb.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/18650a2f93d11cecc352d9607f41304f0ba12514f454e120ee07f9204e761eeb.jpg)
 
 图①
 
-![](../images/cc066fb549510cf6d9099d4fb2de78e89841dc01a767ec5e6cf56f505d468592.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/cc066fb549510cf6d9099d4fb2de78e89841dc01a767ec5e6cf56f505d468592.jpg)
 
 图②
 
-![](../images/72fd7098457567d60b2d7021b64a5205c1f0f63c3f6da65617dfad59f0db617e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/72fd7098457567d60b2d7021b64a5205c1f0f63c3f6da65617dfad59f0db617e.jpg)
 
 图③
 
@@ -98,4 +98,4 @@ A. $BE$ 平分 $\angle ABC$ B. $\angle AEB = 90^{\circ}$ C. $AE = \frac{1}{2} AB
 
 【变式 3-2】(2022 上·上海·九年级开学考试) 如图, 点 $E$ 、 $F$ 分别是梯形 $ABCD$ 两腰的中点, 联结 $EF$ 、 $DE$ , 如果图中 $\triangle DEF$ 的面积为 1.5, 那么梯形 $ABCD$ 的面积等于 ____. 
 
-![](../images/0820fdaf0e8e868b0b815a567b6d468362dbaad074fb1ebe02d8ba5dc7427d73.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0820fdaf0e8e868b0b815a567b6d468362dbaad074fb1ebe02d8ba5dc7427d73.jpg)

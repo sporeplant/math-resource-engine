@@ -40,7 +40,7 @@
 
 （3）有一颗黑色棋子 E 的坐标为（3，﹣1），请在图中画出黑色棋子 E 
 
-![](../images/69d0ad8846c4cac6fdb7aaba4d482dbc678e48cf014fc61dc7ae8326247cc1ad.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/69d0ad8846c4cac6fdb7aaba4d482dbc678e48cf014fc61dc7ae8326247cc1ad.jpg)
 
 
 ## 【即学即练 2】
@@ -53,7 +53,7 @@
 
 （3）花店在学校南偏东30°方向400米处，请在如图中标示出来 
 
-![](../images/5ad4c0d4a50c51e561b67de432b84812acd9edfc050dc982be0e937d4cf21454.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5ad4c0d4a50c51e561b67de432b84812acd9edfc050dc982be0e937d4cf21454.jpg)
 
 
 ## 知识点 02 利用坐标表示平移
@@ -88,7 +88,7 @@ D．（1，﹣8）
 
 4．如图，在平面直角坐标系中，点A、B 的坐标分别为（2，0）、（0，1），若将线段AB平移至CD，则a+b 的值为 
 
-![](../images/ccd4a2a9d4461fc1e7dbca300e54c95a93a54bdbaff6d0ba921e1c6773e54bc3.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ccd4a2a9d4461fc1e7dbca300e54c95a93a54bdbaff6d0ba921e1c6773e54bc3.jpg)
 
 
 04 
@@ -99,7 +99,7 @@ D．（1，﹣8）
 
 【典例 1】如图，在中国象棋的残局上建立平面直角坐标系，如果“馬”和“車”的坐标分别是（4，3） 和（﹣2，1），那么“炮”的坐标为（ 
 
-![](../images/f97ae2b4d26c5852e9484e5a8a65aaf161489f50dcea64c4895d8d72377c6fd1.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f97ae2b4d26c5852e9484e5a8a65aaf161489f50dcea64c4895d8d72377c6fd1.jpg)
 
 
 A．（3，3） 
@@ -112,7 +112,7 @@ D．（0，2）
 
 【变式 1】如图是在4×4的小正方形组成的网格中，画的一张脸的示意图，如果用（0，4）和（2，4）表 示眼睛，那么嘴的位置可以表示为（ ） 
 
-![](../images/2e487d134934425f2ffef4f15a65a53ba48edad15bbba69ebafef17864fe6bed.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2e487d134934425f2ffef4f15a65a53ba48edad15bbba69ebafef17864fe6bed.jpg)
 
 
 A．（1，1） 
@@ -127,7 +127,7 @@ D．（1，2）
 
 的位置可表示成（ 
 
-![](../images/589b82e77952af77e8442b1a3ba537672b64052822c8d2b86c9f16e11b022690.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/589b82e77952af77e8442b1a3ba537672b64052822c8d2b86c9f16e11b022690.jpg)
 
 
 A．（1，﹣2） 
@@ -146,7 +146,7 @@ D．（2，﹣3）
 
 （3）写出食堂、书馆的坐标 
 
-![](../images/ea250c251265a88ec4c16613ea22d54159fa0f7e68e54e5395670b4ddddce319.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ea250c251265a88ec4c16613ea22d54159fa0f7e68e54e5395670b4ddddce319.jpg)
 
 
 【变式 4】填一填，画一画 
@@ -159,7 +159,7 @@ D．（2，﹣3）
 
 （4）滑冰馆在世纪广场东偏南 75°，距世纪广场1000 米的位置上，在图上用“▲”标出来 
 
-![](../images/495caf21f6aa541d43caa7e25291652958d5f5e3b50a85b374ca7bef2c090eef.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/495caf21f6aa541d43caa7e25291652958d5f5e3b50a85b374ca7bef2c090eef.jpg)
 
 
 【典例 1】在平面直角坐标系中，已知点A 的坐标为（1，4），如果将点 A向右平移2个单位长度得到点 $A ^ { \prime }$ ， 则点 $A ^ { \prime }$ 的坐标为（ ） 
@@ -236,7 +236,7 @@ D．（2，5）
 
 【变式 8】如图，在平面直角坐标系中，将三角形ABC 平移至三角形 $A _ { 1 } B _ { 1 } C _ { 1 }$ ，点 $P \ ( a , \ b )$ ）是三角形ABC 内一点，经平移后得到三角形 $A _ { 1 } B _ { 1 } C _ { 1 }$ 内对应点 $P _ { 1 } \ ( a + 8 , \ b - 5 )$ ），若点 $A _ { 1 }$ 的坐标为（5，﹣1），则点 A 的坐标为（ 
 
-![](../images/21ee0d536d2c67972623e1da041d77b9b5408d0f53d3a322d9ac4c01ac9f7a60.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/21ee0d536d2c67972623e1da041d77b9b5408d0f53d3a322d9ac4c01ac9f7a60.jpg)
 
 
 A．（﹣4，3） 
@@ -287,7 +287,7 @@ D．（﹣5，3）
 
 【变式 1】如图，点A，B的坐标分别为（﹣2，a），（0，﹣2），现将线段平移至 $A 1 B 1$ ，且点A1， $B 1$ 的坐标 分别为（1，4），（b，1），则 a+b 的值为（ ） 
 
-![](../images/b3a6ccfa64a3fe635d6ae1f63af103f9e2f6d7521a1b1f25ab35525090a5977a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b3a6ccfa64a3fe635d6ae1f63af103f9e2f6d7521a1b1f25ab35525090a5977a.jpg)
 
 
 A．﹣3 
@@ -330,7 +330,7 @@ D．1
 
 （3）求△ABC 的面积 
 
-![](../images/59cf3f71f3d2358c347010432d1feacb47cdb1b7c4d3d40890cf2dabc57232a3.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/59cf3f71f3d2358c347010432d1feacb47cdb1b7c4d3d40890cf2dabc57232a3.jpg)
 
 
 【变式 1】如图，在平面直角坐标系中，三角形ABC 的顶点都在网格点上，其中点 C的坐标为（1，2） 
@@ -343,7 +343,7 @@ D．1
 
 （3）求三角形ABC的面积 
 
-![](../images/e98745763f2ad3b8cf04bdd3198c4488aef5adb408902ce39a0fdfae4e0827f8.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e98745763f2ad3b8cf04bdd3198c4488aef5adb408902ce39a0fdfae4e0827f8.jpg)
 
 
 【变式 2】如图，△ABC 在直角坐标系中，把△ABC向上平移 2个单位，再向右平移 2个单位得 $\triangle A _ { 1 } B _ { 1 } C _ { 1 }$ 
@@ -354,7 +354,7 @@ D．1
 
 （3）若点 $P \ ( a , \ b )$ ）是 $\triangle A B C$ 内一点，直接写出点 P 平移后对 应点的坐标 
 
-![](../images/afed6c506ec705f9d84adf89a2116294f9a209c03c2d083bccb25930f7405013.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/afed6c506ec705f9d84adf89a2116294f9a209c03c2d083bccb25930f7405013.jpg)
 
 
 【变式 3】如图，在平面直角坐标系中，已知点 $A ~ ( ~ - ~ 5 , ~ 2 ) , ~ B ~ ( ~ - ~ 4 , ~ 5 ) , ~ C ~ ( ~ m , ~ n )$ 
@@ -365,7 +365,7 @@ D．1
 
 （3）若 $\triangle A B C$ 边上任意一点 $P _ { \mathrm { ~ \tiny ~ \left( ~ \it { ~ x ~ } _ { 0 } , ~ \epsilon ~ \right) ~ } } ( { \boldsymbol { \it ~ x ~ } _ { 0 } } , { \boldsymbol { \it ~ y } _ { 0 } } )$ ）平移后对应点 $P _ { 1 } ~ ( x _ { 0 } \ – 4 , ~ y _ { 0 } - 1 )$ ），在平面直角坐标系中画出平 移后的 $\triangle A _ { 1 } B _ { 1 } C _ { 1 }$ 
 
-![](../images/f0abf86586c8bc100f33af422f2c1b449a6ffe0ec25f9b4e4a1dba96f813bc49.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f0abf86586c8bc100f33af422f2c1b449a6ffe0ec25f9b4e4a1dba96f813bc49.jpg)
 
 
 05 
@@ -376,7 +376,7 @@ D．1
 
 “相”所在位置的坐标为（3，﹣1），则“帅”所在位置的坐标为（ 
 
-![](../images/a1eadefccecf3378744d374c3eb27e0a8de1c9f61a3fbcbad8161ed13278fc1a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a1eadefccecf3378744d374c3eb27e0a8de1c9f61a3fbcbad8161ed13278fc1a.jpg)
 
 
 A．（1，﹣1） 
@@ -399,7 +399,7 @@ D．（5，2）
 
 3．如图，这是围棋棋盘的一部分，将它放置在某个平面直角坐标系中，若白棋②的坐标为（﹣3，﹣1）， 黑棋①的坐标为（1，﹣4），则白棋④的坐标为（ 
 
-![](../images/24c94b8c8e171b27078b3d0d97d92da362a4e347287d87bed6e6e0720e302e31.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/24c94b8c8e171b27078b3d0d97d92da362a4e347287d87bed6e6e0720e302e31.jpg)
 
 
 A．（﹣2，﹣3） 
@@ -442,7 +442,7 @@ D．8
 
 7．如图，在平面直角坐标系中，四边形 ABCD的顶点都在网格点上，将四边形ABCD平移使得点B 平移至 点D 的位置，则此时点A对应的点的坐标为（ ） 
 
-![](../images/a6e523e78d5b04b29b4705860c513aa7911329110cee1b90c528bdb664c3b368.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a6e523e78d5b04b29b4705860c513aa7911329110cee1b90c528bdb664c3b368.jpg)
 
 
 A．（0，0） 
@@ -465,7 +465,7 @@ D．已知点 P（﹣5，6），Q（﹣3，6），则直线 $P Q / / y$ 轴
 
 9．在平面直角坐标系 xOy 中，对于 P，Q 两点给出如下定义：若点 P 到 x、y 轴的距离中的最大值等于点 Q 到 x、y轴的距离中的最大值，则称 P，Q 两点为“等距点”．如图中的P，Q 两点即为“等距点”．若点 A 的坐标为（﹣3，1），点B 的坐标为 $B \ ( m , \ m { + } 6 )$ ），且 A，B 两点为“等距点”，则点B 的坐标为（ ） 
 
-![](../images/edadcd691fe4603318e16982fe481f242d1427a7e596ed5bcb3adcf85c551d9f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/edadcd691fe4603318e16982fe481f242d1427a7e596ed5bcb3adcf85c551d9f.jpg)
 
 
 A．（3，9） 
@@ -478,7 +478,7 @@ D．（﹣9，3）
 
 10．如图，在平面直角坐标系 $x O y$ 中，点 P（1，0）．点 P 第 1 次向上跳动1 个单位至点 $P _ { 1 } \ ( 1 , \ 1 )$ ），紧接 着第 2 次向左跳动2 个单位至点 $P _ { 2 } ~ ( ~ - ~ 1 , ~ 1 )$ ），第3 次向上跳动 1 个单位至点 $P _ { 3 }$ ，第 4次向右跳动 3个 单位至点 P4，第 5 次又向上跳动 1 个单位至点 P5，第 6 次向左跳动 4 个单位至点 P6，…照此规律，点 P 第2020次跳动至点P2020的坐标是（ ） 
 
-![](../images/1684d7637e39021de1f922599af3de38d6d4ceab77a4ba19539938d16a466ade.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1684d7637e39021de1f922599af3de38d6d4ceab77a4ba19539938d16a466ade.jpg)
 
 
 A．（﹣506，1010） 
@@ -497,12 +497,12 @@ D．（505，1010）
 
 14．如图，已知A，B 的坐标分别为（1，2），（3，0），将 $\triangle O A B$ 沿 x轴正方向平移，使 B 平移到点 E，得 到 $\triangle D C E$ ，若 $O E { = } 4$ ，则点 C的坐标为 
 
-![](../images/9850302eb4bf26d21a3797922ff9bc17109b29bd73b38c8f918c228c3f0d4d49.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9850302eb4bf26d21a3797922ff9bc17109b29bd73b38c8f918c228c3f0d4d49.jpg)
 
 
 15．如图，在平面直角坐标系中，一动点从原点 O 出发，按向上、向右、向下、向右的方向依次平移，每 次移动一个单位，得到点 $A _ { 1 } ( 0 , 1 ) , A _ { 2 } ( 1 , 1 ) , A _ { 3 } ( 1 , 0 ) , A _ { 4 } ( 2 , 0 )$ ，…那么点A2022的坐标为 
 
-![](../images/46048a3f3e779f93791f9a87aeb5bb4baf4f619aef84cf08c67057663b243f7a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/46048a3f3e779f93791f9a87aeb5bb4baf4f619aef84cf08c67057663b243f7a.jpg)
 
 
 16．如图，已知火车站的坐标为（2，2），文化馆的坐标为（﹣1，3） 
@@ -513,7 +513,7 @@ D．（505，1010）
 
 （3）已知游乐场 A，图书馆 B，公园 C 的坐标分别为（0，5），（﹣2，﹣2），（2，﹣2），请在图中标出 A，B，C 的位置 
 
-![](../images/b3acb7c3c47e5de635e22a63f767cdd7bd66d3aca8dd884cf97ebd5ace403b11.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b3acb7c3c47e5de635e22a63f767cdd7bd66d3aca8dd884cf97ebd5ace403b11.jpg)
 
 
 17．已知点 $P \ ( 2 a - 3 , \ a + 6 )$ ），解答下列各题： 
@@ -530,7 +530,7 @@ D．（505，1010）
 
 （3）设点P在坐标轴上，且 $\triangle A B P$ 与 $\triangle A B C$ 的面 积相等，求点 P 的坐标 
 
-![](../images/30ed3c112d5d6d7ddeb3c27236d09d9927205212b6c42239e83077a4f19c002f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/30ed3c112d5d6d7ddeb3c27236d09d9927205212b6c42239e83077a4f19c002f.jpg)
 
 
 19．先阅读下列一段文字，再回答后面的问题 

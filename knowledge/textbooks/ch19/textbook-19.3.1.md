@@ -85,7 +85,7 @@ lesson_id: 19.3.1
 
 | | | |
 |:---:|:---:|:---:|
-| ![](../images/68a41d0bb0dcfc3f5f0799158d56628cce0e08b4cc98be8c760076d27abe6465.jpg) | ![](../images/93b3a667bcc9add243c1215a2eb9de3fc194b786366431621b8ba815c28549d6.jpg) | ![](../images/c126eff26a5e1831dd86cb39fa6db56a1efe276de44a4e94c8c9034fc7b433f3.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/68a41d0bb0dcfc3f5f0799158d56628cce0e08b4cc98be8c760076d27abe6465.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/93b3a667bcc9add243c1215a2eb9de3fc194b786366431621b8ba815c28549d6.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c126eff26a5e1831dd86cb39fa6db56a1efe276de44a4e94c8c9034fc7b433f3.jpg) |
 | (1) | (2) | (3) |
 
 
@@ -121,7 +121,7 @@ lesson_id: 19.3.1
 
 | | | |
 |:---:|:---:|:---:|
-| ![](../images/db46b5a02e9ae3083206483ab7c4c47aa3597ce56ca475ba45289437fbe82f2a.jpg) | ![](../images/e8351e95a191733a543204dc54a6cac225a94dc09ade0a77bdf5292aad0cf8c9.jpg) | ![](../images/0c749a02a48fbb5c71a6c83e0a182b3acc1fd907501617984104819f72f03f53.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/db46b5a02e9ae3083206483ab7c4c47aa3597ce56ca475ba45289437fbe82f2a.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e8351e95a191733a543204dc54a6cac225a94dc09ade0a77bdf5292aad0cf8c9.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0c749a02a48fbb5c71a6c83e0a182b3acc1fd907501617984104819f72f03f53.jpg) |
 | (1) | (2) | (3) |
 
 

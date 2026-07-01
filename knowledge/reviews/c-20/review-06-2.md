@@ -37,7 +37,7 @@
 
 1．如图，已知一次函数 $y = k x + b$ 的图象与 x 轴，y 轴分别交于点（2，0），点（0，3），关于 x 的方程 kx+b＝0的解是（ ）
 
-![](../images/37aa623d3a902b5f7b8bd00a62f15fd4d79b12f6437370637204d80781f67983.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/37aa623d3a902b5f7b8bd00a62f15fd4d79b12f6437370637204d80781f67983.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -72,7 +72,7 @@ D．不能确定
 
 2．如图，一次函数 $y = k x + 2$ 和 $y = 2 x - 1$ 的图象相交于点 P，根据图象可知关于 x 的方程 $k x + 2 = 2 x - \ 1$ 的解是（ ）
 
-![](../images/7366244673658eaf19d041426bea0352a1c659dcb0fb528e9a1d5e4deb4c0c98.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7366244673658eaf19d041426bea0352a1c659dcb0fb528e9a1d5e4deb4c0c98.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -148,7 +148,7 @@ $\therefore P \ : ( 3 , \ : 1 ) ,$ ，
 
 4．如图，一次函数 y＝x+m 的图象与 x轴交于点（﹣3，0），则不等式 $x { + } m > 0$ 的解为（
 
-![](../images/64b2516594842b765b2176940f237d020d378a1aac6586ecddaab38f2a24a644.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/64b2516594842b765b2176940f237d020d378a1aac6586ecddaab38f2a24a644.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -181,7 +181,7 @@ D． $x { < } 3$
 
 5．如图，直线 $y _ { 1 } = 2 x$ 与直线 $y _ { 2 } { = } k x { + } b \ ( k { \neq } 0 )$ ）相交于点 $\textit { P } \left( a , \ 2 \right)$ ），则关于 x 的不等式 $2 x { \leqslant } k x { + } b$ 的解集是
 
-![](../images/e9ab5e7afe1f44820eea09d70f165d72547d0fc6d078654363ceb61977cd68c5.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e9ab5e7afe1f44820eea09d70f165d72547d0fc6d078654363ceb61977cd68c5.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -220,9 +220,9 @@ $$
 
 故选：D．
 
-![](../images/7cd9fd9d432b9df4ae1c167bd638a542d47ad35333f27965c8d5a88d059392ee.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7cd9fd9d432b9df4ae1c167bd638a542d47ad35333f27965c8d5a88d059392ee.jpg)
 
-![](../images/bdb14de26d548f52c6b1ccfa58736f17df13014143830406065574b7a42654ad.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bdb14de26d548f52c6b1ccfa58736f17df13014143830406065574b7a42654ad.jpg)
 
 ## 题型01 一次函数与一元一次方程
 
@@ -332,7 +332,7 @@ $$
 
 【变式 6】如图，直线 $y = x + 5$ 和直线 $y = a x + b$ 相交于点 P，根据图象可知，关于 x 的方程 $x + 5 = a x + b$ 的解是（ ）
 
-![](../images/febcd13a11ccb618f8bda54a474938e894de95ffb0a11582bad6d69447ca2712.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/febcd13a11ccb618f8bda54a474938e894de95ffb0a11582bad6d69447ca2712.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -464,7 +464,7 @@ $\therefore$ 一次函数 $y = 2 \mathrm { ~ - ~ } x$ 与 $y = \frac { 3 } { 2 }
 
 【典例 1】如图，一次函数 $y = a x + b ( a$ ，b 是常数， $a { \neq } 0 )$ ）的图象与 x 轴交于点（2，0），则关于 x 的不等式 $a x { + } b > 0$ 的解集是（ ）
 
-![](../images/09ac16a46cc28cc844294a616ded254dfd0b3f99faf148fa774d703902039293.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/09ac16a46cc28cc844294a616ded254dfd0b3f99faf148fa774d703902039293.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -494,7 +494,7 @@ D． $x { \leqslant } 2$
 
 【变式 1】如图，一次函数 $y = k x + b$ 与 x轴，y 轴分别交于 A（2，0），B（0，1）两点，则不等式 $k x { + } b > 1$ 的解集是（ ）
 
-![](../images/2855ac561954cf663c2fc5ebd9d2f6be1f97a5f82e8843dbd772c829327ea41a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2855ac561954cf663c2fc5ebd9d2f6be1f97a5f82e8843dbd772c829327ea41a.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -526,7 +526,7 @@ $\because$ 一次函数 $y = k x + b$ 的图象与 y 轴交于点（0，1），
 
 【变式 2】一次函数 $y _ { 1 } = 4 x + 5$ 与 $y _ { 2 } { = } 3 x { + } 1 0$ 的图象如图所示，则 $y _ { 1 } > y _ { 2 }$ 的解集是 x＞5
 
-![](../images/eb2da5d173ed708a09f78dfc14fd3cb3d8a7228e014706690db32e5df4d3b07c.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/eb2da5d173ed708a09f78dfc14fd3cb3d8a7228e014706690db32e5df4d3b07c.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -550,7 +550,7 @@ $\because$ 一次函数 $y = k x + b$ 的图象与 y 轴交于点（0，1），
 
 【变式 3】如图，函数 $y = - ~ 2 x$ 和 $y = k x + 4$ 的图象相交于点 $A \ ( m , \ 3 )$ ），则关于的 x 不等式 $k x { + } 4 { + } 2 x \geqslant 0$ 的解集为 $\_ x \geq - 1 . 5$
 
-![](../images/a8507f5fbf68d007f7ac2ab3c0b7d5ff29b308267b40abe471c5dd09599e813f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a8507f5fbf68d007f7ac2ab3c0b7d5ff29b308267b40abe471c5dd09599e813f.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -575,7 +575,7 @@ x
 
 【变式 4】如图，直线 $y = \frac { 2 } { 3 } x + b$ $y = k x + 3$ 分别与 x 轴交于点 $A ( \mathbf { \varepsilon } - 3 , 0 )$ $B ( 2 , 0 )$ ），则不等式组 $\left\{ \begin{array} { l l } { \displaystyle \frac { 2 } { 3 } x + b < 0 } \\ { \displaystyle \mathrm { k x } + 3 > 0 } \end{array} \right.$ 的解集为（ ）
 
-![](../images/7cb34bb0e5651941f4756782897ec1f99f3693499e16816e13ca295daf7ca1cd.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7cb34bb0e5651941f4756782897ec1f99f3693499e16816e13ca295daf7ca1cd.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -605,7 +605,7 @@ $\therefore \{ \frac { 2 } { 3 } x + b < 0$ x+b<0的解集为 $x < - 3$ ，
 
 【变式 5】如图，直线 $y = k x + b$ 经过点 $A ( \mathbf { \alpha } - 1 , m )$ ）和点 $B ( \ - 2 , 0 )$ ），直线 $y = 2 x$ 过点 A，则不等式组 $\left\{ \begin{array} { l l } { 2 x < \ker x + b } \\ { \ker x + b < 0 } \end{array} \right.$ 的解集为（ ）
 
-![](../images/aa7d80f969eb2c3717d6b17136f6d13527d88d097a5d850aced9033917a775d3.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/aa7d80f969eb2c3717d6b17136f6d13527d88d097a5d850aced9033917a775d3.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -661,9 +661,9 @@ $\because k < 0$ ，
 
 故选：C
 
-![](../images/315f8a5b74d99d736c06042e696d3ae3525500e0ab71f37f6d0b596ae9d32e3f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/315f8a5b74d99d736c06042e696d3ae3525500e0ab71f37f6d0b596ae9d32e3f.jpg)
 
-![](../images/e4529532073878b7d2266bb9acd2c7b5b1fe9ec98af47407e37d5cc497239c60.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e4529532073878b7d2266bb9acd2c7b5b1fe9ec98af47407e37d5cc497239c60.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -695,7 +695,7 @@ D．x＝2
 
 2．数形结合是解决数学问题常用的思想方法．如图，直线 $y = 2 x - 1$ 与直线 $y = k x + b \ ( \ k \neq 0 )$ ）相交于点 $P \ ( 2$ ，3）．根据图象可知，关于 x的方程 $2 x - 1 = k x + b$ 的解是（ ）
 
-![](../images/76313dc5c2ce2bc26eb666e7350efc5870c77f6ce57f712a5171f54867b72e22.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/76313dc5c2ce2bc26eb666e7350efc5870c77f6ce57f712a5171f54867b72e22.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -750,7 +750,7 @@ D、由函数的值随自变量的增大而增大，所以不等式 $a x + b > 0
 
 4．如图，直线 l 是一次函数 $y = k x + b$ 的图象，下列说法中，错误的是（ ）
 
-![](../images/a1bdb07761c11d0f1a6f03a45d9fa22e1bd09b2b652a1b0329a68163d2e3063d.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a1bdb07761c11d0f1a6f03a45d9fa22e1bd09b2b652a1b0329a68163d2e3063d.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -812,7 +812,7 @@ D．（﹣1，0）
 
 6．一次函数 $y _ { 1 } = k x + b$ 于 $y _ { 2 } { = } x { + } a$ 的图象如图所示，则下列结论： $\textcircled{1} k < 0$ ， $\textcircled{2} a b > 0$ ； $\textcircled{3} y _ { 2 }$ 随 x 的增大而增大；④当 $x { < } 3$ 时， $y _ { 1 } < y _ { 2 } ; \textcircled { 5 } 3 k + b = 3 + a$ 其中正确的个数是（ ）
 
-![](../images/ea7c189aa09eb949e8968f647bc6aff7ae0d28b00f8cf97c14c8a6ed755f6da0.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ea7c189aa09eb949e8968f647bc6aff7ae0d28b00f8cf97c14c8a6ed755f6da0.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -853,7 +853,7 @@ $\therefore 3 k + b = 3 + a$ ，故⑤正确；
 
 7．一次函数 $y _ { 1 } = a x + b$ 与 $y _ { 2 } = c x + d$ 的图象如图所示，下列结论：①当 $x { > } 0$ 时， $y _ { 1 } > 0 , y _ { 2 } > 0$ ；②函数 $y =$ $a x { + } d$ 的图象不经过第一象限； $\textcircled { 3 } a - c = \frac { a - b } { 3 } ; \textcircled { 4 } d < a + b + c$ ．其中正确的个数是（ ）
 
-![](../images/1bb46022894e6f7921139529e35c97131a3cbcadfcd2badcbf86b8f294f248ed.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1bb46022894e6f7921139529e35c97131a3cbcadfcd2badcbf86b8f294f248ed.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -972,7 +972,7 @@ $\therefore 2 > 0 , \ y$ 随 x 的增大而增大，
 
 $P \ ( \ - \frac { 1 } { 2 } , \ a )$ 在直线 $y = 2 x + 2$ 与直线 $y = 2 x + 4$ 之间，则 a 的取值范围是（ ）
 
-![](../images/477ef380aee09fff85a7f1eb3cef622b06757c0246ada742fdbc7f3354e6dc52.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/477ef380aee09fff85a7f1eb3cef622b06757c0246ada742fdbc7f3354e6dc52.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -1025,7 +1025,7 @@ D． $0 { < } a { < } 2$
 
 13．如图，直线 $y = x + b$ 与直线 $y = k x + 6$ 交于点 ${ \cal P } \ \left( 3 , \ 5 \right)$ ），则关于 x 的不等式 $k x { + } 6 { < } x { + } b$ 的解集是 x＞3 ．
 
-![](../images/c4b3b336fc34a114f1ccb5362147772a0baad77792db48edf15346d3ce846739.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c4b3b336fc34a114f1ccb5362147772a0baad77792db48edf15346d3ce846739.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -1047,7 +1047,7 @@ x
 
 14．如图，已知一次函数 $y = k x + b$ 的图象与 x 轴，y轴分别交于点（2，0），点（0，3），有下列结论：①图象经过点 $( 1 , \mathrm { ~ \it ~ { ~ - ~ } ~ } 3 )$ ）；②关于 x 的方程 $k x + b = 0$ 的解为 x＝2；③关于 x 的方程 $k x + b = 3$ 的解为 $x = 0$ ；④当 $x { > } 2$ 时， $y { < } 0$ ．其是正确的是 $\textcircled{2} \textcircled{3} \textcircled{4}$
 
-![](../images/75b694cdf8eb3203cfb127991462b82723d46b0e336df019159bfb3eee215bbe.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/75b694cdf8eb3203cfb127991462b82723d46b0e336df019159bfb3eee215bbe.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -1118,7 +1118,7 @@ $\therefore \left\{ { - 2 k _ { 2 } + b = 0 } \atop { - k _ { 2 } + b = - 1 }  \
 （2）观察图象，直接写出方程 $k x + b = 0$ 的解为 x＝2 ；  
 （3）求 $\triangle A O B$ 的面积
 
-![](../images/05c3bbb485247599adc7ea2ba07f99e1eb89d080e8f073fe691ef3b0dbbee4d6.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/05c3bbb485247599adc7ea2ba07f99e1eb89d080e8f073fe691ef3b0dbbee4d6.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -1228,7 +1228,7 @@ $$
 
 故答案为： $x { < } 1$
 
-![](../images/56b9b6aee7c448b3f6122a666d0f6dd81eedcf4fcc5ae68a0e90ca18558640dd.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/56b9b6aee7c448b3f6122a666d0f6dd81eedcf4fcc5ae68a0e90ca18558640dd.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -1307,7 +1307,7 @@ $$
 （2）求 $\triangle A B P$ 的面积；  
 （3）根据图象直接写出不等式 $2 x + b < a x - 3$ 的解集
 
-![](../images/a3256b38ba591628827f03713ff8eb0a8d8fde36de7e6a2fd7b9a17eb86a876c.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a3256b38ba591628827f03713ff8eb0a8d8fde36de7e6a2fd7b9a17eb86a876c.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -1357,7 +1357,7 @@ $$
 （2）记直线 $l _ { 2 }$ 与 $y$ 轴的交点为 D，记直线 $l _ { 1 }$ 与 y轴的交点为 E，求 $\triangle A D E$ 的面积；  
 （3）根据图象，直接写出 $0 { \leqslant } m x { + } 4 < k x { + } b$ 的解集
 
-![](../images/f3c485ce388ab0df5deaaf9c4f7dc2b5a01e3937d1a5500720f116bc5f88f518.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f3c485ce388ab0df5deaaf9c4f7dc2b5a01e3937d1a5500720f116bc5f88f518.jpg)
 
 <details>
 <summary>text_image</summary>

@@ -62,9 +62,9 @@ lesson_id: ch20-activity-review
 (3) 当日销售量为 80 kg 时，单价是多少？ 
 
 
-![](../images/faba2b51e2f2990528e3f6f9dc1d209ec4047863b010ed114346f1aa4838d746.jpg)  
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/faba2b51e2f2990528e3f6f9dc1d209ec4047863b010ed114346f1aa4838d746.jpg)  
 (第9题)  
-![](../images/90b507f43826153831a674efb535b1367f236df9b9df540e3ceebf5bbabe6e6d.jpg)  
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/90b507f43826153831a674efb535b1367f236df9b9df540e3ceebf5bbabe6e6d.jpg)  
 (第 10 题)
 
 

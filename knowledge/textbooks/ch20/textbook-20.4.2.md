@@ -95,9 +95,9 @@ $$
 (2) 求轮船行驶 $1.5 \mathrm{~h}$ 时与 B 港口之间的路程. 
 
 
-![](../images/2c2631c771dd2f57f1fa926ebf311f5d55ee069f91ea47c830b532d261d62df1.jpg)  
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2c2631c771dd2f57f1fa926ebf311f5d55ee069f91ea47c830b532d261d62df1.jpg)  
 (第1题)  
-![](../images/eb96dbd52371d7afa29f3b170c864888f680c3dc05364c00fcc198bf4b467e0e.jpg)  
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/eb96dbd52371d7afa29f3b170c864888f680c3dc05364c00fcc198bf4b467e0e.jpg)  
 (第2题)
 
 

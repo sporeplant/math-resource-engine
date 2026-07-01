@@ -11,7 +11,7 @@ lesson_id: 12.2.1
 
 根据分数的乘除法法则，我们能进行分数的乘法运算和除法运算。那么，怎样进行分式的乘法运算和除法运算呢？ 
 
-![](../images/43b8e4dc7bfc126544f459c3304f6095dec4398eb3b3e1997bc6b7088bc2aab2.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/43b8e4dc7bfc126544f459c3304f6095dec4398eb3b3e1997bc6b7088bc2aab2.jpg)
 
 
 ## 观察与思考
@@ -58,7 +58,7 @@ $$
 
 (2) $\frac{a^2 - 4}{a^2 + 6a + 9} \cdot \frac{a + 3}{a + 2}$ $= \frac{(a^2 - 4)(a + 3)}{(a^2 + 6a + 9)(a + 2)}$ $= \frac{(a + 2)(a - 2)(a + 3)}{(a + 3)^2(a + 2)}$ $= \frac{a - 2}{a + 3}$ . 
 
-![](../images/050ae0c5eae3be8270487df44cf06987fb97cb3ca002a9ab5ab634e7856c0ccf.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/050ae0c5eae3be8270487df44cf06987fb97cb3ca002a9ab5ab634e7856c0ccf.jpg)
 
 
 ## 做一做
@@ -69,7 +69,7 @@ $$
 
 (2) $\frac{x - 1}{x^2 - 4x + 4} \cdot \frac{x^2 - 4}{x^2 - 1}$ . 
 
-![](../images/bfba911ef73b1e0f30e35e45eb242819ba5dd76e266b54566862c8e4bac808d0.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bfba911ef73b1e0f30e35e45eb242819ba5dd76e266b54566862c8e4bac808d0.jpg)
 
 
 ## 练习
@@ -120,4 +120,4 @@ C组
 
 算式 $\frac{a}{m}\div\frac{b}{n}$ 就涉及分式的除法. 
 
-![](../images/dca9dce8ff46c686b9e387b0670b54dacc37575e2b7867da7feb0278799475f5.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/dca9dce8ff46c686b9e387b0670b54dacc37575e2b7867da7feb0278799475f5.jpg)

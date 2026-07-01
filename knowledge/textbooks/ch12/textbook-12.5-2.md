@@ -34,7 +34,7 @@ $$
 
 答：每件服装的原价为 200 元. 
 
-![](../images/62d7331fd3d10d3b4149e069020802e435d517494cc37e8edaf093c89e535f5e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/62d7331fd3d10d3b4149e069020802e435d517494cc37e8edaf093c89e535f5e.jpg)
 
 
 ## 练习
@@ -59,7 +59,7 @@ $$
 
 5. 如图，A，B两海港相距 540 km，甲、乙两船同时从 B 港驶出。乙船直接驶向 A 港。甲船先驶向 C 海港，3 h 后到达 C 港，然后立即返回 B 港，驶达 B 港后，又立即驶向 A 港，最后与乙船同时到达 A 港。已知甲船的速度是乙船速度的 $\frac{6}{5}$ 倍，求甲、乙两船的速度。（水流速度不计） 
 
-![](../images/4513cad85e8a91340bd0f9e1a80833a6fad4ecfdbf55736a2c245c6fee728e60.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4513cad85e8a91340bd0f9e1a80833a6fad4ecfdbf55736a2c245c6fee728e60.jpg)
 
 
 

@@ -10,7 +10,7 @@
 
 ## 思维导图
 
-![](../images/dbd5368308559d115e2b628c08eac5ca8075d5664d7abb053a3d9a7278e0ea9a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/dbd5368308559d115e2b628c08eac5ca8075d5664d7abb053a3d9a7278e0ea9a.jpg)
 
 <details>
 <summary>flowchart</summary>
@@ -110,9 +110,9 @@ C． $x \neq 3$
 
 D． $x > - 3$ 且 $x \neq 3$
 
-![](../images/64493e5b915ae5889efcfa2003044df6918c4475856abc79c60dbfcad60ee80c.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/64493e5b915ae5889efcfa2003044df6918c4475856abc79c60dbfcad60ee80c.jpg)
 
-![](../images/8915059bb6e3b5d9ad6c81069b689bc395de0060ff2c1da8e03fe474153eb704.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8915059bb6e3b5d9ad6c81069b689bc395de0060ff2c1da8e03fe474153eb704.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -232,7 +232,7 @@ $f ( x ) = \frac { 2 } { 2 - x }$ ，那么 $f \ ( { \sqrt { 3 } } )$ ）＝
 
 【变式 4】根据如图所示的程序计算函数 y 的值，若输入 x 的值是 8，则outputs y 的值是﹣3，若输入 x 的值是﹣8，则outputs y 的值是（ ）
 
-![](../images/8d3a1977411c5018257db451874a25d732d0962b9173c9e2b8180e563986ebff.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8d3a1977411c5018257db451874a25d732d0962b9173c9e2b8180e563986ebff.jpg)
 
 <details>
 <summary>flowchart</summary>
@@ -301,7 +301,7 @@ D．Q＝0.2t﹣40
 
 其中所有正确结论的序号是（
 
-![](../images/5c2e8e7250d1f92a6d987247c66f59b7752c7c3263b443584db0d8381dc0e0b0.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5c2e8e7250d1f92a6d987247c66f59b7752c7c3263b443584db0d8381dc0e0b0.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -349,7 +349,7 @@ D．﹣15
 
 9．用如图所示的程序框图来计算函数 y 的值，当输入 x为﹣1 和 7 时，outputs y 的值相等，则 b 的值是（ ）
 
-![](../images/250cb512b84e01dda56ad31fa51cb271f190082a2d1e9e6fec4ba6eb58fa39e8.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/250cb512b84e01dda56ad31fa51cb271f190082a2d1e9e6fec4ba6eb58fa39e8.jpg)
 
 <details>
 <summary>flowchart</summary>
@@ -382,7 +382,7 @@ D．2
 
 其中正确的结论是（ ）
 
-![](../images/49b15dcb62a15b4aadd8b8cab9bd7a79c2fb1c151bebf2e6bd05ce8cebc0b78e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/49b15dcb62a15b4aadd8b8cab9bd7a79c2fb1c151bebf2e6bd05ce8cebc0b78e.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -407,9 +407,9 @@ D．②④
 13．函数 $y = f \left( { \mathbf { - } } { \mathbf { 4 } } \right) = { \mathbf { - } } { \mathbf { 2 } } x { \mathbf { + } } b { \mathbf { = } } { \mathbf { - } } { \mathbf { 5 } }$ ，则 f（0）＝  
 14．如图是 1 个纸杯和 6 个叠放在一起的相同纸杯的示意图．若设杯沿高为 a（常量），杯子底部到杯沿底边高为 b，写出杯子总高度 h 随着杯子数量 n（自变量）的变化规律
 
-![](../images/a4fc06eebc6e9655675953c2dc31bf91a387ffde2f076370d1a45782c5f03b98.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a4fc06eebc6e9655675953c2dc31bf91a387ffde2f076370d1a45782c5f03b98.jpg)
 
-![](../images/1328a58821a51f0995ade58e583f47369796707b1bd6dce79ee44fb0ed87e300.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1328a58821a51f0995ade58e583f47369796707b1bd6dce79ee44fb0ed87e300.jpg)
 
 15．一个矩形的长比宽多 3cm，矩形的面积是 $S c m ^ { 2 }$ ．设矩形的宽为 xcm，当 x在一定范围内变化时，S 随x 的变化而变化，则 S与 x满足的函数关系是
 
@@ -437,7 +437,7 @@ D．②④
 
 （3）当outputs y 的值为 12 时，求输入 x 的值
 
-![](../images/a6c5088c2e88988c6d55f6b7d78fc2be9c762b44736e44fe27fb7f9b5bfe0bbe.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a6c5088c2e88988c6d55f6b7d78fc2be9c762b44736e44fe27fb7f9b5bfe0bbe.jpg)
 
 <details>
 <summary>flowchart</summary>

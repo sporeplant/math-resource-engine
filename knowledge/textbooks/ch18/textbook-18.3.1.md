@@ -13,7 +13,7 @@ lesson_id: 18.3.1
 
 | | | |
 |:---:|:---:|:---:|
-| ![](../images/eb49a0b573cbe6211799adac3ec18dcaaa04fc0b634bc4968864b29e73146349.jpg) | ![](../images/6870107c85c12ca05ea94a3c6f7b9abe1b774b1b156efc44c21b0a01953498e0.jpg) | ![](../images/a2a01b1ebdb0aa320a52f2cb488537b9b952924ce4bea1cb9c05a46621b88cb5.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/eb49a0b573cbe6211799adac3ec18dcaaa04fc0b634bc4968864b29e73146349.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6870107c85c12ca05ea94a3c6f7b9abe1b774b1b156efc44c21b0a01953498e0.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a2a01b1ebdb0aa320a52f2cb488537b9b952924ce4bea1cb9c05a46621b88cb5.jpg) |
 | (1) | (2) | (3) |
 
 
@@ -44,7 +44,7 @@ lesson_id: 18.3.1
 
 | | |
 |:---:|:---:|
-| ![](../images/51514b8b03cf69d12500aaa0c82e090f4d3b2c61c77d107757113701376b674e.jpg) | ![](../images/e324140a093ae0edc31eaff9fe2dcfe05c14060736557079bb6d0aa5fc2ae402.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/51514b8b03cf69d12500aaa0c82e090f4d3b2c61c77d107757113701376b674e.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e324140a093ae0edc31eaff9fe2dcfe05c14060736557079bb6d0aa5fc2ae402.jpg) |
 | (第1题) | (第2题) |
 
 
@@ -59,7 +59,7 @@ lesson_id: 18.3.1
 
 | | |
 |:---:|:---:|
-| ![](../images/03eddcb1059c8b88c904db7ddb93d300eaf6e1e3350a7d7599a4145e78eba5b9.jpg) | ![](../images/99b2e88fc461d00e472d656bd3dee30a466e40ce32c2924fd2f8dfc6b569fbbd.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/03eddcb1059c8b88c904db7ddb93d300eaf6e1e3350a7d7599a4145e78eba5b9.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/99b2e88fc461d00e472d656bd3dee30a466e40ce32c2924fd2f8dfc6b569fbbd.jpg) |
 | (第1题) | (第2题) |
 
 

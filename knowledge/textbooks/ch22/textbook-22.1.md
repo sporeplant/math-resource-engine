@@ -13,7 +13,7 @@ lesson_id: 22.1.1
 在现实生活中，我们经常看到统计数据和统计图表。你知道它们是怎么得到的吗？本节我们将初步认识统计的一般过程和方法。 
 
 为了解某学校八年级(1)班50名同学对体育课的喜欢程度，我们可以按照下面的程序进行调查，记录调查数据，对调查数据进行简单的整理，并表示调查的结果. 
-![](../images/a4a09b2c95a5770b362acca16938ff8b849295789c4eeed7c39c17942bbca9ff.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a4a09b2c95a5770b362acca16938ff8b849295789c4eeed7c39c17942bbca9ff.jpg)
 为了使调查客观公正，便于数据汇总，建议使用调查表进行调查。（只需在选项代号上画“√”即可） 
 
 例如，利用调查表，收集到50名同学对体育课喜欢程度的数据如下： 
@@ -63,7 +63,7 @@ lesson_id: 22.1.1
 4. 统计的一般过程包括哪些步骤? 
 
 统计的一般过程可以按下面框图所示的步骤进行. 
-![](../images/e4c5fd7a11a62804932c91e8ae2fd9e7399e47bfa67fe8257986054577f41b73.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e4c5fd7a11a62804932c91e8ae2fd9e7399e47bfa67fe8257986054577f41b73.jpg)
 # 练习
 
 解决下面的问题需要哪些数据？说明调查范围和调查方法。 

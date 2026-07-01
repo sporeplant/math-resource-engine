@@ -16,7 +16,7 @@ lesson_id: 21.8.1
 | <img src="../images/67482fe2d351ae7531424212008ba3a588ab75e386d85a550d70c859f2bb5503.jpg" width="35%"> | <img src="../images/786ad19087df87d55553ce77bcdceaeb1d1974728cff664e4998710d3e0fe299.jpg" width="35%"> |
 | <img src="../images/afd012008b38d9b5643a218d218cee8f4254f6d9b45f82d0c997a57387389ddd.jpg" width="35%"> | |
 我们把只有一组对边平行的四边形叫作梯形(trapezoid). 
-![](../images/18a4a41d96866b9970a6b72f3ec6638fc93808d4379c840ce18b1bafa03de744.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/18a4a41d96866b9970a6b72f3ec6638fc93808d4379c840ce18b1bafa03de744.jpg)
 在梯形中，平行的两边叫作梯形的底，通常把较短的底叫作上底，较长的底叫作下底；不平行的两边叫作梯形的腰；梯形上底和下底之间的垂线段叫作梯形的高。 
 
 如图 21.8-1, 在梯形 $ABCD$ 中, $DC$ 和 $AB$ 分别是梯形的上底和下底, $AD$ 和 $BC$ 都是梯形的腰, $DE \perp AB$ 于点 $E$ , $DE$ 是梯形的高. 
@@ -62,7 +62,7 @@ $\therefore E C = B C.$ $\therefore \angle C E B = \angle B.$ $\because \quad C 
 想一想: 如果把例 1 已知条件中的 "AD = BC" 换成 " $\angle A = \angle B$ ", 你能证出 $AD = BC$ 吗? 
 
 例2 如图21.8-5，梯形ABCD是一座水库堤坝的横断面。已知 $AD \parallel BC$ ， $\angle B = 45^{\circ}$ ， $\angle DCB = 30^{\circ}$ ，坝顶 $AD = 6 \mathrm{~m}$ ， $AB = 10 \sqrt{2} \mathrm{~m}$ 。求CD的长及堤坝横断面（即梯形ABCD）的面积。 
-![](../images/d6c1e2376e15a84cd58b100d07dcb5f01822bec0c1d3a131d9002972fd9b2897.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d6c1e2376e15a84cd58b100d07dcb5f01822bec0c1d3a131d9002972fd9b2897.jpg)
 图21.8-5
 
 
@@ -73,7 +73,7 @@ $\angle A E F = \angle D F C = 9 0 ^ {\circ}.$
 又∵ AD∥BC, 
 
 ∴ 四边形 AEFD 是矩形. 
-![](../images/749ea5c55b7c8be41ba3974c320da8f1144cafb83de0b4c3f34d75d7a5c0854f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/749ea5c55b7c8be41ba3974c320da8f1144cafb83de0b4c3f34d75d7a5c0854f.jpg)
 图21.8-6
 $\therefore A E = D F, A D = E F.$
 在 Rt△ABE 中， 
@@ -105,19 +105,19 @@ $\therefore F C = \sqrt {D C ^ {2} - D F ^ {2}} = \sqrt {2 0 ^ {2} - 1 0 ^ {2}} 
 2. 如图, 在梯形 $ABCD$ 中, $AB \parallel CD$ , 对角线 $AC$ 与 $BD$ 相交于点 $O$ . 从图中找出所有面积相等的三角形, 并说明理由. 
 
 3. 如图, 在梯形 $ABCD$ 中, $AB \parallel CD$ , $\angle C = 70^{\circ}$ , $\angle D = 55^{\circ}$ , $AB = 5$ , $DC = 11$ . 求腰 $BC$ 的长. 
-![](../images/d29f38c7ca8b2f2eb823be17d2a4427cbd425a8aabd54321e00c118bf47899a0.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d29f38c7ca8b2f2eb823be17d2a4427cbd425a8aabd54321e00c118bf47899a0.jpg)
 (第3题)
 
 
 # B 组
 
 4. 如图, 将一张矩形纸片沿着虚线剪成两张全等的直角梯形纸片。根据图中标出的数据, 求剪成的直角梯形纸片的上底和下底的长度。 
-![](../images/11750d81f5e6bf892cd05c8091d0278cf5ad284b2cb28b92d3080f1234692bf7.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/11750d81f5e6bf892cd05c8091d0278cf5ad284b2cb28b92d3080f1234692bf7.jpg)
 (第4题)
 
 
 5. 已知：如图，在梯形 $ABCD$ 中， $AD \parallel BC$ ， $AD = 2$ ， $BD = 6$ ， $AC = BC = 8$ 。求证： $AC \perp BD$ . 
-![](../images/9e28f7c474cc1c3cf6fdbd8006c28078438397ebf1c700db257bbcbcb0cb434e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9e28f7c474cc1c3cf6fdbd8006c28078438397ebf1c700db257bbcbcb0cb434e.jpg)
 (第5题)
 
 # 第一课时结束

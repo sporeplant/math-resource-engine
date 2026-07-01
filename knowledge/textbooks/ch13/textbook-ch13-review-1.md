@@ -10,7 +10,7 @@ lesson_id: ch13-review-1
 ## 第十三章回顾与反思（第一课时）
 ## 一、知识结构
 
-![](../images/0d32948f555623c2de1fbe4e3830ebf76a819963af09096844fb5c6ec398c34f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0d32948f555623c2de1fbe4e3830ebf76a819963af09096844fb5c6ec398c34f.jpg)
 
 
 ## 二、总结与反思
@@ -41,7 +41,7 @@ lesson_id: ch13-review-1
 
 2. 证明过程中的每一步都要有依据。这些依据是已学过的基本事实、定义和定理等。 
 
-![](../images/8cbafe78d959c18883eba19b1c7ff14fa22dc3c2d947ee8ec0db5301600b6c11.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8cbafe78d959c18883eba19b1c7ff14fa22dc3c2d947ee8ec0db5301600b6c11.jpg)
 
 
 ## 复习题
@@ -50,14 +50,14 @@ lesson_id: ch13-review-1
 
 1. 如图， $AD = CF$ ，要使 $\triangle ABC$ 与 $\triangle FED$ 全等，应添加哪些条件？ 
 
-![](../images/9a1cacd6de20cde65ac40eb8e655bc54d8283c65e0970ac915d58ecbd36396dd.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9a1cacd6de20cde65ac40eb8e655bc54d8283c65e0970ac915d58ecbd36396dd.jpg)
 
 
 
 (第1题)
 
 
-![](../images/4e49bd14c260fc16c275bac21d70db052cf768b196a103ccd4747c0dbd612471.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4e49bd14c260fc16c275bac21d70db052cf768b196a103ccd4747c0dbd612471.jpg)
 
 
 
@@ -68,14 +68,14 @@ lesson_id: ch13-review-1
 
 3. 小明同学想出了一种测量河宽的方法。要测量河岸两侧 $A, B$ 两点之间的距离(如图)，可以在 $AB$ 的垂线 $BF$ 上取两点 $C, D$ ，使 $CD = CB$ ；再画出 $BF$ 的垂线 $DE$ ，使点 $A, C, E$ 在一条直线上。这时测得的 $DE$ 的长就是 $AB$ 的长。你认为小明同学这样得到的结果正确吗？为什么？ 
 
-![](../images/01043039a88961ccb594e6852810693b08d1c947e0b1f9cac7c9637ac7e1a116.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/01043039a88961ccb594e6852810693b08d1c947e0b1f9cac7c9637ac7e1a116.jpg)
 
 
 
 (第3题)
 
 
-![](../images/a97a1795505b76b3e3b3f69cb28fc7386096803ec23862e0548d8062800c9432.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a97a1795505b76b3e3b3f69cb28fc7386096803ec23862e0548d8062800c9432.jpg)
 
 
 
@@ -86,7 +86,7 @@ lesson_id: ch13-review-1
 
 5. 某工件的内槽截面如图所示。利用你所学过的全等三角形的知识，设计一种测量工具，使它能测量出工件内槽的宽度。请写出你的设计方案和依据。 
 
-![](../images/37e8a280edbb6c2e19f1b99f075ce596a8c05703cc364c96fec02e45b83386a8.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/37e8a280edbb6c2e19f1b99f075ce596a8c05703cc364c96fec02e45b83386a8.jpg)
 
 
 

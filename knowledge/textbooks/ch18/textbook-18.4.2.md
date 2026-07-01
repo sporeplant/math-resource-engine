@@ -30,7 +30,7 @@ $O(0, 0), A(0, 2), B(2, 3), C(4, 2), D(3, 0).$
 
 | | |
 |:---:|:---:|
-| ![](../images/d3782144e8db18a1fae5e7f050555bf5cc4b2e0cc38b4e74019383f9b34cd046.jpg) | ![](../images/03cc169425e1c13e8d155e98c3da4618484e28b2e19a3a0b130ee2d1802ccc64.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d3782144e8db18a1fae5e7f050555bf5cc4b2e0cc38b4e74019383f9b34cd046.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/03cc169425e1c13e8d155e98c3da4618484e28b2e19a3a0b130ee2d1802ccc64.jpg) |
 | 图18.4-4 | 图18.4-5 |
 
 
@@ -74,7 +74,7 @@ $O(0, 0)$ , $A(2, 6)$ , $B(6, 6)$ , $C(8, 0)$ .
 
 | | |
 |:---:|:---:|
-| ![](../images/3f0f0f9d97068f643380ecaf1c24cf45cabcf8419139bcd30e7d9faed6cfcd1b.jpg) | ![](../images/b2f54cc603ca7614f49ec1c877999e61f598319c93649517b8222726dedc7adc.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3f0f0f9d97068f643380ecaf1c24cf45cabcf8419139bcd30e7d9faed6cfcd1b.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b2f54cc603ca7614f49ec1c877999e61f598319c93649517b8222726dedc7adc.jpg) |
 | (1) | (2) |
 
 
@@ -102,7 +102,7 @@ $O(0, 0)$ , $A(2, 6)$ , $B(6, 6)$ , $C(8, 0)$ .
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![](../images/4b78f8ab2dab2333394e27e11cdd011c271265444e3ed2dcb8d9db11e3b73310.jpg) | ![](../images/efb350210c63178301a955f16bb1c77a3147f6ebf31474638f77be76542767f5.jpg) | ![](../images/a97e83cf6c419faeabb578a460824a4da20c4ac0ae295f6365bb11abca8e44a6.jpg) | ![](../images/ae90508a98a3d29e0418509f763d263a90931173db5c326702bd0a5e63a67ced.jpg) | ![](../images/8f6e0b2cac66e944f14066f54a610a540c9b8efe3581fc6e51df00b550375449.jpg) | ![](../images/dc410fa3ce6451755cf4bddb054f8b2cb16174a90643165bd564a5c41ba33518.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4b78f8ab2dab2333394e27e11cdd011c271265444e3ed2dcb8d9db11e3b73310.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/efb350210c63178301a955f16bb1c77a3147f6ebf31474638f77be76542767f5.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a97e83cf6c419faeabb578a460824a4da20c4ac0ae295f6365bb11abca8e44a6.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ae90508a98a3d29e0418509f763d263a90931173db5c326702bd0a5e63a67ced.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8f6e0b2cac66e944f14066f54a610a540c9b8efe3581fc6e51df00b550375449.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/dc410fa3ce6451755cf4bddb054f8b2cb16174a90643165bd564a5c41ba33518.jpg) |
 | (1) | (2) | (3) | (4) | (5) | (6) |
 
 

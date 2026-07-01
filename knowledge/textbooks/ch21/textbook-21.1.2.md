@@ -6,12 +6,12 @@ chapter_name: 四边形
 section_name: 多边形
 lesson_id: 21.1.1
 --------|------|---------------------|---------------------|---------------|
-| 四边形 | 4 | ![](../images/94ecc1e415a434790f21b40db5c67c337041ed537c01e7a6d695f751e17b8968.jpg) | 2 | 360° |
-| 五边形 | 5 | ![](../images/0a9dbe89ca638e61381b3e700bd79a1cd4cdb42bb3f2437a87fd31c01f7e454e.jpg) | | |
-| 六边形 | 6 | ![](../images/6a32adb26c63235197b74b5207da91ed18b9844ecbab7f3b9e0e97998a578019.jpg) | | |
-| 七边形 | 7 | ![](../images/2b46590b99fa0e621a82183d8254445bd5ea2d270a2383c8f0503b552e7b7a4a.jpg) | | |
+| 四边形 | 4 | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/94ecc1e415a434790f21b40db5c67c337041ed537c01e7a6d695f751e17b8968.jpg) | 2 | 360° |
+| 五边形 | 5 | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0a9dbe89ca638e61381b3e700bd79a1cd4cdb42bb3f2437a87fd31c01f7e454e.jpg) | | |
+| 六边形 | 6 | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6a32adb26c63235197b74b5207da91ed18b9844ecbab7f3b9e0e97998a578019.jpg) | | |
+| 七边形 | 7 | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2b46590b99fa0e621a82183d8254445bd5ea2d270a2383c8f0503b552e7b7a4a.jpg) | | |
 | ⋮ | ⋮ | ⋮ | ⋮ | ⋮ |
-| \(n\)边形 | \(n\) | ![](../images/863b002ef065723b40344d346f358706d3e3f91b04f1a4777e90d47b3d09f0ca.jpg) | | |
+| \(n\)边形 | \(n\) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/863b002ef065723b40344d346f358706d3e3f91b04f1a4777e90d47b3d09f0ca.jpg) | | |
 
 我们发现，\(n\) 边形的内角和等于 \((n-2)\times180^{\circ}\)。
 
@@ -20,7 +20,7 @@ lesson_id: 21.1.1
 已知：如图 21.1-9，\(n\) 边形 \(A_{1}A_{2}A_{3}\cdots A_{n-1}A_{n}\)。
 
 求证：\(n\) 边形 \(A_{1}A_{2}A_{3}\cdots A_{n-1}A_{n}\) 的内角和等于 \((n-2)\times180^{\circ}\)。
-![](../images/29e2e13eec4f4bb4f9b0f4ea91ea5220e3d57ca8d2dc06e9552a4dee671bcdd1.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/29e2e13eec4f4bb4f9b0f4ea91ea5220e3d57ca8d2dc06e9552a4dee671bcdd1.jpg)
 图21.1-9
 
 证明：连接 \(A_{1}A_{i}\)（\(i=3,4,\cdots,n-1\)），得到 \(\triangle A_{1}A_{i-1}A_{i}\)（\(i=3,4,\cdots,n-1,n\)），共有 \((n-2)\) 个三角形。
@@ -54,7 +54,7 @@ lesson_id: 21.1.1
 例 2 如图 21.1-10，小亮从点 \(O\) 处出发，前进 \(5 \mathrm{m}\) 后向右转 \(20^{\circ}\)，再前进 \(5 \mathrm{m}\) 后又向右转 \(20^{\circ}\)，这样走 \(n\) 次后，恰好回到点 \(O\) 处。
 
 （1）小亮走出的这个 \(n\) 边形的每个内角是多少度，内角和是多少度？
-![](../images/fe2d95cdff7b4c6caf4fb3293751db62d8892c0b9e619cedf9c7c3f828d08df.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/fe2d95cdff7b4c6caf4fb3293751db62d8892c0b9e619cedf9c7c3f828d08df.jpg)
 图21.1-10
 
 （2）小亮走出的这个 \(n\) 边形的周长是多少米？
@@ -89,7 +89,7 @@ lesson_id: 21.1.1
 3. 过某个多边形一个顶点的对角线共有10条，求这个多边形的内角和。
 
 4. 某模板如图所示，规定：\(AB, CD\) 的延长线应相交成 \(80^{\circ}\) 的角。因交点不在板上，不便测量，工人师傅测得 \(\angle BAE = 122^{\circ}, \angle DCF = 155^{\circ}\)。此时 \(AB, CD\) 的延长线相交所成的角是否符合规定？为什么？
-![](../images/34c7c2157e898113da1a3037da370eb1e04a3fef971cd88590ba8c01a9871ee.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/34c7c2157e898113da1a3037da370eb1e04a3fef971cd88590ba8c01a9871ee.jpg)
 （第4题）
 
 # B 组

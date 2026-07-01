@@ -38,10 +38,10 @@ lesson_id: 19.1.1
 （3）如图19.1-1，有 $n$ 个点阵图，其中第 $n$ 个点阵图中点的总个数为 $a$ . 
 
 
-![](../images/ec95d4dde63f181a13dae0f7c4b67e2155578b731cb7aa685cee6737babaf719.jpg)  
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ec95d4dde63f181a13dae0f7c4b67e2155578b731cb7aa685cee6737babaf719.jpg)  
 | | | | | |
 |:---:|:---:|:---:|:---:|:---:|
-| ![](../images/b4003ffb725cd26be93a47a65054733f640aba6778220707fbf1d961b6d797ec.jpg) | ![](../images/a54c322e4273327340de2db240039829e33cfc24c142c59099a57482cf98f66a.jpg) | ![](../images/66a25b1c22e02865b49be8ebdfbd4bea428d4b9705df1905bdc93273118394ad.jpg) | ![](../images/ae776aeb0e959401eda0004fd5d696fc3567a7c9b97b98a1b5fd13b5f6a12c99.jpg) | ![](../images/894a9f4c8968c5580e7bc4f289a86eef30f9a470ae2e4034ee00d727c07ad948.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b4003ffb725cd26be93a47a65054733f640aba6778220707fbf1d961b6d797ec.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a54c322e4273327340de2db240039829e33cfc24c142c59099a57482cf98f66a.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/66a25b1c22e02865b49be8ebdfbd4bea428d4b9705df1905bdc93273118394ad.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ae776aeb0e959401eda0004fd5d696fc3567a7c9b97b98a1b5fd13b5f6a12c99.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/894a9f4c8968c5580e7bc4f289a86eef30f9a470ae2e4034ee00d727c07ad948.jpg) |
 | 图19.1-1 | | | | |
 
 

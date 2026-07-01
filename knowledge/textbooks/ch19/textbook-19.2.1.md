@@ -51,7 +51,7 @@ lesson_id: 19.2.1
 
 | | |
 |:---:|:---:|
-| ![](../images/f552cca9d7c16dc5f07f42409b2bfd1296474a8f67e1cb9950d3303e6e816025.jpg) | ![](../images/17eb1c188e0811dafcc34a4ea1c3d1a99f15b708247dc2dab360d9f74b7b3363.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f552cca9d7c16dc5f07f42409b2bfd1296474a8f67e1cb9950d3303e6e816025.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/17eb1c188e0811dafcc34a4ea1c3d1a99f15b708247dc2dab360d9f74b7b3363.jpg) |
 | 图19.2-2 | |
 
 
@@ -80,7 +80,7 @@ lesson_id: 19.2.1
 
 | | |
 |:---:|:---:|
-| ![](../images/84db9841790a35a77b6fb9a4e08215e556c0ce349214da1b284c0973b4ee3311.jpg) | ![](../images/81ca768386228bd725582d7203ab2199c209cdecb001a59a460012d033087459.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/84db9841790a35a77b6fb9a4e08215e556c0ce349214da1b284c0973b4ee3311.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/81ca768386228bd725582d7203ab2199c209cdecb001a59a460012d033087459.jpg) |
 | (第1题) | (第2题) |
 
 

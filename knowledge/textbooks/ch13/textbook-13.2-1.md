@@ -11,7 +11,7 @@ lesson_id: 13.2.1
 
 图形的形状和大小是几何研究的重要内容。本节我们来研究形状相同、大小相等的这类图形。 
 
-![](../images/73b0b2a92dce8948d2dfa9c45847fa8806106aaf9333f2c9906c04f4945eec2c.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/73b0b2a92dce8948d2dfa9c45847fa8806106aaf9333f2c9906c04f4945eec2c.jpg)
 
 
 ## 观察与思考
@@ -22,43 +22,43 @@ lesson_id: 13.2.1
 
 （2）先在半透明纸上画出同样大小的图形，再将每组中的一个图形叠放在另一个图形上，观察它们是否能够完全重合. 
 
-![](../images/bec7fcb46bccaf3395f3e340bd28ebdd11e2b0ad721e434289c5b36d83db5cda.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bec7fcb46bccaf3395f3e340bd28ebdd11e2b0ad721e434289c5b36d83db5cda.jpg)
 
 
 (1) 
 
-![](../images/40f8f5ff1a3ac3d6e78489e90c057724e2b0491b6f4bba8877f6ed727cdd1ce2.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/40f8f5ff1a3ac3d6e78489e90c057724e2b0491b6f4bba8877f6ed727cdd1ce2.jpg)
 
 
-![](../images/b67a1678aedf99666c8163a2abc39ba864644b04497b904da2064c217f5db698.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b67a1678aedf99666c8163a2abc39ba864644b04497b904da2064c217f5db698.jpg)
 
 
 (2) 
 
-![](../images/0416be2fe835017d05c3415efea6413aaf307850c36f5a21eded0175867b4dca.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0416be2fe835017d05c3415efea6413aaf307850c36f5a21eded0175867b4dca.jpg)
 
 
 
 (3)
 
 
-![](../images/7e2635fdbdb47aca178894a7adb3dba58a4b316522effe308597344cc242c600.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7e2635fdbdb47aca178894a7adb3dba58a4b316522effe308597344cc242c600.jpg)
 
 
-![](../images/ffd41efd78f1e7abdd6419f1ebc7cd4829013ec85421e984087c7fa0086eb6c2.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ffd41efd78f1e7abdd6419f1ebc7cd4829013ec85421e984087c7fa0086eb6c2.jpg)
 
 
-![](../images/815b0dcb039d59655836235bcd5ad0efc11d93dc612cf264b051a28e75e57f8b.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/815b0dcb039d59655836235bcd5ad0efc11d93dc612cf264b051a28e75e57f8b.jpg)
 
 
 
 (4)
 
 
-![](../images/2d5c7bf5350dca3f61d170bf658bb30d79500c9db5dd74260c8406e7b300850f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2d5c7bf5350dca3f61d170bf658bb30d79500c9db5dd74260c8406e7b300850f.jpg)
 
 
-![](../images/7e0203470caf5a09d49b2a34f1d59f65bf5815197521fd0efc8ec09acbcf69a5.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7e0203470caf5a09d49b2a34f1d59f65bf5815197521fd0efc8ec09acbcf69a5.jpg)
 
 
 
@@ -77,7 +77,7 @@ lesson_id: 13.2.1
 
 表示两个三角形全等时，通常把表示对应顶点的字母写在对应的位置上. 
 
-![](../images/c90638e21efe9305c6934d5947e8d26a0268f214c17a1d6b52c884112b1d3661.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c90638e21efe9305c6934d5947e8d26a0268f214c17a1d6b52c884112b1d3661.jpg)
 
 
 ## 大家谈谈
@@ -94,7 +94,7 @@ lesson_id: 13.2.1
 
 (1) 写出 $\triangle ABC$ 和 $\triangle DEF$ 的对应边和对应角. 
 
-![](../images/47fcfe71a5d14a154cf2adcae2d93b6ef9fcacd05d06aad083fcaff7918de8f9.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/47fcfe71a5d14a154cf2adcae2d93b6ef9fcacd05d06aad083fcaff7918de8f9.jpg)
 
 
 
@@ -107,25 +107,25 @@ lesson_id: 13.2.1
 
 (2) 在 $\triangle ABC$ 中， $\because \angle A + \angle B + \angle ACB = 180^{\circ}$ （三角形内角和定理）， $\therefore \angle ACB = 180^{\circ} - \angle A - \angle B = 180^{\circ} - 78^{\circ} - 35^{\circ} = 67^{\circ}$ . $\because \triangle ABC \cong \triangle DEF$ （已知）， $\therefore \angle F = \angle ACB = 67^{\circ}, EF = BC = 18.$ （全等三角形的对应边相等，对应角相等） 
 
-![](../images/d2a0fa1d6979fdca5468d97b2aaaa7bf1b1eda3328f249e9b3d73664da5d1d39.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d2a0fa1d6979fdca5468d97b2aaaa7bf1b1eda3328f249e9b3d73664da5d1d39.jpg)
 
 
 ## 练习
 
 1. 写出下列每组全等图形中的对应边和对应角. 
 
-![](../images/ec16d96919ddb69d0ae7b04c5b7248dc46ca10be6287a4584d8eee403edab2a0.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ec16d96919ddb69d0ae7b04c5b7248dc46ca10be6287a4584d8eee403edab2a0.jpg)
 
 
 (1) 
 
-![](../images/2e5a56ef0b5972a01c2add3067ae10e96510602416c76490be2900f602ea98d9.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2e5a56ef0b5972a01c2add3067ae10e96510602416c76490be2900f602ea98d9.jpg)
 
 
-![](../images/f2003a87981749541af326c341abb263b9510350df29015978fcb9e6f4066520.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f2003a87981749541af326c341abb263b9510350df29015978fcb9e6f4066520.jpg)
 
 
-![](../images/30ec35e1eba9953d69dd89b65df7e46b3e2d14399c53337e1fb6e74cfaf88bc6.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/30ec35e1eba9953d69dd89b65df7e46b3e2d14399c53337e1fb6e74cfaf88bc6.jpg)
 
 
 
@@ -136,7 +136,7 @@ lesson_id: 13.2.1
 
 2. 如图， $\triangle AMB \cong \triangle AMC$ 。请写出图中相等的线段。 
 
-![](../images/5f12bdff0c9776eba957b54ceab4c8d07e7a553d3749377661a389f312043fda.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5f12bdff0c9776eba957b54ceab4c8d07e7a553d3749377661a389f312043fda.jpg)
 
 
 
@@ -149,17 +149,17 @@ lesson_id: 13.2.1
 
 1. 观察房梁支架和窗户的示意图。请分别指出图中的三组全等图形。 
 
-![](../images/4db9f2bcafc70a5f84bfc551452de60a3f113ce2d65652ea9c0d37226b0add39.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4db9f2bcafc70a5f84bfc551452de60a3f113ce2d65652ea9c0d37226b0add39.jpg)
 
 
-![](../images/a59ec820db24a2994aa83b37490b8b3673c0f4f935171276f6af27e2d1920e85.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a59ec820db24a2994aa83b37490b8b3673c0f4f935171276f6af27e2d1920e85.jpg)
 
 
 (第1题) 
 
 2. 如图， $\triangle AOC \cong \triangle BOD$ 。请写出它们的对应边和对应角。 
 
-![](../images/2a83c8dee3878c2cedc5b3b6d7ca9aeb56e78cfaee315fffb70bfd594a8ab8da.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2a83c8dee3878c2cedc5b3b6d7ca9aeb56e78cfaee315fffb70bfd594a8ab8da.jpg)
 
 
 
@@ -174,14 +174,14 @@ lesson_id: 13.2.1
 
 (2) 若 $\angle ADB = 75^{\circ}$ ，求 $\angle AEB$ 的度数. 
 
-![](../images/d104f9106e11120ce63fa8c4f06aef6b3723006136b567401f8f3ab3a1f46082.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d104f9106e11120ce63fa8c4f06aef6b3723006136b567401f8f3ab3a1f46082.jpg)
 
 
 
 (第3题)
 
 
-![](../images/40a03ee52245aa37774972d5135f0ae40f7f7df9c439ad2bd6b099dfd23f35ce.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/40a03ee52245aa37774972d5135f0ae40f7f7df9c439ad2bd6b099dfd23f35ce.jpg)
 
 
 
@@ -194,14 +194,14 @@ C组
 
 5. 把如图所示的各个图形分别分割成两个全等的图形. 
 
-![](../images/b3304a3bd8b431110af3655acb788b11e4c250536e3a2cab9bf6f8f64b033404.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b3304a3bd8b431110af3655acb788b11e4c250536e3a2cab9bf6f8f64b033404.jpg)
 
 
 
 (第 5 题)
 
 
-![](../images/323f4d8f35c1920643f670dd388e63816a8225f267537315e458b57c0f287409.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/323f4d8f35c1920643f670dd388e63816a8225f267537315e458b57c0f287409.jpg)
 
 
-![](../images/3393835b5b6e9ab33db1151f397a187d2ae22f3f3c35721d113ee0ff65f77535.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3393835b5b6e9ab33db1151f397a187d2ae22f3f3c35721d113ee0ff65f77535.jpg)

@@ -10,7 +10,7 @@
 
 ## 思维导图
 
-![](../images/0d45cc01005e4c3a123f69d8822d97d90d7386f7d7f289311a19f11896769f53.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0d45cc01005e4c3a123f69d8822d97d90d7386f7d7f289311a19f11896769f53.jpg)
 
 
 ## 知识点01 平面直角坐标系与点的坐标
@@ -27,7 +27,7 @@
 
 2. 点的坐标： 
 
-![](../images/8e711d38c42437bcbd7a92c990c8968ff6effb245474735140242c332c239433.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8e711d38c42437bcbd7a92c990c8968ff6effb245474735140242c332c239433.jpg)
 
 
 横坐标：过平面内一点做x轴的垂线，垂足在x轴上对应的数为这个点的 
@@ -38,7 +38,7 @@
 
 1．如图，写出坐标系中各点的坐标 
 
-![](../images/a71690125446b24cf04e9c7ec226a4431d68419846fefcc931559c142400747f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a71690125446b24cf04e9c7ec226a4431d68419846fefcc931559c142400747f.jpg)
 
 
 ## 【即学即练 2】
@@ -55,7 +55,7 @@
 
 第一象限内的所有点的坐标，横坐标纵坐标均 0；可以表 示为 。 
 
-![](../images/0a38d28f2d1d0ff040f2d64e789a583cbe074b79cefa7da38c3a3f9714fb66e9.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0a38d28f2d1d0ff040f2d64e789a583cbe074b79cefa7da38c3a3f9714fb66e9.jpg)
 
 
 第二象限内的所有点的坐标，横坐标 0，纵坐标, 0；可以表示为 
@@ -164,14 +164,14 @@ D．（4，﹣3）
 
 【典例 1】写出图中A，B，C，D，E，F，O 各点的坐标 
 
-![](../images/300cc281f8f39466a21990363315d5a06777ce897187e35d6a8ba6e1006ab153.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/300cc281f8f39466a21990363315d5a06777ce897187e35d6a8ba6e1006ab153.jpg)
 
 
 【变式 1】请在如图所示的平面直角坐标系中描出下列各点 
 
 A（5，﹣2），B（3，0），C（2，1），D（6，3） 
 
-![](../images/62ade453e1922ce3bdce11fc33e24aa5af709a4049926d327586309204cb3d6e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/62ade453e1922ce3bdce11fc33e24aa5af709a4049926d327586309204cb3d6e.jpg)
 
 
 【变式 2】如图，在平面直角坐标系中， 
@@ -180,7 +180,7 @@ A（5，﹣2），B（3，0），C（2，1），D（6，3）
 
 （2）描出点C（﹣1，﹣2），点D（2，﹣3） 
 
-![](../images/a77c1649592cd927c3179bea727a959f2d1cdec96169f8f268efeb8decec01d0.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a77c1649592cd927c3179bea727a959f2d1cdec96169f8f268efeb8decec01d0.jpg)
 
 
 【变式 3】如图，在平面直角坐标系中， 
@@ -189,7 +189,7 @@ A（5，﹣2），B（3，0），C（2，1），D（6，3）
 
 （2）描出点 P（﹣2，﹣1），Q（3，﹣2），S（2，5），T（﹣4，3），分别指出各点所在的象限． 
 
-![](../images/1421dce1448b96dbe784f2c40f9d77819c088e142c6ce95246098f882d8f2db9.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1421dce1448b96dbe784f2c40f9d77819c088e142c6ce95246098f882d8f2db9.jpg)
 
 
 ## 题型 02 判定点所在的象限
@@ -420,7 +420,7 @@ D．（3，2）或（﹣3，2）
 
 7．小美家（A）、小明家（B）、小丽家（C）在同一个小区，位置如图所示，如果小美家（A）的位置用（﹣ 4，﹣3）表示，小明家（B）的位置用（2，1）表示，那么小丽家（C）的位置可以表示为（ 
 
-![](../images/efd9431bad631cdaebf81886b3c3094db3e1c601ee2988d9917d9382cc9e50e9.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/efd9431bad631cdaebf81886b3c3094db3e1c601ee2988d9917d9382cc9e50e9.jpg)
 
 
 A．（0，﹣2） 
@@ -471,7 +471,7 @@ D．第一象限
 
 15．如图，点 A（1，0）第一次跳动至点 $A _ { 1 } ~ ( ~ - ~ 1 , ~ 1 )$ ，第二次跳动至点 A2（2，1），第三次跳动至点 A3（﹣ 2，2），第四次跳动至点A（4 3，2），…，依此规律跳动下去，点A第 2024次跳动至点 A2024的坐标是 
 
-![](../images/5973ccabc897309e0c644fcf5af9507c7eb93d10f064f8ebd7b9f99a96411dd2.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5973ccabc897309e0c644fcf5af9507c7eb93d10f064f8ebd7b9f99a96411dd2.jpg)
 
 
 16．已知点 $P \ ( m - 3 , \ 2 m + 4 )$ ），根据下列条件求点 P的坐标 

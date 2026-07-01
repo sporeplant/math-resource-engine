@@ -24,7 +24,7 @@ lesson_id: 21.6.1
 2. 已知: 如图, 在 $\square ABCD$ 中, $O$ 为对角线 $AC$ 的中点, 过点 $O$ 作 $AC$ 的垂线与边 $AD$ , $BC$ 分别交于点 $E$ , $F$ , 连接 $AF$ , $CE$ . 求证: 四边形 $AFCE$ 是菱形. 
 
 3. 已知: 如图, 四边形 $ABCD$ 是菱形, 两条对角线相交于点 $O$ , $DE$ 为 $\angle ADB$ 的平分线, 交 $AC$ 于点 $E$ , $DF$ 为 $\angle CDB$ 的平分线, 交 $AC$ 于点 $F$ , 连接 $BE$ , $BF$ . 求证: 四边形 $DEBF$ 是菱形. 
-![](../images/c68d040d61817bbed842762e5af1a542090446a2656cc1ec9ce1fdbaa3370db5.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c68d040d61817bbed842762e5af1a542090446a2656cc1ec9ce1fdbaa3370db5.jpg)
 (第3题)
 
 

@@ -16,7 +16,7 @@ lesson_id: 20.2.1
 
 | | |
 |:---:|:---:|
-| ![](../images/9fa6b675e35b8d56a012b1d337c48d27193b3f3e028cc6436cbd5ad58a1fefff.jpg) | ![](../images/801c61e6e2e1af54c738ed70cdd23dde44c057f8c754ec66942a4ca6a1054584.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9fa6b675e35b8d56a012b1d337c48d27193b3f3e028cc6436cbd5ad58a1fefff.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/801c61e6e2e1af54c738ed70cdd23dde44c057f8c754ec66942a4ca6a1054584.jpg) |
 | 图20.2-1 | 图20.2-2 |
 
 

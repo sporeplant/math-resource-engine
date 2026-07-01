@@ -62,7 +62,7 @@ D．S＝30t（t＝4）
 
 8．天气转暖，正是露营好时节．周六，小联同学一家从家出发，开车匀速前往离家 30 千米的露营基地．行驶 0.5 小时后，到达露营基地．在基地玩耍一段时间后，按照原路返程回家．由于车流增加，平均行驶速度比去基地的平均速度少 $\frac { 1 } { 6 }$ 在整个运动过程中，小联同学距家的距离 y（千米）与所用时间 x（小时）之间的函数关系如图所示，下列说法不正确的是（ ）
 
-![](../images/e3ae6133a884e224d6b3e9190adc01107936f2442f7a9e9fd2b0b1e1eba78c8e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e3ae6133a884e224d6b3e9190adc01107936f2442f7a9e9fd2b0b1e1eba78c8e.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -82,7 +82,7 @@ D．与家相距 10千米时，x 的值为 4.74
 
 9．一条公路旁依次有 A，B，C 三个村庄，甲、乙两人骑自行车分别从 A 村、B 村同时出发前往 C 村，甲、乙之间的距离 s（km）与骑行时间 t（h）之间的函数关系如图所示，下列结论错误的是（ ）
 
-![](../images/3aa3526216f18d8ea633408ea5f99307da45d7578ef685a0cb7bce8d293a58f3.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3aa3526216f18d8ea633408ea5f99307da45d7578ef685a0cb7bce8d293a58f3.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -102,7 +102,7 @@ D．相遇后两人又骑行了 14min，此时两人相距 2km
 
 10．小明早晨 7：20 从家里出发步行去学校（学校与家的距离是 1000米），4 分钟后爸爸发现小明数学书没带，骑电瓶车去追赶，7：26追上小明并将数学书交给他（交接时间忽略不计），交接完成后爸爸放慢速度原路返回，7：30小明到达学校，同时爸爸也正好到家．如图，线段 OA 与折线 B﹣C﹣D 分别表示小明和爸爸离开家的距离 s（米）关于时间 t（分钟）的函数图象，下列说法错误的是（ ）
 
-![](../images/897c4aa5f2ccceea8467a2411c24f02ad778f935477f9fe27dc88f04ba0ac71d.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/897c4aa5f2ccceea8467a2411c24f02ad778f935477f9fe27dc88f04ba0ac71d.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -122,7 +122,7 @@ D．7：25 和 7：27 时，父子俩均相距 200 米
 
 11．甲、乙两人分别从 A、B 两地同时出发，相向而行，匀速前往 B 地、A 地，两人相遇时停留了 4min，又各自按原来速度前往目的地，甲、乙两人之间的距离 y（m）与甲所用时间 x（min）之间的函数关系如图所示，给出下列结论：①A、B 之间的距离为 1200m；②24min 时，甲、乙两人中有一人到达目的地；③b＝800；④a＝32，其中正确的结论个数为（ ）
 
-![](../images/7a99b817405f37f113393c8a41b7bd36be06cebc6f18845b434530e350860190.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7a99b817405f37f113393c8a41b7bd36be06cebc6f18845b434530e350860190.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -152,7 +152,7 @@ D．4 个
 
 其中正确的有（
 
-![](../images/0363a06968b719486a20907cb46f17229e8bbb0d0b99ea481ded9302a455452e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0363a06968b719486a20907cb46f17229e8bbb0d0b99ea481ded9302a455452e.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -178,7 +178,7 @@ D．1 个
 
 13．甲、乙两位同学周末相约去游玩，沿同一路线从 A 地出发前往 B 地，甲、乙分别以不同的速度匀速前行乙比甲晚 0.5h 出发，并且在中途停留 1h后，按原来速度的一半继续前进．此过程中，甲、乙两人离 A地的路程 s（km）与甲出发的时间 t（h）之间的关系如图．下列说法：①A，B 两地相距 24km；②甲比乙晚到 B 地 1h；③乙从 A 地刚出发时的速度为 72km/h；④乙出发 $\frac { 1 7 } { 1 4 } \mathrm { h }$ 与甲第三次相遇．其中正确的有（
 
-![](../images/fe14db337fa4e8ced7401334b5fafff4b26e113d2270d7792775d74ba94a6706.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/fe14db337fa4e8ced7401334b5fafff4b26e113d2270d7792775d74ba94a6706.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -202,7 +202,7 @@ D．4 个
 
 14．小亮从学校步行回家，图中的折线反映了小亮离家的距离 S（米）与时间 t（分钟）的函数关系，根据图象提供的信息，给出以下结论：①他在前 12 分钟的平均速度是 70 米/分；②他在第 19 分钟到家；③他在第 12～19 分钟时离家越来越远；④他在第 33 分钟离家的距离是 720 米．其中正确的序号为（ ）
 
-![](../images/3c21d7b88c689c67481cf0efaefa881268c23b26c19039c441a8b1eb8c2d18f7.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3c21d7b88c689c67481cf0efaefa881268c23b26c19039c441a8b1eb8c2d18f7.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -231,7 +231,7 @@ D．①③④
 ③乙用 16 分钟追上甲；  
 ④乙到达终点时，甲离终点还有 300米
 
-![](../images/cdf039d15f489c06a08df977b8220fafd7a7b833a5dede1517c8489dd04387f4.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/cdf039d15f489c06a08df977b8220fafd7a7b833a5dede1517c8489dd04387f4.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -260,7 +260,7 @@ D．4
 
 其中正确的个数为（
 
-![](../images/d4fbde9964da267278308d498e99269f3e04c3af903dfac2802a0eb0d226b659.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d4fbde9964da267278308d498e99269f3e04c3af903dfac2802a0eb0d226b659.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -285,7 +285,7 @@ D．4 个
 
 ①骑车的同学比步行的同学晚出发 30分钟；②骑车的同学和步行的同学同时到达目的地；③步行的速度是 7.5千米/时；④汽车的同学从出发到追上步行的同学用了 18分
 
-![](../images/0f7ab21009c65c9692940c56e5688fb22b2d296a2b9b52447b916dc155984f56.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0f7ab21009c65c9692940c56e5688fb22b2d296a2b9b52447b916dc155984f56.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -314,7 +314,7 @@ D．4
 （2）分别求出 $l _ { 1 }$ 与 $l _ { 2 }$ 所对应的函数表达式；  
 （3）当销售量为 20 辆时，该品牌汽车所获利润为多少（利润＝销售收入﹣销售成本）？
 
-![](../images/84b67345416bb3c99ed6883938cd7f608b6d490f8a9c7c1a249b1aa33a7af239.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/84b67345416bb3c99ed6883938cd7f608b6d490f8a9c7c1a249b1aa33a7af239.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -344,7 +344,7 @@ D．4
 ①求饮水机中的存水量 y（L）与放水时间 x（min）（x≥3）的函数关系式；  
 ②如果前 3分钟恰好有 10名同学接完水，则前 30个同学接完水共需多少时间？
 
-![](../images/1c273559d6c89cf8cd6e20fd16f5a8106fa7d6bfb89b60d9519fdf3e406b6763.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1c273559d6c89cf8cd6e20fd16f5a8106fa7d6bfb89b60d9519fdf3e406b6763.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -363,7 +363,7 @@ D．4
 （2）求摩托车离 A 地的路程 y（km）关于时间 x（h）的函数表达式；  
 （3）当 x 为何值时，摩托车和汽车相距 30km
 
-![](../images/d065e20bb09407990c2fb1a77db4e772a4215771daac6463884b9be99ef74c86.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d065e20bb09407990c2fb1a77db4e772a4215771daac6463884b9be99ef74c86.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -390,7 +390,7 @@ D．4
 （2）求校车离部队的距离 y 与 t 的函数表达式以及教官们领取装备所用的时间  
 （3）为确保师生到达基地时装备已经整理完毕，则客车第二次出发时的速度至少是多少？
 
-![](../images/656d1a9545013ac738756a9c86cb9269022d9c4fb9a5d08510d983dcc6277993.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/656d1a9545013ac738756a9c86cb9269022d9c4fb9a5d08510d983dcc6277993.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -400,7 +400,7 @@ D．4
 ①
 </details>
 
-![](../images/c9b9fba97566402af3901b3021206983dc607407d2d4021994a61b873b2a5998.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c9b9fba97566402af3901b3021206983dc607407d2d4021994a61b873b2a5998.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -465,7 +465,7 @@ D．4
 
 ②学校准备购进 400本图书，且两种图书均不少于 100 本，如何购买，才能使总费用最少？最少总费用多少元？
 
-![](../images/8dbcb583ef315aaa7bf200993782db1ff8edaef186800ef57615c03e0557c23a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8dbcb583ef315aaa7bf200993782db1ff8edaef186800ef57615c03e0557c23a.jpg)
 
 <details>
 <summary>line chart</summary>

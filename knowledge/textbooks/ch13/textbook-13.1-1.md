@@ -15,21 +15,21 @@ lesson_id: 13.1.1
 
 通过本章的学习，我们将经历几何证明的过程，理解三个基本事实的意义，感悟数学论证的逻辑，形成初步的推理能力和言之有据的科学精神. 
 
-![](../images/0c6d185402198408140ae925e4b8b15feab2e10d73ced029ef2c852f65d4e97c.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0c6d185402198408140ae925e4b8b15feab2e10d73ced029ef2c852f65d4e97c.jpg)
 
 
 下 图是测量容器内径的示意图. 其中, $AB = CD$ , $AB$ , $CD$ 的中点 $O$ 被固定在一起, $AB$ , $CD$ 可以绕点 $O$ 张合. 只要量出 $AC$ 的长, 就可以知道玻璃瓶的内径是多少. 你知道这是为什么吗? 
 
-![](../images/df2bbd39ea193b10be13856d085e2154af92a5788d545ebb02669e31bee55fad.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/df2bbd39ea193b10be13856d085e2154af92a5788d545ebb02669e31bee55fad.jpg)
 
-![](../images/41ef34bfa7a7fdb230de265e1607c2a835c471a61ec4f518497aab5237008f06.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/41ef34bfa7a7fdb230de265e1607c2a835c471a61ec4f518497aab5237008f06.jpg)
 
 ## 13.1命题与证明（第一课时）
 
 
 命题，有真命题，也有假命题。要判断一个命题是假命题，只要举出反例即可；要判断一个命题是真命题，则需要推理论证，即证明。 
 
-![](../images/a6a33dfb08079f812317f24c7320813ca3f82c68b81a99125a045200ff6a4fcd.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a6a33dfb08079f812317f24c7320813ca3f82c68b81a99125a045200ff6a4fcd.jpg)
 
 
 ## 观察与思考
@@ -48,7 +48,7 @@ lesson_id: 13.1.1
 
 在两个互逆的命题中，如果我们将其中一个命题称为原命题，那么另一个命题就是这个原命题的逆命题(converse proposition). 
 
-![](../images/24dbe85f38cf965ef03d94ce0c6a2aba5675ed9c18ee36414bb5f40d27586e76.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/24dbe85f38cf965ef03d94ce0c6a2aba5675ed9c18ee36414bb5f40d27586e76.jpg)
 
 
 ## 做一做
@@ -89,7 +89,7 @@ b
 
 $\because b//c$ （已知）， 
 
-![](../images/5faeef5c5f4871da830a0fbfd01dfadb09958337a2a9c00f1aa83ee308b810d4.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5faeef5c5f4871da830a0fbfd01dfadb09958337a2a9c00f1aa83ee308b810d4.jpg)
 
 
 ∴ $\angle2=\angle3$ （两直线平行，同位角相等）. 
@@ -114,7 +114,7 @@ $\because b//c$ （已知），
 
 如果一个定理的逆命题是真命题，那么这个逆命题也可以称为原定理的逆定理(converse theorem). 一个定理和它的逆定理是互逆定理. 如“两直线平行，内错角相等”与“内错角相等，两直线平行”，“两直线平行，同旁内角互补”与“同旁内角互补，两直线平行”都是互逆定理. 
 
-![](../images/ab6787dd58241fd713ce6b63c9cfaf88e9f706ae98851ee85873ab2aa2cd6569.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ab6787dd58241fd713ce6b63c9cfaf88e9f706ae98851ee85873ab2aa2cd6569.jpg)
 
 
 ## 做一做
@@ -123,10 +123,10 @@ $\because b//c$ （已知），
 
 求证： $OD \perp OE$ . 
 
-![](../images/2d7394e087c787b90cacab5aae4edd0505ef5c27349dc67192b969b7a1376060.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2d7394e087c787b90cacab5aae4edd0505ef5c27349dc67192b969b7a1376060.jpg)
 
 
-![](../images/f5e0b940dd4153a05c0c32989c8dc89c55eedbbdf85f440639f79782a3a460b2.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f5e0b940dd4153a05c0c32989c8dc89c55eedbbdf85f440639f79782a3a460b2.jpg)
 
 
 
@@ -145,7 +145,7 @@ $\because b//c$ （已知），
 
 2. 已知：如图，直线 a, b 被直线 c 所截， $\angle1$ 与 $\angle2$ 互补．求证： $a//b$ . 
 
-![](../images/0cd0bdcc4644bdbd5c576275eeed375234a41d425274b4455762e5d8f816483d.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0cd0bdcc4644bdbd5c576275eeed375234a41d425274b4455762e5d8f816483d.jpg)
 
 
 
@@ -166,7 +166,7 @@ $\because b//c$ （已知），
 
 2. 已知：如图，C, D 是线段 AB 上两点，C 是线段 AD 的中点，D 是线段 CB 的中点．求证：AD = CB. 
 
-![](../images/9fb599325744e62c6d60d8b67799808c7d9f867370792d86d2aa912cdc5d2513.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9fb599325744e62c6d60d8b67799808c7d9f867370792d86d2aa912cdc5d2513.jpg)
 
 
 
@@ -175,14 +175,14 @@ $\because b//c$ （已知），
 
 3. 已知：如图， $\angle AOB = \angle A'O'B'$ ， $\angle 1 = \angle 3$ 。求证： $\angle 2 = \angle 4$ 。 
 
-![](../images/2c7aa3537534b2f975fa5e386057b2d204992f84db48e222b424d770f63ba4b5.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2c7aa3537534b2f975fa5e386057b2d204992f84db48e222b424d770f63ba4b5.jpg)
 
 
 
 (第3题)
 
 
-![](../images/825827cde9728daf037e315bfb4cb8e7e1e5b18b7ac589494ff9b8b14a7abbd3.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/825827cde9728daf037e315bfb4cb8e7e1e5b18b7ac589494ff9b8b14a7abbd3.jpg)
 
 
 
@@ -191,7 +191,7 @@ B组
 
 4. 如图，在 $\triangle ABC$ 中， $DE \parallel BC$ ， $\angle ADE = 50^\circ$ ， $\angle C = 70^\circ$ 。求 $\angle B$ 和 $\angle DEC$ 的度数。 
 
-![](../images/bcc7162a7e9c09a164cae4d9572edc72d2f7bbe4fc786e08e15eec2a6d53ef01.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bcc7162a7e9c09a164cae4d9572edc72d2f7bbe4fc786e08e15eec2a6d53ef01.jpg)
 
 
 

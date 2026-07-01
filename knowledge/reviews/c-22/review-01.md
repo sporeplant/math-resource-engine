@@ -10,7 +10,7 @@
 
 ## 思维导图
 
-![](../images/97fc2e04f5172901cd16c131cd7d8ff2399e82802bdad978421f2ba814bd1363.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/97fc2e04f5172901cd16c131cd7d8ff2399e82802bdad978421f2ba814bd1363.jpg)
 
 
 ## 知识点01 调查、收集数据的过程与方法
@@ -181,10 +181,10 @@ C．从中抽取的 100 名学生是样本
 
 D．初二年级 900名学生是总体 
 
-![(../images/a739a443a8c7aaed72a5830ea2c9e4b8a18abc7c1fb87b5c11d5a4320dfc593c.jpg)
+![(https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a739a443a8c7aaed72a5830ea2c9e4b8a18abc7c1fb87b5c11d5a4320dfc593c.jpg)
 
 
-![(../images/6a65394c994ceb6772e4930919840fa80a0bcd16aab551c91066fbff7de490b1.jpg)
+![(https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6a65394c994ceb6772e4930919840fa80a0bcd16aab551c91066fbff7de490b1.jpg)
 
 
 ## 题型 01 统计调查的过程与方法
@@ -325,12 +325,12 @@ D．1500 条
 
 【变式 2】某年级为了解学生对“足球”“篮球”“排球”“乒乓球”“羽毛球”五类体育项目的喜爱情况， 现从中随机抽取了 100名学生进行问卷调查，根据数据绘制了如图所示的统计图．若该年级有 800名学 生，估计该年级喜爱“篮球”项目的学生有 人． 
 
-![](../images/77c19973bc0240314d2355442df197eb44b09443cb9e273a14a2aa1325e3b62a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/77c19973bc0240314d2355442df197eb44b09443cb9e273a14a2aa1325e3b62a.jpg)
 
 
 【变式 3】为了更好地落实课后延时服务工作，某校决定根据学生的兴趣爱好采购一批体育用品供学生使 用该校团委随机抽取了该校 100名学生就体育兴趣爱好情况进行调查，并将收集到的数据整理绘制成如 图所示的统计图．若该校共有学生 1500人，则该校喜欢足球的学生大约有（ ） 
 
-![](../images/12630112fe08a58490aeb7ae1bb85c51164bde13e9f7be0c84188561b50a471b.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/12630112fe08a58490aeb7ae1bb85c51164bde13e9f7be0c84188561b50a471b.jpg)
 
 
 A．100 人 
@@ -341,10 +341,10 @@ C．200 人
 
 D．250 人 
 
-![(../images/6ca2ef0714d60ef83a2b8eb897fc1e6b7e5cc2c59d1214c2d36e3eec780b5561.jpg)
+![(https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6ca2ef0714d60ef83a2b8eb897fc1e6b7e5cc2c59d1214c2d36e3eec780b5561.jpg)
 
 
-![(../images/552bd0c644beba275cac34f1c5b94cfb2563c88595693de75018a0ab3e134886.jpg)
+![(https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/552bd0c644beba275cac34f1c5b94cfb2563c88595693de75018a0ab3e134886.jpg)
 
 
 1．要调查某工厂职工的收入情况，下列调查对象选取最合适的是（ ） 
@@ -495,10 +495,10 @@ D．30 人
 
 19．某校有学生 3000人，准备开展学校社团活动，组建摄影社、国学社、篮球社、科技制作社四个社团．每 名学生最多只能报一个社团，也可以不报．为了估计各社团人数，现在学校随机抽取了 50名学生做问卷 调查，得到了如图所示的两个不完整的统计图 
 
-![](../images/2fa3684851071382d31031005e07635b59916073c20e2321a41d2ae83b1339bc.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2fa3684851071382d31031005e07635b59916073c20e2321a41d2ae83b1339bc.jpg)
 
 
-![](../images/720fcecd8fc4d31b78dbd1198d6f2cfa435f332fa240b3bb73d1c461296a8f7b.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/720fcecd8fc4d31b78dbd1198d6f2cfa435f332fa240b3bb73d1c461296a8f7b.jpg)
 
 
 结合以上信息，回答下列问题： 
@@ -529,4 +529,4 @@ D．30 人
 
 ③请你估计该地区城区居民和农村居民天天吃早餐（A）和经常吃早餐（B）的总人数 
 
-![](../images/64b210b1427fb41b3298bac2a611bf62cb8a53798d804b1e0bbbe0ce21ffc598.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/64b210b1427fb41b3298bac2a611bf62cb8a53798d804b1e0bbbe0ce21ffc598.jpg)

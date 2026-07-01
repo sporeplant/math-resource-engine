@@ -6,7 +6,7 @@ chapter_name: 平面直角坐标系
 section_name: 平面直角坐标系
 lesson_id: 18.2.1
 ---:|:---:|
-| ![](../images/6d51d179bb3aedd4cb24855ffeb64e01fc532589d7d6f22390e6605cc0281a52.jpg) | ![](../images/be8b2755bdbf466ad995fa3f120c747eaf8f8443c591bf3fa7e5bf7c931af953.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6d51d179bb3aedd4cb24855ffeb64e01fc532589d7d6f22390e6605cc0281a52.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/be8b2755bdbf466ad995fa3f120c747eaf8f8443c591bf3fa7e5bf7c931af953.jpg) |
 | 图18.2-1 | |
 
 
@@ -33,7 +33,7 @@ lesson_id: 18.2.1
 
 | | |
 |:---:|:---:|
-| ![](../images/1c7daec41168dcc039083bcfc046955727f4956a3684f38d2305f9fa34ad1e8a.jpg) | ![](../images/a4fb5ed8829f5d027a58d1fe400b93187dae89d73632b7b46a2f4fec6dc4f208.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1c7daec41168dcc039083bcfc046955727f4956a3684f38d2305f9fa34ad1e8a.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a4fb5ed8829f5d027a58d1fe400b93187dae89d73632b7b46a2f4fec6dc4f208.jpg) |
 | 图18.2-2 | 图18.2-3 |
 
 
@@ -48,7 +48,7 @@ lesson_id: 18.2.1
 
 | | |
 |:---:|:---:|
-| ![](../images/3835fa9b36ed08c83308e6ec1c17ecdfdd330c57f81a1fcf8b92fe52cb67bf39.jpg) | ![](../images/702453f00b12e30e8801f7385e11b12c503cdfc12af323d0f1f045b44ac2b8e1.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3835fa9b36ed08c83308e6ec1c17ecdfdd330c57f81a1fcf8b92fe52cb67bf39.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/702453f00b12e30e8801f7385e11b12c503cdfc12af323d0f1f045b44ac2b8e1.jpg) |
 | 图18.2-4 | 图18.2-5 |
 
 
@@ -72,7 +72,7 @@ lesson_id: 18.2.1
 
 | | |
 |:---:|:---:|
-| ![](../images/11380a5249c1a48304b3c837844dd9fc286a73645fecf14d82a4a914ddabdee4.jpg) | ![](../images/813d3a21185c42730501bf04cc0355387f060d19d76bfdaa2fa2eb96b29e45a7.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/11380a5249c1a48304b3c837844dd9fc286a73645fecf14d82a4a914ddabdee4.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/813d3a21185c42730501bf04cc0355387f060d19d76bfdaa2fa2eb96b29e45a7.jpg) |
 | (第1题) | (第2题) |
 
 

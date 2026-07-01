@@ -10,7 +10,7 @@
 
 1．如图，在正方形 ABCD 中，点 E 是 DC 边的中点，AE 的垂直平分线分别交 AD，BC 边于点 F，G，垂足为点 H．若 AB＝4，则 GH 的长为 \(- { \frac { 3 { \sqrt { 5 } } } { 2 } } -\)
 
-![](../images/dcd1292dc3700abfb4c5616aea950fa80518f75ef029448757f2a983cefc26d1.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/dcd1292dc3700abfb4c5616aea950fa80518f75ef029448757f2a983cefc26d1.jpg)
 
 【解答】解：过点 B 作 \(BN \parallel GF\) 交 AD 于点 N，如图所示：
 
@@ -100,11 +100,11 @@ $\(\therefore G H = F G - F H = 2 \sqrt {5} - \frac {\sqrt {5}}{2} = \frac {3 \s
 
 故答案为： \(\frac { 3 { \sqrt { 5 } } } { 2 }\)
 
-![](../images/05cd8c64a97168c72281165fd5edfbe1fac3194795d1f7960557d025a0147110.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/05cd8c64a97168c72281165fd5edfbe1fac3194795d1f7960557d025a0147110.jpg)
 
 2．如图，在正方形 ABCD 中，点 E，F 分别在 AD，AB 上，满足 DE＝AF，连接 CE，DF，点 P，Q 分别是DF，CE 的中点，连接 \(P Q\) ．若 \(\angle A D F = \alpha\) ．则 \(\angle P Q E\) 可以用α表示为（ ）
 
-![](../images/57f1e83c53442aa4fe65bb6b4896e7af7cc5418b677f8d7f27d90046f4d10f9e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/57f1e83c53442aa4fe65bb6b4896e7af7cc5418b677f8d7f27d90046f4d10f9e.jpg)
 
 A．α
 
@@ -116,7 +116,7 @@ D． \(3 \alpha - 45^{\circ}\)
 
 【解答】解：连接 DQ，如图：
 
-![](../images/81bbd0b50f51651fcd40d65da3c25d203f52b33110e3fd40b29d85418f94793c.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/81bbd0b50f51651fcd40d65da3c25d203f52b33110e3fd40b29d85418f94793c.jpg)
 
 ∵四边形 ABCD 是正方形，
 
@@ -154,7 +154,7 @@ $\(\therefore \angle P Q E = 45^{\circ} + \alpha - 2 \alpha = 45^{\circ} - \alph
 
 3．如图，在正方形 ABCD 中，E、F 分别是 AB、BC 的中点，CE 交 DF 于点 G，连接 AG．下列结论：①\(C E = D F ;\) ；②\(CE \bot DF\)；③ \(\angle E A G = 30^{\circ}\) ；④ \(\angle A G E = \angle C D F\) ．其中正确的是（ ）
 
-![](../images/604eadae5c9f1c9e2784e4fd34dec2fd97ba5babdcaf8d4ea745dcb0b23f414a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/604eadae5c9f1c9e2784e4fd34dec2fd97ba5babdcaf8d4ea745dcb0b23f414a.jpg)
 
 A．①②
 
@@ -236,7 +236,7 @@ $\(\therefore \angle E G D = 90^{\circ}, $\)
 
 延长 CE 交 DA 的延长线于 H，如图，
 
-![](../images/819aedaa0cffbdcc3804d63df2ea5772d9b3d2625bf52d8fcfaf84fae527a622.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/819aedaa0cffbdcc3804d63df2ea5772d9b3d2625bf52d8fcfaf84fae527a622.jpg)
 
 ∵点 E 是 AB 的中点，
 
@@ -279,11 +279,11 @@ $\(\because \angle A G E + \angle A G D = 90^{\circ}, \angle C D F + \angle A D 
 （1）连接 DG，则线段 DG 的最小值是 \(\frac { \sqrt { 5 } - 1 } { 2 } -\)  
 （2）取 CG 的中点 H，连接 DH，则线段 DH 的最小值是 \(\frac { \sqrt { 13 } - 1 } { 4 } -\)
 
-![](../images/40f79e73f0e73cc05a57288e4caabc50c4b2be83f6e7653d7e0902e58c513a53.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/40f79e73f0e73cc05a57288e4caabc50c4b2be83f6e7653d7e0902e58c513a53.jpg)
 
 【解答】解：（1）如图，取 AB 的中点 K，连接 GK，DK，
 
-![](../images/ad8df90b40ce7349126930478ce3d5d3bde205f13026dedc7cae327178faba54.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ad8df90b40ce7349126930478ce3d5d3bde205f13026dedc7cae327178faba54.jpg)
 
 ∵四边形 ABCD 是正方形，
 
@@ -345,7 +345,7 @@ MK，
 
 则四边形 ADNK 是矩形，
 
-![](../images/77eba95e57edc16e1042b5ecdaecb9ec03926637dd230483bd521226c98618d7.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/77eba95e57edc16e1042b5ecdaecb9ec03926637dd230483bd521226c98618d7.jpg)
 
 
 $\(\therefore K N = A D = 1, \quad D N = A K = \frac {1}{2}, $\)
@@ -382,7 +382,7 @@ $\(\therefore D H = \frac {1}{2} M G = \frac {1}{2} \times \frac {\sqrt {13} - 1
 
 其中正确的有（
 
-![](../images/63eb5d9343748feb318d276c7a09c41f60a8acc42c58d89d7f7fd46455830b9f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/63eb5d9343748feb318d276c7a09c41f60a8acc42c58d89d7f7fd46455830b9f.jpg)
 
 A．1 个
 
@@ -438,7 +438,7 @@ $\(\therefore \angle B A P = 90^{\circ} - 30^{\circ} = 60^{\circ}, $\)
 
 ②如图，过点 G 作 \(GK \parallel AD\) 交 CD 于 K，连接 DG，
 
-![](../images/67e4077e35714c0287c0c215ba2d4f3dc8b13e4c21511f3eceb3baef023d1a27.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/67e4077e35714c0287c0c215ba2d4f3dc8b13e4c21511f3eceb3baef023d1a27.jpg)
 
 则 \(\angle G K H = \angle A D C = 90^{\circ} \ = \angle D K G,\)
 
@@ -508,7 +508,7 @@ $\(\therefore D G = 2 P D, $\)
 $\(\therefore A L = B J, \angle B J P = \angle A L P = 90^{\circ}, $\)
 
 
-![](../images/6623449a93720b605028aa03933690595f4aca39488ae10d411a1ee156e67641.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6623449a93720b605028aa03933690595f4aca39488ae10d411a1ee156e67641.jpg)
 
 
 $\(\because A P = B P, $\)
@@ -590,7 +590,7 @@ $\(\therefore S_{\triangle P B E} = \frac {1}{2} B P \cdot E M = \frac {1}{2} \t
 
 ④过点 B 作 \(BN \bot BP\)，交 PG 的延长线于 N，连接 DG，
 
-![](../images/94b0d36b6296b40257d555df4c66510ad2b6a5238d8852d90ddd92728c3a17a4.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/94b0d36b6296b40257d555df4c66510ad2b6a5238d8852d90ddd92728c3a17a4.jpg)
 
 
 $\(\because \angle G B N + \angle G B P = 90^{\circ}, \angle G B P + \angle E B P = 90^{\circ}, $\)
@@ -666,11 +666,11 @@ $\(\because P N = P G + G N = P E + P G, $\)
 
 （2）如图 2，若 AB＝2，点 E 为 AD 的中点，连接 GD，试证明 GD 是\(\angle EGF\) 的角平分线，并求出 GD的长．
 
-![](../images/382c55dd0b598c2268e7f474915875b60eb24a64da70a08cc4f429d1d5f22db6.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/382c55dd0b598c2268e7f474915875b60eb24a64da70a08cc4f429d1d5f22db6.jpg)
 
 图1
 
-![](../images/5fec61a3875a3b0691947eeee88165d28f630bff3c971ee67a5f899a47c26bd0.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5fec61a3875a3b0691947eeee88165d28f630bff3c971ee67a5f899a47c26bd0.jpg)
 
 图2
 
@@ -768,7 +768,7 @@ $\(\therefore \angle D G N = \frac {1}{2} \angle M G N = 45^{\circ}, $\)
 $\(\therefore G D = \sqrt {2} D N = \frac {2 \sqrt {10}}{5}. $\)
 
 
-![](../images/e896717c10ef2a8211a7de257a7bd48e004906f3ef5372f2f72eb6772214e725.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e896717c10ef2a8211a7de257a7bd48e004906f3ef5372f2f72eb6772214e725.jpg)
 
 图2
 
@@ -776,7 +776,7 @@ $\(\therefore G D = \sqrt {2} D N = \frac {2 \sqrt {10}}{5}. $\)
 
 7．如图，点 E、F 分别在正方形 ABCD 的边 BC、CD 上， \(\angle E A F = 45^{\circ}\) °，已知 AD＝6（正方形的四条边都相等，四个内角都是直角），DF＝2，则 \({ \cal S } _ { \triangle { \cal A E F } } =\) （ ）
 
-![](../images/af825cc3e12b9ea28f9f97eecc6ccd443b62e3696f759e8678826b3669b47371.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/af825cc3e12b9ea28f9f97eecc6ccd443b62e3696f759e8678826b3669b47371.jpg)
 
 A．6
 
@@ -788,7 +788,7 @@ D．30
 
 【解答】解：如图，过点 A 作 \(AH \bot AE\)，交 CD 的延长线于点 H，
 
-![](../images/1ad8daeac1f776cbf649bde2c0f6c937c108396834084b040764a28a4856ed5f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1ad8daeac1f776cbf649bde2c0f6c937c108396834084b040764a28a4856ed5f.jpg)
 
 ∵四边形 ABCD 是正方形，
 
@@ -880,7 +880,7 @@ $\(\therefore S_{\triangle A E F} = S_{\triangle A F H} = \frac {1}{2} \times H 
 
 8．如图，在正方形 ABCD 中，点 E，F 分别在 BC，CD 上，连接 AE，AF，EF， \(\angle E A F = 45^{\circ}\) °．若 \(\angle B A E\) \(= \alpha,\) ，则 \(\angle F E C -\) 定等于（ ）
 
-![](../images/af46023fdb11d622af88f3de30558e77d1154f94e45a62ee5781551ba38cba53.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/af46023fdb11d622af88f3de30558e77d1154f94e45a62ee5781551ba38cba53.jpg)
 
 A．2α
 
@@ -932,11 +932,11 @@ $\(\therefore \angle F E C = 180^{\circ} - \angle A E F - \angle A E B = 180^{\c
 
 故选：A．
 
-![](../images/170131504900ad23f99857944e49f71bd537ee5004b62fab9da9312d3a88af18.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/170131504900ad23f99857944e49f71bd537ee5004b62fab9da9312d3a88af18.jpg)
 
 9．如图，在边长为 6的正方形 ABCD 内作 \(\angle E A F = 45^{\circ}\) ，AE 交 BC 于点 E，AF 交 CD 于点 F，连接 EF．若\(D F = 3\) ，则 BE 的长为（ ）
 
-![](../images/64458c37dcf8bc6b963b944343fd0940850ed516468f8904586fe06f0377cc57.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/64458c37dcf8bc6b963b944343fd0940850ed516468f8904586fe06f0377cc57.jpg)
 
 A．2
 
@@ -1026,11 +1026,11 @@ $\(\therefore (6 - x)^{2} + 3^{2} = (3 + x)^{2}, $\)
 
 故选：A
 
-![](../images/ee031e0c03ec511f6c755014e65c80c3407be2c4ddff599662cf176ed69bff2f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ee031e0c03ec511f6c755014e65c80c3407be2c4ddff599662cf176ed69bff2f.jpg)
 
 10．已知正方形 ABCD 边长为 5，点 M、N 分别在边 BC，CD 上，连接 AM，MN，AN，若 \(\angle M A N = 45^{\circ}\) °，\(B M = 2\) ，则线段 NC 的长为（ ）
 
-![](../images/8b17b49672f27dd3505a3ab8aa14ccd297e79ea656d4075f86aee6a0ffa74c3e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8b17b49672f27dd3505a3ab8aa14ccd297e79ea656d4075f86aee6a0ffa74c3e.jpg)
 
 A．2
 
@@ -1042,7 +1042,7 @@ D． \(\frac { 20 } { 7 }\)
 
 【解答】解：如图，延长 CB，使 \(B E = D N,\) ，
 
-![](../images/985f648152f452e2bc69d333ef0d8a7e718ca77da19ad24f83e0a7031914c2c2.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/985f648152f452e2bc69d333ef0d8a7e718ca77da19ad24f83e0a7031914c2c2.jpg)
 
 ∵四边形 ABCD 是边长为 5 的正方形，
 
@@ -1090,7 +1090,7 @@ $\(\therefore C N = \frac {20}{7}, $\)
 
 11．在正方形 ABCD 中，E、F 分别在边 BC、CD 上， \(\angle E A F = 45^{\circ}\) ，若 \(\triangle A B E, \triangle A E F, \triangle A D F, \triangle E F C\) 的面积分别记为： \(S_{1}, ~ S_{2}, ~ S_{3}, ~ S_{4}\) ，则等式一定成立的是（ ）
 
-![](../images/ea787aaf4cd90b607b1ac7f9dfcb4104ef92ad88c4aea16a500d16678ded94c5.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ea787aaf4cd90b607b1ac7f9dfcb4104ef92ad88c4aea16a500d16678ded94c5.jpg)
 
 A． \(S_{1} = S_{3}\)
 
@@ -1102,7 +1102,7 @@ D． \(S_{3} = S_{4}\)
 
 【解答】解：过 A 作 \(AG \bot AF\) 交 CB 延长线于 G，如图：
 
-![](../images/edd1acf4c1a9dad96b2b91a05740284a95e6c6578eed168e6184d89331a739dd.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/edd1acf4c1a9dad96b2b91a05740284a95e6c6578eed168e6184d89331a739dd.jpg)
 
 ∵四边形 ABCD 是正方形，
 
@@ -1157,7 +1157,7 @@ $\(\therefore S_{1} + S_{3} = S_{2}, $\)
 
 其中正确的个数是（
 
-![](../images/3a96f06f39e9749a957dae5c3f67367186730007af9599eda86949982383b810.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3a96f06f39e9749a957dae5c3f67367186730007af9599eda86949982383b810.jpg)
 
 A．0 个
 
@@ -1169,7 +1169,7 @@ D．3 个
 
 【解答】解：如图，将 \(\triangle A D F\) 绕点 A 顺时针旋转 \(90^{\circ}\) 得 \(\triangle A B M\) ，
 
-![](../images/ceb7e1a94b87d0a398fc902059bc02781300fdb40ffb12844146d09daef6e13a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ceb7e1a94b87d0a398fc902059bc02781300fdb40ffb12844146d09daef6e13a.jpg)
 
 
 $\(\begin{array}{l} \therefore A M = A F, B M = D F, \angle M A B = \angle D A F, \angle A M B = \angle A F D, \\ \because \angle E A F = 45^{\circ}, \\ \therefore \angle M A E = \angle M A B + \angle B A E = \angle B A E + \angle D A F = 45^{\circ}, \\ \therefore \angle M A E = \angle E A F, \\ \end{array} $\)
@@ -1221,11 +1221,11 @@ $\(\because C_{\triangle E C F} = C E + C F + E F = C E + C F + D E + E F = B C 
 
 （2）如图 2，当点 E 在线段 BC 的延长线上，且 \(\angle E A F = 45^{\circ}\) °时，试探究 BE，EF，DF 之间的数量关系，并说明理由．
 
-![](../images/df54a0b802272316b3eecf2b5b701c077f5a6b490fe539a79911af9ea0422b31.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/df54a0b802272316b3eecf2b5b701c077f5a6b490fe539a79911af9ea0422b31.jpg)
 
 图1
 
-![](../images/2ed840f2afd9914377c144a639afba461920cd672fb87bec0ab4998d781d0db9.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2ed840f2afd9914377c144a639afba461920cd672fb87bec0ab4998d781d0db9.jpg)
 
 图2
 
@@ -1233,7 +1233,7 @@ $\(\because C_{\triangle E C F} = C E + C F + E F = C E + C F + D E + E F = B C 
 
 如图 1，
 
-![](../images/4bc97d1cc102e8277da856ba3e5cbe684ad6678962b3b9a1d0501ecdb1c9e478.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4bc97d1cc102e8277da856ba3e5cbe684ad6678962b3b9a1d0501ecdb1c9e478.jpg)
 
 图1
 
@@ -1307,7 +1307,7 @@ $\(\therefore E F = B E + D F. $\)
 
 如图 2，在 BC 上截取 \(B G = D F\) ，连接 AG
 
-![](../images/97503ecdd61074628fc0fc4f399c1c06aac5e232ee51bf5d08971c4c51c21661.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/97503ecdd61074628fc0fc4f399c1c06aac5e232ee51bf5d08971c4c51c21661.jpg)
 
 图2
 
@@ -1383,13 +1383,13 @@ $\(\therefore E F = B E - D F. $\)
 
 （2）如图 2：在四边形 ABCD 中， \(A B = A D\) ， \(\angle B A D = 120^{\circ}\) °， \(\angle B = \angle A D C = 90^{\circ}\) °．点 E、F 分别是 BC、CD 上的点，且 \(\angle E A F = 60 { ^ \circ }\) °，探究图中线段 BE、EF、FD 之间的数量关系．请说明理由（提示：延长FD 到点 C，使 \(D G = B E\) ，连结 AG．）
 
-![](../images/0c0848a74db5921f894fc1dbb8a5e9155aceac8623672bf015d09df66682b9be.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0c0848a74db5921f894fc1dbb8a5e9155aceac8623672bf015d09df66682b9be.jpg)
 
 【解答】解：（1）结论： \(E F = B E { + } D F .\) ．理由如下：
 
 如图 1，将\(\triangle ADF\) 绕点 A 顺时针旋转，使 AD 与 AB 重合，得到 \(\triangle A B F^{\prime}\)
 
-![](../images/264d61511bea7fd2daad75bd4f93d1ebe66df0dd8bd5fc0f0198113ff64fd003.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/264d61511bea7fd2daad75bd4f93d1ebe66df0dd8bd5fc0f0198113ff64fd003.jpg)
 
 图1
 
@@ -1455,7 +1455,7 @@ $\(\begin{array}{l} \because \angle B A D = 120^{\circ}, \angle E A F = 60^{\cir
 
 （多选）15．如图，点 E 为正方形 ABCD 对角线 AC 上一点，连接 DE，过点 E 作 \(E F \bot D E\) ，交 BC 延长线于点 F，以 DE，EF 为邻边作矩形 DEFG，连接 CG．下列结论正确的有（ ）
 
-![](../images/773366e0f06c35e8650238ca5c63309bd9023585f54ece90f430d488d9169ffd.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/773366e0f06c35e8650238ca5c63309bd9023585f54ece90f430d488d9169ffd.jpg)
 
 A． \({ \cal D } { \cal E } = { \cal E } { \cal F }\)
 
@@ -1467,7 +1467,7 @@ D． \(B C = C G\)
 
 【解答】解：过 E 作 \(E M \bot B C\) 于 M 点，过 E 作 \(E N \bot C D \mp N\) 点，如图所示：
 
-![](../images/dfa94672ff65ec0d966a6c40d14e0cff3af75466725bd2c2b7268b7de7634d8a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/dfa94672ff65ec0d966a6c40d14e0cff3af75466725bd2c2b7268b7de7634d8a.jpg)
 
 ∵四边形 ABCD 是正方形，
 
@@ -1555,7 +1555,7 @@ $\(\therefore \angle A C G = 90^{\circ}, $\)
 
 16．如图，正方形 ABCD 的边长为 9，E 为对角线 AC 上一点，连接 DE，过点 E 作 \(EF \bot DE\)，交射线 BC 于点 F，以 DE，EF 为邻边作矩形 DEFG，连接 CG，下列结论中不正确的是（ ）
 
-![](../images/a6c35bfdd4d4a5248754ad5f2a7611dcf7ad818e0a9bcafcd5d933ec85990d33.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a6c35bfdd4d4a5248754ad5f2a7611dcf7ad818e0a9bcafcd5d933ec85990d33.jpg)
 
 A．矩形 DEFG 是正方形
 
@@ -1659,11 +1659,11 @@ $\(\because \angle A D E = \angle D E L = \angle F E K, \neq \angle C E F, $\)
 
 故选：B．
 
-![](../images/0f51eeede47d087c79010dcbf503d38a05f5a2e8d892090b0b4b707a96347b68.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0f51eeede47d087c79010dcbf503d38a05f5a2e8d892090b0b4b707a96347b68.jpg)
 
 17．如图，正方形 ABCO 和正方形 DEFO 的顶点 A，O，E 在同一直线 l 上，且 \(\scriptstyle { E F = { \sqrt { 2 } }, A B = 3 }\) ，给出下列结论： \(\textcircled { 1 } \angle C O D = 45^{\circ} ~ ; ~ \textcircled { 2 } A E = 6 ; ~ \textcircled { 3 } C F = B D = \sqrt { 17 } ; ~ \textcircled { 4 } \Delta C O F\) 的面积是 \(\frac { 3 } { 2 }\) 其中正确的结论为
 
-![](../images/808e98f529fc890afd8174a9b94f3457ecf90c0ed1ed4ac9eebb97c398e249f5.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/808e98f529fc890afd8174a9b94f3457ecf90c0ed1ed4ac9eebb97c398e249f5.jpg)
 
 A．①③
 
@@ -1723,7 +1723,7 @@ $\(B D = \sqrt {\mathrm{BH}^{2} + \mathrm{DH}^{2}} = \sqrt {2^{2} + 4^{2}} = 2 \
 
 故正确；
 
-![](../images/79daac91eeb9e0b9c4969a164815775ae3ae751e1e83df6e886eb2044af224e8.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/79daac91eeb9e0b9c4969a164815775ae3ae751e1e83df6e886eb2044af224e8.jpg)
 
 ∴其中正确的结论为①④，
 
@@ -1735,7 +1735,7 @@ $\(B D = \sqrt {\mathrm{BH}^{2} + \mathrm{DH}^{2}} = \sqrt {2^{2} + 4^{2}} = 2 \
 
 ②探究：CE+CG 的值是否为定值？若是，请求出这个定值；若不是，请说明理由．
 
-![](../images/222f30572f29b67f42261dd79cfc0328759aaf99f79a7d31964a22ddbfe8a407.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/222f30572f29b67f42261dd79cfc0328759aaf99f79a7d31964a22ddbfe8a407.jpg)
 
 【解答】①证明：过 E 作 \(E M \bot B C\) 于 M 点，过 E 作 \(E N \bot C D\) 于 N 点，如图所示：
 
@@ -1811,15 +1811,15 @@ $\(\therefore A C = A E + C E = \sqrt {2} A B = \sqrt {2} \times 2 \sqrt {2} = 4
 
 \(\therefore C E + C G = 4\) 是定值
 
-![](../images/081c728b5b9bd1e21bf0c2748aeb0d55f34a08e46ded36fbdf06cb28eed0ca2f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/081c728b5b9bd1e21bf0c2748aeb0d55f34a08e46ded36fbdf06cb28eed0ca2f.jpg)
 
 19．如图 1，已知正方形 ABCD 和正方形 AEFG 有公共顶点 A，连接 BE，DG
 
-![](../images/02e2792ec37ee44739b84f79323ddc3708d84f2326ce02c96e40155b0eed4a3b.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/02e2792ec37ee44739b84f79323ddc3708d84f2326ce02c96e40155b0eed4a3b.jpg)
 
 图1
 
-![](../images/6a1126021c1699a2774b9ee7594eb3586a42b27622f967df442a873e09819c59.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6a1126021c1699a2774b9ee7594eb3586a42b27622f967df442a873e09819c59.jpg)
 
 图2
 
@@ -1884,9 +1884,9 @@ $\(\therefore A H = E H = \frac {A E}{\sqrt {2}} = 1, $\)
 $\(\therefore B H = 4 - 1 = 3, $\)
 
 
-![](../images/edb2d2758a3224b9a11d93dcc0a45ca2527f7e695de140d1e5498304f540eeda.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/edb2d2758a3224b9a11d93dcc0a45ca2527f7e695de140d1e5498304f540eeda.jpg)
 
-![](../images/804e1af4c29da6f371ede7e1ec26e04f0989e637370fc2b4f55eb3240866713e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/804e1af4c29da6f371ede7e1ec26e04f0989e637370fc2b4f55eb3240866713e.jpg)
 
 图2
 
@@ -1900,11 +1900,11 @@ $\(\therefore B E = \sqrt {1^{2} + 3^{2}} = \sqrt {10}. $\)
 （2）将正方形 BEFG，绕点 B 顺时针旋转到图 2 的位置时，（1）中的结论是否成立？请说明理由  
 （3）若在图 2 中连接 AE 和 CG，且 \(\scriptstyle A E = 2 C G = 4\) ，求正方形 ABCD 和正方形 BEFG 的面积之和为10 ．（直接写出结果）．
 
-![](../images/93b3592cf1b608fc7eebd39cb8c7683aff1398d379a88c164c49787bc1612da2.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/93b3592cf1b608fc7eebd39cb8c7683aff1398d379a88c164c49787bc1612da2.jpg)
 
 图1
 
-![](../images/781a83e6e56e9d853883ae3927b9d7fd6bd502dc4a0a8b31ec4c3321acdeab7c.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/781a83e6e56e9d853883ae3927b9d7fd6bd502dc4a0a8b31ec4c3321acdeab7c.jpg)
 
 图2
 
@@ -2000,4 +2000,4 @@ $\(\therefore A C^{2} + E G^{2} = 2^{2} + 4^{2} = 20, $\)
 
 故答案为：10．
 
-![](../images/97de291b9fe5c391c69d50c026e869e27f153f13e960bd2620dad2b433bc3ae9.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/97de291b9fe5c391c69d50c026e869e27f153f13e960bd2620dad2b433bc3ae9.jpg)

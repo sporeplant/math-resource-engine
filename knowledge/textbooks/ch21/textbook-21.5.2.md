@@ -30,9 +30,9 @@ type: 教材原文
 # 一起探究
 
 1. 我们已经知道, 矩形的四个角都是直角. 反过来, 一个四边形有几个角是直角, 就能判定它是矩形呢? 观察图 21.5-4, 提出你的猜想. 
-![](../images/242e3e644d73fadc0b41d244d52bd4a37946a6fe9712a5177069a26318865ebd.jpg)
-![](../images/ce55cfe7fb63bda76b7fbd849a03367c10a2db534cbb1f8f806026d0d6417c08.jpg)
-![](../images/b3906d4618739e6d886e5cf259f9eba2d7c45c315f4f9463951382cd4e72aaf9.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/242e3e644d73fadc0b41d244d52bd4a37946a6fe9712a5177069a26318865ebd.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ce55cfe7fb63bda76b7fbd849a03367c10a2db534cbb1f8f806026d0d6417c08.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b3906d4618739e6d886e5cf259f9eba2d7c45c315f4f9463951382cd4e72aaf9.jpg)
 图21.5-4
 
 
@@ -58,7 +58,7 @@ $\because A D = B C, A B = B A, B D = A C,$$\therefore \triangle A B D \cong \tr
 又∵ AD∥BC, 
 $\therefore \angle D A B + \angle C B A = 1 8 0 ^ {\circ}.$$\therefore \angle D A B = \angle C B A = 9 0 ^ {\circ}.$
 ∴ □ABCD 是矩形. 
-![](../images/5d1ea51141a6c7edecea22a01a307968a85fe1c8e4af9a24a4301d51db6cb281.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5d1ea51141a6c7edecea22a01a307968a85fe1c8e4af9a24a4301d51db6cb281.jpg)
 图21.5-5
 
 
@@ -71,7 +71,7 @@ $\therefore \angle D A B + \angle C B A = 1 8 0 ^ {\circ}.$$\therefore \angle D 
 例 2 已知: 如图 21.5-6, 在矩形 $ABCD$ 中, $E$ , $F$ , $G$ , $H$ 分别为 $OA$ , $OB$ , $OC$ , $OD$ 的中点. 
 
 求证：四边形 EFGH 是矩形. 
-![](../images/529925bbaf1b595471aaa579474afbf8f860935a0dd802f55b06e6399d9c309f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/529925bbaf1b595471aaa579474afbf8f860935a0dd802f55b06e6399d9c309f.jpg)
 图21.5-6
 
 
@@ -107,7 +107,7 @@ $\therefore O E = O G = O F = O H.$
 (4) 四个角皆为直角的四边形是矩形. 
 
 2. 已知: 如图, $AB = AC$ , $D$ 为 $BC$ 的中点, 四边形 $AEDB$ 是平行四边形. 求证: 四边形 $AECD$ 是矩形. 
-![](../images/88d3f49bab3710e251aafa31b98a414b52d4653c7c50879cc40e18e3ec626315.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/88d3f49bab3710e251aafa31b98a414b52d4653c7c50879cc40e18e3ec626315.jpg)
 (第2题)
 
 
@@ -118,7 +118,7 @@ $\therefore O E = O G = O F = O H.$
 1. 已知一矩形对角线的长为 $10 \mathrm{~cm}$ , 求顺次连接该矩形四边中点所得的四边形的周长. 
 
 2. 如图, 矩形 $ABCD$ 的两条对角线 $AC$ , $BD$ 的夹角为 $60^{\circ}$ , $AC+AB=12$ . 求 $AC$ 和 $AB$ 的长。 
-![](../images/f5441e0978cb67ec2c66f890d61083c5cd9a7c6f7692e5f66f6a4a539a642252.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f5441e0978cb67ec2c66f890d61083c5cd9a7c6f7692e5f66f6a4a539a642252.jpg)
 (第2题)
 
 
@@ -127,9 +127,9 @@ $\therefore O E = O G = O F = O H.$
 # B 组
 
 4. 已知: 如图, $AB = AC$ , $AD \perp BC$ , 垂足为 $D$ , $AN$ 是 $\triangle ABC$ 的外角 $\angle CAM$ 的平分线, $CE \perp AN$ , 垂足为 $E$ . 求证: 四边形 $ADCE$ 是矩形。 
-![](../images/7fdc4b432dc5fa6130a6dfc1eb076171bcaae3a18031f8ad2d5388f34a69d60f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7fdc4b432dc5fa6130a6dfc1eb076171bcaae3a18031f8ad2d5388f34a69d60f.jpg)
 (第4题)
-![](../images/dd20e9fb4ca7936f6a53b3f423b2ca0e531165f19a378589f00530d57dcbfd43.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/dd20e9fb4ca7936f6a53b3f423b2ca0e531165f19a378589f00530d57dcbfd43.jpg)
 (第 5 题)
 
 

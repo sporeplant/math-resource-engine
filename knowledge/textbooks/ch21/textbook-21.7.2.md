@@ -54,9 +54,9 @@ $\therefore A E = B F = C G = D H.$\therefore \triangle E B F \cong \triangle F 
 
 证明：∵ 四边形 ABCD 是菱形， 
 $\therefore A C \perp B D, O A = O C,$
-![](../images/450a373887a96d6d8c4fdb8a91b8b9c8b5279b351d909064456c3305b7931e04.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/450a373887a96d6d8c4fdb8a91b8b9c8b5279b351d909064456c3305b7931e04.jpg)
 图21.7-4
-![](../images/64ae06f2f765bde050a674570f78b058efa927cb78e097541494e25cecf39256.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/64ae06f2f765bde050a674570f78b058efa927cb78e097541494e25cecf39256.jpg)
 图21.7-5
 $O B = O D.$
 又∵ BE=DF, 
@@ -75,7 +75,7 @@ $\therefore O E = O F.$
 已知：如图21.7-6，点 $E, F, M, N$ 分别在正方形ABCD的四条边上，且 $AE = BF = CM = DN$ . 
 
 求证：四边形 EFMN 是正方形. 
-![](../images/bf6c11459b52a1b07d7ff491709c28ccc006abecb711439e24ee6967c0053194.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bf6c11459b52a1b07d7ff491709c28ccc006abecb711439e24ee6967c0053194.jpg)
 图21.7-6
 
 
@@ -84,7 +84,7 @@ $\therefore O E = O F.$
 1. 如图，把一张矩形纸片折叠，把重叠部分剪下来，展开后可以得到一个怎样的四边形？为什么？ 
 
 2. 判定一个四边形是正方形有哪些方法？请至少写出三种方法。 
-![](../images/42aaf4dc6ec86696145cb5ed36d1c93f2fd60fca69c84335d7f24db5fb0db464.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/42aaf4dc6ec86696145cb5ed36d1c93f2fd60fca69c84335d7f24db5fb0db464.jpg)
 (第1题)
 
 
@@ -93,14 +93,14 @@ $\therefore O E = O F.$
 # A 组
 
 1. 已知：如图，在矩形 $ABCD$ 中，点 $E, F$ 分别在边 $AB, BC$ 上，且 $DE = AF, DE \perp AF$ , 垂足为 $P$ . 求证：四边形 $ABCD$ 是正方形. 
-![](../images/16c1101995b07beac0a0f5aaee6c5daca3ffd6f80cb4026ea72cf5d00f4b64e9.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/16c1101995b07beac0a0f5aaee6c5daca3ffd6f80cb4026ea72cf5d00f4b64e9.jpg)
 (第1题)
 
 
 2. 已知: 如图, 四边形 $ABCD$ 是矩形, $AD = 2AB$ , $M$ 是 $AD$ 的中点, $N$ 是矩形 $ABCD$ 外一点, 且 $BN // CM$ , $CN // BM$ . 求证: 四边形 $BNCM$ 是正方形。 
-![](../images/f5b7c28b194026433a9bc25810138188e4414b15d35ee707342e942e90eb24ea.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f5b7c28b194026433a9bc25810138188e4414b15d35ee707342e942e90eb24ea.jpg)
 (第2题)
-![](../images/24831b1eda0f76f84098d563081eb626f79ec67150eb1034933b13f216b13218.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/24831b1eda0f76f84098d563081eb626f79ec67150eb1034933b13f216b13218.jpg)
 (第3题)
 
 
@@ -113,9 +113,9 @@ $\therefore O E = O F.$
 (1) 求证: 四边形 $ADEF$ 是平行四边形. 
 
 (2) 当 $\triangle ABC$ 满足什么条件时, 四边形 $ADEF$ 是正方形? 
-![](../images/c69a2f8a00e9c7677b3b818aa9daa5f972acfdf36c1e4c3e8bb01b68eb7d560a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c69a2f8a00e9c7677b3b818aa9daa5f972acfdf36c1e4c3e8bb01b68eb7d560a.jpg)
 (第4题)
-![](../images/f1e5d032a25514c9d72284066c67d47799a2125936c1ea773bb1cc469becc367.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f1e5d032a25514c9d72284066c67d47799a2125936c1ea773bb1cc469becc367.jpg)
 (第 5 题)
 
 

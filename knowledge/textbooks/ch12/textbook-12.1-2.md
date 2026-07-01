@@ -34,14 +34,14 @@ $$
 
 (3) $\frac{4m - m^2}{m^2 - 8m + 16}$ $= \frac{m(4 - m)}{(4 - m)^2}$ $= \frac{m}{4 - m}.$ 
 
-![](../images/74941c3ba5cf6e429a04eae1f156d60f58cfe50115ae336068e62f96e843a8cf.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/74941c3ba5cf6e429a04eae1f156d60f58cfe50115ae336068e62f96e843a8cf.jpg)
 
 
 ## 做一做
 
 当 p=12，q=-8 时，请分别用直接代入求值和化简后代入求值两种方法求分式 $\frac{p^{2}-pq}{p^{2}-2pq+q^{2}}$ 的值，并比较哪种方法较简单. 
 
-![](../images/c735fdcf338ae5bcbd4694937a732939c91b6728347a8aaf248995d037233cbd.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c735fdcf338ae5bcbd4694937a732939c91b6728347a8aaf248995d037233cbd.jpg)
 
 
 ## 练习
@@ -65,10 +65,10 @@ $$
 
 3. 如图，计算 $\triangle ABC$ 与 $\triangle DEF$ 的面积比. 
 
-![](../images/69d622e520c988942e5872045944cdca91357a87c2482b4c73ac5007937f952b.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/69d622e520c988942e5872045944cdca91357a87c2482b4c73ac5007937f952b.jpg)
 
 
-![](../images/d1162071a1062285a7a82615544efeedf390aa9652d2ab923990bcdcd10d3c46.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d1162071a1062285a7a82615544efeedf390aa9652d2ab923990bcdcd10d3c46.jpg)
 
 
 

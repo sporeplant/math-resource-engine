@@ -28,11 +28,11 @@ D(高度近视) $360^{\circ} \times 2\% = 7.2^{\circ}$ .
 2010年11月1日，我国进行了第六次全国人口普查的登记工作，我国大陆31个省、自治区、直辖市及现役军人的总人口约为133972万人。2020年11月1日，我国进行了第七次全国人口普查的登记工作，上述总人口约为141178万人。两次普查人口年龄构成分别如图22.3-3和图22.3-4所示。 
 
 2010年人口年龄构成统计图
-![](../images/344363154029c464f7ffa0612812e6f2825769641f8e1446ec185b448aa09a7e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/344363154029c464f7ffa0612812e6f2825769641f8e1446ec185b448aa09a7e.jpg)
 图22.3-3
 
 2020年人口年龄构成统计图
-![](../images/a3a1738deb416b9f86f4a90deb1ab6a99fac833f30a72b971db1729a8c364249.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a3a1738deb416b9f86f4a90deb1ab6a99fac833f30a72b971db1729a8c364249.jpg)
 图22.3-4
 
 (1) 根据统计图提供的信息, 将下表填写完整. 
@@ -73,7 +73,7 @@ D(高度近视) $360^{\circ} \times 2\% = 7.2^{\circ}$ .
 # B 组
 
 3. 我们居住的地球上有七大洲，各大洲面积之和约为 15000 万平方千米。根据统计图提供的信息，解决下面的问题。 
-![](../images/6fb2d5777ea3fd4da664052cdaaadbf343c8e907eecdc0d23096ea8620db97d5.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6fb2d5777ea3fd4da664052cdaaadbf343c8e907eecdc0d23096ea8620db97d5.jpg)
 (第3题)
 
 (1) 设计适当的统计表整理数据资料. 

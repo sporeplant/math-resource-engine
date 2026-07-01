@@ -10,7 +10,7 @@
 
 ## 思维导图
 
-![](../images/26c1036f8538269a056dad74d13f7848cc6b7e65fa7c26693f5ca9490c519d25.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/26c1036f8538269a056dad74d13f7848cc6b7e65fa7c26693f5ca9490c519d25.jpg)
 
 <details>
 <summary>flowchart</summary>
@@ -104,9 +104,9 @@ D．它的图象经过第二、四象限
 
 （2）设点 $\left( a , \quad - 3 \right)$ 在这个函数的图象上，求 a 的值
 
-![](../images/93511ac539d98248f5f1224f95b639fa6cbecd33b65b8ae340a73d152ae741bb.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/93511ac539d98248f5f1224f95b639fa6cbecd33b65b8ae340a73d152ae741bb.jpg)
 
-![](../images/c1290940cf584499f583f0d8473c1595e1d7f893d232745c0a6946394ca86afa.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c1290940cf584499f583f0d8473c1595e1d7f893d232745c0a6946394ca86afa.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -270,7 +270,7 @@ D．1
 
 （2）若这个函数的图象还经过点 $B ( m , m + 3 )$ ），请你求出 m 的值
 
-![](../images/d54c68ddb59b17830fa474213043e10d27db36234d137cc8d9c3844779fb7572.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d54c68ddb59b17830fa474213043e10d27db36234d137cc8d9c3844779fb7572.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -352,7 +352,7 @@ D．﹣2
 
 7．已知正比例函数的图象如图所示，则这个函数的关系式为（
 
-![](../images/d64e0c9848cd0d750775ff6369a876f4bff28e3d5f0bfdd70dabc87667246470.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d64e0c9848cd0d750775ff6369a876f4bff28e3d5f0bfdd70dabc87667246470.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -412,7 +412,7 @@ D．2
 
 15．在同一坐标系中，如图所示，一次函数 $y = k _ { 1 } x , y = k _ { 2 } x , y = k _ { 3 } x , y = k _ { 4 } x$ 的图象分别为 $l _ { 1 } , l _ { 2 } , l _ { 3 } , l _ { 4 }$ ，则 $k _ { 1 } , ~ k _ { 2 } , ~ k _ { 3 } , ~ k _ { 4 }$ 的大小关系是
 
-![](../images/bdaac3472abb94214925aa9f0ddfb830621b741a8b9848ae019d38f5dfb1bc29.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bdaac3472abb94214925aa9f0ddfb830621b741a8b9848ae019d38f5dfb1bc29.jpg)
 
 <details>
 <summary>text_image</summary>

@@ -10,7 +10,7 @@
 
 ## 思维导图
 
-![](../images/038f393579c73d472e7c6ca0802560ed26e96a803dd4e85797f254c7d653b850.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/038f393579c73d472e7c6ca0802560ed26e96a803dd4e85797f254c7d653b850.jpg)
 
 <details>
 <summary>flowchart</summary>
@@ -164,7 +164,7 @@ $\therefore y$ 与 x 之间的函数关系式为 $y = - \frac { 1 } { 3 } x ;$ �
 
 即 a的值为 9
 
-![](../images/f6415c7d6deb6fef5d5ea818f5b5a194315bf61602f08f609e13d52b4239e577.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f6415c7d6deb6fef5d5ea818f5b5a194315bf61602f08f609e13d52b4239e577.jpg)
 
 ## 题型精讲
 
@@ -553,7 +553,7 @@ $$
 （1）请你求出该正比例函数的解析式；  
 （2）若这个函数的图象还经过点 $B ( m , m + 3 )$ ），请你求出 m 的值
 
-![](../images/e2d6a112e3e166bdfe83db6d0d50a3cf81f248f084bc4b3633ff752da620365f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e2d6a112e3e166bdfe83db6d0d50a3cf81f248f084bc4b3633ff752da620365f.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -757,7 +757,7 @@ $$
 
 7．已知正比例函数的图象如图所示，则这个函数的关系式为（ ）
 
-![](../images/01b8690ba2ec63c2d635862be441d63cb0bdd622121c0c0c302cce79cdc4bee1.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/01b8690ba2ec63c2d635862be441d63cb0bdd622121c0c0c302cce79cdc4bee1.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -931,7 +931,7 @@ $$
 
 15．在同一坐标系中，如图所示，一次函数 $y = k _ { 1 } x , y = k _ { 2 } x , y = k _ { 3 } x , y = k _ { 4 } x$ 的图象分别为 $l _ { 1 } , l _ { 2 } , l _ { 3 } , l _ { 4 } $ ，则 $k _ { 1 } , ~ k _ { 2 } , ~ k _ { 3 } , ~ k _ { 4 }$ 的大小关系是 $k _ { 3 } > k _ { 4 } > k _ { 1 } > k _ { 2 }$
 
-![](../images/223f41a2af215efd1cee1a4ef5c3be78ee246f39fec6ca1ac3a1376a8e3e6910.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/223f41a2af215efd1cee1a4ef5c3be78ee246f39fec6ca1ac3a1376a8e3e6910.jpg)
 
 <details>
 <summary>text_image</summary>

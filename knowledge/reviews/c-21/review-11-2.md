@@ -6,7 +6,7 @@
 
 梯形的分类: 
 
-![](../images/7d21d4277e6d07551b5ae82717e291fa6ecdb6eabd5cf065feaac00dce4fde23.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7d21d4277e6d07551b5ae82717e291fa6ecdb6eabd5cf065feaac00dce4fde23.jpg)
 
 
 等腰梯形性质：1）等腰梯形的两底平行，两腰相等； 
@@ -41,7 +41,7 @@
 
 6）过上底中点平移两腰.构造两个平行四边形和一个三角形. 
 
-![](../images/ac13c234c46eab30a7c3ab8e894ca5b25c550427124ce7f9f9deb6beb8a12ceb.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ac13c234c46eab30a7c3ab8e894ca5b25c550427124ce7f9f9deb6beb8a12ceb.jpg)
 
 
 ## 提升·必考题型归纳
@@ -52,7 +52,7 @@
 
 【变式 1-3】（2023·四川达州·统考二模）如图，在梯形 ABCD 中， $AD \parallel BC$ ，点 E 在 BC 上，且 $AB \parallel DE$ ， 
 
-![](../images/389515fd636753d6d52fe21aca3223c92ffe73dbb7afdecc3cff3f5591950413.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/389515fd636753d6d52fe21aca3223c92ffe73dbb7afdecc3cff3f5591950413.jpg)
 
 
 (1)试判断四边形ABED的形状，并说明理由； 
@@ -117,7 +117,7 @@ $$
 
 ∴四边形 ABED 的面积= $BE \cdot DF = 4 \times \sqrt{12} = 8\sqrt{3}(\text{cm}^2)$ . 
 
-![](../images/95a89d0e98f1a1b59570c62337727cb2d643078508976a7337b1d2fc1d3ea491.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/95a89d0e98f1a1b59570c62337727cb2d643078508976a7337b1d2fc1d3ea491.jpg)
 
 
 【点睛】本题考查等腰梯形及等边三角形的知识，难度不算太大，但题目综合的知识点比较多，同学们要注意细心解答. 
@@ -130,7 +130,7 @@ $$
 
 【例 3】（2023 上·上海静安·八年级上海市风华初级中学校考期末）如图，四边形 ABCD 中， $AD \parallel BC$ ，E 是边 CD 的中点，如果 AE 平分 $\angle BAD$ ，那么下列结论中不一定成立的是（） 
 
-![](../images/4b2e754b61b22d031910caaa6da9734083c7a281a8989cca1e4950fee08cb00d.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4b2e754b61b22d031910caaa6da9734083c7a281a8989cca1e4950fee08cb00d.jpg)
 
 
 A. $BE$ 平分 $\angle ABC$ B. $\angle AEB = 90^{\circ}$ C. $AE = \frac{1}{2} AB$ D. $AB = AD + BC$ 
@@ -141,7 +141,7 @@ A. $BE$ 平分 $\angle ABC$ B. $\angle AEB = 90^{\circ}$ C. $AE = \frac{1}{2} AB
 
 【详解】解：延长 AE 交 BC 延长线于 M， 
 
-![](../images/544d3700784401630d13b856b0e7b331b05957cf391691c4bb5c96dd6c3bc33a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/544d3700784401630d13b856b0e7b331b05957cf391691c4bb5c96dd6c3bc33a.jpg)
 
 
 $\because AD \parallel BC,$ $\therefore \angle DAE = \angle M,$ $\because \angle EAD = \angle EAB,$ $\therefore \angle EAB = \angle M,$ $\therefore AB = BM,$ $\because E$ 为 $CD$ 中点， $\therefore DE = EC,$ $\because \angle DEA = \angle CEM,$ $\therefore \triangle DAE \cong \triangle CME,$ $\therefore AD = CM, AE = EM,$ $\therefore AD + BC = CM + BC = BM = AB,$ ∵ AB = BM, AE = EM, 
@@ -156,7 +156,7 @@ $$
 
 取 AB 中点 F，连接 EF， 
 
-![](../images/09537149b6b5c19747b67266014968ea1301fd0068715cc56f0eb28565fe4a80.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/09537149b6b5c19747b67266014968ea1301fd0068715cc56f0eb28565fe4a80.jpg)
 
 
 ∵ E, F 分别是 AB, DC 的中点, 
@@ -185,21 +185,21 @@ $\therefore AB = AD + BC$ ，故 D 选项正确，
 
 【变式 3-1】（2023 下·江苏南京·八年级统考期中）在探索平面图形的性质时，往往需通过剪拼的方式帮助我们寻找解题思路. 
 
-![](../images/18650a2f93d11cecc352d9607f41304f0ba12514f454e120ee07f9204e761eeb.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/18650a2f93d11cecc352d9607f41304f0ba12514f454e120ee07f9204e761eeb.jpg)
 
 
 
 图①
 
 
-![](../images/cc066fb549510cf6d9099d4fb2de78e89841dc01a767ec5e6cf56f505d468592.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/cc066fb549510cf6d9099d4fb2de78e89841dc01a767ec5e6cf56f505d468592.jpg)
 
 
 
 图②
 
 
-![](../images/72fd7098457567d60b2d7021b64a5205c1f0f63c3f6da65617dfad59f0db617e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/72fd7098457567d60b2d7021b64a5205c1f0f63c3f6da65617dfad59f0db617e.jpg)
 
 
 
@@ -233,14 +233,14 @@ $\therefore AB = AD + BC$ ，故 D 选项正确，
 
 【详解】解：实践操作：画出如图②所示△ABE. 
 
-![](../images/b20c83e5f94f798c159937165badf643dc6a8a3f54b1ebbb38c39ff537590e03.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b20c83e5f94f798c159937165badf643dc6a8a3f54b1ebbb38c39ff537590e03.jpg)
 
 
 数学发现： $EF\|AD\|BC,\ EF=\frac{1}{2}(AD+BC)$ . 
 
 证明猜想：连接 AF 并延长，交 BC 延长线于点 M， 
 
-![](../images/f77fddee69582d39dcb60929bb89e28d8961f2414e737a8252941b52e921cf6c.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f77fddee69582d39dcb60929bb89e28d8961f2414e737a8252941b52e921cf6c.jpg)
 
 
 
@@ -287,7 +287,7 @@ $\therefore EF\|AD\|BC, EF = \frac{1}{2}(AD + BC).$
 
 【变式 3-2】(2022 上·上海·九年级开学考试) 如图, 点 $E$ 、 $F$ 分别是梯形 $ABCD$ 两腰的中点, 联结 $EF$ 、 $DE$ , 如果图中 $\triangle DEF$ 的面积为 1.5, 那么梯形 $ABCD$ 的面积等于 ____. 
 
-![](../images/0820fdaf0e8e868b0b815a567b6d468362dbaad074fb1ebe02d8ba5dc7427d73.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0820fdaf0e8e868b0b815a567b6d468362dbaad074fb1ebe02d8ba5dc7427d73.jpg)
 
 
 【答案】6 
@@ -296,7 +296,7 @@ $\therefore EF\|AD\|BC, EF = \frac{1}{2}(AD + BC).$
 
 【详解】解：过点 A 作 $AH \perp BC$ 于 H，交 EF 于 G，如图， 
 
-![](../images/ad1e0c13b5b35a6e10e7e5abf2521923fc770fa67840c3e74efff7a80d0777d7.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ad1e0c13b5b35a6e10e7e5abf2521923fc770fa67840c3e74efff7a80d0777d7.jpg)
 
 
 ∵点 E、F 分别是梯形 ABCD 两腰的中点， 

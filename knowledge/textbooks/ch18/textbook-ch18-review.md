@@ -28,7 +28,7 @@ lesson_id: ch18-activity-review
 
 | | | | |
 |:---:|:---:|:---:|:---:|
-| ![](../images/9d6d0d06a520ab4a853948d02fefe6e2a065d34a3ce11633e507216541dfebf9.jpg) | ![](../images/bed0421010dbc94b24b058d007beaca280a5ac6a98567da69977f491a5eef1a7.jpg) | ![](../images/0d30e9f618fc4fd517f3ec5fe71558d6c2cf753a02ea4c24df082adc23c0817a.jpg) | ![](../images/82d5d548afda1fb2295cf8ca77fad84cfa314cfd054866050d4e634af200d159.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9d6d0d06a520ab4a853948d02fefe6e2a065d34a3ce11633e507216541dfebf9.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bed0421010dbc94b24b058d007beaca280a5ac6a98567da69977f491a5eef1a7.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0d30e9f618fc4fd517f3ec5fe71558d6c2cf753a02ea4c24df082adc23c0817a.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/82d5d548afda1fb2295cf8ca77fad84cfa314cfd054866050d4e634af200d159.jpg) |
 | (1) | (2) | (3) | (4) |
 
 

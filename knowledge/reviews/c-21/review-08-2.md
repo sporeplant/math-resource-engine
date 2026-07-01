@@ -12,13 +12,13 @@
 
 1．如图，在四边形 ABCD 中， \(A D \parallel B C, ~ \angle A = 90^{\circ} ~, ~ A D = 6, ~ B C = 9\) ，点 P 从点 A 出发，沿射线 AD 以每秒 2个单位长度的速度向右运动，同时点 Q 从点 C 出发，沿 CB 方向以每秒 1 个单位长度的速度向点 B运动．当点 Q 到达点 B 时，点 P，Q 停止运动，设点 Q 运动时间为 t 秒．在运动的过程中，当 t＝ 2或6 时，使以 P，D，C，Q 为顶点的四边形为平行四边形？
 
-![](../images/6e1eaf449733aabe475a4b4a1c60be5c545d2d497dc2a467b7ac78f6d4569662.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6e1eaf449733aabe475a4b4a1c60be5c545d2d497dc2a467b7ac78f6d4569662.jpg)
 
 【解答】解：由题意知，可分两种情况：
 
 ①当 CD 为平行四边形的边，则 P 在 D 点左侧， \(P D = 6 \mathrm { ~ - ~ } 2 t, C Q = t .\)
 
-![](../images/5dbbaf0ccc4e34be5ced224bee29d083978ec56a618fd1a3e3f4cbdb7ba2b360.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5dbbaf0ccc4e34be5ced224bee29d083978ec56a618fd1a3e3f4cbdb7ba2b360.jpg)
 
 
 $\(\because P D = C Q, $\)
@@ -32,7 +32,7 @@ $\(\therefore 6 - 2 t = t, $\)
 
 ②当 CD 为平行四边形的对角线，P 在 D 点右侧， \(\mathit { P D } = 2 t \ - 6, \ C Q = t,\)
 
-![](../images/1a4765985aa954dbb9ac9d6ef6758c635df428da55d4d2b028fb361aadbc7598.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1a4765985aa954dbb9ac9d6ef6758c635df428da55d4d2b028fb361aadbc7598.jpg)
 
 
 $\(\because P D = C Q, $\)
@@ -50,7 +50,7 @@ $\(\therefore 2 t - 6 = t, $\)
 
 2．如图，在平行四边形 ABCD 中， \(A B = 6 c m, \enspace A D = 10 c m\) ，点 P 在 AD 边上以每秒 1cm 的速度从点 A 向点D 运动，点 Q 在 BC 边上以每秒 2.5cm 的速度从点 C 出发，在 CB 间往返运动，两个点同时出发，当点 P到达点 D 时停止运动，同时点 Q 也停止运动．设运动时间为 t s，开始运动以后，当 t 为何值时，以 P，D，Q，B 为顶点的四边形是平行四边形？（ ）
 
-![](../images/6333b359829b6a16c912f154e0b10c2853f6cee0095fe9cb93b598abb5fb4904.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6333b359829b6a16c912f154e0b10c2853f6cee0095fe9cb93b598abb5fb4904.jpg)
 
 A \(\frac { 20 } { 3 }\)
 
@@ -104,7 +104,7 @@ $\(\therefore 10 - t = 30 - 2. 5 t, $\)
 
 3．如图，▱ ABCD 中，AB＝22cm， \(B C = 8 \sqrt { 2 } c m\) ， \(\angle A = 45^{\circ}\) °，动点 E 从 A 出发，以 2cm/s 的速度沿 AB 向点 B 运动，动点 F 从点 C 出发，以 1cm/s 的速度沿着 CD 向 D 运动，当点 E 到达点 B 时，两个点同时停止．则 EF 的长为 10cm 时点 E 的运动时间是（ ）
 
-![](../images/20f5e6596b9f6a2c39af5df58aaff312fc3fb596e166eeda2679ed20c6ae6753.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/20f5e6596b9f6a2c39af5df58aaff312fc3fb596e166eeda2679ed20c6ae6753.jpg)
 
 A．6s
 
@@ -162,7 +162,7 @@ $\(\therefore 2 t - 2 = 22 - t, $\)
 
 当 F 点在 E 点左侧时，
 
-![](../images/26664a94f4df81f25e52a6c74593e4d1d1e4b6b6d9a791e1c821a77e16ae43b7.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/26664a94f4df81f25e52a6c74593e4d1d1e4b6b6d9a791e1c821a77e16ae43b7.jpg)
 
 由题意可知：AE＝2t cm，CF＝t cm，
 
@@ -192,7 +192,7 @@ $\(\therefore 2 t - 14 = 22 - t, $\)
 
 4．如图，四边形 ABCD 中，\(AD \parallel BC\)，AD＝8cm，BC＝12cm，M 是 BC 上一点，且 BM＝9cm，点 E 从点 A出发以 1cm/s 的速度向点 D 运动，点 F 从点 C 出发，以 3cm/s 的速度向点 B 运动，当其中一点到达终点，另一点也随之停止，设运动时间为 t（s），则当以 A、M、E、F 为顶点的四边形是平行四边形时，t 的值是（ ）
 
-![](../images/c3574fd98f94a6c65baea93960fcb86135a097a649d324d9964ab8e8db5edbb2.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c3574fd98f94a6c65baea93960fcb86135a097a649d324d9964ab8e8db5edbb2.jpg)
 
 A． \(\frac { 3 } { 4 }\)
 
@@ -214,7 +214,7 @@ D． \(\frac { 3 } { 2 }\) 或 \(\frac { 3 } { 4 }\)
 
 5．如图，在四边形 ABCD 中，\(AD \parallel BC\)，AD＝6，BC＝16，E 是 BC 的中点．点 P 以每秒 1 个单位长度的速度从点 A 出发，沿 AD 向点 D 运动；点 Q 同时以每秒 3个单位长度的速度从点 C 出发，沿 CB 向点 B运动．点 P 停止运动时，点 Q 也随之停止运动．当运动时间 t 为（ ）秒时，以点 P，Q，E，D 为顶点的四边形是平行四边形
 
-![](../images/1d89fd02c24876bdff6e672615377656764526f370da19207e8f88ae2c2420b2.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1d89fd02c24876bdff6e672615377656764526f370da19207e8f88ae2c2420b2.jpg)
 
 A．1
 
@@ -252,7 +252,7 @@ $\(\therefore 8 - 3 t = 6 - t, $\)
 
 故选：C
 
-![](../images/82b3e275c8fa0f17064ce6c4a6accac0b8df67b5a6d4711990267b1c30b715d4.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/82b3e275c8fa0f17064ce6c4a6accac0b8df67b5a6d4711990267b1c30b715d4.jpg)
 
 6．如图，在▱ ABCD 中，BD 为对角线，EF 垂直平分 BD 分别交 AD、BC 的于点 E、F，交 BD 于点 O
 
@@ -261,7 +261,7 @@ $\(\therefore 8 - 3 t = 6 - t, $\)
 
 （3）如果在▱ ABCD 中， \(A B = 5, \ A D = 10\) ，有两动点 P、Q 分别从 B、D 两点同时出发，沿 \(\triangle B A E\) 和\(\triangle DFC\) 各边运动一周，即点 P 自 \(B { } A { } E { } B\) 停止，点 Q 自 \(D { } F { } C { } D\) 停止，点 P 运动的路程是 m，点 Q 运动的路程是 n，当四边形 BPDQ 是平行四边形时，求 m 与 n满足的数量关系．（画出示意图）
 
-![](../images/8ab588333af180223c5544f2293ebe1f095af3574ba493506b8d0289999c069b.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8ab588333af180223c5544f2293ebe1f095af3574ba493506b8d0289999c069b.jpg)
 
 【解答】解：（1）∵四边形 ABCD 是平行四边形，
 
@@ -437,23 +437,23 @@ $\(= 15; $\)
 $\(\begin{array}{l} \because A D = B C, A E = C F, \\ \therefore D E = B F, \\ \because D E \parallel B F, \\ \therefore B E = D F, \quad B E \parallel D F, \\ \therefore \angle P E O = \angle F Q O, \\ \because \angle E O P = \angle F O Q, O E = O F, \\ \therefore \triangle P E O \cong \triangle F Q O, \\ \therefore P E = F Q, \\ \therefore m + n \\ = A B + A E + P E + D Q \\ = C D + C F + Q F + D Q \\ = D F + C F + C D \\ = 15. \\ \end{array} $\)
 
 
-![](../images/b19ef684598b677dd2bea33c81e0c4e4bcbf1928736a7f0f69abe99a48ef6bc6.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b19ef684598b677dd2bea33c81e0c4e4bcbf1928736a7f0f69abe99a48ef6bc6.jpg)
 
-![](../images/922ba97860d537e6fdd6de362f165cc8e0c1ea132381c9652429430793e0a6b8.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/922ba97860d537e6fdd6de362f165cc8e0c1ea132381c9652429430793e0a6b8.jpg)
 
 （备用图1）
 
-![](../images/7939cb45fd49e8fdb1932f1b3d7173a9b2e2d32e98571ce3952c5c6838a3dea3.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7939cb45fd49e8fdb1932f1b3d7173a9b2e2d32e98571ce3952c5c6838a3dea3.jpg)
 
 （备用图2）
 
-![](../images/16b91d5d16912a1ddef68b67239c8dfb4400ccbafe0dbbf87aa6da38ffcfc602.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/16b91d5d16912a1ddef68b67239c8dfb4400ccbafe0dbbf87aa6da38ffcfc602.jpg)
 
 ## 类型二：矩形中的动点问题
 
 7．如图，在长方形 ABCD 中， \(A D = 16 c m, \ A B = 8 c m\) ．点 P 从点 A 出发，沿折线 A﹣B﹣C 方向运动，速度2cm/s；点 Q 从点 B 出发沿线段 BC 方向向点 C 运动，速度 4cm/s；点 P、Q 同时出发，当一方到达终点时，另一方同时停止运动，设运动时间是 t（s）．下列说法错误的是（ ）
 
-![](../images/924b56429427e437fa7cb3c517136f1e2727905731e8a7b3ea7871a7dfe09803.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/924b56429427e437fa7cb3c517136f1e2727905731e8a7b3ea7871a7dfe09803.jpg)
 
 A．点 P 运动路程为 2tcm  
 B． \(C Q \mathrm = \ ( 16 \mathrm { - } 4 t ) \ c m\)
@@ -471,7 +471,7 @@ D．假设运动中点 P 可以追上点 Q，则 \(2 t - 4 = 4 t\) ，解得：t
 
 8．在平面直角坐标系中，长方形 ABCD 按如图所示放置，O 是 AD 的中点，且 A、B、C 的坐标分别为（5，0），（5，4），（﹣5，4），点 P 是 BC 上的动点，当\(\triangle ODP\) 是腰长为 5 的等腰三角形时，则点 P 的坐标为（﹣2，4）或（﹣3，4）或（3，4）
 
-![](../images/e5c84097eb3362f3434a73f800279ca35043c7ac23ec1245378a7024a2c1f612.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e5c84097eb3362f3434a73f800279ca35043c7ac23ec1245378a7024a2c1f612.jpg)
 
 【解答】解：如图，
 
@@ -511,11 +511,11 @@ $\(\therefore P (- 2, 4), $\)
 
 故答案为：（﹣2，4）或（﹣3，4）或（3，4）
 
-![](../images/3019bdd244fe4a18c666ce80fa12314a43fa3235ea7424f38f2dfb90fde7dd36.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3019bdd244fe4a18c666ce80fa12314a43fa3235ea7424f38f2dfb90fde7dd36.jpg)
 
 9．如图，在矩形 ABCD 中，AB＝3，AD＝4，P 是 AD 上不与 A 和 D 重合的一个动点，过点 P 分别作 AC和 BD 的垂线，垂足分别为 E、F．求 \(P E + P F = \frac { 12 } { 5 } { - }\)
 
-![](../images/8c5ad85b48e0ea0acde28ec3d8da54a0a23f80fd6241f843005e0f2eb22a83c3.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8c5ad85b48e0ea0acde28ec3d8da54a0a23f80fd6241f843005e0f2eb22a83c3.jpg)
 
 【解答】解：连接 OP，如图所示：
 
@@ -539,15 +539,15 @@ $\(\therefore P E + P F = \frac {12}{5}, $\)
 
 故答案为： \(\frac { 12 } { 5 }\)
 
-![](../images/dbfe3832a6f590d46ff26c0764d1e6fcecb3fac892988192273ebe656292f71b.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/dbfe3832a6f590d46ff26c0764d1e6fcecb3fac892988192273ebe656292f71b.jpg)
 
 10．如图，在长方形 ABCD 中， \(A B = D C = 3 c m, \ B C = A D = 2 c m\) ，现有一动点 P 从点 A 出发，以 1cm/s 的速度沿长方形的边 \(A { } B { } C { } D { } A\) 运动，到达点 A 时停止；点 Q 在边 DC 上， \(D Q = B C\) ，连接 \(A Q\) ．设点P 的运动时间为 t s，则当 t＝ 1 或 2 或 7 s 时，以长方形的两个顶点及点 P 为顶点的三角形与 \(\triangle A D Q\) 全等．（不考虑两个三角形重合的情况）
 
-![](../images/62a95a2ad25013fd83a0b494dfb4bf55dcb9559f039524f2044656b7df826121.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/62a95a2ad25013fd83a0b494dfb4bf55dcb9559f039524f2044656b7df826121.jpg)
 
 【解答】解：当 t＝1s 时，AP＝1cm，则 \(B P = 2 c m\) ，如图 1，
 
-![](../images/4487a2e7f76be140d2bdc9e84077b625defa40c84106aeb3ee85a61ff8c079cf.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4487a2e7f76be140d2bdc9e84077b625defa40c84106aeb3ee85a61ff8c079cf.jpg)
 
 图1
 
@@ -567,7 +567,7 @@ $\(\therefore \triangle A Q D \cong \triangle C P B (S A S); $\)
 $\(\therefore A P = D Q, $\)
 
 
-![](../images/a5d536861f82046a9459e24ef610d1068a030bb6e71bbccf1244adb35a6d5f4c.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a5d536861f82046a9459e24ef610d1068a030bb6e71bbccf1244adb35a6d5f4c.jpg)
 
 图2
 
@@ -583,7 +583,7 @@ $\(\therefore \triangle A Q D \cong \triangle D P A (S A S); $\)
 
 当 t＝7 时，AB+BC+CP＝7cm，如图 3，
 
-![](../images/b2da57629e9127a30109cf75c340a3d3ae5464545582ff5ef0bf90ff2c504316.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b2da57629e9127a30109cf75c340a3d3ae5464545582ff5ef0bf90ff2c504316.jpg)
 
 图
 
@@ -616,11 +616,11 @@ $\(\therefore \triangle A Q D \cong \triangle B P C (S A S); $\)
 
 其中正确结论的有 ①②③④ ．（填序号）
 
-![](../images/f535ba46d97756379056df0e470caf2864238f973a7163c155b0f6eaff7d2ef2.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f535ba46d97756379056df0e470caf2864238f973a7163c155b0f6eaff7d2ef2.jpg)
 
 【解答】解：如图所示，连接 BE，交 FG 于点 O，
 
-![](../images/d5d3c1da145b1eb7bf4163d2c233cdc779dfc0791f9682762d16aaba858a36e2.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d5d3c1da145b1eb7bf4163d2c233cdc779dfc0791f9682762d16aaba858a36e2.jpg)
 
 ∵ \(\cdot E F \bot A B, E G \bot B C,\)
 
@@ -686,7 +686,7 @@ $\(\therefore \angle B F G = \angle A D E, $\)
 
 延长 DE，交 FG 于 M，交 FB 于点 H，
 
-![](../images/3e805b164f18d2fb5e4d472a00a2de9dacbaf6ddc54eabe4afc38610af311b96.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3e805b164f18d2fb5e4d472a00a2de9dacbaf6ddc54eabe4afc38610af311b96.jpg)
 
 由①得， \(\angle A B E = \angle A D E\) ，
 
@@ -754,7 +754,7 @@ $\(\therefore D E = \frac {1}{2} A C = 2 \sqrt {2}, $\)
 
 （2）若动点 P 从点 B 出发，以每秒 1个单位的速度仅沿着 BE 向终点 E 运动，连接 DP．设点 P 运动的时间为 t 秒，是否存在 t，使\(\triangle PDE\) 为等腰三角形？若存在，请求出 t 的值；否则，说明理由
 
-![](../images/b7b4bef34bf7595660a340ddef9a733cdc05fea785e61bd181dc5a719d6d0d15.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b7b4bef34bf7595660a340ddef9a733cdc05fea785e61bd181dc5a719d6d0d15.jpg)
 
 【解答】解：（1）若 \(\triangle A B P\) 与 \(\triangle D C E\) 全等，
 
@@ -782,7 +782,7 @@ $\(\therefore D E = \sqrt {D C^{2} + C E^{2}} = 5, $\)
 
 则 \(P D = D E\) 或 PE＝DE 或 \(P D = P E\) ，
 
-![](../images/039ceea0910d3d6effadc2cd3bb37802e0317b8198db0a83eed6be2344fb76af.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/039ceea0910d3d6effadc2cd3bb37802e0317b8198db0a83eed6be2344fb76af.jpg)
 
 当 \(P D = D E\) 时，
 
@@ -854,7 +854,7 @@ $\(\therefore t = \frac {29}{6} \div 1 = \frac {29}{6}, $\)
 
 13．如图，在菱形 ABCD 中，AB＝4， \(\angle A = 120^{\circ}\) °，点 E 是 BD 上不与点 B 和点 D 重合的一个动点，过点E 分别作 AB 和 AD 的垂线，垂足为 F，G，则 EF+EG 的值为（ ）
 
-![](../images/0406cae7a36c4428e5c00f60ac10e450feb56f9d82c993e7b8cf3655100c1446.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0406cae7a36c4428e5c00f60ac10e450feb56f9d82c993e7b8cf3655100c1446.jpg)
 
 A． \(2 \sqrt { 3 }\)
 
@@ -904,11 +904,11 @@ $\(\therefore E F + E G = 2 \sqrt {3}, $\)
 
 故选：A．
 
-![](../images/73a1ef412c3a61469b9e429452a4727be004721395250485d1fca8f3355051e9.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/73a1ef412c3a61469b9e429452a4727be004721395250485d1fca8f3355051e9.jpg)
 
 14．如图，菱形 ABCD 的对角线 AC，BD 相交于点 O，点 E，F 同时从 O 点出发在线段 AC 上以 1cm/s的速度反向运动（点 E，F 分别到达 A，C 两点时停止运动），设运动时间为 t s．连接 DE，DF，BE，BF，已知\(\triangle ABD\) 是边长为 6cm 的等边三角形，当 t＝ 3 s 时，四边形 DEBF 为正方形
 
-![](../images/7a7c90ccf5ce009d5e4d65f05ed5e826c8f1a3fc0c8e4217bf115a0c0fc39ddf.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7a7c90ccf5ce009d5e4d65f05ed5e826c8f1a3fc0c8e4217bf115a0c0fc39ddf.jpg)
 
 【解答】解：由题意得 \(O E = O F = t c m\) ，
 
@@ -942,7 +942,7 @@ $\(\therefore B D = 6 c m, $\)
 
 15．如图，在菱形 ABCD 中， \(_{A B} = 5 c m\) ， \(\angle A D C = 120^{\circ}\) ，点 E、F 同时由 A、C 两点出发，分别沿 AB、CB方向向点 B 匀速移动（到点 B 为止），点 E 的速度为 1cm/s，点 F 的速度为 2cm/s，经过 t 秒 \(\triangle D E F\) 为等边三角形，则 t 的值为（ ）
 
-![](../images/ba262d00679b574bf3624d0826fbd1a79d119e1004f4e917fe26e1db4318ac7a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ba262d00679b574bf3624d0826fbd1a79d119e1004f4e917fe26e1db4318ac7a.jpg)
 
 A \(\frac { 3 } { 4 }\)
 
@@ -1006,11 +1006,11 @@ $\(\therefore t = \frac {5}{3}, $\)
 
 故选：D．
 
-![](../images/c6241c409b0d131546431af63fd830da9e89b2d4f6ffedd2605559e9b51ae971.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c6241c409b0d131546431af63fd830da9e89b2d4f6ffedd2605559e9b51ae971.jpg)
 
 16．如图，菱形 ABCD 的对角线 AC，BD 相交于点 O，点 P 为 AB 边上一动点（不与点 A，B 重合），\(PE \bot OA\) 于点 E，\(PF \bot OB\) 于点 F，若 \(A C = 16, B D = 12\) ，则 EF 的最小值为（ ）
 
-![](../images/44e6a34a74c5d3bb47550ccee919a87bcf784fde907ccf616d9aeb15a67e91a8.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/44e6a34a74c5d3bb47550ccee919a87bcf784fde907ccf616d9aeb15a67e91a8.jpg)
 
 A．8
 
@@ -1070,7 +1070,7 @@ $\(\therefore E F \geqslant 4. 8, $\)
 
 故选：C
 
-![](../images/935eaf2fd9819d841ecce0c0746154967354b9a28c8a89aafd4d8f91c1b24da7.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/935eaf2fd9819d841ecce0c0746154967354b9a28c8a89aafd4d8f91c1b24da7.jpg)
 
 17．如图，在四边形 ABCD 中，\(AB \parallel CD\)， \(\angle A D C = 90^{\circ}\) ，AD＝12cm，AB＝18cm，CD＝23cm，动点 P 从点 A 出发，以 1cm/s 的速度向终点 B 运动，同时动点 Q 从点 B 出发，以 2cm/s 的速度沿折线 B﹣C﹣D向终点 D 运动，其中一个动点到达端点时，另一个动点也随之停止运动，设运动时间为 t 秒
 
@@ -1080,7 +1080,7 @@ $\(\therefore E F \geqslant 4. 8, $\)
 
 （3）只改变点 Q 的运动速度，使运动过程中某一时刻四边形 PBCQ 为菱形，则点 Q 的运动速度应为多少？
 
-![](../images/4ddcbfaf911415deb9950cfa99efa16f92b334475c3bc8d865ec250c29028b69.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4ddcbfaf911415deb9950cfa99efa16f92b334475c3bc8d865ec250c29028b69.jpg)
 
 【解答】解：（1）由于 P 从 A 点以 1cm/s 向 B 点运动，
 
@@ -1096,7 +1096,7 @@ $\(\therefore B P = A B - A P = (18 - t) c m; $\)
 
 （2）过 B 点作 \(B N \bot C D\) 于 N 点， \(\because A B \parallel C D, \angle A D C = 90^{\circ}\)
 
-![](../images/9fd9b2ad8f361e9a518a3043b284de8db114dcd52464a535b607130b7a218f1f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9fd9b2ad8f361e9a518a3043b284de8db114dcd52464a535b607130b7a218f1f.jpg)
 
 ∴四边形 ACNB 是矩形，
 
@@ -1128,7 +1128,7 @@ $\(\because B C + C D = 23 + 13 = 36 \mathrm{cm}, $\)
 
 ①四边形 PQCB 是平行四边形，如图所示：
 
-![](../images/f7a7c9278f5241b8bbc246baba63e1571347739248c2119e392f26cbaea12868.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f7a7c9278f5241b8bbc246baba63e1571347739248c2119e392f26cbaea12868.jpg)
 
 \(\because A B \parallel C D\) 即 \(P B \parallel C Q\) ，
 
@@ -1146,7 +1146,7 @@ $\(\therefore 18 - t = 2 t - 13, $\)
 
 ②四边形 \(A D Q P\) 是平行四边形，如图所示：
 
-![](../images/f50865278ee5b18f95ca88d45f463a57d2f422e07f5676d2e639866d9e7138ab.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f50865278ee5b18f95ca88d45f463a57d2f422e07f5676d2e639866d9e7138ab.jpg)
 
 同理 \(\because A P \parallel D Q\) ，
 
@@ -1186,7 +1186,7 @@ $\(\therefore 18 - t = 13, x t - 13 = 13, $\)
 
 18．如图，在正方形 ABCD 中， \(A B = 3 c m\) ，延长 BC 到点 E，使 \(C E = 1 c m\) ，连接 DE，动点 P 从点 A 出发，以每秒 1cm 的速度沿 \(A B { } B C { } C D { } D A\) 向终点 A 运动．设点 P 的运动时间为 t 秒，当 \(\triangle P B C\) 和 \(\triangle D C E\) 全等时，t 的值为 2 或 7
 
-![](../images/4b280de391902cf3110e8f09e20454d0b3b4212406b9ca952d28f079670f3425.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4b280de391902cf3110e8f09e20454d0b3b4212406b9ca952d28f079670f3425.jpg)
 
 【解答】解： \(\because \triangle D C E\) 是直角三角形，
 
@@ -1218,7 +1218,7 @@ $\(\therefore t = (3 + 3 + 1) \div 1 = 7, $\)
 
 19．如图，在边长为 2的正方形 ABCD 中，E，F 分别是边 DC，CB 上的动点，且始终满足 \({ \cal D } E = C F, ~ A E\) ，\(D F\) 交于点 P，则 \(\angle A P D\) 的度数为 \(90^\circ\) ；连接 CP，线段 \(C P\) 的最小值为 \(- \sqrt { 5 } - 1\)
 
-![](../images/f2b6136b6bf0d8f4d2871c1110bfd39a140937e1d726c66a68fdebb40209c246.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f2b6136b6bf0d8f4d2871c1110bfd39a140937e1d726c66a68fdebb40209c246.jpg)
 
 【解答】解：∵四边形 ABCD 是正方形，
 
@@ -1262,11 +1262,11 @@ $\(\therefore \angle A P D = 90^{\circ}, $\)
 
 故答案为： \(90^{\circ}, \sqrt { 5 } - 1\) ．
 
-![](../images/b472d996ae1157808f8d04c4dc3f142490a32ebd1e6c2639a57569d5868797f9.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b472d996ae1157808f8d04c4dc3f142490a32ebd1e6c2639a57569d5868797f9.jpg)
 
 20．如图，在正方形 ABCD 中，AB＝6，E 为 CD 上一动点，AE 交 BD 于 F，过 F 作 \(F H \bot A E\) 交 BC 于点 H，过 H 作 \(G H \bot B D\) 于 G，连结 AH．以下四个结论中：①AF＝HE； \(\textcircled{2} \angle H A E = 45^{\circ}\) °；③ \(A B = \sqrt { 2 } F G\) ；④\(\triangle C E H\) 的周长为 12．正确的结论有（ ）
 
-![](../images/1570749c942cb297a23a51efde592f6d4aac9e2104ea4830165a846d59409308.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1570749c942cb297a23a51efde592f6d4aac9e2104ea4830165a846d59409308.jpg)
 
 A．1 个
 
@@ -1278,7 +1278,7 @@ D．4 个
 
 【解答】解：①连接 FC，延长 HF 交 AD 于点 L，如图 1，
 
-![](../images/c7d5bd7cdd269650aab838ef583e66d23649af3d039c133f9de7a6cc7599c6d6.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c7d5bd7cdd269650aab838ef583e66d23649af3d039c133f9de7a6cc7599c6d6.jpg)
 
 图
 
@@ -1342,7 +1342,7 @@ $\(\because F H \perp A E, F H = A F, $\)
 
 ④延长 AD 至点 M，使 \(\ A D = D M\) ，过点 C 作 \(C I \parallel H L\) ，如图 2，
 
-![](../images/712aaa8a4064782cd4519b3bb6b3ff5746afe74dec25deb5ee72a2bfeffd1d2e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/712aaa8a4064782cd4519b3bb6b3ff5746afe74dec25deb5ee72a2bfeffd1d2e.jpg)
 
 图2
 
@@ -1454,7 +1454,7 @@ $\(\therefore H E + H C + E C = A L + L I + I M = A M = 12. $\)
 
 21．如图，正方形 ABCD 的边长为 2cm，E 是边 AD 的中点，P 为对角线 BD 上一动点，连接 PA、PE，当点 P 移动到使 \(\angle B P A = \angle D P E\) 时，AP+PE 的值为（ ）
 
-![](../images/178d031cdd94df475ab837457ff232cd34f45f027a1a3cead9b30ee089d59e60.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/178d031cdd94df475ab837457ff232cd34f45f027a1a3cead9b30ee089d59e60.jpg)
 
 A． \(\sqrt { 3 } \mathtt { c } \mathtt { \pi }\)
 
@@ -1466,7 +1466,7 @@ D． \(2 \sqrt { 5 } \mathtt { c } \mathtt { \Pi }\)
 
 【解答】解：取 CD 的中点 F
 
-![](../images/3e2088ba0248ba024a238886371143b097999cdf927488cd1f05e5c7b246d4cc.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3e2088ba0248ba024a238886371143b097999cdf927488cd1f05e5c7b246d4cc.jpg)
 
 ∵正方形 ABCD 的边长为 2cm，E 是边 AD 的中点，
 
@@ -1524,7 +1524,7 @@ $\(\therefore \mathrm{AP} + \mathrm{PE} = \sqrt {5} \mathrm{c} \pi . $\)
 
 22．如图，正方形 ABCD 的对角线相交于点 O，点 E 为 AB 上一动点．连接 OE，作 \(OF \bot OE\) 交 BC 于点 F，已知 AB＝2，则四边形 EBFO 的面积为（ ）
 
-![](../images/fc345e31b2ac15886749450ced12c59187f6ecef548877406093ce2687d20a33.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/fc345e31b2ac15886749450ced12c59187f6ecef548877406093ce2687d20a33.jpg)
 
 A．1
 
@@ -1611,7 +1611,7 @@ $\(\therefore S_{\triangle D O C} = \frac {1}{4} S _ {\text {正方形} A B C D}
 （1）连接 PD、PQ、DQ，求当 t 为何值时， \(\triangle P Q D\) 的面积为 \(11 c m^{2} ;\) ；  
 （2）当点 P 在 BC 上运动时，是否存在这样的 t，使得\(\triangle PQD\) 是以 PD 为一腰的等腰三角形？若存在，请求出符合条件的 t 的值；若不存在，请说明理由
 
-![](../images/f70f910285162854329a78a48dcd140658f77e9d7461ac7234e255ca9ff72b03.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f70f910285162854329a78a48dcd140658f77e9d7461ac7234e255ca9ff72b03.jpg)
 
 【解答】解：（1）当点 P 在 BC 上时，即 \(0 \leqslant t \leqslant 2\) ，如图 1，AQ＝t，BQ＝4﹣t，BP＝2t，PC＝4﹣2t，
 
@@ -1665,6 +1665,6 @@ $\(\therefore (2 t)^{2} + (4 - t)^{2} = (4 - 2 t)^{2} + 4^{2}, $\)
 
 \(\therefore t = \frac { 4 } { 3 }\) 或 \(4 \sqrt { 2 } - 4\) 时， \(\triangle P Q D\) 是以 PD 为一腰的等腰三角形．
 
-![](../images/64ed8d0734a2b33e823300a02fc551afa7247139f66e8713b2b20be2a1d39362.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/64ed8d0734a2b33e823300a02fc551afa7247139f66e8713b2b20be2a1d39362.jpg)
 
 图1

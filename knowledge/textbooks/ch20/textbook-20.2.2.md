@@ -6,7 +6,7 @@ chapter_name: 一次函数
 section_name: 一次函数的图像和性质
 lesson_id: 20.2.1
 ---:|:---:|
-| ![](../images/6566f67bb9eecd16b751672498b241e561647bd42d9f78f79f4b84a0f0d8bfd9.jpg) | ![](../images/d110fd511554b0cd17380a57c5199355902f56cc85c76bcd7bfb790335d499df.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6566f67bb9eecd16b751672498b241e561647bd42d9f78f79f4b84a0f0d8bfd9.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d110fd511554b0cd17380a57c5199355902f56cc85c76bcd7bfb790335d499df.jpg) |
 | 图20.2-4 | 图20.2-5 |
 
 

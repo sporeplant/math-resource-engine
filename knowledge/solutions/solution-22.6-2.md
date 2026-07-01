@@ -101,7 +101,7 @@ source_type: textbook
 
 条形统计图：
 
-![条形统计图](./images/22.6.2_习题B7_条形统计图.png)
+![条形统计图](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/22.6.2_习题B7_条形统计图.png)
 
 条形统计图的绘制：
 - 横轴：误差（kg），刻度为 -1.5, -1.0, -0.5, 0, 0.5, 1.0, 1.5
@@ -173,7 +173,7 @@ source_type: textbook
 
 频数分布直方图：
 
-![频数分布直方图](./images/22.6.2_习题B8_频数分布直方图.png)
+![频数分布直方图](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/22.6.2_习题B8_频数分布直方图.png)
 
 频数分布直方图的绘制：
 - 横轴：等候时间t/min，刻度为 0, 10, 20, 30, 40, 50, 60
@@ -233,7 +233,7 @@ source_type: textbook
 
 **参考解答**：
 
-![教材原图-扇形统计图](./images/6887c1d01e98d208aa2db5b9d760f94c70ecb87c02d93a6123df67a02a1c87bb.jpg)
+![教材原图-扇形统计图](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6887c1d01e98d208aa2db5b9d760f94c70ecb87c02d93a6123df67a02a1c87bb.jpg)
 
 观察图(1)扇形统计图，步行占40%，对应16人。
 
@@ -285,7 +285,7 @@ source_type: textbook
 
 **参考解答**：
 
-![教材原图-条形统计图](./images/d07c950f5c496fb802d5f1e4c4d020574509910746cd45410128bc7d2ba2c02c.jpg)
+![教材原图-条形统计图](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d07c950f5c496fb802d5f1e4c4d020574509910746cd45410128bc7d2ba2c02c.jpg)
 
 在扇形统计图中，"乘车"部分占整个圆的45%。
 
@@ -335,7 +335,7 @@ source_type: textbook
 
 **第三步：频数分布直方图**
 
-![频数分布直方图](./images/22.6.2_习题B10_频数分布直方图.png)
+![频数分布直方图](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/22.6.2_习题B10_频数分布直方图.png)
 
 横轴：维生素C含量(mg)，刻度为各分组区间
 纵轴：频数
@@ -513,11 +513,11 @@ source_type: textbook
 
 教材网格图：
 
-![教材网格图](./images/1d9eede3f9496b892ae59a7c0e45b5323968923bf18f0bee8a1490d690522204.jpg)
+![教材网格图](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1d9eede3f9496b892ae59a7c0e45b5323968923bf18f0bee8a1490d690522204.jpg)
 
 折线统计图：
 
-![折线统计图](./images/22.6.2_习题C12_折线统计图.png)
+![折线统计图](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/22.6.2_习题C12_折线统计图.png)
 
 折线统计图绘制要点：
 - 横轴：月份（1-12月）

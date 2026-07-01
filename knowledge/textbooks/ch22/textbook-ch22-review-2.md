@@ -47,7 +47,7 @@ lesson_id: ch22-review-2
 (2) 从总体看, 两市月平均降水量之间最明显的差别是什么? 
 
 (3) 两市月平均降水量差别最大的月份是____月，月平均降水量最接近的月份是____月。 
-![](../images/1d9eede3f9496b892ae59a7c0e45b5323968923bf18f0bee8a1490d690522204.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1d9eede3f9496b892ae59a7c0e45b5323968923bf18f0bee8a1490d690522204.jpg)
 (第12题)
 
 

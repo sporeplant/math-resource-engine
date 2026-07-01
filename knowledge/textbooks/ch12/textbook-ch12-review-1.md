@@ -11,7 +11,7 @@ lesson_id: ch12-review-1
 
 ## 一、知识结构
 
-![](../images/b590815e32db704da048fc8983758d21a3d15427159c7accf5647ead1eb0fe54.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b590815e32db704da048fc8983758d21a3d15427159c7accf5647ead1eb0fe54.jpg)
 
 
 ## 二、总结与反思
@@ -50,7 +50,7 @@ lesson_id: ch12-review-1
 
 4. 解分式方程一定要验根. 
 
-![](../images/c12661fa155a8da2634795db1b050c0c6c9d45d0ec7b649955fa0f5ab7056aeb.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c12661fa155a8da2634795db1b050c0c6c9d45d0ec7b649955fa0f5ab7056aeb.jpg)
 
 
 ## 复习题

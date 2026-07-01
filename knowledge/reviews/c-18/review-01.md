@@ -10,7 +10,7 @@
 
 ## 思维导图
 
-![](../images/8c489b5acb45ba2d7b2ffc45b6423218c0ee959b60dd0c315bc2d8e631f51fe2.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8c489b5acb45ba2d7b2ffc45b6423218c0ee959b60dd0c315bc2d8e631f51fe2.jpg)
 
 
 ## 知识点 01 有序数对
@@ -69,13 +69,13 @@ D．东经 $3 0 ^ { \circ }$ ，北纬 $1 2 0 ^ { \circ }$
 
 （4）若这只甲虫从 A 处去甲虫 P 处的行走路线依次为（+2，+2），（+1，﹣1），（﹣2，+3），（0，﹣2）， 请在图中标出P 的位置 
 
-![](../images/421c59dad58afe068e2fff42236875aafedf8dd07e984bd757e4b942fb8232c3.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/421c59dad58afe068e2fff42236875aafedf8dd07e984bd757e4b942fb8232c3.jpg)
 
 
-![](../images/7e352888b476fc7317348f84686750f1e3aaadcc01f2398a52322417869fb4f5.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7e352888b476fc7317348f84686750f1e3aaadcc01f2398a52322417869fb4f5.jpg)
 
 
-![](../images/54456baca8d09472ecaf89ad621ae41f2370695313eb190a7ce2fb5a2c3971ca.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/54456baca8d09472ecaf89ad621ae41f2370695313eb190a7ce2fb5a2c3971ca.jpg)
 
 
 ## 题型 01 有序数对表示位置的具体方法
@@ -112,16 +112,16 @@ D．东经 $1 0 8 ^ { \circ }$ ，北纬 $5 3 ^ { \circ }$
 
 【变式 3】生态园位于县城东北方向 5公里处，如图表示准确的是（ ） 
 
-![](../images/4c03f0b62751d299df9737ae0b40a6ce2a1d08243b5a2b33e024507c7c5d5f31.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4c03f0b62751d299df9737ae0b40a6ce2a1d08243b5a2b33e024507c7c5d5f31.jpg)
 
 
-![](../images/4bcb042526f02b27d52218b6b270193b1eaf0bd78431352e85116d7a57971977.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4bcb042526f02b27d52218b6b270193b1eaf0bd78431352e85116d7a57971977.jpg)
 
 
-![](../images/9d61f62242d5bf30db14b8969ff72496f2e2d50827102b3012bbf102413e796f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9d61f62242d5bf30db14b8969ff72496f2e2d50827102b3012bbf102413e796f.jpg)
 
 
-![](../images/ba86b4008f5a3b06800c0187a056a8b43b1f96cb4654bfd59a84275d1d0aee7d.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ba86b4008f5a3b06800c0187a056a8b43b1f96cb4654bfd59a84275d1d0aee7d.jpg)
 
 
 ## 题型 02 有序数对与位置
@@ -138,7 +138,7 @@ D．第 3列第4行
 
 【变式 1】中国象棋是中华民族的文化瑰宝，它源远流长，趣味性强，成为极其广泛的棋艺活动．如图， 若在象棋盘上建立平面直角坐标系，使“马”位于点（2，﹣2），“兵”位于点（﹣3，1），则“帅”位于 点（ ） 
 
-![](../images/18d8d9442cbed66ef9e324279e50463e61d21c0c8363b21cd99a80ab05e6c858.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/18d8d9442cbed66ef9e324279e50463e61d21c0c8363b21cd99a80ab05e6c858.jpg)
 
 
 A．（﹣1，1） 
@@ -151,7 +151,7 @@ D．（﹣2，﹣1）
 
 【变式 2】课间操时，小华、小军、小刚的位置如图，小华对小刚说，如果我的位置用（1，1）表示，小 军的位置用（3，2）表示，那么小刚的位置可以表示成（ 
 
-![](../images/612510ec06ade7a06cb0e572d27ce38c1fbb5f6f6492ffcb9af130124984bf9e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/612510ec06ade7a06cb0e572d27ce38c1fbb5f6f6492ffcb9af130124984bf9e.jpg)
 
 
 A．（5，4） 
@@ -204,7 +204,7 @@ D．相交
 
 （3）若这只甲虫从A 处去甲虫P 处的行走路线依次为：（+2，+2），（+2，﹣1），（﹣2，+3），（+1，﹣3）， 请在图中标出P 的位置 
 
-![](../images/05536a5858dd657b4c69707b32be0d2cc1679b218cb19afc888d98c7690cc3c1.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/05536a5858dd657b4c69707b32be0d2cc1679b218cb19afc888d98c7690cc3c1.jpg)
 
 
 【变式 1】如图，灰太狼和喜羊羊、美羊羊、沸羊羊、懒洋洋在5×5的方格（每个小方格的边长均为 1m） 图上沿着网格线运动．灰太狼从点A 处出发去寻找点 B，C，D，E处的某只羊，规定：向上、向右走为 正，向下、向左走为负．例如从点 A到点B记为A→B（+1，+3），从点B 到点 A记为B→A（﹣1，﹣3）， 其中第一个数表示左右方向的走动，第二个数表示上下方向的走动 
@@ -215,7 +215,7 @@ D．相交
 
 （3）在（2）中若灰太狼每走 1m需消耗0.6焦耳的能量，则灰太狼寻找喜羊羊的过程共需消耗多少焦耳 的能量？ 
 
-![](../images/d1dd8a429a2f2fe7b64f303d7b7ba1258dc2efa21b444b15be5e66aae9ae932f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d1dd8a429a2f2fe7b64f303d7b7ba1258dc2efa21b444b15be5e66aae9ae932f.jpg)
 
 
 1．下列描述，能确定具体位置的是（ ） 
@@ -230,7 +230,7 @@ D．东经 $1 1 8 ^ { \circ }$ ，北纬 $4 0 ^ { \circ }$
 
 2．如图，有 A，B，C 三点，如果 A 点用（1，1）来表示，B 点用（2，3）表示，则 C 点的坐标的位置可 以表示为（ ） 
 
-![](../images/fe0356ffec039de30cad4bc6db726d58c7b481f98bf69d5d81a85d49fa99b0c3.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/fe0356ffec039de30cad4bc6db726d58c7b481f98bf69d5d81a85d49fa99b0c3.jpg)
 
 
 A．（6，2） 
@@ -293,7 +293,7 @@ D．北纬 $2 5 ^ { \circ } 4 4 . 1 ^ { \prime }$ ，东经 $1 2 3 ^ { \circ } 2
 
 8．如图是雷达探测到的 6个目标，若目标 B 用 $( 3 0 , ~ 6 0 ^ { \circ }$ ）表示，目标 D 用（50，210°）表示，则表示 为（40，330°）的目标是（ ） 
 
-![](../images/87ff00d70a31c24ac20c4652fa122c259a5acd08634abd74e8272aac8f685428.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/87ff00d70a31c24ac20c4652fa122c259a5acd08634abd74e8272aac8f685428.jpg)
 
 
 A．目标A 
@@ -316,10 +316,10 @@ D．不在同一列或同一排上
 
 10．小米同学乘坐一艘游船出海游玩，游船上的雷达扫描探测得到的结果如图所示，每相邻两个圆之间距 离是 1km（小圆半径是 1km）．若小艇 C 相对于游船的位置可表示为（270°，1），则描述图中另外两艘 小艇A，B 的位置，正确的是（ ） 
 
-![](../images/55d8c7f2cdf17880bf1c5e6d114aa6f55071e1a7929d883f2252488f9bb58387.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/55d8c7f2cdf17880bf1c5e6d114aa6f55071e1a7929d883f2252488f9bb58387.jpg)
 
 
-![](../images/f3c7a078a4ec9428f84b5b81a2938d11af4b198ea16eee2a35c00d4a5bbedea7.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f3c7a078a4ec9428f84b5b81a2938d11af4b198ea16eee2a35c00d4a5bbedea7.jpg)
 
 
 A．小艇A（30°，3），小艇 B（60°，2） 
@@ -334,19 +334,19 @@ D．小艇A（120°，3），小艇B（210°，2）
 
 12．如图，若在象棋盘上建立直角坐标系，使“帅”位于点（1，﹣1），“马”位于点（4，﹣1），则“兵” 位于点（ ）． 
 
-![](../images/0d18296c0c99f6a8e562265ecffff2d4f1239444d87cf4a528e39285d9ba09a8.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0d18296c0c99f6a8e562265ecffff2d4f1239444d87cf4a528e39285d9ba09a8.jpg)
 
 
 13．五（1）班同学进行队列训练，每列人数相等，张静站在最后一列的最后一个，她的位置用数对表示是 （8，6），五（1）班有 名同学参加了队列训练 
 
 14．如图，雷达探测器在一次探测中发现了两个目标A，B．若目标A的位置表示为（30°，5），则目标B 的位置可以表示为 
 
-![](../images/644abd0ad7343ce74ae5a7c4722f10f9070046c485c9c40d3d63969f6b070d06.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/644abd0ad7343ce74ae5a7c4722f10f9070046c485c9c40d3d63969f6b070d06.jpg)
 
 
 15．同学们，你玩过五子棋吗？它的比赛规则是只要同色 5 子先成一条直线就获胜，如图是两人玩的一盘 2 棋，若白①的位置是（1，﹣5），黑 的位置是（2，﹣4），现轮到黑棋走，你认为黑棋放在 位置 就能获胜． 
 
-![](../images/c276d608047217a28e86edeab0e3dda09089420a0e3ec79cf1c94ebae141424f.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c276d608047217a28e86edeab0e3dda09089420a0e3ec79cf1c94ebae141424f.jpg)
 
 
 16．根据如图提供的信息回答问题 
@@ -357,7 +357,7 @@ D．小艇A（120°，3），小艇B（210°，2）
 
 （3）花店在学校南偏东30°方向400米处，请在如图中标示出来 
 
-![](../images/721a28f5741e6373586722df689a38d8820e6472d586a5c3b168a5bed7a6aa4c.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/721a28f5741e6373586722df689a38d8820e6472d586a5c3b168a5bed7a6aa4c.jpg)
 
 
 17．填一填，画一画 
@@ -370,7 +370,7 @@ D．小艇A（120°，3），小艇B（210°，2）
 
 （4）滑冰馆在世纪广场东偏南 75°，距世纪广场 1000 米的位置上，在图上用“▲”标出来 
 
-![](../images/fff66f03636224a4ac3308d9a77ad2d2a6f6c49cb368133eb0eec26fcacbc5e7.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/fff66f03636224a4ac3308d9a77ad2d2a6f6c49cb368133eb0eec26fcacbc5e7.jpg)
 
 
 18．如图是游乐园的一角 
@@ -379,7 +379,7 @@ D．小艇A（120°，3），小艇B（210°，2）
 
 （2）请你在图中标出秋千的位置，秋千在大门以东400m，再往北300m处 
 
-![](../images/354d222535fcb47f118a463be8977ecf2fbc0f190e2a1f0c14f2cfe68ba3d8dc.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/354d222535fcb47f118a463be8977ecf2fbc0f190e2a1f0c14f2cfe68ba3d8dc.jpg)
 
 
 19．如图是光明小区内的一幢商品房的示意图．若小赵家所在的位置用（4，2）表示 
@@ -396,4 +396,4 @@ D．小艇A（120°，3），小艇B（210°，2）
 
 （2）火车站在图书馆的南偏东 60°的方向上，并且火车站距图书馆的距离与中国银行距图书馆的距离 相等，请在图中画出火车站的位置 
 
-![](../images/06c716c506578d8620c34c611a4c190a970021661f30671df2a99725a7773438.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/06c716c506578d8620c34c611a4c190a970021661f30671df2a99725a7773438.jpg)

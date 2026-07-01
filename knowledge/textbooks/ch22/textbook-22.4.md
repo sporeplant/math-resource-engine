@@ -44,7 +44,7 @@ $1 0 0 \leqslant x <   1 2 0, 1 2 0 \leqslant x <   1 4 0, 1 4 0 \leqslant x <  
 # (4) 画频数分布直方图.
 
 用横轴表示全年月平均用电量，纵轴表示频数，用小长方形的高表示各组的频数，画如图22.4-1所示的图形，直观表示全年月平均用电量的分布情况。我们把这样的图形叫作频数分布直方图(histogram). 
-![](../images/f01de117d09a9c643fb0ad7636dc4ff80eb59a4dee8061d2ee7bc1ed09cb0a52.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f01de117d09a9c643fb0ad7636dc4ff80eb59a4dee8061d2ee7bc1ed09cb0a52.jpg)
 图22.4-1
 
 
@@ -66,7 +66,7 @@ $1 0 0 \leqslant x <   1 2 0, 1 2 0 \leqslant x <   1 4 0, 1 4 0 \leqslant x <  
 # 练习
 
 某学校八年级共有 $n$ 名男生。现测量他们的身高（单位：cm。结果精确到 $1 \mathrm{~cm}$ ），依据数据绘制的频数分布直方图如图所示。（为了避免有些数据落在分组的界限上，对作为分点的数保留一位小数） 
-![](../images/ff4ecd374db12bf0125ad0afa1992fbb96b5dd1ad2dd6b74a26b0a8785bd8d1e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ff4ecd374db12bf0125ad0afa1992fbb96b5dd1ad2dd6b74a26b0a8785bd8d1e.jpg)
 (1) 数据个数 $n$ 为多少? 数据的大致分布范围在哪两数之间? 
 
 (2) 组距和组数各为多少? 
@@ -85,7 +85,7 @@ $1 0 0 \leqslant x <   1 2 0, 1 2 0 \leqslant x <   1 4 0, 1 4 0 \leqslant x <  
 # A 组
 
 1. 某校举行科技知识竞赛，100名参赛同学最后得分(得分取整数)的频数分布直方图如图所示(频数轴刻度等间隔). 根据图中的信息写出下面问题的结果. 
-![](../images/ecb6cead8bee31141ae3de57a3f6e1529a77c0f303efcf61232147c50482ee27.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ecb6cead8bee31141ae3de57a3f6e1529a77c0f303efcf61232147c50482ee27.jpg)
 (第1题)
 
 (1) 标注频数轴上的刻度. 

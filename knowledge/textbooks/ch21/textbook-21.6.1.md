@@ -15,14 +15,14 @@ lesson_id: 21.6.1
 
 
 通过观察和验证, 图 21.6-1(1), (2), (3)皆为平行四边形, 而且有一组邻边相等。我们把有一组邻边相等的平行四边形叫作菱形(rhombus). 
-![](../images/af18eff90fa3554e785b397a3435d95453d62cfd99f41b38510f8953794577d1.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/af18eff90fa3554e785b397a3435d95453d62cfd99f41b38510f8953794577d1.jpg)
 菱形作为特殊的平行四边形，除具有平行四边形的所有性质外，还有哪些特殊的性质呢？ 
 
 
 # 一起探究
 
 1. 如图 21.6-2, 将一张菱形纸片 $ABCD$ 按图示方法折叠后, 再展开. 
-![](../images/423c51f5ed9939dff9583945b281371ac44910276dd06ecfba20b9cec32f8a06.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/423c51f5ed9939dff9583945b281371ac44910276dd06ecfba20b9cec32f8a06.jpg)
 图21.6-2
 
 
@@ -35,7 +35,7 @@ lesson_id: 21.6.1
 (1) 菱形 $ABCD$ 的四条边有怎样的数量关系? 
 
 (2) 菱形 $ABCD$ 的两条对角线有怎样的位置关系? 
-![](../images/12e2602a266a824bc213414b5d3e12739d60c41df39372713339b001ca163514.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/12e2602a266a824bc213414b5d3e12739d60c41df39372713339b001ca163514.jpg)
 图21.6-3
 
 
@@ -55,7 +55,7 @@ lesson_id: 21.6.1
 
 (3) $\angle ADB = \angle CDB, \angle ABD = \angle CBD,$ 
 $\angle D A C = \angle B A C, \angle D C A = \angle B C A.$
-![](../images/8d71e10264018f004e7346712dd3ac2fe0e6c9d7958be1fa5b1a2044b86d565b.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8d71e10264018f004e7346712dd3ac2fe0e6c9d7958be1fa5b1a2044b86d565b.jpg)
 图21.6-4
 
 
@@ -87,7 +87,7 @@ $\therefore \angle A B D = 6 0 ^ {\circ}.$
 $\therefore B D = A B = 4 \mathrm{cm}.$
 在 Rt△AOB 中，OB=2 cm， 
 $A O = \sqrt {A B ^ {2} - O B ^ {2}} = \sqrt {4 ^ {2} - 2 ^ {2}} = \sqrt {1 2} = 2 \sqrt {3} (\mathrm{cm}).$\therefore A C = 2 A O = 4 \sqrt {3} \mathrm{cm}.$
-![](../images/20e01b140c71718be95819f66026688baff09daeee5d82255ea55ef13e3de1ac.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/20e01b140c71718be95819f66026688baff09daeee5d82255ea55ef13e3de1ac.jpg)
 图21.6-5
 
 
@@ -96,7 +96,7 @@ $A O = \sqrt {A B ^ {2} - O B ^ {2}} = \sqrt {4 ^ {2} - 2 ^ {2}} = \sqrt {1 2} =
 1. 已知菱形的边长和一条对角线的长均为 $2 \mathrm{~cm}$ , 求这个菱形的面积. 
 
 2. 菱形 OABC 在平面直角坐标系中的位置如图所示， $\angle AOC=45^{\circ}$ ， $OC=\sqrt{2}$ 、求点 B 的坐标。 
-![](../images/3b56f8c695bd809e6c7b4bcd976ca94fcbf17074a1d727d4f325ef2a657d6aa1.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3b56f8c695bd809e6c7b4bcd976ca94fcbf17074a1d727d4f325ef2a657d6aa1.jpg)
 (第2题)
 
 
@@ -109,16 +109,16 @@ $A O = \sqrt {A B ^ {2} - O B ^ {2}} = \sqrt {4 ^ {2} - 2 ^ {2}} = \sqrt {1 2} =
 2. 在菱形 $ABCD$ 中, 对角线 $AC = 8$ , $BD = 6$ . 求菱形 $ABCD$ 的周长。 
 
 3. 如图, 菱形 $ABCD$ 的边长为 $2 \mathrm{~cm}$ , $E$ 为 $AB$ 的中点, 且 $DE \perp AB$ . 求菱形 $ABCD$ 的面积. 
-![](../images/719f5a9929f40e63671917126270a009baf90c27d0bd88ac43d1cd16ed78e44b.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/719f5a9929f40e63671917126270a009baf90c27d0bd88ac43d1cd16ed78e44b.jpg)
 (第3题)
-![](../images/5493bd512d45ce9f246e9ab5eb64b94fd82bbf3d39f9aede92dc77077fd8f827.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5493bd512d45ce9f246e9ab5eb64b94fd82bbf3d39f9aede92dc77077fd8f827.jpg)
 (第1题)
 
 
 # B 组
 
 4. 如图, 菱形 $ABCD$ 的对角线 $AC$ , $BD$ 相交于点 $O$ , 且 $AC = 6 \mathrm{~cm}$ , $BD = 8 \mathrm{~cm}$ , $AE \perp BC$ , 垂足为 $E$ . 求 $AE$ 的长. 
-![](../images/b86ee48b7b089e22728cfb3465c7e6d0b5cbc48c9a2a621d875751f66438d08c.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b86ee48b7b089e22728cfb3465c7e6d0b5cbc48c9a2a621d875751f66438d08c.jpg)
 (第4题)
 
 
@@ -127,9 +127,9 @@ $A O = \sqrt {A B ^ {2} - O B ^ {2}} = \sqrt {4 ^ {2} - 2 ^ {2}} = \sqrt {1 2} =
 (1) 求证: $BD = EC$ . 
 
 (2) 求证: $S_{\text {菱形} A B C D} = S_{\triangle A E C}$ . 
-![](../images/178deac1a3968285c20566ab40662d162c5bd9e408d1332ea50c6fcad1d70b66.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/178deac1a3968285c20566ab40662d162c5bd9e408d1332ea50c6fcad1d70b66.jpg)
 (第 5 题)
-![](../images/499e535bc75091c9f5d44b99e974045cb73486f713f226e3464afb135b420512.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/499e535bc75091c9f5d44b99e974045cb73486f713f226e3464afb135b420512.jpg)
 (第6题)
 
 

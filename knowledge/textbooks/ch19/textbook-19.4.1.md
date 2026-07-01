@@ -56,7 +56,7 @@ lesson_id: 19.4.1
 
 | | | |
 |:---:|:---:|:---:|
-| ![](../images/7b1eabe9dd9d7cf186a3c67dc4acceacca2af105e0b3e41d26483238537b8238.jpg) | ![](../images/e50111cc9aa07287c0b4182b8cf8676a8d1b885784301c5bc3e158821d5ed343.jpg) | ![](../images/ef92ce68296373573428366b84941c62d8928aee6be96dabdee4300d339d6c82.jpg) |
+| ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7b1eabe9dd9d7cf186a3c67dc4acceacca2af105e0b3e41d26483238537b8238.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e50111cc9aa07287c0b4182b8cf8676a8d1b885784301c5bc3e158821d5ed343.jpg) | ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ef92ce68296373573428366b84941c62d8928aee6be96dabdee4300d339d6c82.jpg) |
 | (1) | (2) | (3) |
 
 

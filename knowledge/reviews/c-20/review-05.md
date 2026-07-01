@@ -10,7 +10,7 @@
 
 ## 思维导图
 
-![](../images/e6ba500e55eace3d56294ebee13df0d9c8d7f6b50e9aba788a65d1bb15d72ba4.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e6ba500e55eace3d56294ebee13df0d9c8d7f6b50e9aba788a65d1bb15d72ba4.jpg)
 
 <details>
 <summary>flowchart</summary>
@@ -118,7 +118,7 @@ D． $y = \frac { 1 } { 2 } x - 2$
 ①列表：完成表格；  
 ②画出 $y = | x | { + } 1$ 的图象；
 
-![](../images/f6c971d8d6061d58a3f5bebd99e5971425a43ea23df4f4c49174c12dd5ef8ecf.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f6c971d8d6061d58a3f5bebd99e5971425a43ea23df4f4c49174c12dd5ef8ecf.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -203,7 +203,7 @@ O
 （1）直接写出当 $0 { \leqslant } x { \leqslant } 4 0 0$ 和 $x { > } 4 0 0$ 时，y 与 x 的函数关系式；  
 （2）广场上甲、乙两种花卉的种植面积共 $1 0 0 0 m ^ { 2 }$ 最终花费为 121000元，那么甲、乙两种花卉的种植面积分别为多少？ y/元→
 
-![](../images/d5f5e1612430eaf2ddd52d1a6a623277ff753b79c20043f11f746368da939464.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d5f5e1612430eaf2ddd52d1a6a623277ff753b79c20043f11f746368da939464.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -216,9 +216,9 @@ O
 | 500 | 160 |
 </details>
 
-![](../images/598bc560794a411b9564f1046a956bc849302b7d408a093e55fa8f44053aaece.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/598bc560794a411b9564f1046a956bc849302b7d408a093e55fa8f44053aaece.jpg)
 
-![](../images/e658c11054bfab356112fcc98dfaba469304f8506fb7bc6b34ad412ab592a8d1.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e658c11054bfab356112fcc98dfaba469304f8506fb7bc6b34ad412ab592a8d1.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -324,7 +324,7 @@ D．﹣5
 
 【变式 5】如图，直线 $y = 2 x + 4$ 与 x 轴、y 轴分别交于点 A、B 两点，以 OB 为斜边在 y轴右侧作 $\ R t { \triangle } O B C$ 且 $\angle O B C = 3 0 ^ { \circ }$ °，将直线 $y = 2 x + 4$ 向下平移 m 个单位，使平移后的直线经过点 C，则 m 的值是（ ）
 
-![](../images/99c61dabd5d541b251af1261401119509c722d6c21321c840611f4ee77021ef6.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/99c61dabd5d541b251af1261401119509c722d6c21321c840611f4ee77021ef6.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -351,7 +351,7 @@ D．4
 
 画函数 $y _ { 1 } = 2 | x |$ 的图象，经历列表、描点、连线过程得到函数图象如图所示：
 
-![](../images/ca71f9453b014b340be7466b788d904575a1f6d63b2d2fe25cfc6a660d5c28e9.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ca71f9453b014b340be7466b788d904575a1f6d63b2d2fe25cfc6a660d5c28e9.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -428,7 +428,7 @@ D．1
 （1）求直线 l 的解析式，直线与坐标轴的交点坐标；  
 （2）求 $\triangle A O B$ 的面积
 
-![](../images/60b5d5bbe3165b1d5f8db5ff34943c687bbf7546e6ba40120e59786295ba9c8a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/60b5d5bbe3165b1d5f8db5ff34943c687bbf7546e6ba40120e59786295ba9c8a.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -456,7 +456,7 @@ D． $y = 4 x + 1$
 
 【变式 4】在平面直角坐标系中，已知直线 l： $y = k x + b$ 过点 A（2，2），且与坐标轴交于点 B，则当△OAB的面积为 2，且直线 l 与 y 轴不平行时，直线 l 的表达式为
 
-![](../images/c601bee0896285102878b0baadf447de75c00e5ad7b93423cf777dcc88924ca5.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c601bee0896285102878b0baadf447de75c00e5ad7b93423cf777dcc88924ca5.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -482,7 +482,7 @@ C．回家的平均速度是每小时 50 千米
 
 D．与家相距 10千米时，x 的值为 4.74
 
-![](../images/2b6cb6ea5e451aad1893043038644f6b76340cac04b2f7c03c46ba817734a450.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2b6cb6ea5e451aad1893043038644f6b76340cac04b2f7c03c46ba817734a450.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -504,7 +504,7 @@ C．小李返回学校的速度为 $\frac { 6 0 0 } { 7 } \boldsymbol { m } / m 
 
 D．两人出发 16min 时，小李与小明相距 $\frac { 3 2 0 } { 7 } \pi$
 
-![](../images/df0afb8452b35f084904bb29d5e99d0b37ebfbd61e5334986f3d8c36f649b70c.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/df0afb8452b35f084904bb29d5e99d0b37ebfbd61e5334986f3d8c36f649b70c.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -529,7 +529,7 @@ C．甲乙同时到达 B 地
 
 D．甲的速度是 60km/h
 
-![](../images/4a2cc6cf8d0270f4c613a9c70e413a48dd1c96cc940210a76f0af74a886222ca.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4a2cc6cf8d0270f4c613a9c70e413a48dd1c96cc940210a76f0af74a886222ca.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -542,7 +542,7 @@ D．甲的速度是 60km/h
 
 【变式 3】小明早晨 7：20从家里出发步行去学校（学校与家的距离是 1000 米），4 分钟后爸爸发现小明数学书没带，骑电瓶车去追赶，7：26追上小明并将数学书交给他（交接时间忽略不计），交接完成后爸爸放慢速度原路返回，7：30小明到达学校，同时爸爸也正好到家．如图，线段 OA 与折线 B﹣C﹣D 分别表示小明和爸爸离开家的距离 s（米）关于时间 t（分钟）的函数图象，下列说法错误的是（ ）
 
-![](../images/174e38419ad9069c6e5c9636c29fbaa02a5c47590bcb386a9508b03ffcce3762.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/174e38419ad9069c6e5c9636c29fbaa02a5c47590bcb386a9508b03ffcce3762.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -565,7 +565,7 @@ D．7：25 和 7：27 时，父子俩均相距 200 米
 
 【变式 4】甲、乙两人分别从 A、B 两地同时出发，相向而行，匀速前往 B 地、A 地，两人相遇时停留了 4min，又各自按原来速度前往目的地，甲、乙两人之间的距离 y（m）与甲所用时间 x（min）之间的函数关系如图所示，给出下列结论：①A、B 之间的距离为 1200m；②24min 时，甲、乙两人中有一人到达目的地；③b＝800；④a＝32，其中正确的结论个数为（ ）
 
-![](../images/235300c2a8d1edc6ca469db7890467298ec424ee76c2e94a252b2878bd35d772.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/235300c2a8d1edc6ca469db7890467298ec424ee76c2e94a252b2878bd35d772.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -595,7 +595,7 @@ D．4 个
 
 其中说法正确的有（ ）
 
-![](../images/a30d53ef7d389b1d1e470d4167a2e65f67b040aeaf97f5e93a19106fe6d01304.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a30d53ef7d389b1d1e470d4167a2e65f67b040aeaf97f5e93a19106fe6d01304.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -656,7 +656,7 @@ D．4 个
 （2）若该公司计划用 400万元购进以上两种型号的新能源汽车（两种型号的汽车均要购买，且 400万元全部用完），问该公司有哪几种购买方案，请通过计算列举出来；  
 （3）若该汽车销售公司销售 1 辆 A 型汽车可获利 0.8 万元，销售 1辆 B 型汽车可获利 0.5万元，在（2）中的购买方案中，假如这些新能源汽车全部售出，哪种方案获利最大？最大利润是多少万元？
 
-![](../images/0fcba211bd6bf89248215bb8ea89135a336b23a800b22754dd131fcd2b92c945.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0fcba211bd6bf89248215bb8ea89135a336b23a800b22754dd131fcd2b92c945.jpg)
 
 # 强化训练
 
@@ -712,7 +712,7 @@ D． $y = \frac { 2 } { 3 } x - 2$ 或 y   $y = - \frac { 2 } { 3 } x - 2$
 
 6．象棋起源于中国，中国象棋文化历史悠久．如图所示是某次对弈的残图，如果建立平面直角坐标系，使棋子“帅”位于点（﹣2，﹣1）的位置，则在同一坐标系下，经过棋子“帅”和“马”所在的点的一次函数解析式为（
 
-![](../images/d4772bf410e24f461db4238862d640461f9089ea34f9f9df3a36697f83e70df9.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d4772bf410e24f461db4238862d640461f9089ea34f9f9df3a36697f83e70df9.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -725,7 +725,7 @@ D． $y = \frac { 2 } { 3 } x - 2$ 或 y   $y = - \frac { 2 } { 3 } x - 2$
 
 第 6题
 
-![](../images/189065fb963724bcc3c4e5a4d2f8f7985b3820bf2af7b8411fd6423017004ad2.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/189065fb963724bcc3c4e5a4d2f8f7985b3820bf2af7b8411fd6423017004ad2.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -778,7 +778,7 @@ C．甲每小时比乙多骑行 8km
 
 D．相遇后两人又骑行了 14min，此时两人相距 2km
 
-![](../images/e10852e72fff119a43efb12715a10910f993f80149c762cd57e480dc7bb40240.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e10852e72fff119a43efb12715a10910f993f80149c762cd57e480dc7bb40240.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -793,7 +793,7 @@ D．相遇后两人又骑行了 14min，此时两人相距 2km
 
 10．如图，杆秤是利用杠杆原理来称物品质量的简易衡器，其秤砣到秤纽的水平距离 y cm 与所挂物重 x kg之间满足一次函数关系．若不挂重物时，秤砣到秤纽的水平距离为 2.5cm，挂 $1 k g$ 物体时，秤砣到秤纽的水平距离为 8cm．则当秤砣到秤纽的水平距离为 35.5cm 时，秤钩所挂物重为（ ）
 
-![](../images/93824be42022648c07a8b50d2d2404ec989bb6a1f4f792be02761ad0577e1a77.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/93824be42022648c07a8b50d2d2404ec989bb6a1f4f792be02761ad0577e1a77.jpg)
 
 <details>
 <summary>natural_image</summary>
@@ -815,7 +815,7 @@ D． $7 k g$
 
 13．已知 $\triangle A B C$ 的顶点坐标分别为 A（﹣5，0），B（3，0），C（0，3），当过点 C 的直线 l 将 $\triangle A B C$ 分成面积相等的两部分时，直线 l 所表示的函数表达式为
 
-![](../images/4ef0cabd15594520493965921f5ea3442536629523a1ea08e02bf7cbf2a72363.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4ef0cabd15594520493965921f5ea3442536629523a1ea08e02bf7cbf2a72363.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -827,7 +827,7 @@ A O B x
 
 14．如图，在平面直角坐标系中，长方形 ABCD 的边 AB 在 x 轴的正半轴上，点 D 和点 B 的坐标分别为（4，3）、（10，0），过点 D 的正比例函数 y＝kx 图象上有一点 P，使得点 D 为 OP 的中点，将 $y = k x$ 的图象沿y 轴向下平移得到 $y = k x + b$ 的图象，若点 P 落在长方形 ABCD 的内部，则 b 的取值范围是
 
-![](../images/474380a9849c39f8b9f62e3c056c53118a98653fc204a7185e029457b985e204.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/474380a9849c39f8b9f62e3c056c53118a98653fc204a7185e029457b985e204.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -843,7 +843,7 @@ O A B x
 
 两架无人机所在的位置距离地面的高度 y（单位：m）与无人机上升的时间x（单位：s）之间的关系如图所示.10s 时，两架无人机的高度差为 m
 
-![](../images/c08f0c9e0b6e008eb6a0779cc7e17a6d51ae1be1525c67958bba3eda52d5867e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c08f0c9e0b6e008eb6a0779cc7e17a6d51ae1be1525c67958bba3eda52d5867e.jpg)
 
 <details>
 <summary>line chart</summary>
@@ -861,7 +861,7 @@ O A B x
 
 （2）若点 D 为直线 AB 上一动点，且 $\triangle { O B C }$ 的面积是 $\triangle O A D$ 面积的一半，试求点 D 的坐标
 
-![](../images/51b2ffc703a6985f7625af6ad37a573d897fd8f986ca5e5e53e6c7b1fcb52c86.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/51b2ffc703a6985f7625af6ad37a573d897fd8f986ca5e5e53e6c7b1fcb52c86.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -896,7 +896,7 @@ x
 
 （3）求△ACE 的面积
 
-![](../images/977b2b24a46504bee33e9cc2d85e972bd2c93890be2e8c936c272292c2d6f978.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/977b2b24a46504bee33e9cc2d85e972bd2c93890be2e8c936c272292c2d6f978.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -916,7 +916,7 @@ A O E x
 
 （3）该工厂前 7 天的总利润是多少？
 
-![](../images/4b3211484fdb4a7d1bdf76cdcf16c5eb045a73f8bc7dc37d306341e070fdcc85.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4b3211484fdb4a7d1bdf76cdcf16c5eb045a73f8bc7dc37d306341e070fdcc85.jpg)
 
 <details>
 <summary>line chart</summary>

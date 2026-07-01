@@ -10,7 +10,7 @@
 
 ## 思维导图
 
-![](../images/c37b2f206b4468a770e730ebe1bd98a8d64c9b14890d32e399fbca3244ce7955.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c37b2f206b4468a770e730ebe1bd98a8d64c9b14890d32e399fbca3244ce7955.jpg)
 
 <details>
 <summary>flowchart</summary>
@@ -82,7 +82,7 @@ D．点（1，3）在函数图象上
 
 A
 
-![](../images/bb116b91b80c525b25ce84cdf856ddeb4d810f9ddb2aa294b0aef2ab904a740e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bb116b91b80c525b25ce84cdf856ddeb4d810f9ddb2aa294b0aef2ab904a740e.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -94,7 +94,7 @@ x
 
 B
 
-![](../images/1e6437884e568f76545e1801d653d516cdaa9fdd85f0217f195746861c0784e4.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1e6437884e568f76545e1801d653d516cdaa9fdd85f0217f195746861c0784e4.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -106,7 +106,7 @@ x
 
 C．
 
-![](../images/599cb92d099be4a5986700c527475d0c3b7769c4fbd13ea0ffd3790a9dddc3de.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/599cb92d099be4a5986700c527475d0c3b7769c4fbd13ea0ffd3790a9dddc3de.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -118,7 +118,7 @@ x
 
 D
 
-![](../images/5635e8321e5717002616536fb48781a4cbafce91718007197be6cfb947169010.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5635e8321e5717002616536fb48781a4cbafce91718007197be6cfb947169010.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -127,9 +127,9 @@ y
 O x
 </details>
 
-![](../images/95b5cce4e84980f74cba867b1ec75626785df411cc61d70d9e615fff20bb3f10.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/95b5cce4e84980f74cba867b1ec75626785df411cc61d70d9e615fff20bb3f10.jpg)
 
-![](../images/106624b0a5ca987dc5151ae469130e2b5e632f29a7cc678958ba10090eafb8e0.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/106624b0a5ca987dc5151ae469130e2b5e632f29a7cc678958ba10090eafb8e0.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -312,7 +312,7 @@ D．4
 
 【典例 1】已知 k＞0，则一次函数 $y = - k x + k$ 的图象可能是（ ）
 
-![](../images/65539a98f70027c52bb78aaee66ac80f1de0797bc60c81f283c7edbbac8ee7d1.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/65539a98f70027c52bb78aaee66ac80f1de0797bc60c81f283c7edbbac8ee7d1.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -320,7 +320,7 @@ D．4
 A.
 </details>
 
-![](../images/0995b8ff3c02dd122f79468c287c5b33858ff8985c8cb1ddea95c5a10d9f2830.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/0995b8ff3c02dd122f79468c287c5b33858ff8985c8cb1ddea95c5a10d9f2830.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -328,7 +328,7 @@ A.
 B.
 </details>
 
-![](../images/ac518848c95d106e668603b1f81e5fbc41b91a02a026e838b9e7e5347009a873.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ac518848c95d106e668603b1f81e5fbc41b91a02a026e838b9e7e5347009a873.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -338,7 +338,7 @@ O x
 C.
 </details>
 
-![](../images/8040dfdcbdd3a2f6a4f1d5b431507d4fe4d5c903f521474010c70e465e583269.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8040dfdcbdd3a2f6a4f1d5b431507d4fe4d5c903f521474010c70e465e583269.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -351,7 +351,7 @@ D.
 
 【变式1】若点 $( m , \ n )$ 在第二象限，则一次函数 $y = n x + m - n$ 的图象可能是（ ）
 
-![](../images/7ec63bcd5c5f4947d66c1fc923bc4f703e34b18743f959d5a4fbe1d7feac8d57.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7ec63bcd5c5f4947d66c1fc923bc4f703e34b18743f959d5a4fbe1d7feac8d57.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -361,7 +361,7 @@ O x
 A.
 </details>
 
-![](../images/11d11a4011780bb6c698135befa3a4fd918375350a30228f6d065ff6211d8dda.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/11d11a4011780bb6c698135befa3a4fd918375350a30228f6d065ff6211d8dda.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -371,7 +371,7 @@ O x
 B.
 </details>
 
-![](../images/b50ce599c395219d112b6a2a3b7bb1dee430c2c571fedf5b048ac9154bd030eb.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b50ce599c395219d112b6a2a3b7bb1dee430c2c571fedf5b048ac9154bd030eb.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -381,7 +381,7 @@ O x
 C.
 </details>
 
-![](../images/bbab1f0bccadfdc3be335b72c488b952174a1cbbb8994fed8a2a120c78c3ed7d.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bbab1f0bccadfdc3be335b72c488b952174a1cbbb8994fed8a2a120c78c3ed7d.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -393,7 +393,7 @@ D.
 
 【变式2】若式子 $\sqrt { k - 1 } + ( k - 1 ) ^ { 0 }$ 有意义，则一次函数 $y = \ ( k - 1 ) \ x + k$ 的图象可能是（ ）
 
-![](../images/182c1bc5e7fc9bfd6ce7dafd4e01c07ff6b4c1331e640a3a09a9ff02503e6881.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/182c1bc5e7fc9bfd6ce7dafd4e01c07ff6b4c1331e640a3a09a9ff02503e6881.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -403,7 +403,7 @@ O x
 A.
 </details>
 
-![](../images/5bf907e5c253dec19f32aadb55507939b6d61f544c04e00c9f08cfe3855dc0ce.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5bf907e5c253dec19f32aadb55507939b6d61f544c04e00c9f08cfe3855dc0ce.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -416,17 +416,17 @@ B.
 
 C．
 
-![](../images/2cdd948677919ebb330a6d34ac39754363ea15b084c9d74a8bfcbefae25612ba.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2cdd948677919ebb330a6d34ac39754363ea15b084c9d74a8bfcbefae25612ba.jpg)
 
 D．
 
-![](../images/7669694a84802c21dc7f002c018df0c988c238955bee77d19ab37130290c32da.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7669694a84802c21dc7f002c018df0c988c238955bee77d19ab37130290c32da.jpg)
 
 【变式 3】在同一平面直角坐标系中，函数 $y = k x$ 和 $y = - \ k x + k \ ( \ k \neq 0 )$ ）的图象可能是（ ）
 
 A
 
-![](../images/a4dcd1715036fae9b84a638214b9100dff90304ca38521041bb961a244df56ca.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a4dcd1715036fae9b84a638214b9100dff90304ca38521041bb961a244df56ca.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -438,7 +438,7 @@ x
 
 B
 
-![](../images/a9319da7cfa55186453da98bfc5c33530c5c2273f793867daa95a48527adc6a5.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a9319da7cfa55186453da98bfc5c33530c5c2273f793867daa95a48527adc6a5.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -450,7 +450,7 @@ x
 
 C．
 
-![](../images/330dcd9b9bfa5ef3b5bd0df626e38b25ec2c41711ee05b4d715513e1f27abb29.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/330dcd9b9bfa5ef3b5bd0df626e38b25ec2c41711ee05b4d715513e1f27abb29.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -462,7 +462,7 @@ O
 
 D．
 
-![](../images/5f871e13b7310999da42bb2c82c960f6f0ce0a599cdcc4d2351ec4ec4a0a7c6d.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5f871e13b7310999da42bb2c82c960f6f0ce0a599cdcc4d2351ec4ec4a0a7c6d.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -476,7 +476,7 @@ O
 
 A
 
-![](../images/45a8e78ef8618b07fb8e14bbaf73b50c7131dda5f09f125c5ee8435e001c996e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/45a8e78ef8618b07fb8e14bbaf73b50c7131dda5f09f125c5ee8435e001c996e.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -488,7 +488,7 @@ x
 
 B
 
-![](../images/6091539bcb3ce899b11bec5c9bd6f42f8cd76b0462300e2896a9788d3c635465.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6091539bcb3ce899b11bec5c9bd6f42f8cd76b0462300e2896a9788d3c635465.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -498,7 +498,7 @@ Mathematical graph showing two intersecting lines in a Cartesian coordinate syst
 
 C．
 
-![](../images/020e5035134efc85ac7b54ebf5729920c21cacceac5ef6c7453e98a193c39547.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/020e5035134efc85ac7b54ebf5729920c21cacceac5ef6c7453e98a193c39547.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -510,7 +510,7 @@ x
 
 D．
 
-![](../images/2128e7077dffb63c7b93b66c03ab19cbe169d128dd784db0f81ffbce9cdc0352.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2128e7077dffb63c7b93b66c03ab19cbe169d128dd784db0f81ffbce9cdc0352.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -524,7 +524,7 @@ x
 
 A
 
-![](../images/71fe3d97db34826a189dbbcf2edc5370f185ae67e94251160ec109bdec9e1ca3.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/71fe3d97db34826a189dbbcf2edc5370f185ae67e94251160ec109bdec9e1ca3.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -538,7 +538,7 @@ y₁
 
 B
 
-![](../images/b7c0c4b8e54914db8054f50ade285e6c3c3255374db32d8d0e93d8a8c833d4e0.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b7c0c4b8e54914db8054f50ade285e6c3c3255374db32d8d0e93d8a8c833d4e0.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -552,7 +552,7 @@ x
 
 C．
 
-![](../images/6e48ef13ad3aca95ea7a4fd76c804bd507420151481c988fb80c3879752c6311.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6e48ef13ad3aca95ea7a4fd76c804bd507420151481c988fb80c3879752c6311.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -564,7 +564,7 @@ O x
 
 D．
 
-![](../images/a1ca1f51b546bcc5b586cd8905aea722b64507a75728dcd21aaa7d28a2105eda.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a1ca1f51b546bcc5b586cd8905aea722b64507a75728dcd21aaa7d28a2105eda.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -628,7 +628,7 @@ C． y-y1 $\frac { \mathbf { y } _ { 2 } - \mathbf { y } _ { 1 } } { \mathbf { x
 
 D． y2-y1 $\frac { \mathbf { y } _ { 2 } - \mathbf { y } _ { 1 } } { \mathbf { x } _ { 2 } - \mathbf { x } _ { 1 } } \equiv 0$
 
-![](../images/6dfa65fe8b4aa14b4b427dfeb6308f073cfa0f3e46add5321f02344adb08f536.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6dfa65fe8b4aa14b4b427dfeb6308f073cfa0f3e46add5321f02344adb08f536.jpg)
 
 ## 强化训练
 
@@ -704,7 +704,7 @@ D．不能确定
 
 8．一次函数 $y _ { 1 } = a x + b$ 与 ${ } y _ { 2 } = b x + a $ 在同一直角坐标系中的图象可能是（ ）
 
-![](../images/c8f624e28c53bdc2c6fefd9893c027a0b4a58b4b55f364af8659fba60d0863e8.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c8f624e28c53bdc2c6fefd9893c027a0b4a58b4b55f364af8659fba60d0863e8.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -716,7 +716,7 @@ x
 y₂
 </details>
 
-![](../images/1dbe305f01212a71c0249f36f389148c973911aad749a8616eba848427a14286.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1dbe305f01212a71c0249f36f389148c973911aad749a8616eba848427a14286.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -732,7 +732,7 @@ A
 
 B
 
-![](../images/46d522a6aace73ccf7381bb7415a99c8997eecc4f22c81eee8f8b402fb96e335.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/46d522a6aace73ccf7381bb7415a99c8997eecc4f22c81eee8f8b402fb96e335.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -744,7 +744,7 @@ x
 y₁
 </details>
 
-![](../images/a98df10dde65456b64bfe2bed8db2eb2e5912468fbc768375a1662130e606c16.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a98df10dde65456b64bfe2bed8db2eb2e5912468fbc768375a1662130e606c16.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -790,7 +790,7 @@ D．第三、四象限
 
 15．如图，直线 $l : y = \frac { 2 } { 3 } x + 4$ 与 x 轴、y 轴分别交于点 A、B，点 C 是直线 l 上的一点，且其纵坐标为 2，点D 为 OA 的中点，点 P 为 y 轴上一动点，当 $P C + P D$ 的值最小时，则 $\triangle P C D$ 的周长是
 
-![](../images/93c2001b241ad641a607b746ee865113f533ff6a5d9e7894d5cf2161b6145942.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/93c2001b241ad641a607b746ee865113f533ff6a5d9e7894d5cf2161b6145942.jpg)
 
 <details>
 <summary>text_image</summary>
@@ -827,7 +827,7 @@ A D O x
 （2）描点连线：在平面直角坐标系 $x O y$ 中，将各点进行描点、连线，画出函数 $y = 2 x + 1$ 的图象；  
 （3）写出函数 $y = 2 x + 1$ 的图象的两条特征
 
-![](../images/5f0bb5024d8672957d3a489353136f27a0cb9ffc2541443ea61188774791fd62.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5f0bb5024d8672957d3a489353136f27a0cb9ffc2541443ea61188774791fd62.jpg)
 
 <details>
 <summary>natural_image</summary>
@@ -840,7 +840,7 @@ Empty Cartesian coordinate system with x and y axes, no plotted data or text
 （1）当点 P 的横坐标为 3 时， $\triangle A P O$ 的面积为多少？  
 （2）设 $\triangle A P O$ 面积为 S，用含 x 的解析式表示 S，并写出 x 的取值范围
 
-![](../images/aabc34caa340560611e2979afa20ad7c9703002089949cd8ed5456606399d6f0.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/aabc34caa340560611e2979afa20ad7c9703002089949cd8ed5456606399d6f0.jpg)
 
 <details>
 <summary>text_image</summary>

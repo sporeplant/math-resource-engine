@@ -39,11 +39,11 @@ type: 教材原文
 （1）观察图22.5-1，请说明身高 $y$ 随小臂长 $x$ 的增长有怎样的变化趋势. 
 
 (2) 你能用一条直线来描述这种变化趋势吗? 如果能, 应怎样确定这条直线以及对应的一次函数呢? 
-![](../images/bf3a4dfe0fc250f491dc10602ea392b9193ed854ad9338d5b534a26a520a4cfd.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bf3a4dfe0fc250f491dc10602ea392b9193ed854ad9338d5b534a26a520a4cfd.jpg)
 图22.5-1
 
 从图形可以看出，身高 $y$ 随小臂长 $x$ 的增长呈大致的直线增长趋势。我们可以画一条直线，使其整体上与图中的数据点较接近，用直线对应的一次函数近似描述这种变化趋势。 
-![](../images/e2106297f15f207a5feb869866fb1f0bb0fd68cbba34f091a68212751856fc31.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e2106297f15f207a5feb869866fb1f0bb0fd68cbba34f091a68212751856fc31.jpg)
 图22.5-2
 
 选取直线上的两点，如(24.0, 159.8)和(27.0, 170.0)，用待定系数法确定直线对应的一次函数表达式。设 $y = kx + b (k, b \text{为常数，} k \neq 0)$ ，所以， 
@@ -77,7 +77,7 @@ $$
 1. 从班里随机选取 10 名男生, 测量他们的手掌长 $x$ (cm) 和身高 $y$ (cm). 
 
 (1) 设计统计表记录数据，并在平面直角坐标系中描出点 $(x, y)$ . 
-![](../images/fd1b959e57fa4f0a7c7c9841796b7095407f64738aedb45abf89d2b75aa1ece9.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/fd1b959e57fa4f0a7c7c9841796b7095407f64738aedb45abf89d2b75aa1ece9.jpg)
 (2) 请确定一个一次函数，近似表示 $y$ 与 $x$ 之间的关系. 
 
 (3) 在班中随机选择一名男生, 测量他的手掌长和身高, 比较身高的推测值与实际身高, 说明误差的大小. 

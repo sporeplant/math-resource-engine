@@ -13,10 +13,10 @@ lesson_id: ch13-activity-1
 
 大量出土文物表明，很早以前，我国劳动人民就已经掌握了几何学的基本知识，并将其广泛应用于生产生活实际，如一些陶器、青铜器、玉器、丝织品等，上面都有设计精巧的图案。文物中的几何元素，不仅体现了我国古人的数学智慧，也反映了他们对几何美学的深刻理解与熟练应用。这些瑰宝是中华民族的骄傲，印证了我国在几何学领域的重要历史贡献，为世界几何学发展史书写了璀璨的篇章。 
 
-![](../images/b47b49dc692bcbfb1481f0a667da077519df941c87841d82b9902863cbb0065e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b47b49dc692bcbfb1481f0a667da077519df941c87841d82b9902863cbb0065e.jpg)
 
 
-![](../images/80b8a8132dc1930b9bc3f2a2929d31bf7a43e00d99da4cab4e35f974fab570f7.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/80b8a8132dc1930b9bc3f2a2929d31bf7a43e00d99da4cab4e35f974fab570f7.jpg)
 
 
 
@@ -29,14 +29,14 @@ lesson_id: ch13-activity-1
 后母戊鼎
 
 
-![](../images/47980e98f40006905ed95b56e761313f7d6ac4d805e24036ce35199fa4b6e1b2.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/47980e98f40006905ed95b56e761313f7d6ac4d805e24036ce35199fa4b6e1b2.jpg)
 
 
 
 战国玉透雕双夔龙纹佩
 
 
-![](../images/f636bdcb243a7af146f5234cb7f646346a2fa7ff2903f4d7c2515fa7730a0b10.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f636bdcb243a7af146f5234cb7f646346a2fa7ff2903f4d7c2515fa7730a0b10.jpg)
 
 
 

@@ -2,7 +2,7 @@
 
 1．小静同学观察台球比赛，从中受到启发，抽象成数学问题如下：如图，已知长方形OABC，小球P从（0， 3）出发，沿如图所示的方向运动，每当碰到长方形的边时反弹，反弹时反射角等于入射角，第一次碰到 长方形的边时的位置为 $P _ { 1 }$ （3，0），当小球 P 第 2024 次碰到长方形的边时，若不考虑阻力，点 P2024的 坐标是（ ） 
 
-![](../images/1efdda3b0f55f023794acbd0ba310d1b4f3d93b6ff7aa5a7fdfb2e902280d2c1.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1efdda3b0f55f023794acbd0ba310d1b4f3d93b6ff7aa5a7fdfb2e902280d2c1.jpg)
 
 
 A．（1，4） 
@@ -39,7 +39,7 @@ D．（3，0）
 
 2．如图，点 A（0，1），点 A1（2，0），点 A2（3，2），点 A3（5，1），点 $A _ { 4 } ~ ( 6 , ~ 3 ) ~ \cdots$ ，按照这样的规律 下去，点 A2024的坐标为（ ） 
 
-![](../images/14b619c60d89619e77d7b5691f1512d2131debdd51bd49a1776fca178963ec72.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/14b619c60d89619e77d7b5691f1512d2131debdd51bd49a1776fca178963ec72.jpg)
 
 
 A．（3035，1011） 
@@ -86,7 +86,7 @@ $$
 
 3．如图，在平面直角坐标系中， $\triangle A _ { 1 } A _ { 2 } A _ { 3 } , \triangle A _ { 3 } A _ { 4 } A _ { 5 } , \triangle A _ { 5 } A _ { 6 } A _ { 7 }$ ，⋯都是斜边在x轴上的等腰直角三角形， 点 $A _ { 1 } ( { \mathit { \Delta } } - 2 , { \mathit { \Delta } } 0 ) , A _ { 2 } ( { \mathit { \Delta } } - 1 , { \mathit { \Delta } } - 1 ) , A _ { 3 } ( { \mathit { \Delta } } 0 , { \mathit { \Delta } } 0 ) , \cdots ;$ ；则根据图示规律，点 A1020的坐标为（ ） 
 
-![](../images/b43ab4045117f1811ab9ff920bbbfc12fecabe2332be8dc8b35361fa0757dcf6.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b43ab4045117f1811ab9ff920bbbfc12fecabe2332be8dc8b35361fa0757dcf6.jpg)
 
 
 A．（﹣1，﹣510） 
@@ -127,7 +127,7 @@ D．（1，﹣510）
 
 4．如图，在平面直角坐标系中，有若干个横纵坐标分别为整数的点，其顺序按图中“→”方向排列，其对 应的点坐标依次为（0，0），（1，0），（1，1），（0，1），（0，2），（1，2），（2，2），（2，1），…，根据这 个规律，第2023个点的横坐标为（ 
 
-![](../images/97ed773cb8509933045489d2cfacef83ba450f66ddf8e6b27db0f23fcc96f85e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/97ed773cb8509933045489d2cfacef83ba450f66ddf8e6b27db0f23fcc96f85e.jpg)
 
 
 
@@ -158,7 +158,7 @@ D．47
 
 5．如图，动点M按图中箭头所示方向运动，第 1次从原点运动到点（2，2），第2次运动到点（4，0），第 3次运动到点（6，4），…，按这样的规律运动，则第 2024次运动到点（ ） 
 
-![](../images/3d9d5326ced17c056905b676d33d5a04271333c08a3d0726f7ad1310b3629f8e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3d9d5326ced17c056905b676d33d5a04271333c08a3d0726f7ad1310b3629f8e.jpg)
 
 
 
@@ -191,7 +191,7 @@ $$
 
 6．如图，将边长为1 的正方形OAPB 沿x轴正方向边连续翻转 2023次，点P依次落在点 $P _ { 1 } , \ P _ { 2 } , \ P _ { 3 } , \cdots _ { }$ ， $P _ { 2 0 2 3 }$ 的位置，则 $P _ { 2 0 2 3 }$ 的横坐标 x2023 为（ ） 
 
-![](../images/d41fb2d71d94f86834a38712521ec65506166fb8e110122785e89b1102111a58.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/d41fb2d71d94f86834a38712521ec65506166fb8e110122785e89b1102111a58.jpg)
 
 
 A．2021 
@@ -220,7 +220,7 @@ $$
 
 7．如图，在平面直角坐标系中，动点 P 从 $A _ { 1 } \ ( 1 , \ 0 )$ 出发，沿着 $A _ { 1 } ~ ( 1 , ~ 0 )  A _ { 2 } ~ ( 2 , ~ 0 )  A _ { 3 } ~ ( 2 , ~ 1 )$ ） $ A _ { 4 } ( 1 , \ 1 )  A _ { 5 } ( 1 , \ 2 )  A _ { 6 } ( 3 , \ 2 )  A _ { 7 } ( 3 , \ 4 )  A _ { 8 } ( 1 , \ 4 )  A _ { 9 } ( 1 , \ 6 )  A _ { 1 0 } ( 4 , \ 6 )    \mathrm { f } _ { 1 0 } ( 6 , \ 4 ) .$ 的 路线运动，按此规律，则点 P运动到A47时坐标为（ ） 
 
-![](../images/8838ad0a328475bac2f21d7cb1a51a11ecb030a00cf662aa4053e96c355f99a1.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8838ad0a328475bac2f21d7cb1a51a11ecb030a00cf662aa4053e96c355f99a1.jpg)
 
 
 A．（13，156） 
@@ -255,7 +255,7 @@ $$
 
 8．如图，直角坐标平面 xOy 内，动点 P 按图中箭头所示方向依次运动，第 1 次从点 （﹣1，0）运动到点 （0，1），第2次运动到点（1，0），第 3次运动到点（2，﹣2），…，按这样的运动规律，动点P 第 2023 次运动到点（ ） 
 
-![](../images/bba9e8f528d97b287adb7d313f1d17af2c563f4f8352d72b435f5b7e931c0313.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bba9e8f528d97b287adb7d313f1d17af2c563f4f8352d72b435f5b7e931c0313.jpg)
 
 
 A．（2023，0） 
@@ -276,7 +276,7 @@ D．（2022，0）
 
 9．如图，在一个单位为 1的方格纸上，△A1A2A3，△A3A4A5，△A5A6A7，…，是斜边在 x 轴上，斜边长分 别为 2，4，6，…的等腰直角三角形．若 $\triangle A _ { 1 } A _ { 2 } A _ { 3 }$ 的顶点坐标分别为 A1（2，0），A2（1，﹣1），A3（0， 0），则依图中所示规律，A2023的横坐标为（ 
 
-![](../images/02b5ea7e1e1674f658284473732d5c58026560071509cfc32438854d437f8e0e.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/02b5ea7e1e1674f658284473732d5c58026560071509cfc32438854d437f8e0e.jpg)
 
 
 A．﹣1010 
@@ -301,7 +301,7 @@ $\because 2 0 2 3 = 4 \times 5 0 5 + 3$ ，
 
 10．如图，在平面直角坐标系中 A（﹣1，1），B（﹣1，﹣2），C（3，﹣2），D（3，1），一只瓢虫从点 A 出发以2个单位长度/秒的速度沿 A→B→C→D→A循环爬行，问第 2025秒瓢虫在点（ ） 
 
-![](../images/66fe1dfa09882348ee69397fa980cfe52e1af20f35dd9ad95ea45f30353dec46.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/66fe1dfa09882348ee69397fa980cfe52e1af20f35dd9ad95ea45f30353dec46.jpg)
 
 
 A．（﹣1，0） 
@@ -338,7 +338,7 @@ $$
 
 11．如图，动点 P 在平面直角坐标系中按图中所示方向运动，第一次从原点 O 运动到点 $P _ { 1 } ~ ( 1 , ~ 1 )$ ），第二 次运动到点P2（2，1），第三次运动到点 $P _ { 3 } ~ ( 3 , ~ 0 )$ ），第四次运动到点 $P _ { 4 } ~ ( 4 , ~ - 2 )$ ），第五次运动到点 $P _ { 5 }$ （5，0），第六次运动到点 $P 6 \ ( 6 , \ 2 )$ ），按这样的运动规律，点P2023的纵坐标是（ ） 
 
-![](../images/26897f193850c93230f622b0a3fab95e886e64084dc7334c4b7ae84fb4a9a9fa.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/26897f193850c93230f622b0a3fab95e886e64084dc7334c4b7ae84fb4a9a9fa.jpg)
 
 
 A．﹣2 
@@ -363,7 +363,7 @@ $$
 
 12．如图，在平面直角坐标系中，已知点 A（1，1）、B（﹣1，1）、C（﹣1，﹣2）、D（1，﹣2），动点 P 从点A 出发，以每秒2个单位的速度按逆时针方向沿四边形ABCD 的边做环绕运动；另一动点Q 从点C 出发，以每秒3个单位的速度按顺时针方向沿四边形 CBAD的边做环绕运动，则第2023次相遇点的坐标 是（ ） 
 
-![](../images/e98ef9a54272ed37905d2bb31b2d5bd97d8d3f9738947497c3331d752085d8da.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e98ef9a54272ed37905d2bb31b2d5bd97d8d3f9738947497c3331d752085d8da.jpg)
 
 
 A．（﹣1，﹣1） 
@@ -406,7 +406,7 @@ $$
 
 13．如图，在直角坐标系中，一个智能机器人接到的指令是：从原点 O 出发，按“向上→向右→向下→向 右”的方向依次不断移动，每次移动1个单位长度，其移动路线如图所示，第1 次移动到点 A1，第 2次 移动到点A2，…第n次移动到点 $A _ { n } ,$ ，则点A2023的坐标是（ 
 
-![](../images/96556d7da1cb289ef3f87d3eeb748376fa46634a6522a9f563f6d203553fb03d.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/96556d7da1cb289ef3f87d3eeb748376fa46634a6522a9f563f6d203553fb03d.jpg)
 
 
 A．（1011，0） 
@@ -431,7 +431,7 @@ $$
 
 14．如图，将边长为1的正方形依次放在坐标系中，其中第一个正方形的两边 $O A _ { 1 } , ~ O A _ { 3 }$ 分别在y轴和 x轴 上，第二个正方形的一边 $A _ { 3 } A _ { 4 }$ 与第一个正方形的边 A2A3 共线，一边 A3A6 在 x 轴上…以此类推，则点 A2022 的坐标为（ ） 
 
-![](../images/654dabf74fe55c7753054ef4dbf512b0b062d2b3062394e277b9d8db140adaf8.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/654dabf74fe55c7753054ef4dbf512b0b062d2b3062394e277b9d8db140adaf8.jpg)
 
 
 A．（672，﹣1） 
@@ -450,7 +450,7 @@ D．（674，0）
 
 15．如图，一个机器人从 O 点出发，向正东方向走 3 米到达 $A _ { 1 }$ 点，再向正北方向走 6 米到达 A2点，再向 正西方向走9米到达A 点，再向正南方向走 12米到达 $A _ { 4 }$ 点，再向正东方向走15 米到达 $A 5$ 点，按如此 规律走下去，当机器人走到 A6点时，则 $\boldsymbol { A } 6$ 的坐标为（ 
 
-![](../images/552b679d05657ec10c8e799d0964a3d71d6278c85761088c20b930582eed62ff.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/552b679d05657ec10c8e799d0964a3d71d6278c85761088c20b930582eed62ff.jpg)
 
 
 A．（9，15） 
@@ -469,7 +469,7 @@ D．（9，12）
 
 16．如图，将边长为 1 的正三角形 $O A P$ 沿 x 轴正方向连续翻转 2023 次，点 P 依次落在点 $P 1 , \ P 2 , \ P 3 , \ \cdots$ ， $P _ { 2 0 2 3 }$ 的位置，则点 $P _ { 2 0 2 3 }$ 的横坐标为（ ） 
 
-![](../images/1705e473e922ab711df9db345e0691728bd653bad68ae33bc5c899a4a4d0f0ec.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1705e473e922ab711df9db345e0691728bd653bad68ae33bc5c899a4a4d0f0ec.jpg)
 
 
 A．2022 
@@ -496,7 +496,7 @@ $\therefore$ 点 P2023 的横坐标为 2023
 
 17．如图，点A（1，0）第一次跳动至点 $A _ { 1 } ~ ( ~ - ~ 1 , ~ 1 )$ ，第二次跳动至点A2（2，1），第三次跳动至点 A3（﹣ 2，2），第四次跳动至点A（4 3，2），…，依此规律跳动下去，点A第2024次跳动至点A2024的坐标是 （1013， 1012） 
 
-![](../images/4f5312d054aa5e783d362c050b2d5ecdca7f30b9e205ada1e0d16843aeffcdcf.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/4f5312d054aa5e783d362c050b2d5ecdca7f30b9e205ada1e0d16843aeffcdcf.jpg)
 
 
 【解答】解：由题知， 
@@ -535,7 +535,7 @@ $$
 
 18．如图，在平面直角坐标系中，一动点从原点 O 出发，沿着箭头所示方向，每次移动 1 个单位，依次得 到点 $P _ { 1 } ( 0 , \ 1 ) , \ P _ { 2 } ( 1 , \ 1 ) , \ P _ { 3 } ( 1 , \ 0 ) , \ P _ { 4 } ( 1 , \ - 1 ) , \ P _ { 5 } ( 2 , \ - 1 ) , \ P _ { 6 } ( 2 , \ 0 ) , \ \cdots$ ，则点 $P _ { 2 0 2 4 }$ 的 坐标是 （675，1） 
 
-![](../images/f5bea2b84a67055cd436f53bef0833b981063d4facd4346ae2ac9634647e458a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f5bea2b84a67055cd436f53bef0833b981063d4facd4346ae2ac9634647e458a.jpg)
 
 
 【解答】解：由图可得， $P _ { 6 }$ （2，0）， $P _ { 1 2 }$ （4，0），…，P6n（2n，0）， $P _ { 6 n + 1 }$ （2n，1）， 
@@ -554,7 +554,7 @@ $$
 
 19．如图，在平面直角坐标系中，有若干个横、纵坐标均为整数的点，按（1，0）→（2，0）→（2，1） $\to \ ( 1 , \ 1 ) \to \ ( 1 , \ 2 ) \to \ ( 2 , \ 2 ) \to \cdots$ 的顺序用线段依次连接起来．根据这个规律，第50个点的坐标为 （8，0） 
 
-![](../images/c45a7228adeb42e72194c5ec4127ae964f51ab43fc517f1760476ec66aa13f60.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c45a7228adeb42e72194c5ec4127ae964f51ab43fc517f1760476ec66aa13f60.jpg)
 
 
 【解答】解：第1圈有1个点：（1，0）， 
@@ -577,7 +577,7 @@ $$
 
 20．在平面直角坐标系中，若干个等腰直角三角形按如图所示的规律摆放．点 P 从原点 O 出发，沿着 $^ { 6 6 } O$ $ A _ { 1 } {  } A _ { 2 } {  } A _ { 3 } {  } A _ { 4 } {  } \ ^ { , }$ 的路线运动（每秒一条直角边），已知 $A _ { 1 }$ 坐标为（1，1），A2（2，0），A3（3，1） $A 4 \ ( 4 , \ 0 ) \ \cdots$ ，设第 n 秒运动到点 $P _ { n } ~ ( n$ 为正整数），则点 P2023 的坐标是 （2023，1） 
 
-![](../images/b8e9fe1bec99cf092227e2c73e510a2e05aa1b9937553d38573fcb89d075029d.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b8e9fe1bec99cf092227e2c73e510a2e05aa1b9937553d38573fcb89d075029d.jpg)
 
 
 【解答】解：由题意知， 

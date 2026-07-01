@@ -28,7 +28,7 @@ type: 教材原文
 我们已经知道，有一个角是直角的平行四边形是矩形，有一组邻边相等的平行四边形是菱形。那么，有一组邻边相等的矩形是什么图形呢？有一个角是直角的菱形又是什么图形呢？ 
 
 有一组邻边相等且有一个角是直角的平行四边形叫作正方形(square). 
-![](../images/9943f90e5f0a6113520fec00daad78a02e2f05063552e1f86e6e508838e1dde3.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9943f90e5f0a6113520fec00daad78a02e2f05063552e1f86e6e508838e1dde3.jpg)
 # 大家谈谈
 
 1. 正方形是中心对称图形吗？如果是中心对称图形，那么它的对称中心在哪里？正方形是轴对称图形吗？如果是轴对称图形，那么它有哪几条对称轴？ 
@@ -68,24 +68,24 @@ $\therefore \angle E A D = \angle E D A = 1 5 ^ {\circ}.$
 # 练习
 
 如图，正方形 ABCD 的对角线 AC 为菱形 AEFC 的一边，求 $\angle FAB$ 的度数. 
-![](../images/2003f14f7ef05052c5852eae77d48aa4c648bb6cbeae17375c962b7faba0eaef.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2003f14f7ef05052c5852eae77d48aa4c648bb6cbeae17375c962b7faba0eaef.jpg)
 图21.7-1
-![](../images/ed992442e34fce4803d61357ec05c367ba8edd6aa62585a3ebc1e4ed83c2f3cb.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ed992442e34fce4803d61357ec05c367ba8edd6aa62585a3ebc1e4ed83c2f3cb.jpg)
 图21.7-2
-![](../images/3f11b4c032459808de96a7786e56eb93191e351162613a598960cbc38b1e6292.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3f11b4c032459808de96a7786e56eb93191e351162613a598960cbc38b1e6292.jpg)
 图21.7-3
-![](../images/bbd6716c273b3148cc4c4da248fb1d28a58c1c2bfa7b2270dd80f1073842d7dd.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/bbd6716c273b3148cc4c4da248fb1d28a58c1c2bfa7b2270dd80f1073842d7dd.jpg)
 # A组
 
 1. 如图, 如果正方形 $ABCD$ 旋转后能与正方形CFED重合, 那么图形所在的平面上可以作为旋转中心的点共有多少个? 请指出它们的位置. 
-![](../images/e2da939fe72c7465f8bfac500c93300c77cf426de457b3c914ea3252368438cb.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e2da939fe72c7465f8bfac500c93300c77cf426de457b3c914ea3252368438cb.jpg)
 (第1题)
 
 
 2. 已知：如图，四边形 $ABCD$ 和四边形 $BGFE$ 都是正方形。求证: $AE=CG$ . 
-![](../images/ecb56c0fc5c9c6efcc5ec012b06d9b119bfd7956dc0b61c5b508d8bd162e02c8.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ecb56c0fc5c9c6efcc5ec012b06d9b119bfd7956dc0b61c5b508d8bd162e02c8.jpg)
 (第2题)
-![](../images/c33a81fcc035bab1342bd1a28d6a309ba1610657306b82be46b3fe45faedce65.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c33a81fcc035bab1342bd1a28d6a309ba1610657306b82be46b3fe45faedce65.jpg)
 (第3题)
 
 
@@ -94,9 +94,9 @@ $\therefore \angle E A D = \angle E D A = 1 5 ^ {\circ}.$
 # B 组
 
 4. 如图, $E$ 是正方形 $ABCD$ 的边 $BC$ 的延长线上一点, 且 $CE = BD$ , $AE$ 交 $DC$ 于点 $F$ . 求 $\angle AFC$ 的度数. 
-![](../images/ea2044a4cc4f6b92c9fe8770bf4ed65aff87255d0c29699612f5f09ab37aa2b9.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ea2044a4cc4f6b92c9fe8770bf4ed65aff87255d0c29699612f5f09ab37aa2b9.jpg)
 (第 4 题)
-![](../images/c7244a3e1a87d44bf35b044fc4b16325b837d97f039d27ddf262ae5d0ed9d76a.jpg)
+![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c7244a3e1a87d44bf35b044fc4b16325b837d97f039d27ddf262ae5d0ed9d76a.jpg)
 (第5题)
 
 
