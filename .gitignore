@@ -6,6 +6,8 @@
 .vs/
 
 # Local archives, temporary files, and editor state
+/temp/
+/sandbox/
 /archive.zip
 /temp_files.txt
 /.trae/
