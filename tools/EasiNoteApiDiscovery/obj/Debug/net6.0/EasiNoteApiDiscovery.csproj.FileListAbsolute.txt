@@ -1,0 +1,15 @@
+C:\MRE\tools\EasiNoteApiDiscovery\bin\Debug\net6.0\EasiNoteApiDiscovery.exe
+C:\MRE\tools\EasiNoteApiDiscovery\bin\Debug\net6.0\EasiNoteApiDiscovery.deps.json
+C:\MRE\tools\EasiNoteApiDiscovery\bin\Debug\net6.0\EasiNoteApiDiscovery.runtimeconfig.json
+C:\MRE\tools\EasiNoteApiDiscovery\bin\Debug\net6.0\EasiNoteApiDiscovery.dll
+C:\MRE\tools\EasiNoteApiDiscovery\bin\Debug\net6.0\EasiNoteApiDiscovery.pdb
+C:\MRE\tools\EasiNoteApiDiscovery\obj\Debug\net6.0\EasiNoteApiDiscovery.csproj.AssemblyReference.cache
+C:\MRE\tools\EasiNoteApiDiscovery\obj\Debug\net6.0\EasiNoteApiDiscovery.GeneratedMSBuildEditorConfig.editorconfig
+C:\MRE\tools\EasiNoteApiDiscovery\obj\Debug\net6.0\EasiNoteApiDiscovery.AssemblyInfoInputs.cache
+C:\MRE\tools\EasiNoteApiDiscovery\obj\Debug\net6.0\EasiNoteApiDiscovery.AssemblyInfo.cs
+C:\MRE\tools\EasiNoteApiDiscovery\obj\Debug\net6.0\EasiNoteApiDiscovery.csproj.CoreCompileInputs.cache
+C:\MRE\tools\EasiNoteApiDiscovery\obj\Debug\net6.0\EasiNoteApiDiscovery.dll
+C:\MRE\tools\EasiNoteApiDiscovery\obj\Debug\net6.0\refint\EasiNoteApiDiscovery.dll
+C:\MRE\tools\EasiNoteApiDiscovery\obj\Debug\net6.0\EasiNoteApiDiscovery.pdb
+C:\MRE\tools\EasiNoteApiDiscovery\obj\Debug\net6.0\EasiNoteApiDiscovery.genruntimeconfig.cache
+C:\MRE\tools\EasiNoteApiDiscovery\obj\Debug\net6.0\ref\EasiNoteApiDiscovery.dll

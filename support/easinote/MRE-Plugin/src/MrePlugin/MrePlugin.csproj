@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+
+    <Product>MRE 课件生成插件</Product>
+    <Description>数学资源引擎(MRE)希沃白板课件自动生成插件。</Description>
+    <Company>遵化市苏家洼镇大刘庄中学</Company>
+
+    <!-- core 级别，然后用 Target 剔除不存在的 DLL -->
+    <UseEasiNote>core</UseEasiNote>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dotnetCampus.EasiPlugin.Sdk" Version="0.44.*" />
+  </ItemGroup>
+
+  <!-- 在 SDK 生成引用后、编译前剔除不存在的 DLL -->
+  <Target Name="RemoveMissingDlls" AfterTargets="_ENSdkReferenceDlls" BeforeTargets="ResolveAssemblyReferences">
+    <ItemGroup>
+      <EasiNoteReference Remove="Cvte.Core.cc.dll" />
+      <EasiNoteReference Remove="Cvte.IPC.dll" />
+      <EasiNoteReference Remove="EasiNote.Account.Extension.dll" />
+      <EasiNoteReference Remove="Cvte.Core.Legacy.dll" />
+      <EasiNoteReference Remove="Cvte.RemoteObject.dll" />
+      <EasiNoteReference Remove="Cvte.StackTrace.dll" />
+      <EasiNoteReference Remove="EasiAudio.dll" />
+      <EasiNoteReference Remove="EasiAudioEx.Denoise.dll" />
+      <EasiNoteReference Remove="EasiAudioEx.Native.Denoise.dll" />
+      <EasiNoteReference Remove="EasiNote.CacheAdapter.dll" />
+      <EasiNoteReference Remove="EasiNote.PptxToEnbx.exe" />
+    </ItemGroup>
+  </Target>
+</Project>

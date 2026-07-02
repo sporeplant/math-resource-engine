@@ -1,0 +1,805 @@
+{
+  "lesson_id": "22.4",
+  "lesson_name": "频数分布与直方图",
+  "chapter": "第22章 数据的收集、整理与描述",
+  "source_files": [
+    "knowledge/textbooks/ch22/textbook-22.4.md",
+    "knowledge/solutions/ch22/solution-22.4.md",
+    "students/scores.md"
+  ],
+  "slides": [
+    {
+      "id": "slide_01_title",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "el_title_main",
+          "type": "text",
+          "text": "📐 22.4 频数分布与直方图",
+          "x": 80, "y": 120, "width": 800, "height": 70,
+          "fontSize": 36, "bold": true, "align": "center", "color": "#1a1a1a"
+        },
+        {
+          "id": "el_title_chapter",
+          "type": "text",
+          "text": "第22章 数据的收集、整理与描述",
+          "x": 80, "y": 210, "width": 800, "height": 40,
+          "fontSize": 20, "bold": false, "align": "center", "color": "#666666"
+        },
+        {
+          "id": "el_title_tagline",
+          "type": "text",
+          "text": "从一组分散数据出发，用频数表和直方图支持实际判断",
+          "x": 80, "y": 280, "width": 800, "height": 50,
+          "fontSize": 16, "bold": false, "align": "center", "color": "#888888", "italic": true
+        },
+        {
+          "id": "el_title_levels",
+          "type": "text",
+          "text": "基础层 / 中间层 / 拓展层",
+          "x": 80, "y": 420, "width": 800, "height": 30,
+          "fontSize": 14, "bold": false, "align": "center", "color": "#aaaaaa"
+        }
+      ]
+    },
+    {
+      "id": "slide_02_objectives",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "el_obj_title",
+          "type": "text",
+          "text": "🎯 本课目标",
+          "x": 80, "y": 60, "width": 800, "height": 50,
+          "fontSize": 28, "bold": true, "color": "#1a1a1a"
+        },
+        {
+          "id": "el_obj_basic",
+          "type": "text",
+          "text": "基础层：能找出数据范围，辨认频数、频率、组距和组数。",
+          "x": 80, "y": 140, "width": 800, "height": 36,
+          "fontSize": 18, "bold": false, "color": "#2d6a4f"
+        },
+        {
+          "id": "el_obj_mid",
+          "type": "text",
+          "text": "中间层：能按步骤整理数据，并把频数表转成直方图。",
+          "x": 80, "y": 185, "width": 800, "height": 36,
+          "fontSize": 18, "bold": false, "color": "#e07b39"
+        },
+        {
+          "id": "el_obj_advanced",
+          "type": "text",
+          "text": "拓展层：能用频数和频率评价阶梯电价或校服订购方案。",
+          "x": 80, "y": 230, "width": 800, "height": 36,
+          "fontSize": 18, "bold": false, "color": "#c44536"
+        },
+        {
+          "id": "el_obj_mermaid",
+          "type": "image",
+          "src": "assets/22.4-flow-01.png",
+          "x": 120, "y": 320, "width": 720, "height": 180,
+          "note": "mermaid流程图 → 需预渲染为PNG"
+        }
+      ]
+    },
+    {
+      "id": "slide_03_data",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "el_data_title",
+          "type": "text",
+          "text": "📖 50户用电量数据",
+          "x": 80, "y": 60, "width": 800, "height": 50,
+          "fontSize": 28, "bold": true, "color": "#1a1a1a"
+        },
+        {
+          "id": "el_data_context",
+          "type": "text",
+          "text": "为了倡导节约能源，居民用电采用阶梯电价。\n制定方案时，需要判断第一档电价能否覆盖大多数家庭。\n下面是某城市50户居民全年月平均用电量数据。单位：千瓦·时",
+          "x": 80, "y": 120, "width": 800, "height": 70,
+          "fontSize": 16, "bold": false, "color": "#444444"
+        },
+        {
+          "id": "el_data_table",
+          "type": "shape",
+          "x": 80, "y": 210, "width": 800, "height": 280,
+          "shapeType": "table",
+          "note": "5×10数据表格：155 198 175 158 158 124 154 148 169 120 / 190 133 160 215 172 126 145 130 131 118 / 108 157 145 165 122 106 165 150 136 144 / 140 159 110 134 170 168 162 170 205 186 / 182 156 138 187 100 142 168 218 175 146"
+        },
+        {
+          "id": "el_data_source",
+          "type": "text",
+          "text": "source: 教材原文_22.4 | question_id: 22.4-正文-居民用电量数据",
+          "x": 80, "y": 510, "width": 800, "height": 20,
+          "fontSize": 10, "color": "#cccccc"
+        }
+      ]
+    },
+    {
+      "id": "slide_04_purpose",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "el_purp_title",
+          "type": "text",
+          "text": "🤔 统计目的",
+          "x": 80, "y": 60, "width": 800, "height": 50,
+          "fontSize": 28, "bold": true, "color": "#1a1a1a"
+        },
+        {
+          "id": "el_purp_tag",
+          "type": "text",
+          "text": "口头回答",
+          "x": 80, "y": 120, "width": 200, "height": 28,
+          "fontSize": 14, "bold": true, "color": "#ffffff",
+          "fill": "#4a90d9",
+          "note": "活动类型标签，可渲染为圆角矩形+文本"
+        },
+        {
+          "id": "el_purp_question",
+          "type": "text",
+          "text": "制定阶梯电价时，要判断第一档电价能否覆盖大多数家庭，\n仅看上一页50个原始用电量数据够不够？还需要统计什么信息？",
+          "x": 80, "y": 170, "width": 800, "height": 60,
+          "fontSize": 18, "bold": false, "color": "#333333"
+        },
+        {
+          "id": "el_purp_student",
+          "type": "text",
+          "text": "【基础层提问】请张楷瑞同学回答",
+          "x": 80, "y": 250, "width": 800, "height": 30,
+          "fontSize": 15, "bold": true, "color": "#2d6a4f"
+        },
+        {
+          "id": "el_purp_hint",
+          "type": "text",
+          "text": "提示：第一档关注"小于180千瓦·时"的家庭有多少户、占多大比例。",
+          "x": 80, "y": 310, "width": 800, "height": 40,
+          "fontSize": 15, "bold": false, "color": "#888888", "italic": true
+        }
+      ]
+    },
+    {
+      "id": "slide_05_range",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "el_range_title",
+          "type": "text",
+          "text": "📖 先找数据范围",
+          "x": 80, "y": 60, "width": 800, "height": 50,
+          "fontSize": 28, "bold": true, "color": "#1a1a1a"
+        },
+        {
+          "id": "el_range_tag",
+          "type": "text",
+          "text": "请在练习本上完成",
+          "x": 80, "y": 120, "width": 200, "height": 28,
+          "fontSize": 14, "bold": true, "color": "#ffffff",
+          "fill": "#e07b39"
+        },
+        {
+          "id": "el_range_task",
+          "type": "text",
+          "text": "为了划分用电量范围，请在原始数据中确定最小值、\n最大值，并写出数据跨度。",
+          "x": 80, "y": 170, "width": 800, "height": 55,
+          "fontSize": 18, "bold": false, "color": "#333333"
+        },
+        {
+          "id": "el_range_student",
+          "type": "text",
+          "text": "【基础层提问】请陈虹羽同学回答",
+          "x": 80, "y": 240, "width": 800, "height": 30,
+          "fontSize": 15, "bold": true, "color": "#2d6a4f"
+        },
+        {
+          "id": "el_range_conclusion",
+          "type": "text",
+          "text": "结论栏：最小值____，最大值____，跨度____。\n（限时 1 分钟）",
+          "x": 80, "y": 285, "width": 800, "height": 50,
+          "fontSize": 16, "bold": false, "color": "#555555"
+        },
+        {
+          "id": "el_range_mermaid",
+          "type": "image",
+          "src": "assets/22.4-flow-02.png",
+          "x": 120, "y": 370, "width": 720, "height": 150,
+          "note": "mermaid: 最小值→最大值→跨度→分组依据"
+        }
+      ]
+    },
+    {
+      "id": "slide_06_groups",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "el_grp_title",
+          "type": "text",
+          "text": "📖 确定组数和组距",
+          "x": 80, "y": 60, "width": 800, "height": 50,
+          "fontSize": 28, "bold": true, "color": "#1a1a1a"
+        },
+        {
+          "id": "el_grp_tag",
+          "type": "text",
+          "text": "请在练习本上完成",
+          "x": 80, "y": 120, "width": 200, "height": 28,
+          "fontSize": 14, "bold": true, "color": "#ffffff",
+          "fill": "#e07b39"
+        },
+        {
+          "id": "el_grp_task",
+          "type": "text",
+          "text": "教材把118的跨度分成6组，并取组距20。\n请结合 118÷6≈19.7 说明这样分组对统计户数有什么便利。",
+          "x": 80, "y": 170, "width": 800, "height": 60,
+          "fontSize": 18, "bold": false, "color": "#333333"
+        },
+        {
+          "id": "el_grp_student1",
+          "type": "text",
+          "text": "【中间层提问】请尹若涵同学回答",
+          "x": 80, "y": 250, "width": 800, "height": 30,
+          "fontSize": 15, "bold": true, "color": "#e07b39"
+        },
+        {
+          "id": "el_grp_task2",
+          "type": "text",
+          "text": "如果数据正好是120，它应放入哪一组？\n请用相邻两个区间说明理由。",
+          "x": 80, "y": 300, "width": 800, "height": 50,
+          "fontSize": 17, "bold": false, "color": "#333333"
+        },
+        {
+          "id": "el_grp_student2",
+          "type": "text",
+          "text": "【中间层提问】请刘森泽同学回答",
+          "x": 80, "y": 370, "width": 800, "height": 30,
+          "fontSize": 15, "bold": true, "color": "#e07b39"
+        }
+      ]
+    },
+    {
+      "id": "slide_07_freq_table",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "el_freq_title",
+          "type": "text",
+          "text": "📖 列频数分布表",
+          "x": 80, "y": 60, "width": 800, "height": 50,
+          "fontSize": 28, "bold": true, "color": "#1a1a1a"
+        },
+        {
+          "id": "el_freq_tag",
+          "type": "text",
+          "text": "请在练习本上完成",
+          "x": 80, "y": 120, "width": 200, "height": 28,
+          "fontSize": 14, "bold": true, "color": "#ffffff",
+          "fill": "#e07b39"
+        },
+        {
+          "id": "el_freq_task",
+          "type": "text",
+          "text": "请在频数分布表中找到 140≤x<160 这一行，\n写出这一组的频数、频率，并列出频率计算式。",
+          "x": 80, "y": 170, "width": 800, "height": 55,
+          "fontSize": 18, "bold": false, "color": "#333333"
+        },
+        {
+          "id": "el_freq_student",
+          "type": "text",
+          "text": "【基础层提问】请韩亚彤同学回答",
+          "x": 80, "y": 245, "width": 800, "height": 30,
+          "fontSize": 15, "bold": true, "color": "#2d6a4f"
+        },
+        {
+          "id": "el_freq_formula",
+          "type": "text",
+          "text": "15÷50 = 30%",
+          "x": 80, "y": 300, "width": 300, "height": 40,
+          "fontSize": 22, "bold": true, "color": "#c44536"
+        },
+        {
+          "id": "el_freq_note",
+          "type": "text",
+          "text": "频数是户数，频率是占总数的比值。",
+          "x": 80, "y": 360, "width": 800, "height": 30,
+          "fontSize": 15, "bold": false, "color": "#555555"
+        }
+      ]
+    },
+    {
+      "id": "slide_08_table_to_chart",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "el_ttc_title",
+          "type": "text",
+          "text": "✏️ 表图转化：频数表",
+          "x": 80, "y": 60, "width": 800, "height": 50,
+          "fontSize": 28, "bold": true, "color": "#1a1a1a"
+        },
+        {
+          "id": "el_ttc_tag",
+          "type": "text",
+          "text": "请在练习本上完成",
+          "x": 80, "y": 120, "width": 200, "height": 28,
+          "fontSize": 14, "bold": true, "color": "#ffffff",
+          "fill": "#e07b39"
+        },
+        {
+          "id": "el_ttc_table",
+          "type": "shape",
+          "x": 60, "y": 170, "width": 840, "height": 160,
+          "shapeType": "table",
+          "note": "频数分布表：7列(区间+频数+频率) × 2行(表头+数据行)。区间：100~120/120~140/140~160/160~180/180~200/200~220；频数：5,10,15,12,5,3；频率：10%,20%,30%,24%,10%,6%"
+        },
+        {
+          "id": "el_ttc_question",
+          "type": "text",
+          "text": "为了把频数表转成直方图，横轴、纵轴、\n小长方形高度分别应对应表中的什么信息？",
+          "x": 80, "y": 350, "width": 800, "height": 50,
+          "fontSize": 18, "bold": false, "color": "#333333"
+        },
+        {
+          "id": "el_ttc_student",
+          "type": "text",
+          "text": "【中间层提问】请郝玲誉同学回答",
+          "x": 80, "y": 420, "width": 800, "height": 30,
+          "fontSize": 15, "bold": true, "color": "#e07b39"
+        }
+      ]
+    },
+    {
+      "id": "slide_09_step1_axes",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "el_s1_title",
+          "type": "text",
+          "text": "✏️ 第1步：先搭坐标轴",
+          "x": 80, "y": 60, "width": 800, "height": 50,
+          "fontSize": 28, "bold": true, "color": "#1a1a1a"
+        },
+        {
+          "id": "el_s1_tag",
+          "type": "text",
+          "text": "请在练习本上完成",
+          "x": 80, "y": 120, "width": 200, "height": 28,
+          "fontSize": 14, "bold": true, "color": "#ffffff",
+          "fill": "#e07b39"
+        },
+        {
+          "id": "el_s1_task",
+          "type": "text",
+          "text": "为了让直方图完整显示全部频数，纵轴刻度至少要\n覆盖到多少？请说明依据。",
+          "x": 80, "y": 170, "width": 800, "height": 50,
+          "fontSize": 18, "bold": false, "color": "#333333"
+        },
+        {
+          "id": "el_s1_student",
+          "type": "text",
+          "text": "【中间层提问】请刘倚彤同学回答",
+          "x": 80, "y": 240, "width": 800, "height": 30,
+          "fontSize": 15, "bold": true, "color": "#e07b39"
+        },
+        {
+          "id": "el_s1_img",
+          "type": "image",
+          "src": "assets/22.4-histogram-frame-01.svg",
+          "x": 130, "y": 300, "width": 700, "height": 280,
+          "note": "坐标轴框架图，SVG需转为PNG或直接引用"
+        }
+      ]
+    },
+    {
+      "id": "slide_10_step2_3",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "el_s23_title",
+          "type": "text",
+          "text": "✏️ 第2-3步：画前两根",
+          "x": 80, "y": 60, "width": 800, "height": 50,
+          "fontSize": 28, "bold": true, "color": "#1a1a1a"
+        },
+        {
+          "id": "el_s23_tag",
+          "type": "text",
+          "text": "请在练习本上完成",
+          "x": 80, "y": 120, "width": 200, "height": 28,
+          "fontSize": 14, "bold": true, "color": "#ffffff",
+          "fill": "#e07b39"
+        },
+        {
+          "id": "el_s23_task",
+          "type": "text",
+          "text": "根据频数表画出前两根长方形，并写出它们\n对应的区间和高度。",
+          "x": 80, "y": 170, "width": 800, "height": 50,
+          "fontSize": 18, "bold": false, "color": "#333333"
+        },
+        {
+          "id": "el_s23_student",
+          "type": "text",
+          "text": "【基础层提问】请缪欣怡同学回答",
+          "x": 80, "y": 240, "width": 800, "height": 30,
+          "fontSize": 15, "bold": true, "color": "#2d6a4f"
+        },
+        {
+          "id": "el_s23_img1",
+          "type": "image",
+          "src": "assets/22.4-histogram-frame-02.svg",
+          "x": 80, "y": 300, "width": 400, "height": 280,
+          "note": "第一根长方形"
+        },
+        {
+          "id": "el_s23_img2",
+          "type": "image",
+          "src": "assets/22.4-histogram-frame-03.svg",
+          "x": 500, "y": 300, "width": 400, "height": 280,
+          "note": "第二根长方形"
+        },
+        {
+          "id": "el_s23_labels",
+          "type": "text",
+          "text": "第一根                    第二根",
+          "x": 200, "y": 280, "width": 560, "height": 20,
+          "fontSize": 14, "bold": true, "align": "center", "color": "#888888"
+        }
+      ]
+    },
+    {
+      "id": "slide_11_step4_6",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "el_s46_title",
+          "type": "text",
+          "text": "✏️ 第4-6步：直方图生长",
+          "x": 80, "y": 60, "width": 800, "height": 50,
+          "fontSize": 28, "bold": true, "color": "#1a1a1a"
+        },
+        {
+          "id": "el_s46_tag",
+          "type": "text",
+          "text": "请在练习本上完成",
+          "x": 80, "y": 120, "width": 200, "height": 28,
+          "fontSize": 14, "bold": true, "color": "#ffffff",
+          "fill": "#e07b39"
+        },
+        {
+          "id": "el_s46_task",
+          "type": "text",
+          "text": "补全后几根长方形后，请说明相邻长方形\n表示的是哪些连续用电量范围。",
+          "x": 80, "y": 170, "width": 800, "height": 50,
+          "fontSize": 18, "bold": false, "color": "#333333"
+        },
+        {
+          "id": "el_s46_student",
+          "type": "text",
+          "text": "【中间层提问】请李奕洁同学回答",
+          "x": 80, "y": 240, "width": 800, "height": 30,
+          "fontSize": 15, "bold": true, "color": "#e07b39"
+        },
+        {
+          "id": "el_s46_img3",
+          "type": "image",
+          "src": "assets/22.4-histogram-frame-04.svg",
+          "x": 80, "y": 300, "width": 400, "height": 280
+        },
+        {
+          "id": "el_s46_img4",
+          "type": "image",
+          "src": "assets/22.4-histogram-frame-05.svg",
+          "x": 500, "y": 300, "width": 400, "height": 280
+        },
+        {
+          "id": "el_s46_labels",
+          "type": "text",
+          "text": "第三根                    第四根",
+          "x": 200, "y": 280, "width": 560, "height": 20,
+          "fontSize": 14, "bold": true, "align": "center", "color": "#888888"
+        }
+      ]
+    },
+    {
+      "id": "slide_12_step7_done",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "el_s7_title",
+          "type": "text",
+          "text": "✏️ 第7步：完成直方图",
+          "x": 80, "y": 60, "width": 800, "height": 50,
+          "fontSize": 28, "bold": true, "color": "#1a1a1a"
+        },
+        {
+          "id": "el_s7_tag",
+          "type": "text",
+          "text": "请在练习本上核对",
+          "x": 80, "y": 120, "width": 200, "height": 28,
+          "fontSize": 14, "bold": true, "color": "#ffffff",
+          "fill": "#4a90d9"
+        },
+        {
+          "id": "el_s7_img_done",
+          "type": "image",
+          "src": "assets/22.4-histogram-frame-07.svg",
+          "x": 60, "y": 170, "width": 440, "height": 260
+        },
+        {
+          "id": "el_s7_img_ref",
+          "type": "image",
+          "src": "assets/22.4-textbook-ref.jpg",
+          "x": 510, "y": 170, "width": 400, "height": 260
+        },
+        {
+          "id": "el_s7_check",
+          "type": "text",
+          "text": "核对：横轴区间连续；纵轴标频数；高度依次为 5,10,15,12,5,3。\n最高频数组：140≤x<160",
+          "x": 80, "y": 450, "width": 800, "height": 50,
+          "fontSize": 15, "bold": false, "color": "#555555"
+        }
+      ]
+    },
+    {
+      "id": "slide_13_step8_judge",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "el_jdg_title",
+          "type": "text",
+          "text": "🤔 第8步：用图作判断",
+          "x": 80, "y": 40, "width": 800, "height": 50,
+          "fontSize": 28, "bold": true, "color": "#1a1a1a"
+        },
+        {
+          "id": "el_jdg_tag",
+          "type": "text",
+          "text": "口头回答",
+          "x": 80, "y": 100, "width": 120, "height": 26,
+          "fontSize": 14, "bold": true, "color": "#ffffff",
+          "fill": "#4a90d9"
+        },
+        {
+          "id": "el_jdg_table",
+          "type": "shape",
+          "x": 80, "y": 140, "width": 700, "height": 110,
+          "shapeType": "table",
+          "note": "阶梯电价表：第一档0~180,0.52元；第二档181~280,0.57元；第三档>280,0.82元"
+        },
+        {
+          "id": "el_jdg_question",
+          "type": "text",
+          "text": "判断第一档电价是否覆盖大多数居民，需要把哪些组的\n频数相加？结果是多少户，占多少？",
+          "x": 80, "y": 270, "width": 800, "height": 50,
+          "fontSize": 18, "bold": false, "color": "#333333"
+        },
+        {
+          "id": "el_jdg_student",
+          "type": "text",
+          "text": "【拓展层提问】请吴瑾瑶同学回答",
+          "x": 80, "y": 335, "width": 800, "height": 30,
+          "fontSize": 15, "bold": true, "color": "#c44536"
+        },
+        {
+          "id": "el_jdg_img",
+          "type": "image",
+          "src": "assets/22.4-histogram-frame-08.svg",
+          "x": 200, "y": 380, "width": 560, "height": 160
+        },
+        {
+          "id": "el_jdg_evidence",
+          "type": "text",
+          "text": "证据句：小于180千瓦·时的有____户，占____。",
+          "x": 80, "y": 555, "width": 800, "height": 25,
+          "fontSize": 15, "bold": false, "color": "#888888", "italic": true
+        }
+      ]
+    },
+    {
+      "id": "slide_14_practice1",
+      "background": "#f9f9f9",
+      "elements": [
+        {
+          "id": "el_pr1_title",
+          "type": "text",
+          "text": "📝 练习/检测",
+          "x": 80, "y": 60, "width": 800, "height": 50,
+          "fontSize": 28, "bold": true, "color": "#1a1a1a"
+        },
+        {
+          "id": "el_pr1_tag",
+          "type": "text",
+          "text": "请在练习本上完成",
+          "x": 80, "y": 120, "width": 200, "height": 28,
+          "fontSize": 14, "bold": true, "color": "#ffffff",
+          "fill": "#e07b39"
+        },
+        {
+          "id": "el_pr1_task",
+          "type": "text",
+          "text": "教材练习(1)(2)\n（限时 1.5 分钟）\n评分：每问2分，共4分\n产出：写出数据个数、分布范围、组距和组数。",
+          "x": 80, "y": 165, "width": 420, "height": 110,
+          "fontSize": 17, "bold": false, "color": "#333333"
+        },
+        {
+          "id": "el_pr1_source",
+          "type": "text",
+          "text": "source: 教材原文_22.4 | question_id: 22.4-练习(1)(2)",
+          "x": 80, "y": 285, "width": 420, "height": 20,
+          "fontSize": 10, "color": "#cccccc"
+        },
+        {
+          "id": "el_pr1_img",
+          "type": "image",
+          "src": "assets/22.4-exercise.jpg",
+          "x": 510, "y": 160, "width": 400, "height": 150,
+          "note": "教材练习截图"
+        }
+      ]
+    },
+    {
+      "id": "slide_15_answer1",
+      "background": "#f9f9f9",
+      "elements": [
+        {
+          "id": "el_ans1_title",
+          "type": "text",
+          "text": "📝 参考答案",
+          "x": 80, "y": 60, "width": 800, "height": 50,
+          "fontSize": 28, "bold": true, "color": "#1a1a1a"
+        },
+        {
+          "id": "el_ans1_content",
+          "type": "text",
+          "text": "练习(1)：数据个数 n=80；数据的大致分布范围在 147.5 与 174.5 之间。\n\n练习(2)：组距为 3，组数为 9。\n\n评分：数据个数1分，范围1分，组距1分，组数1分。",
+          "x": 80, "y": 140, "width": 800, "height": 180,
+          "fontSize": 18, "bold": false, "color": "#333333"
+        }
+      ]
+    },
+    {
+      "id": "slide_16_practice2",
+      "background": "#f9f9f9",
+      "elements": [
+        {
+          "id": "el_pr2_title",
+          "type": "text",
+          "text": "📝 练习/检测",
+          "x": 80, "y": 60, "width": 800, "height": 50,
+          "fontSize": 28, "bold": true, "color": "#1a1a1a"
+        },
+        {
+          "id": "el_pr2_task",
+          "type": "text",
+          "text": "教材练习(3)(4)(5)\n\n给八年级男生订校服时，请从练习图表中提取小、中、大三个\n尺码对应的频数或频率，再给订购建议。",
+          "x": 80, "y": 140, "width": 800, "height": 120,
+          "fontSize": 18, "bold": false, "color": "#333333"
+        },
+        {
+          "id": "el_pr2_student",
+          "type": "text",
+          "text": "【拓展层提问】请蔡孟言同学回答",
+          "x": 80, "y": 280, "width": 800, "height": 30,
+          "fontSize": 15, "bold": true, "color": "#c44536"
+        },
+        {
+          "id": "el_pr2_source",
+          "type": "text",
+          "text": "source: 教材原文_22.4 | question_id: 22.4-练习(3)(4)(5)",
+          "x": 80, "y": 400, "width": 800, "height": 20,
+          "fontSize": 10, "color": "#cccccc"
+        }
+      ]
+    },
+    {
+      "id": "slide_17_answer2",
+      "background": "#f9f9f9",
+      "elements": [
+        {
+          "id": "el_ans2_title",
+          "type": "text",
+          "text": "📝 参考答案",
+          "x": 80, "y": 60, "width": 800, "height": 50,
+          "fontSize": 28, "bold": true, "color": "#1a1a1a"
+        },
+        {
+          "id": "el_ans2_content",
+          "type": "text",
+          "text": "练习(3)：频数最大的组为 156.5≤x<159.5；频数 22，频率 27.5%。\n\n练习(4)：三组频数分别为 16,53,11，频率分别为 20%,66.25%,13.75%。\n\n练习(5)：建议小号约 16 套，中号约 53 套，大号约 11 套；中号可适当预留余量。",
+          "x": 80, "y": 140, "width": 800, "height": 220,
+          "fontSize": 17, "bold": false, "color": "#333333"
+        }
+      ]
+    },
+    {
+      "id": "slide_18_summary",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "el_sum_title",
+          "type": "text",
+          "text": "💡 本课小结",
+          "x": 80, "y": 60, "width": 800, "height": 50,
+          "fontSize": 28, "bold": true, "color": "#1a1a1a"
+        },
+        {
+          "id": "el_sum_table",
+          "type": "shape",
+          "x": 60, "y": 130, "width": 840, "height": 210,
+          "shapeType": "table",
+          "note": "3行×3列表格：基础层-第一步第二步做什么？-王澎辉 / 中间层-哪一项决定长方形高度？-陈美霖 / 拓展层-最高组和累计比例提供什么证据？-李奕丹"
+        },
+        {
+          "id": "el_sum_mermaid",
+          "type": "image",
+          "src": "assets/22.4-flow-03.png",
+          "x": 120, "y": 370, "width": 720, "height": 150,
+          "note": "mermaid: 原始数据→分组→频数表→直方图→方案判断"
+        }
+      ]
+    },
+    {
+      "id": "slide_19_homework",
+      "background": "#ffffff",
+      "elements": [
+        {
+          "id": "el_hw_title",
+          "type": "text",
+          "text": "📝 课后作业",
+          "x": 80, "y": 50, "width": 800, "height": 50,
+          "fontSize": 28, "bold": true, "color": "#1a1a1a"
+        },
+        {
+          "id": "el_hw_required",
+          "type": "text",
+          "text": "必做：教材练习(1)-(4)错题订正，写出错因和订正过程。",
+          "x": 80, "y": 120, "width": 800, "height": 30,
+          "fontSize": 16, "bold": true, "color": "#2d6a4f"
+        },
+        {
+          "id": "el_hw_optional",
+          "type": "text",
+          "text": "选作：教材A组第1题；若课堂已完成，则补写第(1)(2)(3)的依据。",
+          "x": 80, "y": 165, "width": 800, "height": 30,
+          "fontSize": 16, "bold": true, "color": "#e07b39"
+        },
+        {
+          "id": "el_hw_challenge",
+          "type": "text",
+          "text": "挑战：教材B组第3题，比较组距 0.2 和 0.1 的分组呈现效果，并完成频数统计表。",
+          "x": 80, "y": 210, "width": 800, "height": 30,
+          "fontSize": 16, "bold": true, "color": "#c44536"
+        },
+        {
+          "id": "el_hw_img",
+          "type": "image",
+          "src": "assets/22.4-homework-ref.jpg",
+          "x": 180, "y": 270, "width": 600, "height": 280
+        },
+        {
+          "id": "el_hw_source",
+          "type": "text",
+          "text": "question_ids: 22.4-练习(1)(2)(3)(4), 22.4-A组-1, 22.4-B组-3",
+          "x": 80, "y": 570, "width": 800, "height": 20,
+          "fontSize": 10, "color": "#cccccc"
+        }
+      ]
+    }
+  ],
+  "assets": [
+    { "file": "22.4-flow-01.png", "source": "mermaid render", "note": "目标页流程图" },
+    { "file": "22.4-flow-02.png", "source": "mermaid render", "note": "数据范围流程图" },
+    { "file": "22.4-flow-03.png", "source": "mermaid render", "note": "小结流程图" },
+    { "file": "22.4-histogram-frame-01.svg", "source": "knowledge/images/", "note": "坐标轴框架" },
+    { "file": "22.4-histogram-frame-02.svg", "source": "knowledge/images/", "note": "第一根长方形" },
+    { "file": "22.4-histogram-frame-03.svg", "source": "knowledge/images/", "note": "第二根长方形" },
+    { "file": "22.4-histogram-frame-04.svg", "source": "knowledge/images/", "note": "第三根长方形" },
+    { "file": "22.4-histogram-frame-05.svg", "source": "knowledge/images/", "note": "第四根长方形" },
+    { "file": "22.4-histogram-frame-07.svg", "source": "knowledge/images/", "note": "完整直方图" },
+    { "file": "22.4-histogram-frame-08.svg", "source": "knowledge/images/", "note": "判断用直方图" },
+    { "file": "22.4-textbook-ref.jpg", "source": "knowledge/images/", "note": "教材对比图" },
+    { "file": "22.4-exercise.jpg", "source": "knowledge/images/", "note": "教材练习截图" },
+    { "file": "22.4-homework-ref.jpg", "source": "knowledge/images/", "note": "作业引用图" }
+  ]
+}

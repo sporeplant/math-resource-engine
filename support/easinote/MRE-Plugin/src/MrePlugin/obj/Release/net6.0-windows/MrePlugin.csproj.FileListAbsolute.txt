@@ -1,0 +1,6 @@
+C:\MRE\support\easinote\MRE-Plugin\src\MrePlugin\obj\Release\net6.0-windows\MrePlugin.csproj.AssemblyReference.cache
+C:\MRE\support\easinote\MRE-Plugin\src\MrePlugin\obj\Release\net6.0-windows\MrePlugin.g.resources
+C:\MRE\support\easinote\MRE-Plugin\src\MrePlugin\obj\Release\net6.0-windows\MrePlugin.GeneratedMSBuildEditorConfig.editorconfig
+C:\MRE\support\easinote\MRE-Plugin\src\MrePlugin\obj\Release\net6.0-windows\MrePlugin.AssemblyInfoInputs.cache
+C:\MRE\support\easinote\MRE-Plugin\src\MrePlugin\obj\Release\net6.0-windows\MrePlugin.AssemblyInfo.cs
+C:\MRE\support\easinote\MRE-Plugin\src\MrePlugin\obj\Release\net6.0-windows\MrePlugin.csproj.CoreCompileInputs.cache

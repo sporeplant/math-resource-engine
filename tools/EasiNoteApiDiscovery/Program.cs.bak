@@ -1,0 +1,81 @@
+// Quick Element/ImageElement discovery
+using System.IO;
+using System.Reflection;
+
+var enDir = @"C:\Program Files (x86)\Seewo\EasiNote5\EasiNote5_5.2.4.9801";
+var mainDir = Path.Combine(enDir, "Main");
+
+var resolver = new PathAssemblyResolver(
+    Directory.GetFiles(mainDir, "*.dll")
+        .Concat(Directory.GetFiles(Path.Combine(enDir, "runtime", "shared", "Microsoft.WindowsDesktop.App"), "*.dll", SearchOption.AllDirectories))
+        .Concat(Directory.GetFiles(Path.Combine(enDir, "runtime", "shared", "Microsoft.NETCore.App"), "*.dll", SearchOption.AllDirectories))
+);
+using var mlc = new System.Reflection.MetadataLoadContext(resolver);
+
+foreach (var dllName in new[] { "Cvte.Paint.Framework.dll", "EasiNote.Business.dll" })
+{
+    var asm = mlc.LoadFromAssemblyPath(Path.Combine(mainDir, dllName));
+
+    // Element base class
+    foreach (var t in asm.GetExportedTypes())
+    {
+        if (t.Name == "Element" && t.IsPublic && t.IsAbstract)
+        {
+            Console.WriteLine($"## Element: {t.FullName}");
+            Console.WriteLine($"  BaseType: {t.BaseType?.FullName}");
+            foreach (var p in t.GetProperties().Where(p => p.DeclaringType == t).Take(40))
+            {
+                var gs = (p.CanRead ? "get" : "") + (p.CanWrite ? ";set" : "");
+                Console.WriteLine($"  {Fmt(p.PropertyType)} {p.Name} {{{gs}}}");
+            }
+            Console.WriteLine();
+        }
+
+        // ImageElement
+        if (t.Name == "ImageElement" && !t.IsAbstract)
+        {
+            Console.WriteLine($"## ImageElement: {t.FullName}");
+            Console.WriteLine($"  BaseType: {t.BaseType?.FullName}");
+            foreach (var c in t.GetConstructors().Where(c => c.IsPublic))
+            {
+                var pars = string.Join(", ", c.GetParameters().Select(p => $"{Fmt(p.ParameterType)} {p.Name}"));
+                Console.WriteLine($"  ctor({pars})");
+            }
+            foreach (var p in t.GetProperties().Where(p => p.DeclaringType == t).Take(25))
+            {
+                var gs = (p.CanRead ? "get" : "") + (p.CanWrite ? ";set" : "");
+                Console.WriteLine($"  {Fmt(p.PropertyType)} {p.Name} {{{gs}}}");
+            }
+            Console.WriteLine();
+        }
+
+        // PaintTextEditor (TextElement's TextEditor type)
+        if (t.Name == "PaintTextEditor" && t.IsPublic)
+        {
+            Console.WriteLine($"## PaintTextEditor: {t.FullName}");
+            foreach (var p in t.GetProperties().Where(p => p.DeclaringType == t).Take(20))
+            {
+                var gs = (p.CanRead ? "get" : "") + (p.CanWrite ? ";set" : "");
+                Console.WriteLine($"  {Fmt(p.PropertyType)} {p.Name} {{{gs}}}");
+            }
+            foreach (var m in t.GetMethods().Where(m => m.DeclaringType == t && m.Name is string n && (n.Contains("Text") || n.Contains("Set") || n.Contains("Get"))).Take(15))
+            {
+                var pars = string.Join(", ", m.GetParameters().Select(p => $"{Fmt(p.ParameterType)} {p.Name}"));
+                Console.WriteLine($"  {Fmt(m.ReturnType)} {m.Name}({pars})");
+            }
+            Console.WriteLine();
+        }
+    }
+}
+
+static string Fmt(Type t)
+{
+    if (t == typeof(void)) return "void";
+    if (t.IsGenericType)
+    {
+        var name = t.Name[..t.Name.IndexOf('`')];
+        var args = string.Join(", ", t.GenericTypeArguments.Select(Fmt));
+        return $"{name}<{args}>";
+    }
+    return t.Name;
+}

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ncK29JreDL4uZ3vwfK2OHuLgAAhBLMirc5+iUqwgXWp7aI1N1wOJg2FtJruBT/Y8aR5mV35GZRw1L73pNfVCfA==",
+  "success": true,
+  "projectFilePath": "C:\\MRE\\tools\\EasiNoteApiDiscovery\\EasiNoteApiDiscovery.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.reflection.metadata\\6.0.0\\system.reflection.metadata.6.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.reflection.metadataloadcontext\\6.0.0\\system.reflection.metadataloadcontext.6.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

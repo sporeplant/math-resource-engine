@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "NST33ftfj9A3H2UpYc/f23ZQcIMWZ51+4gq8wfbl5aZT4NMzOQ2M3HFhlI90wax5A7KbOFYi/JOb+T+FtCCKzg==",
+  "success": true,
+  "projectFilePath": "C:\\MRE\\support\\easinote\\MRE-Plugin\\src\\MrePlugin\\MrePlugin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\dotnetcampus.easiplugin.sdk\\0.44.2\\dotnetcampus.easiplugin.sdk.0.44.2.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

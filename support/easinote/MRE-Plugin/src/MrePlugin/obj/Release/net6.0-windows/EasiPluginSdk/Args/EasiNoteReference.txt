@@ -1,0 +1,15 @@
+C:\Program Files (x86)\Seewo\EasiNote5\EasiNote5_5.2.4.9801\Main\Cvte.Core.cc.dll
+C:\Program Files (x86)\Seewo\EasiNote5\EasiNote5_5.2.4.9801\Main\Cvte.EasiUI.dll
+C:\Program Files (x86)\Seewo\EasiNote5\EasiNote5_5.2.4.9801\Main\Cvte.IO.cc.dll
+C:\Program Files (x86)\Seewo\EasiNote5\EasiNote5_5.2.4.9801\Main\Cvte.Net.dll
+C:\Program Files (x86)\Seewo\EasiNote5\EasiNote5_5.2.4.9801\Main\Cvte.Paint.Framework.dll
+C:\Program Files (x86)\Seewo\EasiNote5\EasiNote5_5.2.4.9801\Main\Cvte.Paint.Shell.dll
+C:\Program Files (x86)\Seewo\EasiNote5\EasiNote5_5.2.4.9801\Main\Cvte.Storage.dll
+C:\Program Files (x86)\Seewo\EasiNote5\EasiNote5_5.2.4.9801\Main\Cvte.Windows.cc.dll
+C:\Program Files (x86)\Seewo\EasiNote5\EasiNote5_5.2.4.9801\Main\Cvte.Windows.TextEditorPlus.dll
+C:\Program Files (x86)\Seewo\EasiNote5\EasiNote5_5.2.4.9801\Main\dotnetCampus.Telescope.dll
+C:\Program Files (x86)\Seewo\EasiNote5\EasiNote5_5.2.4.9801\Main\EasiNote.Account.dll
+C:\Program Files (x86)\Seewo\EasiNote5\EasiNote5_5.2.4.9801\Main\EasiNote.Api.dll
+C:\Program Files (x86)\Seewo\EasiNote5\EasiNote5_5.2.4.9801\Main\EasiNote.CrossUI.dll
+C:\Program Files (x86)\Seewo\EasiNote5\EasiNote5_5.2.4.9801\Main\EasiNote.Foundation.dll
+C:\Program Files (x86)\Seewo\EasiNote5\EasiNote5_5.2.4.9801\Main\EasiNote.Utils.dll
