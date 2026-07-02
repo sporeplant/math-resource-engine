@@ -52,7 +52,7 @@ D．正方形的对角线互相垂直平分且相等
 
 符号语言：在 ▱ABCD 中，
 
-![](images/第05讲-原卷版-34d22ade0d8f0f602da9e1086739334c49fceacef70836543b32d66df21cb853.jpg)
+![](images/lecture-05-34d22ade0d8f0f602da9e1086739334c49fceacef70836543b32d66df21cb853.jpg)
 
 
 ∵AB = BC，且 ∠ABC = 90°
@@ -134,7 +134,7 @@ D．当 AC ⊥ BD 时，▱ABCD 为矩形
 
 4．如图，在边长为 6 的正方形 ABCD 中，E 是对角线 AC 上一点，作 EF ⊥ AD 于点 F，连接 DE，若 DF = 2．则 DE 的长为（ ）
 
-![](images/第05讲-原卷版-2c787d3e725790bf32837a14af864f99b88eb98b2abbd7ef722daf5f5b21deb9.jpg)
+![](images/lecture-05-2c787d3e725790bf32837a14af864f99b88eb98b2abbd7ef722daf5f5b21deb9.jpg)
 
 A．3√2
 
@@ -146,7 +146,7 @@ D．2.5
 
 5．如图所示，在正方形 ABCD 中，E 是对角线 AC 上的一点．连接 BE，且 AB = AE，则 ∠EBC 的度数是（ ）
 
-![](images/第05讲-原卷版-5b4979433e202815daa25b83acd88e721f2c2d682b0f7c73564c89cf2750400f.jpg)
+![](images/lecture-05-5b4979433e202815daa25b83acd88e721f2c2d682b0f7c73564c89cf2750400f.jpg)
 
 A．45°
 
@@ -168,7 +168,7 @@ D．（1，﹣1）或（1，1）
 
 7．如图，在矩形 ABCD 中，对角线 AC、BD 交于点 O，添加下列一个条件，仍不能使矩形 ABCD 成为正方形的是（ ）
 
-![](images/第05讲-原卷版-1d87d960e8da7cd85d704af5f0ec1fb434fe76eac0b16c6089a23f05bd56bb95.jpg)
+![](images/lecture-05-1d87d960e8da7cd85d704af5f0ec1fb434fe76eac0b16c6089a23f05bd56bb95.jpg)
 
 A．AC ⊥ BD
 
@@ -180,7 +180,7 @@ D．△OCD 是等边三角形
 
 8．如图，E、F、G、H 分别是四边形 ABCD 四条边的中点，则四边形 EFGH 一定是（ ）
 
-![](images/第05讲-原卷版-4d0950711951c8b0b67c993058735b57dcb75d275b7f7e869edca0f022a9342c.jpg)
+![](images/lecture-05-4d0950711951c8b0b67c993058735b57dcb75d275b7f7e869edca0f022a9342c.jpg)
 
 A．平行四边形
 
@@ -194,7 +194,7 @@ D．正方形
 
 9．如图，点 M 是正方形 ABCD 边 AB 上一点，DN ⊥ CM 于 N，DN = 2CN = 2，则 BN 的长度为（ ）
 
-![](images/第05讲-原卷版-766e88cf3880d48c4f90b9c852d97abdd92873bdc3cb47a57b89f14f1a014c4b.jpg)
+![](images/lecture-05-766e88cf3880d48c4f90b9c852d97abdd92873bdc3cb47a57b89f14f1a014c4b.jpg)
 
 A．2
 
@@ -206,7 +206,7 @@ D．√2/2
 
 10．如图，在正方形 ABCD 中，点 E，F 分别在 AD，AB 上，满足 DE = AF，连接 CE，DF，点 P，Q 分别是 DF，CE 的中点，连接 PQ．若 ∠ADF = α．则 ∠PQE 可以用 α 表示为（ ）
 
-![](images/第05讲-原卷版-f10faddef8ae0ac339f5f15f186406d8d6d9e9d57bea66a237d7aef31737f152.jpg)
+![](images/lecture-05-f10faddef8ae0ac339f5f15f186406d8d6d9e9d57bea66a237d7aef31737f152.jpg)
 
 A．α
 
@@ -218,11 +218,11 @@ D．3α - 45°
 
 11．如图，正方形 ABCO 中，O 是坐标原点，A 的坐标为（1，√3），则点 C 的坐标为（-√3，1）。
 
-![](images/第05讲-原卷版-c372cd6f1604ba0fcab63f6403baba29c7f6558e9308fe26f4bd8af7d761cdc5.jpg)
+![](images/lecture-05-c372cd6f1604ba0fcab63f6403baba29c7f6558e9308fe26f4bd8af7d761cdc5.jpg)
 
 12．如图，AC 和 BD 是菱形 ABCD 的对角线，若再补充一个条件能使其成为正方形，下列条件：① AC = BD；② AC ⊥ BD；③ AB² + AD² = BD²；④ ∠ACD = ∠ADC．其中符合要求的是（ ）
 
-![](images/第05讲-原卷版-fe2656aa3f684b265038854ad6b1c298cbf516f72ffcedce699de9d9b9dcf29f.jpg)
+![](images/lecture-05-fe2656aa3f684b265038854ad6b1c298cbf516f72ffcedce699de9d9b9dcf29f.jpg)
 
 A．①②
 
@@ -234,7 +234,7 @@ D．②④
 
 13．如图所示，在正方形 ABCD 中，O 是对角线 AC、BD 的交点，过 O 作 OE ⊥ OF，分别交 AB、BC 于 E、F，若 AE = 4，CF = 3，则 EF 的长为（ ）
 
-![](images/第05讲-原卷版-ee10a21313639d85a64e0c23daa15c96e8f8d27d61cecaf78db847efc540ff20.jpg)
+![](images/lecture-05-ee10a21313639d85a64e0c23daa15c96e8f8d27d61cecaf78db847efc540ff20.jpg)
 
 A．3
 
@@ -246,7 +246,7 @@ D．6
 
 14．如图，在正方形 ABCD 中，E 为 BC 上一点，连接 DE，AF ⊥ DE 于点 F，连接 CF，设 ∠DAF = α，若 AF = 2DF，则∠DCF 一定等于（ ）
 
-![](images/第05讲-原卷版-3dda431fb7b8f6d51f170493a4740f37ec4fe4b1a01e68520edb9628595cffb9.jpg)
+![](images/lecture-05-3dda431fb7b8f6d51f170493a4740f37ec4fe4b1a01e68520edb9628595cffb9.jpg)
 
 A．45° - α
 
@@ -258,15 +258,15 @@ D．10° + α/8
 
 15．如图，在平面直角坐标系中，正方形 ABCD 的边长为 2，∠DAO = 60°，则点 C 的坐标为（√3，1 + √3）。
 
-![](images/第05讲-原卷版-1b0eca858896f6f512fcfe2d999714b9ddb9b3ad6a39df00f46fc1a916487e17.jpg)
+![](images/lecture-05-1b0eca858896f6f512fcfe2d999714b9ddb9b3ad6a39df00f46fc1a916487e17.jpg)
 
 16．如图，E、F、M、N 分别是正方形 ABCD 四条边上的点，且 AE = BF = CM = DN．求证：四边形 EFMN 是正方形
 
-![](images/第05讲-原卷版-fb6161ab53d2fb2217be9114bc19bee8093cac5c1f68ee6d4ae72c3a6cf3a84a.jpg)
+![](images/lecture-05-fb6161ab53d2fb2217be9114bc19bee8093cac5c1f68ee6d4ae72c3a6cf3a84a.jpg)
 
 17．如图，在正方形 ABCD 中，AB = 3，点 F 是 AB 边上一点，点 E 是 BC 延长线上一点，AF = CE，BF = 2AF．连接 DF、DE、EF，EF 与对角线 AC 相交于点 G，则线段 BG 的长是（ ）
 
-![](images/第05讲-原卷版-616284dd81d07395070c747583991062adbcc2d11afdc89ebc15a88b768b0e9f.jpg)
+![](images/lecture-05-616284dd81d07395070c747583991062adbcc2d11afdc89ebc15a88b768b0e9f.jpg)
 
 A．√5
 
@@ -280,7 +280,7 @@ D．3√2/2
 
 若 ∠ADF = α，则∠BEF 的度数是（ ）
 
-![](images/第05讲-原卷版-b7715d776f616d6641d2446fe40d43446939381d403c5b5ad878675649808f79.jpg)
+![](images/lecture-05-b7715d776f616d6641d2446fe40d43446939381d403c5b5ad878675649808f79.jpg)
 
 A．2α
 
