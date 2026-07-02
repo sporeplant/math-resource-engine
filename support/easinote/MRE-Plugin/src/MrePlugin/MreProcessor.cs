@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Media;
 
 using Cvte.EasiNote;
 using Cvte.Paint.Framework;
@@ -68,10 +69,10 @@ public static class MreProcessor
         if (lesson?.Slides is null || lesson.Slides.Count == 0)
             return MreProcessResult.Fail("lesson.json 中没有 slides 或为空。");
 
-        // 2. 获取 Board（画板）和 asset 基础路径
-        var board = GetBoard();
-        if (board is null)
-            return MreProcessResult.Fail("无法获取 Board 对象。可能是未处于备课模式。");
+        // 2. 获取希沃备课编辑白板服务和 asset 基础路径
+        var editingBoard = EN.EditingBoardApi;
+        if (editingBoard is null || !editingBoard.IsLoaded)
+            return MreProcessResult.Fail("无法获取备课编辑白板。请先打开或新建一个课件，并进入备课编辑页面。");
 
         var assetBaseDir = Path.GetDirectoryName(filePath) ?? "";
         var assetsDir = Path.Combine(assetBaseDir, "assets");
@@ -84,13 +85,8 @@ public static class MreProcessor
 
             try
             {
-                // 创建 Slide 并插入到 Board
+                // 创建 Slide，添加元素后插入到当前课件
                 var slide = new Slide(slideData.Id ?? $"mre_{i}");
-                slide.Background = ParseBrush(slideData.Background);
-                board.Insert(slide);
-                // board.Insert(slide);  — 追加到末尾
-
-                // 在新页面上逐个创建元素
                 foreach (var elemData in slideData.Elements)
                 {
                     try
@@ -100,10 +96,11 @@ public static class MreProcessor
                     }
                     catch (Exception ex)
                     {
-                        System.Diagnostics.Debug.WriteLine(
-                            $"[MRE] 元素创建失败: id={elemData.Id}, type={elemData.Type}, error={ex.Message}");
+                        Log($"元素创建失败: slide={slideData.Id}, id={elemData.Id}, type={elemData.Type}, error={ex}");
                     }
                 }
+
+                editingBoard.InsertSlide(slide);
             }
             catch (Exception ex)
             {
@@ -141,33 +138,30 @@ public static class MreProcessor
     /// </summary>
     private static void CreateTextElement(Slide slide, ElementData data)
     {
-        var textElement = new TextElement(isEditable: false);
+        var textElement = new TextElement(isEditable: true);
 
-        // 位置和大小
         double x = data.X.GetValueOrDefault(100);
         double y = data.Y.GetValueOrDefault(50);
         double w = data.Width.GetValueOrDefault(800);
         double h = data.Height.GetValueOrDefault(60);
+
         textElement.Bounds = new Rect(x, y, w, h);
+        textElement.Width = w;
+        textElement.Height = h;
+        textElement.Background = Brushes.Transparent;
+        textElement.BorderThickness = 0;
+        textElement.IsEditable = true;
 
-        // 文本内容
-        var richText = new RichTextSaveInfo
-        {
-            Text = data.Text ?? "",
-            SizeToContent = SizeToContent.WidthAndHeight,
-        };
-        textElement.TextEditor.SetRichText(richText, withForceRedraw: false);
-
-        // 字体样式 — 通过 ParagraphSaveInfo 设置
-        if (data.FontSize.HasValue || data.Bold == true || data.Italic == true || !string.IsNullOrEmpty(data.Color))
-        {
-            var paragraph = richText.Paragraphs?.FirstOrDefault();
-            if (paragraph is not null)
-            {
-                // paragraph.FontSize / paragraph.Bold / etc.
-                // 具体属性名需在 EasiNote 运行时通过 TextEditor API 验证
-            }
-        }
+        var editor = textElement.TextEditor;
+        editor.Text = data.Text ?? string.Empty;
+        editor.Width = w;
+        editor.Height = h;
+        editor.FontSize = data.FontSize.GetValueOrDefault(20);
+        editor.Foreground = ParseBrush(data.Color) ?? Brushes.Black;
+        editor.FontWeight = data.Bold == true ? FontWeights.Bold : FontWeights.Normal;
+        editor.FontStyle = data.Italic == true ? FontStyles.Italic : FontStyles.Normal;
+        editor.TextWrapping = TextWrapping.Wrap;
+        editor.IsEditable = true;
 
         slide.Add(textElement);
     }
@@ -185,6 +179,7 @@ public static class MreProcessor
         if (!File.Exists(imagePath))
         {
             System.Diagnostics.Debug.WriteLine($"[MRE] 图片文件不存在: {imagePath}");
+            Log($"图片文件不存在: {imagePath}");
             return;
         }
 
@@ -202,6 +197,7 @@ public static class MreProcessor
         //   查找 Element 的静态 Create 方法
 
         System.Diagnostics.Debug.WriteLine($"[MRE] ImageElement 创建待实现: src={data.Src}");
+        Log($"ImageElement 创建待实现: src={data.Src}");
     }
 
     /// <summary>
@@ -260,24 +256,36 @@ public static class MreProcessor
         return type?.ToLowerInvariant() switch
         {
             "rectangle" => ShapeType.Rectangle,
-            "ellipse" => ShapeType.Ellipse,
-            "circle" => ShapeType.Ellipse,
             "line" => ShapeType.Line,
-            "triangle" => ShapeType.Triangle,
             _ => ShapeType.Rectangle,
         };
     }
 
     private static Brush? ParseBrush(string? color)
     {
-        if (string.IsNullOrEmpty(color)) return null;
+        if (string.IsNullOrWhiteSpace(color)) return null;
         try
         {
-            return (Brush)new System.Windows.Media.BrushConverter().ConvertFromString(color)!;
+            return (Brush)new BrushConverter().ConvertFromString(color)!;
         }
         catch
         {
             return null;
+        }
+    }
+
+    private static void Log(string message)
+    {
+        try
+        {
+            var logPath = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                "MrePlugin.log");
+            File.AppendAllText(logPath, $"{DateTime.Now:HH:mm:ss.fff} [MreProcessor] {message}{Environment.NewLine}");
+        }
+        catch
+        {
+            // ignored
         }
     }
 }

@@ -3,9 +3,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 
+using System.Windows.Media;
+
 using Cvte.EasiNote;
-using Cvte.Paint.Features.Elements;
-using Cvte.Paint.Features.Elements.Texts;
 using Cvte.Windows.Input;
 
 using dotnetCampus.EasiPlugins;
@@ -38,19 +38,46 @@ public class MreImportMenuItem : HeadToolBarItem
         // 仅在备课模式下可用（Shell 端非授课模式）
         Predicate = _ => !EN.CommandOptions.IsCloud;
 
-        Command = new DelegateCommand(OnImportClicked);
+        Command = new DelegateCommand(MreImportCommand.Run);
 
         // 注册图标资源
         ResourceHelper.TryAddResource(ImageSourceKey, CreateIconGeometry());
     }
 
     /// <summary>
-    /// 用户点击"MRE导入"按钮时触发。
-    /// 1. 弹出文件选择对话框，让用户选择 lesson.json
-    /// 2. 解析 JSON
-    /// 3. 调用 MreProcessor 创建页面和元素
+    /// 创建工具栏图标几何图形（简约 M 字母图形）。
     /// </summary>
-    private async void OnImportClicked()
+    private static DrawingImage CreateIconGeometry()
+    {
+        return new DrawingImage
+        {
+            Drawing = new GeometryDrawing(
+                brush: System.Windows.Media.Brushes.Black,
+                pen: null,
+                geometry: Geometry.Parse(
+                    // 简约 "M" 字母几何路径
+                    "M4,20 L4,6 L10,16 L16,6 L16,20 L14,20 L14,10 L10,18 L6,10 L6,20 Z"))
+        };
+    }
+}
+
+/// <summary>
+/// 希沃白板空白处右键菜单入口。顶部工具栏在部分版本/模式下可能不展示，
+/// 因此保留右键菜单作为稳定的 MVP 测试入口。
+/// </summary>
+public class MreImportBoardMenuItem : BoardEditMenuItem
+{
+    public MreImportBoardMenuItem()
+    {
+        SortHint = 50;
+        Command = new DelegateCommand(MreImportCommand.Run);
+        Predicate = elements => elements.Count == 0 && !EN.CommandOptions.IsCloud;
+    }
+}
+
+internal static class MreImportCommand
+{
+    public static async void Run()
     {
         var dialog = new OpenFileDialog
         {
@@ -101,22 +128,6 @@ public class MreImportMenuItem : HeadToolBarItem
                     MessageBoxImage.Error);
             }
         }, "正在导入 MRE 课件...", new CancellationTokenSource());
-    }
-
-    /// <summary>
-    /// 创建工具栏图标几何图形（简约 M 字母图形）。
-    /// </summary>
-    private static DrawingImage CreateIconGeometry()
-    {
-        return new DrawingImage
-        {
-            Drawing = new GeometryDrawing(
-                brush: System.Windows.Media.Brushes.Black,
-                pen: null,
-                geometry: Geometry.Parse(
-                    // 简约 "M" 字母几何路径
-                    "M4,20 L4,6 L10,16 L16,6 L16,20 L14,20 L14,10 L10,18 L6,10 L6,20 Z"))
-        };
     }
 }
 

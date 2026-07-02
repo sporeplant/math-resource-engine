@@ -14,12 +14,13 @@
         "outputPath": "C:\\MRE\\support\\easinote\\MRE-Plugin\\src\\MrePlugin\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\MRE\\support\\easinote\\MRE-Plugin\\NuGet.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
+          "C:\\MRE\\support\\easinote\\local-packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,7 +41,7 @@
           "dependencies": {
             "dotnetCampus.EasiPlugin.Sdk": {
               "target": "Package",
-              "version": "[0.44.*, )"
+              "version": "[2.1.1-alpha.3, )"
             }
           },
           "imports": [

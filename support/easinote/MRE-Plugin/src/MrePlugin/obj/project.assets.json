@@ -2,12 +2,8 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
-      "dotnetCampus.EasiPlugin.Sdk/0.44.2": {
+      "dotnetCampus.EasiPlugin.Sdk/2.1.1-alpha.3": {
         "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.1",
-          "System.ValueTuple": "4.5.0"
-        },
         "build": {
           "build/dotnetCampus.EasiPlugin.Sdk.props": {},
           "build/dotnetCampus.EasiPlugin.Sdk.targets": {}
@@ -16,151 +12,72 @@
           "buildMultiTargeting/dotnetCampus.EasiPlugin.Sdk.props": {},
           "buildMultiTargeting/dotnetCampus.EasiPlugin.Sdk.targets": {}
         }
-      },
-      "Newtonsoft.Json/13.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.ValueTuple/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/_._": {}
-        }
       }
     }
   },
   "libraries": {
-    "dotnetCampus.EasiPlugin.Sdk/0.44.2": {
-      "sha512": "onQfZOIxWrkhd1JzzyrBfJjJJOr7JSwNoCnbgU2GaCOePFcKSN3JA2Xtb5QMVYOZk/heC8BqjiXf/w0diQ7E1w==",
+    "dotnetCampus.EasiPlugin.Sdk/2.1.1-alpha.3": {
+      "sha512": "xciN6GubFT7lgZ6dbJsu9pXRrn/EUpv8f1XKsJuoOfknfp7iXLFzHO8/XIiNSNWhyWoYcYcGO9WTQJvcRDnisg==",
       "type": "package",
-      "path": "dotnetcampus.easiplugin.sdk/0.44.2",
+      "path": "dotnetcampus.easiplugin.sdk/2.1.1-alpha.3",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENCE.md",
-        "assets/icon.ico",
+        "analyzers/dotnet/cs/dotnetCampus.EasiPlugins.Analyzer.deps.json",
+        "analyzers/dotnet/cs/dotnetCampus.EasiPlugins.Analyzer.dll",
+        "analyzers/dotnet/cs/dotnetCampus.EasiPlugins.Analyzer.pdb",
+        "analyzers/dotnet/cs/zh-CN/dotnetCampus.EasiPlugins.Analyzer.resources.dll",
+        "build/Core.props",
+        "build/Core.targets",
         "build/dotnetCampus.EasiPlugin.Sdk.props",
         "build/dotnetCampus.EasiPlugin.Sdk.targets",
         "buildMultiTargeting/dotnetCampus.EasiPlugin.Sdk.props",
         "buildMultiTargeting/dotnetCampus.EasiPlugin.Sdk.targets",
-        "dotnetcampus.easiplugin.sdk.0.44.2.nupkg.sha512",
+        "content/boost/DotNetCampus.Installer.Boost.exe",
+        "content/boost/DotNetCampus.Installer.Boost.pdb",
+        "content/boost/DotNetCampus.Installer.Lib.pdb",
+        "content/boost/InstallerSevenZipLib.pdb",
+        "content/images/icon.ico",
+        "content/images/icons/128.png",
+        "content/images/icons/16.png",
+        "content/images/icons/256.png",
+        "content/images/icons/32.png",
+        "content/images/icons/48.png",
+        "content/images/icons/512.png",
+        "content/images/icons/64.png",
+        "content/installer/Microsoft.Windows.Shell.dll",
+        "content/installer/dnlib.dll",
+        "content/installer/dotnetCampus.EasiPlugins.Installer.deps.json",
+        "content/installer/dotnetCampus.EasiPlugins.Installer.dll",
+        "content/installer/dotnetCampus.EasiPlugins.Installer.exe",
+        "content/installer/dotnetCampus.EasiPlugins.Installer.pdb",
+        "content/installer/dotnetCampus.EasiPlugins.Installer.runtimeconfig.json",
+        "content/project/launchSettings.json",
+        "content/project/net45/launchSettings.json",
+        "content/project/net5.0-windows/launchSettings.json",
+        "dotnetcampus.easiplugin.sdk.2.1.1-alpha.3.nupkg.sha512",
         "dotnetcampus.easiplugin.sdk.nuspec",
-        "lib/net45/dotnetCampus.EasiPlugin.dll",
-        "lib/net45/dotnetCampus.EasiPlugin.pdb",
-        "lib/net45/dotnetCampus.EasiPlugin.xml",
-        "src/Compile/AssemblyResolver.cs",
-        "src/Compile/README.md",
-        "src/EasiNote/EasiNoteEvents.cs",
-        "src/EasiNote/EnSdkAutoExport.cs",
-        "src/EasiNote/EnSdkSaveInfoProvider.cs",
-        "src/EasiNote/Export.cs",
-        "src/EasiNote/SafeEN.cs",
-        "src/EasiNote/UIItemDisplayTextAttribute.cs",
-        "template/GeneratedProgram.g.cs",
-        "template/launchSettings.json",
-        "tools/BamlParser.dll",
-        "tools/BamlParser.pdb",
-        "tools/Fasterflect.dll",
-        "tools/ILRepack.exe",
-        "tools/ILRepack.exe.config",
-        "tools/ILRepack.pdb",
-        "tools/Mono.Cecil.Mdb.dll",
-        "tools/Mono.Cecil.Pdb.dll",
-        "tools/Mono.Cecil.dll",
-        "tools/Mono.Posix.dll",
-        "tools/dotnetCampus.EasiPlugins.Development.exe",
-        "tools/dotnetCampus.EasiPlugins.Development.exe.config",
-        "tools/dotnetCampus.EasiPlugins.Development.pdb"
-      ]
-    },
-    "Newtonsoft.Json/13.0.1": {
-      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
-      "type": "package",
-      "path": "newtonsoft.json/13.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.md",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/netstandard1.0/Newtonsoft.Json.dll",
-        "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/netstandard1.3/Newtonsoft.Json.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/netstandard2.0/Newtonsoft.Json.dll",
-        "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "newtonsoft.json.13.0.1.nupkg.sha512",
-        "newtonsoft.json.nuspec",
-        "packageIcon.png"
-      ]
-    },
-    "System.ValueTuple/4.5.0": {
-      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
-      "type": "package",
-      "path": "system.valuetuple/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net461/System.ValueTuple.dll",
-        "lib/net461/System.ValueTuple.xml",
-        "lib/net47/System.ValueTuple.dll",
-        "lib/net47/System.ValueTuple.xml",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.0/System.ValueTuple.dll",
-        "lib/netstandard1.0/System.ValueTuple.xml",
-        "lib/netstandard2.0/_._",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
-        "lib/uap10.0.16299/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net461/System.ValueTuple.dll",
-        "ref/net47/System.ValueTuple.dll",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard2.0/_._",
-        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "ref/uap10.0.16299/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.valuetuple.4.5.0.nupkg.sha512",
-        "system.valuetuple.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "tools/compiler/DotNetZip.dll",
+        "tools/compiler/EasiPluginsCompiler.deps.json",
+        "tools/compiler/EasiPluginsCompiler.dll",
+        "tools/compiler/EasiPluginsCompiler.exe",
+        "tools/compiler/EasiPluginsCompiler.pdb",
+        "tools/compiler/EasiPluginsCompiler.runtimeconfig.json",
+        "tools/compiler/Microsoft.Win32.SystemEvents.dll",
+        "tools/compiler/Newtonsoft.Json.dll",
+        "tools/compiler/System.Drawing.Common.dll",
+        "tools/compiler/System.Security.Permissions.dll",
+        "tools/compiler/System.Windows.Extensions.dll",
+        "tools/compiler/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "tools/compiler/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll",
+        "tools/compiler/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "tools/compiler/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll"
       ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "dotnetCampus.EasiPlugin.Sdk >= 0.44.*"
+      "dotnetCampus.EasiPlugin.Sdk >= 2.1.1-alpha.3"
     ]
   },
   "packageFolders": {
@@ -176,12 +93,13 @@
       "outputPath": "C:\\MRE\\support\\easinote\\MRE-Plugin\\src\\MrePlugin\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\MRE\\support\\easinote\\MRE-Plugin\\NuGet.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
       ],
       "sources": {
+        "C:\\MRE\\support\\easinote\\local-packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -202,7 +120,7 @@
         "dependencies": {
           "dotnetCampus.EasiPlugin.Sdk": {
             "target": "Package",
-            "version": "[0.44.*, )"
+            "version": "[2.1.1-alpha.3, )"
           }
         },
         "imports": [

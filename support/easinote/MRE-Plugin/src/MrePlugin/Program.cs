@@ -1,33 +1,45 @@
 using System;
+using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Threading;
+
 using Cvte.Composition;
 using Cvte.EasiNote;
+using Cvte.Windows.Localization;
+
 using dotnetCampus.EasiPlugins;
 
 namespace MrePlugin;
 
-/// <summary>
-/// MRE 课件生成插件入口。
-/// 继承 EasiPlugin，由希沃白板进程启动时加载。
-/// </summary>
-public class Program : EasiPlugin
+internal class Program : EasiPlugin
 {
+    private static readonly string LogPath =
+        Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+            "MrePlugin.log");
+
     protected override Task OnRunningAsync()
     {
-        // 云课件界面（课件列表页）不执行 MRE 逻辑
+        Log("OnRunningAsync entered. IsCloud=" + EN.CommandOptions.IsCloud);
+
         if (EN.CommandOptions.IsCloud)
         {
+            Log("Cloud mode - skipping");
             return Task.CompletedTask;
         }
 
-        // Shell 端：等待 EN 就绪后注册 UI 扩展
+        Log("Shell mode - waiting for App.Ready. IsReady=" + EN.App.IsReady);
+
         if (EN.App.IsReady)
         {
-            Run();
+            Log("App already ready");
+            RunSafe();
         }
         else
         {
+            Log("Subscribing to App.Ready");
             EN.App.Ready += App_Ready;
         }
 
@@ -36,44 +48,77 @@ public class Program : EasiPlugin
 
     private void App_Ready(object? sender, EventArgs e)
     {
+        Log("App_Ready fired");
         EN.App.Ready -= App_Ready;
-        Run();
+        RunSafe();
     }
 
-    /// <summary>
-    /// EN 就绪后的初始化逻辑。
-    /// 延迟 3 秒确保所有内部组件初始化完毕，然后注册工具栏按钮。
-    /// </summary>
-    private async void Run()
+    private async void RunSafe()
     {
-        await Task.Delay(TimeSpan.FromSeconds(3));
-
-        // 在调试构建中运行 API 探索器，输出到 %TEMP%\MrePlugin_ApiDiscovery.txt
-#if DEBUG
-        ApiExplorer.ExploreEditingBoardApi();
-#endif
-
-        // 必须在主 UI 线程注册多语言并导出 UI 项
-        System.Windows.Application.Current.Dispatcher.Invoke(() =>
+        try
         {
-            ExportUIItems();
-        });
+            Log("RunSafe started, delaying 3s...");
+            await Task.Delay(TimeSpan.FromSeconds(3));
+            Log("Delay done, dispatching ExportUIItems");
+
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                try
+                {
+                    ExportUIItems();
+                    Log("ExportUIItems completed successfully");
+                }
+                catch (Exception ex)
+                {
+                    Log($"ExportUIItems failed: {ex}");
+                }
+            });
+        }
+        catch (Exception ex)
+        {
+            Log($"RunSafe failed: {ex}");
+        }
     }
 
-    /// <summary>
-    /// 注册 MRE 导入按钮到希沃顶部工具栏。
-    /// </summary>
     private void ExportUIItems()
     {
-        var manager = Container.Current.Get<IUIItemManager>();
+        Log($"Getting IUIItemManager. Container ready? {Container.Current != null}");
 
-        // 注册菜单项及其多语言文本
-        manager.AppendWithLang(
-            new MreImportMenuItem(),
-            new UIItemAttribute(UIItemPurposes.HeadToolBar),
-            new[]
+        var manager = Container.Current.Get<IUIItemManager>();
+        Log($"Got manager: {manager != null}");
+
+        manager.Append(
+            c => new MreImportMenuItem(),
+            new UIItemAttribute(UIItemPurposes.HeadToolBar));
+
+        manager.Append(
+            c => new MreImportBoardMenuItem(),
+            new UIItemAttribute(UIItemPurposes.BoardEditMenu));
+
+        Log("Append done. Adding languages...");
+
+        Application.Current.Dispatcher.InvokeAsync(() =>
+        {
+            Lang.Sources.Add(new DictionaryLanguageSource
             {
-                new UIItemLangInfo(new CultureInfo("zh-CHS"), "MRE导入"),
+                [new CultureInfo("zh-CHS")] = new Dictionary<string, string>
+                {
+                    { "Lang.HeadToolBar.MreImport", "MRE导入" },
+                    { "Lang.BoardEditContextMenu.MreImportBoard", "MRE导入" },
+                },
             });
+        }, DispatcherPriority.Send);
+
+        Log("ExportUIItems finished");
+    }
+
+    private static void Log(string msg)
+    {
+        try
+        {
+            File.AppendAllText(LogPath,
+                $"{DateTime.Now:HH:mm:ss.fff} [{System.Threading.Thread.CurrentThread.ManagedThreadId}] {msg}\n");
+        }
+        catch { }
     }
 }

@@ -13,9 +13,9 @@
     <SourceRoot Include="C:\Users\Administrator\.nuget\packages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)dotnetcampus.easiplugin.sdk\0.44.2\build\dotnetCampus.EasiPlugin.Sdk.props" Condition="Exists('$(NuGetPackageRoot)dotnetcampus.easiplugin.sdk\0.44.2\build\dotnetCampus.EasiPlugin.Sdk.props')" />
+    <Import Project="$(NuGetPackageRoot)dotnetcampus.easiplugin.sdk\2.1.1-alpha.3\build\dotnetCampus.EasiPlugin.Sdk.props" Condition="Exists('$(NuGetPackageRoot)dotnetcampus.easiplugin.sdk\2.1.1-alpha.3\build\dotnetCampus.EasiPlugin.Sdk.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgdotnetCampus_EasiPlugin_Sdk Condition=" '$(PkgdotnetCampus_EasiPlugin_Sdk)' == '' ">C:\Users\Administrator\.nuget\packages\dotnetcampus.easiplugin.sdk\0.44.2</PkgdotnetCampus_EasiPlugin_Sdk>
+    <PkgdotnetCampus_EasiPlugin_Sdk Condition=" '$(PkgdotnetCampus_EasiPlugin_Sdk)' == '' ">C:\Users\Administrator\.nuget\packages\dotnetcampus.easiplugin.sdk\2.1.1-alpha.3</PkgdotnetCampus_EasiPlugin_Sdk>
   </PropertyGroup>
 </Project>

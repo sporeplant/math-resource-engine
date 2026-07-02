@@ -40,7 +40,7 @@ public static class ApiExplorer
             }
 
             // 2. 探索 Slide 类型
-            var slideType = typeof(Cvte.Paint.Features.Elements.Slide);
+            var slideType = typeof(Cvte.Paint.Framework.Slide);
             sb.AppendLine();
             sb.AppendLine("## Slide");
             sb.AppendLine($"  Type: {slideType.FullName}");
