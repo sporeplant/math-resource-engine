@@ -1,7 +1,9 @@
 # Local student data and generated classroom artifacts
 
-
-
+# .NET build artifacts and IDE state
+[Bb]in/
+[Oo]bj/
+.vs/
 
 # Local archives, temporary files, and editor state
 /archive.zip

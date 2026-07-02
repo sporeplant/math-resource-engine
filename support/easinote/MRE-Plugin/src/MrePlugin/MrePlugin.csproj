@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
@@ -10,7 +10,7 @@
     <Description>数学资源引擎(MRE)希沃白板课件自动生成插件。</Description>
     <Company>遵化市苏家洼镇大刘庄中学</Company>
 
-    <UseEasiNote>core</UseEasiNote>
+    <UseEasiNote>all</UseEasiNote>
   </PropertyGroup>
 
   <ItemGroup>
