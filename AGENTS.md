@@ -113,3 +113,16 @@
 ## 6. 标准工作流
 
 正式教学资源生成任务详见 `orchestrator/skill-protocol.md`。
+
+---
+
+## 7. Git 远程仓库规则
+
+本项目配置两个远程仓库：
+
+| Remote 名称 | 地址 | 说明 |
+| ---------- | ---- | ---- |
+| `origin` | `github.com/sporeplant/math-resource-engine` | GitHub，原始仓库 |
+| `gitee` | `gitee.com/teacher_lee/MRE` | Gitee，国内镜像 |
+
+**默认 Gitee，指定才 GitHub。** 所有涉及远程仓库的 Git 操作（fetch / pull / push）默认使用 `gitee`，除非用户显式指定 GitHub（`origin` / `github`）或要求全部（`all`）。本地操作（commit / status / log 等）不受影响。
