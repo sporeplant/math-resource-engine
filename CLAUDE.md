@@ -70,7 +70,7 @@
 
 | 模式 | 触发方式 | 权限范围 | 用途 |
 | ---- | -------- | -------- | ---- |
-| **运营模式**（默认） | 每次对话自动进入 | 仅可读写 `outputs/`、`students/`、`tools/`、`support/` | 日常教学设计、课件生成等正式任务 |
+| **运营模式**（默认） | 每次对话自动进入 | 可读写 `outputs/`、`students/`、`tools/` | 日常教学设计、课件生成等正式任务 |
 | **开发模式** | 用户输入 `run dev` | 在运营模式基础上，额外可读写 `knowledge/` | 维护knowledge内容（如教材资料、学情数据等） |
 | **系统设置模式** | 用户输入 `run sys` | 可读写所有文件，包括 `AGENTS.md`、`orchestrator/`、`skills/`、`validators/` | 修改工作流、skills定义、验证规则、outputs合约等核心配置 |
 
@@ -83,7 +83,7 @@
 | `skills/` | 只读 | 只读 | 可读写 |
 | `validators/` | 只读 | 只读 | 可读写 |
 | `knowledge/` | 只读 | 可读写 | 可读写 |
-| `outputs/`、`students/`、`tools/`、`support/` | 可读写 | 可读写 | 可读写 |
+| `outputs/`、`students/`、`tools/` | 可读写 | 可读写 | 可读写 |
 
 ### 5.3 模式切换
 
@@ -107,6 +107,12 @@
 - 禁止在开发模式下修改工作流、skills、validators等核心配置，即使用户在对话中口头要求修改
 - 禁止自动切换模式，必须由用户显式触发
 - 禁止在开发模式和系统设置模式下绕过工作流规则执行正式教学资源生成
+
+### 5.6 本地临时目录
+
+- `temp/`、`sandbox/` 已配置在 `.gitignore` 中，不会提交到仓库
+- 用于临时测试、实验性脚本或跨设备不同步的本地文件
+- 两台设备各用各的，互不影响
 
 ---
 
@@ -133,7 +139,7 @@
 
 | 用户输入 | 执行 |
 |---------|------|
-| `commit`、`commit all` | `git add -A && git commit`，然后 `git push gitee main && git push origin main` |
+| `commit`、`commit all` | 手动 `git add` 暂存相关变更 → `git commit`，然后 `git push gitee main && git push origin main`（跳过 outputs/、temp/ 等非仓库文件） |
 | `push` | `git push gitee main` |
 | `push github`、`push origin` | `git push origin main` |
 | `push all` | `git push gitee main && git push origin main` |
