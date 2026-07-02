@@ -18,8 +18,10 @@
 | 文件类型 | 命名规则 | 示例 |
 |----------|----------|------|
 | 课时文件 | `textbook-{章节}.{小节}-{课时号}.md` | `textbook-12.1-1.md` |
-| 数学活动 | `textbook-ch{章号}-{活动名称}.md` | `textbook-ch12-橙汁与苹果汁的多少.md` |
-| 回顾与反思 | `textbook-ch{章号}-review-{课时号}.md` | `textbook-ch12-review-1.md` |
+| 回顾与反思 | `textbook-{章号}.{续号}-review-{课时号}.md` | `textbook-12.6-review-1.md` |
+| 数学活动 | `textbook-{章号}.{续号}-{活动名称}.md` | `textbook-12.6-橙汁与苹果汁的多少.md` |
+
+> `{续号}` = 最大节号 + 1，如第12章小节到 12.5，则续号为 6，文件为 `textbook-12.6-review-1.md`。
 
 每个输出文件必须写入 YAML front matter：
 

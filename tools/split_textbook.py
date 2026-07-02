@@ -448,6 +448,18 @@ def build_splits(
     # Now build splits: each boundary is a start, next boundary is the end
     activity_count = 0
 
+    # Calculate continuation section number for reviews/activities
+    # e.g. max section is 12.5 → review/activity use 12.6
+    try:
+        _max_sec = max(
+            int(k.split(".")[1])
+            for k in sections
+            if k.startswith(f"{chapter['num']}.")
+        )
+        _cont_section = str(_max_sec + 1)
+    except (ValueError, KeyError):
+        _cont_section = "99"
+
     for idx, b in enumerate(real_boundaries):
         start = b["start"]
         end = (
@@ -464,13 +476,13 @@ def build_splits(
             section_name = sections.get(b["section_key"], {}).get("name", "")
             lesson_id = f"{b['section_key']}.{b['lesson']}"
         elif typ == "review":
-            filename = f"textbook-ch{chapter['num']}-review-{b['lesson']}.md"
+            filename = f"textbook-{chapter['num']}.{_cont_section}-review-{b['lesson']}.md"
             section_name = "回顾与反思"
             lesson_id = f"ch{chapter['num']}-review-{b['lesson']}"
         elif typ == "activity":
             activity_count += 1
             safe = re.sub(r'[\\/:*?"<>|]', "_", b["heading"])[:25]
-            filename = f"textbook-ch{chapter['num']}-{safe}.md"
+            filename = f"textbook-{chapter['num']}.{_cont_section}-{safe}.md"
             section_name = b["heading"]
             lesson_id = f"ch{chapter['num']}-activity-{activity_count}"
         else:
