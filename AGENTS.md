@@ -126,3 +126,18 @@
 | `gitee` | `gitee.com/teacher_lee/MRE` | Gitee，国内镜像 |
 
 **默认 Gitee，指定才 GitHub。** 所有涉及远程仓库的 Git 操作（fetch / pull / push）默认使用 `gitee`，除非用户显式指定 GitHub（`origin` / `github`）或要求全部（`all`）。本地操作（commit / status / log 等）不受影响。
+
+---
+
+## 8. Git 操作速查
+
+| 用户输入 | 执行 |
+|---------|------|
+| `commit`、`commit all` | `git add -A && git commit`，然后 `git push gitee main && git push origin main` |
+| `push` | `git push gitee main` |
+| `push github`、`push origin` | `git push origin main` |
+| `push all` | `git push gitee main && git push origin main` |
+| `fetch`、`pull` | 走 `gitee` |
+| `fetch github`、`pull github` | 走 `origin` |
+
+当变更涉及 `knowledge/images/` 下的图片文件时，推送会自动覆盖两边，确保 jsDelivr CDN 同步更新。
