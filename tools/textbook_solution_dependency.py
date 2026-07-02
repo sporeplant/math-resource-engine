@@ -5,7 +5,6 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
-
 DEPENDENT_CONTENT_TYPES = {
     "lesson",
     "courseware",
@@ -59,7 +58,7 @@ def extract_question_ids(text: str) -> set[str]:
         if not match:
             continue
         base_indent = len(match.group(1))
-        for item in lines[index + 1:]:
+        for item in lines[index + 1 :]:
             item_match = re.match(r"^(\s*)-\s*[\"']?([^\s\"']+)", item)
             if not item_match or len(item_match.group(1)) <= base_indent:
                 break
@@ -74,18 +73,18 @@ def extract_textbook_question_ids(text: str) -> set[str]:
         match = re.search(r"question_id\s*:\s*[\"']?([^\s\"']+)", line)
         if not match:
             continue
-        window = "\n".join(lines[max(0, index - 8): min(len(lines), index + 9)])
+        window = "\n".join(lines[max(0, index - 8) : min(len(lines), index + 9)])
         if re.search(r"source_type\s*:\s*[\"']?(?:textbook|TEXTBOOK)\b", window):
             ids.add(match.group(1))
     for index, line in enumerate(lines):
         list_match = re.match(r"^(\s*)-?\s*question_ids\s*:\s*$", line)
         if not list_match:
             continue
-        window = "\n".join(lines[max(0, index - 8): index + 1])
+        window = "\n".join(lines[max(0, index - 8) : index + 1])
         if not re.search(r"source_type\s*:\s*[\"']?(?:textbook|TEXTBOOK)\b", window):
             continue
         base_indent = len(list_match.group(1))
-        for item in lines[index + 1:]:
+        for item in lines[index + 1 :]:
             item_match = re.match(r"^(\s*)-\s*[\"']?([^\s\"']+)", item)
             if not item_match or len(item_match.group(1)) <= base_indent:
                 break
@@ -100,7 +99,7 @@ def textbook_question_ids_missing_answer_source(text: str) -> set[str]:
         match = re.search(r"question_id\s*:\s*[\"']?([^\s\"']+)", line)
         if not match:
             continue
-        window = "\n".join(lines[max(0, index - 8): min(len(lines), index + 21)])
+        window = "\n".join(lines[max(0, index - 8) : min(len(lines), index + 21)])
         if not re.search(r"source_type\s*:\s*[\"']?(?:textbook|TEXTBOOK)\b", window):
             continue
         if "答案来源" not in window:
@@ -108,7 +107,9 @@ def textbook_question_ids_missing_answer_source(text: str) -> set[str]:
     return missing
 
 
-def validate_textbook_solution(path: Path, expected_lesson_id: str) -> tuple[set[str], list[str]]:
+def validate_textbook_solution(
+    path: Path, expected_lesson_id: str
+) -> tuple[set[str], list[str]]:
     errors: list[str] = []
     if not path.exists():
         return set(), [f"textbook solution file does not exist: {path}"]
@@ -143,9 +144,14 @@ def validate_textbook_solution(path: Path, expected_lesson_id: str) -> tuple[set
     missing_answers = sorted(task_ids - answer_ids)
     extra_answers = sorted(answer_ids - task_ids)
     if missing_answers:
-        errors.append("textbook solution tasks missing answers: " + ", ".join(missing_answers))
+        errors.append(
+            "textbook solution tasks missing answers: " + ", ".join(missing_answers)
+        )
     if extra_answers:
-        errors.append("textbook solution answers missing from task list: " + ", ".join(extra_answers))
+        errors.append(
+            "textbook solution answers missing from task list: "
+            + ", ".join(extra_answers)
+        )
     if "答案来源:" not in text:
         errors.append("textbook solution contains no 答案来源 field")
     return answer_ids, errors
@@ -164,11 +170,16 @@ def validate_dependency(
     _, lists = parse_front_matter(output_text)
     source_files = lists.get("source_files", [])
     registered = next(
-        (item for item in source_files if "knowledge/solutions/" in item.replace("\\", "/")),
+        (
+            item
+            for item in source_files
+            if "knowledge/solutions/" in item.replace("\\", "/")
+        ),
         None,
     )
     if not registered and not (
-        output_meta.get("content_type") == "courseware" and explicit_solution is not None
+        output_meta.get("content_type") == "courseware"
+        and explicit_solution is not None
     ):
         errors.append("source_files must register the matching textbook solution")
 
@@ -176,14 +187,20 @@ def validate_dependency(
     solution_path = explicit_solution
     if solution_path is None and registered:
         candidate = Path(registered)
-        solution_path = candidate if candidate.is_absolute() else project_root / candidate
+        solution_path = (
+            candidate if candidate.is_absolute() else project_root / candidate
+        )
     if solution_path is None:
         return errors
 
     if not solution_path.exists():
         errors.append(f"textbook solution file does not exist: {solution_path}")
         return errors
-    if solution_path.parent.name != "solutions" or not solution_path.name.startswith("solution-"):
+    parent = solution_path.parent
+    valid_parent = parent.name == "solutions" or (
+        parent.parent.name == "solutions" and parent.name.startswith("ch")
+    )
+    if not valid_parent or not solution_path.name.startswith("solution-"):
         errors.append(f"invalid textbook solution path: {solution_path}")
 
     expected_name = f"solution-{output_meta.get('lesson_id', '')}.md"
@@ -201,14 +218,17 @@ def validate_dependency(
     missing_ids = sorted(extract_textbook_question_ids(output_text) - solution_ids)
     if missing_ids:
         errors.append(
-            "textbook question_id missing from textbook solution: " + ", ".join(missing_ids)
+            "textbook question_id missing from textbook solution: "
+            + ", ".join(missing_ids)
         )
     if output_meta.get("content_type") in {
         "question_reference",
         "courseware_reference",
         "reference_answer",
     }:
-        missing_sources = sorted(textbook_question_ids_missing_answer_source(output_text))
+        missing_sources = sorted(
+            textbook_question_ids_missing_answer_source(output_text)
+        )
         if missing_sources:
             errors.append(
                 "textbook answers must preserve 答案来源 for question_id: "

@@ -11,7 +11,7 @@
 - [ ] 已明确当前任务对应的任务类型（教学目标类 / 评价设计类 / 活动设计类 / 教学设计类 / 课件设计类 / 教材分析类 / 习题分析类 / 提问质量审查类 / 临界生帮扶类）
 
 ### □ 教材参考解答已校验（`/lesson-collab`、`/courseware-collab`）
-- [ ] 已定位 `knowledge/solutions/solution-{lesson_id}.md`
+- [ ] 已定位 `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md`
 - [ ] 文件存在，且 `content_type: textbook_solution`
 - [ ] `lesson_id` 与当前课时一致
 - [ ] 已通过教材问题解答validators

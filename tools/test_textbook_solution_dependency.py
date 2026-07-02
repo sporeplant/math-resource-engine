@@ -7,7 +7,10 @@ from pathlib import Path
 try:
     from textbook_solution_dependency import parse_front_matter, validate_dependency
 except ModuleNotFoundError:
-    from tools.textbook_solution_dependency import parse_front_matter, validate_dependency
+    from tools.textbook_solution_dependency import (
+        parse_front_matter,
+        validate_dependency,
+    )
 
 
 SOLUTION = """---
@@ -38,7 +41,9 @@ source_type: textbook
 """
 
 
-def downstream(source_path: str, question_id: str = "22.4-练习-1", source_type: str = "textbook") -> str:
+def downstream(
+    source_path: str, question_id: str = "22.4-练习-1", source_type: str = "textbook"
+) -> str:
     return f"""---
 content_type: lesson
 lesson_id: "22.4"
@@ -63,14 +68,14 @@ class TextbookSolutionDependencyTests(unittest.TestCase):
         self.temp_dir = tempfile.TemporaryDirectory()
         self.root = Path(self.temp_dir.name)
         (self.root / "AGENTS.md").write_text("test", encoding="utf-8")
-        self.solution_dir = self.root / "knowledge" / "solutions"
+        self.solution_dir = self.root / "knowledge" / "solutions" / "ch22"
         self.solution_dir.mkdir(parents=True)
         self.solution = self.solution_dir / "solution-22.4.md"
         self.solution.write_text(SOLUTION, encoding="utf-8")
         self.output_dir = self.root / "outputs"
         self.output_dir.mkdir()
         self.output = self.output_dir / "22.4_教学设计.md"
-        self.relative_solution = "knowledge/solutions/solution-22.4.md"
+        self.relative_solution = "knowledge/solutions/ch22/solution-22.4.md"
 
     def tearDown(self) -> None:
         self.temp_dir.cleanup()
@@ -88,11 +93,15 @@ class TextbookSolutionDependencyTests(unittest.TestCase):
         self.assertTrue(any("source_files must register" in error for error in errors))
 
     def test_missing_file_fails(self) -> None:
-        errors = self.validate(downstream("knowledge/solutions/solution-22.4-missing.md"))
+        errors = self.validate(
+            downstream("knowledge/solutions/ch22/solution-22.4-missing.md")
+        )
         self.assertTrue(any("does not exist" in error for error in errors))
 
     def test_lesson_id_mismatch_fails(self) -> None:
-        self.solution.write_text(SOLUTION.replace('lesson_id: "22.4"', 'lesson_id: "22.3"'), encoding="utf-8")
+        self.solution.write_text(
+            SOLUTION.replace('lesson_id: "22.4"', 'lesson_id: "22.3"'), encoding="utf-8"
+        )
         errors = self.validate(downstream(self.relative_solution))
         self.assertTrue(any("lesson_id does not match" in error for error in errors))
 
@@ -103,13 +112,17 @@ class TextbookSolutionDependencyTests(unittest.TestCase):
     def test_workbook_question_is_not_required_in_textbook_solution(self) -> None:
         self.assertEqual(
             [],
-            self.validate(downstream(self.relative_solution, "WB-22.4-01", "exercise_bank")),
+            self.validate(
+                downstream(self.relative_solution, "WB-22.4-01", "exercise_bank")
+            ),
         )
 
     def test_filename_must_match_lesson(self) -> None:
         wrong_name = self.solution_dir / "solution-22.4-other.md"
         wrong_name.write_text(SOLUTION, encoding="utf-8")
-        errors = self.validate(downstream("knowledge/solutions/solution-22.4-other.md"))
+        errors = self.validate(
+            downstream("knowledge/solutions/ch22/solution-22.4-other.md")
+        )
         self.assertTrue(any("filename does not match" in error for error in errors))
 
     def test_reference_answer_must_preserve_answer_source(self) -> None:
@@ -120,9 +133,12 @@ class TextbookSolutionDependencyTests(unittest.TestCase):
         self.assertTrue(any("must preserve 答案来源" in error for error in errors))
 
     def test_reference_answer_with_answer_source_passes(self) -> None:
-        text = downstream(self.relative_solution).replace(
-            "content_type: lesson", "content_type: question_reference"
-        ) + "\n答案来源: AI参考推导\n"
+        text = (
+            downstream(self.relative_solution).replace(
+                "content_type: lesson", "content_type: question_reference"
+            )
+            + "\n答案来源: AI参考推导\n"
+        )
         self.assertEqual([], self.validate(text))
 
 

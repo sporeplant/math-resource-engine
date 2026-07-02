@@ -17,7 +17,7 @@
 | 课件文件 | `outputs/{课时名}_课件.md` | 学生投屏正文，不含具体学生姓名 |
 | 学生选取结果 | 分层提问skills outputs | 包含随机池选取记录和问题-学生映射表 |
 | 题源文件 | `knowledge/workbooks/`、`knowledge/textbooks/` | 所有引用的题目完整内容 |
-| 教材参考解答 | `knowledge/solutions/solution-{lesson_id}.md` | 必须存在、课时匹配并通过教材问题解答validators |
+| 教材参考解答 | `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md` | 必须存在、课时匹配并通过教材问题解答validators |
 | 习题分析报告 | 习题分析skills outputs | 8维度分析结果 |
 
 ---
@@ -37,7 +37,7 @@ review_status: draft
 source_files:
   - "outputs/{课时名}_教学设计.md"
   - "outputs/{课时名}_课件.md"
-  - "knowledge/solutions/solution-{lesson_id}.md"
+  - "knowledge/solutions/ch{章节号}/solution-{lesson_id}.md"
 created_at: "YYYY-MM-DD"
 collab_gates:
   structure: confirmed

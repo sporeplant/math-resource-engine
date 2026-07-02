@@ -189,7 +189,7 @@ outputs完整教学设计
 
 - 读取 §2 的基础强制文件列表
 - 额外读取 `orchestrator/workflow-registry.md` §2a 中的确认门交互协议和呈现模板
-- `knowledge/solutions/solution-{lesson_id}.md`
+- `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md`
 
 教材参考解答必须在知识分析前校验文件存在、`content_type: textbook_solution`、`lesson_id` 匹配、`review_status: 审核通过`，并通过教材问题解答validators。缺失或校验失败时终止本次任务，禁止自动生成、降级推导、跳过校验或继续确认门。教学设计的 `source_files` 必须登记该文件，教材题的评价证据、活动预期回答和练习答案必须按 `question_id` 与之核对。
 
@@ -346,7 +346,7 @@ outputs课件与课堂提问调度稿
 
 - 读取 §3 的基础强制文件列表
 - 额外读取 `orchestrator/workflow-registry.md` §4a 中的确认门交互协议和呈现模板
-- `knowledge/solutions/solution-{lesson_id}.md`
+- `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md`
 
 教材参考解答必须在读取教学设计和进入确认门1前校验文件存在、`content_type: textbook_solution`、`lesson_id` 匹配并通过教材问题解答validators。缺失或校验失败时终止本次任务。教材题答案按 `question_id` 复用，练习册题继续使用原题源；课堂提问调度稿的 `source_files` 必须登记该文件。
 
@@ -411,7 +411,7 @@ outputs：
 
 outputs：
 
-- `knowledge/solutions/solution-{lesson_id}.md`
+- `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md`
 - `content_type: textbook_solution`
 - 不设置 `review_status`
 

@@ -6,14 +6,14 @@
 
 ## 1. outputs目录
 
-教学设计、课件、课堂提问调度稿和复习讲义写入 `outputs/`；教材问题参考解答作为knowledge资产写入 `knowledge/solutions/`：
+教学设计、课件、课堂提问调度稿和复习讲义写入 `outputs/`；教材问题参考解答作为knowledge资产写入 `knowledge/solutions/ch{章节号}/`：
 
 | 产物 | 文件名 |
 |------|--------|
 | 教学设计 | `outputs/{课时名}_教学设计.md` |
 | Markdown 课件 | `outputs/{课时名}_课件.md` |
 | 课堂提问调度稿 | `outputs/{课时名}_课堂提问调度稿.md` |
-| 教材问题参考解答 | `knowledge/solutions/solution-{lesson_id}.md` |
+| 教材问题参考解答 | `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md` |
 | 复习讲义 | `outputs/g8-reviews/{讲义编号}_{讲义名称}_复习讲义.md` |
 | outputs图片 | `outputs/images/{图片文件名}` |
 
@@ -39,7 +39,7 @@ created_at: ""
 其中 `/lesson-collab` 的 `source_files` 至少包含对应教材原文、课标、学情数据和：
 
 ```yaml
-  - "knowledge/solutions/solution-{lesson_id}.md"
+  - "knowledge/solutions/ch{章节号}/solution-{lesson_id}.md"
 ```
 
 教材问题参考解答使用独立元数据：
@@ -83,7 +83,7 @@ created_at: ""
 - `workflow_version`：当前固定为 `v2`。
 - `review_status`：人工审核状态。
 - `source_files`：本产物直接读取的上游文件。
-- `/lesson-collab`、`/courseware-collab` 产物必须在 `source_files` 中登记对应课时的 `knowledge/solutions/solution-{lesson_id}.md`；缺失时不得生成产物。
+- `/lesson-collab`、`/courseware-collab` 产物必须在 `source_files` 中登记对应课时的 `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md`；缺失时不得生成产物。
 - `/复习讲义` 产物必须在 `source_files` 中登记所有被整理的 `knowledge/reviews/` 源文件。
 - `created_at`：生成时间，格式建议为 `YYYY-MM-DD HH:mm`。
 

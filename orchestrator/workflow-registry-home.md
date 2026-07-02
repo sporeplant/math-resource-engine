@@ -279,7 +279,7 @@ outputs完整教学设计
 读取 §2 登记的基础文件，额外增加：
 
 24. `orchestrator/skill-protocol.md` 中 §2a `/lesson-collab` 强制链
-25. `knowledge/solutions/solution-{lesson_id}.md`
+25. `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md`
 
 教材参考解答必须在知识分析开始前完成校验：文件存在，`content_type: textbook_solution`，`lesson_id` 与当前课时一致，并通过教材问题解答validators。任一条件不满足时立即终止本次任务，报告预期路径或失败项，并提示执行 `/教材问题解答 {课时}` 后重新发起 `/lesson-collab`。禁止自动补齐、降级读取教材原文临时推导、跳过校验或继续任何确认门。
 
@@ -579,7 +579,7 @@ outputs课件与课堂提问调度稿
 
 12. `orchestrator/skill-protocol.md` 中 §3a `/courseware-collab` 强制链
 13. `skills/ask-check/SKILL.md` 和 `skills/ask-check/checklist.md`（到确认门2前再读取并自检）
-14. `knowledge/solutions/solution-{lesson_id}.md`
+14. `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md`
 
 教材参考解答必须在读取教学设计和进入确认门1前完成校验：文件存在，`content_type: textbook_solution`，`lesson_id` 与当前课时一致，并通过教材问题解答validators。任一条件不满足时立即终止本次任务，报告预期路径或失败项，并提示执行 `/教材问题解答 {课时}` 后重新发起 `/courseware-collab`。禁止自动补齐、降级推导、跳过校验或继续后续确认门。
 
@@ -752,7 +752,7 @@ Excel格式要求：
 
 ### outputs
 
-- `knowledge/solutions/solution-{lesson_id}.md`
+- `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md`
 - `content_type: textbook_solution`
 - 不设置 `review_status`
 - 正常题目不设置审核状态或生成状态

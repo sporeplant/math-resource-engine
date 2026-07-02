@@ -11,7 +11,7 @@
 | 教学设计 | `outputs/{课时名}_教学设计.md` |
 | Markdown 课件 | `outputs/{课时名}_课件.md` |
 | 课堂提问调度稿 | `outputs/{课时名}_课堂提问调度稿.md` |
-| 教材问题参考解答 | `knowledge/solutions/solution-{lesson_id}.md` |
+| 教材问题参考解答 | `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md` |
 | outputs图片 | `outputs/images/{图片文件名}` |
 | 临界生分工表 | `support/临界生分工表-YYYY-MM-DD.md` |
 
@@ -35,7 +35,7 @@
 | `knowledge/textbooks/*.md` | `knowledge/textbooks/images/` | `<img src="./images/文件名" width="35%">` |
 | `knowledge/workbooks/*.md` | `knowledge/workbooks/images/` | `<img src="./images/文件名" width="35%">` |
 | `outputs/*.md` | `outputs/images/` | `![图注](./images/文件名)` |
-| `knowledge/solutions/*.md` | `knowledge/solutions/images/` | `<img src="./images/文件名" width="35%">` |
+| `knowledge/solutions/ch*/*.md` | `knowledge/solutions/ch{章节号}/images/` | `<img src="./images/文件名" width="35%">` |
 
 禁止使用：
 

@@ -5,7 +5,7 @@ lesson_name: "三角形全等的判定（SAS）探究与应用"
 command: 教材问题解答
 workflow_version: v2
 source_files:
-  - "E:/OneDrive/math-resource-engine/knowledge/solutions/solution-13.3.md"
+  - "knowledge/solutions/ch13/solution-13.3.md"
 created_at: "2026-06-13"
 ---
 
