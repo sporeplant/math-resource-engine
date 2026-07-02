@@ -10,14 +10,22 @@ try:
     from review_math_utils import normalize_review_math_markup, validate_math_markup
 except (ModuleNotFoundError, ImportError):
     from tools import validate_output, validate_review_lesson
-    from tools.review_math_utils import normalize_review_math_markup, validate_math_markup
+    from tools.review_math_utils import (
+        normalize_review_math_markup,
+        validate_math_markup,
+    )
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-GOOD_SAMPLE = REPO_ROOT / "outputs" / "g8-reviews" / "review-04.md"
+GOOD_SAMPLE = REPO_ROOT / "outputs" / "G8B-reviews" / "review-04.md"
 
 
-def make_review_lesson(question_count: int = 24, overview_count: int | None = None, unbalanced: bool = False, image: str = "") -> str:
+def make_review_lesson(
+    question_count: int = 24,
+    overview_count: int | None = None,
+    unbalanced: bool = False,
+    image: str = "",
+) -> str:
     overview_count = question_count if overview_count is None else overview_count
     lines = [
         "---",
@@ -44,7 +52,18 @@ def make_review_lesson(question_count: int = 24, overview_count: int | None = No
     for number in range(1, 4):
         lines.append(f"{number}．例题 {number}")
         lines.append("")
-    lines.extend(["## 知识点02 坐标表示平移", "", "坐标表示平移。", "", "## 知识点03 坐标规律探索", "", "坐标规律探索。", ""])
+    lines.extend(
+        [
+            "## 知识点02 坐标表示平移",
+            "",
+            "坐标表示平移。",
+            "",
+            "## 知识点03 坐标规律探索",
+            "",
+            "坐标规律探索。",
+            "",
+        ]
+    )
     lines.extend(["## 当堂练习", ""])
     for number in range(4, 13):
         lines.append(f"{number}．当堂练习 {number}")
@@ -92,7 +111,9 @@ class ReviewLessonValidationTests(unittest.TestCase):
     def test_review_status_fails_for_review_lesson(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "review.md"
-            text = make_review_lesson().replace("created_at:", "review_status: draft\ncreated_at:")
+            text = make_review_lesson().replace(
+                "created_at:", "review_status: draft\ncreated_at:"
+            )
             path.write_text(text, encoding="utf-8")
             errors = validate_review_lesson.validate(path)
         self.assertTrue(any("must not set review_status" in error for error in errors))
@@ -100,7 +121,9 @@ class ReviewLessonValidationTests(unittest.TestCase):
     def test_missing_image_fails(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "review.md"
-            path.write_text(make_review_lesson(image="![](images/missing.jpg)"), encoding="utf-8")
+            path.write_text(
+                make_review_lesson(image="![](images/missing.jpg)"), encoding="utf-8"
+            )
             errors = validate_review_lesson.validate(path)
         self.assertTrue(any("image file does not exist" in error for error in errors))
 
