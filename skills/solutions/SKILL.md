@@ -11,7 +11,7 @@ description: Generate complete, traceable Chinese reference solutions for every 
 
 1. 读取仓库根目录 `AGENTS.md`。
 2. 读取 `orchestrator/skill-protocol.md` 和 `orchestrator/workflow-registry.md`。
-3. 读取本目录 `skills.md` 和 `检查清单.md`。
+3. 读取本目录 `spec.md` 和 `检查清单.md`。
 4. 读取目标课时对应的完整教材原文及其图片。
 5. 读取 `validators/solutions/rules.md`。
 6. 读取 `knowledge/chapter-knowledge-points.yaml` 获取本章核心关键词。

@@ -744,7 +744,7 @@ Excel格式要求：
 3. `orchestrator/workflow-registry.md`
 4. `orchestrator/output-contract.md`
 5. `skills/solutions/SKILL.md`
-6. `skills/solutions/SKILL-2.md`
+6. `skills/solutions/spec.md`
 7. `skills/solutions/checklist.md`
 8. `validators/solutions/rules.md`
 9. `knowledge/textbooks/教材原文_教材课时分配.md`

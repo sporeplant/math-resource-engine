@@ -405,7 +405,7 @@ outputs：
 - `orchestrator/output-contract.md`
 - `orchestrator/skill-contract.md`
 - `skills/solutions/SKILL.md`
-- `skills/solutions/SKILL-2.md` 和 `检查清单.md`
+- `skills/solutions/spec.md` 和 `检查清单.md`
 - `validators/solutions/rules.md`
 - 教材课时分配表、对应完整教材原文、图片及必要前置教材原文
 
