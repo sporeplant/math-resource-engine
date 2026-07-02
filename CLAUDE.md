@@ -28,7 +28,10 @@
 
 ## 2. 正式生成任务入口
 
-当任务涉及教学目标、评价设计、活动设计、教学设计、课件、作业、课堂提问调度稿或教材问题解答等正式教学资源产出时，必须按 `orchestrator/skill-protocol.md` 路由，并读取对应 Skill 定义、检查清单、outputs合约和 Validator。
+当任务涉及教学目标、评价设计、活动设计、教学设计、课件、作业、课堂提问调度稿、教材问题解答或教材原文拆解等正式教学资源产出时，必须按 `orchestrator/skill-protocol.md` 路由，并读取对应 Skill 定义、检查清单、outputs合约和 Validator。
+
+具体路由规则见 `orchestrator/task-classifier.md`，其中：
+- **教材原文拆解类任务**（分割/拆分/切分/拆解教材 Markdown，或路径含 `MinerU`、`knowledge/textbooks/`）：必须优先路由到 `skills/textbook-split/SKILL.md`，使用 `tools/split_textbook.py` 处理。
 
 普通代码维护、仓库整理、规则讨论、docs审阅和非正式问答不强制执行完整教学资源生成链，但不得违背本文件第 3 节的硬红线。
 
