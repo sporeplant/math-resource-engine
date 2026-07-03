@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+
+    <Product>MRE 课件生成插件</Product>
+    <Description>数学资源引擎(MRE)希沃白板课件自动生成插件。</Description>
+    <Company>遵化市苏家洼镇大刘庄中学</Company>
+
+    <UseEasiNote>core</UseEasiNote>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dotnetCampus.EasiPlugin.Sdk" Version="2.1.1-alpha.3" />
+  </ItemGroup>
+</Project>

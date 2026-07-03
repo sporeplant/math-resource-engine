@@ -1,0 +1,30 @@
+{
+  "slides": [
+    {
+      "id": "image_test_01",
+      "elements": [
+        {
+          "id": "title",
+          "type": "text",
+          "text": "MRE 图片插入测试",
+          "x": 80,
+          "y": 60,
+          "width": 900,
+          "height": 70,
+          "fontSize": 34,
+          "bold": true,
+          "color": "#111111"
+        },
+        {
+          "id": "img_01",
+          "type": "image",
+          "src": "test.png",
+          "x": 120,
+          "y": 160,
+          "width": 700,
+          "height": 420
+        }
+      ]
+    }
+  ]
+}

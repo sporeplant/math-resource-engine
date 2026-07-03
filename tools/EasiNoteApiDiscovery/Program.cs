@@ -1,42 +1,93 @@
+using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 
 var enDir = @"C:\Program Files (x86)\Seewo\EasiNote5\EasiNote5_5.2.4.9801";
-var mainDir = Path.Combine(enDir, "Main");
-var runtimeDlls = Directory.GetFiles(Path.Combine(enDir, "runtime"), "*.dll", SearchOption.AllDirectories);
-var mainDlls = Directory.GetFiles(mainDir, "*.dll");
-var resolver = new PathAssemblyResolver(mainDlls.Concat(runtimeDlls));
+var dlls = Directory.GetFiles(enDir, "*.dll", SearchOption.AllDirectories)
+    .Distinct(StringComparer.OrdinalIgnoreCase)
+    .ToArray();
+
+var resolver = new PathAssemblyResolver(dlls);
 using var mlc = new MetadataLoadContext(resolver);
 
-foreach (var dll in mainDlls.OrderBy(Path.GetFileName))
+var targetDllNames = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
 {
-    try
+    "Cvte.Paint.Shell.dll",
+    "EasiNote.UI.dll",
+    "EasiNote.Api.dll",
+    "Cvte.Storage.Standard.dll"
+};
+
+foreach (var dll in dlls.Where(path => targetDllNames.Contains(Path.GetFileName(path))).OrderBy(Path.GetFileName))
+{
+    Console.WriteLine($"===== {Path.GetFileName(dll)} =====");
+    Assembly asm;
+    try { asm = mlc.LoadFromAssemblyPath(dll); }
+    catch (Exception ex)
     {
-        var asm = mlc.LoadFromAssemblyPath(dll);
-        var hits = asm.GetTypes().Where(t =>
-            t.FullName?.Contains("Cvte.Paint.Features.Elements.Texts.TextElement", StringComparison.OrdinalIgnoreCase) == true ||
-            t.FullName?.Contains("RichTextSaveInfo", StringComparison.OrdinalIgnoreCase) == true ||
-            t.FullName?.Contains("TextSaveInfo", StringComparison.OrdinalIgnoreCase) == true).ToList();
-        if (hits.Count == 0) continue;
-        Console.WriteLine($"===== {Path.GetFileName(dll)} =====");
-        foreach (var t in hits)
-        {
-            Console.WriteLine($"TYPE {t.FullName} public={t.IsPublic}");
-            foreach (var c in t.GetConstructors(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance))
-            {
-                var pars = string.Join(", ", c.GetParameters().Select(p => $"{p.ParameterType.FullName} {p.Name}"));
-                Console.WriteLine($"  CTOR {t.Name}({pars}) public={c.IsPublic}");
-            }
-            foreach (var p in t.GetProperties(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance).OrderBy(p => p.Name))
-            {
-                Console.WriteLine($"  PROP {(p.GetMethod?.IsStatic == true ? "static " : "")}{p.PropertyType.FullName} {p.Name} publicGet={p.GetMethod?.IsPublic} publicSet={p.SetMethod?.IsPublic}");
-            }
-            foreach (var m in t.GetMethods(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance).Where(m => !m.IsSpecialName).OrderBy(m => m.Name))
-            {
-                var pars = string.Join(", ", m.GetParameters().Select(p => $"{p.ParameterType.FullName} {p.Name}"));
-                Console.WriteLine($"  METH {(m.IsStatic ? "static " : "")}{m.ReturnType.FullName} {m.Name}({pars}) public={m.IsPublic}");
-            }
-        }
+        Console.WriteLine($"LOAD FAIL {ex.Message}");
+        continue;
     }
-    catch { }
+
+    foreach (var t in SafeGetTypes(asm).OrderBy(t => t.FullName))
+    {
+        var name = t.FullName ?? "";
+        if (!ContainsAny(name, "Picture", "Image", "Media", "Multimedia", "InsertMedia", "InsertElement", "Uri")) continue;
+
+        Console.WriteLine($"TYPE {name} public={t.IsPublic} abstract={t.IsAbstract} base={SafeTypeName(() => t.BaseType)}");
+
+        foreach (var c in SafeGetConstructors(t))
+            Console.WriteLine($"  CTOR public={c.IsPublic} {SafeParameters(c)}");
+
+        foreach (var p in SafeGetProperties(t).Where(p => ContainsAny(p.Name, "Source", "Path", "Uri", "Url", "Picture", "Image", "Media", "Width", "Height", "X", "Y", "Bounds", "SaveInfo", "Resource", "File", "Data")).OrderBy(p => p.Name))
+            Console.WriteLine($"  PROP {SafeTypeName(() => p.PropertyType)} {p.Name} getPublic={p.GetMethod?.IsPublic} setPublic={p.SetMethod?.IsPublic}");
+
+        foreach (var m in SafeGetMethods(t).Where(m => !m.IsSpecialName && ContainsAny(m.Name, "SaveInfo", "Picture", "Image", "Media", "Source", "Create", "Insert", "Load", "Resource", "Open", "Init", "Uri")).OrderBy(m => m.Name))
+            Console.WriteLine($"  METH public={m.IsPublic} static={m.IsStatic} {SafeTypeName(() => m.ReturnType)} {m.Name}({SafeParameters(m)})");
+    }
+}
+
+static IEnumerable<Type> SafeGetTypes(Assembly asm)
+{
+    try { return asm.GetTypes(); }
+    catch (ReflectionTypeLoadException ex) { return ex.Types.Where(t => t is not null)!; }
+    catch { return Array.Empty<Type>(); }
+}
+
+static IEnumerable<ConstructorInfo> SafeGetConstructors(Type t)
+{
+    try { return t.GetConstructors(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance); }
+    catch { return Array.Empty<ConstructorInfo>(); }
+}
+
+static IEnumerable<PropertyInfo> SafeGetProperties(Type t)
+{
+    try { return t.GetProperties(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static); }
+    catch { return Array.Empty<PropertyInfo>(); }
+}
+
+static IEnumerable<MethodInfo> SafeGetMethods(Type t)
+{
+    try { return t.GetMethods(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static); }
+    catch { return Array.Empty<MethodInfo>(); }
+}
+
+static string SafeParameters(MethodBase method)
+{
+    try { return string.Join(", ", method.GetParameters().Select(p => $"{SafeTypeName(() => p.ParameterType)} {p.Name}")); }
+    catch { return "?"; }
+}
+
+static string SafeTypeName(Func<Type?> getType)
+{
+    try { return getType()?.FullName ?? ""; }
+    catch { return "?"; }
+}
+
+static bool ContainsAny(string? value, params string[] needles)
+{
+    if (value is null) return false;
+    return needles.Any(n => value.Contains(n, StringComparison.OrdinalIgnoreCase));
 }

@@ -1,5 +1,8 @@
 # Local student data and generated classroom artifacts
 
+# MRE support directory — keep locally, not tracked in repo
+/support/
+
 # .NET build artifacts and IDE state
 [Bb]in/
 [Oo]bj/
