@@ -161,6 +161,11 @@ public static class MreProcessor
         editor.Foreground = ParseBrush(data.Color) ?? Brushes.Black;
         editor.FontWeight = data.Bold == true ? FontWeights.Bold : FontWeights.Normal;
         editor.FontStyle = data.Italic == true ? FontStyles.Italic : FontStyles.Normal;
+        if (!string.IsNullOrWhiteSpace(data.FontFamily))
+        {
+            try { editor.FontFamily = new FontFamily(data.FontFamily); }
+            catch { /* 字体不可用时忽略 */ }
+        }
         editor.TextWrapping = TextWrapping.Wrap;
         editor.IsEditable = true;
 

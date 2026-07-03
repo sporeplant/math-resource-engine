@@ -5,7 +5,6 @@ import matplotlib
 matplotlib.use("Agg")
 import os
 
-import matplotlib.font_manager as fm
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -184,7 +183,7 @@ for center, count in zip(bin_centers, n):
     if count > 0:
         ax.text(
             center,
-            count + 0.5,
+            float(count) + 0.5,
             str(int(count)),
             ha="center",
             fontsize=12,
@@ -222,7 +221,7 @@ for center, count in zip(bin_centers, n):
     if count > 0:
         ax.text(
             center,
-            count + 0.5,
+            float(count) + 0.5,
             str(int(count)),
             ha="center",
             fontsize=12,

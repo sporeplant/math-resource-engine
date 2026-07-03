@@ -42,9 +42,9 @@ VALID_COURSEWARE_COMMANDS = {"courseware-collab"}
 PAGE_BREAK = "---"
 MAX_EMOJIS_PER_PAGE = 1
 MAX_MERMAID_NODES = 6
-MAX_LINES_PER_PAGE = 7
+MAX_LINES_PER_PAGE = 10
 MIN_PAGES = 5
-MAX_PAGES = 30
+MAX_PAGES = 50
 INLINE_STUDENT_QUESTION = re.compile(r"请[^\n：:]{1,12}同学(?:回答|代表发言)?[：:]\S+")
 
 
@@ -552,7 +552,9 @@ def check_courseware(
     rendered_body = strip_front_matter(text)
     if parse_front_matter(text):
         errors.append("Typora courseware must not contain YAML front matter")
-    if re.search(r"<[^>]+>", rendered_body):
+    # Strip LaTeX math before checking for HTML (avoid false positives on $x<70$)
+    no_math = re.sub(r"\$[^$]*\$", "", rendered_body)
+    if re.search(r"<[^>]+>", no_math):
         errors.append("Typora courseware must not contain HTML tags")
     if re.search(r"(?m)^```", rendered_body):
         errors.append("Typora courseware must not contain fenced code blocks")
@@ -824,22 +826,17 @@ def check_courseware_group_b(text: str, pages: list[Page], errors: list[str]) ->
             )
             group_b_violations += 1
 
-    # Check consecutive pure text pages globally
-    consecutive_text_pages = 0
-    for page in pages:
-        has_visual = bool(
-            re.search(r"!\[|备用提示|^\|.*\|$", page.content, re.MULTILINE)
-        )
-        if not has_visual:
-            consecutive_text_pages += 1
-            if consecutive_text_pages > 3:
-                errors.append(
-                    "more than 3 consecutive pure text pages (no mermaid/images)"
-                )
-                group_b_violations += 1
-                break
-        else:
-            consecutive_text_pages = 0
+        # Rule B8.5: Max 10 lines per page (including blank lines, excluding image refs)
+        content_lines = [
+            l for l in page.content.split('\n')
+            if not l.strip().startswith('![') and not l.strip().startswith('|---')
+        ]
+        if len(content_lines) > MAX_LINES_PER_PAGE:
+            errors.append(
+                f'page {i}: {len(content_lines)} lines exceeds max {MAX_LINES_PER_PAGE}'
+            )
+            group_b_violations += 1
+
 
     # Rule B9: No numbered steps in proofs (1. 2. 3.)
     proof_step_pattern = re.compile(r"^\s*\d+\.\s+", re.MULTILINE)

@@ -104,6 +104,10 @@ public class ElementData
     [JsonPropertyName("italic")]
     public bool? Italic { get; set; }
 
+    /// <summary>字体族名称（如 "方正小标宋简体"、"Times New Roman"）。</summary>
+    [JsonPropertyName("fontFamily")]
+    public string? FontFamily { get; set; }
+
     /// <summary>字体颜色（HTML 颜色格式，如 "#333333"）。</summary>
     [JsonPropertyName("color")]
     public string? Color { get; set; }

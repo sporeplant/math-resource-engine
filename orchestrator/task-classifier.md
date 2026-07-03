@@ -99,7 +99,36 @@ outputs：
 
 ---
 
-## 3. 冲突处理
+## 3. 工具类任务
+
+### 希沃白板 JSON 生成
+
+特征：
+
+- 用户要求"生成希沃 JSON"、"转成希沃课件"、"导出希沃格式"等。
+- 用户提供或指向一个 `*-courseware.md` 文件。
+
+路由：
+
+1. 确认目标 Markdown 文件路径（如果用户未明确，列出候选并请用户选择）。
+2. 执行：
+   ```bash
+   python tools/md_to_easinote_json.py <courseware.md> [output.json]
+   ```
+3. 输出 `<stem>.json` 至 MD 同级目录（默认），或用户指定路径。
+4. 告知用户用希沃插件导入：右键空白页 → `MRE导入` → 选择 JSON。
+
+前置条件：
+
+- Markdown 文件必须存在。
+
+outputs：
+
+- `{路径}/{文件名}.json`：可直接导入希沃白板 5 的 lesson.json。
+
+---
+
+## 4. 冲突处理
 
 当用户输入与历史docs中的旧流程冲突时，以 `orchestrator/workflow-registry.md` 为准。
 
