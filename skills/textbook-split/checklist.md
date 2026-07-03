@@ -65,17 +65,24 @@
 - [ ] 数学活动文件是否独立输出
 - [ ] 回顾与反思是否按课时拆分
 - [ ] 文件命名是否符合规则（课时用 `textbook-{章节}.{小节}-{课时}.md`，review 和活动用 `textbook-{章号}.{续号}-` 前缀）
+- [ ] 输出目录是否指向知识库（`--outdir knowledge/textbooks`），结果放入 `knowledge/textbooks/ch{N}/`
 
-## Step09 内容保真
+## Step09 内容保真与子标题过滤
 
 - [ ] 教材原文内容是否完整保留（无删节）
 - [ ] LaTeX 公式是否完整保留
 - [ ] 图片引用路径是否完整保留
-- [ ] 分章子目录输出时，Markdown 图片路径是否修正为 `../images/`
-- [ ] 分章子目录输出时，HTML `<img>` 图片路径是否修正为 `../images/`
+- [ ] 图片路径是否全部为 CDN 格式 `https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/<hash>.jpg`
 - [ ] 段落间空行是否保留
+- [ ] 回顾与反思内的子标题（回顾与反思、知识结构、总结与反思、注意事项）是否被正确过滤
+- [ ] 人名观点类子标题（如小亮的观点、小颖的观点）是否被正确过滤
 
-## Step10 OCR修正
+## Step10 图片文件迁移
+
+- [ ] MinerU 输出目录下的 `images/` 所有图片是否已复制到 `knowledge/images/`
+- [ ] 复制后 CDN 引用是否可对应到 `knowledge/images/<hash>.jpg`
+
+## Step11 OCR修正
 
 - [ ] 课时号前缀数字小于章号时，是否自动补全章号
 - [ ] 修正后文件内容中的 OCR 错误标题是否同步修正

@@ -142,7 +142,7 @@
 
 | 用户输入 | 执行 |
 |---------|------|
-| `commit`、`commit all` | 手动 `git add` 暂存相关变更 → `git commit`，然后 `git push gitee main && git push origin main`（跳过 outputs/、temp/ 等非仓库文件） |
+| `commit`、`commit all` | `git add -A && git commit`，然后 `git push gitee main && git push origin main` |
 | `push` | `git push gitee main` |
 | `push github`、`push origin` | `git push origin main` |
 | `push all` | `git push gitee main && git push origin main` |
