@@ -20,6 +20,7 @@ DEFAULT_HEADERS = [
     "大家谈谈",
     "读一读",
     "复习题",
+    "回顾与反思",
 ]
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -27,8 +28,28 @@ PROJECT_DIR = SCRIPT_DIR.parent
 IMAGES_DIR = PROJECT_DIR / "knowledge" / "images"
 
 
+def _build_icon_header_pattern(headers):
+    """Build alternation group for ## heading matching in icon regex.
+
+    Standard headers match exactly; '回顾与反思' needs flexible prefix
+    (第X章) and suffix ((第N课时)) since it appears as
+    '## 回顾与反思（第1课时）' or '## 第12章回顾与反思（第1课时）'.
+    """
+    parts = []
+    for h in headers:
+        if h == "回顾与反思":
+            parts.append(
+                r"(?:第\d+章)?"
+                + re.escape("回顾与反思")
+                + r"(?:[（(]第[一二三四五六七八九十]+课时[）)])?"
+            )
+        else:
+            parts.append(re.escape(h))
+    return "|".join(parts)
+
+
 def build_icon_pattern(headers: list[str]) -> re.Pattern:
-    header_pattern = "|".join(re.escape(h) for h in headers)
+    header_pattern = _build_icon_header_pattern(headers)
     return re.compile(
         r"!\[.*?\]\("
         r"(?:https://cdn\.jsdelivr\.net/gh/sporeplant/"
@@ -71,7 +92,7 @@ def main():
     )
     parser.add_argument(
         "--headers",
-        help="Comma-separated list of target section headers (default: all 7)",
+        help="Comma-separated list of target section headers (default: all 8)",
     )
     parser.add_argument(
         "--dry-run",

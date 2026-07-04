@@ -5,14 +5,20 @@
   1. 将 HTML 表格转换为 Markdown 原生表格格式
   2. 分析章节结构与课时分配，等待用户确认
   3. 按课时拆分（章引言归入第一课时，数学活动单独统计）
+  4. 转换图片引用为 CDN 格式
+  5. 复制图片文件到 knowledge/images/（默认启用，--no-copy-images 跳过）
+  6. git add 输出文件和图片（需 --git-add）
 
 用法:
-    python split_textbook.py <输入文件> [--outdir <输出目录>]
+    python split_textbook.py <输入文件> [--outdir <输出目录>] [--semester 8A] [-y]
+    python split_textbook.py <输入文件> --outdir knowledge/textbooks --semester 8B --remove-icons --git-add -y
 """
 
 import argparse
 import os
 import re
+import shutil
+import subprocess
 import sys
 from html.parser import HTMLParser
 
@@ -162,7 +168,28 @@ SECTION_ICON_HEADERS = [
     "大家谈谈",
     "读一读",
     "复习题",
+    "回顾与反思",
 ]
+
+def _build_icon_header_pattern(headers):
+    """Build alternation group for ## heading matching in icon regex.
+
+    Standard headers match exactly; '回顾与反思' needs flexible prefix
+    (第X章) and suffix ((第N课时)) since it appears as
+    '## 回顾与反思（第1课时）' or '## 第12章回顾与反思（第1课时）'.
+    """
+    parts = []
+    for h in headers:
+        if h == "回顾与反思":
+            parts.append(
+                r"(?:第\d+章)?"
+                + re.escape("回顾与反思")
+                + r"(?:[（(]第[一二三四五六七八九十]+课时[）)])?"
+            )
+        else:
+            parts.append(re.escape(h))
+    return "|".join(parts)
+
 
 # Pattern: image ref (CDN or relative) followed by blank lines, then ## target header
 _SECTION_ICON_RE = re.compile(
@@ -171,7 +198,7 @@ _SECTION_ICON_RE = re.compile(
     r"math-resource-engine@main/knowledge/images/"
     r"|(?:\.\./)?images/)"  # CDN URL or relative images/ path
     r"([a-f0-9]+\.jpg)\)\s*\n\s*\n## (?:"
-    + "|".join(re.escape(h) for h in SECTION_ICON_HEADERS)
+    + _build_icon_header_pattern(SECTION_ICON_HEADERS)
     + r")",
     re.MULTILINE,
 )
@@ -237,15 +264,18 @@ OCR_SECTION_RE = re.compile(
 REVIEW_RE = re.compile(
     r"^##\s*(?:(?:第)?(?:\d+|[一二三四五六七八九十]+)章)?回顾与反思[（(]第([一二三四五六七八九十]+)课时[）)]"
 )
+SINGLE_LESSON_RE = re.compile(
+    r"^##\s*(\d+)[.](\d+)\s*(\D.*)"
+)
 
 SUB_PATTERNS = [
     re.compile(
-        r"^##\s*(做一做|大家谈谈|观察与思考|练习|习题|读一读|一起探究|复习题)\s*$"
+        r"^##\s*(做一做|大家谈谈|观察与思考|练习|习题|读一读|一起探究|复习题|小亮的观点|小颖的观点)\s*$"
     ),
     re.compile(r"^##\s*[ABC]\s*组\s*$"),
     re.compile(r"^##\s*[一二三四五六七八九十]+[、]"),
     re.compile(r"^##\s*\d+\.[\s　]"),
-    re.compile(r"^##\s*(知识结构|总结与反思|注意事项|复习题)\s*$"),
+    re.compile(r"^##\s*(知识结构|总结与反思|注意事项|复习题|回顾与反思)\s*$"),
     re.compile(r"^##\s*[^ ]*法则\s*$"),
     re.compile(r"^##\s*(分式的基本性质|分式的运算|分式方程|分式方程的增根)\s*$"),
     re.compile(r"^##\s*基本事实[一二三四五六七八九十]"),
@@ -286,19 +316,67 @@ def build_front_matter(metadata):
     return "\n".join(lines) + "\n"
 
 
+CDN_PREFIX = "https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/"
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+KNOWLEDGE_IMAGES = os.path.join(PROJECT_ROOT, "knowledge", "images")
+
+
 def fix_image_paths(content):
-    """Make image references work from a chapter subdirectory."""
-    replacements = [
-        ("](./images/", "](../images/"),
-        ("](images/", "](../images/"),
-        ('src="./images/', 'src="../images/'),
-        ('src="images/', 'src="../images/'),
-        ("src='./images/", "src='../images/"),
-        ("src='images/", "src='../images/"),
-    ]
-    for old, new in replacements:
-        content = content.replace(old, new)
-    return content
+    """Convert all local image references to CDN URLs.
+
+    Handles Markdown ![...](...) and HTML <img src=\"...\"> formats,
+    with optional ./ or ../ prefix before images/.
+    """
+    return re.sub(
+        r"(?:\.\.?/)?images/([a-f0-9]+\.jpg)",
+        CDN_PREFIX + r"\1",
+        content,
+    )
+
+
+def _collect_cdn_hashes(content):
+    """Extract all referenced image hashes from CDN URLs in content."""
+    return set(re.findall(
+        re.escape(CDN_PREFIX) + r"([a-f0-9]+\.jpg)",
+        content,
+    ))
+
+
+def copy_images_to_knowledge(output_files, source_images_dir):
+    """Copy referenced images from MinerU source to knowledge/images/.
+
+    Returns (copied, skipped).
+    """
+    referenced = set()
+    for f in output_files:
+        with open(f, "r", encoding="utf-8") as fp:
+            referenced.update(_collect_cdn_hashes(fp.read()))
+
+    copied = 0
+    skipped = 0
+    for h in sorted(referenced):
+        src = os.path.join(source_images_dir, h)
+        dst = os.path.join(KNOWLEDGE_IMAGES, h)
+        if not os.path.isfile(src):
+            continue
+        if os.path.exists(dst):
+            skipped += 1
+        else:
+            shutil.copy2(src, dst)
+            copied += 1
+
+    return copied, skipped
+
+
+def git_add_files(paths):
+    """Run git add on specified paths (non-fatal on failure)."""
+    for p in paths:
+        subprocess.run(
+            ["git", "add", p],
+            cwd=PROJECT_ROOT,
+            check=False,
+            capture_output=True,
+        )
 
 
 def analyze_structure(lines):
@@ -370,6 +448,16 @@ def analyze_structure(lines):
             reviews.append({"lesson": _cn(m.group(1)), "start_line": i})
             continue
 
+        # Single-lesson section (no "第N课时" marker, e.g. "15.4 二次根式的混合运算")
+        m = SINGLE_LESSON_RE.match(s)
+        if m:
+            ch, sec, name = m.group(1), m.group(2), m.group(3).strip()
+            key = f"{ch}.{sec}"
+            if key not in sections:
+                sections[key] = {"name": name, "lessons": ["1"]}
+                section_order.append(key)
+            continue
+
         # Sub-headings are skipped
         if is_sub_heading(s):
             continue
@@ -434,6 +522,17 @@ def build_splits(
         if m:
             lesson_boundaries.append(
                 {"start": i, "type": "review", "lesson": _cn(m.group(1))}
+            )
+            continue
+        m = SINGLE_LESSON_RE.match(s)
+        if m:
+            lesson_boundaries.append(
+                {
+                    "start": i,
+                    "type": "lesson",
+                    "section_key": f"{m.group(1)}.{m.group(2)}",
+                    "lesson": "1",
+                }
             )
             continue
         if not is_sub_heading(s) and not CHAPTER_RE.match(s):
@@ -587,7 +686,7 @@ def main():
     parser.add_argument(
         "--flat",
         action="store_true",
-        help="平铺输出（不创建 ch{N}/ 子目录，图片路径保持 images/）",
+        help="平铺输出，不创建 ch{N}/ 子目录；图片路径始终转换为 CDN 格式",
     )
     parser.add_argument(
         "--content-type",
@@ -603,6 +702,16 @@ def main():
         "--remove-icons",
         action="store_true",
         help="移除栏目标题前的图标图片引用（做一做、观察与思考等）",
+    )
+    parser.add_argument(
+        "--no-copy-images",
+        action="store_true",
+        help="跳过图片文件复制步骤",
+    )
+    parser.add_argument(
+        "--git-add",
+        action="store_true",
+        help="git add 输出文件和新增图片",
     )
     args = parser.parse_args()
 
@@ -620,6 +729,10 @@ def main():
 
     with open(input_path, "r", encoding="utf-8") as f:
         text = f.read()
+
+    # Normalize single-# headings to ## for consistent parsing
+    # (MinerU often outputs lesson titles with # instead of ##)
+    text = re.sub(r'^# (?!#)', '## ', text, flags=re.MULTILINE)
 
     # Step 1: Convert HTML tables to Markdown
     table_count = len(re.findall(r"<table>", text, re.IGNORECASE))
@@ -708,9 +821,7 @@ def main():
 
         content = "".join(content_parts).rstrip("\n") + "\n"
         content = build_front_matter(sp["metadata"]) + content
-
-        if subdir:
-            content = fix_image_paths(content)
+        content = fix_image_paths(content)
 
         if args.remove_icons:
             content, icon_hashes = remove_section_icons_from_text(content)
@@ -726,6 +837,22 @@ def main():
         print(f"  已移除 {len(all_icon_hashes)} 个图标图片引用")
     for f in written:
         print(f"  {f}")
+
+    # Step 5: Copy images
+    if not args.no_copy_images:
+        source_images = os.path.join(os.path.dirname(input_path), "images")
+        if os.path.isdir(source_images):
+            output_paths = [os.path.join(chapter_outdir, f) for f in written]
+            copied, skipped = copy_images_to_knowledge(output_paths, source_images)
+            if copied or skipped:
+                print(f"\n[步骤 5] 图片迁移: 复制 {copied} 个, 跳过 {skipped} 个 → knowledge/images/")
+        else:
+            print(f"\n[步骤 5] 图片迁移: 未找到源 images/ 目录，跳过")
+
+    # Step 6: git add
+    if args.git_add:
+        git_add_files([chapter_outdir, KNOWLEDGE_IMAGES])
+        print(f"[步骤 6] git add {chapter_outdir} knowledge/images/")
 
 
 if __name__ == "__main__":
