@@ -42,8 +42,8 @@
 - [ ] 已确认核心素养表现（推理能力、几何直观等）
 
 ### □ 学情已注入
-- [ ] 已读取 knowledge/学情理论/认知分层.md
-- [ ] 已读取 knowledge/学情理论/班级概况.md
+- [ ] 已读取 knowledge/learning-theory/cognitive-layers.md
+- [ ] 已读取 knowledge/learning-theory/class-profile.md
 - [ ] 已明确三层学生的比例和特征
 
 ### □ 生成规则已确认
@@ -79,11 +79,11 @@
 - [ ] 已读取学习目标skills + 评价设计skills的产出
 
 ### □ 学情已注入
-- [ ] 已读取 knowledge/学情理论/学习行为.md
-- [ ] 已读取 knowledge/学情理论/课堂反馈策略.md
+- [ ] 已读取 knowledge/learning-theory/learning-behaviors.md
+- [ ] 已读取 knowledge/learning-theory/feedback-strategies.md
 
 ### □ 教学策略已注入
-- [ ] 已读取 knowledge/教学策略/ 中对应领域的策略文件
+- [ ] 已读取 knowledge/teaching-strategies/ 中对应领域的策略文件
 
 ### □ 生成规则已确认
 - [ ] 确认活动以学生为中心
@@ -99,6 +99,12 @@
 - [ ] 每个活动已标记核心、弹性或备用，并完成五项时间分解
 - [ ] 已运行教学活动时间validators，确认核心任务预计不超过40分钟
 - [ ] 确认未被选用的教材习题已标记为课下作业候选
+
+### □ 知识注入链路可追溯
+
+- [ ] 已记录本次实际读取的知识文件清单（math-essence: ___, common-errors: ___, teaching-strategies: ___, learning-theory: ___）
+- [ ] 知识分析 Step6 已提炼活动设计上下文（math_essence / critical_aspects / cognitive_obstacles / target_cognitive_changes / variation_dimensions / activity_constraints / source_refs 七字段均有具体内容）
+- [ ] activities Skill 已接收活动设计上下文，活动设计原则4已逐项回应
 
 ---
 
@@ -168,15 +174,17 @@
 
 ## 教材分析类专项检查项
 
-- [ ] 已读取 knowledge/数学本质/（对应知识点）
-- [ ] 已读取 knowledge/教学策略/（对应领域）
+- [ ] 已读取 knowledge/math-essence/INDEX.yaml，匹配到对应知识点文件
+- [ ] 已读取 knowledge/common-errors/INDEX.yaml，匹配到对应领域文件
+- [ ] 已读取 knowledge/teaching-strategies/INDEX.yaml，匹配到对应领域文件
+- [ ] 已读取 knowledge/learning-theory/ 下全部文件
 - [ ] 确认按10维度分析结构执行
 
 ---
 
 ## 习题分析类专项检查项
 
-- [ ] 已读取 knowledge/常见错误/（对应领域）
+- [ ] 已读取 knowledge/common-errors/（对应领域）
 - [ ] 确认按8维度分析结构执行
 - [ ] 确认题目来源标注完整（source_id / source_type / question_id）
 

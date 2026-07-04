@@ -6,11 +6,11 @@
 
 | 名称 | 作用 | 调用Skill | 优先级 | 更新时间 |
 |------|------|-----------|--------|----------|
-| 学情理论 | 学生学情画像、认知分层、行为特征 | learning-outcome, activity-design | 高 | v1.0 |
-| 数学本质 | 数学概念的本质分析 | math-textbook-analysis, learning-outcome | 中高 | v1.0 |
-| 教学策略 | 函数/几何/统计教学策略 | activity-design, math-lesson-design | 中 | v1.0 |
+| learning-theory | 学生学情画像、认知分层、行为特征 | learning-outcome, activity-design | 高 | v1.0 |
+| math-essence | 数学概念的本质分析 | math-textbook-analysis, learning-outcome | 中高 | v1.0 |
+| teaching-strategies | 函数/几何/统计教学策略 | activity-design, math-lesson-design | 中 | v1.0 |
 | 评价模式 | 函数/几何/统计评价模式 | archived | 已归档 | v1.0 |
-| 常见错误 | 函数/几何/方程常见错误 | math-exercise-analysis, activity-design | 中 | v1.0 |
+| common-errors | 函数/几何/方程常见错误 | math-exercise-analysis, activity-design | 中 | v1.0 |
 | 数学思想 | 数学思想方法（数形结合等） | archived | 已归档 | v1.0 |
 | 课堂结构 | 概念课/习题课/复习课/讲评课结构 | archived | 已归档 | v1.0 |
 | 课堂对话 | 低起点/启发式/高阶/快反馈课堂语言 | activity-design | 中 | v1.0 |

@@ -1,0 +1,10 @@
+# common-errors 文件索引
+# 供 retrieval 阶段按 domain 或章节号定位文件
+
+files:
+  - path: geometry.md
+    domain: geometry
+    topic_zh: 几何
+    chapter_refs:
+      - "13"
+      - "21"

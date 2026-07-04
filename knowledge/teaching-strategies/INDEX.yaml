@@ -1,0 +1,7 @@
+# teaching-strategies 文件索引
+# 供 retrieval 阶段按 domain 定位文件
+
+files:
+  - path: geometry.md
+    domain: geometry
+    topic_zh: 几何

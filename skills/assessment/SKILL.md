@@ -12,7 +12,7 @@
 
 - 分层课时教学目标（来自 学习目标skills）
 - 教学内容（教材章节 / 知识点）
-- 认知分层信息（来自 knowledge/学情理论/认知分层.md）
+- 认知分层信息（来自 knowledge/learning-theory/cognitive-layers.md）
 - 习题分析报告（来自 习题分析skills → knowledge/workbooks/对应章节习题的8维度分析）
 
 ---

@@ -19,7 +19,7 @@
 ```json
 {
   "chunk_id": "函数本质.md-01",
-  "source_file": "数学本质/函数本质.md",
+  "source_file": "math-essence/functions.md",
   "heading_path": "函数本质 > 核心定义",
   "content": "chunk的文本内容...",
   "token_count": 450,

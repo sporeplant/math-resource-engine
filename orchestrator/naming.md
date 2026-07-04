@@ -20,7 +20,7 @@
 
 - knowledge目录：使用 snake_case，多个单词用下划线连接
 - 知识文件：使用中文命名，清晰表达内容
-- 示例：`knowledge/学情理论/班级概况.md`, `数学本质/函数本质.md`
+- 示例：`knowledge/learning-theory/class-profile.md`, `math-essence/functions.md`
 
 ## outputs文件命名
 

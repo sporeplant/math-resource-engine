@@ -1,0 +1,16 @@
+# math-essence 文件索引
+# 供 retrieval 阶段按中文名称、别名、章节号、domain 或 content_type 定位文件
+# 新增知识本质文件后须在此登记
+
+files:
+  - path: geometry-square.md
+    topic: square
+    topic_zh: 正方形
+    aliases:
+      - 正方形
+      - 特殊平行四边形
+      - 正四边形
+    chapter_refs:
+      - "21.7"
+    domain: geometry
+    grade: 8

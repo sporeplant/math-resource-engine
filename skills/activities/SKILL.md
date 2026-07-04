@@ -14,6 +14,7 @@
 * 问题链设计结果（来自 问题链设计skills）
 * 习题分析结果（来自 习题分析skills）
 * 对应课时教材参考解答（来自 `knowledge/solutions/`，必须存在、课时匹配并通过验证）
+* 活动设计上下文（来自 知识分析skills 的 Step6 提炼结果，包含 math_essence、critical_aspects、cognitive_obstacles、target_cognitive_changes、variation_dimensions、activity_constraints、source_refs）
 
 ---
 
@@ -43,6 +44,21 @@
 活动必须体现知识形成过程。
 
 避免教师直接讲结论。
+
+---
+
+### 原则4：活动必须回应活动设计上下文
+
+活动设计必须显式使用知识分析阶段提供的活动设计上下文，不得忽略或仅靠 LLM 常识替代：
+
+- **math_essence**：活动能否体现本节数学关系的本质结构？是否避免了表面化处理？
+- **critical_aspects**：活动是否让学生聚焦在关键辨识方面，而非无关特征？
+- **cognitive_obstacles**：活动是否针对预判的认知障碍设计了反例、辨析或支架？
+- **target_cognitive_changes**：活动推动的认知方向是否与目标转变一致？
+- **variation_dimensions**：例子和反例的选取是否系统区分了变与不变？
+- **activity_constraints**：活动是否遵守了必须做到和必须避免的约束？
+
+每个 ACT-* 活动的设计意图中应简要说明回应了上述哪些要点。
 
 ---
 

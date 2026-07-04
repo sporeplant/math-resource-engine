@@ -83,11 +83,16 @@ skills运行时，PROJECT_ROOT 为 `E:\OneDrive\math-resource-engine\`。
 | 对应课标 | `knowledge/standards/doc-e0543146.md` |
 | 对应课型定义 | `knowledge/types/{课型}.md` |
 | 对应练习册题库 | `knowledge/workbooks/` 中匹配的题目 |
+| 数学本质分析 | 读取 `knowledge/math-essence/INDEX.yaml`，按 `chapter_refs` 或 `topic_zh` 匹配当前课时；若无匹配则跳过 |
+| 对应常见错误 | 读取 `knowledge/common-errors/INDEX.yaml`，按 `domain` 或 `chapter_refs` 匹配；若无匹配则跳过 |
+| 对应教学策略 | 读取 `knowledge/teaching-strategies/INDEX.yaml`，按 `domain` 匹配；若无匹配则跳过 |
+| 学情行为与反馈 | 读取 `knowledge/learning-theory/learning-behaviors.md`、`knowledge/learning-theory/feedback-strategies.md`、`knowledge/learning-theory/cognitive-layers.md` |
 | students | `students/scores.md` |
 
 学情数据读取规则：
 
 - 教学目标、评价设计和活动设计必须读取 `students/scores.md`。
+- `knowledge/learning-theory/` 下文件存在时必须全部读取，不得以"未提供"为由跳过。
 - `students/example.md` 与 `students/template.md` 仅用于格式说明，不得替代真实学生成绩数据。
 - 真实数据文件存在时，禁止以“未提供真实班级近期数据”为由降级使用示例或通用学情。
 - 教学设计正文只呈现分层特征和教学适配要求，不写具体学生姓名。
@@ -218,8 +223,8 @@ outputs完整教学设计
 | 项目 | 内容 |
 |------|------|
 | 执行方式 | AI 基于强制读取的skills定义生成草稿，outputs风格为对话预览 |
-| 输入 | 课题确认信息 + 教材原文阅读结果 |
-| outputs | 课型判断、知识点拆解、重难点定位、常见误解、知识生长路径 |
+| 输入 | 课题确认信息 + 教材原文 + INDEX.yaml匹配结果（math-essence、common-errors、teaching-strategies）+ learning-theory文件 |
+| outputs | 课型判断、知识点拆解、重难点定位、常见误解、知识生长路径、活动设计上下文（见 skills/knowledge/SKILL.md） |
 
 读取 `skills/knowledge/SKILL.md` 获取完整分析框架。
 
@@ -260,7 +265,7 @@ outputs完整教学设计
 | 项目 | 内容 |
 |------|------|
 | 执行方式 | AI 基于确认的上游生成草稿 |
-| 输入 | 确认后的学习目标 + 评价任务 + 问题链 + 知识分析 |
+| 输入 | 确认后的学习目标 + 评价任务 + 问题链 + 知识分析（含活动设计上下文） |
 | outputs | 各环节活动设计（按课型标准流程组织） |
 
 **关键约束：**

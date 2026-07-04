@@ -42,6 +42,6 @@
 
 ## 动态调整依据
 
-- 默认使用 knowledge/学情理论/班级概况.md 的分层数据
+- 默认使用 knowledge/learning-theory/class-profile.md 的分层数据
 - 如无学情数据，默认按普通班处理
 - 教师在审核时可手动调整班级水平设置

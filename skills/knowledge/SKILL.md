@@ -14,6 +14,10 @@
 * 学习主题
 * 章节内容
 * 习题分析结果（由 `skills/exercises/SKILL.md` 提供分析结果）
+* 数学本质分析（由 `knowledge/math-essence/INDEX.yaml` 定位的对应文件）
+* 常见错误（由 `knowledge/common-errors/INDEX.yaml` 定位的对应文件）
+* 教学策略（由 `knowledge/teaching-strategies/INDEX.yaml` 定位的对应文件）
+* 学情行为与反馈（`knowledge/learning-theory/` 下文件）
 
 ---
 
@@ -54,6 +58,16 @@
 学习难点:
 
 常见误解:
+
+# ---- 以下为下游活动设计提供的中间结果 ----
+活动设计上下文:
+  math_essence:            # 从 math-essence 文件提炼，简明扼要
+  critical_aspects:        # 学生必须辨识的关键方面
+  cognitive_obstacles:     # 已有认识、典型错误和认知障碍（综合 math-essence + common-errors + learning-theory）
+  target_cognitive_changes: # 希望学生从何种理解转变为何种理解
+  variation_dimensions:    # 哪些量需要变化，哪些量保持不变
+  activity_constraints:    # 活动必须做到或必须避免的事项（综合 teaching-strategies + learning-theory + feedback-strategies）
+  source_refs:             # 本次使用的知识文件路径列表
 ```
 
 ---
@@ -115,6 +129,21 @@
 * 学生易错点
 * 学生常见误解
 * 容易混淆概念
+
+---
+
+### Step6 提炼活动设计上下文
+
+综合读取的全部知识文件，提炼出供下游活动设计使用的结构化中间结果。每条必须具体、可操作，不空泛。
+
+回答：
+* math_essence：本节课核心数学关系的本质是什么？不要复述教材定义。
+* critical_aspects：学生必须辨识哪些方面才能理解这个概念？什么特征必须注意，什么可以忽略？
+* cognitive_obstacles：学生的已有认识中哪些会成为障碍？典型错误有哪些？预判错误率高的类型是什么？
+* target_cognitive_changes：希望学生从什么理解转变到什么理解？（如：从靠外观判断到靠条件判断）
+* variation_dimensions：设计例子时，哪些属性要变（大小、方向、位置），哪些要保持不变（关键定义属性）？
+* activity_constraints：活动必须做到什么（如：包含反例、对比原型与非原型），必须避免什么（如：不强制两步判定、不超过3分钟连续讲授）？
+* source_refs：列出本次实际读取的所有知识文件路径，用于可追溯性。
 
 ---
 
