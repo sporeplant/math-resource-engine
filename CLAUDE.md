@@ -142,12 +142,14 @@
 
 | 用户输入 | 执行 |
 |---------|------|
-| `commit`、`commit all` | 手动 `git add` 暂存相关变更 → `git commit`，然后 `git push gitee main && git push origin main`（跳过 outputs/、temp/ 等非仓库文件） |
+| `commit`、`commit all` | `git add -A && git commit`，然后 `git push gitee main && git push origin main` |
 | `push` | `git push gitee main` |
 | `push github`、`push origin` | `git push origin main` |
 | `push all` | `git push gitee main && git push origin main` |
 | `fetch`、`pull` | 走 `gitee` |
 | `fetch github`、`pull github` | 走 `origin` |
+
+`git add -A` 暂存所有变更（新增、修改、删除）；`.gitignore` 是唯一的过滤闸门——若某文件不应提交，先将其加入 `.gitignore`。
 
 当变更涉及 `knowledge/images/` 下的图片文件时，推送会自动覆盖两边，确保 jsDelivr CDN 同步更新。
 

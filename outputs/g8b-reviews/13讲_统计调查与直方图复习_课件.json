@@ -1,0 +1,3103 @@
+{
+  "slides": [
+    {
+      "id": "s01",
+      "elements": [
+        {
+          "id": "s01_e001",
+          "type": "text",
+          "text": "📐 统计调查与直方图",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s01_e002",
+          "type": "text",
+          "text": "第13讲 复习",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s01_e003",
+          "type": "text",
+          "text": "八年级数学 · 期末复习",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "elements": [
+        {
+          "id": "s02_e001",
+          "type": "text",
+          "text": "🎯 复习目标",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s02_e002",
+          "type": "text",
+          "text": "① 掌握统计调查的步骤，区分普查与抽样调查",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s02_e003",
+          "type": "text",
+          "text": "② 能判断总体、个体、样本和样本容量，用样本估计总体",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s02_e004",
+          "type": "text",
+          "text": "③ 能绘制和分析频数分布直方图，综合运用各类统计图",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "elements": [
+        {
+          "id": "s03_e001",
+          "type": "text",
+          "text": "📖 知识点01 调查、收集数据的过程与方法",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s03_e002",
+          "type": "text",
+          "text": "1. 统计调查的一般步骤：",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s03_e003",
+          "type": "text",
+          "text": "（1）确定调查问题；",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s03_e004",
+          "type": "text",
+          "text": "（2）确定调查对象；",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s03_e005",
+          "type": "text",
+          "text": "（3）确定调查方式；",
+          "x": 70,
+          "y": 264,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s03_e006",
+          "type": "text",
+          "text": "（4）展开调查；",
+          "x": 70,
+          "y": 312,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s03_e007",
+          "type": "text",
+          "text": "（5）统计、整理调查数据；",
+          "x": 70,
+          "y": 360,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s03_e008",
+          "type": "text",
+          "text": "（6）分析数据得出结论。",
+          "x": 70,
+          "y": 408,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s03_e009",
+          "type": "text",
+          "text": "2. 收集数据的方式与方法：",
+          "x": 70,
+          "y": 456,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s03_e010",
+          "type": "text",
+          "text": "方法：①问卷调查法；②访问调查法；③电话调查法；④实验法。",
+          "x": 70,
+          "y": 504,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s03_e011",
+          "type": "text",
+          "text": "方式：全面调查与抽样调查。",
+          "x": 70,
+          "y": 552,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s03_e012",
+          "type": "text",
+          "text": "3. 整理数据的方法：",
+          "x": 70,
+          "y": 600,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s03_e013",
+          "type": "text",
+          "text": "统计中，一般采用表格整理的数据，采用\"划记\"的方法，写\"正\"字，字的每一笔代表一个数据。",
+          "x": 70,
+          "y": 648,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s03_e014",
+          "type": "text",
+          "text": "4. 描述数据的方法：",
+          "x": 70,
+          "y": 716,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s03_e015",
+          "type": "text",
+          "text": "一般用统计表与统计图描述数据。",
+          "x": 70,
+          "y": 764,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "elements": [
+        {
+          "id": "s04_e001",
+          "type": "text",
+          "text": "📖 知识点02 全面调查与抽样调查",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s04_e002",
+          "type": "text",
+          "text": "1. 全面调查：",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s04_e003",
+          "type": "text",
+          "text": "调查全体对象的调查叫做全面调查。适用于调查范围较小，调查不具有破坏性且数据要求准确全面的调查。",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s04_e004",
+          "type": "text",
+          "text": "优点：结果准确、全面。",
+          "x": 70,
+          "y": 236,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s04_e005",
+          "type": "text",
+          "text": "缺点：工作量大，有时具有破坏性。",
+          "x": 70,
+          "y": 284,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s04_e006",
+          "type": "text",
+          "text": "2. 抽样调查：",
+          "x": 70,
+          "y": 332,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s04_e007",
+          "type": "text",
+          "text": "抽取部分对象进行调查的方法叫做抽样调查。适用于调查范围广，涉及面大，受条件限制或具有破坏性的调查。",
+          "x": 70,
+          "y": 380,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s04_e008",
+          "type": "text",
+          "text": "优点：工作量小，节省时间和人力。",
+          "x": 70,
+          "y": 448,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s04_e009",
+          "type": "text",
+          "text": "缺点：结果不如全面调查准确，可能有误差。",
+          "x": 70,
+          "y": 496,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "elements": [
+        {
+          "id": "s05_e001",
+          "type": "text",
+          "text": "📖 知识点03 数据的描述",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s05_e002",
+          "type": "text",
+          "text": "1. 数据的两种描述方法：",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s05_e003",
+          "type": "text",
+          "text": "数据的描述常利用统计表或统计图。常见的统计图有条形统计图、折线统计图和扇形统计图。",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s05_e004",
+          "type": "text",
+          "text": "2. 条形统计图、折线统计图以及扇形统计图的优缺点：",
+          "x": 70,
+          "y": 236,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s05_e005",
+          "type": "text",
+          "text": "条形统计图：优点：能够清楚的表示出每一组的具体数据。缺点：不能表示出数据在不同时间内的变化情况以及数据占总数的百分比。",
+          "x": 70,
+          "y": 284,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s05_e006",
+          "type": "text",
+          "text": "折线统计图：优点：能够清楚反映出数据的变化情况。缺点：不能表示出数据占总数的百分比。",
+          "x": 70,
+          "y": 352,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s05_e007",
+          "type": "text",
+          "text": "扇形统计图：优点：能够清楚的表示出各部分在总体中所占的百分比。缺点：不能清楚的表示出每一项的数目。",
+          "x": 70,
+          "y": 420,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s05_e008",
+          "type": "text",
+          "text": "3. 画扇形统计图的步骤：",
+          "x": 70,
+          "y": 488,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s05_e009",
+          "type": "text",
+          "text": "第一步：计算百分比：计算各部分数据占总数的百分比。",
+          "x": 70,
+          "y": 536,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s05_e010",
+          "type": "text",
+          "text": "第二步：求圆心角：计算各部分在圆中所对应的圆心角度数，利用公式 360°× 百分比计算。",
+          "x": 70,
+          "y": 584,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s05_e011",
+          "type": "text",
+          "text": "第三步：画扇形：根据第二步求出的圆心角度数在圆中画出各部分的扇形。",
+          "x": 70,
+          "y": 652,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s05_e012",
+          "type": "text",
+          "text": "第四步：在每个扇形中标出相应的名称以及百分比。",
+          "x": 70,
+          "y": 720,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "elements": [
+        {
+          "id": "s06_e001",
+          "type": "text",
+          "text": "📖 知识点04 总体、个体、样本及样本容量",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s06_e002",
+          "type": "text",
+          "text": "1. 总体、个体、样本及其样本容量：",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s06_e003",
+          "type": "text",
+          "text": "总体：要考察的全体对象。",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s06_e004",
+          "type": "text",
+          "text": "个体：组成总体的每一个考察对象。",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s06_e005",
+          "type": "text",
+          "text": "样本：所有被抽取出来的个体组成一个样本。",
+          "x": 70,
+          "y": 264,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s06_e006",
+          "type": "text",
+          "text": "样本容量：样本中个体的数目称为样本容量（样本容量没有单位）。",
+          "x": 70,
+          "y": 312,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s06_e007",
+          "type": "text",
+          "text": "2. 简单随机抽样：",
+          "x": 70,
+          "y": 360,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s06_e008",
+          "type": "text",
+          "text": "在抽取样本的过程中，总体中的每一个个体都有相等的机会被抽到，这样的抽样方法是一种简单随机抽样。抽出的样本必须具有代表性、广泛性。",
+          "x": 70,
+          "y": 408,
+          "width": 1100,
+          "height": 80,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "elements": [
+        {
+          "id": "s07_e001",
+          "type": "text",
+          "text": "📖 知识点05 频数分布直方图",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s07_e002",
+          "type": "text",
+          "text": "1. 相关概念：",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s07_e003",
+          "type": "text",
+          "text": "（1）极差：一组数据中的最大值与最小值的差叫做极差。",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s07_e004",
+          "type": "text",
+          "text": "（2）组距：每一组数据两个端点之间的距离。",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s07_e005",
+          "type": "text",
+          "text": "（3）组数：把数据分成若干组，分成组数的多少叫做组数。",
+          "x": 70,
+          "y": 264,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s07_e006",
+          "type": "text",
+          "text": "（4）频数：对落在各个小组内的数据进行累计，得到的各个小组内的数据的个数叫做该小组的频数。",
+          "x": 70,
+          "y": 312,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s07_e007",
+          "type": "text",
+          "text": "（5）频率：各个小组中频数与数据总数的比值。",
+          "x": 70,
+          "y": 380,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s07_e008",
+          "type": "text",
+          "text": "（6）频数分布表：把各个类别及其对应的频数用表格的形式表示出来，所得表格就是频数分布表。",
+          "x": 70,
+          "y": 428,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s07_e009",
+          "type": "text",
+          "text": "2. 画频数分布直方图的步骤：",
+          "x": 70,
+          "y": 496,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s07_e010",
+          "type": "text",
+          "text": "第一步：计算极差；",
+          "x": 70,
+          "y": 544,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s07_e011",
+          "type": "text",
+          "text": "第二步：确定组数与组距；要求组数与组距的乘积大于极差。",
+          "x": 70,
+          "y": 592,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s07_e012",
+          "type": "text",
+          "text": "第三步：画频数分布表；",
+          "x": 70,
+          "y": 640,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s07_e013",
+          "type": "text",
+          "text": "第四步：画频数分布直方图。",
+          "x": 70,
+          "y": 688,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "elements": [
+        {
+          "id": "s08_e001",
+          "type": "text",
+          "text": "📖 知识点06 统计图的综合应用",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s08_e002",
+          "type": "text",
+          "text": "1. 条形图：",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s08_e003",
+          "type": "text",
+          "text": "通过条形的高度来表示数据的大小，它能显示每一组的具体数据，易于比较数据之间的差别。",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s08_e004",
+          "type": "text",
+          "text": "2. 折线图：",
+          "x": 70,
+          "y": 236,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s08_e005",
+          "type": "text",
+          "text": "通过用数据点的连线来表示一些\"连续型\"数据的变化趋势，它能清楚的反映数据的变化情况。",
+          "x": 70,
+          "y": 284,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s08_e006",
+          "type": "text",
+          "text": "3. 扇形图：",
+          "x": 70,
+          "y": 352,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s08_e007",
+          "type": "text",
+          "text": "圆代表整体，图中的各部分扇形分别代表整体中的不同部分，它能反映部分占总体的百分比。",
+          "x": 70,
+          "y": 400,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "elements": [
+        {
+          "id": "s09_e001",
+          "type": "text",
+          "text": "✏️ 例题讲解",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s09_e002",
+          "type": "text",
+          "text": "本讲共 6 道例题，覆盖统计调查全流程。",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "elements": [
+        {
+          "id": "s10_e001",
+          "type": "text",
+          "text": "✏️ 第1题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s10_e002",
+          "type": "text",
+          "text": "> 口头回答",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s10_e003",
+          "type": "text",
+          "text": "为了了解某校九年级1200学生的体重情况，请你运用所学的统计知识，将解决上述问题要经历的几个重要步骤进行排序．①收集数据；②设计调查问卷；③用样本估计总体；④整理数据；⑤分析数据．则正确的排序为 ．（填序号）",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 100,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "elements": [
+        {
+          "id": "s11_e001",
+          "type": "text",
+          "text": "✏️ 第2题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s11_e002",
+          "type": "text",
+          "text": "> 口头回答",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s11_e003",
+          "type": "text",
+          "text": "下列调查中，适宜采用普查方式的是（ ）",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s11_e004",
+          "type": "text",
+          "text": "A．调查市场上蔬菜保鲜的情况",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s11_e005",
+          "type": "text",
+          "text": "B．调查乘坐高铁的旅客是否携带了违禁物品",
+          "x": 70,
+          "y": 264,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s11_e006",
+          "type": "text",
+          "text": "C．调查某品牌电池的使用寿命",
+          "x": 70,
+          "y": 312,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s11_e007",
+          "type": "text",
+          "text": "D．调查某地区初中生一天完成作业所用时间",
+          "x": 70,
+          "y": 360,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "elements": [
+        {
+          "id": "s12_e001",
+          "type": "text",
+          "text": "✏️ 第3题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s12_e002",
+          "type": "text",
+          "text": "> 请在练习本上完成",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s12_e003",
+          "type": "text",
+          "text": "某一家电卖场对其销售的空调情况进行了调查，得到下面的信息：",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s12_e004",
+          "type": "text",
+          "text": "2008年至2010年各种品牌空调的销售量（单位：万台）",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s12_e005",
+          "type": "image",
+          "src": "t_s12_004_828fc045.png",
+          "x": 227,
+          "y": 264,
+          "width": 826,
+          "height": 320
+        },
+        {
+          "id": "s12_e006",
+          "type": "text",
+          "text": "请你制作适当的统计图，反映下列信息：",
+          "x": 70,
+          "y": 600,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s12_e007",
+          "type": "text",
+          "text": "（1）2008年至2010年，C品牌空调在该卖场销售量的变化情况；",
+          "x": 70,
+          "y": 648,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s12_e008",
+          "type": "text",
+          "text": "（2）2010年，A，B，C及其他品牌的空调在该卖场的市场占有率情况．",
+          "x": 70,
+          "y": 716,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "elements": [
+        {
+          "id": "s13_e001",
+          "type": "text",
+          "text": "✏️ 第4题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s13_e002",
+          "type": "text",
+          "text": "> 口头回答",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s13_e003",
+          "type": "text",
+          "text": "为了解某校初二年级900名学生每天花费在数学学习上的时间，抽取了100名学生进行调查，以下说法正确的是（ ）",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s13_e004",
+          "type": "text",
+          "text": "A．样本容量是100",
+          "x": 70,
+          "y": 236,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s13_e005",
+          "type": "text",
+          "text": "B．每名学生是个体",
+          "x": 70,
+          "y": 284,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s13_e006",
+          "type": "text",
+          "text": "C．从中抽取的100名学生是样本",
+          "x": 70,
+          "y": 332,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s13_e007",
+          "type": "text",
+          "text": "D．初二年级900名学生是总体",
+          "x": 70,
+          "y": 380,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "elements": [
+        {
+          "id": "s14_e001",
+          "type": "text",
+          "text": "✏️ 第5题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s14_e002",
+          "type": "text",
+          "text": "> 口头回答",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s14_e003",
+          "type": "text",
+          "text": "某班在大课间活动中抽查了20名学生每分钟跳绳次数，得到如下数据（单位：次）：65，74，83，87，88，89，91，93，100，102，108，111，117，121，130，133，146，158，177，188．则跳绳次数在90～110这一组的频率是 ．",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 120,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "elements": [
+        {
+          "id": "s15_e001",
+          "type": "text",
+          "text": "✏️ 第6题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s15_e002",
+          "type": "text",
+          "text": "> 请在练习本上完成",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s15_e003",
+          "type": "text",
+          "text": "某校有学生3000人，准备开展学校社团活动，组建摄影社、国学社、篮球社、科技制作社四个社团．每名学生最多只能报一个社团，也可以不报．为了估计各社团人数，现在学校随机抽取了50名学生做问卷调查，得到了如图所示的两个不完整的统计图",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 100,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s15_e004",
+          "type": "image",
+          "src": "e94ab8b748b31730edf0a0784e6163970906c10e887239511b7db7d3cddb4a1e.jpg",
+          "x": 460,
+          "y": 276,
+          "width": 320,
+          "height": 226
+        },
+        {
+          "id": "s15_e005",
+          "type": "image",
+          "src": "b7935a10bca75306f8eedaae87963201f38f6fdede8f3378d8534305bbca3d17.jpg",
+          "x": 460,
+          "y": 522,
+          "width": 320,
+          "height": 314
+        },
+        {
+          "id": "s15_e006",
+          "type": "text",
+          "text": "结合以上信息，回答下列问题：",
+          "x": 70,
+          "y": 856,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s15_e007",
+          "type": "text",
+          "text": "（1）本次抽样调查的样本容量是 ；",
+          "x": 70,
+          "y": 904,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s15_e008",
+          "type": "text",
+          "text": "（2）条形统计图国学（B）上的具体数据是 ；",
+          "x": 70,
+          "y": 952,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s15_e009",
+          "type": "text",
+          "text": "（3）参与科技制作社团（D）所在扇形的圆心角度数是 ；",
+          "x": 70,
+          "y": 1000,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s15_e010",
+          "type": "text",
+          "text": "（4）请你估计全校有多少学生报名参加篮球社团活动．",
+          "x": 70,
+          "y": 1048,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "elements": [
+        {
+          "id": "s16_e001",
+          "type": "text",
+          "text": "📝 当堂练习",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s16_e002",
+          "type": "text",
+          "text": "共 10 题，限时 18 分钟独立完成。",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s16_e003",
+          "type": "text",
+          "text": "评分：选择/填空题每题 1 分，解答题每题 2 分，满分 14 分。",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "elements": [
+        {
+          "id": "s17_e001",
+          "type": "text",
+          "text": "📝 第7题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s17_e002",
+          "type": "text",
+          "text": "> 口头回答",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s17_e003",
+          "type": "text",
+          "text": "（限时 1 分钟）",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s17_e004",
+          "type": "text",
+          "text": "实施\"双减\"政策后，为了解我县初中生每天完成家庭作业所花时间及质量情况，根据以下四个步骤完成调查：①收集数据；②分析数据；③制作并发放调查问卷；④得出结论，提出建议和整改意见．你认为这四个步骤合理的先后排序为（ ）",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 100,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s17_e005",
+          "type": "text",
+          "text": "A．①②③④　　B．①③②④　　C．③①②④　　D．②③④①",
+          "x": 70,
+          "y": 324,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "elements": [
+        {
+          "id": "s18_e001",
+          "type": "text",
+          "text": "📝 第8题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s18_e002",
+          "type": "text",
+          "text": "> 口头回答",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s18_e003",
+          "type": "text",
+          "text": "（限时 1 分钟）",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s18_e004",
+          "type": "text",
+          "text": "万州区教师进修学院为了督查国家双减政策的落实情况，现调查某校学生每日睡眠时长问题，选用下列哪种方法最恰当（ ）",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s18_e005",
+          "type": "text",
+          "text": "A．查阅文献资料　　B．对学生问卷调查　　C．上网查询　　D．对校领导问卷调查",
+          "x": 70,
+          "y": 284,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "elements": [
+        {
+          "id": "s19_e001",
+          "type": "text",
+          "text": "📝 第9题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s19_e002",
+          "type": "text",
+          "text": "> 口头回答",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s19_e003",
+          "type": "text",
+          "text": "（限时 1 分钟）",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s19_e004",
+          "type": "text",
+          "text": "下列调查中，适宜采用普查方式的是（ ）",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s19_e005",
+          "type": "text",
+          "text": "A．了解神舟飞船的设备零部件的质量情况",
+          "x": 70,
+          "y": 264,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s19_e006",
+          "type": "text",
+          "text": "B．了解一批灯泡的使用寿命",
+          "x": 70,
+          "y": 312,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s19_e007",
+          "type": "text",
+          "text": "C．了解江苏省中学生观看电影《第二十条》的情况",
+          "x": 70,
+          "y": 360,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s19_e008",
+          "type": "text",
+          "text": "D．了解无锡市中小学生的课外阅读时间",
+          "x": 70,
+          "y": 408,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "elements": [
+        {
+          "id": "s20_e001",
+          "type": "text",
+          "text": "📝 第10题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s20_e002",
+          "type": "text",
+          "text": "> 口头回答",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s20_e003",
+          "type": "text",
+          "text": "（限时 1 分钟）",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s20_e004",
+          "type": "text",
+          "text": "下列调查中，适合用抽样调查的是（ ）",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s20_e005",
+          "type": "text",
+          "text": "A．订购校服时了解学生衣服尺寸",
+          "x": 70,
+          "y": 264,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s20_e006",
+          "type": "text",
+          "text": "B．了解全班学生上学的交通方式",
+          "x": 70,
+          "y": 312,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s20_e007",
+          "type": "text",
+          "text": "C．了解神舟七号飞船零部件的质量",
+          "x": 70,
+          "y": 360,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s20_e008",
+          "type": "text",
+          "text": "D．了解我国初中生视力情况",
+          "x": 70,
+          "y": 408,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "elements": [
+        {
+          "id": "s21_e001",
+          "type": "text",
+          "text": "📝 第11题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s21_e002",
+          "type": "text",
+          "text": "> 口头回答",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s21_e003",
+          "type": "text",
+          "text": "（限时 1 分钟）",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s21_e004",
+          "type": "text",
+          "text": "为了解我校八年级600名学生期中数学考试成绩，从中抽取了100名学生的数学成绩进行统计．下列判断正确的是（ ）",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s21_e005",
+          "type": "text",
+          "text": "A．被抽取的100名学生的数学成绩是总体",
+          "x": 70,
+          "y": 284,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s21_e006",
+          "type": "text",
+          "text": "B．样本容量是600",
+          "x": 70,
+          "y": 332,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s21_e007",
+          "type": "text",
+          "text": "C．被抽取的100名学生是总体的一个样本",
+          "x": 70,
+          "y": 380,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s21_e008",
+          "type": "text",
+          "text": "D．样本容量是100",
+          "x": 70,
+          "y": 428,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "elements": [
+        {
+          "id": "s22_e001",
+          "type": "text",
+          "text": "📝 第12题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s22_e002",
+          "type": "text",
+          "text": "> 请在练习本上完成",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s22_e003",
+          "type": "text",
+          "text": "（限时 2 分钟）",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s22_e004",
+          "type": "text",
+          "text": "某厂生产了1000只灯泡．为了解这1000只灯泡的使用寿命，从中随机抽取了50只灯泡进行检测，结果有28只灯泡的使用寿命超过了2500小时，那么估计这1000只灯泡中使用寿命超过2500小时的灯泡的数量为 只．",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 100,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "elements": [
+        {
+          "id": "s23_e001",
+          "type": "text",
+          "text": "📝 第13题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s23_e002",
+          "type": "text",
+          "text": "> 口头回答",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s23_e003",
+          "type": "text",
+          "text": "（限时 1 分钟）",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s23_e004",
+          "type": "text",
+          "text": "在一次数学测试中，将某班40名学生的成绩分为5组，第一组到第四组的频率之和为0.8，则第5组的频数是（ ）",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s23_e005",
+          "type": "text",
+          "text": "A．7　　B．8　　C．9　　D．10",
+          "x": 70,
+          "y": 284,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "elements": [
+        {
+          "id": "s24_e001",
+          "type": "text",
+          "text": "📝 第14题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s24_e002",
+          "type": "text",
+          "text": "> 请在练习本上完成",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s24_e003",
+          "type": "text",
+          "text": "（限时 2 分钟）",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s24_e004",
+          "type": "text",
+          "text": "某校为了解九年级1000名学生一分钟跳绳的情况，随机抽取50名学生进行一分钟跳绳测试，获得了他们跳绳的数据（单位：个），数据整理如下：",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 80,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s24_e005",
+          "type": "image",
+          "src": "t_s24_004_8dfe770c.png",
+          "x": 227,
+          "y": 304,
+          "width": 826,
+          "height": 240
+        },
+        {
+          "id": "s24_e006",
+          "type": "text",
+          "text": "根据以上数据，估计九年级1000名学生中跳绳的个数不低于175个的人数为 人．",
+          "x": 70,
+          "y": 560,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "elements": [
+        {
+          "id": "s25_e001",
+          "type": "text",
+          "text": "📝 第15题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s25_e002",
+          "type": "text",
+          "text": "> 口头回答",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s25_e003",
+          "type": "text",
+          "text": "（限时 2 分钟）",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s25_e004",
+          "type": "text",
+          "text": "兰州市现行城镇居民用水量划分为三级，水价分级递增．第一级为每户每年不超过144m^3的用水量，执行现行居民用水价格；第二级为超出144m^3但不超过180m^3的用水量，执行现行居民用水价格的1.5倍；第三级为超出180m^3的用水量，执行现行居民用水价格的3倍．某小区志愿队为了解该小区居民的用水情况，随机抽样调查了50户家庭的年用水量，并整理绘制了频数分布直方图（如图），若该小区共有1000户居民，请根据相关信息估计该小区年用水量达到第三级标准的户数（ ）",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 180,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s25_e005",
+          "type": "image",
+          "src": "f5f8a653d90f2f6cb295c3d8c3e8a33fb308f6582c306a443a05a1a0f7c7ea68.jpg",
+          "x": 460,
+          "y": 404,
+          "width": 320,
+          "height": 180
+        },
+        {
+          "id": "s25_e006",
+          "type": "text",
+          "text": "A．30　　B．45　　C．60　　D．90",
+          "x": 70,
+          "y": 604,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "elements": [
+        {
+          "id": "s26_e001",
+          "type": "text",
+          "text": "📝 第16题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s26_e002",
+          "type": "text",
+          "text": "> 请在练习本上完成",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s26_e003",
+          "type": "text",
+          "text": "（限时 3 分钟）",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s26_e004",
+          "type": "text",
+          "text": "我校有2000名学生参加\"我为大运添风采\"为主题的知识竞赛，赛后随机抽取部分参赛学生的成绩进行整理并制作成图表如下：",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s26_e005",
+          "type": "image",
+          "src": "t_s26_004_db150101.png",
+          "x": 227,
+          "y": 284,
+          "width": 826,
+          "height": 400
+        },
+        {
+          "id": "s26_e006",
+          "type": "image",
+          "src": "11b2464ec5411b8e10f792482d579888e94292ab6a8397cd701fefbf3ae00e55.jpg",
+          "x": 460,
+          "y": 700,
+          "width": 320,
+          "height": 211
+        },
+        {
+          "id": "s26_e007",
+          "type": "text",
+          "text": "请根据上述信息，解答下列问题：",
+          "x": 70,
+          "y": 931,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s26_e008",
+          "type": "text",
+          "text": "（1）表中：x= ；",
+          "x": 70,
+          "y": 979,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s26_e009",
+          "type": "text",
+          "text": "（2）请补全频数分布直方图；",
+          "x": 70,
+          "y": 1027,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s26_e010",
+          "type": "text",
+          "text": "（3）如果将比赛成绩80分以上（含80分）定为优秀，那么优秀率是多少？并且估算该校参赛学生获得优秀的人数．",
+          "x": 70,
+          "y": 1075,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "elements": [
+        {
+          "id": "s27_e001",
+          "type": "text",
+          "text": "📝 当堂练习 参考答案",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s27_e002",
+          "type": "text",
+          "text": "第7题：C（③①②④）",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s27_e003",
+          "type": "text",
+          "text": "第8题：B（对学生问卷调查）",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s27_e004",
+          "type": "text",
+          "text": "第9题：A（神舟飞船零部件需普查）",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s27_e005",
+          "type": "text",
+          "text": "第10题：D（全国初中生视力范围广，抽样）",
+          "x": 70,
+          "y": 264,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s27_e006",
+          "type": "text",
+          "text": "第11题：D（样本容量是100）",
+          "x": 70,
+          "y": 312,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s27_e007",
+          "type": "text",
+          "text": "第12题：560（1000×28/50=560）",
+          "x": 70,
+          "y": 360,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s27_e008",
+          "type": "text",
+          "text": "第13题：B（第5组频率=1-0.8=0.2，频数=40×0.2=8）",
+          "x": 70,
+          "y": 408,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s27_e009",
+          "type": "text",
+          "text": "第14题：600（不低于175个：24+6=30人，1000×30/50=600）",
+          "x": 70,
+          "y": 476,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s27_e010",
+          "type": "text",
+          "text": "第15题：C（60户，样本中第三级3户占3/50，1000×3/50=60）",
+          "x": 70,
+          "y": 544,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s27_e011",
+          "type": "text",
+          "text": "第16题：（1）x=15，y=0.35（总人数=40÷0.40=100）；（2）补80 x<90组频数15；（3）优秀率=0.15+0.10=25\\%，优秀人数≈ 2000×25\\%=500人",
+          "x": 70,
+          "y": 612,
+          "width": 1100,
+          "height": 100,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "elements": [
+        {
+          "id": "s28_e001",
+          "type": "text",
+          "text": "📝 课后作业",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s28_e002",
+          "type": "text",
+          "text": "> 课后独立完成，第二天上交。",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s28_e003",
+          "type": "text",
+          "text": "必做（全体完成）：",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s28_e004",
+          "type": "text",
+          "text": "第17、18、19、20、21、22、23题",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s28_e005",
+          "type": "text",
+          "text": "选作（能力允许者完成）：",
+          "x": 70,
+          "y": 264,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s28_e006",
+          "type": "text",
+          "text": "第24题",
+          "x": 70,
+          "y": 312,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s28_e007",
+          "type": "text",
+          "text": "挑战（学有余力者完成）：",
+          "x": 70,
+          "y": 360,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s28_e008",
+          "type": "text",
+          "text": "思考：如何用样本估计总体的方法，设计一个调查方案了解全校学生的课外阅读时间？",
+          "x": 70,
+          "y": 408,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "elements": [
+        {
+          "id": "s29_e001",
+          "type": "text",
+          "text": "📝 第17题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s29_e002",
+          "type": "text",
+          "text": "实施\"双减政策\"之后，为了解贵阳市某初中2735名学生平均每天完成各科家庭作业所用的时间，根据以下4个步骤进行调查活动：①整理数据；②得出结论，提出建议；③分析数据；④收集数据．对这4个步骤进行合理的排序移动： ．",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 100,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "elements": [
+        {
+          "id": "s30_e001",
+          "type": "text",
+          "text": "📝 第18题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s30_e002",
+          "type": "text",
+          "text": "下列调查中，适合普查方式的是（ ）",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s30_e003",
+          "type": "text",
+          "text": "A．调查全国初中生的睡眠时间",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s30_e004",
+          "type": "text",
+          "text": "B．调查某班级学生的身高情况",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s30_e005",
+          "type": "text",
+          "text": "C．调查长江江苏段的水质情况",
+          "x": 70,
+          "y": 264,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s30_e006",
+          "type": "text",
+          "text": "D．调查某品牌灯泡的使用寿命",
+          "x": 70,
+          "y": 312,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "elements": [
+        {
+          "id": "s31_e001",
+          "type": "text",
+          "text": "📝 第19题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s31_e002",
+          "type": "text",
+          "text": "下列调查中，适合用抽样调查的是（ ）",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s31_e003",
+          "type": "text",
+          "text": "A．订购校服时了解某班学生衣服的尺寸",
+          "x": 70,
+          "y": 168,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s31_e004",
+          "type": "text",
+          "text": "B．考察一批灯泡的使用寿命",
+          "x": 70,
+          "y": 216,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s31_e005",
+          "type": "text",
+          "text": "C．发射运载火箭前的检查",
+          "x": 70,
+          "y": 264,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s31_e006",
+          "type": "text",
+          "text": "D．对登机的旅客进行安全检查",
+          "x": 70,
+          "y": 312,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "elements": [
+        {
+          "id": "s32_e001",
+          "type": "text",
+          "text": "📝 第20题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s32_e002",
+          "type": "text",
+          "text": "劳动教育是发挥劳动的育人功能，对学生进行热爱劳动、热爱劳动人民的教育活动．为了解某校3500名学生参加课外劳动的时间，从中抽取500名学生，对他们参加课外劳动的时间进行分析，在此项调查中，样本是指（ ）",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 100,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s32_e003",
+          "type": "text",
+          "text": "A．3500名学生",
+          "x": 70,
+          "y": 228,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s32_e004",
+          "type": "text",
+          "text": "B．从中抽取的500名学生参加课外劳动的时间",
+          "x": 70,
+          "y": 276,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s32_e005",
+          "type": "text",
+          "text": "C．从中抽取的500名学生",
+          "x": 70,
+          "y": 324,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s32_e006",
+          "type": "text",
+          "text": "D．3500名学生参加课外劳动的时间",
+          "x": 70,
+          "y": 372,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "elements": [
+        {
+          "id": "s33_e001",
+          "type": "text",
+          "text": "📝 第21题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s33_e002",
+          "type": "text",
+          "text": "为了估计湖里有多少条鱼，先从湖里捕捞100条鱼做上标记，然后放回池塘去，经过一段时间，带有标记的鱼完全混合于鱼群后，小刚又从湖里捕捞200条鱼，发现有15条有标记，那么你估计池塘里有多少条鱼（ ）",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 100,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s33_e003",
+          "type": "text",
+          "text": "A．1333条　　B．3000条　　C．300条　　D．1500条",
+          "x": 70,
+          "y": 228,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "elements": [
+        {
+          "id": "s34_e001",
+          "type": "text",
+          "text": "📝 第22题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s34_e002",
+          "type": "text",
+          "text": "为了更好地落实课后延时服务工作，某校决定根据学生的兴趣爱好采购一批体育用品供学生使用．该校团委随机抽取了该校100名学生就体育兴趣爱好情况进行调查，并将收集到的数据整理绘制成如图所示的统计图．若该校共有学生1500人，则该校喜欢足球的学生大约有（ ）",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 100,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s34_e003",
+          "type": "image",
+          "src": "12630112fe08a58490aeb7ae1bb85c51164bde13e9f7be0c84188561b50a471b.jpg",
+          "x": 460,
+          "y": 228,
+          "width": 320,
+          "height": 204
+        },
+        {
+          "id": "s34_e004",
+          "type": "text",
+          "text": "A．100人　　B．150人　　C．200人　　D．250人",
+          "x": 70,
+          "y": 452,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "elements": [
+        {
+          "id": "s35_e001",
+          "type": "text",
+          "text": "📝 第23题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s35_e002",
+          "type": "text",
+          "text": "对某校八年级（1）班50名同学的一次数学测验成绩进行统计，其中80.5～90.5分这一组的频数是18，那么这个班的学生这次数学测验成绩在80.5～90.5分之间的频率是（ ）",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 80,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s35_e003",
+          "type": "text",
+          "text": "A．18　　B．0.36　　C．18%　　D．0.9",
+          "x": 70,
+          "y": 208,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "elements": [
+        {
+          "id": "s36_e001",
+          "type": "text",
+          "text": "📝 第24题",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s36_e002",
+          "type": "text",
+          "text": "某校为了解本校学生每天在校体育锻炼时间的情况，随机抽取了若干名学生进行调查，获得了他们每天在校体育锻炼时间的数据（单位：min），并对数据进行了整理、描述，部分信息如下：",
+          "x": 70,
+          "y": 120,
+          "width": 1100,
+          "height": 80,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s36_e003",
+          "type": "text",
+          "text": "a．每天在校体育锻炼时间分布情况：",
+          "x": 70,
+          "y": 208,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s36_e004",
+          "type": "image",
+          "src": "t_s36_003_a50f966b.png",
+          "x": 227,
+          "y": 256,
+          "width": 826,
+          "height": 400
+        },
+        {
+          "id": "s36_e005",
+          "type": "text",
+          "text": "b．每天在校体育锻炼时间在80 x<90这一组的是：80，81，81，81，82，82，83，83，84，84，84，84，84，85，85，85，85，85，85，85，85，86，87，87，87，87，87，88，88，88，89，89，89，89，89．",
+          "x": 70,
+          "y": 672,
+          "width": 1100,
+          "height": 120,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s36_e006",
+          "type": "text",
+          "text": "根据以上信息，回答下列问题：",
+          "x": 70,
+          "y": 800,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s36_e007",
+          "type": "text",
+          "text": "（1）表中m= ，n= ；",
+          "x": 70,
+          "y": 848,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s36_e008",
+          "type": "text",
+          "text": "（2）若该校共有1000名学生，估计该校每天在校体育锻炼时间不低于80分钟的学生的人数；",
+          "x": 70,
+          "y": 896,
+          "width": 1100,
+          "height": 60,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s36_e009",
+          "type": "text",
+          "text": "（3）该校准备确定一个时间标准p（单位：min），对每天在校体育锻炼时间不低于p的学生进行表扬．若要使25%的学生得到表扬，则p的值可以是 ．",
+          "x": 70,
+          "y": 964,
+          "width": 1100,
+          "height": 80,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "elements": [
+        {
+          "id": "s37_e001",
+          "type": "text",
+          "text": "💡 课堂小结",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s37_e002",
+          "type": "image",
+          "src": "t_s37_001_c5db10c2.png",
+          "x": 227,
+          "y": 120,
+          "width": 826,
+          "height": 320
+        },
+        {
+          "id": "s37_e003",
+          "type": "text",
+          "text": "请一位对应层级同学回答",
+          "x": 70,
+          "y": 456,
+          "width": 1100,
+          "height": 40,
+          "fontSize": 26,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei"
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "elements": [
+        {
+          "id": "s38_e001",
+          "type": "text",
+          "text": "💡 课堂小结 参考答案",
+          "x": 70,
+          "y": 54,
+          "width": 1100,
+          "height": 56,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei"
+        },
+        {
+          "id": "s38_e002",
+          "type": "image",
+          "src": "t_s38_001_8ce70d86.png",
+          "x": 227,
+          "y": 120,
+          "width": 826,
+          "height": 320
+        }
+      ]
+    }
+  ]
+}

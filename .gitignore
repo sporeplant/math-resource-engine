@@ -23,3 +23,7 @@ __pycache__/
 .env.*
 *.key
 *.pem
+
+# Local AI assistant config
+/.reasonix/
+/reasonix.toml

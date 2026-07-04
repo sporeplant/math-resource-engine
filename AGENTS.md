@@ -143,6 +143,8 @@
 | `fetch`、`pull` | 走 `gitee` |
 | `fetch github`、`pull github` | 走 `origin` |
 
+`git add -A` 暂存所有变更（新增、修改、删除）；`.gitignore` 是唯一的过滤闸门——若某文件不应提交，先将其加入 `.gitignore`。
+
 当变更涉及 `knowledge/images/` 下的图片文件时，推送会自动覆盖两边，确保 jsDelivr CDN 同步更新。
 
 

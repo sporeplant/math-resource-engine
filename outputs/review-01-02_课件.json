@@ -1,0 +1,1935 @@
+{
+  "slides": [
+    {
+      "id": "s01",
+      "elements": [
+        {
+          "id": "s01_e001",
+          "type": "text",
+          "text": "📐 统计调查与直方图",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s01_e002",
+          "type": "text",
+          "text": "第 01-02 讲 复习",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s01_e003",
+          "type": "text",
+          "text": "八年级数学 · 期末复习",
+          "x": 70,
+          "y": 170,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "elements": [
+        {
+          "id": "s02_e001",
+          "type": "text",
+          "text": "🎯 复习目标",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s02_e002",
+          "type": "text",
+          "text": "① 能说出统计调查的一般步骤，区分普查与抽样调查的适用场景 ② 能正确判断总体、个体、样本和样本容量，用样本估算总体 ③ 能根据数据绘制频数分布直方图，从统计图中读取信息并计算",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 206,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "elements": [
+        {
+          "id": "s03_e001",
+          "type": "text",
+          "text": "📖 普查与抽样 · 数据描述",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s03_e002",
+          "type": "image",
+          "src": "t_s03_001_7641850c.png",
+          "x": 227,
+          "y": 112,
+          "width": 826,
+          "height": 320
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "elements": [
+        {
+          "id": "s03_e003",
+          "type": "text",
+          "text": "简单随机抽样：机会相等，样本要有代表性和广泛性。",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s03_e004",
+          "type": "image",
+          "src": "t_s03_003_3b8e3888.png",
+          "x": 227,
+          "y": 112,
+          "width": 826,
+          "height": 320
+        },
+        {
+          "id": "s03_e005",
+          "type": "text",
+          "text": "扇形图圆心角 = 360° × 百分比",
+          "x": 70,
+          "y": 448,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "elements": [
+        {
+          "id": "s04_e001",
+          "type": "text",
+          "text": "📖 总体·样本 · 频数直方图",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s04_e002",
+          "type": "text",
+          "text": "- 总体：全体对象；个体：每一个；样本：抽取的集合",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s04_e003",
+          "type": "text",
+          "text": "- 样本容量：样本中个体数目（纯数字，无单位）",
+          "x": 70,
+          "y": 166,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s04_e004",
+          "type": "text",
+          "text": "- 估算：总体数量 ≈ 总体总数 ×（样本比例）",
+          "x": 70,
+          "y": 220,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s04_e005",
+          "type": "text",
+          "text": "- 极差 = 最大值 − 最小值；组数 ≈ 极差 ÷ 组距",
+          "x": 70,
+          "y": 278,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s04_e006",
+          "type": "text",
+          "text": "- 频数：每组数据个数；频率 = 频数 ÷ 数据总数",
+          "x": 70,
+          "y": 384,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s04_e007",
+          "type": "text",
+          "text": "- 画直方图：算极差 → 定组距 → 列频数表 → 画图（无间隙）",
+          "x": 70,
+          "y": 438,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "elements": [
+        {
+          "id": "s05_e001",
+          "type": "text",
+          "text": "💡 统计图选用小结",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s05_e002",
+          "type": "image",
+          "src": "t_s05_001_936fada5.png",
+          "x": 227,
+          "y": 112,
+          "width": 826,
+          "height": 400
+        },
+        {
+          "id": "s05_e003",
+          "type": "text",
+          "text": "核心方法：从图中读数据 → 算比例 → 用样本估计总体。",
+          "x": 70,
+          "y": 528,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "elements": [
+        {
+          "id": "s06_e001",
+          "type": "text",
+          "text": "✏️ 例题1 调查步骤",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s06_e002",
+          "type": "text",
+          "text": "实施\"双减\"政策后，为了解我县初中生每天完成家庭作业所花时间及质量情况，根据以下四个步骤完成调查：①收集数据；②分析数据；③制作并发放调查问卷；④得出结论，提出建议和整改意见．你认为这四个步骤合理的先后排序为（ ）",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 206,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s06_e003",
+          "type": "text",
+          "text": "A．①②③④　B．①③②④　C．③①②④　D．②③④①",
+          "x": 70,
+          "y": 326,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s06_e004",
+          "type": "text",
+          "text": "请一位同学给出答案并说明理由。",
+          "x": 70,
+          "y": 384,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "elements": [
+        {
+          "id": "s07_e001",
+          "type": "text",
+          "text": "✏️ 例题1 解析",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s07_e002",
+          "type": "text",
+          "text": "答案：C",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s07_e003",
+          "type": "text",
+          "text": "统计调查的一般步骤：",
+          "x": 70,
+          "y": 170,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s07_e004",
+          "type": "text",
+          "text": "制作并发放调查问卷 → 收集数据 → 分析数据 → 得出结论、提出建议",
+          "x": 70,
+          "y": 228,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s07_e005",
+          "type": "text",
+          "text": "③ → ① → ② → ④",
+          "x": 70,
+          "y": 338,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "elements": [
+        {
+          "id": "s08_e001",
+          "type": "text",
+          "text": "✏️ 例题2-3 调查方法与普查抽样",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s08_e002",
+          "type": "text",
+          "text": "例2 万州区教师进修学院调查某校学生每日睡眠时长问题，选用下列哪种方法最恰当（ ）",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s08_e003",
+          "type": "text",
+          "text": "A．查阅文献资料　B．对学生问卷调查　C．上网查询　D．对校领导问卷调查",
+          "x": 70,
+          "y": 222,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s08_e004",
+          "type": "text",
+          "text": "例3 下列调查中，适宜采用普查方式的是（ ）",
+          "x": 70,
+          "y": 332,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s08_e005",
+          "type": "text",
+          "text": "A．了解神舟飞船的设备零部件的质量情况　B．了解一批灯泡的使用寿命　C．了解江苏省中学生观看电影《第二十条》的情况　D．了解无锡市中小学生的课外阅读时间",
+          "x": 70,
+          "y": 390,
+          "width": 1120,
+          "height": 154,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s08_e006",
+          "type": "text",
+          "text": "请一位同学回答",
+          "x": 70,
+          "y": 552,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "elements": [
+        {
+          "id": "s09_e001",
+          "type": "text",
+          "text": "✏️ 例题2-3 解析",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s09_e002",
+          "type": "text",
+          "text": "例2 答案：B — 调查对象是学生，应直接向学生收集数据",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s09_e003",
+          "type": "text",
+          "text": "例3 答案：A",
+          "x": 70,
+          "y": 222,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s09_e004",
+          "type": "image",
+          "src": "t_s09_003_29d23fd0.png",
+          "x": 227,
+          "y": 280,
+          "width": 826,
+          "height": 400
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "elements": [
+        {
+          "id": "s10_e001",
+          "type": "text",
+          "text": "✏️ 例题4 概念辨析",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s10_e002",
+          "type": "text",
+          "text": "为了解我校八年级600名学生期中数学考试成绩，从中抽取了100名学生的数学成绩进行统计．下列判断正确的是（ ）",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s10_e003",
+          "type": "text",
+          "text": "A．被抽取的100名学生的数学成绩是总体 B．样本容量是600 C．被抽取的100名学生是总体的一个样本 D．样本容量是100",
+          "x": 70,
+          "y": 222,
+          "width": 1120,
+          "height": 154,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s10_e004",
+          "type": "text",
+          "text": "关键：总体/样本/样本容量分别指什么？",
+          "x": 70,
+          "y": 384,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s10_e005",
+          "type": "text",
+          "text": "请一位同学回答。",
+          "x": 70,
+          "y": 442,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "elements": [
+        {
+          "id": "s11_e001",
+          "type": "text",
+          "text": "✏️ 例题4 解析",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s11_e002",
+          "type": "text",
+          "text": "答案：D",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s11_e003",
+          "type": "text",
+          "text": "- 总体：八年级600名学生的数学成绩（不是学生）",
+          "x": 70,
+          "y": 170,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s11_e004",
+          "type": "text",
+          "text": "- 个体：每名学生的数学成绩",
+          "x": 70,
+          "y": 224,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s11_e005",
+          "type": "text",
+          "text": "- 样本：被抽取的100名学生的数学成绩（不是100名学生）",
+          "x": 70,
+          "y": 278,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s11_e006",
+          "type": "text",
+          "text": "- 样本容量：100（纯数字，不带单位）",
+          "x": 70,
+          "y": 384,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "elements": [
+        {
+          "id": "s12_e001",
+          "type": "text",
+          "text": "✏️ 例题5 样本估算总体",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s12_e002",
+          "type": "text",
+          "text": "某厂生产了1000只灯泡．为了解这1000只灯泡的使用寿命，从中随机抽取了50只灯泡进行检测，结果有28只灯泡的使用寿命超过了2500小时，那么估计这1000只灯泡中使用寿命超过2500小时的灯泡的数量为 ______ 只．",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 258,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s12_e003",
+          "type": "text",
+          "text": "✏️ 请在练习本上计算",
+          "x": 70,
+          "y": 378,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s12_e004",
+          "type": "text",
+          "text": "请一位同学回答并展示计算过程。",
+          "x": 70,
+          "y": 436,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "elements": [
+        {
+          "id": "s13_e001",
+          "type": "text",
+          "text": "✏️ 例题5 解析",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s13_e002",
+          "type": "text",
+          "text": "答案：560",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s13_e003",
+          "type": "text",
+          "text": "样本中超过2500小时的比例：",
+          "x": 70,
+          "y": 170,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s13_e004",
+          "type": "text",
+          "text": "2850 = 0.56",
+          "x": 70,
+          "y": 228,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Times New Roman",
+          "italic": true
+        },
+        {
+          "id": "s13_e005",
+          "type": "text",
+          "text": "估计总体：",
+          "x": 70,
+          "y": 286,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s13_e006",
+          "type": "text",
+          "text": "1000 × 0.56 = 560（只）",
+          "x": 70,
+          "y": 344,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s13_e007",
+          "type": "text",
+          "text": "公式：总体中数量 ≈ 总体总数 ×（样本比例）",
+          "x": 70,
+          "y": 402,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "elements": [
+        {
+          "id": "s14_e001",
+          "type": "text",
+          "text": "✏️ 例题6 频数与频率",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s14_e002",
+          "type": "text",
+          "text": "在一次数学测试中，将某班40名学生的成绩分为5组，第一组到第四组的频率之和为0.8，则第5组的频数是（ ）",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s14_e003",
+          "type": "text",
+          "text": "A．7　B．8　C．9　D．10",
+          "x": 70,
+          "y": 222,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s14_e004",
+          "type": "text",
+          "text": "✏️ 请在练习本上计算",
+          "x": 70,
+          "y": 280,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "elements": [
+        {
+          "id": "s15_e001",
+          "type": "text",
+          "text": "✏️ 例题6 解析",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s15_e002",
+          "type": "text",
+          "text": "答案：B",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s15_e003",
+          "type": "text",
+          "text": "第5组的频率：",
+          "x": 70,
+          "y": 170,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s15_e004",
+          "type": "text",
+          "text": "1 - 0.8 = 0.2",
+          "x": 70,
+          "y": 228,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Times New Roman",
+          "italic": true
+        },
+        {
+          "id": "s15_e005",
+          "type": "text",
+          "text": "第5组的频数：",
+          "x": 70,
+          "y": 286,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s15_e006",
+          "type": "text",
+          "text": "40 × 0.2 = 8",
+          "x": 70,
+          "y": 344,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Times New Roman",
+          "italic": true
+        },
+        {
+          "id": "s15_e007",
+          "type": "text",
+          "text": "公式：频率 = 频数 ÷ 总数，各组频率之和 = 1",
+          "x": 70,
+          "y": 402,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "elements": [
+        {
+          "id": "s16_e001",
+          "type": "text",
+          "text": "✏️ 例题7 频数分布表",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s16_e002",
+          "type": "text",
+          "text": "某校为了解九年级1000名学生一分钟跳绳的情况，随机抽取50名学生进行测试，数据整理如下：",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s16_e003",
+          "type": "image",
+          "src": "t_s16_002_ae2e5944.png",
+          "x": 227,
+          "y": 222,
+          "width": 826,
+          "height": 240
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "elements": [
+        {
+          "id": "s16_e004",
+          "type": "text",
+          "text": "估计九年级1000名学生中跳绳个数不低于175个的人数为 ______ 人．",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s16_e005",
+          "type": "image",
+          "src": "771dcc14159cab49f024e0335ff27d2babfc4955addc71e79a02a19d735888d3.jpg",
+          "x": 280,
+          "y": 164,
+          "width": 720,
+          "height": 420
+        },
+        {
+          "id": "s16_e006",
+          "type": "text",
+          "text": "✏️ 请在练习本上计算",
+          "x": 70,
+          "y": 600,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "elements": [
+        {
+          "id": "s17_e001",
+          "type": "text",
+          "text": "✏️ 例题7 解析",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s17_e002",
+          "type": "text",
+          "text": "答案：600",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s17_e003",
+          "type": "text",
+          "text": "样本中不低于175个的人数：24 + 6 = 30",
+          "x": 70,
+          "y": 170,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s17_e004",
+          "type": "text",
+          "text": "样本比例：3050 = 0.6",
+          "x": 70,
+          "y": 228,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s17_e005",
+          "type": "text",
+          "text": "估计总体：1000 × 0.6 = 600（人）",
+          "x": 70,
+          "y": 286,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "elements": [
+        {
+          "id": "s18_e001",
+          "type": "text",
+          "text": "✏️ 例题8 频数直方图应用",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s18_e002",
+          "type": "text",
+          "text": "兰州市现行居民用水量划分为三级，水价分级递增．某小区随机抽样调查了50户家庭的年用水量，并绘制了频数分布直方图．若该小区共有1000户居民，估计年用水量达到第三级标准（超出180m³）的户数为（ ）",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 206,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "elements": [
+        {
+          "id": "s18_e003",
+          "type": "text",
+          "text": "A．30　B．45　C．60　D．90",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s18_e004",
+          "type": "image",
+          "src": "afdc0b39c2ecd9f3035f13f806f4ef547c7f9f78456d0cbaf67002284a483513.jpg",
+          "x": 280,
+          "y": 112,
+          "width": 720,
+          "height": 420
+        },
+        {
+          "id": "s18_e005",
+          "type": "text",
+          "text": "请一位同学回答",
+          "x": 70,
+          "y": 548,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "elements": [
+        {
+          "id": "s19_e001",
+          "type": "text",
+          "text": "✏️ 例题8 解析",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s19_e002",
+          "type": "text",
+          "text": "答案：C",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s19_e003",
+          "type": "text",
+          "text": "从直方图得出：样本中第三级（x > 180）有 3 户",
+          "x": 70,
+          "y": 170,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s19_e004",
+          "type": "text",
+          "text": "比例：350 = 0.06",
+          "x": 70,
+          "y": 228,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s19_e005",
+          "type": "text",
+          "text": "估计总体：1000 × 0.06 = 60（户）",
+          "x": 70,
+          "y": 286,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "elements": [
+        {
+          "id": "s20_e001",
+          "type": "text",
+          "text": "✏️ 例题9 统计图综合",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s20_e002",
+          "type": "text",
+          "text": "某校有学生3000人，准备开展学校社团活动，组建摄影社、国学社、篮球社、科技制作社四个社团．随机抽取了50名学生做问卷调查，得到了如图所示的两个不完整的统计图．",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 154,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s20_e003",
+          "type": "image",
+          "src": "2fa3684851071382d31031005e07635b59916073c20e2321a41d2ae83b1339bc.jpg",
+          "x": 280,
+          "y": 274,
+          "width": 720,
+          "height": 420
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "elements": [
+        {
+          "id": "s20_e004",
+          "type": "image",
+          "src": "720fcecd8fc4d31b78dbd1198d6f2cfa435f332fa240b3bb73d1c461296a8f7b.jpg",
+          "x": 280,
+          "y": 54,
+          "width": 720,
+          "height": 420
+        },
+        {
+          "id": "s20_e005",
+          "type": "text",
+          "text": "（1）本次抽样调查的样本容量是 ______； （2）国学（B）上的具体数据是 ______； （3）科技制作社团（D）所在扇形的圆心角度数是 ______； （4）估计全校有多少学生报名参加篮球社团活动．",
+          "x": 70,
+          "y": 490,
+          "width": 1120,
+          "height": 206,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "elements": [
+        {
+          "id": "s20_e006",
+          "type": "text",
+          "text": "✏️ 请在练习本上完成（限时 5 分钟）",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "elements": [
+        {
+          "id": "s21_e001",
+          "type": "text",
+          "text": "✏️ 例题9 参考答案",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s21_e002",
+          "type": "text",
+          "text": "（1）50（样本容量 = 抽取人数）",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s21_e003",
+          "type": "text",
+          "text": "（2）10 人（国学占20%，50 × 20% = 10）",
+          "x": 70,
+          "y": 170,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s21_e004",
+          "type": "text",
+          "text": "（3）100.8°",
+          "x": 70,
+          "y": 280,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s21_e005",
+          "type": "text",
+          "text": "科技制作占比：1 - 24\\% - 20\\% - 28\\% = 28\\%",
+          "x": 70,
+          "y": 338,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s21_e006",
+          "type": "text",
+          "text": "圆心角：360° × 28\\% = 100.8°",
+          "x": 70,
+          "y": 448,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s21_e007",
+          "type": "text",
+          "text": "（4）840 人",
+          "x": 70,
+          "y": 506,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s21_e008",
+          "type": "text",
+          "text": "3000 × 28\\% = 840（人）",
+          "x": 70,
+          "y": 564,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "elements": [
+        {
+          "id": "s22_e001",
+          "type": "text",
+          "text": "📝 当堂练习",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s22_e002",
+          "type": "text",
+          "text": "✏️ 请在练习本上完成（限时 8 分钟）",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s22_e003",
+          "type": "text",
+          "text": "第10题：为调查九年级1200学生体重，将步骤排序：①收集数据；②设计调查问卷；③用样本估计总体；④整理数据；⑤分析数据．",
+          "x": 70,
+          "y": 170,
+          "width": 1120,
+          "height": 154,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s22_e004",
+          "type": "text",
+          "text": "第11题：调查学生最喜欢的体育运动，在\"①蛙泳，②球类，③游泳，④篮球，⑤自由泳，⑥排球\"中选取四个作为问卷备选项，最合理的是（ ）",
+          "x": 70,
+          "y": 332,
+          "width": 1120,
+          "height": 154,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s22_e005",
+          "type": "text",
+          "text": "A．①②③④　B．①④⑤⑥　C．②③⑤⑥　D．②③④⑤",
+          "x": 70,
+          "y": 494,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s22_e006",
+          "type": "text",
+          "text": "第12题：下列适宜普查的是（ ）A．调查市场上蔬菜保鲜情况　B．调查乘坐高铁旅客是否携带违禁物品　C．调查某品牌电池使用寿命　D．调查某地区初中生一天完成作业所用时间",
+          "x": 70,
+          "y": 552,
+          "width": 1120,
+          "height": 154,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "elements": [
+        {
+          "id": "s23_e001",
+          "type": "text",
+          "text": "📝 当堂练习（续）",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s23_e002",
+          "type": "text",
+          "text": "✏️ 请在练习本上完成（限时 8 分钟）",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "elements": [
+        {
+          "id": "s23_e003",
+          "type": "text",
+          "text": "第13题：下列适合抽样调查的是（ ）A．了解全班中学生每周使用手机的时间　B．对乘坐高铁的乘客进行安全检查　C．调查我校初三某班的视力情况　D．环保部门调查任河全域水质情况",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 206,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s23_e004",
+          "type": "text",
+          "text": "第14题：为了解某校初二年级900名学生每天花费在数学学习上的时间，抽取了100名学生进行调查，以下说法正确的是（ ）A．样本容量是100　B．每名学生是个体　C．抽取的100名学生是样本　D．初二年级900名学生是总体",
+          "x": 70,
+          "y": 268,
+          "width": 1120,
+          "height": 206,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s23_e005",
+          "type": "text",
+          "text": "第15题：抽查20名学生每分钟跳绳次数：65，74，83，87，88，89，91，93，100，102，108，111，117，121，130，133，146，158，177，188．则跳绳次数在90～110这一组的频率是 ______．",
+          "x": 70,
+          "y": 482,
+          "width": 1120,
+          "height": 258,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "elements": [
+        {
+          "id": "s24_e001",
+          "type": "text",
+          "text": "📝 当堂练习 参考答案",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s24_e002",
+          "type": "text",
+          "text": "第10题：②①④⑤③",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s24_e003",
+          "type": "text",
+          "text": "第11题：D（选项应互不包含且具代表性）",
+          "x": 70,
+          "y": 170,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s24_e004",
+          "type": "text",
+          "text": "第12题：B（高铁安检须全面检查）",
+          "x": 70,
+          "y": 228,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s24_e005",
+          "type": "text",
+          "text": "第13题：D（全域水质涉及范围广）",
+          "x": 70,
+          "y": 286,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s24_e006",
+          "type": "text",
+          "text": "第14题：A（个体是每名学生每天花在数学上的时间，样本是100名学生的时间数据，总体是900名学生的时间数据）",
+          "x": 70,
+          "y": 344,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s24_e007",
+          "type": "text",
+          "text": "第15题：0.25（90～110有 91,93,100,102,108 共5个，5÷20=0.25）",
+          "x": 70,
+          "y": 454,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "elements": [
+        {
+          "id": "s25_e001",
+          "type": "text",
+          "text": "📝 课后作业",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s25_e002",
+          "type": "text",
+          "text": "必做：",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s25_e003",
+          "type": "text",
+          "text": "- 讲义第16-20题（选择题，巩固普查/抽样/概念辨析）",
+          "x": 70,
+          "y": 166,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s25_e004",
+          "type": "text",
+          "text": "- 讲义第21-24题（频数、频率、组数计算）",
+          "x": 70,
+          "y": 272,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s25_e005",
+          "type": "text",
+          "text": "选作：",
+          "x": 70,
+          "y": 330,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s25_e006",
+          "type": "text",
+          "text": "- 讲义第22题（频数直方图估算）",
+          "x": 70,
+          "y": 384,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s25_e007",
+          "type": "text",
+          "text": "- 讲义第25题（直方图综合应用，含图片）",
+          "x": 70,
+          "y": 438,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s25_e008",
+          "type": "text",
+          "text": "挑战：",
+          "x": 70,
+          "y": 496,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s25_e009",
+          "type": "text",
+          "text": "- 讲义第9题全部四问独立完成，写出完整推理过程",
+          "x": 70,
+          "y": 550,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "elements": [
+        {
+          "id": "s26_e001",
+          "type": "text",
+          "text": "💡 课堂小结",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s26_e002",
+          "type": "image",
+          "src": "t_s26_001_f62c23df.png",
+          "x": 227,
+          "y": 112,
+          "width": 826,
+          "height": 320
+        },
+        {
+          "id": "s26_e003",
+          "type": "text",
+          "text": "请一位对应层级同学回答",
+          "x": 70,
+          "y": 448,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "elements": [
+        {
+          "id": "s27_e001",
+          "type": "text",
+          "text": "💡 课堂小结 参考答案",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s27_e002",
+          "type": "image",
+          "src": "t_s27_001_654a2fd0.png",
+          "x": 227,
+          "y": 112,
+          "width": 826,
+          "height": 320
+        }
+      ]
+    }
+  ]
+}
