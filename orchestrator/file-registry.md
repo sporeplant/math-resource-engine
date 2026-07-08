@@ -12,7 +12,7 @@
 | Markdown 课件 | `outputs/{课时名}_课件.md` |
 | 课堂提问调度稿 | `outputs/{课时名}_课堂提问调度稿.md` |
 | 教材问题参考解答 | `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md` |
-| outputs图片 | `outputs/images/{图片文件名}` |
+| 软件或离线导出包 | `outputs/packages/{package_id}/` |
 | 临界生分工表 | `support/临界生分工表-YYYY-MM-DD.md` |
 
 ---
@@ -28,18 +28,21 @@
 
 ## 3. 图片目录规则
 
-任意 Markdown 文件引用图片时，只允许引用同级 `images/` 子目录。
+正式 outputs Markdown 默认引用 `knowledge/images/` 对应 CDN URL。knowledge 源文件可继续使用自身约定的相对图片目录。
 
 | Markdown 位置 | 图片目录 | 引用写法 |
 |---------------|----------|----------|
 | `knowledge/textbooks/*.md` | `knowledge/textbooks/images/` | `<img src="./images/文件名" width="35%">` |
 | `knowledge/workbooks/*.md` | `knowledge/workbooks/images/` | `<img src="./images/文件名" width="35%">` |
-| `outputs/*.md` | `outputs/images/` | `![图注](./images/文件名)` |
+| `knowledge/workbook-answers/*.md` | `knowledge/images/` 的 CDN URL | `![图注](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/文件名)` |
+| `outputs/lessons/**/*.md` | `knowledge/images/` 的 CDN URL | `![图注](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/文件名)` |
+| `outputs/reviews/**/*.md` | `knowledge/images/` 的 CDN URL | `![图注](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/文件名)` |
+| `outputs/packages/**` | 包内 `assets/` | 由目标软件包格式决定 |
 | `knowledge/solutions/ch*/*.md` | `knowledge/solutions/ch{章节号}/images/` | `<img src="./images/文件名" width="35%">` |
 
 禁止使用：
 
-- 跨目录引用knowledge图片
+- 跨目录相对引用knowledge图片
 - 引用旧资源目录图片
 - 绝对路径
 - Markdown 图片语法 `![]()`

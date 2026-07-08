@@ -7,6 +7,7 @@
 | 文件 | 说明 | 推荐替代 |
 |---|---|---|
 | `fix_docx_layout.py` | 早期 DOCX 布局修复脚本，内部写死了 `outputs/reviews/docx-90d59119.docx` | `tools/review_docx_pipeline.py compact ...` 或 `tools/compact_review_docx.py` |
+| `generate_lesson_24_25_final.py` | 早期期末试卷希沃课件生成脚本，内部写死了 `outputs/24-25期末试卷课件` | `tools/exam_to_easinote.py` 或后续正式 `outputs/packages/{package_id}/` 导出流程 |
 
 ## 当前推荐入口
 

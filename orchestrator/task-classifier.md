@@ -1,4 +1,4 @@
-# 任务分类器
+﻿# 任务分类器
 
 任务分类器只负责把用户输入路由到 `orchestrator/workflow-registry.md` 中登记的工作流，不维护独立步骤链。
 
@@ -89,6 +89,8 @@ outputs：
 局部任务包括：
 
 - 教材原文拆解类任务：当用户要求“分割/拆分/切分/拆解”教材 Markdown 大文件，或路径包含 `knowledge/textbooks/`、`textbooks`、`教材原文`、`MinerU` 时，必须优先路由到 `skills/textbook-split/SKILL.md`，读取其检查清单，并按该技能先呈现结构和元信息预览。
+- 练习册题库拆解类任务：当用户要求“分割/拆分/切分/拆解”练习册、习题册、练习册题库 Markdown 大文件，或路径/文件名包含 `knowledge/workbooks/`、`workbooks`、`练习册`、`习题册` 时，必须优先路由到 `skills/workbook-split/SKILL.md`，读取其检查清单，并按该技能先呈现结构和输出文件预览。
+- 练习册参考答案拆解类任务：当用户要求“分割/拆分/切分/拆解”练习册答案、参考答案、答案册 Markdown 大文件，或路径/文件名包含 `练习册答案`、`参考答案`、`答案册`、`workbook-answers` 时，必须优先路由到 `skills/workbook-answer-split/SKILL.md`，读取其检查清单，并按该技能先呈现结构和输出文件预览。
 - 学习目标类任务
 - 评价设计类任务
 - 活动设计类任务
@@ -139,3 +141,4 @@ outputs：
 - 让 `/courseware-collab` 重新生成目标、评价或活动。
 - 使用旧的中间层别名。
 - 使用非同级 `images/` 的图片路径。
+

@@ -6,16 +6,53 @@
 
 ## 1. outputs目录
 
-教学设计、课件、课堂提问调度稿和复习讲义写入 `outputs/`；教材问题参考解答作为knowledge资产写入 `knowledge/solutions/ch{章节号}/`：
+`outputs/` 只存放生成产物，不存放工作流脚本、源知识库资料或长期公共图片池。教学设计、课件、课堂提问调度稿和复习讲义必须按资源包目录写入；教材问题参考解答作为 knowledge 资产写入 `knowledge/solutions/ch{章节号}/`。
 
-| 产物 | 文件名 |
-|------|--------|
-| 教学设计 | `outputs/{课时名}_教学设计.md` |
-| Markdown 课件 | `outputs/{课时名}_课件.md` |
-| 课堂提问调度稿 | `outputs/{课时名}_课堂提问调度稿.md` |
+### 1.1 正式资源包
+
+| 产物 | 文件位置 |
+|------|----------|
+| 新授/课时资源包 | `outputs/lessons/ch{章节号}/{lesson_id}/` |
+| 复习/讲评资源包 | `outputs/reviews/{review_id}/` |
+| 软件或离线导出包 | `outputs/packages/{package_id}/` |
 | 教材问题参考解答 | `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md` |
-| 复习讲义 | `outputs/g8-reviews/{讲义编号}_{讲义名称}_复习讲义.md` |
-| outputs图片 | `outputs/images/{图片文件名}` |
+
+新授/课时资源包建议结构：
+
+```text
+outputs/lessons/ch{章节号}/{lesson_id}/
+├── metadata.yaml
+├── lesson-{lesson_id}-lesson-plan.md
+├── lesson-{lesson_id}-courseware.md
+├── lesson-{lesson_id}-question-dispatch.md
+├── lesson-{lesson_id}-review-report.md
+└── exports/
+```
+
+复习/讲评资源包建议结构：
+
+```text
+outputs/reviews/{review_id}/
+├── metadata.yaml
+├── teacher-handout.md
+├── student-handout.md
+├── courseware.md
+├── question-dispatch.md
+└── exports/
+```
+
+`exports/` 仅存放从源 Markdown 导出的 `.docx`、`.pdf`、`.pptx` 等成品文件。导出工具能够嵌入 CDN 图片时，不再生成本地图片副本。
+
+`outputs/packages/{package_id}/` 用于希沃、EasiNote、PPTX 等需要离线打包的机器可读资源。此类目录可按目标格式生成 `assets/`，但 `assets/` 是导出包的一部分，不作为通用图片目录。
+
+### 1.2 临时与演示产物
+
+渲染截图、演示输出、临时中间文件只允许放入：
+
+- `outputs/_demo/`
+- `outputs/_tmp/`
+
+`outputs/_tmp/` 建议加入 `.gitignore`；`outputs/_demo/` 仅保存确有复现价值的演示结果。
 
 ---
 
@@ -174,27 +211,27 @@ question_ids:
 
 ## 7. 图片引用
 
-任意 Markdown 文件引用图片时，只允许引用该文件同级目录下的 `images/` 子目录。学生课件使用 Typora 原生 Markdown：
+正式 Markdown 默认使用 CDN 图片 URL。图片源文件统一维护在 `knowledge/images/`，推送远程仓库后通过 CDN 引用；`outputs/` 不常驻 `images/` 公共目录。
+
+学生课件和复习讲义使用 Typora 原生 Markdown 图片语法：
 
 ```markdown
-![图注](./images/xxx.jpg)
+![图注](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/xxx.jpg)
 ```
 
 禁止：
 
 - 空图注 Markdown 图片 `![]()`
 - 学生课件中的 HTML 图片标签
-- 跨目录引用knowledge图片
-- 引用旧资源目录图片
-- 绝对路径
+- 引用本机绝对路径
+- 引用 `outputs/images/`、`outputs/assets/` 等旧公共资源目录
+- 将 CDN 可用图片重复复制到正式 Markdown 同级目录作为常驻资源
 
-复习讲义使用 Markdown 图片语法：
+导出规则：
 
-```markdown
-![](images/xxx.jpg)
-```
-
-图片必须位于复习讲义文件同级 `images/` 目录；禁止跨目录引用。
+- `.docx`、`.pdf` 导出优先从 CDN 拉取图片并嵌入成品文件。
+- `.pptx`、希沃、EasiNote 或其他离线软件包如需本地资源，只在 `outputs/packages/{package_id}/assets/` 中生成本地副本。
+- 仅在离线审阅、网络不可用或目标工具不支持远程图片时，才允许为单个资源包临时生成本地图片缓存；缓存不得作为正式 Markdown 的默认引用方式。
 
 ---
 

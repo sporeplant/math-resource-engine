@@ -458,9 +458,8 @@ outputs课件与课堂提问调度稿
 
 ### `/courseware` outputs
 
-- `outputs/{课时名}_课件.md`
-- `outputs/{课时名}_课堂提问调度稿.md`
-- `outputs/images/{图片文件名}`
+- `outputs/lessons/ch{章节号}/{lesson_id}/lesson-{lesson_id}-courseware.md`
+- `outputs/lessons/ch{章节号}/{lesson_id}/lesson-{lesson_id}-question-dispatch.md`
 
 课件与课堂提问调度稿必须引用同一个教学设计 `lesson_id`，并记录来源教学设计文件。
 
@@ -470,7 +469,7 @@ outputs课件与课堂提问调度稿
 - 禁止重新生成评价任务。
 - 禁止重新生成活动设计。
 - 禁止消费未人工审核的教学设计。
-- 禁止使用非同级 `images/` 的图片路径。
+- 禁止引用本机绝对路径、`outputs/images/` 或 `outputs/assets/`。
 - 禁止虚构学生姓名。
 
 ---
@@ -587,9 +586,8 @@ outputs课件与课堂提问调度稿
 
 ### `/courseware-collab` outputs
 
-- `outputs/{课时名}_课件.md`
-- `outputs/{课时名}_课堂提问调度稿.md`
-- `outputs/images/{图片文件名}`
+- `outputs/lessons/ch{章节号}/{lesson_id}/lesson-{lesson_id}-courseware.md`
+- `outputs/lessons/ch{章节号}/{lesson_id}/lesson-{lesson_id}-question-dispatch.md`
 
 课堂提问调度稿必须与课件使用同一教学设计 `lesson_id`，并记录来源教学设计文件。课件通过同名文件和验证命令关联，不在投屏正文写后台字段。
 

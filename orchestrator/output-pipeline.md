@@ -13,7 +13,7 @@
 | 评价任务 | lesson-{id}-assessment.md | Markdown |
 | 教学活动 | lesson-{id}-activities.md | Markdown |
 | 课时设计 | lesson-{id}-lesson-plan.md | Markdown |
-| Markdown课件 | {课时名}_课件.md | Markdown |
+| Markdown课件 | lesson-{id}-courseware.md | Markdown |
 | 审核报告 | lesson-{id}-review-report.md | Markdown |
 
 ---
@@ -57,16 +57,17 @@
 ## 5. 最终资源包结构
 
 ```
-lesson-{id}/
+outputs/lessons/ch{章节号}/{id}/
 ├── metadata.yaml              # 元数据
 ├── lesson-{id}-textbook-analysis.md
 ├── lesson-{id}-outcomes.md
 ├── lesson-{id}-assessment.md
 ├── lesson-{id}-activities.md
 ├── lesson-{id}-lesson-plan.md
-├── {课时名}_课件.md
+├── lesson-{id}-courseware.md
+├── lesson-{id}-question-dispatch.md
 ├── lesson-{id}-review-report.md
-└── assets/
-    ├── images/
-    └── resources/
+└── exports/                   # docx/pdf/pptx 等导出成品
 ```
+
+正式 Markdown 图片默认使用 CDN URL，不在资源包内常驻 `images/`。需要离线打包的软件资源写入 `outputs/packages/{package_id}/`，并在该包内按需生成 `assets/`。
