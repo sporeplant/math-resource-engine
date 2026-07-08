@@ -80,7 +80,7 @@ skills运行时，PROJECT_ROOT 为 `E:\OneDrive\math-resource-engine\`。
 |------|----------|
 | 教材课时分配 | `knowledge/textbooks/教材原文_教材课时分配.md` |
 | 对应课时教材原文 | `knowledge/textbooks/教材原文_{章节}_{名称}.md` |
-| 对应课标 | `knowledge/standards/doc-e0543146.md` |
+| 对应课标 | `knowledge/standards/curriculum-standards.md` |
 | 对应课型定义 | `knowledge/types/{课型}.md` |
 | 对应练习册题库 | `knowledge/workbooks/` 中匹配的题目 |
 | 数学本质分析 | 读取 `knowledge/math-essence/INDEX.yaml`，按 `chapter_refs` 或 `topic_zh` 匹配当前课时；若无匹配则跳过 |

@@ -5,3 +5,6 @@ files:
   - path: geometry.md
     domain: geometry
     topic_zh: 几何
+  - path: number-algebra.md
+    domain: number-algebra
+    topic_zh: 数与代数

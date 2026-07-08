@@ -37,7 +37,7 @@
 ## 教学目标类专项检查项
 
 ### □ 课标已注入
-- [ ] 已读取 knowledge/standards/doc-e0543146.md 中对应学段和知识点的内容要求
+- [ ] 已读取 knowledge/standards/curriculum-standards.md 中对应学段和知识点的内容要求
 - [ ] 已确认学业要求
 - [ ] 已确认核心素养表现（推理能力、几何直观等）
 

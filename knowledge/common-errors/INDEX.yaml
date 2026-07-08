@@ -8,3 +8,8 @@ files:
     chapter_refs:
       - "13"
       - "21"
+  - path: number-algebra.md
+    domain: number-algebra
+    topic_zh: 数与代数
+    chapter_refs:
+      - "14"
