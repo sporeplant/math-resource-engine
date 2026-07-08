@@ -6,6 +6,7 @@
   3. 图片文件 — 每个引用的图片在 knowledge/images/ 下存在
   4. 内容结构 — 以课时标题开头，无孤立内容
   5. 文件命名 — 符合 textbook-{章节}.{小节}-{课时}.md 规则
+  6. CDN 可达性 — 图片 URL 是否能正常访问（需 --check-cdn）
 
 用法:
     python tools/validate-textbook-split.py <目标目录或文件>
@@ -17,6 +18,8 @@ import argparse
 import os
 import re
 import sys
+import urllib.error
+import urllib.request
 
 
 CDN_PREFIX = "https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/"
@@ -151,6 +154,7 @@ def main():
     parser = argparse.ArgumentParser(description="验证教材拆分结果")
     parser.add_argument("target", help="目标目录或文件")
     parser.add_argument("--quiet", "-q", action="store_true", help="仅输出错误")
+    parser.add_argument("--check-cdn", action="store_true", help="检查 CDN 图片 URL 是否可达")
     args = parser.parse_args()
 
     target = os.path.abspath(args.target)
@@ -189,6 +193,41 @@ def main():
 
     print()
     print(f"结果: {total_ok} 通过, {total_errors} 个错误")
+
+    # CDN reachability check
+    if args.check_cdn:
+        all_urls = set()
+        for filepath in files:
+            with open(filepath, "r", encoding="utf-8") as f:
+                content = f.read()
+            for m in IMG_CDN_RE.finditer(content):
+                all_urls.add(CDN_PREFIX + m.group(1))
+            for m in IMG_HTML_CDN_RE.finditer(content):
+                all_urls.add(CDN_PREFIX + m.group(1))
+
+        if all_urls:
+            cdn_fail = 0
+            cdn_ok = 0
+            print(f"\n[CDN 可达性] 检查 {len(all_urls)} 个图片 URL ...")
+            for url in sorted(all_urls):
+                h = url.rsplit("/", 1)[-1]
+                try:
+                    req = urllib.request.Request(url, method="HEAD")
+                    resp = urllib.request.urlopen(req, timeout=10)
+                    if resp.status == 200:
+                        cdn_ok += 1
+                        if not args.quiet:
+                            print(f"  PASS {h}")
+                    else:
+                        cdn_fail += 1
+                        total_errors += 1
+                        print(f"  FAIL {h}  HTTP {resp.status}")
+                except Exception as e:
+                    cdn_fail += 1
+                    total_errors += 1
+                    print(f"  FAIL {h}  {e}")
+            print(f"  CDN: {cdn_ok} 可达, {cdn_fail} 不可达")
+
     if total_errors:
         sys.exit(1)
 
