@@ -1,0 +1,796 @@
+{
+  "slides": [
+    {
+      "id": "slide_01",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题（第1题）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "内角为 108° 的正多边形是\n\nA. 3\nB. 4\nC. 5\nD. 6",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 300,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        }
+      ]
+    },
+    {
+      "id": "slide_02",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题（第2题）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "如图，边长为3的正方形OBCD的两边落在坐标轴正半轴上，点C的坐标是\n\nA. (3, -3)\nB. (-3, 3)\nC. (3, 3)\nD. (-3, -3)",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 400,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        },
+        {
+          "type": "image",
+          "src": "",
+          "x": 920,
+          "y": 100,
+          "width": 920,
+          "height": 880
+        }
+      ]
+    },
+    {
+      "id": "slide_03",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题（第3题）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "如图，菱形ABCD中，∠D = 150°，则 ∠1 =\n\nA. 30°\nB. 25°\nC. 20°\nD. 15°",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 400,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        },
+        {
+          "type": "image",
+          "src": "",
+          "x": 920,
+          "y": 100,
+          "width": 920,
+          "height": 880
+        }
+      ]
+    },
+    {
+      "id": "slide_04",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题（第4题）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "如图，在矩形ABCD中，对角线AC, BD相交于点O，∠ABD = 60°，AB = 2，则AC的长为\n\nA. 6\nB. 5\nC. 4\nD. 3",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 400,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        },
+        {
+          "type": "image",
+          "src": "",
+          "x": 920,
+          "y": 100,
+          "width": 920,
+          "height": 880
+        }
+      ]
+    },
+    {
+      "id": "slide_05",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题（第5题）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "如图，平地上A、B两点被池塘隔开，测量员在岸边选一点C，并分别找到AC和BC的中点D、E，测量得DE = 16米，则A、B两点间的距离为\n\nA. 30米\nB. 32米\nC. 36米\nD. 48米",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 450,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        },
+        {
+          "type": "image",
+          "src": "",
+          "x": 920,
+          "y": 100,
+          "width": 920,
+          "height": 880
+        }
+      ]
+    },
+    {
+      "id": "slide_06",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题（第6题）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "如图，在每个四边形上所做的标记中，线段上的划记数量相同的表示线段相等，角的标记弧线数量相同的表示角相等，则下列一定为平行四边形的有\n\nA. 1个\nB. 2个\nC. 3个\nD. 4个",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 500,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        }
+      ]
+    },
+    {
+      "id": "slide_07",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题（第7题）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "如图，在平行四边形ABCD中，E是边CD上一点，将△ADE沿AE折叠至△AD'E处，AD'与CE交于点F，若∠B = 52°，∠DAE = 20°，则∠FED'的度数为\n\nA. 40°\nB. 36°\nC. 50°\nD. 45°",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 500,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        },
+        {
+          "type": "image",
+          "src": "",
+          "x": 920,
+          "y": 100,
+          "width": 920,
+          "height": 880
+        }
+      ]
+    },
+    {
+      "id": "slide_08",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题（第8题）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "如图，两条直线的交点坐标(-2,3)可以看作两个二元一次方程的公共解，其中一个方程是 x + y = 1，则另一个方程是\n\nA. 2x - y = 1\nB. 2x + y = -1\nC. 2x + y = 1\nD. 3x - y = 1",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 500,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        },
+        {
+          "type": "image",
+          "src": "",
+          "x": 920,
+          "y": 100,
+          "width": 920,
+          "height": 880
+        }
+      ]
+    },
+    {
+      "id": "slide_09",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题（第9题）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "\"漏壶\"是一种古代计时器，在它内部盛一定量的水，水从壶下的小孔漏出。壶内壁有刻度，人们根据壶中水面的位置计算时间。用x表示漏水时间，y表示壶底到水面的高度。不考虑水量变化对压力的影响，下列图象最适合表示y与x对应关系的是\n\nA.            B.\nC.            D.",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 500,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        }
+      ]
+    },
+    {
+      "id": "slide_10",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题（第10题）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "下列有关一次函数 y = -3x + 2 的说法中，错误的是\n\nA. 当x值增大时，y的值随着x增大而减小\nB. 函数图象与y轴的交点坐标为(0,2)\nC. 函数图象经过第一、二、四象限\nD. 图象经过点(1,5)",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 500,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        }
+      ]
+    },
+    {
+      "id": "slide_11",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题（第11题）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "下面三个问题中都有两个变量：\n\n① 货车匀速通过隧道，货车在隧道内的长度y与时间x\n② 王大爷从家出发匀速散步，离家的距离y与时间x\n③ 往圆柱形空杯中匀速倒水再倒出，杯中水的体积y与时间x\n\n其中，变量y与x之间的函数关系大致符合图4的是\n\nA. ①②\nB. ①③\nC. ②③\nD. ①②③",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 500,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        }
+      ]
+    },
+    {
+      "id": "slide_12",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题（第12题）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "若一组数据共有100个，则通常分成\n\nA. 3~5组\nB. 5~12组\nC. 12~20组\nD. 20~25组",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 300,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        }
+      ]
+    },
+    {
+      "id": "slide_13",
+      "elements": [
+        {
+          "type": "text",
+          "text": "填空题（第13题）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "点P到x轴的距离是2，到y轴的距离是3，且在y轴的左侧，则点P的坐标是 ______",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 200,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        }
+      ]
+    },
+    {
+      "id": "slide_14",
+      "elements": [
+        {
+          "type": "text",
+          "text": "填空题（第14题）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "如图，矩形ABCD的顶点A, B在数轴上，CD = 6，点A对应的数为 -1，则点B所对应的为 ______",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 400,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        },
+        {
+          "type": "image",
+          "src": "",
+          "x": 920,
+          "y": 100,
+          "width": 800,
+          "height": 500
+        }
+      ]
+    },
+    {
+      "id": "slide_15",
+      "elements": [
+        {
+          "type": "text",
+          "text": "填空题（第15题）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "已知点(-4, y₁)，(2, y₂)在直线 y = -½x + 2 上，则 y₁ ___ y₂（填\">\"\"<\"或\"=\"）",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 200,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        }
+      ]
+    },
+    {
+      "id": "slide_16",
+      "elements": [
+        {
+          "type": "text",
+          "text": "填空题（第16题）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "平行四边形ABCD中，∠D = 150°，两动点M, N同时从点A出发，\n点M在边AB上以 2cm/s 的速度匀速运动，到达点B时停止，\n点N沿 A-D-C-B 的路径匀速运动，到达点B时停止。\n△AMN的面积S(cm²)与点N的运动时间t(s)的关系如图2所示，\n已知 AB = 4cm\n\n(1) N点的运动速度是 ____ cm/s;\n(2) c处的数值等于 ____",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 550,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        }
+      ]
+    },
+    {
+      "id": "slide_17",
+      "elements": [
+        {
+          "type": "text",
+          "text": "解答题（第17题，6分）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "一次函数图象经过(3,1)，(2,0)两点。\n\n(1) 求这个一次函数的解析式;\n\n(2) 求当 x = 6 时，y 的值。",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 400,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        }
+      ]
+    },
+    {
+      "id": "slide_18",
+      "elements": [
+        {
+          "type": "text",
+          "text": "解答题（第18题，6分）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "(1) 如图1，在△ABC中，D, E分别是AC, BC的中点，\n则线段DE与边AB的数量关系是 ______，位置关系是 ______;\n\n(2) 拓展应用：如图2，在ABCD中，连接AC并延长至点E，\n连接DE并延长至点F，使得EF = DE，连接BF。\n求证：AE // BF。",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 550,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        }
+      ]
+    },
+    {
+      "id": "slide_19",
+      "elements": [
+        {
+          "type": "text",
+          "text": "解答题（第19题，6分）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "图1是某房子的房顶，图2是其示意图，其中AB = DE, BC = EF, AD = CF，且∠ABC = ∠DEF。\n\n试判断四边形ADFC的形状，并说明理由。",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 400,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        }
+      ]
+    },
+    {
+      "id": "slide_20",
+      "elements": [
+        {
+          "type": "text",
+          "text": "解答题（第20题，8分）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "如图，矩形ABCD的对角线AC，BD相交于点O，BE // AC，AE // BD。\n\n(1) 求证：四边形AOBE是菱形;\n\n(2) 若∠AOB = 60°，AC = 12，求菱形AOBE的面积。",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 500,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        },
+        {
+          "type": "image",
+          "src": "",
+          "x": 920,
+          "y": 100,
+          "width": 920,
+          "height": 880
+        }
+      ]
+    },
+    {
+      "id": "slide_21",
+      "elements": [
+        {
+          "type": "text",
+          "text": "解答题（第21题，8分）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "如图，直线l₁的解析式为 y = x + 2，直线l₁和直线l₂相交于点A，\n直线l₁与x轴相交于点B，与y轴相交于点D，\n直线l₂与x轴相交于点C(4,0)，与y轴相交于点E(0,4)。\n\n(1) 求直线l₂的解析式;\n\n(2) 求△ABC的面积。",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 600,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        },
+        {
+          "type": "image",
+          "src": "",
+          "x": 920,
+          "y": 100,
+          "width": 920,
+          "height": 880
+        }
+      ]
+    },
+    {
+      "id": "slide_22",
+      "elements": [
+        {
+          "type": "text",
+          "text": "解答题（第22题，8分）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "将一张长方形的纸对折，如图①，可得到一条折痕，继续对折，\n对折时每条折痕与上次的折痕保持平行，如图②，\n连续对折3次后，可以得到7条折痕，如图③。\n\n回答下列问题：\n(1) 对折4次可以得到 ______ 条折痕;\n\n(2) 写出折痕的条数y与对折次数x之间的函数关系式;\n\n(3) 求出对折10次后的折痕条数。",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 650,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        },
+        {
+          "type": "image",
+          "src": "",
+          "x": 920,
+          "y": 100,
+          "width": 920,
+          "height": 880
+        }
+      ]
+    },
+    {
+      "id": "slide_23",
+      "elements": [
+        {
+          "type": "text",
+          "text": "解答题（第23题，10分）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "在平面直角坐标系中，O为原点，△ABC的顶点坐标分别为\nA(0,2), B(-2,0), C(4,0)，\n将点B向右平移7个单位长度，再向上平移4个单位长度，得到对应点D。\n\n(1) 直接写出点D的坐标 ______;\n\n(2) 求△ACD的面积;\n\n(3) 点P(m,3)是一个动点，若△APO的面积等于△ACO的面积，\n请求出点P坐标。",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 700,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        },
+        {
+          "type": "image",
+          "src": "",
+          "x": 920,
+          "y": 100,
+          "width": 920,
+          "height": 880
+        }
+      ]
+    },
+    {
+      "id": "slide_24",
+      "elements": [
+        {
+          "type": "text",
+          "text": "解答题（第24题，12分）",
+          "x": 60,
+          "y": 50,
+          "width": 780,
+          "height": 60,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1a4b8c",
+          "align": "left"
+        },
+        {
+          "type": "text",
+          "text": "小强是校学生会体育部部长，他想了解现在同学们更喜欢什么球类运动，以便学生会组织受欢迎的比赛。于是他设计了调查问卷，\n在全校每个班都随机选取了一定数量的学生进行调查。\n\n调查问卷：你最喜欢的球类运动是 ____（单选）\nA. 篮球  B. 足球  C. 排球  D. 乒乓球  E. 羽毛球  F. 其他\n\n小强根据统计数据制作的各活动小组人数分布情况的统计表和扇形统计图如下：\n\n表：篮球69人，足球m人，排球27人，乒乓球n人，羽毛球36人，其他9人\n\n(1) m = ____，n = ____;\n\n(2) 在扇形统计图中，羽毛球所对应扇形的圆心角等于 ____;\n\n(3) 请你根据调查结果，给小强部长简要提出合理化的建议。",
+          "x": 60,
+          "y": 130,
+          "width": 780,
+          "height": 750,
+          "fontSize": 20,
+          "bold": false,
+          "color": "#222222",
+          "align": "left"
+        },
+        {
+          "type": "image",
+          "src": "",
+          "x": 920,
+          "y": 100,
+          "width": 850,
+          "height": 800
+        }
+      ]
+    }
+  ]
+}
