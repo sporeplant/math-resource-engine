@@ -1,0 +1,1296 @@
+{
+  "slides": [
+    {
+      "id": "s01",
+      "elements": [
+        {
+          "type": "text",
+          "text": "📐 遵化市 2024—2025 学年度第二学期期末学业水平评估",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 32,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s01_e001"
+        },
+        {
+          "type": "text",
+          "text": "八年级数学试卷",
+          "x": 70,
+          "y": 120,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s01_e002"
+        },
+        {
+          "type": "text",
+          "text": "希沃白板课件 · 题目展示（无解答）",
+          "x": 70,
+          "y": 180,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#555555",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s01_e003"
+        },
+        {
+          "type": "text",
+          "text": "总分 100 分    考试时间 90 分钟",
+          "x": 70,
+          "y": 220,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#555555",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s01_e004"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题 第1题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s02_e001"
+        },
+        {
+          "type": "text",
+          "text": "内角为 $108^{\\circ}$ 的正多边形是",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 60,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s02_e002"
+        },
+        {
+          "type": "text",
+          "text": "A. 3    B. 4    C. 5    D. 6",
+          "x": 70,
+          "y": 182,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s02_e003"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题 第2题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s03_e001"
+        },
+        {
+          "type": "text",
+          "text": "如图，边长为3的正方形OBCD的两边落在坐标轴正半轴上，点C的坐标是",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 60,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s03_e002"
+        },
+        {
+          "type": "text",
+          "text": "A. (3, -3)    B. (-3, 3)    C. (3, 3)    D. (-3, -3)",
+          "x": 70,
+          "y": 182,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s03_e003"
+        },
+        {
+          "type": "image",
+          "src": "assets/e827819294a1ab9237bf2fac7d258e9db1beab5661afb22c986f163ebf249e3b.jpg",
+          "x": 315,
+          "y": 246,
+          "width": 650,
+          "height": 360,
+          "id": "s03_e004"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题 第3题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s04_e001"
+        },
+        {
+          "type": "text",
+          "text": "如图，菱形ABCD中，$\\angle D = 150^{\\circ}$，则 $\\angle 1 =$",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 60,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s04_e002"
+        },
+        {
+          "type": "text",
+          "text": "A. $30^{\\circ}$    B. $25^{\\circ}$    C. $20^{\\circ}$    D. $15^{\\circ}$",
+          "x": 70,
+          "y": 182,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s04_e003"
+        },
+        {
+          "type": "image",
+          "src": "assets/f0a805e835ca7e5dd4c94fedb318ceb0c933fceb1cd5b3896bc7554dba09c694.jpg",
+          "x": 315,
+          "y": 246,
+          "width": 650,
+          "height": 360,
+          "id": "s04_e004"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题 第4题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s05_e001"
+        },
+        {
+          "type": "text",
+          "text": "如图，在矩形ABCD中，对角线AC、BD相交于点O，$\\angle ABD = 60^{\\circ}$，AB=2，则AC的长为",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 60,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s05_e002"
+        },
+        {
+          "type": "text",
+          "text": "A. 6    B. 5    C. 4    D. 3",
+          "x": 70,
+          "y": 182,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s05_e003"
+        },
+        {
+          "type": "image",
+          "src": "assets/be18c603b9b5831ecbd2ebfa85ad8d5f8d319051f47e2442050fe416009a2b27.jpg",
+          "x": 315,
+          "y": 246,
+          "width": 650,
+          "height": 360,
+          "id": "s05_e004"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题 第5题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s06_e001"
+        },
+        {
+          "type": "text",
+          "text": "如图，平地上A、B两点被池塘隔开，测量员在岸边选一点C，并分别找到AC和BC的中点D、E，测得DE=16米，则A、B两点间的距离为",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 60,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s06_e002"
+        },
+        {
+          "type": "text",
+          "text": "A. 30米    B. 32米    C. 36米    D. 48米",
+          "x": 70,
+          "y": 182,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s06_e003"
+        },
+        {
+          "type": "image",
+          "src": "assets/1ed08c8554a06a2f2932041715c06dd0aa022c22c82a952bc410f76ab107301b.jpg",
+          "x": 315,
+          "y": 246,
+          "width": 650,
+          "height": 360,
+          "id": "s06_e004"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题 第6题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s07_e001"
+        },
+        {
+          "type": "text",
+          "text": "如图，在每个四边形上所做的标记中，线段上的划记数量相同的表示线段相等，角的标记弧线数量相同的表示角相等，则下列一定为平行四边形的有",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 60,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s07_e002"
+        },
+        {
+          "type": "text",
+          "text": "A. 1个    B. 2个    C. 3个    D. 4个",
+          "x": 70,
+          "y": 182,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s07_e003"
+        },
+        {
+          "type": "text",
+          "text": "A. 1个                                          B. 2个",
+          "x": 70,
+          "y": 246,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s07_e004"
+        },
+        {
+          "type": "image",
+          "src": "assets/01fa17df5b950a5f85caa1ed7e4b69ee96f5ce9ea013e7bc63962f0e8b5ca9c4.jpg",
+          "x": 70,
+          "y": 276,
+          "width": 480,
+          "height": 320,
+          "id": "s07_e005"
+        },
+        {
+          "type": "image",
+          "src": "assets/7d4f793370f315b42cbd6461e1bb512c49d712235659ee375de0753333f91024.jpg",
+          "x": 590,
+          "y": 276,
+          "width": 480,
+          "height": 320,
+          "id": "s07_e006"
+        },
+        {
+          "type": "text",
+          "text": "C. 3个                                          D. 4个",
+          "x": 70,
+          "y": 606,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s07_e007"
+        },
+        {
+          "type": "image",
+          "src": "assets/2d9aa8ed7135a2116845532196adee02a0ed2eac949980b97a151b9d634e0355.jpg",
+          "x": 70,
+          "y": 636,
+          "width": 480,
+          "height": 320,
+          "id": "s07_e008"
+        },
+        {
+          "type": "image",
+          "src": "assets/a188d6484c2e624f9eab9f8e48539cb63a7355568cedfa1fe6ab57c28630ab75.jpg",
+          "x": 590,
+          "y": 636,
+          "width": 480,
+          "height": 320,
+          "id": "s07_e009"
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题 第7题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s08_e001"
+        },
+        {
+          "type": "text",
+          "text": "如图，在平行四边形ABCD中，E是边CD上一点，将 $\\triangle ADE$ 沿AE折叠至 $\\triangle AD'E$ 处，AD'与CE交于点F，若 $\\angle B=52^{\\circ}$，$\\angle DAE=20^{\\circ}$，则 $\\angle FED'$ 的度数为",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 60,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s08_e002"
+        },
+        {
+          "type": "text",
+          "text": "A. $40^{\\circ}$    B. $36^{\\circ}$    C. $50^{\\circ}$    D. $45^{\\circ}$",
+          "x": 70,
+          "y": 182,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s08_e003"
+        },
+        {
+          "type": "image",
+          "src": "assets/fd63c31d9ad0962fe101830173fca617aad3c0695fe986eddce2b5bf169fbd1f.jpg",
+          "x": 315,
+          "y": 246,
+          "width": 650,
+          "height": 360,
+          "id": "s08_e004"
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题 第8题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s09_e001"
+        },
+        {
+          "type": "text",
+          "text": "如图，两条直线的交点坐标(-2,3)可以看作两个二元一次方程的公共解，其中一个方程是 $x+y=1$，则另一个方程是",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 60,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s09_e002"
+        },
+        {
+          "type": "text",
+          "text": "A. $2x-y=1$    B. $2x+y=-1$    C. $2x+y=1$    D. $3x-y=1$",
+          "x": 70,
+          "y": 182,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s09_e003"
+        },
+        {
+          "type": "image",
+          "src": "assets/8b0eb14e5887a4540a0ac3d592bd68d654c2bd337ffc958925c08166990bb7e1.jpg",
+          "x": 315,
+          "y": 246,
+          "width": 650,
+          "height": 360,
+          "id": "s09_e004"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题 第9题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s10_e001"
+        },
+        {
+          "type": "text",
+          "text": "“漏壶”是一种古代计时器，用 $x$ 表示漏水时间，$y$ 表示壶底到水面的高度。不考虑水量变化对压力的影响，下列图象最适合表示 $y$ 与 $x$ 对应关系的是",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 60,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s10_e002"
+        },
+        {
+          "type": "text",
+          "text": "A.",
+          "x": 70,
+          "y": 182,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s10_e003"
+        },
+        {
+          "type": "image",
+          "src": "assets/73e85b84ef371969bb74bf6aebf48fa9a5415e3af45f88e8aba98d10794d088a.jpg",
+          "x": 70,
+          "y": 208,
+          "width": 250,
+          "height": 170,
+          "id": "s10_e004"
+        },
+        {
+          "type": "text",
+          "text": "B.",
+          "x": 70,
+          "y": 208,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s10_e005"
+        },
+        {
+          "type": "image",
+          "src": "assets/bf2ea3ed2cc0280880ae15dda714f0bd38a8e0b0c9b7051462d334cab0c33bd7.jpg",
+          "x": 350,
+          "y": 234,
+          "width": 250,
+          "height": 170,
+          "id": "s10_e006"
+        },
+        {
+          "type": "text",
+          "text": "C.",
+          "x": 70,
+          "y": 414,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s10_e007"
+        },
+        {
+          "type": "image",
+          "src": "assets/88c1c7420d9fe5134ccb79552d5d6574209f7e150041207339b2d10f8bba9f38.jpg",
+          "x": 70,
+          "y": 440,
+          "width": 250,
+          "height": 170,
+          "id": "s10_e008"
+        },
+        {
+          "type": "text",
+          "text": "D.",
+          "x": 70,
+          "y": 440,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s10_e009"
+        },
+        {
+          "type": "image",
+          "src": "assets/fa4af7aee71aade9246782546eeb32a67a41871f8c310edc57f5e882c0360696.jpg",
+          "x": 350,
+          "y": 466,
+          "width": 250,
+          "height": 170,
+          "id": "s10_e010"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题 第10题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s11_e001"
+        },
+        {
+          "type": "text",
+          "text": "下列有关一次函数 $y=-3x+2$ 的说法中，错误的是",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 60,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s11_e002"
+        },
+        {
+          "type": "text",
+          "text": "A. 当x值增大时，y的值随着x增大而减小    B. 函数图象与y轴的交点坐标为(0,2)    C. 函数图象经过第一、二、四象限    D. 图象经过点(1,5)",
+          "x": 70,
+          "y": 182,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s11_e003"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题 第11题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s12_e001"
+        },
+        {
+          "type": "text",
+          "text": "下面三个问题中都有两个变量：①货车匀速通过隧道，货车在隧道内的长度y与时间x；②王大爷散步离家的距离y与时间x；③往圆柱形空杯中匀速倒水，杯中水的体积y与时间x。其中变量y与x之间的函数关系大致符合图4的是",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 60,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s12_e002"
+        },
+        {
+          "type": "text",
+          "text": "A. ①②    B. ①③    C. ②③    D. ①②③",
+          "x": 70,
+          "y": 182,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s12_e003"
+        },
+        {
+          "type": "image",
+          "src": "assets/86d42bd3f821a2ca6c85a2070271029032f264306da56331b73da809507cc201.jpg",
+          "x": 70,
+          "y": 246,
+          "width": 250,
+          "height": 180,
+          "id": "s12_e004"
+        },
+        {
+          "type": "image",
+          "src": "assets/cb7b5334f49a5c7e54284f0146068e154428ffdb1ff29bc297a12bbb732f3184.jpg",
+          "x": 340,
+          "y": 436,
+          "width": 250,
+          "height": 180,
+          "id": "s12_e005"
+        },
+        {
+          "type": "image",
+          "src": "assets/25058dda470f80ea5ede87f0757ac4309568e1aa7caf4c7d275679036f2b0654.jpg",
+          "x": 610,
+          "y": 436,
+          "width": 250,
+          "height": 180,
+          "id": "s12_e006"
+        },
+        {
+          "type": "image",
+          "src": "assets/fc05ff80a9f7692870b925863705fc697e5508e16ebf9048ab737845218c4d7e.jpg",
+          "x": 880,
+          "y": 436,
+          "width": 250,
+          "height": 180,
+          "id": "s12_e007"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "elements": [
+        {
+          "type": "text",
+          "text": "选择题 第12题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s13_e001"
+        },
+        {
+          "type": "text",
+          "text": "若一组数据共有100个，则通常分成",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 60,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s13_e002"
+        },
+        {
+          "type": "text",
+          "text": "A. 3～5组    B. 5～12组    C. 12～20组    D. 20～25组",
+          "x": 70,
+          "y": 182,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 22,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s13_e003"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "elements": [
+        {
+          "type": "text",
+          "text": "填空题 第13题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s14_e001"
+        },
+        {
+          "type": "text",
+          "text": "点P到x轴的距离是2，到y轴的距离是3，且在y轴的左侧，则点P的坐标是",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 80,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s14_e002"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "elements": [
+        {
+          "type": "text",
+          "text": "填空题 第14题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s15_e001"
+        },
+        {
+          "type": "text",
+          "text": "如图，矩形ABCD的顶点A、B在数轴上，CD=6，点A对应的数为 -1，则点B所对应的为",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 80,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s15_e002"
+        },
+        {
+          "type": "image",
+          "src": "assets/42829149c1b4b7d648261afff8b953313b06c6a35403396492ff61a425d99717.jpg",
+          "x": 315,
+          "y": 204,
+          "width": 650,
+          "height": 360,
+          "id": "s15_e003"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "elements": [
+        {
+          "type": "text",
+          "text": "填空题 第15题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s16_e001"
+        },
+        {
+          "type": "text",
+          "text": "已知点 $(-4,y_1)$，$(2,y_2)$ 在直线 $y=-\\frac{1}{2}x+2$ 上，则 $y_1$  ____  $y_2$（填“＞”“＜”或“＝”）",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 80,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s16_e002"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "elements": [
+        {
+          "type": "text",
+          "text": "填空题 第16题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s17_e001"
+        },
+        {
+          "type": "text",
+          "text": "如图1，平行四边形ABCD中，$\\angle D=150^{\\circ}$，两动点M、N同时从点A出发，点M在边AB上以2cm/s的速度匀速运动，点N沿A-D-C-B的路径匀速运动。$\\triangle AMN$的面积$S(cm^2)$与点N的运动时间$t(s)$的关系如图2所示，已知AB=4cm。\n(1) N点的运动速度是____cm/s\n(2) c处的数值等于____",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 80,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s17_e002"
+        },
+        {
+          "type": "image",
+          "src": "assets/97eb3328e3a75ead90edea616b495558706a8aa3319e12aec86984eaac9683c0.jpg",
+          "x": 315,
+          "y": 204,
+          "width": 650,
+          "height": 360,
+          "id": "s17_e003"
+        },
+        {
+          "type": "image",
+          "src": "assets/221b815ed110dfb01eddb7674be7aa7376dc6a6da1636e0ae055f25a5bb0fbd4.jpg",
+          "x": 315,
+          "y": 574,
+          "width": 650,
+          "height": 360,
+          "id": "s17_e004"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "elements": [
+        {
+          "type": "text",
+          "text": "解答题 第17题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s18_e001"
+        },
+        {
+          "type": "text",
+          "text": "一次函数图象经过(3,1)，(2,0)两点。\n(1) 求这个一次函数的解析式；\n(2) 求当 x=6 时，y 的值。",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 100,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s18_e002"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "elements": [
+        {
+          "type": "text",
+          "text": "解答题 第18题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s19_e001"
+        },
+        {
+          "type": "text",
+          "text": "(1) 如图1，在 $\\triangle ABC$ 中，D、E分别是AC、BC的中点，则线段DE与边AB的数量关系是____，位置关系是____；\n(2) 拓展应用：如图2，在ABCD中，连接AC并延长至点E，连接DE并延长至点F，使得EF=DE，连接BF。求证：AE//BF。",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 100,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s19_e002"
+        },
+        {
+          "type": "image",
+          "src": "assets/57d129a16f12904d47b4653ee2421ee88c416f2ff7af7373798a767f691bf772.jpg",
+          "x": 70,
+          "y": 224,
+          "width": 500,
+          "height": 300,
+          "id": "s19_e003"
+        },
+        {
+          "type": "image",
+          "src": "assets/e11a9af5eef4aac00ce45ce4fb317935eed3bce56b43843548c22ae53e9397d2.jpg",
+          "x": 610,
+          "y": 224,
+          "width": 500,
+          "height": 300,
+          "id": "s19_e004"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "elements": [
+        {
+          "type": "text",
+          "text": "解答题 第19题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s20_e001"
+        },
+        {
+          "type": "text",
+          "text": "图1是某房子的房顶，图2是其示意图，其中AB=DE，BC=EF，AD=CF，且 $\\angle ABC = \\angle DEF$。试判断四边形ADFC的形状，并说明理由。",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 100,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s20_e002"
+        },
+        {
+          "type": "image",
+          "src": "assets/09d88953c9379657f2ff71fb29eebae7f5dbc0d3b05f8e36c986ec314926393a.jpg",
+          "x": 70,
+          "y": 224,
+          "width": 500,
+          "height": 300,
+          "id": "s20_e003"
+        },
+        {
+          "type": "image",
+          "src": "assets/1df59253629f22be23e2432e4e7039a920b9d55926bf4519515e0ccca6a1df63.jpg",
+          "x": 610,
+          "y": 224,
+          "width": 500,
+          "height": 300,
+          "id": "s20_e004"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "elements": [
+        {
+          "type": "text",
+          "text": "解答题 第20题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s21_e001"
+        },
+        {
+          "type": "text",
+          "text": "如图，矩形ABCD的对角线AC、BD相交于点O，BE//AC，AE//BD。\n(1) 求证：四边形AOBE是菱形；\n(2) 若 $\\angle AOB=60^{\\circ}$，AC=12，求菱形AOBE的面积。",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 100,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s21_e002"
+        },
+        {
+          "type": "image",
+          "src": "assets/76abf02d8c4d3a2a630162af3eff22ad137cfd495d8dc7884a531a422546669a.jpg",
+          "x": 315,
+          "y": 224,
+          "width": 650,
+          "height": 360,
+          "id": "s21_e003"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "elements": [
+        {
+          "type": "text",
+          "text": "解答题 第21题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s22_e001"
+        },
+        {
+          "type": "text",
+          "text": "如图，直线 $l_1$ 的解析式为 $y=x+2$，$l_1$ 和 $l_2$ 相交于点A，$l_1$ 与x轴交于点B，与y轴交于点D，$l_2$ 与x轴交于点C(4,0)，与y轴交于点E(0,4)。\n(1) 求直线 $l_2$ 的解析式；\n(2) 求 $\\triangle ABC$ 的面积。",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 100,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s22_e002"
+        },
+        {
+          "type": "image",
+          "src": "assets/ac722a524254de2e811239acd014977a28a73ea9c4f1e1cfeecffc3900654d2f.jpg",
+          "x": 315,
+          "y": 224,
+          "width": 650,
+          "height": 360,
+          "id": "s22_e003"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "elements": [
+        {
+          "type": "text",
+          "text": "解答题 第22题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s23_e001"
+        },
+        {
+          "type": "text",
+          "text": "将一张长方形的纸对折，可得到一条折痕，继续对折，对折时每条折痕与上次的折痕保持平行。连续对折3次后，可以得到7条折痕。\n(1) 对折4次可以得到____条折痕；\n(2) 写出折痕的条数y与对折次数x之间的函数关系式；\n(3) 求出对折10次后的折痕条数。",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 100,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s23_e002"
+        },
+        {
+          "type": "image",
+          "src": "assets/ab2b86c0cd23a80e3c022d83721458c29bd560a47d1262316e3ee2ac123bec44.jpg",
+          "x": 315,
+          "y": 224,
+          "width": 650,
+          "height": 360,
+          "id": "s23_e003"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "elements": [
+        {
+          "type": "text",
+          "text": "解答题 第23题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s24_e001"
+        },
+        {
+          "type": "text",
+          "text": "在平面直角坐标系中，O为原点，$\\triangle ABC$ 顶点坐标分别为A(0,2)、B(-2,0)、C(4,0)。将点B右平移7个单位，再向上平移4个单位，得到对应点D。\n(1) 直接写出点D的坐标____；\n(2) 求 $\\triangle ACD$ 的面积；\n(3) 点P(m,3)是一个动点，若 $\\triangle APO$ 的面积等于 $\\triangle ACO$ 的面积，请求出点P坐标。",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 100,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s24_e002"
+        },
+        {
+          "type": "image",
+          "src": "assets/c5833bded8d306ad284e9b7aed500958869240d3fc82be8dc4775aaeee90d268.jpg",
+          "x": 315,
+          "y": 224,
+          "width": 650,
+          "height": 360,
+          "id": "s24_e003"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "elements": [
+        {
+          "type": "text",
+          "text": "解答题 第24题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 40,
+          "fontSize": 28,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s25_e001"
+        },
+        {
+          "type": "text",
+          "text": "小强是校学生会体育部部长，他想了解同学们更喜欢什么球类运动。全校每班随机选取学生调查：A.篮球 B.足球 C.排球 D.乒乓球 E.羽毛球 F.其他\n统计表：篮球69人，足球m人，排球27人，乒乓球n人，羽毛球36人，其他9人\n(1) 求m=____，n=____；\n(2) 羽毛球所对应扇形的圆心角等于____°；\n(3) 请你根据调查结果给小强部长提出合理化的建议。",
+          "x": 70,
+          "y": 114,
+          "width": 1120,
+          "height": 100,
+          "fontSize": 24,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "Microsoft YaHei",
+          "id": "s25_e002"
+        },
+        {
+          "type": "image",
+          "src": "assets/8bbbdcd7e21ef0221c7db0756c9d8ea314ea7dc665f09e70227495716c554a7e.jpg",
+          "x": 315,
+          "y": 224,
+          "width": 650,
+          "height": 360,
+          "id": "s25_e003"
+        }
+      ]
+    }
+  ]
+}
