@@ -10,3 +10,4 @@
 - [ ] 练习册题已按 question_id 与 `knowledge/workbook-index/` 和答案文件核对
 - [ ] 无 LLM 生成新题
 - [ ] 作业量符合课时剩余时间
+- [ ] 数学表达式是否使用 LaTeX 格式（`$...$ `），无裸文本公式
