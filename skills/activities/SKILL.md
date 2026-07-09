@@ -242,7 +242,8 @@ ASK_B_01
 2. **习题A组**：从教材原文"习题A组"中各选取 1 道题目
 3. **习题B组**：从教材原文"习题B组"中各选取 1 道题目
 4. **总量要求**：课堂练习/检测题目总数量不小于 4 道
-5. **补充来源**：当教材练习栏目题目数量不足导致总量不足 4 道时，从 `knowledge/workbooks/` 对应章节补充选题
+5. **补充来源**：当教材练习栏目题目数量不足导致总量不足 4 道时，从练习册索引 `knowledge/workbook-index/workbook-index-{lesson}.yaml` 按 `tier` 字段分层匹配，优先选取 `tier: 基础` 或 `tier: 知识` 的题目作为课堂练习补充。选定题目后从 `knowledge/workbooks/{source_id}.md` 读取完整题干，答案从 `knowledge/workbook-answers/{answer_id}.md` 复用。
+5a. 索引中已标记 `is_open_answer: true` 的题目不宜作为课堂限时检测题；可作为课堂讨论题酌情使用。
 6. 活动中的单题使用 `source_id`、`source_type`、`question_id`；多道同源题合并共享字段并使用 `question_ids` 列表
 7. 选题依据 习题分析skills 的8维度分析报告
 8. 分层选用原则：

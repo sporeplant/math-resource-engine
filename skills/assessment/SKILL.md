@@ -68,7 +68,12 @@
   - 基础层评价任务 → 教材练习栏目题目
   - 中间层评价任务 → 教材习题A组题目
   - 拓展层评价任务 → 教材习题B组题目
-- 当教材题目已被课堂练习/检测选用的剩余题目不足时，从 knowledge/workbooks/ 的对应章节补充选题
+- 当教材题目已被课堂练习/检测选用的剩余题目不足时，从练习册索引 `knowledge/workbook-index/workbook-index-{lesson}.yaml` 按 `tier` 字段分层匹配补充选题：
+  - 基础层 → `tier: 基础` 或 `tier: 知识`
+  - 中间层 → `tier: 提升`
+  - 拓展层 → `tier: 应用` 或 `tier: 拓展`
+- 通过索引筛选后，从 `knowledge/workbooks/{source_id}.md` 读取完整题干，从 `knowledge/workbook-answers/{answer_id}.md` 读取答案
+- 已标记 `is_open_answer: true` 的题不得选为唯一评价题（开放答案无法客观评价），可与封闭题组合使用
 - 选题依据 习题分析skills 的8维度分析报告（考点、认知层级、易错点、数学思想、解法、变式、分层建议、目标映射）
 - 基础层评价任务 → 选用习题分析报告标记为"基础层"的题目
 - 中间层评价任务 → 选用习题分析报告标记为"中间层"的题目

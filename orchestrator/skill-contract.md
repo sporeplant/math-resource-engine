@@ -53,6 +53,7 @@
 source_id: ""
 source_type: textbook | exercise_bank | curriculum_repository
 question_id: ""
+answer_id: ""  # 当 source_type=exercise_bank 时必填，指向 workbook-answer-{lesson}.md
 ```
 
 同一评价、活动或作业引用多道同源题时，必须合并共享题源：
@@ -63,9 +64,23 @@ source_type: textbook | exercise_bank | curriculum_repository
 question_ids:
   - ""
   - ""
+answer_id: ""  # 当 source_type=exercise_bank 时必填
 ```
 
 `question_id` 与 `question_ids` 二选一；禁止逗号拼接多个编号，禁止重复相同题源字段。
+
+**练习册题答案约束**：当 `source_type: exercise_bank` 时，答案必须从 `knowledge/workbook-answers/{answer_id}.md` 复用，不得自行推导。答案定位通过练习册索引（`knowledge/workbook-index/`）中对应 `question_id` 的 `answer_preview` 和 `q_number` 字段完成。
+
+**练习册索引**（`knowledge/workbook-index/workbook-index-{lesson}.yaml`）是练习册选题的首选入口，提供每道题的：
+- `question_id`：稳定标识符（格式 `WB-{章节}-Q{序号}`）
+- `tier`：分层建议（基础/提升/应用/知识/综合）
+- `q_type`：题型
+- `has_image`：是否含图
+- `is_open_answer`：是否为开放答案（"略"/"答案不唯一"）
+- `answer_preview`：答案预览片段
+
+下游 Skill 应优先通过索引筛选题目（按 `tier` 分层、按 `q_type` 匹配），再从 `knowledge/workbooks/` 读取完整题干、从 `knowledge/workbook-answers/` 读取完整答案。
+
 
 禁止：
 

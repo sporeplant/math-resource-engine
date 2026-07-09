@@ -9,7 +9,7 @@
 - [ ] 板块A【ASK课堂提问调度稿】是否存在
 - [ ] 板块B【例题与练习解答】是否存在
 - [ ] 评分量规是否存在且表格格式正确
-- [ ] 所有题目是否标注了 `source_id`、`source_type`、`question_id`
+- [ ] 所有题目是否标注了 `source_id`、`source_type`、`question_id`，练习册题是否另带 `answer_id`
 - [ ] 所有题目来源是否为 knowledge 中的真实题源（禁止 LLM 自行生成题目）
 - [ ] 是否已读取对应课时的教材参考解答，且文件存在、课时匹配并通过教材问题解答 validators
 - [ ] `source_files` 是否登记教学设计、学生课件和教材参考解答路径
@@ -75,12 +75,12 @@
 ### 题源对应
 
 - [ ] 每个题目是否标注了 `source_id`
-- [ ] 每个题目是否标注了 `source_type`（TEXTBOOK / WORKBOOK）
+- [ ] 每个题目是否标注了 `source_type`（textbook / exercise_bank）
 - [ ] 每个题目是否标注了 `question_id`
 - [ ] 题目标注是否与教学设计、学生课件中的标注一致
 - [ ] 每个教材 `question_id` 是否都能在教材参考解答中找到
 - [ ] 教材题是否直接复用已有解答，而非重新独立推导
-- [ ] 练习册题是否仍按练习册题源处理，未被教材参考解答错误覆盖
+- [ ] 练习册题答案是否从 knowledge/workbook-answers/{answer_id}.md 复用，未被教材参考解答错误覆盖
 
 ### 解答质量
 

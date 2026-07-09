@@ -22,12 +22,17 @@
 
 ## 4. 选题规则
 
-- 每道题必须携带题源字段（`source_id`、`source_type`、`question_id`）
+- 每道题必须携带题源字段（`source_id`、`source_type`、`question_id`），练习册题另带 `answer_id`
 - 优先从教材原文选题：
   - 练习栏目未被课堂练习选用的剩余题目
   - 习题A组未被课堂练习选用的题目
   - 习题B组未被课堂练习选用的题目
-- 不足时从练习册题库补充
+- 不足时从练习册索引 `knowledge/workbook-index/workbook-index-{lesson}.yaml` 按 `tier` 字段分层选取：
+  - 基础层必做 → 索引 `tier: 基础` 或 `tier: 知识`
+  - 中间层必做 → 索引 `tier: 提升`
+  - 拓展层选做 → 索引 `tier: 应用` 或 `tier: 拓展`
+- 索引中 `is_open_answer: true` 的题目仅可作拓展层选做，不得进入基础层或中间层必做
+- 练习册题答案从 `knowledge/workbook-answers/{answer_id}.md` 按 `q_number` 定位复用
 - 标注预估完成时间
 
 ## 5. 教材参考解答核对

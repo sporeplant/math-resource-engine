@@ -1,0 +1,99 @@
+lesson_id: 12.5-1
+questions:
+- question_id: WB-12-Q0001
+  source_id: workbook-12.5-1
+  answer_id: workbook-answer-12.5-1
+  section: 知识点拨
+  q_number: '1'
+  sub_number: ''
+  q_type: 解答题
+  tier: 知识
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: (1)B (2)C (3)C (4)B (5)B
+  text_snippet: 1. 列分式方程解决实际问题的一般步骤是：审题，设未知数，根据题目中的等量关系列分式方程，解分式方程，检验，写出答案。
+- question_id: WB-12-Q0002
+  source_id: workbook-12.5-1
+  answer_id: workbook-answer-12.5-1
+  section: 知识点拨
+  q_number: '2'
+  sub_number: ''
+  q_type: 解答题
+  tier: 知识
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: (1) $\frac{120}{x} + 3 = \frac{180}{x}$ (2) $\frac{1}{5} + \frac{1}{x}
+    = \frac{1
+  text_snippet: '2. 工程问题: 工作量 $=$ 工作时间 $\times$ 工作效率, 总工作量 $=$ 各部分工作量之和。'
+- question_id: WB-12-Q0003
+  source_id: workbook-12.5-1
+  answer_id: workbook-answer-12.5-1
+  section: 知识点拨
+  q_number: '3'
+  sub_number: ''
+  q_type: 解答题
+  tier: 知识
+  has_image: true
+  has_answer: true
+  is_open_answer: false
+  answer_preview: 解：(1)设每个小组有 $x$ 名同学。根据题意，得 $\frac{360}{3x} - \frac{360}{4x} = 3$
+    。解得 $x = 10$ 。经
+  text_snippet: '3. 行程问题: 速度 $\times$ 时间 $=$ 路程。  ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge'
+- question_id: WB-12-Q0004
+  source_id: workbook-12.5-1
+  answer_id: workbook-answer-12.5-1
+  section: 夯实基础
+  q_number: '1'
+  sub_number: '2'
+  q_type: 选择题
+  tier: 基础
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: C
+  text_snippet: (2) 小王家距他上班地点的路程为 $18 \mathrm{~km}$ , 他自己驾车平均每小时行驶的路程比他乘公交车平均每小时行驶的路程多
+    $10 \mathrm{~km}$ . 他从家出发到上班地点, 自己驾车所用的时间是乘公交车所用时
+- question_id: WB-12-Q0005
+  source_id: workbook-12.5-1
+  answer_id: workbook-answer-12.5-1
+  section: 夯实基础
+  q_number: '3'
+  sub_number: ''
+  q_type: 解答题
+  tier: 基础
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: 解：(1)设每个小组有 $x$ 名同学。根据题意，得 $\frac{360}{3x} - \frac{360}{4x} = 3$
+    。解得 $x = 10$ 。经
+  text_snippet: '3. 列方程解应用题.  (1)某中学为准备十四岁青春仪式，原计划由八年级(1)班4个小组的同学平均分配任务，共同制作360面彩旗，后因1个小组另有任务，其余3个小组的每名同学都要 '
+- question_id: WB-12-Q0006
+  source_id: workbook-12.5-1
+  answer_id: workbook-answer-12.5-1
+  section: 数学思考
+  q_number: '4'
+  sub_number: ''
+  q_type: 解答题
+  tier: 提升
+  has_image: false
+  has_answer: false
+  is_open_answer: true
+  answer_preview: ''
+  text_snippet: 4. 利用分式方程解应用题的一般步骤有哪些？请把它与前面学过的列整式方程解应用题的一般步骤相比较，看看它们之间有何异同。
+- question_id: WB-12-Q0007
+  source_id: workbook-12.5-1
+  answer_id: workbook-answer-12.5-1
+  section: 解决问题
+  q_number: '5'
+  sub_number: ''
+  q_type: 解答题
+  tier: 应用
+  has_image: true
+  has_answer: false
+  is_open_answer: true
+  answer_preview: ''
+  text_snippet: '5. 某区计划进行一项工程施工, 从甲、乙两支工程队的报价单中得知: 甲工程队每施工一天的工程款为 1.1 万元, 乙工程队每施工一天的工程款为
+    0.8 万元. 经过对甲、乙两支工程队报价单的测算, 工程小组设计出以下三种施工方案.  方案 A: 由甲工程队单独完成这项工程, 刚好如期完成.  方案
+    B: 由乙工程队单独完成这项工程，要比规定时间多 5 天。  方案 C: * * *。剩下'

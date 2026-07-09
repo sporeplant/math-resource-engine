@@ -1,0 +1,96 @@
+lesson_id: ch12-review
+questions:
+- question_id: WB-12-Q0001
+  source_id: workbook-ch12-review
+  answer_id: workbook-answer-ch12-review
+  section: 知识点拨
+  q_number: '1'
+  sub_number: ''
+  q_type: 解答题
+  tier: 知识
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: (1)D (2)A (3)C (4)A (5)B (6)A (7)D (8)A (9)B (10)A
+  text_snippet: 1. 掌握分式和分式方程的概念和意义。
+- question_id: WB-12-Q0002
+  source_id: workbook-ch12-review
+  answer_id: workbook-answer-ch12-review
+  section: 知识点拨
+  q_number: '2'
+  sub_number: ''
+  q_type: 计算题
+  tier: 知识
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: (1) $\frac{7}{12}$ (2)-2 (3)5 (4)10 (5) $\frac{2a - 1}{a - 1}$
+  text_snippet: 2. 掌握分式化简、分式乘除和加减混合运算、分式方程的解法.
+- question_id: WB-12-Q0003
+  source_id: workbook-ch12-review
+  answer_id: workbook-answer-ch12-review
+  section: 知识点拨
+  q_number: '3'
+  sub_number: ''
+  q_type: 解答题
+  tier: 知识
+  has_image: true
+  has_answer: true
+  is_open_answer: false
+  answer_preview: (1) $x = \frac{5}{3}$ (2) $x = -\frac{3}{4}$
+  text_snippet: 3. 能列分式方程解决实际问题.  ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge
+- question_id: WB-12-Q0004
+  source_id: workbook-ch12-review
+  answer_id: workbook-answer-ch12-review
+  section: 夯实基础
+  q_number: '1'
+  sub_number: '3'
+  q_type: 选择题
+  tier: 基础
+  has_image: true
+  has_answer: true
+  is_open_answer: false
+  answer_preview: C
+  text_snippet: (3) 若 $a^2 + 5ab - b^2 = 0$ ，则 $\frac{b}{a} - \frac{a}{b}$ 的值为 ____.  (4)当
+    $x =$ ____时，分式 $\frac{x}{x - 5}$ 与另一个分式 $\fra
+- question_id: WB-12-Q0005
+  source_id: workbook-ch12-review
+  answer_id: workbook-answer-ch12-review
+  section: 夯实基础
+  q_number: '1'
+  sub_number: '2'
+  q_type: 选择题
+  tier: 基础
+  has_image: true
+  has_answer: true
+  is_open_answer: false
+  answer_preview: A
+  text_snippet: (2) $\frac{x}{x + 1} = \frac{2x}{3x + 3} - 1.$
+- question_id: WB-12-Q0006
+  source_id: workbook-ch12-review
+  answer_id: workbook-answer-ch12-review
+  section: 夯实基础
+  q_number: '4'
+  sub_number: ''
+  q_type: 计算题
+  tier: 基础
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: 化简得 $\frac{1}{a - 2}$ , 代人数值得 $\frac{1}{2}$ .
+  text_snippet: 4. 先化简，再求值： $\left(1 + \frac{1}{a - 1}\right) \div (a - \frac{a}{a
+    - 1})$ 。其中， $
+- question_id: WB-12-Q0007
+  source_id: workbook-ch12-review
+  answer_id: workbook-answer-ch12-review
+  section: 数学思考
+  q_number: '5'
+  sub_number: ''
+  q_type: 解答题
+  tier: 提升
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: 圆圆的解答过程不正确。写出正确的解答过程略。
+  text_snippet: 5. 以下是圆圆解方程 $\frac{x}{x - 2} + 2 = \frac{1}{2 - x}$ 的过程.  解：去分母，得
+    $x + 2 = 1$  移项、合并同类项，得 x = -1.  圆圆的解答过程是否正确？如果不正确，请写出正确的解答过程。

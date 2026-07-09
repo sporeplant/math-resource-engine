@@ -168,15 +168,16 @@ collab_gates:
 - 所有习题库题目。
 - 台阶递进式核心题（含完整解题步骤，不仅是最终答案）。
 
-教材例题、教材练习和教材习题的解答必须按 `question_id` 从教材参考解答中复用，不得再次独立推导。允许为页面长度压缩表达，但必须保留关键步骤、数学结论、解题依据和 `答案来源`。练习册题目不受此复用规则覆盖，继续依据练习册题源生成。
+教材例题、教材练习和教材习题的解答必须按 `question_id` 从教材参考解答中复用，不得再次独立推导。允许为页面长度压缩表达，但必须保留关键步骤、数学结论、解题依据和 `答案来源`。练习册题目（`source_type: exercise_bank`）的解答必须从 `knowledge/workbook-answers/{answer_id}.md` 按 `q_number` 复用；无配套答案文件的练习册题不得进入调度稿板块B。
 
 ### 5.2 题源对应要求
 
 每个题目必须标注：
 
-- `source_id`（如 TEXTBOOK-22.1-01）
-- `source_type`（TEXTBOOK / WORKBOOK）
-- `question_id`（如 Q-22.1-05）
+- `source_id`（如 TEXTBOOK-22.1-01 或 workbook-12.1-1）
+- `source_type`（textbook / exercise_bank）
+- `question_id`（如 Q-22.1-05 或 WB-12-Q0001）
+- `answer_id`（当 `source_type: exercise_bank` 时必填，如 workbook-answer-12.1-1）
 
 ### 5.3 解答质量要求
 

@@ -1,0 +1,60 @@
+lesson_id: 12.5-2
+questions:
+- question_id: WB-12-Q0001
+  source_id: workbook-12.5-2
+  answer_id: workbook-answer-12.5-2
+  section: 夯实基础
+  q_number: '3'
+  sub_number: ''
+  q_type: 解答题
+  tier: 基础
+  has_image: true
+  has_answer: false
+  is_open_answer: true
+  answer_preview: ''
+  text_snippet: '3. 列方程解应用题.  (1)某商场用 7200 元购进某款玩具进行销售。由于销售良好，过了一段时间，该商场又用 14800 元购进这款玩具，本次购进的数量是第一次购进数量的
+    2 '
+- question_id: WB-12-Q0002
+  source_id: workbook-12.5-2
+  answer_id: workbook-answer-12.5-2
+  section: 数学思考
+  q_number: '4'
+  sub_number: ''
+  q_type: 解答题
+  tier: 提升
+  has_image: true
+  has_answer: false
+  is_open_answer: true
+  answer_preview: ''
+  text_snippet: 4. 请根据你学到的知识和生活经验，编写一道可化为一元一次方程的分式方程应用题，并做完整的解答。编写要求如下：  (1)题意要清楚，题目要完整。  (2)联系日常生活，其解要符合实际。  (3)列出的分式方程要含有两个不同的分式.  ![](https://cdn.js
+- question_id: WB-12-Q0003
+  source_id: workbook-12.5-2
+  answer_id: workbook-answer-12.5-2
+  section: 解决问题
+  q_number: '5'
+  sub_number: ''
+  q_type: 解答题
+  tier: 应用
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: (1)这种商品的单价为60元. (2)甲两次采购这种商品的平均单价是48元，乙两次采购这种商品的平均单价是50元. (3)金额
+  text_snippet: 5. 甲、乙两人采购同一种商品，购进单价相同，甲用2400元采购的商品比乙用3000元采购的商品少10件。  (1)求这种商品的单价。  (2)甲、乙两人第二次去采购这种商品时,
+    该商品的单价比上次降低了 20 元, 甲采购这种商品的总价与上次相同, 乙采购这种商品
+- question_id: WB-12-Q0004
+  source_id: workbook-12.5-2
+  answer_id: workbook-answer-12.5-2
+  section: 解决问题
+  q_number: '6'
+  sub_number: ''
+  q_type: 解答题
+  tier: 应用
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: '解: (1) 设第一次购买水果的进价为 $x$ 元/千克. 根据题意, 得 $\frac{1452}{(1 + 10\%)x}
+    - \frac{1200}{x}'
+  text_snippet: 6. 佳佳水果店在批发市场购买某种水果, 第一次用 1200 元购买了若干千克, 并以 8 元/千克的价格出售, 很快售完。由于畅销,
+    第二次购买该水果时, 每千克的进价比第一次提高了 $10\%$ , 用 1452 元所购买的水果比第一次购买的多 $20 \mathrm{~kg}$ , 以
+    9 元/千克的价格售出 $100 \mathrm{~kg}$ 后, 因出现高温天气, 水果不易保鲜, 为减少损失, 便降价 $50 \%$ 售完剩余水果。  (1)求第一次购买水果的进价.  (2)该水果店在这两次销售中,
+    总体上是盈利还是亏损? 盈利或亏损了多少元?

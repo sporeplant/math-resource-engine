@@ -1,0 +1,151 @@
+lesson_id: 12.3-2
+questions:
+- question_id: WB-12-Q0001
+  source_id: workbook-12.3-2
+  answer_id: workbook-answer-12.3-2
+  section: 夯实基础
+  q_number: '1'
+  sub_number: ''
+  q_type: 选择题
+  tier: 基础
+  has_image: true
+  has_answer: true
+  is_open_answer: false
+  answer_preview: (1)B (2)B (3)C (4)D (5)B
+  text_snippet: 1. 选择题.  (1)计算 $\left(1+\frac{1}{x}\right)\div\frac{x^{2}+2x+1}{x}$
+    的结果是 ( ) A. $x+1$ B
+- question_id: WB-12-Q0002
+  source_id: workbook-12.3-2
+  answer_id: workbook-answer-12.3-2
+  section: 夯实基础
+  q_number: '2'
+  sub_number: '1'
+  q_type: 填空题
+  tier: 基础
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: '-1'
+  text_snippet: (1) $\frac{2}{m-2}+\frac{m}{2-m}=$ ____.
+- question_id: WB-12-Q0003
+  source_id: workbook-12.3-2
+  answer_id: workbook-answer-12.3-2
+  section: 夯实基础
+  q_number: '2'
+  sub_number: '2'
+  q_type: 填空题
+  tier: 基础
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: $-\frac{2}{x+2}$
+  text_snippet: (2) $\frac{2}{x-2}-\frac{4x}{x^{2}-4}=$ ____。
+- question_id: WB-12-Q0004
+  source_id: workbook-12.3-2
+  answer_id: workbook-answer-12.3-2
+  section: 夯实基础
+  q_number: '2'
+  sub_number: '3'
+  q_type: 填空题
+  tier: 基础
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: '1'
+  text_snippet: (3) $\frac{x}{x + 3} - \frac{6}{9 - x^2} \div \frac{2}{x - 3} =$
+- question_id: WB-12-Q0005
+  source_id: workbook-12.3-2
+  answer_id: workbook-answer-12.3-2
+  section: 夯实基础
+  q_number: '2'
+  sub_number: '4'
+  q_type: 填空题
+  tier: 基础
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: '1'
+  text_snippet: (4) $\left(\frac{m^{2}}{m-1}+\frac{1}{1-m}\right)\cdot\frac{1}{m+1}=$
+    ____.  (5)已知 $\frac{a}{x+2}$ 与 $\frac{b}{x-2}$ 的和等
+- question_id: WB-12-Q0006
+  source_id: workbook-12.3-2
+  answer_id: workbook-answer-12.3-2
+  section: 夯实基础
+  q_number: '3'
+  sub_number: '1'
+  q_type: 计算题
+  tier: 基础
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: $\frac{5-x^{2}}{x-2}$
+  text_snippet: (1) $\frac{1}{x-2}-\frac{x}{x-2}\cdot\frac{x^{2}-4}{x}$ ;
+- question_id: WB-12-Q0007
+  source_id: workbook-12.3-2
+  answer_id: workbook-answer-12.3-2
+  section: 夯实基础
+  q_number: '3'
+  sub_number: '2'
+  q_type: 计算题
+  tier: 基础
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: $\frac{1}{y-1}$
+  text_snippet: (2) $\frac{y^{2}}{y-1}-y-1;$  $$
+- question_id: WB-12-Q0008
+  source_id: workbook-12.3-2
+  answer_id: workbook-answer-12.3-2
+  section: 夯实基础
+  q_number: '3'
+  sub_number: '3'
+  q_type: 计算题
+  tier: 基础
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: $\frac{1}{a}$
+  text_snippet: (3) \left(1 + \frac {1}{a + 1}\right) \div \frac {a ^ {2} + 2 a}{a
+    + 1}; $$  $$
+- question_id: WB-12-Q0009
+  source_id: workbook-12.3-2
+  answer_id: workbook-answer-12.3-2
+  section: 夯实基础
+  q_number: '3'
+  sub_number: '4'
+  q_type: 计算题
+  tier: 基础
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: $\frac{a}{b}$
+  text_snippet: (4) \frac {a ^ {2} - b ^ {2}}{a b} - \frac {a b - b ^ {2}}{a b - a
+    ^ {2}}. $$
+- question_id: WB-12-Q0010
+  source_id: workbook-12.3-2
+  answer_id: workbook-answer-12.3-2
+  section: 数学思考
+  q_number: '4'
+  sub_number: ''
+  q_type: 计算题
+  tier: 提升
+  has_image: false
+  has_answer: true
+  is_open_answer: false
+  answer_preview: 解：原式 $= \frac{a - 2}{a - 1}$ 当 $a = 0$ 时，原式 $= 2$ 5.8
+  text_snippet: 4. 先化简代数式 $\left(1 - \frac{3}{a + 2}\right) \div \frac{a^2 - 2a +
+    1}{a^2 - 4}$ ,
+- question_id: WB-12-Q0011
+  source_id: workbook-12.3-2
+  answer_id: workbook-answer-12.3-2
+  section: 解决问题
+  q_number: '5'
+  sub_number: '1'
+  q_type: 解答题
+  tier: 应用
+  has_image: false
+  has_answer: false
+  is_open_answer: true
+  answer_preview: ''
+  text_snippet: (1) 若 n > 0，试判断： $\frac{n+1}{n} - \frac{n+2}{n+1}$ ____0.(填“＞”“＜”或“＝”)  (2)嘉嘉和琪琪两次购物均购买了同一种商品,
+    嘉嘉两次都购买了 $m \mathrm{~kg}$

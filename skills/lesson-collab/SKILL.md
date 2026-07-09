@@ -83,6 +83,8 @@ skills运行时，PROJECT_ROOT 为 `E:\OneDrive\math-resource-engine\`。
 | 对应课标 | `knowledge/standards/curriculum-standards.md` |
 | 对应课型定义 | `knowledge/types/{课型}.md` |
 | 对应练习册题库 | `knowledge/workbooks/` 中匹配的题目 |
+| 对应练习册索引 | `knowledge/workbook-index/workbook-index-{lesson}.yaml`（如存在；参见 quality-gates §6） |
+| 练习册答案 | `knowledge/workbook-answers/workbook-answer-{lesson}.md`（如存在） |
 | 数学本质分析 | 读取 `knowledge/math-essence/INDEX.yaml`，按 `chapter_refs` 或 `topic_zh` 匹配当前课时；若无匹配则跳过 |
 | 对应常见错误 | 读取 `knowledge/common-errors/INDEX.yaml`，按 `domain` 或 `chapter_refs` 匹配；若无匹配则跳过 |
 | 对应教学策略 | 读取 `knowledge/teaching-strategies/INDEX.yaml`，按 `domain` 匹配；若无匹配则跳过 |
@@ -153,12 +155,27 @@ skills运行时，PROJECT_ROOT 为 `E:\OneDrive\math-resource-engine\`。
 - 禁止忽略用户输入错误继续执行
 - 禁止猜测用户意图而不进行确认
 
+### 练习册资源就绪检查
+
+课题确认后，在进入强制步骤链之前，执行练习册资源就绪检查（详见 orchestrator/quality-gates.md §6）：
+
+1. 检查 knowledge/workbooks/workbook-{lesson}.md 是否存在
+2. 若存在题库文件，检查 knowledge/workbook-answers/workbook-answer-{lesson}.md 是否存在
+3. 若题库和答案均存在，检查 knowledge/workbook-index/workbook-index-{lesson}.yaml 是否存在
+4. 根据检查结果按阻断等级处理：
+   - **题库 + 答案 + 索引 三者齐全** → 正常进入强制步骤链
+   - **有题库、无答案** → 警告后继续；练习册题仅作候选不可强制选用
+   - **有题库 + 答案、无索引** → 终止；提示用户运行 index_workbook.py
+   - **无题库** → 不阻断；后续禁止引用练习册题源
+
 ## 5. 强制步骤链（执行链）
 
 课题确认通过后，严格按以下步骤链执行：
 
 ```text
 课题确认（按orchestrator登记的课题匹配规则执行）
+  ↓
+练习册资源就绪检查（检查题库/答案/索引，按阻断等级处理）
   ↓
 知识分析（AI 生成草稿）
   ↓
