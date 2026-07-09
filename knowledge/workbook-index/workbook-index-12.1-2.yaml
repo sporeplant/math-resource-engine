@@ -1,0 +1,237 @@
+---
+content_type: workbook_index
+source_type: exercise_bank
+source_id: workbook-12.1-2
+answer_id: workbook-answer-12.1-2
+index_id: workbook-index-12.1-2
+question_count: 7
+subquestion_count: 11
+---
+
+questions:
+  - question_id: WB-12.1-2-Q001
+    source_id: workbook-12.1-2
+    source_type: exercise_bank
+    question_no: "1"
+    section: "夯实基础"
+    line_start: 13
+    line_end: 40
+    has_image: true
+    preview: "选择题."
+    answer_ref:
+      answer_id: workbook-answer-12.1-2
+      answer_line_start: 3
+      answer_line_end: 4
+    subquestions:
+      - question_id: WB-12.1-2-Q001-S01
+        parent_question_id: WB-12.1-2-Q001
+        question_no: "1"
+        subquestion_no: "1"
+        line_start: 15
+        line_end: 17
+        has_image: false
+        preview: "(1)下列约分中，正确的是 ( )"
+        answer_ref:
+          answer_id: workbook-answer-12.1-2
+          answer_line_start: 3
+          answer_line_end: 4
+      - question_id: WB-12.1-2-Q001-S02
+        parent_question_id: WB-12.1-2-Q001
+        question_no: "1"
+        subquestion_no: "2"
+        line_start: 18
+        line_end: 20
+        has_image: false
+        preview: "(2)若嘉琪化简分式 $\\frac{*}{x^{2}-1}$ 的结果为 $\\frac{x-1}{x+1}$ ，其中“*”部分不小心滴上了墨水，则“*”部分代表的"
+        answer_ref:
+          answer_id: workbook-answer-12.1-2
+          answer_line_start: 3
+          answer_line_end: 4
+      - question_id: WB-12.1-2-Q001-S03
+        parent_question_id: WB-12.1-2-Q001
+        question_no: "1"
+        subquestion_no: "3"
+        line_start: 21
+        line_end: 23
+        has_image: false
+        preview: "(3)下列运算中，不正确的是 （ ）"
+        answer_ref:
+          answer_id: workbook-answer-12.1-2
+          answer_line_start: 3
+          answer_line_end: 4
+      - question_id: WB-12.1-2-Q001-S04
+        parent_question_id: WB-12.1-2-Q001
+        question_no: "1"
+        subquestion_no: "4"
+        line_start: 24
+        line_end: 26
+        has_image: false
+        preview: "(4)下列分式中，与分式 $\\frac{-a + b}{-a - b}$ 相等的是"
+        answer_ref:
+          answer_id: workbook-answer-12.1-2
+          answer_line_start: 3
+          answer_line_end: 4
+      - question_id: WB-12.1-2-Q001-S05
+        parent_question_id: WB-12.1-2-Q001
+        question_no: "1"
+        subquestion_no: "5"
+        line_start: 27
+        line_end: 40
+        has_image: true
+        preview: "(5) 如图，已知 $a > b > 0$ 。设 $k = \\frac{\\text{甲图中涂色部分的面积}}{\\text{乙图中涂色部分的面积}}$ ，则 $k"
+        answer_ref:
+          answer_id: workbook-answer-12.1-2
+          answer_line_start: 3
+          answer_line_end: 4
+  - question_id: WB-12.1-2-Q002
+    source_id: workbook-12.1-2
+    source_type: exercise_bank
+    question_no: "2"
+    section: "夯实基础"
+    line_start: 41
+    line_end: 49
+    has_image: false
+    preview: "填空题."
+    answer_ref:
+      answer_id: workbook-answer-12.1-2
+      answer_line_start: 5
+      answer_line_end: 6
+    subquestions:
+      - question_id: WB-12.1-2-Q002-S01
+        parent_question_id: WB-12.1-2-Q002
+        question_no: "2"
+        subquestion_no: "1"
+        line_start: 42
+        line_end: 43
+        has_image: false
+        preview: "(1) $\\frac{1}{ab}=\\frac{(\\quad)}{3ab^{2}}$ (2) $\\frac{6ab^{2}}{8b^{3}}=\\frac{3a}"
+        answer_ref:
+          answer_id: workbook-answer-12.1-2
+          answer_line_start: 5
+          answer_line_end: 5
+      - question_id: WB-12.1-2-Q002-S02
+        parent_question_id: WB-12.1-2-Q002
+        question_no: "2"
+        subquestion_no: "4"
+        line_start: 44
+        line_end: 45
+        has_image: false
+        preview: "(4)约分： $\\frac{x^{2}-4}{x^{2}-4x+4}=$ ____."
+        answer_ref:
+          answer_id: workbook-answer-12.1-2
+          answer_line_start: 6
+          answer_line_end: 6
+      - question_id: WB-12.1-2-Q002-S03
+        parent_question_id: WB-12.1-2-Q002
+        question_no: "2"
+        subquestion_no: "5"
+        line_start: 46
+        line_end: 49
+        has_image: false
+        preview: "(5)下列分式中, 是最简分式的有____."
+        answer_ref:
+          answer_id: workbook-answer-12.1-2
+          answer_line_start: 5
+          answer_line_end: 6
+  - question_id: WB-12.1-2-Q003
+    source_id: workbook-12.1-2
+    source_type: exercise_bank
+    question_no: "3"
+    section: "夯实基础"
+    line_start: 50
+    line_end: 56
+    has_image: false
+    preview: "约分."
+    answer_ref:
+      answer_id: workbook-answer-12.1-2
+      answer_line_start: 7
+      answer_line_end: 8
+    subquestions:
+      - question_id: WB-12.1-2-Q003-S01
+        parent_question_id: WB-12.1-2-Q003
+        question_no: "3"
+        subquestion_no: "1"
+        line_start: 51
+        line_end: 52
+        has_image: false
+        preview: "(1) $\\frac{12a^{4}b^{5}}{-15a^{4}b^{3}c}$ ;"
+        answer_ref:
+          answer_id: workbook-answer-12.1-2
+          answer_line_start: 7
+          answer_line_end: 8
+      - question_id: WB-12.1-2-Q003-S02
+        parent_question_id: WB-12.1-2-Q003
+        question_no: "3"
+        subquestion_no: "2"
+        line_start: 53
+        line_end: 54
+        has_image: false
+        preview: "(2) $\\frac{a^{2}+3ab}{a^{2}bc+3ab^{2}c};$"
+        answer_ref:
+          answer_id: workbook-answer-12.1-2
+          answer_line_start: 7
+          answer_line_end: 8
+      - question_id: WB-12.1-2-Q003-S03
+        parent_question_id: WB-12.1-2-Q003
+        question_no: "3"
+        subquestion_no: "3"
+        line_start: 55
+        line_end: 56
+        has_image: false
+        preview: "(3) $\\frac{12a^{3}(y-x)^{2}}{27(x-y)}$ ."
+        answer_ref:
+          answer_id: workbook-answer-12.1-2
+          answer_line_start: 7
+          answer_line_end: 8
+  - question_id: WB-12.1-2-Q004
+    source_id: workbook-12.1-2
+    source_type: exercise_bank
+    question_no: "4"
+    section: "数学思考"
+    line_start: 59
+    line_end: 66
+    has_image: false
+    preview: "问题: 当 $a$ 为何值时, 分式 $\\frac{a^2 + 6a + 9}{a^2 - 9}$ 无意义?"
+    answer_ref:
+      answer_id: workbook-answer-12.1-2
+      answer_line_start: 9
+      answer_line_end: 10
+  - question_id: WB-12.1-2-Q005
+    source_id: workbook-12.1-2
+    source_type: exercise_bank
+    question_no: "5"
+    section: "解决问题"
+    line_start: 69
+    line_end: 71
+    has_image: false
+    preview: "先约分，再求值： $\\frac{x^{2}-4y^{2}}{4x^{2}-8xy}$ . 其中，"
+    answer_ref:
+      answer_id: workbook-answer-12.1-2
+      answer_line_start: 11
+      answer_line_end: 11
+  - question_id: WB-12.1-2-Q006
+    source_id: workbook-12.1-2
+    source_type: exercise_bank
+    question_no: "6"
+    section: "解决问题"
+    line_start: 72
+    line_end: 73
+    has_image: false
+    preview: "若 $x - y = 5xy$ ，求 $\\frac{3x - 14xy - 3y}{y - 3xy - x}$ 的值."
+    answer_ref:
+      answer_id: workbook-answer-12.1-2
+      answer_line_start: 11
+      answer_line_end: 11
+  - question_id: WB-12.1-2-Q007
+    source_id: workbook-12.1-2
+    source_type: exercise_bank
+    question_no: "7"
+    section: "解决问题"
+    line_start: 74
+    line_end: 74
+    has_image: false
+    preview: "小明在爬一座山时, 第一阶段的平均速度为 $v$ , 所用时间为 $t_1$ ; 第二阶段的平均速度为 $\\frac{1}{2} v$ , 所用时间为 $t_2"
+    answer_ref:
+      answer_id: workbook-answer-12.1-2
+      answer_line_start: 11
+      answer_line_end: 11

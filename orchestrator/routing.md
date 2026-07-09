@@ -86,6 +86,29 @@ AND 任务目标是把练习册参考答案 Markdown 大文件拆成课时答案
 - 若输出目标在当前运行模式无写入权限，必须先提示切换模式，不得写入。
 
 ---
+### 练习册逐题索引优先规则
+
+IF 用户请求包含以下任一特征：
+
+- 动词包含“索引 / 建索引 / 题号映射 / 逐题编号 / 对齐答案”
+- 对象明确为“练习册题库 / 练习册答案 / workbook-index”
+- 路径或文件名包含 `knowledge/workbooks/`、`knowledge/workbook-answers/`、`workbook-index`
+
+AND 任务目标是为已拆分练习册建立稳定 `question_id` 与答案映射
+
+→ MUST route to `skills/workbook-index/SKILL.md`
+→ MUST read `skills/workbook-index/checklist.md`
+→ MUST use `tools/index-workbook.py` when writing index files
+
+执行要求：
+
+- 生成前必须确认题库文件和答案文件一一对应。
+- 输出必须写入 `knowledge/workbook-index/`。
+- 不得改写题库原文或答案原文。
+- 生成后必须运行 `tools/validate-workbook-index.py`。
+- 若输出目标在当前运行模式无写入权限，必须先提示切换模式，不得写入。
+
+---
 IF contains "讲解 / 教学 / 设计"
 → lesson-generation-skill
 

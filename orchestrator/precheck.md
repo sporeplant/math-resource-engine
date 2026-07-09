@@ -17,6 +17,15 @@
 - [ ] 已通过教材问题解答validators
 - [ ] 缺失或任一校验失败时已终止本次任务，未自动补齐、降级推导或继续确认门
 
+### □ 练习册题库三件套已校验（`/lesson-collab`、`/courseware-collab`）
+- [ ] 已定位对应课时 `knowledge/workbooks/workbook-*.md`
+- [ ] 已定位对应课时 `knowledge/workbook-answers/workbook-answer-*.md`
+- [ ] 已定位对应课时 `knowledge/workbook-index/workbook-index-*.yaml`
+- [ ] 已运行 `tools/validate-workbook-split.py` 校验题库文件
+- [ ] 已运行 `tools/validate-workbook-answer-split.py` 校验答案文件
+- [ ] 已运行 `tools/validate-workbook-index.py` 校验逐题索引
+- [ ] 缺失或任一校验失败时已终止本次任务，未降级为文件级引用、未自行推导答案
+
 ### □ skills定义已读取
 - [ ] 已读取对应skills的skills.md 文件（skills/xxx/skills.md）
 - [ ] 已明确该skills的分层规则
@@ -61,6 +70,7 @@
 ### □ 上游目标已读取
 - [ ] 已读取学习目标skills的产出
 - [ ] 已确认每条目标对应的评价需求
+- [ ] 已读取对应课时练习册题库、答案和逐题索引，并确认拟引用题目可按 `question_id` 追踪
 
 ### □ 课标已注入
 - [ ] 已读取课标中对应学段的学业质量标准
@@ -77,6 +87,7 @@
 
 ### □ 上游outputs已读取
 - [ ] 已读取学习目标skills + 评价设计skills的产出
+- [ ] 已读取对应课时练习册题库、答案和逐题索引，课堂练习/检测补充题可追踪到逐题索引
 
 ### □ 学情已注入
 - [ ] 已读取 knowledge/learning-theory/learning-behaviors.md
@@ -118,6 +129,7 @@
 ### □ 上游outputs已读取
 - [ ] 已读取学习目标、评价任务、教学活动三个上游的产出
 - [ ] 已读取对应课时教材参考解答，并按 `question_id` 核对教材题的评价证据、预期回答、反馈要点和答案
+- [ ] 已读取对应课时练习册题库、答案和逐题索引，并确认所有练习册 `question_id` 均可匹配
 
 ### □ 生成规则已确认
 - [ ] 确认课时结构完整（导入/新授/练习/小结）
@@ -155,7 +167,9 @@
 - [ ] 已读取对应课时教材参考解答，并确认所有教材 `question_id` 均可匹配
 
 ### □ 习题已注入
-- [ ] 已读取 knowledge/workbooks/（对应章节）
+- [ ] 已读取对应课时 `knowledge/workbooks/`
+- [ ] 已读取对应课时 `knowledge/workbook-answers/`
+- [ ] 已读取对应课时 `knowledge/workbook-index/`
 
 ### □ 图片规则已注入
 - [ ] 已读取 orchestrator/image-protocol.md

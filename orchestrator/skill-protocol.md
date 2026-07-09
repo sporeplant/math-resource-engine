@@ -113,6 +113,8 @@ outputs：
   ↓
 定位并校验对应课时教材参考解答（缺失、验证失败或 review_status ≠ 审核通过立即终止）
   ↓
+定位并校验对应课时练习册题库、答案和逐题索引（任一缺失或验证失败立即终止）
+  ↓
 知识分析（AI 生成草稿）
   ↓
 🛑 确认门1：知识分析确认
@@ -190,8 +192,13 @@ outputs完整教学设计
 - 读取 §2 的基础强制文件列表
 - 额外读取 `orchestrator/workflow-registry.md` §2a 中的确认门交互协议和呈现模板
 - `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md`
+- 对应课时 `knowledge/workbooks/workbook-*.md`
+- 对应课时 `knowledge/workbook-answers/workbook-answer-*.md`
+- 对应课时 `knowledge/workbook-index/workbook-index-*.yaml`
 
 教材参考解答必须在知识分析前校验文件存在、`content_type: textbook_solution`、`lesson_id` 匹配、`review_status: 审核通过`，并通过教材问题解答validators。缺失或校验失败时终止本次任务，禁止自动生成、降级推导、跳过校验或继续确认门。教学设计的 `source_files` 必须登记该文件，教材题的评价证据、活动预期回答和练习答案必须按 `question_id` 与之核对。
+
+练习册题库、答案和逐题索引必须在评价设计前校验通过。练习册题目进入评价、活动或作业时，必须使用索引中的 `WB-...` 题号，教学设计 `source_files` 必须登记对应题库、答案和索引。缺失或校验失败时终止本次任务，禁止降级为文件级引用。
 
 outputs：
 
@@ -305,6 +312,8 @@ outputs：
   ↓
 定位并校验对应课时教材参考解答（缺失或失败立即终止）
   ↓
+定位并校验对应课时练习册题库、答案和逐题索引（任一缺失或验证失败立即终止）
+  ↓
 读取人工审核通过的教学设计
   ↓
 🛑 确认门1：课件结构规划
@@ -347,8 +356,13 @@ outputs课件与课堂提问调度稿
 - 读取 §3 的基础强制文件列表
 - 额外读取 `orchestrator/workflow-registry.md` §4a 中的确认门交互协议和呈现模板
 - `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md`
+- 对应课时 `knowledge/workbooks/workbook-*.md`
+- 对应课时 `knowledge/workbook-answers/workbook-answer-*.md`
+- 对应课时 `knowledge/workbook-index/workbook-index-*.yaml`
 
 教材参考解答必须在读取教学设计和进入确认门1前校验文件存在、`content_type: textbook_solution`、`lesson_id` 匹配并通过教材问题解答validators。缺失或校验失败时终止本次任务。教材题答案按 `question_id` 复用，练习册题继续使用原题源；课堂提问调度稿的 `source_files` 必须登记该文件。
+
+练习册题库、答案和逐题索引必须在进入确认门1前校验通过。调度稿中所有练习册题目的 `question_id` 必须能在逐题索引中找到，并按索引的 `answer_ref` 读取答案文件。缺失或校验失败时终止本次任务。
 
 outputs：
 

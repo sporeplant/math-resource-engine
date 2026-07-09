@@ -1,0 +1,248 @@
+---
+content_type: workbook_index
+source_type: exercise_bank
+source_id: workbook-12.5-1
+answer_id: workbook-answer-12.5-1
+index_id: workbook-index-12.5-1
+question_count: 5
+subquestion_count: 14
+---
+
+questions:
+  - question_id: WB-12.5-1-Q001
+    source_id: workbook-12.5-1
+    source_type: exercise_bank
+    question_no: "1"
+    section: "夯实基础"
+    line_start: 15
+    line_end: 41
+    has_image: false
+    preview: "选择题."
+    answer_ref:
+      answer_id: workbook-answer-12.5-1
+      answer_line_start: 3
+      answer_line_end: 4
+    subquestions:
+      - question_id: WB-12.5-1-Q001-S01
+        parent_question_id: WB-12.5-1-Q001
+        question_no: "1"
+        subquestion_no: "1"
+        line_start: 17
+        line_end: 19
+        has_image: false
+        preview: "(1)某地计划每天种植相同数量的树木. 实际每天比原计划每天多植树50棵, 实际植400棵树所需的时间与原计划植300棵树所需的时间相同. 设实际每天植树 $x"
+        answer_ref:
+          answer_id: workbook-answer-12.5-1
+          answer_line_start: 3
+          answer_line_end: 4
+      - question_id: WB-12.5-1-Q001-S02
+        parent_question_id: WB-12.5-1-Q001
+        question_no: "1"
+        subquestion_no: "2"
+        line_start: 20
+        line_end: 25
+        has_image: false
+        preview: "(2) 小王家距他上班地点的路程为 $18 \\mathrm{~km}$ , 他自己驾车平均每小时行驶的路程比他乘公交车平均每小时行驶的路程多 $10 \\math"
+        answer_ref:
+          answer_id: workbook-answer-12.5-1
+          answer_line_start: 3
+          answer_line_end: 4
+      - question_id: WB-12.5-1-Q001-S03
+        parent_question_id: WB-12.5-1-Q001
+        question_no: "1"
+        subquestion_no: "3"
+        line_start: 26
+        line_end: 28
+        has_image: false
+        preview: "(3)几位游客合租一辆面包车去旅游。已知面包车的租价为240元，出发时又增加了2人，结果每人分摊的车费比原来少了4元。设原来参加旅游的人数为x，则可列方程为"
+        answer_ref:
+          answer_id: workbook-answer-12.5-1
+          answer_line_start: 3
+          answer_line_end: 4
+      - question_id: WB-12.5-1-Q001-S04
+        parent_question_id: WB-12.5-1-Q001
+        question_no: "1"
+        subquestion_no: "4"
+        line_start: 29
+        line_end: 32
+        has_image: false
+        preview: "(4)某服装店用 4000 元购进一批 A 款服装, 很快售完, 然后又用了 5500 元购进第二批 A 款服装, 购进的件数比第一批的多 $25\\%$ 。已知"
+        answer_ref:
+          answer_id: workbook-answer-12.5-1
+          answer_line_start: 3
+          answer_line_end: 4
+      - question_id: WB-12.5-1-Q001-S05
+        parent_question_id: WB-12.5-1-Q001
+        question_no: "1"
+        subquestion_no: "5"
+        line_start: 33
+        line_end: 41
+        has_image: false
+        preview: "(5)甲、乙两验收队计划到某县开展检查验收工作，已知乙队单独完成比甲队单独完成多用6天。如果甲、乙两队共同工作"
+        answer_ref:
+          answer_id: workbook-answer-12.5-1
+          answer_line_start: 3
+          answer_line_end: 4
+  - question_id: WB-12.5-1-Q002
+    source_id: workbook-12.5-1
+    source_type: exercise_bank
+    question_no: "2"
+    section: "夯实基础"
+    line_start: 42
+    line_end: 53
+    has_image: false
+    preview: "填空题。"
+    answer_ref:
+      answer_id: workbook-answer-12.5-1
+      answer_line_start: 5
+      answer_line_end: 6
+    subquestions:
+      - question_id: WB-12.5-1-Q002-S01
+        parent_question_id: WB-12.5-1-Q002
+        question_no: "2"
+        subquestion_no: "1"
+        line_start: 44
+        line_end: 45
+        has_image: false
+        preview: "(1)某化肥厂原计划 x 天生产化肥 120 t, 由于采用了新技术, 每天可多生产化肥 3 t。已知采用新技术生产 180 t 化肥所用的时间与按原计划生产 "
+        answer_ref:
+          answer_id: workbook-answer-12.5-1
+          answer_line_start: 5
+          answer_line_end: 6
+      - question_id: WB-12.5-1-Q002-S02
+        parent_question_id: WB-12.5-1-Q002
+        question_no: "2"
+        subquestion_no: "2"
+        line_start: 46
+        line_end: 47
+        has_image: false
+        preview: "(2)甲、乙两人合修一台机床，3 h 完成任务，已知甲单独修需要 5 h. 设乙单独修需要 x h，则可列方程为 ____。"
+        answer_ref:
+          answer_id: workbook-answer-12.5-1
+          answer_line_start: 5
+          answer_line_end: 6
+      - question_id: WB-12.5-1-Q002-S03
+        parent_question_id: WB-12.5-1-Q002
+        question_no: "2"
+        subquestion_no: "3"
+        line_start: 48
+        line_end: 49
+        has_image: false
+        preview: "(3)某工程队承接了 $3000 \\, m$ 的修路任务，在修完 $600 \\, m$ 后，工程队引进了新设备，工作效率是原来的 2 倍，一共用 30 天完成了"
+        answer_ref:
+          answer_id: workbook-answer-12.5-1
+          answer_line_start: 5
+          answer_line_end: 6
+      - question_id: WB-12.5-1-Q002-S04
+        parent_question_id: WB-12.5-1-Q002
+        question_no: "2"
+        subquestion_no: "4"
+        line_start: 50
+        line_end: 51
+        has_image: false
+        preview: "(4)一艘轮船在静水中的最大航速为 $30 \\mathrm{~km} / \\mathrm{h}$ , 它在江水中以最大航速顺流航行 $120 \\mathrm{~"
+        answer_ref:
+          answer_id: workbook-answer-12.5-1
+          answer_line_start: 5
+          answer_line_end: 6
+      - question_id: WB-12.5-1-Q002-S05
+        parent_question_id: WB-12.5-1-Q002
+        question_no: "2"
+        subquestion_no: "5"
+        line_start: 52
+        line_end: 53
+        has_image: false
+        preview: "(5)已知相邻的两个奇数，较大的数加上8所得到的数与较小的数的比为 $5:3$ ，求这两个奇数之间的偶数。设该偶数为 $x$ ，则可列方程为____。"
+        answer_ref:
+          answer_id: workbook-answer-12.5-1
+          answer_line_start: 5
+          answer_line_end: 6
+  - question_id: WB-12.5-1-Q003
+    source_id: workbook-12.5-1
+    source_type: exercise_bank
+    question_no: "3"
+    section: "夯实基础"
+    line_start: 54
+    line_end: 63
+    has_image: false
+    preview: "列方程解应用题."
+    answer_ref:
+      answer_id: workbook-answer-12.5-1
+      answer_line_start: 7
+      answer_line_end: 8
+    subquestions:
+      - question_id: WB-12.5-1-Q003-S01
+        parent_question_id: WB-12.5-1-Q003
+        question_no: "3"
+        subquestion_no: "1"
+        line_start: 56
+        line_end: 57
+        has_image: false
+        preview: "(1)某中学为准备十四岁青春仪式，原计划由八年级(1)班4个小组的同学平均分配任务，共同制作360面彩旗，后因1个小组另有任务，其余3个小组的每名同学都要 比原"
+        answer_ref:
+          answer_id: workbook-answer-12.5-1
+          answer_line_start: 7
+          answer_line_end: 8
+      - question_id: WB-12.5-1-Q003-S02
+        parent_question_id: WB-12.5-1-Q003
+        question_no: "3"
+        subquestion_no: "2"
+        line_start: 58
+        line_end: 63
+        has_image: false
+        preview: "(2)为解决雨季城市内涝的难题, 某市决定对部分老街道的地下管网进行改造。在改造一段长为 $3600 \\mathrm{~m}$ 的地下管网时, 每天的施工效率比"
+        answer_ref:
+          answer_id: workbook-answer-12.5-1
+          answer_line_start: 7
+          answer_line_end: 8
+  - question_id: WB-12.5-1-Q004
+    source_id: workbook-12.5-1
+    source_type: exercise_bank
+    question_no: "4"
+    section: "数学思考"
+    line_start: 66
+    line_end: 67
+    has_image: false
+    preview: "利用分式方程解应用题的一般步骤有哪些？请把它与前面学过的列整式方程解应用题的一般步骤相比较，看看它们之间有何异同。"
+    answer_ref:
+      answer_id: workbook-answer-12.5-1
+      answer_line_start: 9
+      answer_line_end: 10
+  - question_id: WB-12.5-1-Q005
+    source_id: workbook-12.5-1
+    source_type: exercise_bank
+    question_no: "5"
+    section: "解决问题"
+    line_start: 70
+    line_end: 84
+    has_image: true
+    preview: "某区计划进行一项工程施工, 从甲、乙两支工程队的报价单中得知: 甲工程队每施工一天的工程款为 1.1 万元, 乙工程队每施工一天的工程款为 0.8 万元. 经过"
+    answer_ref:
+      answer_id: workbook-answer-12.5-1
+      answer_line_start: 11
+      answer_line_end: 12
+    subquestions:
+      - question_id: WB-12.5-1-Q005-S01
+        parent_question_id: WB-12.5-1-Q005
+        question_no: "5"
+        subquestion_no: "1"
+        line_start: 80
+        line_end: 81
+        has_image: false
+        preview: "(1)方案 C 中“ $\\ast \\ast \\ast$ ”部分的内容是____。"
+        answer_ref:
+          answer_id: workbook-answer-12.5-1
+          answer_line_start: 11
+          answer_line_end: 11
+      - question_id: WB-12.5-1-Q005-S02
+        parent_question_id: WB-12.5-1-Q005
+        question_no: "5"
+        subquestion_no: "2"
+        line_start: 82
+        line_end: 84
+        has_image: true
+        preview: "(2)若要在规定的时间内完成这项工程, 则选择哪种方案最节省工程款? 请说明理由."
+        answer_ref:
+          answer_id: workbook-answer-12.5-1
+          answer_line_start: 12
+          answer_line_end: 12

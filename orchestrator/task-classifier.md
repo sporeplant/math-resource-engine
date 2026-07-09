@@ -91,6 +91,7 @@ outputs：
 - 教材原文拆解类任务：当用户要求“分割/拆分/切分/拆解”教材 Markdown 大文件，或路径包含 `knowledge/textbooks/`、`textbooks`、`教材原文`、`MinerU` 时，必须优先路由到 `skills/textbook-split/SKILL.md`，读取其检查清单，并按该技能先呈现结构和元信息预览。
 - 练习册题库拆解类任务：当用户要求“分割/拆分/切分/拆解”练习册、习题册、练习册题库 Markdown 大文件，或路径/文件名包含 `knowledge/workbooks/`、`workbooks`、`练习册`、`习题册` 时，必须优先路由到 `skills/workbook-split/SKILL.md`，读取其检查清单，并按该技能先呈现结构和输出文件预览。
 - 练习册参考答案拆解类任务：当用户要求“分割/拆分/切分/拆解”练习册答案、参考答案、答案册 Markdown 大文件，或路径/文件名包含 `练习册答案`、`参考答案`、`答案册`、`workbook-answers` 时，必须优先路由到 `skills/workbook-answer-split/SKILL.md`，读取其检查清单，并按该技能先呈现结构和输出文件预览。
+- 练习册逐题索引类任务：当用户要求“索引/建索引/逐题编号/题号映射/答案对齐”练习册题库或答案，或路径/文件名包含 `workbook-index` 时，必须优先路由到 `skills/workbook-index/SKILL.md`，读取其检查清单，并使用 `tools/index-workbook.py` 和 `tools/validate-workbook-index.py`。
 - 学习目标类任务
 - 评价设计类任务
 - 活动设计类任务

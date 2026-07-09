@@ -9,6 +9,7 @@
 | 教材原文拆解skills | 将 MinerU 转换的单章教材 Markdown 大文件按课时拆分，并转换 HTML 表格 | `knowledge/textbooks/` 或其他目录中的单章教材 Markdown、大章文件、学期标识 | `textbook-{章节}.{小节}-{课时号}.md`、`textbook-ch{章号}-{活动名称}.md`、`textbook-ch{章号}-review-{课时号}.md` | 无（独立） | 自检清单 | active | v1.0 |
 | 练习册题库拆解skills | 将 MinerU 转换的单章练习册 Markdown 大文件按课时拆分，并迁移图片 | 练习册 Markdown 大章文件 | `workbook-{章节}.{小节}-{课时号}.md`、`workbook-{章节}.{小节}.md`、`workbook-ch{章号}-review.md` | 无（独立） | `tools/validate-workbook-split.py` + 自检清单 | active | v1.0 |
 | 练习册参考答案拆解skills | 将 MinerU 转换的练习册参考答案 Markdown 大文件按课时、回顾和测试卷拆分，并迁移图片 | 练习册答案 Markdown 大文件 | `workbook-answer-{章节}.{小节}-{课时号}.md`、`workbook-answer-ch{章号}-review.md`、`workbook-answer-ch{章号}-unit-test.md` | 无（独立） | `tools/validate-workbook-answer-split.py` + 自检清单 | active | v1.0 |
+| 练习册逐题索引skills | 对齐练习册题库与答案，生成稳定 `WB-...` 题号和答案映射 | `knowledge/workbooks/` + `knowledge/workbook-answers/` | `knowledge/workbook-index/workbook-index-*.yaml` | 练习册题库拆解skills, 练习册参考答案拆解skills | `tools/validate-workbook-index.py` + 自检清单 | active | v1.0 |
 | 学习目标skills | 生成分层学习目标 | 教材章节、课标要求、学情数据 | 分层学习目标（基础/中间/拓展层） | 教材分析skills | 学习目标validators | active | v1.0 |
 | 评价设计skills | 设计分层评价任务 | 分层学习目标、评价模式 | 分层评价任务 + 成功标准 | 学习目标skills | 评价validators | active | v1.0 |
 | 活动设计skills | 设计分层且时间可执行的教学活动 | 学习目标、评价任务、学情、教学运行画像 | 分层教学活动 + 反馈节点 + 分项时间预算 | 学习目标skills, 评价设计skills | 活动validators, 教学活动时间validators | active | v1.1 |

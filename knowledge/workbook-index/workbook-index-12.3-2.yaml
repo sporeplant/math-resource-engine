@@ -1,0 +1,285 @@
+---
+content_type: workbook_index
+source_type: exercise_bank
+source_id: workbook-12.3-2
+answer_id: workbook-answer-12.3-2
+index_id: workbook-index-12.3-2
+question_count: 6
+subquestion_count: 16
+---
+
+questions:
+  - question_id: WB-12.3-2-Q001
+    source_id: workbook-12.3-2
+    source_type: exercise_bank
+    question_no: "1"
+    section: "夯实基础"
+    line_start: 11
+    line_end: 45
+    has_image: true
+    preview: "选择题."
+    answer_ref:
+      answer_id: workbook-answer-12.3-2
+      answer_line_start: 3
+      answer_line_end: 4
+    subquestions:
+      - question_id: WB-12.3-2-Q001-S01
+        parent_question_id: WB-12.3-2-Q001
+        question_no: "1"
+        subquestion_no: "1"
+        line_start: 13
+        line_end: 16
+        has_image: false
+        preview: "(1)计算 $\\left(1+\\frac{1}{x}\\right)\\div\\frac{x^{2}+2x+1}{x}$ 的结果是"
+        answer_ref:
+          answer_id: workbook-answer-12.3-2
+          answer_line_start: 3
+          answer_line_end: 4
+      - question_id: WB-12.3-2-Q001-S02
+        parent_question_id: WB-12.3-2-Q001
+        question_no: "1"
+        subquestion_no: "2"
+        line_start: 17
+        line_end: 19
+        has_image: false
+        preview: "(2)若 $x$ 和 $y$ 互为倒数, 则 $\\left(x + \\frac{1}{y}\\right) \\cdot \\left(2y - \\frac{1}{x"
+        answer_ref:
+          answer_id: workbook-answer-12.3-2
+          answer_line_start: 3
+          answer_line_end: 4
+      - question_id: WB-12.3-2-Q001-S03
+        parent_question_id: WB-12.3-2-Q001
+        question_no: "1"
+        subquestion_no: "3"
+        line_start: 20
+        line_end: 23
+        has_image: false
+        preview: "(3)若 $\\left(\\frac{1}{a}-\\frac{1}{b}\\right)\\div\\frac{2}{\\bigcirc}$ 的运算结果为整式，"
+        answer_ref:
+          answer_id: workbook-answer-12.3-2
+          answer_line_start: 3
+          answer_line_end: 4
+      - question_id: WB-12.3-2-Q001-S04
+        parent_question_id: WB-12.3-2-Q001
+        question_no: "1"
+        subquestion_no: "4"
+        line_start: 24
+        line_end: 34
+        has_image: true
+        preview: "(4)如图是嘉琪进行分式计算的过程.下列判断中, 不正确的是 ( )"
+        answer_ref:
+          answer_id: workbook-answer-12.3-2
+          answer_line_start: 3
+          answer_line_end: 4
+      - question_id: WB-12.3-2-Q001-S05
+        parent_question_id: WB-12.3-2-Q001
+        question_no: "1"
+        subquestion_no: "5"
+        line_start: 35
+        line_end: 45
+        has_image: true
+        preview: "(5)如图, 若 $x$ 为正整数, 则表示 $\\frac{(x + 2)^2}{x^2 + 4x + 4} - \\frac{1}{x + 1}$ 的值的点落在"
+        answer_ref:
+          answer_id: workbook-answer-12.3-2
+          answer_line_start: 3
+          answer_line_end: 4
+  - question_id: WB-12.3-2-Q002
+    source_id: workbook-12.3-2
+    source_type: exercise_bank
+    question_no: "2"
+    section: "夯实基础"
+    line_start: 46
+    line_end: 57
+    has_image: false
+    preview: "填空题."
+    answer_ref:
+      answer_id: workbook-answer-12.3-2
+      answer_line_start: 5
+      answer_line_end: 6
+    subquestions:
+      - question_id: WB-12.3-2-Q002-S01
+        parent_question_id: WB-12.3-2-Q002
+        question_no: "2"
+        subquestion_no: "1"
+        line_start: 48
+        line_end: 49
+        has_image: false
+        preview: "(1) $\\frac{2}{m-2}+\\frac{m}{2-m}=$ ____."
+        answer_ref:
+          answer_id: workbook-answer-12.3-2
+          answer_line_start: 5
+          answer_line_end: 5
+      - question_id: WB-12.3-2-Q002-S02
+        parent_question_id: WB-12.3-2-Q002
+        question_no: "2"
+        subquestion_no: "2"
+        line_start: 50
+        line_end: 51
+        has_image: false
+        preview: "(2) $\\frac{2}{x-2}-\\frac{4x}{x^{2}-4}=$ ____。"
+        answer_ref:
+          answer_id: workbook-answer-12.3-2
+          answer_line_start: 5
+          answer_line_end: 6
+      - question_id: WB-12.3-2-Q002-S03
+        parent_question_id: WB-12.3-2-Q002
+        question_no: "2"
+        subquestion_no: "3"
+        line_start: 52
+        line_end: 53
+        has_image: false
+        preview: "(3) $\\frac{x}{x + 3} - \\frac{6}{9 - x^2} \\div \\frac{2}{x - 3} =$"
+        answer_ref:
+          answer_id: workbook-answer-12.3-2
+          answer_line_start: 5
+          answer_line_end: 6
+      - question_id: WB-12.3-2-Q002-S04
+        parent_question_id: WB-12.3-2-Q002
+        question_no: "2"
+        subquestion_no: "4"
+        line_start: 54
+        line_end: 55
+        has_image: false
+        preview: "(4) $\\left(\\frac{m^{2}}{m-1}+\\frac{1}{1-m}\\right)\\cdot\\frac{1}{m+1}=$ ____."
+        answer_ref:
+          answer_id: workbook-answer-12.3-2
+          answer_line_start: 6
+          answer_line_end: 6
+      - question_id: WB-12.3-2-Q002-S05
+        parent_question_id: WB-12.3-2-Q002
+        question_no: "2"
+        subquestion_no: "5"
+        line_start: 56
+        line_end: 57
+        has_image: false
+        preview: "(5)已知 $\\frac{a}{x+2}$ 与 $\\frac{b}{x-2}$ 的和等于 $\\frac{4x}{x^{2}-4}$ ，则a=____，b=___"
+        answer_ref:
+          answer_id: workbook-answer-12.3-2
+          answer_line_start: 5
+          answer_line_end: 6
+  - question_id: WB-12.3-2-Q003
+    source_id: workbook-12.3-2
+    source_type: exercise_bank
+    question_no: "3"
+    section: "夯实基础"
+    line_start: 58
+    line_end: 70
+    has_image: false
+    preview: "计算."
+    answer_ref:
+      answer_id: workbook-answer-12.3-2
+      answer_line_start: 7
+      answer_line_end: 8
+    subquestions:
+      - question_id: WB-12.3-2-Q003-S01
+        parent_question_id: WB-12.3-2-Q003
+        question_no: "3"
+        subquestion_no: "1"
+        line_start: 59
+        line_end: 60
+        has_image: false
+        preview: "(1) $\\frac{1}{x-2}-\\frac{x}{x-2}\\cdot\\frac{x^{2}-4}{x}$ ;"
+        answer_ref:
+          answer_id: workbook-answer-12.3-2
+          answer_line_start: 7
+          answer_line_end: 8
+      - question_id: WB-12.3-2-Q003-S02
+        parent_question_id: WB-12.3-2-Q003
+        question_no: "3"
+        subquestion_no: "2"
+        line_start: 61
+        line_end: 63
+        has_image: false
+        preview: "(2) $\\frac{y^{2}}{y-1}-y-1;$"
+        answer_ref:
+          answer_id: workbook-answer-12.3-2
+          answer_line_start: 7
+          answer_line_end: 8
+      - question_id: WB-12.3-2-Q003-S03
+        parent_question_id: WB-12.3-2-Q003
+        question_no: "3"
+        subquestion_no: "3"
+        line_start: 64
+        line_end: 67
+        has_image: false
+        preview: "(3) \\left(1 + \\frac {1}{a + 1}\\right) \\div \\frac {a ^ {2} + 2 a}{a + 1};"
+        answer_ref:
+          answer_id: workbook-answer-12.3-2
+          answer_line_start: 7
+          answer_line_end: 8
+      - question_id: WB-12.3-2-Q003-S04
+        parent_question_id: WB-12.3-2-Q003
+        question_no: "3"
+        subquestion_no: "4"
+        line_start: 68
+        line_end: 70
+        has_image: false
+        preview: "(4) \\frac {a ^ {2} - b ^ {2}}{a b} - \\frac {a b - b ^ {2}}{a b - a ^ {2}}."
+        answer_ref:
+          answer_id: workbook-answer-12.3-2
+          answer_line_start: 7
+          answer_line_end: 8
+  - question_id: WB-12.3-2-Q004
+    source_id: workbook-12.3-2
+    source_type: exercise_bank
+    question_no: "4"
+    section: "数学思考"
+    line_start: 73
+    line_end: 74
+    has_image: false
+    preview: "先化简代数式 $\\left(1 - \\frac{3}{a + 2}\\right) \\div \\frac{a^2 - 2a + 1}{a^2 - 4}$ , 再从"
+    answer_ref:
+      answer_id: workbook-answer-12.3-2
+      answer_line_start: 9
+      answer_line_end: 10
+  - question_id: WB-12.3-2-Q005
+    source_id: workbook-12.3-2
+    source_type: exercise_bank
+    question_no: "5"
+    section: "解决问题"
+    line_start: 77
+    line_end: 78
+    has_image: false
+    preview: "已知 $\\frac{1}{x} - \\frac{1}{y} = -3$ . 求 $\\frac{5x + xy - 5y}{x - xy - y}$ 的值."
+    answer_ref:
+      answer_id: workbook-answer-12.3-2
+      answer_line_start: 9
+      answer_line_end: 9
+  - question_id: WB-12.3-2-Q006
+    source_id: workbook-12.3-2
+    source_type: exercise_bank
+    question_no: "6"
+    section: "解决问题"
+    line_start: 79
+    line_end: 85
+    has_image: false
+    preview: "先阅读材料，再回答问题。"
+    answer_ref:
+      answer_id: workbook-answer-12.3-2
+      answer_line_start: 11
+      answer_line_end: 11
+    subquestions:
+      - question_id: WB-12.3-2-Q006-S01
+        parent_question_id: WB-12.3-2-Q006
+        question_no: "6"
+        subquestion_no: "1"
+        line_start: 83
+        line_end: 84
+        has_image: false
+        preview: "(1) 若 n > 0，试判断： $\\frac{n+1}{n} - \\frac{n+2}{n+1}$ ____0.(填“＞”“＜”或“＝”)"
+        answer_ref:
+          answer_id: workbook-answer-12.3-2
+          answer_line_start: 11
+          answer_line_end: 11
+      - question_id: WB-12.3-2-Q006-S02
+        parent_question_id: WB-12.3-2-Q006
+        question_no: "6"
+        subquestion_no: "2"
+        line_start: 85
+        line_end: 85
+        has_image: false
+        preview: "(2)嘉嘉和琪琪两次购物均购买了同一种商品, 嘉嘉两次都购买了 $m \\mathrm{~kg}$ 该商品, 琪琪两次购买该商品均花了 $n$ 元. 已知第一次购"
+        answer_ref:
+          answer_id: workbook-answer-12.3-2
+          answer_line_start: 11
+          answer_line_end: 11

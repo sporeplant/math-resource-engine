@@ -79,6 +79,14 @@ created_at: ""
   - "knowledge/solutions/ch{章节号}/solution-{lesson_id}.md"
 ```
 
+若本课时使用练习册题库，`source_files` 还必须登记对应的题库、答案和逐题索引：
+
+```yaml
+  - "knowledge/workbooks/workbook-{课时编号}.md"
+  - "knowledge/workbook-answers/workbook-answer-{课时编号}.md"
+  - "knowledge/workbook-index/workbook-index-{课时编号}.yaml"
+```
+
 教材问题参考解答使用独立元数据：
 
 ```yaml
@@ -194,6 +202,16 @@ question_ids:
 `question_id` 与 `question_ids` 二选一。禁止把多个编号写入一个逗号分隔的 `question_id` 字符串，也禁止重复outputs相同的 `source_id`、`source_type`。
 
 禁止出现无来源题目。禁止将 LLM 生成题、仿题、类题、改写题作为新题使用。
+
+### 5.1 练习册题源强约束
+
+当 `source_type: exercise_bank` 时：
+
+- `source_id` 必须为对应 `knowledge/workbooks/workbook-*.md` 的文件名主体。
+- `question_id` 或 `question_ids` 必须存在于 `knowledge/workbook-index/workbook-index-*.yaml`。
+- 同一 `source_id` 必须能对应到 `knowledge/workbook-answers/workbook-answer-*.md`。
+- `source_files` 必须同时登记题库、答案和索引三件套。
+- 缺少索引或答案时，正式产物不得生成。
 
 ---
 
