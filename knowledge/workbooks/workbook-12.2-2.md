@@ -4,7 +4,6 @@
 
 理解分式除法的运算，关键是将除法运算转化成乘法运算。
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f23b394fdf8ea3ef1f50aad28eb4d418874394f524147ddba0dc07be3d803f20.jpg)
 
 # 夯实基础
 
@@ -56,7 +55,6 @@ $$
 
 4. 先化简 $\frac{x^2 + 2x + 1}{x - 2} \cdot \frac{x - 1}{x^2 - 1}$ , 再选择一个合适的数代入求值.
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/038db3731ca44fa3ce71e38e7fc7563526924602c1fdd25da5b661ce63109a14.jpg)
 
 # 解决问题
 

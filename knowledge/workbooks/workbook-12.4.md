@@ -6,7 +6,6 @@
 
 2. 解分式方程的步骤：先去分母(即方程两边同乘公分母)，将分式方程转化为整式方程，再解整式方程。在这一转化过程中，分式方程可能产生增根，所以解分式方程必须验根。
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a20279ca436657f92f8e14051a2d3b3c85e78d79af622547adeb98cc3241dbd1.jpg)
 
 # 夯实基础
 

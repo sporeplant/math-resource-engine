@@ -8,7 +8,6 @@
 
 3. 准确理解当分式的分母是多项式时, 异分母分式的加减要先找到最简公分母, 再进行通分, 转化成同分母分式的加减.
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c6d1e98cd93f6ee4217b7116ee14faa28b66659ee7cff2ab3591d78acfe5f288.jpg)
 
 # 夯实基础
 
@@ -60,7 +59,6 @@ A. $(x - y)(x^{2} - y^{2})$ B. $(x^{2} - y^{2})^{2}$ C. $(x - y)(x - y)^{2}$ D. 
 
 (2)请运用分式的有关知识，推理说明这个结论是正确的。
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5a9c5eade97db476b7db251eab5426d43d8dc1c1b401e988408005bc72df2f34.jpg)
 
 # 解决问题
 

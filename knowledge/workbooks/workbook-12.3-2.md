@@ -4,7 +4,6 @@
 
 在进行分式的混合运算时，要按照运算顺序进行，如果有括号，要先算括号内的。
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a4ed600fccb8dc8fb36276380ca2e3198cab1963c9a8557a43d9e71c8441bedd.jpg)
 
 # 夯实基础
 

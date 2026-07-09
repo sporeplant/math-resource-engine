@@ -8,7 +8,6 @@
 
 3. 行程问题: 速度 $\times$ 时间 $=$ 路程。
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/aac2babae07fa80121a6926e82efa9dc4784e2b7f2b9c7cbd48d93569ed42011.jpg)
 
 # 夯实基础
 

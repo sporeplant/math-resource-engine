@@ -81,7 +81,6 @@ D. 560 元
 
 (3)列出的分式方程要含有两个不同的分式.
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/3c0562753dd7bbad6b9d8896d0293c6eed42e95eb100699e57ac5df8f50b1fdd.jpg)
 
 # 解决问题
 

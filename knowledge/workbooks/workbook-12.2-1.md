@@ -6,7 +6,6 @@
 
 2. 分式的运算结果要化为最简分式或整式.
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/56622ff7faaf6d7d0250a417b687810e5c39a9e894e09bad4e654ef7e6d1f708.jpg)
 
 # 夯实基础
 
@@ -64,7 +63,6 @@ $$
 
 第4题
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/98e7060008e85352c69293f2a3d6bbfe5c66debd33832e117fdc76d43417efc8.jpg)
 
 # 开阔视野
 

@@ -44,6 +44,53 @@ LESSON_RE = re.compile(r"^##\s*(\d+)\.(\d+)\s+(.+?)\s*$")
 REVIEW_RE = re.compile(r"^#{1,2}\s*回顾与反思\s*$")
 IMAGE_RE = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)")
 
+# Workbook section icon headers — icons precede these one-level (#) headers.
+# Same concept as tools/remove_section_icons.py but for workbook sections,
+# and headers are one-level (#) not two-level (##).
+WORKBOOK_ICON_HEADERS = [
+    "知识点拨",
+    "夯实基础",
+    "数学思考",
+    "解决问题",
+    "开阔视野",
+]
+
+
+def _build_workbook_icon_header_pattern(headers: list[str]) -> str:
+    """Alternation group for # heading matching; allows optional leading
+    OCR noise glyphs (non-#, non-whitespace) before the canonical name."""
+    return "|".join(r"[^\s#]*" + re.escape(h) for h in headers)
+
+
+_WORKBOOK_ICON_RE = re.compile(
+    r"!\[.*?\]\("
+    r"(?:https://cdn\.jsdelivr\.net/gh/sporeplant/"
+    r"math-resource-engine@main/knowledge/images/"
+    r"|(?:\.\./)?images/)"
+    r"([a-f0-9]+\.jpg)\)\s*\n\s*\n# (?:"
+    + _build_workbook_icon_header_pattern(WORKBOOK_ICON_HEADERS)
+    + r")",
+    re.MULTILINE,
+)
+
+
+def remove_workbook_icons_from_text(text: str) -> tuple[str, set[str]]:
+    """Remove section icon image references from workbook markdown text.
+
+    Returns (cleaned_text, set_of_image_hashes_removed). Call this BEFORE
+    image copying so icon images never enter knowledge/images/.
+    """
+    removed_hashes: set[str] = set()
+
+    def replace_icon(m: re.Match[str]) -> str:
+        removed_hashes.add(m.group(1))
+        full = m.group(0)
+        header_pos = full.rfind("\n# ")
+        return full[header_pos:]  # preserve "\n# 栏目名"
+
+    cleaned = _WORKBOOK_ICON_RE.sub(replace_icon, text)
+    return cleaned, removed_hashes
+
 
 @dataclass(frozen=True)
 class Segment:
@@ -192,9 +239,11 @@ def write_segments(
     outdir: Path,
     overwrite: bool,
     copy_images: bool,
+    remove_icons: bool = False,
 ) -> list[Path]:
     outdir.mkdir(parents=True, exist_ok=True)
     written: list[Path] = []
+    all_icon_hashes: set[str] = set()
 
     for segment in segments:
         output = outdir / segment.filename
@@ -202,9 +251,15 @@ def write_segments(
             raise FileExistsError(f"输出文件已存在，未覆盖: {output}")
 
         body = normalize_body(segment.lines)
+        if remove_icons:
+            body, icon_hashes = remove_workbook_icons_from_text(body)
+            all_icon_hashes.update(icon_hashes)
         body = rewrite_and_copy_images(body, input_file.parent, copy_images)
         output.write_text(body, encoding="utf-8")
         written.append(output)
+
+    if remove_icons and all_icon_hashes:
+        print(f"  已移除 {len(all_icon_hashes)} 个栏目图标图片引用")
 
     return written
 
@@ -216,6 +271,7 @@ def main() -> int:
     parser.add_argument("--chapter", help="手动指定章号，如 12")
     parser.add_argument("--overwrite", action="store_true", help="允许覆盖已有输出文件")
     parser.add_argument("--no-copy-images", action="store_true", help="不复制图片到 knowledge/images")
+    parser.add_argument("--remove-icons", action="store_true", help="移除栏目标题前的图标图片引用（夯实基础、解决问题等）")
     parser.add_argument("-y", "--yes", action="store_true", help="跳过确认直接写入")
     args = parser.parse_args()
 
@@ -245,6 +301,7 @@ def main() -> int:
         outdir=args.outdir.resolve(),
         overwrite=args.overwrite,
         copy_images=not args.no_copy_images,
+        remove_icons=args.remove_icons,
     )
     print()
     print("已写入:")

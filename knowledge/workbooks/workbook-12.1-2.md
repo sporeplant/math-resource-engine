@@ -6,7 +6,6 @@
 
 2. 理解最简分式的概念.
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/99d9b94c565261b91b1288efe3fbd1156d9959f12b1a8c781e53a2e91c4932e8.jpg)
 
 # 夯实基础
 

@@ -8,7 +8,6 @@
 
 3. 能列分式方程解决实际问题.
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6c966cdf67b0a507cc75ae3564def4eb6195cf89ba7888b9a30afa49a305e076.jpg)
 
 # 夯实基础
 

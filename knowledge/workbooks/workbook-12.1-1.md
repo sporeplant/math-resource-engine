@@ -8,7 +8,6 @@
 
 3. 熟练运用分式的基本性质.
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/8d59645de56d26eb63e9033a8f57cca90e4e5a6d3253fe1d69c73a6ae35862a8.jpg)
 
 # 夯实基础
 
@@ -72,7 +71,6 @@ $$
 
 (3)请为 $x$ 选取一个合适的值，并求出此时分式的值.
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2d1cffa8c1a380be3aad44b31bdd7484454a3837ef07fad72c09c21181beca0a.jpg)
 
 # 解决问题
 
