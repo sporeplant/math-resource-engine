@@ -288,8 +288,8 @@ questions:
     source_type: exercise_bank
     question_no: "6"
     section: "解决问题"
-    line_start: 79
-    line_end: 79
+    line_start: 77
+    line_end: 77
     has_image: false
     preview: "甲、乙两码头相距 $x \\mathrm{~km}$ 。已知船在静水中的速度是 $a \\mathrm{~km} / \\mathrm{h}$ ，水流的速度是 $b "
     answer_ref:
