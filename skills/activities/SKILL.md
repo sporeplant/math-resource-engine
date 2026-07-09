@@ -14,6 +14,7 @@
 * 问题链设计结果（来自 问题链设计skills）
 * 习题分析结果（来自 习题分析skills）
 * 对应课时教材参考解答（来自 `knowledge/solutions/`，必须存在、课时匹配并通过验证）
+* 对应课时练习册题库、答案和逐题索引（来自 `knowledge/workbooks/`、`knowledge/workbook-answers/`、`knowledge/workbook-index/`，必须存在并通过验证）
 * 活动设计上下文（来自 知识分析skills 的 Step6 提炼结果，包含 math_essence、critical_aspects、cognitive_obstacles、target_cognitive_changes、variation_dimensions、activity_constraints、source_refs）
 
 ---
@@ -242,8 +243,7 @@ ASK_B_01
 2. **习题A组**：从教材原文"习题A组"中各选取 1 道题目
 3. **习题B组**：从教材原文"习题B组"中各选取 1 道题目
 4. **总量要求**：课堂练习/检测题目总数量不小于 4 道
-5. **补充来源**：当教材练习栏目题目数量不足导致总量不足 4 道时，从练习册索引 `knowledge/workbook-index/workbook-index-{lesson}.yaml` 按 `tier` 字段分层匹配，优先选取 `tier: 基础` 或 `tier: 知识` 的题目作为课堂练习补充。选定题目后从 `knowledge/workbooks/{source_id}.md` 读取完整题干，答案从 `knowledge/workbook-answers/{answer_id}.md` 复用。
-5a. 索引中已标记 `is_open_answer: true` 的题目不宜作为课堂限时检测题；可作为课堂讨论题酌情使用。
+5. **练习册来源**：从对应课时 `knowledge/workbooks/` 中选取与当前目标匹配的练习册题，作为课堂练习、即时反馈或例题候选；不得只在教材题不足时才审查练习册
 6. 活动中的单题使用 `source_id`、`source_type`、`question_id`；多道同源题合并共享字段并使用 `question_ids` 列表
 7. 选题依据 习题分析skills 的8维度分析报告
 8. 分层选用原则：
@@ -254,6 +254,8 @@ ASK_B_01
 10. 教材题的预期回答、成功标准、反馈要点和练习答案必须按 `question_id` 与教材参考解答核对；不得自行改写数学结论或答案边界
 11. 教材参考解答的 `答案来源` 为 `AI参考推导` 或 `AI参考推导补充` 时，不得表述为教材原文
 12. 对应教材参考解答缺失、验证失败或缺少所需 `question_id` 时，立即终止本次工作流
+13. 练习册题目的预期回答、成功标准、反馈要点和练习答案必须按 `question_id` 与练习册逐题索引及答案文件核对
+14. 对应练习册题库、答案或逐题索引缺失、验证失败或缺少所需 `question_id` 时，立即终止本次工作流
 
 ### 环节安排规则
 
@@ -419,3 +421,4 @@ ASK_B_01
 13. 每道课堂练习/检测题目是否标注了预估完成时间
 14. 未被选用的教材习题是否已标记为课下作业候选
 15. 涉及题目时是否可通过 `question_id` 或 `question_ids` 追踪，多道同源题是否已合并共享题源
+16. 练习册题是否已通过 `knowledge/workbook-index/` 映射到答案文件

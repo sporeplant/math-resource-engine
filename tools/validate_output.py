@@ -15,6 +15,11 @@ except ModuleNotFoundError:
     from tools.textbook_solution_dependency import validate_dependency
 
 try:
+    from workbookindexdependency import validate_dependency as validate_workbook_dependency
+except ModuleNotFoundError:
+    from tools.workbookindexdependency import validate_dependency as validate_workbook_dependency
+
+try:
     from validate_review_lesson import validate as validate_review_lesson_file
 except ModuleNotFoundError:
     from tools.validate_review_lesson import validate as validate_review_lesson_file
@@ -1477,6 +1482,7 @@ def validate(
     check_learning_objectives(text, meta, errors)
     check_ask_prompt_order(text, meta, errors)
     errors.extend(validate_dependency(path, text, meta, textbook_solution))
+    errors.extend(validate_workbook_dependency(path, text, meta))
 
     if meta.get("content_type") == "review_lesson":
         errors.extend(validate_review_lesson_file(path))

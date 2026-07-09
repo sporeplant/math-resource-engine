@@ -18,6 +18,8 @@
 | 学生选取结果 | 分层提问skills outputs | 包含随机池选取记录和问题-学生映射表 |
 | 题源文件 | `knowledge/workbooks/`、`knowledge/textbooks/` | 所有引用的题目完整内容 |
 | 教材参考解答 | `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md` | 必须存在、课时匹配并通过教材问题解答validators |
+| 练习册答案 | `knowledge/workbook-answers/` | 所有练习册题目的参考答案来源 |
+| 练习册逐题索引 | `knowledge/workbook-index/` | `source_type: exercise_bank` 题目的 `question_id` 和答案映射 |
 | 习题分析报告 | 习题分析skills outputs | 8维度分析结果 |
 
 ---
@@ -168,16 +170,15 @@ collab_gates:
 - 所有习题库题目。
 - 台阶递进式核心题（含完整解题步骤，不仅是最终答案）。
 
-教材例题、教材练习和教材习题的解答必须按 `question_id` 从教材参考解答中复用，不得再次独立推导。允许为页面长度压缩表达，但必须保留关键步骤、数学结论、解题依据和 `答案来源`。练习册题目（`source_type: exercise_bank`）的解答必须从 `knowledge/workbook-answers/{answer_id}.md` 按 `q_number` 复用；无配套答案文件的练习册题不得进入调度稿板块B。
+教材例题、教材练习和教材习题的解答必须按 `question_id` 从教材参考解答中复用，不得再次独立推导。允许为页面长度压缩表达，但必须保留关键步骤、数学结论、解题依据和 `答案来源`。练习册题目必须按 `question_id` 从练习册逐题索引定位答案文件，不得脱离答案册自行推导。
 
 ### 5.2 题源对应要求
 
 每个题目必须标注：
 
-- `source_id`（如 TEXTBOOK-22.1-01 或 workbook-12.1-1）
+- `source_id`（如 TEXTBOOK-22.1-01）
 - `source_type`（textbook / exercise_bank）
-- `question_id`（如 Q-22.1-05 或 WB-12-Q0001）
-- `answer_id`（当 `source_type: exercise_bank` 时必填，如 workbook-answer-12.1-1）
+- `question_id`（如 Q-22.1-05 / WB-12.1-1-Q001-S01）
 
 ### 5.3 解答质量要求
 
@@ -236,3 +237,4 @@ collab_gates:
 - 禁止在教材参考解答缺失、课时不匹配、验证失败或缺少所需 `question_id` 时继续任务。
 - 禁止自动补齐教材参考解答、降级为临时推导或跳过校验。
 - 禁止重新推导教材题后覆盖教材参考解答中的结论和答案来源。
+- 禁止练习册题目缺少逐题索引或答案映射时继续生成调度稿。

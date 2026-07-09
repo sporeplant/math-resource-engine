@@ -1,212 +1,157 @@
-"""Validate workbook index YAML files against source workbooks and answers.
-
-Checks:
-  1. Every question_id is unique within the index file
-  2. source_id (workbook) file exists and is parseable
-  3. answer_id (answer) file exists and contains answers for indexed questions
-  4. Open-ended answers ("略", "答案不唯一") are explicitly marked, not dropped
-  5. Three-way traceability: index → workbook, index → answers, workbook ↔ answers
-  6. Image references in indexed questions match the workbook source
-
-Usage:
-    python tools/validate-workbook-index.py knowledge/workbook-index/ [--workbooks knowledge/workbooks/] [--answers knowledge/workbook-answers/]
-"""
+#!/usr/bin/env python3
+"""Validate workbook per-question index YAML files."""
 
 from __future__ import annotations
 
 import argparse
 import re
 import sys
-from collections import Counter
 from pathlib import Path
-
-import yaml
 
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_WORKBOOKS = REPO_ROOT / "knowledge" / "workbooks"
-DEFAULT_ANSWERS = REPO_ROOT / "knowledge" / "workbook-answers"
+WORKBOOK_DIR = REPO_ROOT / "knowledge" / "workbooks"
+ANSWER_DIR = REPO_ROOT / "knowledge" / "workbook-answers"
+FILENAME_RE = re.compile(r"^workbook-index-(?:\d+\.\d+(?:-\d+)?|ch\d+-(?:review|unit-test)|midterm)\.yaml$")
+QUESTION_ID_RE = re.compile(r"\bquestion_id:\s*([A-Za-z0-9_.-]+)")
 
 
-def iter_index_files(target: Path) -> list[Path]:
+def iter_files(target: Path) -> list[Path]:
     if target.is_file():
         return [target]
     if target.is_dir():
-        return sorted(target.glob("workbook-index-*.yaml"))
+        return sorted(path for path in target.glob("workbook-index-*.yaml") if path.is_file())
     raise FileNotFoundError(f"目标不存在: {target}")
 
 
-def validate_index_file(
-    index_path: Path,
-    workbook_dir: Path,
-    answers_dir: Path,
-) -> tuple[int, int]:
-    """Validate a single index YAML file. Returns (pass_count, error_count)."""
+def parse_front_matter(text: str) -> tuple[dict[str, str], str]:
+    if not text.startswith("---\n"):
+        return {}, text
+    end = text.find("\n---", 4)
+    if end == -1:
+        return {}, text
+    meta: dict[str, str] = {}
+    for line in text[4:end].splitlines():
+        key, sep, value = line.partition(":")
+        if sep:
+            meta[key.strip()] = value.strip().strip('"').strip("'")
+    return meta, text[end + 4 :]
+
+
+def numeric_fields(text: str, field: str) -> list[int]:
+    return [int(value) for value in re.findall(rf"\b{re.escape(field)}:\s*(\d+)", text)]
+
+
+def line_count(path: Path) -> int:
+    return len(path.read_text(encoding="utf-8").splitlines())
+
+
+def validate_file(path: Path) -> list[str]:
     errors: list[str] = []
+    text = path.read_text(encoding="utf-8")
+    meta, body = parse_front_matter(text)
 
+    if not FILENAME_RE.match(path.name):
+        errors.append(f"文件名不符合规则: {path.name}")
+
+    if meta.get("content_type") != "workbook_index":
+        errors.append("content_type 不是 workbook_index")
+    if meta.get("source_type") != "exercise_bank":
+        errors.append("source_type 不是 exercise_bank")
+
+    source_id = meta.get("source_id", "")
+    answer_id = meta.get("answer_id", "")
+    expected_index_id = path.stem
+    if meta.get("index_id") != expected_index_id:
+        errors.append("index_id 与文件名不一致")
+    if not source_id.startswith("workbook-"):
+        errors.append("source_id 不符合 workbook-* 规则")
+    if not answer_id.startswith("workbook-answer-"):
+        errors.append("answer_id 不符合 workbook-answer-* 规则")
+
+    workbook_path = WORKBOOK_DIR / f"{source_id}.md"
+    answer_path = ANSWER_DIR / f"{answer_id}.md"
+    if not workbook_path.is_file():
+        errors.append(f"缺少题库源文件: {workbook_path}")
+    if not answer_path.is_file():
+        errors.append(f"缺少答案源文件: {answer_path}")
+
+    expected_source_suffix = path.stem.removeprefix("workbook-index-")
+    if source_id and source_id != f"workbook-{expected_source_suffix}":
+        errors.append("source_id 与索引文件名不匹配")
+    if answer_id and answer_id != f"workbook-answer-{expected_source_suffix}":
+        errors.append("answer_id 与索引文件名不匹配")
+
+    if "questions:" not in body:
+        errors.append("缺少 questions 列表")
+
+    if re.search(r'\bsection:\s*"?知识点拨"?', body):
+        errors.append("知识点拨学习目标不得进入逐题索引")
+    if re.search(r'\bsection:\s*""', body):
+        errors.append("存在未归入练习栏目的题目")
+
+    question_ids = QUESTION_ID_RE.findall(body)
+    if not question_ids:
+        errors.append("未登记任何 question_id")
+    if len(question_ids) != len(set(question_ids)):
+        errors.append("question_id 存在重复")
+    for question_id in question_ids:
+        if not question_id.startswith("WB-"):
+            errors.append(f"question_id 未使用 WB- 前缀: {question_id}")
+
+    if re.search(r"answer_ref:\s*null", body):
+        errors.append("存在未匹配答案的题目")
+
+    if workbook_path.is_file():
+        max_line = line_count(workbook_path)
+        for field in ["line_start", "line_end"]:
+            for value in numeric_fields(body, field):
+                if value < 1 or value > max_line:
+                    errors.append(f"{field} 超出题库文件行数: {value}")
+
+    if answer_path.is_file():
+        max_answer_line = line_count(answer_path)
+        for field in ["answer_line_start", "answer_line_end"]:
+            for value in numeric_fields(body, field):
+                if value < 1 or value > max_answer_line:
+                    errors.append(f"{field} 超出答案文件行数: {value}")
+
+    return errors
+
+
+def main() -> int:
     try:
-        with open(index_path, "r", encoding="utf-8") as f:
-            data = yaml.safe_load(f)
-    except Exception as e:
-        print(f"FAIL {index_path.name} — YAML parse error: {e}")
-        return 0, 1
+        sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+    except AttributeError:
+        pass
 
-    if not isinstance(data, dict) or "questions" not in data or "lesson_id" not in data:
-        print(f"FAIL {index_path.name} — missing required top-level keys (lesson_id, questions)")
-        return 0, 1
-
-    lesson_id = data["lesson_id"]
-    questions = data["questions"]
-    if not isinstance(questions, list):
-        print(f"FAIL {index_path.name} — questions must be a list")
-        return 0, 1
-
-    # 1. Uniqueness check
-    qids = [q.get("question_id", "") for q in questions]
-    dupes = [qid for qid, count in Counter(qids).items() if count > 1]
-    if dupes:
-        errors.append(f"Duplicate question_id: {', '.join(dupes)}")
-    if "" in qids:
-        errors.append("Empty question_id found")
-
-    # 2. source_id existence and consistency
-    source_id = questions[0].get("source_id", "") if questions else ""
-    if not source_id:
-        errors.append("Missing source_id")
-    else:
-        wb_path = workbook_dir / f"{source_id}.md"
-        if not wb_path.is_file():
-            # Try alternate naming
-            alt_matches = list(workbook_dir.glob(f"{source_id}*"))
-            if not alt_matches:
-                errors.append(f"Workbook file not found: {source_id}.md")
-            else:
-                wb_path = alt_matches[0]
-
-    # 3. answer_id existence
-    answer_id = questions[0].get("answer_id", "") if questions else ""
-    if not answer_id:
-        errors.append("Missing answer_id")
-    else:
-        ans_path = answers_dir / f"{answer_id}.md"
-        if not ans_path.is_file():
-            errors.append(f"Answer file not found: {answer_id}.md")
-
-    # 4. Per-question checks
-    for i, q in enumerate(questions):
-        qid = q.get("question_id", f"<missing-at-index-{i}>")
-        prefix = f"  [{qid}]"
-
-        # Required fields
-        for field in ("question_id", "source_id", "answer_id", "section", "q_number"):
-            if not q.get(field):
-                errors.append(f"{prefix} missing field: {field}")
-
-        # Tier validation
-        valid_tiers = {"知识", "基础", "提升", "应用", "拓展", "综合"}
-        if q.get("tier") and q["tier"] not in valid_tiers:
-            errors.append(f"{prefix} invalid tier: {q['tier']}")
-
-        # Open answer marking
-        if q.get("is_open_answer") and q.get("has_answer"):
-            errors.append(f"{prefix} open-answer marked has_answer=True")
-        if q.get("is_open_answer") and not q.get("answer_preview") == "":
-            # It's OK for open answers to have a preview if they're partially open
-            pass
-
-    # 5. Try to verify workbook source content
-    if source_id:
-        wb_path = workbook_dir / f"{source_id}.md"
-        wb_alt = list(workbook_dir.glob(f"{source_id}*"))
-        if wb_path.is_file() or wb_alt:
-            real_wb = wb_path if wb_path.is_file() else wb_alt[0]
-            try:
-                wb_text = real_wb.read_text(encoding="utf-8")
-                # Check that all Q numbers from index appear in workbook text
-                for q in questions:
-                    q_num = q.get("q_number", "")
-                    if q_num and not re.search(rf"\b{q_num}\.\s", wb_text):
-                        errors.append(f"  [{q.get('question_id', '?')}] 题号 {q_num} not found in workbook source")
-            except Exception as e:
-                errors.append(f"Failed to read workbook: {e}")
-
-    # 6. Check answer file coverage
-    if answer_id:
-        ans_path = answers_dir / f"{answer_id}.md"
-        if ans_path.is_file():
-            try:
-                ans_text = ans_path.read_text(encoding="utf-8")
-                for q in questions:
-                    q_num = q.get("q_number", "")
-                    if q_num and not q.get("is_open_answer"):
-                        # Simple check: the question number should appear in answers
-                        if not re.search(rf"^{q_num}\.\s", ans_text, re.MULTILINE):
-                            errors.append(
-                                f"  [{q.get('question_id', '?')}] not found in answer file {q_num}"
-                            )
-            except Exception as e:
-                errors.append(f"Failed to read answer file: {e}")
-
-    # Report
-    if errors:
-        print(f"FAIL {index_path.name} — {len(errors)} errors:")
-        for e in errors:
-            print(e)
-        return 1, len(errors)
-    else:
-        print(f"PASS {index_path.name} — {len(questions)} 题, source_id={source_id}, answer_id={answer_id}")
-        return 1, 0
-
-
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Validate workbook index YAML files")
-    parser.add_argument("target", type=str, help="Index YAML file or directory")
-    parser.add_argument("--workbooks", type=str, default=None,
-                        help="Path to knowledge/workbooks/ (default: auto)")
-    parser.add_argument("--answers", type=str, default=None,
-                        help="Path to knowledge/workbook-answers/ (default: auto)")
+    parser = argparse.ArgumentParser(description="验证练习册逐题索引")
+    parser.add_argument("target", type=Path)
     args = parser.parse_args()
 
-    sys.stdout.reconfigure(encoding="utf-8")
-
-    target = Path(args.target)
-    if not target.exists():
-        print(f"Error: target not found: {target}", file=sys.stderr)
-        sys.exit(1)
-
-    wb_dir = Path(args.workbooks) if args.workbooks else DEFAULT_WORKBOOKS
-    ans_dir = Path(args.answers) if args.answers else DEFAULT_ANSWERS
-
-    if not wb_dir.is_dir():
-        print(f"Error: workbook dir not found: {wb_dir}", file=sys.stderr)
-        sys.exit(1)
-    if not ans_dir.is_dir():
-        print(f"Error: answers dir not found: {ans_dir}", file=sys.stderr)
-        sys.exit(1)
-
-    files = iter_index_files(target)
+    files = iter_files(args.target.resolve())
     if not files:
-        print("No index files found")
-        sys.exit(0)
+        print("未找到 workbook-index-*.yaml 文件")
+        return 1
 
-    print(f"Validating {len(files)} index files")
-    print(f"  Workbooks: {wb_dir}")
-    print(f"  Answers: {ans_dir}")
-    print()
-
-    total_pass = 0
-    total_fail = 0
     total_errors = 0
-
-    for f in files:
-        p, e = validate_index_file(f, wb_dir, ans_dir)
-        total_pass += p
-        total_fail += 1 if e > 0 else 0
-        total_errors += e
+    total_ok = 0
+    for path in files:
+        errors = validate_file(path)
+        rel = path.relative_to(REPO_ROOT) if path.is_relative_to(REPO_ROOT) else path
+        if errors:
+            total_errors += len(errors)
+            print(f"FAIL {rel}")
+            for error in errors:
+                print(f"  - {error}")
+        else:
+            total_ok += 1
+            print(f"PASS {rel}")
 
     print()
-    print(f"Result: {total_pass} pass, {total_fail} fail ({total_errors} errors)")
+    print(f"结果: {total_ok} 通过, {total_errors} 个错误")
+    return 1 if total_errors else 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

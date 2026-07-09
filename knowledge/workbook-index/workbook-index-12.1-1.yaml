@@ -1,188 +1,298 @@
-lesson_id: 12.1-1
+---
+content_type: workbook_index
+source_type: exercise_bank
+source_id: workbook-12.1-1
+answer_id: workbook-answer-12.1-1
+index_id: workbook-index-12.1-1
+question_count: 6
+subquestion_count: 17
+---
+
 questions:
-- question_id: WB-12-Q0001
-  source_id: workbook-12.1-1
-  answer_id: workbook-answer-12.1-1
-  section: 知识点拨
-  q_number: '1'
-  sub_number: ''
-  q_type: 解答题
-  tier: 知识
-  has_image: false
-  has_answer: true
-  is_open_answer: false
-  answer_preview: (1)B (2)C (3)D (4)D (5)C
-  text_snippet: 1. 理解分式的概念.
-- question_id: WB-12-Q0002
-  source_id: workbook-12.1-1
-  answer_id: workbook-answer-12.1-1
-  section: 知识点拨
-  q_number: '2'
-  sub_number: ''
-  q_type: 解答题
-  tier: 知识
-  has_image: false
-  has_answer: true
-  is_open_answer: false
-  answer_preview: (1)①③⑤ (2)≠-1 (3)±4 (4)2 (5) $3x^{2}-3xy$ (6) $y+1$
-  text_snippet: 2. 理解并掌握分式有意义和分式值为0的条件.
-- question_id: WB-12-Q0003
-  source_id: workbook-12.1-1
-  answer_id: workbook-answer-12.1-1
-  section: 知识点拨
-  q_number: '3'
-  sub_number: ''
-  q_type: 解答题
-  tier: 知识
-  has_image: true
-  has_answer: true
-  is_open_answer: false
-  answer_preview: (1) $\frac{x + 50}{30x - 4}$ (2) $\frac{2x - 20y}{3x + 10y}$
-  text_snippet: 3. 熟练运用分式的基本性质.  ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge
-- question_id: WB-12-Q0004
-  source_id: workbook-12.1-1
-  answer_id: workbook-answer-12.1-1
-  section: 夯实基础
-  q_number: '1'
-  sub_number: ''
-  q_type: 选择题
-  tier: 基础
-  has_image: false
-  has_answer: true
-  is_open_answer: false
-  answer_preview: (1)B (2)C (3)D (4)D (5)C
-  text_snippet: 1. 选择题.  (1)在代数式 $\frac{3x^{2}}{\pi}$ ， $\frac{2}{3}xyz$ ， $\frac{3}{x+7}$
-    ， $\frac{2x^
-- question_id: WB-12-Q0005
-  source_id: workbook-12.1-1
-  answer_id: workbook-answer-12.1-1
-  section: 夯实基础
-  q_number: '2'
-  sub_number: ④
-  q_type: 填空题
-  tier: 基础
-  has_image: false
-  has_answer: false
-  is_open_answer: true
-  answer_preview: ''
-  text_snippet: ④ $\frac{x}{\pi}$ ，⑤ $\frac{x^{3}}{x^{2}}$ 中，是分式的有____。 ____。（填序号）
-- question_id: WB-12-Q0006
-  source_id: workbook-12.1-1
-  answer_id: workbook-answer-12.1-1
-  section: 夯实基础
-  q_number: '2'
-  sub_number: '2'
-  q_type: 填空题
-  tier: 基础
-  has_image: false
-  has_answer: true
-  is_open_answer: false
-  answer_preview: ≠-1
-  text_snippet: (2) 当 $x$ ____ 时，分式 $\frac{x + 3}{x + 1}$ 有意义.
-- question_id: WB-12-Q0007
-  source_id: workbook-12.1-1
-  answer_id: workbook-answer-12.1-1
-  section: 夯实基础
-  q_number: '2'
-  sub_number: '3'
-  q_type: 填空题
-  tier: 基础
-  has_image: false
-  has_answer: true
-  is_open_answer: false
-  answer_preview: ±4
-  text_snippet: (3) 若分式 $\frac{-5}{|x| - 4}$ 无意义, 则 $x =$ ____.  (4)若分式 $\frac{a^{2}-4}{a+2}$
-    的值为0，则a的值为____。  $$ \frac {3 x}{x + y} = \
-- question_id: WB-12-Q0008
-  source_id: workbook-12.1-1
-  answer_id: workbook-answer-12.1-1
-  section: 夯实基础
-  q_number: '2'
-  sub_number: '6'
-  q_type: 填空题
-  tier: 基础
-  has_image: false
-  has_answer: true
-  is_open_answer: false
-  answer_preview: $y+1$
-  text_snippet: (6) $\frac{y+1}{y^{2}+2y+1}=\frac{1}{(\quad)}$
-- question_id: WB-12-Q0009
-  source_id: workbook-12.1-1
-  answer_id: workbook-answer-12.1-1
-  section: 夯实基础
-  q_number: '3'
-  sub_number: '1'
-  q_type: 解答题
-  tier: 基础
-  has_image: false
-  has_answer: true
-  is_open_answer: false
-  answer_preview: $\frac{x + 50}{30x - 4}$
-  text_snippet: (1) $\frac{0.01x+0.5}{0.3x-0.04}$ ;
-- question_id: WB-12-Q0010
-  source_id: workbook-12.1-1
-  answer_id: workbook-answer-12.1-1
-  section: 夯实基础
-  q_number: '3'
-  sub_number: '2'
-  q_type: 解答题
-  tier: 基础
-  has_image: false
-  has_answer: true
-  is_open_answer: false
-  answer_preview: $\frac{2x - 20y}{3x + 10y}$
-  text_snippet: (2) $\frac{\frac{1}{5}x - 2y}{0.3x + y}$ .
-- question_id: WB-12-Q0011
-  source_id: workbook-12.1-1
-  answer_id: workbook-answer-12.1-1
-  section: 夯实基础
-  q_number: '4'
-  sub_number: '1'
-  q_type: 解答题
-  tier: 基础
-  has_image: false
-  has_answer: true
-  is_open_answer: false
-  answer_preview: 分式的分子和分母同乘 $2z$
-  text_snippet: (1) $\frac{x}{3y} = \frac{2xz}{6yz} (z \neq 0)$ ;
-- question_id: WB-12-Q0012
-  source_id: workbook-12.1-1
-  answer_id: workbook-answer-12.1-1
-  section: 夯实基础
-  q_number: '4'
-  sub_number: '2'
-  q_type: 解答题
-  tier: 基础
-  has_image: false
-  has_answer: true
-  is_open_answer: false
-  answer_preview: 分式的分子和分母同除以 $
-  text_snippet: (2) $\frac{(x + y)^2}{x^2 - y^2} = \frac{x + y}{x - y}$ .
-- question_id: WB-12-Q0013
-  source_id: workbook-12.1-1
-  answer_id: workbook-answer-12.1-1
-  section: 数学思考
-  q_number: '5'
-  sub_number: ''
-  q_type: 解答题
-  tier: 提升
-  has_image: true
-  has_answer: false
-  is_open_answer: true
-  answer_preview: ''
-  text_snippet: '5. 已知分式 $\frac{|x| - 2}{x^2 + 2x}$ .  (1)当 $x$ 为何值时, 此分式有意义?  (2)当
-    $x$ 为何值时，此分式的值为零？  (3)请为 $x$ 选取一个合适的值，并求出此时分式的值. '
-- question_id: WB-12-Q0014
-  source_id: workbook-12.1-1
-  answer_id: workbook-answer-12.1-1
-  section: 解决问题
-  q_number: '6'
-  sub_number: ''
-  q_type: 解答题
-  tier: 应用
-  has_image: false
-  has_answer: true
-  is_open_answer: false
-  answer_preview: $\left(\frac{x}{a + b} +\frac{x}{a - b}\right)\mathrm{h}$
-  text_snippet: '6. 甲、乙两码头相距 $x \mathrm{~km}$ 。已知船在静水中的速度是 $a \mathrm{~km} / \mathrm{h}$
-    ，水流的速度是 '
+  - question_id: WB-12.1-1-Q001
+    source_id: workbook-12.1-1
+    source_type: exercise_bank
+    question_no: "1"
+    section: "夯实基础"
+    line_start: 15
+    line_end: 35
+    has_image: false
+    preview: "选择题."
+    answer_ref:
+      answer_id: workbook-answer-12.1-1
+      answer_line_start: 3
+      answer_line_end: 4
+    subquestions:
+      - question_id: WB-12.1-1-Q001-S01
+        parent_question_id: WB-12.1-1-Q001
+        question_no: "1"
+        subquestion_no: "1"
+        line_start: 17
+        line_end: 20
+        has_image: false
+        preview: "(1)在代数式 $\\frac{3x^{2}}{\\pi}$ ， $\\frac{2}{3}xyz$ ， $\\frac{3}{x+7}$ ， $\\frac{2x^{5"
+        answer_ref:
+          answer_id: workbook-answer-12.1-1
+          answer_line_start: 3
+          answer_line_end: 4
+      - question_id: WB-12.1-1-Q001-S02
+        parent_question_id: WB-12.1-1-Q001
+        question_no: "1"
+        subquestion_no: "2"
+        line_start: 21
+        line_end: 23
+        has_image: false
+        preview: "(2)下列分式中，一定有意义的是( )"
+        answer_ref:
+          answer_id: workbook-answer-12.1-1
+          answer_line_start: 3
+          answer_line_end: 4
+      - question_id: WB-12.1-1-Q001-S03
+        parent_question_id: WB-12.1-1-Q001
+        question_no: "1"
+        subquestion_no: "3"
+        line_start: 24
+        line_end: 26
+        has_image: false
+        preview: "(3)下列各式从左到右的变形中，一定正确的是"
+        answer_ref:
+          answer_id: workbook-answer-12.1-1
+          answer_line_start: 3
+          answer_line_end: 4
+      - question_id: WB-12.1-1-Q001-S04
+        parent_question_id: WB-12.1-1-Q001
+        question_no: "1"
+        subquestion_no: "4"
+        line_start: 27
+        line_end: 31
+        has_image: false
+        preview: "(4)把分式 $\\frac{ab}{a + b}$ 中的 $a, b$ 都扩大到原来的 10 倍, 则分式的值 ( )"
+        answer_ref:
+          answer_id: workbook-answer-12.1-1
+          answer_line_start: 3
+          answer_line_end: 4
+      - question_id: WB-12.1-1-Q001-S05
+        parent_question_id: WB-12.1-1-Q001
+        question_no: "1"
+        subquestion_no: "5"
+        line_start: 32
+        line_end: 35
+        has_image: false
+        preview: "(5)若每人的工作效率一致，a个人完成一项工作需要m天，则 $(a+b)$ 个人完成此项工作需要的天数是（）"
+        answer_ref:
+          answer_id: workbook-answer-12.1-1
+          answer_line_start: 3
+          answer_line_end: 4
+  - question_id: WB-12.1-1-Q002
+    source_id: workbook-12.1-1
+    source_type: exercise_bank
+    question_no: "2"
+    section: "夯实基础"
+    line_start: 36
+    line_end: 53
+    has_image: false
+    preview: "填空题."
+    answer_ref:
+      answer_id: workbook-answer-12.1-1
+      answer_line_start: 5
+      answer_line_end: 7
+    subquestions:
+      - question_id: WB-12.1-1-Q002-S01
+        parent_question_id: WB-12.1-1-Q002
+        question_no: "2"
+        subquestion_no: "1"
+        line_start: 38
+        line_end: 41
+        has_image: false
+        preview: "(1)在代数式① $\\frac{-3}{x+2}$ ，② $\\frac{x-1}{4}$ ，③ $\\frac{1}{a-b}$ ，"
+        answer_ref:
+          answer_id: workbook-answer-12.1-1
+          answer_line_start: 5
+          answer_line_end: 5
+      - question_id: WB-12.1-1-Q002-S02
+        parent_question_id: WB-12.1-1-Q002
+        question_no: "2"
+        subquestion_no: "2"
+        line_start: 42
+        line_end: 43
+        has_image: false
+        preview: "(2) 当 $x$ ____ 时，分式 $\\frac{x + 3}{x + 1}$ 有意义."
+        answer_ref:
+          answer_id: workbook-answer-12.1-1
+          answer_line_start: 5
+          answer_line_end: 7
+      - question_id: WB-12.1-1-Q002-S03
+        parent_question_id: WB-12.1-1-Q002
+        question_no: "2"
+        subquestion_no: "3"
+        line_start: 44
+        line_end: 45
+        has_image: false
+        preview: "(3) 若分式 $\\frac{-5}{|x| - 4}$ 无意义, 则 $x =$ ____."
+        answer_ref:
+          answer_id: workbook-answer-12.1-1
+          answer_line_start: 5
+          answer_line_end: 7
+      - question_id: WB-12.1-1-Q002-S04
+        parent_question_id: WB-12.1-1-Q002
+        question_no: "2"
+        subquestion_no: "4"
+        line_start: 46
+        line_end: 51
+        has_image: false
+        preview: "(4)若分式 $\\frac{a^{2}-4}{a+2}$ 的值为0，则a的值为____。"
+        answer_ref:
+          answer_id: workbook-answer-12.1-1
+          answer_line_start: 6
+          answer_line_end: 7
+      - question_id: WB-12.1-1-Q002-S05
+        parent_question_id: WB-12.1-1-Q002
+        question_no: "2"
+        subquestion_no: "6"
+        line_start: 52
+        line_end: 53
+        has_image: false
+        preview: "(6) $\\frac{y+1}{y^{2}+2y+1}=\\frac{1}{(\\quad)}$"
+        answer_ref:
+          answer_id: workbook-answer-12.1-1
+          answer_line_start: 5
+          answer_line_end: 7
+  - question_id: WB-12.1-1-Q003
+    source_id: workbook-12.1-1
+    source_type: exercise_bank
+    question_no: "3"
+    section: "夯实基础"
+    line_start: 54
+    line_end: 58
+    has_image: false
+    preview: "将下列分式中字母的系数化为整数。"
+    answer_ref:
+      answer_id: workbook-answer-12.1-1
+      answer_line_start: 8
+      answer_line_end: 9
+    subquestions:
+      - question_id: WB-12.1-1-Q003-S01
+        parent_question_id: WB-12.1-1-Q003
+        question_no: "3"
+        subquestion_no: "1"
+        line_start: 55
+        line_end: 56
+        has_image: false
+        preview: "(1) $\\frac{0.01x+0.5}{0.3x-0.04}$ ;"
+        answer_ref:
+          answer_id: workbook-answer-12.1-1
+          answer_line_start: 8
+          answer_line_end: 9
+      - question_id: WB-12.1-1-Q003-S02
+        parent_question_id: WB-12.1-1-Q003
+        question_no: "3"
+        subquestion_no: "2"
+        line_start: 57
+        line_end: 58
+        has_image: false
+        preview: "(2) $\\frac{\\frac{1}{5}x - 2y}{0.3x + y}$ ."
+        answer_ref:
+          answer_id: workbook-answer-12.1-1
+          answer_line_start: 8
+          answer_line_end: 9
+  - question_id: WB-12.1-1-Q004
+    source_id: workbook-12.1-1
+    source_type: exercise_bank
+    question_no: "4"
+    section: "夯实基础"
+    line_start: 59
+    line_end: 64
+    has_image: false
+    preview: "在下列等式中，从等号的左边到右边是通过怎样的变形得到的？"
+    answer_ref:
+      answer_id: workbook-answer-12.1-1
+      answer_line_start: 10
+      answer_line_end: 11
+    subquestions:
+      - question_id: WB-12.1-1-Q004-S01
+        parent_question_id: WB-12.1-1-Q004
+        question_no: "4"
+        subquestion_no: "1"
+        line_start: 61
+        line_end: 62
+        has_image: false
+        preview: "(1) $\\frac{x}{3y} = \\frac{2xz}{6yz} (z \\neq 0)$ ;"
+        answer_ref:
+          answer_id: workbook-answer-12.1-1
+          answer_line_start: 10
+          answer_line_end: 11
+      - question_id: WB-12.1-1-Q004-S02
+        parent_question_id: WB-12.1-1-Q004
+        question_no: "4"
+        subquestion_no: "2"
+        line_start: 63
+        line_end: 64
+        has_image: false
+        preview: "(2) $\\frac{(x + y)^2}{x^2 - y^2} = \\frac{x + y}{x - y}$ ."
+        answer_ref:
+          answer_id: workbook-answer-12.1-1
+          answer_line_start: 10
+          answer_line_end: 11
+  - question_id: WB-12.1-1-Q005
+    source_id: workbook-12.1-1
+    source_type: exercise_bank
+    question_no: "5"
+    section: "数学思考"
+    line_start: 67
+    line_end: 76
+    has_image: true
+    preview: "已知分式 $\\frac{|x| - 2}{x^2 + 2x}$ ."
+    answer_ref:
+      answer_id: workbook-answer-12.1-1
+      answer_line_start: 12
+      answer_line_end: 14
+    subquestions:
+      - question_id: WB-12.1-1-Q005-S01
+        parent_question_id: WB-12.1-1-Q005
+        question_no: "5"
+        subquestion_no: "1"
+        line_start: 69
+        line_end: 70
+        has_image: false
+        preview: "(1)当 $x$ 为何值时, 此分式有意义?"
+        answer_ref:
+          answer_id: workbook-answer-12.1-1
+          answer_line_start: 12
+          answer_line_end: 13
+      - question_id: WB-12.1-1-Q005-S02
+        parent_question_id: WB-12.1-1-Q005
+        question_no: "5"
+        subquestion_no: "2"
+        line_start: 71
+        line_end: 72
+        has_image: false
+        preview: "(2)当 $x$ 为何值时，此分式的值为零？"
+        answer_ref:
+          answer_id: workbook-answer-12.1-1
+          answer_line_start: 12
+          answer_line_end: 14
+      - question_id: WB-12.1-1-Q005-S03
+        parent_question_id: WB-12.1-1-Q005
+        question_no: "5"
+        subquestion_no: "3"
+        line_start: 73
+        line_end: 76
+        has_image: true
+        preview: "(3)请为 $x$ 选取一个合适的值，并求出此时分式的值."
+        answer_ref:
+          answer_id: workbook-answer-12.1-1
+          answer_line_start: 14
+          answer_line_end: 14
+  - question_id: WB-12.1-1-Q006
+    source_id: workbook-12.1-1
+    source_type: exercise_bank
+    question_no: "6"
+    section: "解决问题"
+    line_start: 79
+    line_end: 79
+    has_image: false
+    preview: "甲、乙两码头相距 $x \\mathrm{~km}$ 。已知船在静水中的速度是 $a \\mathrm{~km} / \\mathrm{h}$ ，水流的速度是 $b "
+    answer_ref:
+      answer_id: workbook-answer-12.1-1
+      answer_line_start: 15
+      answer_line_end: 15

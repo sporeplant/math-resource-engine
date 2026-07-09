@@ -1,60 +1,335 @@
-lesson_id: 12.5-2
+---
+content_type: workbook_index
+source_type: exercise_bank
+source_id: workbook-12.5-2
+answer_id: workbook-answer-12.5-2
+index_id: workbook-index-12.5-2
+question_count: 6
+subquestion_count: 20
+---
+
 questions:
-- question_id: WB-12-Q0001
-  source_id: workbook-12.5-2
-  answer_id: workbook-answer-12.5-2
-  section: 夯实基础
-  q_number: '3'
-  sub_number: ''
-  q_type: 解答题
-  tier: 基础
-  has_image: true
-  has_answer: false
-  is_open_answer: true
-  answer_preview: ''
-  text_snippet: '3. 列方程解应用题.  (1)某商场用 7200 元购进某款玩具进行销售。由于销售良好，过了一段时间，该商场又用 14800 元购进这款玩具，本次购进的数量是第一次购进数量的
-    2 '
-- question_id: WB-12-Q0002
-  source_id: workbook-12.5-2
-  answer_id: workbook-answer-12.5-2
-  section: 数学思考
-  q_number: '4'
-  sub_number: ''
-  q_type: 解答题
-  tier: 提升
-  has_image: true
-  has_answer: false
-  is_open_answer: true
-  answer_preview: ''
-  text_snippet: 4. 请根据你学到的知识和生活经验，编写一道可化为一元一次方程的分式方程应用题，并做完整的解答。编写要求如下：  (1)题意要清楚，题目要完整。  (2)联系日常生活，其解要符合实际。  (3)列出的分式方程要含有两个不同的分式.  ![](https://cdn.js
-- question_id: WB-12-Q0003
-  source_id: workbook-12.5-2
-  answer_id: workbook-answer-12.5-2
-  section: 解决问题
-  q_number: '5'
-  sub_number: ''
-  q_type: 解答题
-  tier: 应用
-  has_image: false
-  has_answer: true
-  is_open_answer: false
-  answer_preview: (1)这种商品的单价为60元. (2)甲两次采购这种商品的平均单价是48元，乙两次采购这种商品的平均单价是50元. (3)金额
-  text_snippet: 5. 甲、乙两人采购同一种商品，购进单价相同，甲用2400元采购的商品比乙用3000元采购的商品少10件。  (1)求这种商品的单价。  (2)甲、乙两人第二次去采购这种商品时,
-    该商品的单价比上次降低了 20 元, 甲采购这种商品的总价与上次相同, 乙采购这种商品
-- question_id: WB-12-Q0004
-  source_id: workbook-12.5-2
-  answer_id: workbook-answer-12.5-2
-  section: 解决问题
-  q_number: '6'
-  sub_number: ''
-  q_type: 解答题
-  tier: 应用
-  has_image: false
-  has_answer: true
-  is_open_answer: false
-  answer_preview: '解: (1) 设第一次购买水果的进价为 $x$ 元/千克. 根据题意, 得 $\frac{1452}{(1 + 10\%)x}
-    - \frac{1200}{x}'
-  text_snippet: 6. 佳佳水果店在批发市场购买某种水果, 第一次用 1200 元购买了若干千克, 并以 8 元/千克的价格出售, 很快售完。由于畅销,
-    第二次购买该水果时, 每千克的进价比第一次提高了 $10\%$ , 用 1452 元所购买的水果比第一次购买的多 $20 \mathrm{~kg}$ , 以
-    9 元/千克的价格售出 $100 \mathrm{~kg}$ 后, 因出现高温天气, 水果不易保鲜, 为减少损失, 便降价 $50 \%$ 售完剩余水果。  (1)求第一次购买水果的进价.  (2)该水果店在这两次销售中,
-    总体上是盈利还是亏损? 盈利或亏损了多少元?
+  - question_id: WB-12.5-2-Q001
+    source_id: workbook-12.5-2
+    source_type: exercise_bank
+    question_no: "1"
+    section: "夯实基础"
+    line_start: 17
+    line_end: 47
+    has_image: false
+    preview: "选择题."
+    answer_ref:
+      answer_id: workbook-answer-12.5-2
+      answer_line_start: 2
+      answer_line_end: 2
+    subquestions:
+      - question_id: WB-12.5-2-Q001-S01
+        parent_question_id: WB-12.5-2-Q001
+        question_no: "1"
+        subquestion_no: "1"
+        line_start: 19
+        line_end: 21
+        has_image: false
+        preview: "(1)某校购买了一批篮球和足球。已知购买足球的数量是篮球数量的2倍，购买足球用了5000元，购买篮球用了4000元，篮球的单价比足球的单价贵30元。根据题意，可"
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 2
+          answer_line_end: 2
+      - question_id: WB-12.5-2-Q001-S02
+        parent_question_id: WB-12.5-2-Q001
+        question_no: "1"
+        subquestion_no: "2"
+        line_start: 22
+        line_end: 24
+        has_image: false
+        preview: "(2)今年爷爷的年龄是孙子年龄的5倍, 12年后, 孙子与爷爷的年龄比为 $1:3$ . 今年孙子的年龄是 ( )"
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 2
+          answer_line_end: 2
+      - question_id: WB-12.5-2-Q001-S03
+        parent_question_id: WB-12.5-2-Q001
+        question_no: "1"
+        subquestion_no: "3"
+        line_start: 25
+        line_end: 27
+        has_image: false
+        preview: "(3)嘉琪借了一本 360 页的故事书, 想在 14 天内读完. 当她读完半本时, 发现接下来每天要多读 16 页才能恰好如期读完. 她读前半本时, 平均每天读"
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 2
+          answer_line_end: 2
+      - question_id: WB-12.5-2-Q001-S04
+        parent_question_id: WB-12.5-2-Q001
+        question_no: "1"
+        subquestion_no: "4"
+        line_start: 28
+        line_end: 37
+        has_image: false
+        preview: "(4)某工厂计划生产 1500 个零件, 但是在实际生产时, * * * , 求实际每天生产零件的数量。在这个题目中, 若设实际每天生产零件 $x$ 个, 可得"
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 2
+          answer_line_end: 2
+      - question_id: WB-12.5-2-Q001-S05
+        parent_question_id: WB-12.5-2-Q001
+        question_no: "1"
+        subquestion_no: "5"
+        line_start: 38
+        line_end: 47
+        has_image: false
+        preview: "(5)某店在开学初用 880 元购进若干个学生专用科学计算器, 按每个 50 元出售,很快就销售一空。据了解, 学生还急需 3 倍数量的这种计算器, 于是该店又"
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 2
+          answer_line_end: 2
+  - question_id: WB-12.5-2-Q002
+    source_id: workbook-12.5-2
+    source_type: exercise_bank
+    question_no: "2"
+    section: "夯实基础"
+    line_start: 48
+    line_end: 59
+    has_image: false
+    preview: "填空题。"
+    answer_ref:
+      answer_id: workbook-answer-12.5-2
+      answer_line_start: 3
+      answer_line_end: 10
+    subquestions:
+      - question_id: WB-12.5-2-Q002-S01
+        parent_question_id: WB-12.5-2-Q002
+        question_no: "2"
+        subquestion_no: "1"
+        line_start: 50
+        line_end: 51
+        has_image: false
+        preview: "(1)甲走 12 km 的时间等于乙走 15 km 的时间，乙比甲每小时多走 1 km。若设甲每小时走 x km，则可列方程为 ____。"
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 3
+          answer_line_end: 3
+      - question_id: WB-12.5-2-Q002-S02
+        parent_question_id: WB-12.5-2-Q002
+        question_no: "2"
+        subquestion_no: "2"
+        line_start: 52
+        line_end: 53
+        has_image: false
+        preview: "(2)某商店第一次用 600 元购进某款铅笔若干支, 第二次又用 600 元购进同款铅笔, 但这次每支铅笔的进价是第一次每支铅笔进价的 $\\frac{5}{4}"
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 9
+          answer_line_end: 10
+      - question_id: WB-12.5-2-Q002-S03
+        parent_question_id: WB-12.5-2-Q002
+        question_no: "2"
+        subquestion_no: "3"
+        line_start: 54
+        line_end: 55
+        has_image: false
+        preview: "(3)有一个两位数，其个位上的数比十位上的数大1，这个两位数除以它个位上的数时，商是8，余数是2，则这个两位数是____。"
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 3
+          answer_line_end: 10
+      - question_id: WB-12.5-2-Q002-S04
+        parent_question_id: WB-12.5-2-Q002
+        question_no: "2"
+        subquestion_no: "4"
+        line_start: 56
+        line_end: 57
+        has_image: false
+        preview: "(4)甲、乙两列火车的长分别为 $150 \\, m$ 和 $200 \\, m$ ，它们在平行的轨道上相向而行。若甲火车上的某乘客测得乙火车从他窗口外经过的时间是"
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 4
+          answer_line_end: 8
+      - question_id: WB-12.5-2-Q002-S05
+        parent_question_id: WB-12.5-2-Q002
+        question_no: "2"
+        subquestion_no: "5"
+        line_start: 58
+        line_end: 59
+        has_image: false
+        preview: "(5)A, B两地相距 $48 \\mathrm{~km}$ . 一艘轮船从 A 地顺流航行至 B 地, 又立即从 B 地逆流返回 A 地, 共用去 $9 \\ma"
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 3
+          answer_line_end: 10
+  - question_id: WB-12.5-2-Q003
+    source_id: workbook-12.5-2
+    source_type: exercise_bank
+    question_no: "3"
+    section: "夯实基础"
+    line_start: 60
+    line_end: 73
+    has_image: true
+    preview: "列方程解应用题."
+    answer_ref:
+      answer_id: workbook-answer-12.5-2
+      answer_line_start: 4
+      answer_line_end: 4
+    subquestions:
+      - question_id: WB-12.5-2-Q003-S01
+        parent_question_id: WB-12.5-2-Q003
+        question_no: "3"
+        subquestion_no: "1"
+        line_start: 62
+        line_end: 67
+        has_image: false
+        preview: "(1)某商场用 7200 元购进某款玩具进行销售。由于销售良好，过了一段时间，该商场又用 14800 元购进这款玩具，本次购进的数量是第一次购进数量的 2 倍，"
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 4
+          answer_line_end: 4
+      - question_id: WB-12.5-2-Q003-S02
+        parent_question_id: WB-12.5-2-Q003
+        question_no: "3"
+        subquestion_no: "2"
+        line_start: 68
+        line_end: 73
+        has_image: true
+        preview: "(2)如图, 小明家、王老师家和学校在同一条路上, 小明家到王老师家的路程为 $3 \\mathrm{~km}$ , 王老师家到学校的路程为 $0.5 \\math"
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 4
+          answer_line_end: 4
+  - question_id: WB-12.5-2-Q004
+    source_id: workbook-12.5-2
+    source_type: exercise_bank
+    question_no: "4"
+    section: "数学思考"
+    line_start: 76
+    line_end: 85
+    has_image: true
+    preview: "请根据你学到的知识和生活经验，编写一道可化为一元一次方程的分式方程应用题，并做完整的解答。编写要求如下："
+    answer_ref:
+      answer_id: workbook-answer-12.5-2
+      answer_line_start: 11
+      answer_line_end: 12
+    subquestions:
+      - question_id: WB-12.5-2-Q004-S01
+        parent_question_id: WB-12.5-2-Q004
+        question_no: "4"
+        subquestion_no: "1"
+        line_start: 78
+        line_end: 79
+        has_image: false
+        preview: "(1)题意要清楚，题目要完整。"
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 11
+          answer_line_end: 12
+      - question_id: WB-12.5-2-Q004-S02
+        parent_question_id: WB-12.5-2-Q004
+        question_no: "4"
+        subquestion_no: "2"
+        line_start: 80
+        line_end: 81
+        has_image: false
+        preview: "(2)联系日常生活，其解要符合实际。"
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 11
+          answer_line_end: 12
+      - question_id: WB-12.5-2-Q004-S03
+        parent_question_id: WB-12.5-2-Q004
+        question_no: "4"
+        subquestion_no: "3"
+        line_start: 82
+        line_end: 85
+        has_image: true
+        preview: "(3)列出的分式方程要含有两个不同的分式."
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 11
+          answer_line_end: 12
+  - question_id: WB-12.5-2-Q005
+    source_id: workbook-12.5-2
+    source_type: exercise_bank
+    question_no: "5"
+    section: "解决问题"
+    line_start: 88
+    line_end: 95
+    has_image: false
+    preview: "甲、乙两人采购同一种商品，购进单价相同，甲用2400元采购的商品比乙用3000元采购的商品少10件。"
+    answer_ref:
+      answer_id: workbook-answer-12.5-2
+      answer_line_start: 13
+      answer_line_end: 14
+    subquestions:
+      - question_id: WB-12.5-2-Q005-S01
+        parent_question_id: WB-12.5-2-Q005
+        question_no: "5"
+        subquestion_no: "1"
+        line_start: 90
+        line_end: 91
+        has_image: false
+        preview: "(1)求这种商品的单价。"
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 13
+          answer_line_end: 14
+      - question_id: WB-12.5-2-Q005-S02
+        parent_question_id: WB-12.5-2-Q005
+        question_no: "5"
+        subquestion_no: "2"
+        line_start: 92
+        line_end: 93
+        has_image: false
+        preview: "(2)甲、乙两人第二次去采购这种商品时, 该商品的单价比上次降低了 20 元, 甲采购这种商品的总价与上次相同, 乙采购这种商品的数量与上次相同. 甲、乙两人两"
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 13
+          answer_line_end: 14
+      - question_id: WB-12.5-2-Q005-S03
+        parent_question_id: WB-12.5-2-Q005
+        question_no: "5"
+        subquestion_no: "3"
+        line_start: 94
+        line_end: 95
+        has_image: false
+        preview: "(3)在生活中, 无论汽油的价格如何变化, 有人总是按相同金额加油, 有人总是按相同油量加油. 结合(2)中的计算结果, 建 议按相同____加油更合算。（填“"
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 13
+          answer_line_end: 14
+  - question_id: WB-12.5-2-Q006
+    source_id: workbook-12.5-2
+    source_type: exercise_bank
+    question_no: "6"
+    section: "解决问题"
+    line_start: 96
+    line_end: 100
+    has_image: false
+    preview: "佳佳水果店在批发市场购买某种水果, 第一次用 1200 元购买了若干千克, 并以 8 元/千克的价格出售, 很快售完。由于畅销, 第二次购买该水果时, 每千克的"
+    answer_ref:
+      answer_id: workbook-answer-12.5-2
+      answer_line_start: 15
+      answer_line_end: 25
+    subquestions:
+      - question_id: WB-12.5-2-Q006-S01
+        parent_question_id: WB-12.5-2-Q006
+        question_no: "6"
+        subquestion_no: "1"
+        line_start: 98
+        line_end: 99
+        has_image: false
+        preview: "(1)求第一次购买水果的进价."
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 15
+          answer_line_end: 25
+      - question_id: WB-12.5-2-Q006-S02
+        parent_question_id: WB-12.5-2-Q006
+        question_no: "6"
+        subquestion_no: "2"
+        line_start: 100
+        line_end: 100
+        has_image: false
+        preview: "(2)该水果店在这两次销售中, 总体上是盈利还是亏损? 盈利或亏损了多少元?"
+        answer_ref:
+          answer_id: workbook-answer-12.5-2
+          answer_line_start: 20
+          answer_line_end: 25

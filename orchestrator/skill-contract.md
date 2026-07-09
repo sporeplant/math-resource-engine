@@ -89,6 +89,13 @@ answer_id: ""  # 当 source_type=exercise_bank 时必填
 - 仿题、类题、变式题替代题库题
 - 无来源题目进入outputs
 
+练习册题源额外约束：
+
+- `source_type: exercise_bank` 时，`source_id` 必须指向 `knowledge/workbooks/workbook-*.md`。
+- `question_id` 或 `question_ids` 必须能在 `knowledge/workbook-index/workbook-index-*.yaml` 中找到。
+- 调用方必须同时读取对应 `knowledge/workbook-answers/workbook-answer-*.md`，不得自行推导或补写练习册答案。
+- 缺少题库、答案或索引任一文件时，评价、活动、作业、课件和调度稿 Skill 必须停止。
+
 教材问题解答skills沿用同等题源强约束，并额外使用中文“答案来源”字段：
 
 ```yaml

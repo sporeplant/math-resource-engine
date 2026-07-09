@@ -4,10 +4,9 @@
 - [ ] 基础层必做 ≤ 3 题
 - [ ] 中间层必做 ≤ 2 题
 - [ ] 拓展层选做 ≤ 1 题
-- [ ] 每道题携带完整题源字段（source_id、source_type、question_id；练习册题另带 answer_id）
-- [ ] 题目来源符合优先顺序（教材原文 → 练习册索引 → 练习册题库）
-- [ ] 练习册补充题是否通过练习册索引按 `tier` 字段分层选取
-- [ ] 开放答案题（`is_open_answer: true`）是否仅用于拓展层选做
+- [ ] 每道题携带完整题源字段（source_id、source_type、question_id）
+- [ ] 题目来源来自教材原文或练习册题库，未自行生成
 - [ ] 教材题已按 question_id 与教材参考解答核对
+- [ ] 练习册题已按 question_id 与 `knowledge/workbook-index/` 和答案文件核对
 - [ ] 无 LLM 生成新题
 - [ ] 作业量符合课时剩余时间

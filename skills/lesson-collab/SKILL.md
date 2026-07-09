@@ -83,8 +83,8 @@ skills运行时，PROJECT_ROOT 为 `E:\OneDrive\math-resource-engine\`。
 | 对应课标 | `knowledge/standards/curriculum-standards.md` |
 | 对应课型定义 | `knowledge/types/{课型}.md` |
 | 对应练习册题库 | `knowledge/workbooks/` 中匹配的题目 |
-| 对应练习册索引 | `knowledge/workbook-index/workbook-index-{lesson}.yaml`（如存在；参见 quality-gates §6） |
-| 练习册答案 | `knowledge/workbook-answers/workbook-answer-{lesson}.md`（如存在） |
+| 对应练习册答案 | `knowledge/workbook-answers/` 中匹配的答案 |
+| 对应练习册逐题索引 | `knowledge/workbook-index/` 中匹配的索引 |
 | 数学本质分析 | 读取 `knowledge/math-essence/INDEX.yaml`，按 `chapter_refs` 或 `topic_zh` 匹配当前课时；若无匹配则跳过 |
 | 对应常见错误 | 读取 `knowledge/common-errors/INDEX.yaml`，按 `domain` 或 `chapter_refs` 匹配；若无匹配则跳过 |
 | 对应教学策略 | 读取 `knowledge/teaching-strategies/INDEX.yaml`，按 `domain` 匹配；若无匹配则跳过 |
@@ -98,6 +98,13 @@ skills运行时，PROJECT_ROOT 为 `E:\OneDrive\math-resource-engine\`。
 - `students/example.md` 与 `students/template.md` 仅用于格式说明，不得替代真实学生成绩数据。
 - 真实数据文件存在时，禁止以“未提供真实班级近期数据”为由降级使用示例或通用学情。
 - 教学设计正文只呈现分层特征和教学适配要求，不写具体学生姓名。
+
+练习册题库读取规则：
+
+- 对应课时存在练习册题库时，必须同时读取题库文件、答案文件和逐题索引。
+- 三件套任一缺失或校验失败时，停止 `/lesson-collab`，不得进入评价设计确认门。
+- 评价、活动和作业中引用练习册题目时，必须使用索引中的 `WB-...` 题号。
+- 练习册题目用于评价证据、课堂练习、例题和作业，不改变教材正文的概念形成顺序。
 
 ## 4. 课题确认环节
 
@@ -155,19 +162,6 @@ skills运行时，PROJECT_ROOT 为 `E:\OneDrive\math-resource-engine\`。
 - 禁止忽略用户输入错误继续执行
 - 禁止猜测用户意图而不进行确认
 
-### 练习册资源就绪检查
-
-课题确认后，在进入强制步骤链之前，执行练习册资源就绪检查（详见 orchestrator/quality-gates.md §6）：
-
-1. 检查 knowledge/workbooks/workbook-{lesson}.md 是否存在
-2. 若存在题库文件，检查 knowledge/workbook-answers/workbook-answer-{lesson}.md 是否存在
-3. 若题库和答案均存在，检查 knowledge/workbook-index/workbook-index-{lesson}.yaml 是否存在
-4. 根据检查结果按阻断等级处理：
-   - **题库 + 答案 + 索引 三者齐全** → 正常进入强制步骤链
-   - **有题库、无答案** → 警告后继续；练习册题仅作候选不可强制选用
-   - **有题库 + 答案、无索引** → 终止；提示用户运行 index_workbook.py
-   - **无题库** → 不阻断；后续禁止引用练习册题源
-
 ## 5. 强制步骤链（执行链）
 
 课题确认通过后，严格按以下步骤链执行：
@@ -175,7 +169,7 @@ skills运行时，PROJECT_ROOT 为 `E:\OneDrive\math-resource-engine\`。
 ```text
 课题确认（按orchestrator登记的课题匹配规则执行）
   ↓
-练习册资源就绪检查（检查题库/答案/索引，按阻断等级处理）
+定位并校验对应课时教材参考解答、练习册题库、练习册答案和逐题索引
   ↓
 知识分析（AI 生成草稿）
   ↓
@@ -296,7 +290,7 @@ outputs完整教学设计
 |------|------|
 | 负责skills | `skills/homework/SKILL.md` |
 | 执行方式 | AI 自动完成 |
-| 输入 | 学习目标 + 评价任务 + 知识分析 + `knowledge/workbooks/` + 对应课时教材参考解答 |
+| 输入 | 学习目标 + 评价任务 + 知识分析 + `knowledge/workbooks/` + `knowledge/workbook-answers/` + `knowledge/workbook-index/` + 对应课时教材参考解答 |
 | outputs | 分层作业（基础层必做 ≤ 3 题、中间层必做 ≤ 2 题、拓展层选做 ≤ 1 题） |
 
 ### 6.7 质量检查
@@ -537,6 +531,7 @@ question_ids:
 2. ❌ outputs中出现"理解""掌握""了解""体会""感受""知道"等禁止词汇
 3. ❌ outputs结构中缺少基础/中间/拓展任意一层
 4. ❌ 使用了非题库来源的题目（LLM自行生成）
+4a. ❌ 使用未登记到 `knowledge/workbook-index/` 的练习册题目
 5. ❌ 数学概念、公式、定理出现错误
 6. ❌ 未注入课标要求（教学目标、评价设计、教学设计类任务）
 7. ❌ 未注入学情数据（教学目标、活动设计类任务）
@@ -563,6 +558,7 @@ question_ids:
 - 禁止打乱教材原文内容模块的先后顺序
 - 禁止使用不可观察行为动词（理解、掌握、了解、体会、感受、知道）
 - 禁止用超出教材进度的学科化术语替代教材表达；必要时改写为学生可观察、可操作的教材语言
+- 禁止在练习册题库、答案或逐题索引缺失时继续评价、活动、作业或整合输出
 
 ## 11. 后续动作
 

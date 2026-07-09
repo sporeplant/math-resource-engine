@@ -170,6 +170,9 @@ outputs完整教学设计
 定位并校验对应课时教材参考解答
   文件缺失、课时不匹配、验证失败或 review_status ≠ 审核通过 → 立即终止本次任务
   ↓
+定位并校验对应课时练习册题库、答案和逐题索引
+  任一缺失、课时不匹配或验证失败 → 立即终止本次任务
+  ↓
 知识分析（AI 生成草稿）
   ↓
 🛑 确认门1：知识分析确认
@@ -280,10 +283,15 @@ outputs完整教学设计
 
 24. `orchestrator/skill-protocol.md` 中 §2a `/lesson-collab` 强制链
 25. `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md`
+26. 对应课时 `knowledge/workbooks/workbook-*.md`
+27. 对应课时 `knowledge/workbook-answers/workbook-answer-*.md`
+28. 对应课时 `knowledge/workbook-index/workbook-index-*.yaml`
 
 教材参考解答必须在知识分析开始前完成校验：文件存在，`content_type: textbook_solution`，`lesson_id` 与当前课时一致，`review_status: 审核通过`，并通过教材问题解答validators。任一条件不满足时立即终止本次任务，报告预期路径或失败项，并提示执行 `/教材问题解答 {课时}` 后重新发起 `/lesson-collab`。禁止自动补齐、降级读取教材原文临时推导、跳过校验或继续任何确认门。
 
 评价设计和活动设计必须按 `question_id` 使用教材参考解答核对教材任务清单、评价证据、成功标准、预期回答、反馈要点和课堂练习答案。教学设计的 `source_files` 必须登记该教材参考解答文件。
+
+练习册题库必须在评价设计前完成三件套校验：题库文件通过 `tools/validate-workbook-split.py`，答案文件通过 `tools/validate-workbook-answer-split.py`，逐题索引通过 `tools/validate-workbook-index.py`。任一条件不满足时立即终止本次任务，提示先执行练习册拆分、答案拆分或索引生成。评价、活动和作业中引用练习册题目时，必须使用索引中的 `WB-...` 题号，并在 `source_files` 登记题库、答案和索引。
 
 ### `/lesson-collab` outputs
 
@@ -500,6 +508,9 @@ outputs课件与课堂提问调度稿
 定位并校验对应课时教材参考解答
   文件缺失、课时不匹配或验证失败 → 立即终止本次任务
   ↓
+定位并校验对应课时练习册题库、答案和逐题索引
+  任一缺失、课时不匹配或验证失败 → 立即终止本次任务
+  ↓
 读取人工审核通过的教学设计
   ↓
 🛑 确认门1：课件结构规划
@@ -579,10 +590,15 @@ outputs课件与课堂提问调度稿
 12. `orchestrator/skill-protocol.md` 中 §3a `/courseware-collab` 强制链
 13. `skills/ask-check/SKILL.md` 和 `skills/ask-check/checklist.md`（到确认门2前再读取并自检）
 14. `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md`
+15. 对应课时 `knowledge/workbooks/workbook-*.md`
+16. 对应课时 `knowledge/workbook-answers/workbook-answer-*.md`
+17. 对应课时 `knowledge/workbook-index/workbook-index-*.yaml`
 
 教材参考解答必须在读取教学设计和进入确认门1前完成校验：文件存在，`content_type: textbook_solution`，`lesson_id` 与当前课时一致，并通过教材问题解答validators。任一条件不满足时立即终止本次任务，报告预期路径或失败项，并提示执行 `/教材问题解答 {课时}` 后重新发起 `/courseware-collab`。禁止自动补齐、降级推导、跳过校验或继续后续确认门。
 
 课堂提问调度稿中直接对应教材任务的板块A答案，以及板块B中的教材例题、练习和习题解答，必须按 `question_id` 复用教材参考解答。允许压缩表达，不得改变数学结论、解题依据和 `答案来源`。练习册题仍按练习册题源处理。课堂提问调度稿的 `source_files` 必须登记教材参考解答和课件所消费的上游文件。
+
+练习册题库、答案和逐题索引必须在确认门1前完成校验。课堂提问调度稿中所有 `source_type: exercise_bank` 的题目必须按 `question_id` 从索引定位题目，并按 `answer_ref` 读取答案文件生成教师参考答案；禁止重新推导后替代答案册边界。课堂提问调度稿的 `source_files` 必须登记题库、答案和索引。
 
 ### `/courseware-collab` outputs
 
