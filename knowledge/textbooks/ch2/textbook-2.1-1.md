@@ -26,8 +26,6 @@ lesson_id: 2.1.1
 
 在现实生活中，物体的形状、大小及相互之间的位置关系，反映着几何图形的性质和彼此的关联。那么，怎样从数学角度来认识图形呢？ 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/1bee145b93e572f17bb8c438ab0772519c23659d8a50b4a7bfc17bd6f7792a06.jpg)
-
 
 ## 观察与思考
 
@@ -66,8 +64,6 @@ lesson_id: 2.1.1
 图形的形状、大小及图形之间的位置关系是几何研究的主要内容. 
 
 形(geometric figure). 如小学阶段学过的长方体、正方体、圆柱、圆锥、球、点、线段、三角形、四边形等，都是几何图形. 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/c5610b888144696e10216852fd16c09bd83afb287ecab3db0ad29e01957838c0.jpg)
 
 
 ## 做一做
@@ -165,8 +161,6 @@ lesson_id: 2.1.1
 
 数学上的平面没有边界，是无限延展的。 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a91310b2aa8ca624d72e45e7aa3c8d19e1799b8f1909801969558c71cfa27d28.jpg)
-
 
 ## 大家谈谈
 
@@ -206,8 +200,6 @@ lesson_id: 2.1.1
 
 图2.1-3
 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/92e7224ab5ce7a0a232b2cbb54a8fc4e8b72cc500b62216c7870a8dc6d961817.jpg)
 
 
 ## 练习

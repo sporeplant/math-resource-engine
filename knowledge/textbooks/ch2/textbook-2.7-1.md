@@ -41,8 +41,6 @@ $$
 ![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/ebee5574bc517f7a2938e16e82e26b639a484d5c590ec3fed29c7df63125cfd3.jpg)
 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a90c3a518638d5b5bd970b1c93ca809dc15794aff4eb60db6773e7a2efa5633b.jpg)
-
 
 ## 做一做
 
@@ -95,8 +93,6 @@ $$
 
 如果 $\angle\alpha+\angle\beta=180^{\circ}$ ，那么我们就称这两个角互为补角（supplementary angles），简称互补．其中， $\angle\alpha$ （或 $\angle\beta$ ）叫作 $\angle\beta$ （或 $\angle\alpha$ ）的补角（supplement of an angle）. 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/7cc5c47c8f9f503af6f9be188389e208c791d47d4f5a9571bee1cdd4f8a5edcf.jpg)
-
 
 ## 做一做
 
@@ -126,8 +122,6 @@ $$
 
 像图 2.7-4（2）中 $\angle DSF$ 与 $\angle FSE$ 所具有的位置关系和数量关系的两个角，我们称之为邻补角. 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f05ae4d4c1eab8fd1684240828d63ff6831a880e60b5821eb32e5e10aec8cdb1.jpg)
-
 
 ## 大家谈谈
 
@@ -150,8 +144,6 @@ $$
 用同样的方式可以说明：如果 $\angle 3$ 和 $\angle 4$ 都是 $\angle \beta$ 的补角，那么 $\angle 3 = \angle 4$ . 
 
 同角(或等角)的余角相等，同角(或等角)的补角相等. 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/5f0c21b50a7cde2e4240ffe3a768effbc89af61c831c1e67d3062ba33e3b4b75.jpg)
 
 
 ## 练习

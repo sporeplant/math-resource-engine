@@ -11,8 +11,6 @@ lesson_id: 2.4.1
 
 两条线段可以比较长短，还可以求出它们的和与差. 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/804d687e2bfa9b220df26f40c76e9123bc9afb1f36c01199a1028a049574b869.jpg)
-
 
 ## 一起探究
 
@@ -37,8 +35,6 @@ lesson_id: 2.4.1
 
 
 如图 2.4-2，在直线 $l$ 上画出线段 $AB = a$ ，在 $AB$ 上截取线段 $AD = b$ ，则线段 $DB$ 就是线段 $a$ 与 $b$ 的差，即 $DB = a - b$ . 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/a966dcc65a464d3d2029db12d9178b3a277966ed3fa9c95abde9deac35f04d1b.jpg)
 
 
 ## 做一做
@@ -139,8 +135,6 @@ $$
 因为 $AB = 8\mathrm{cm}$ 
 
 所以 $CD=\frac{1}{2}AB=\frac{1}{2}\times8=4(\text{cm})$ . 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/9b1e9bdc363d22b9ce029fbbe85536edc8fedf6423f712ec78a5b39072542a20.jpg)
 
 
 ## 练习

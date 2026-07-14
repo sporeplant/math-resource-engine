@@ -13,8 +13,6 @@ lesson_id: 2.2.1
 
 在小学阶段，我们已经对线段、射线和直线有了初步认识. 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b462fd256aa6aee90b60d61a16ed65384247f9ce97717455580f5db1f2a7399d.jpg)
-
 
 ## 大家谈谈
 
@@ -45,8 +43,6 @@ lesson_id: 2.2.1
 图2.2-3
 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/59d2503f9d4fb0663fe4bd6d9b1b690e3682d3975217d8d1ced6c6e6e58cab76.jpg)
-
 
 ## 一起探究
 
@@ -68,8 +64,6 @@ l
 图2.2-4
 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6ee3cd28992e9bfdf6c95dd831a40f96b8bca4216dfcf280b459399807eb5cbd.jpg)
-
 
 ## 观察与思考
 
@@ -85,8 +79,6 @@ l
 ## 基本事实 两点确定一条直线.
 
 基本事实是人们在长期实践中发现的正确结论，可以作为推理的依据。 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/81bd97699a6fa50848b4725e8eebbbba496bc5ca609d0f39d1120398105a3f53.jpg)
 
 
 ## 练习

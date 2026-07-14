@@ -11,8 +11,6 @@ lesson_id: 2.5.1
 
 我们对角已经有了初步的了解。现在，我们从角的表示及度量方面来进一步认识角。 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e568e4c6c48c6cfc60c025d44b3474b76add27570e24f57d62ed08a1ba543cef.jpg)
-
 
 ## 观察与思考
 
@@ -136,8 +134,6 @@ $$
 $$
 1 0 ^ {\circ} 6 ^ {\prime} 3 6 ^ {\prime \prime} = 1 0. 1 1 ^ {\circ}.
 $$
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e09cd1d1680f8a8fe322a2ebfc12fddee7cc6ae5be47634e5d08341a2e734e70.jpg)
 
 
 ## 练习

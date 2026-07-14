@@ -11,8 +11,6 @@ lesson_id: 2.8.1
 
 射线绕其端点旋转，可以形成角。那么一个图形绕某个点旋转，会有怎样的性质呢？ 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6ca19dce62196fb73c3c8122dae0f2546d027ce64627432fb48d3cc8a9971d55.jpg)
-
 
 ## 观察与思考
 
@@ -47,8 +45,6 @@ lesson_id: 2.8.1
 在图2.8-1中，旋转中心是点 $O$ ，旋转角是 $\angle AOB$ 。在图2.8-2中，旋转中心是点 $O$ ，旋转角是 $\angle AOC$ （或 $\angle BOD$ ）；点 $A$ 与点 $C$ 是对应点，点 $B$ 与点 $D$ 也是对应点；线段 $AB$ 与 $CD$ 是对应线段。 
 
 旋转只改变图形的位置，不改变图形的形状和大小. 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/72d3b407377dc510f9800504141c0c1962e5bb1b48ff4abc8615ed2931d364b7.jpg)
 
 
 ## 一起探究
@@ -112,8 +108,6 @@ lesson_id: 2.8.1
 图2.8-6 
 
 (2) 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/033a1bd035e4a3eccc6b4cbde1745a540b7f0ebf6e2359f6c2d9b08620689270.jpg)
 
 
 ## 练习

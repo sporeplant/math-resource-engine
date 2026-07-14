@@ -11,8 +11,6 @@ lesson_id: 2.3.1
 
 图形的大小是几何研究的主要内容之一。对于两条线段，如何比较它们的长短呢？ 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/f459d3a9fd47aebddd3597d11695b53db8b6f0c6a08582367a4acb91b9b68cb8.jpg)
-
 
 ## 大家谈谈
 
@@ -67,8 +65,6 @@ lesson_id: 2.3.1
 图2.3-4
 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2d3493e235afdd7ee8f92331c0c1c1b1ed655ce5a3935e64b864f08b9f7d06ec.jpg)
-
 
 ## 做一做
 
@@ -84,8 +80,6 @@ lesson_id: 2.3.1
 
 
 (2) 延长 AB 到点 D，使 BD = AP. 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/6d9d93d6af54785b78a5c83cd0081389b10d1b51e1892ff2a6658240da1e6440.jpg)
 
 
 ## 观察与思考
@@ -109,8 +103,6 @@ lesson_id: 2.3.1
 两点之间线段的长度，叫作两点之间的距离(distance). 
 
 在现实生活中，测量两点之间距离的方法有很多，可以借助工具(如卷尺、游标卡尺等)测量，也可以利用某些仪器(如红外线测距仪、激光测距仪、雷达等)测量. 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/12b91cc560973fc745ef3356f44e272c899ce4a8a574a23230a052f39af3f07f.jpg)
 
 
 ## 练习

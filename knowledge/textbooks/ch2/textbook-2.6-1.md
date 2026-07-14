@@ -28,8 +28,6 @@ lesson_id: 2.6.1
 
 一般地，可以分别量出 $\angle AOB$ 和 $\angle A'O'B'$ 的度数。哪个角的度数较大，哪个角就较大；当度数相等时，两个角相等。 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/830b405a309dd96acf2d3627e5ab51bdaa23f71fdc92103d9eaa8af81dde8091.jpg)
-
 
 ## 一起探究
 
@@ -74,8 +72,6 @@ lesson_id: 2.6.1
 
 作一个角等于已知角，我们可以用量角器量出已知角的度数，再画出等于这个度数的角来。除此之外，还有其他方法吗？ 
 
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/57fe8b371319c5d012ace9b3e9b605b00dc5f990915255857ee52a881930636e.jpg)
-
 
 ## 做一做
 
@@ -116,8 +112,6 @@ $\angle A^{\prime}O^{\prime}B^{\prime}$ 即为所求.
 2. 请用叠合的方法验证 $\angle A^{\prime}O^{\prime}B^{\prime} = \angle AOB$ . 
 
 像这样只用直尺(无刻度)和圆规画图的方法称为尺规作图(construction with ruler and compasses). 
-
-![](https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/84778e5bd813363218b5c85725386facaf24a5444f536844129f901fe1084f6d.jpg)
 
 
 ## 练习
