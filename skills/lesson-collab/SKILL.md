@@ -104,7 +104,7 @@ skills运行时，PROJECT_ROOT 为 `E:\OneDrive\math-resource-engine\`。
 
 - 对应课时存在练习册题库时，必须同时读取题库文件、答案文件和逐题索引。
 - 三件套任一缺失或校验失败时，停止 `/lesson-collab`，不得进入评价设计确认门。
-- 评价、活动和作业中引用练习册题目时，必须使用索引中的 `WB-...` 题号。
+- 后台 `question_id` 字段必须使用索引中的 `WB-...` 题号；前台（教师/学生可读文本）禁止出现 `WB-*`、`Q00*` 等后台索引号，必须使用纸质可定位格式（`练习册《课时名称》"栏目"第X题(第Y小题)`），详见 `orchestrator/resource-scheduling.md` 第6节。
 - 练习册题目用于评价证据、课堂练习、例题和作业，不改变教材正文的概念形成顺序。
 
 ## 4. 课题确认环节
@@ -294,7 +294,7 @@ outputs完整教学设计
 | 负责skills | `skills/homework/SKILL.md` |
 | 执行方式 | AI 自动完成 |
 | 输入 | 学习目标 + 评价任务 + 知识分析 + `knowledge/workbooks/` + `knowledge/workbook-answers/` + `knowledge/workbook-index/` + 对应课时教材参考解答 |
-| outputs | 分层作业（基础层必做 ≤ 3 题、中间层必做 ≤ 2 题、拓展层选做 ≤ 1 题） |
+| outputs | 分层作业：后台 `## homework` 分基础/中间/拓展三层（含题源+预计用时）；前台 `## 六、课后作业` 归并为必做（2-3行）+ 选做（1行）简版，详见 `skills/homework/SKILL.md` 第7节 |
 
 ### 6.7 质量检查
 
@@ -404,6 +404,17 @@ created_at: ""
 
 ## 七、课后作业
 
+前台简版（课代表可直接抄写）：
+
+**必做**：
+1. 教材习题...
+2. 练习册《课时名》"栏目"...
+
+**选做**：
+3. 教材习题...
+
+> 分层明细及预计用时见折叠区。
+
 ## 八、板书设计
 
 ## 九、设计依据简记
@@ -462,7 +473,7 @@ created_at: ""
 
 - 第一层不得出现 `LO-*`、`AS-*`、`ACT-*`、`ASK_*`、`source_id`、`source_type`、`question_id` 等后台字段。
 - 第一层教学过程与第二层 `lesson_flow` 的活动数量、顺序和时间一致。
-- 第一层练习和作业只能压缩表达第二层已有任务，不得新增无题源任务。
+- 第一层练习和作业只能压缩表达第二层已有任务，不得新增无题源任务。课后作业前台必须为必做/选做简版（详见 `skills/homework/SKILL.md` 第7节），不出现分层标签、题型说明和后台字段。
 - 第一层必须说明后移到习题课、讲评课或周练的题目安排，并能在第二层 `deferred_exercises` 找到对应记录。
 - 每个 `ACT-*` 必须包含 `time_priority` 和六字段 `time_budget`，并通过 `tools/validate_lesson_timing.py`。
 - 时间验证“有条件通过”时，第一层课堂实施要点必须写明可后移的 `flex` 或 `backup` 活动；“不通过”时不得outputs教学设计。

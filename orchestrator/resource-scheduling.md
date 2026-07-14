@@ -76,5 +76,6 @@
 
 1. 前台正文包含“当堂检测”和“课后作业”，使用教师可直接阅读的自然语言。
 2. 前台正文说明后移题安排，不暴露 `source_id`、`source_type`、`question_id` 等后台字段。
-3. 后台折叠层包含 `resource_audit`、`practice`、`homework`、`deferred_exercises`。
-4. 后台所有题目必须带完整题源字段。
+3. **练习册题目前台引用格式**：面向教师/学生的练习册题目描述必须使用纸质可定位格式——`练习册《课时名称》“栏目”第X题(第Y小题)`。有可靠页码时优先显示页码，无页码时不得编造。**禁止**出现 `Q00*`、`WB-*`、`Q003-S01` 等后台索引号。
+4. 后台折叠层包含 `resource_audit`、`practice`、`homework`、`deferred_exercises`。
+5. 后台所有题目必须带完整题源字段（`source_id`、`source_type`、`question_id`），这些后台字段不向前台暴露。

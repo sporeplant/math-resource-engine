@@ -40,34 +40,70 @@
 
 ## outputs
 
-```yaml
-知识主题:
+知识分析使用**结构化 Markdown** 输出，**禁止使用代码块**（` ```yaml ` 等）。代码块内的 LaTeX 公式（`$...$`）不会被 Typora 渲染。
 
-知识本质:
+```markdown
+**知识主题**：
 
-知识来源:
+**知识本质**：（含核心数学关系，使用 $...$ 行内公式）
 
-知识生长路径:
+**知识来源**：
 
-前置知识:
+**知识生长路径**：
 
-后续知识:
+> 前置：...
+> ↓ ...
+> 本课核心 ...
+> ↓ ...
+> 后续：...
 
-核心思想:
+**前置知识**：
+- 
+- 
 
-学习难点:
+**后续知识**：
+- 
+- 
 
-常见误解:
+**核心思想**：
+- 类比思想：...
+- 转化思想：...
+- 
 
-# ---- 以下为下游活动设计提供的中间结果 ----
-活动设计上下文:
-  math_essence:            # 从 math-essence 文件提炼，简明扼要
-  critical_aspects:        # 学生必须辨识的关键方面
-  cognitive_obstacles:     # 已有认识、典型错误和认知障碍（综合 math-essence + common-errors + learning-theory）
-  target_cognitive_changes: # 希望学生从何种理解转变为何种理解
-  variation_dimensions:    # 哪些量需要变化，哪些量保持不变
-  activity_constraints:    # 活动必须做到或必须避免的事项（综合 teaching-strategies + learning-theory + feedback-strategies）
-  source_refs:             # 本次使用的知识文件路径列表
+**学习难点**：
+- 
+- 
+
+**常见误解**：
+- 
+- 
+
+### 活动设计上下文
+
+**math_essence**：（从 math-essence 文件提炼，简明扼要）
+
+**critical_aspects**：（学生必须辨识的关键方面）
+- 
+- 
+
+**cognitive_obstacles**：（已有认识、典型错误和认知障碍，综合 math-essence + common-errors + learning-theory）
+- 
+- 
+
+**target_cognitive_changes**：（希望学生从何种理解转变为何种理解）
+- 从... → ...
+
+**variation_dimensions**：（哪些量需要变化，哪些量保持不变）
+- 变：...
+- 不变：...
+
+**activity_constraints**：（活动必须做到或必须避免的事项，综合 teaching-strategies + learning-theory + feedback-strategies）
+- 
+- 
+
+**source_refs**：（本次使用的知识文件路径列表）
+- "knowledge/textbooks/..."
+- "knowledge/standards/..."
 ```
 
 ---
@@ -152,3 +188,5 @@
 禁止直接设计活动。
 
 仅outputs知识分析结果。
+
+**格式规则**：知识分析在 lesson plan 的 `## knowledge_analysis` 节中必须使用结构化 Markdown（加粗标签 `**字段名**：` + 列表 + `>` 引用块），**禁止使用代码块**。代码块内的 LaTeX 公式（`$...$`）不会被 Typora 渲染。
