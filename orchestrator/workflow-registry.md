@@ -661,7 +661,7 @@ outputs复习讲义到outputs目录
 
 ### `/复习讲义` outputs
 
-- `outputs/g8-reviews/{讲义编号}_{讲义名称}_复习讲义.md`
+- `outputs/reviews/{讲义编号}_{讲义名称}_复习讲义.md`
 - 文件头部必须包含 YAML front matter。
 - `content_type: review_lesson`
 - `command: 复习讲义`

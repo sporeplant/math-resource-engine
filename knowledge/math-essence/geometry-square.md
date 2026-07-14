@@ -168,5 +168,5 @@ status: draft
 - 几何教学六阶段轨迹：`knowledge/teaching-strategies/geometry.md`
 - 本班学生认知行为特征：`knowledge/learning-theory/learning-behaviors.md`
 - 认知分层定义：`knowledge/learning-theory/cognitive-layers.md`
-- 教材分析：`outputs/c21/21.7-analysis-1.md`、`outputs/c21/21.7-analysis-2.md`
-- 教学设计：`outputs/c21/21.7-lesson.md`、`outputs/c21/21.7-lesson-2.md`
+- 教材分析：`outputs/lessons/ch21/21.7/analysis-21.7.md`
+- 教学设计：`outputs/lessons/ch21/21.7/lesson-21.7.md`

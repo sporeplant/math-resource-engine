@@ -48,35 +48,35 @@ python tools/review_docx_pipeline.py <子命令> [选项]
 ### 4.1 单个文件导出（默认：双栏压缩）
 
 ```bash
-python tools/review_docx_pipeline.py export outputs/g8-reviews/review-10_教师版解析.md
+python tools/review_docx_pipeline.py export outputs/reviews/review-10_教师版解析.md
 ```
 
 输出：
 
 ```text
-outputs/g8-reviews/review-10_教师版解析_分栏压缩.docx
+outputs/reviews/review-10_教师版解析_分栏压缩.docx
 ```
 
 ### 4.2 同时生成单栏和双栏版
 
 ```bash
-python tools/review_docx_pipeline.py export outputs/g8-reviews/review-10_教师版解析.md --mode both
+python tools/review_docx_pipeline.py export outputs/reviews/review-10_教师版解析.md --mode both
 ```
 
 ### 4.3 批量导出
 
 ```bash
 python tools/review_docx_pipeline.py export \
-  outputs/g8-reviews/第11讲_教师版解析.md \
-  outputs/g8-reviews/第12讲_教师版解析.md \
-  outputs/g8-reviews/review-10_教师版解析.md \
+  outputs/reviews/第11讲_教师版解析.md \
+  outputs/reviews/第12讲_教师版解析.md \
+  outputs/reviews/review-10_教师版解析.md \
   --mode both --overwrite
 ```
 
 ### 4.4 已有 DOCX 转双栏压缩
 
 ```bash
-python tools/review_docx_pipeline.py compact outputs/g8-reviews/review-10_教师版解析.docx
+python tools/review_docx_pipeline.py compact outputs/reviews/review-10_教师版解析.docx
 ```
 
 ---

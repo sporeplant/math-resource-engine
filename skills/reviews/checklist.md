@@ -8,7 +8,7 @@
 - [ ] 已读取 `skills/reviews/SKILL.md`
 - [ ] 已读取 `knowledge/types/复习课.md`
 - [ ] 已读取用户确认的全部源讲义文件
-- [ ] 已确认outputs路径为 `outputs/g8-reviews/`
+- [ ] 已确认outputs路径为 `outputs/reviews/`
 
 ## 统计确认检查
 
@@ -50,7 +50,7 @@
 
 - [ ] 只搬运被选用题目的图片
 - [ ] 图片均位于outputs文件同级 `images/` 目录
-- [ ] 图片引用格式为 `![](images/文件名)`
+- [ ] 图片引用格式为 `![](images/filename)`（示例，实际使用英文或数字文件名）
 - [ ] 无绝对路径、跨目录路径或空图片路径
 
 ## 验证检查

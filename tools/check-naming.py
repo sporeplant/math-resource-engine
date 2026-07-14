@@ -66,7 +66,11 @@ def added_staged_files() -> set[Path]:
     return {(REPO_ROOT / f).resolve() for f in result.stdout.splitlines() if f}
 
 
-def check_name(name: str) -> list[str]:
+# Directory / file names whose leading underscore is allowed per orchestrator/naming.md
+UNDERSCORE_ALLOWED_NAMES = {"_tmp", "_demo"}
+
+
+def check_name(name: str, allow_underscore: bool = False) -> list[str]:
     errors = []
     suffix = Path(name).suffix.lower()
     if suffix in EXTENSION_EXEMPTIONS:
@@ -75,7 +79,7 @@ def check_name(name: str) -> list[str]:
         errors.append(f"  contains Chinese characters: {name}")
     if " " in name:
         errors.append(f"  contains space: {name}")
-    if "_" in name:
+    if "_" in name and not allow_underscore:
         errors.append(f"  contains underscore: {name}")
     if name != name.lower() and name not in UPPERCASE_EXCEPTIONS:
         errors.append(f"  contains uppercase: {name}")
@@ -113,8 +117,13 @@ def check_all(paths: list[Path]) -> list[str]:
 
         rel = path.relative_to(REPO_ROOT) if path.is_relative_to(REPO_ROOT) else path
         if resolved in added_paths:
-            for part in rel.parts:
-                errors.extend(check_name(part))
+            for i, part in enumerate(rel.parts):
+                # Underscores allowed per orchestrator/naming.md:
+                #   - outputs/_tmp, outputs/_demo (explicit exception)
+                #   - knowledge/ dirs use snake_case convention
+                parent_is_knowledge = i > 0 and rel.parts[0] == "knowledge"
+                allow_underscore = part in UNDERSCORE_ALLOWED_NAMES or parent_is_knowledge
+                errors.extend(check_name(part, allow_underscore=allow_underscore))
         if path.is_file() and path.suffix == ".md":
             errors.extend(check_content(path))
     return errors

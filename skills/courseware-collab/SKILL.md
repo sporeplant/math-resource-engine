@@ -148,4 +148,4 @@ python tools/validate_output.py outputs/{课时名}_课件.md --lesson-file outp
 - 所有结构化提问在出现前或同页已有材料锚点。
 - 统计/数据课必须呈现原始数据、频数表/频率表、方案表或题目图表等关键材料。
 - 练习/检测页若只出示题号，必须保证学生手边教材可直接使用；若问题需要图表判断，课件需呈现对应图表或简要题干。
-- 新增或迁移的图片必须复制到 `outputs/images/`，最终课件只引用 `./images/{文件名}`。
+- 新增或迁移的图片必须确认已存在于 `knowledge/images/`（详见 `orchestrator/image-protocol.md`），最终课件使用对应 CDN URL。

@@ -17,7 +17,7 @@ except (ModuleNotFoundError, ImportError):
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-GOOD_SAMPLE = REPO_ROOT / "outputs" / "G8B-reviews" / "review-04.md"
+GOOD_SAMPLE = REPO_ROOT / "outputs" / "reviews" / "review-04.md"
 
 
 def make_review_lesson(

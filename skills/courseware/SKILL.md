@@ -20,7 +20,7 @@
 | 原始数据 | 取值较多的数据必须以表格或图片形式呈现，不能只说“看教材数据” |
 | 教材步骤 | 按教材原文步骤顺序拆页，保留关键计算式、区间、表格列名 |
 | 统计表/方案表 | 频数表、频率表、阶梯方案表等必须进入课件，支撑后续提问 |
-| 教材图片 | 读取真实图片文件名，复制或登记到 `outputs/images/` 后引用 |
+| 教材图片 | 从源 Markdown 中读取真实图片文件名，确认图片源文件已存在于 `knowledge/images/`，在课件中使用对应 CDN URL |
 | 练习题 | 练习/检测页可只出示编号和作答要求，但若题目依赖图表或背景，必须呈现对应图表或简要题干 |
 
 每个结构化提问必须能回指到课件中的可见材料；若学生离开教材也无法作答，课件页必须补充教材材料。
@@ -410,8 +410,8 @@ $\therefore \angle CEB = \angle B$
 
 课件场景下特别说明：
 
-- 课件中的图片引用路径统一为 `./images/image.jpg`
-- `/courseware-collab` 使用教材或习题图片时，必须先将图片复制或登记到 `outputs/images/`
+- 课件中的图片引用路径统一使用 CDN URL（`https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/文件名`）
+- `/courseware-collab` 使用教材或习题图片时，必须确认图片源文件已存在于 `knowledge/images/` 或可同步到该目录
 - 课件正文禁止出现非同级 `images/` 的图片路径
 - 连续图片并列布局参照 图片资源skills §4
 - 课件生成后须通过 **[图片资源validators](../../validators/images/rules.md)** 校验

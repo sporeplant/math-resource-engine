@@ -28,4 +28,4 @@
 
 - [ ] 若脚本报"Pandoc 未找到"，确认 Pandoc 已安装并在 PATH 中，或在常见路径下（`%LOCALAPPDATA%\Pandoc\pandoc.exe`）
 - [ ] 若公式显示异常，检查 Markdown 中公式是否使用 `$...$` 或 `$$...$$` 格式
-- [ ] 若图片未嵌入，检查图片文件是否存在于 `outputs/g8-reviews/images/` 等同级 `images/` 目录
+- [ ] 若图片未嵌入，检查图片文件是否存在于 `outputs/reviews/images/` 等同级 `images/` 目录

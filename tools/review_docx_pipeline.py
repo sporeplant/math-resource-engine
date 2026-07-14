@@ -10,9 +10,9 @@ It wraps the lower-level tools without changing their implementation:
 
 Typical usage:
 
-    python tools/review_docx_pipeline.py export outputs/g8-reviews/review-10_教师版解析.md --mode both
-    python tools/review_docx_pipeline.py compact outputs/g8-reviews/review-10_教师版解析.docx
-    python tools/review_docx_pipeline.py export outputs/g8-reviews/*.md --mode compact
+    python tools/review_docx_pipeline.py export outputs/reviews/review-10_教师版解析.md --mode both
+    python tools/review_docx_pipeline.py compact outputs/reviews/review-10_教师版解析.docx
+    python tools/review_docx_pipeline.py export outputs/reviews/*.md --mode compact
 
 Notes:
 - Paths are resolved relative to the current working directory.

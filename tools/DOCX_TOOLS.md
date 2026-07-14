@@ -9,38 +9,38 @@
 ### 1. Markdown 直接导出分栏压缩 DOCX
 
 ```bash
-python tools/review_docx_pipeline.py export outputs/g8-reviews/review-10_教师版解析.md
+python tools/review_docx_pipeline.py export outputs/reviews/review-10_教师版解析.md
 ```
 
 默认输出：
 
 ```text
-outputs/g8-reviews/review-10_教师版解析_分栏压缩.docx
+outputs/reviews/review-10_教师版解析_分栏压缩.docx
 ```
 
 ### 2. 同时生成单栏版和分栏压缩版
 
 ```bash
-python tools/review_docx_pipeline.py export outputs/g8-reviews/review-10_教师版解析.md --mode both
+python tools/review_docx_pipeline.py export outputs/reviews/review-10_教师版解析.md --mode both
 ```
 
 输出：
 
 ```text
-outputs/g8-reviews/review-10_教师版解析.docx
-outputs/g8-reviews/review-10_教师版解析_分栏压缩.docx
+outputs/reviews/review-10_教师版解析.docx
+outputs/reviews/review-10_教师版解析_分栏压缩.docx
 ```
 
 ### 3. 批量导出
 
 ```bash
-python tools/review_docx_pipeline.py export outputs/g8-reviews/第11讲_教师版解析.md outputs/g8-reviews/第12讲_教师版解析.md outputs/g8-reviews/review-10_教师版解析.md --mode both
+python tools/review_docx_pipeline.py export outputs/reviews/第11讲_教师版解析.md outputs/reviews/第12讲_教师版解析.md outputs/reviews/review-10_教师版解析.md --mode both
 ```
 
 ### 4. 已有 DOCX 转分栏压缩版
 
 ```bash
-python tools/review_docx_pipeline.py compact outputs/g8-reviews/review-10_教师版解析.docx
+python tools/review_docx_pipeline.py compact outputs/reviews/review-10_教师版解析.docx
 ```
 
 ### 5. 覆盖已有输出
@@ -54,7 +54,7 @@ python tools/review_docx_pipeline.py compact outputs/g8-reviews/review-10_教师
 例如：
 
 ```bash
-python tools/review_docx_pipeline.py export outputs/g8-reviews/review-10_教师版解析.md --mode both --overwrite
+python tools/review_docx_pipeline.py export outputs/reviews/review-10_教师版解析.md --mode both --overwrite
 ```
 
 ---

@@ -155,9 +155,9 @@ def render_table_img(lines, assets_dir, sid, eid):
 
 
 def main():
-    src_md = r'C:\MRE\outputs\g8b-reviews\13讲_统计调查与直方图复习_课件.md'
-    out_json = r'C:\MRE\outputs\g8b-reviews\13讲_统计调查与直方图复习_课件.json'
-    assets_dir = r'C:\MRE\outputs\g8b-reviews\images'
+    src_md = r'C:\MRE\outputs\reviews\13讲_统计调查与直方图复习_课件.md'
+    out_json = r'C:\MRE\outputs\reviews\13讲_统计调查与直方图复习_课件.json'
+    assets_dir = r'C:\MRE\outputs\reviews\images'
 
     with open(src_md, encoding='utf-8') as f:
         content = f.read()

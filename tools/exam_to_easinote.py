@@ -5,7 +5,7 @@
 
 示例:
   python tools/exam_to_easinote.py knowledge/reviews/24-25期末试卷.md
-  python tools/exam_to_easinote.py knowledge/reviews/24-25期末试卷.md outputs/exam-json
+  python tools/exam_to_easinote.py knowledge/reviews/24-25期末试卷.md outputs/packages/exam-24-25-final
 
 每页展示一题 + 配图，不含解答过程。
 """

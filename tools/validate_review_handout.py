@@ -265,7 +265,7 @@ def validate(path: Path) -> ValidationResult:
         meta = parse_front_matter(front_matter)
 
     if not is_under_expected_output(path):
-        errors.append("outputs路径必须位于 outputs/g8-reviews/")
+        errors.append("outputs路径必须位于 outputs/reviews/")
 
     for key, expected in REQUIRED_META.items():
         actual = meta.get(key)

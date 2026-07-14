@@ -202,5 +202,5 @@
 - 几何教学策略：`knowledge/teaching-strategies/geometry.md`
 - 学生行为特征：`knowledge/learning-theory/learning-behaviors.md`
 - 章节知识点：`knowledge/chapter-knowledge-points.yaml`（第 13 章、第 21 章）
-- 嵌入错误分析的教学设计：`outputs/c21/21.7-analysis-2.md`、`outputs/c21/21.6-analysis-1.md`
+- 嵌入错误分析的教学设计：`outputs/lessons/ch21/21.6/analysis-21.6.md`
 - 学生成绩：`students/scores.md`

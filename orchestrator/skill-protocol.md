@@ -339,7 +339,7 @@ outputs：
 
 outputs：
 
-- `outputs/g8-reviews/{讲义编号}_{讲义名称}_复习讲义.md`
+- `outputs/reviews/{讲义编号}_{讲义名称}_复习讲义.md`
 - `content_type: review_lesson`
 - `command: 复习讲义`
 

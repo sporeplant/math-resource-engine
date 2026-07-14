@@ -4,7 +4,7 @@
   python tools/md_to_easinote_json.py <input.md> [output.json] [--assets-dir DIR]
 
 示例:
-  python tools/md_to_easinote_json.py outputs/c21/21.7-courseware.md
+  python tools/md_to_easinote_json.py outputs/lessons/ch21/21.7/courseware-21.7.md
   python tools/md_to_easinote_json.py foo.md out.json --assets-dir ./my-imgs
 
 约定:
