@@ -25,6 +25,30 @@ created_at: "2026-06-12 10:00"
 
 测试课内容。
 
+阅读建议：建议结合教材例题和学生练习本进行教学。
+
+## 课堂实施导航
+
+### 本课要解决的问题
+
+怎样解决这个问题？
+
+### 课堂实施要点
+
+- 注意使用教材和练习本。
+- 关注不同层次学生的学习进展。
+
+### 核心提问
+
+1. 你能说出方法吗？
+
+### 课堂练习与作业
+
+- 教材练习第1题：当堂检测
+- 教材A组第1题：基础层必做
+- 教材B组第2题：中间层必做
+- 练习册第1题：基础层必做
+
 ## 二、教学目标
 
 1. 能说出测试内容。
@@ -65,6 +89,13 @@ created_at: "2026-06-12 10:00"
 
 练习册第6题后移到习题课处理。
 {implementation_extra}
+
+### 10分钟流程总览
+
+| 时间 | 教学环节 | 学生主要任务 | 教师支持 | 达成结果 |
+|------|---------|-------------|---------|---------|
+| 4分钟 | 环节一 | 观察 | 引导 | 理解概念 |
+| 6分钟 | 环节二 | 表达 | 反馈 | 掌握方法 |
 
 <details>
 <summary><strong>展开完整结构化设计（目标、评价、活动、题源及审核信息）</strong></summary>
@@ -143,8 +174,10 @@ class LessonDualLayerTests(unittest.TestCase):
         self.assertTrue(any("exposes backend activity ID" in error for error in errors))
 
     def test_rejects_workbook_id_in_implementation_layer(self) -> None:
-        errors = self.validate(lesson(implementation_extra="\n- WB-TEST-001\n"))
-        self.assertTrue(any("exposes backend workbook question ID" in error for error in errors))
+        # Now tests that ASK (question) backend IDs leak → error
+        errors = self.validate(lesson(implementation_extra="\n- ASK-B-01\n"))
+        self.assertTrue(any("exposes backend question ID" in error for error in errors), 
+                       f"expected 'exposes backend question ID' in {errors}")
 
     def test_rejects_activity_time_mismatch(self) -> None:
         text = lesson().replace("### ACT-M-01 环节二（6分钟）", "### ACT-M-01 环节二（5分钟）")
@@ -154,32 +187,43 @@ class LessonDualLayerTests(unittest.TestCase):
     def test_rejects_missing_structured_section(self) -> None:
         text = lesson().replace("## homework\n", "")
         errors = self.validate(text)
-        self.assertTrue(any("missing section: homework" in error for error in errors))
+        self.assertTrue(any("missing section: homework" in error for error in errors),
+                       f"expected 'missing section: homework' in {errors}")
 
-    def test_rejects_untracked_implementation_task(self) -> None:
-        text = lesson(implementation_extra="\n- 课堂补充：A组第7题。\n")
+    def test_rejects_missing_implementation_heading(self) -> None:
+        text = lesson().replace("## 课堂实施导航\n", "")
         errors = self.validate(text)
-        self.assertTrue(any("missing from structured layer: A组第7题" in error for error in errors))
+        self.assertTrue(any("missing heading: ## 课堂实施导航" in error for error in errors),
+                       f"expected 'missing heading: ## 课堂实施导航' in {errors}")
 
-    def test_rejects_missing_traditional_heading(self) -> None:
-        text = lesson().replace("## 六、当堂检测\n", "")
+    def test_rejects_missing_reading_suggestion(self) -> None:
+        text = lesson().replace("阅读建议：建议结合教材例题和学生练习本进行教学。", "")
         errors = self.validate(text)
-        self.assertTrue(any("missing heading: ## 六、当堂检测" in error for error in errors))
+        self.assertTrue(any("missing 阅读建议" in error for error in errors))
 
-    def test_rejects_missing_deferred_plan(self) -> None:
-        text = lesson().replace("练习册第6题后移到习题课处理。", "")
+    def test_rejects_missing_flow_table(self) -> None:
+        text = lesson().replace("| 时间 | 教学环节 | 学生主要任务 | 教师支持 | 达成结果 |", "")
         errors = self.validate(text)
-        self.assertTrue(any("missing 后移题安排" in error for error in errors))
+        self.assertTrue(any("missing the required five-column flow table" in error for error in errors))
 
-    def test_rejects_workbook_audit_without_destination(self) -> None:
-        text = lesson().replace("question_id: WB-TEST-006", "question_id: WB-TEST-009", 1)
+    def test_rejects_core_question_mismatch(self) -> None:
+        # Only replace in implementation layer, not structured
+        text = lesson().replace("### 本课要解决的问题\n\n怎样解决这个问题？",
+                                "### 本课要解决的问题\n\n另一问题？")
         errors = self.validate(text)
-        self.assertTrue(any("missing practice/homework/deferred_exercises" in error for error in errors))
+        self.assertTrue(any("dual-layer core question mismatch" in error for error in errors))
 
-    def test_rejects_homework_without_layer_time(self) -> None:
-        text = lesson().replace("基础层必做（约20分钟）", "基础层必做")
+    def test_rejects_source_field_in_implementation(self) -> None:
+        errors = self.validate(lesson(implementation_extra="\nsource_id: test\n"))
+        self.assertTrue(any("exposes backend source field" in error for error in errors),
+                       f"expected 'exposes backend source field' in {errors}")
+
+    def test_rejects_activity_count_mismatch(self) -> None:
+        # Remove all flow table rows → count mismatch
+        text = lesson().replace("| 4分钟 | 环节一 | 观察 | 引导 | 理解概念 |\n| 6分钟 | 环节二 | 表达 | 反馈 | 掌握方法 |", "| 4分钟 | 环节一 | 观察 | 引导 | 理解概念 |")
         errors = self.validate(text)
-        self.assertTrue(any("基础层必做 missing estimated time" in error for error in errors))
+        self.assertTrue(any("dual-layer activity count mismatch" in error for error in errors),
+                       f"expected 'dual-layer activity count mismatch' in {errors}")
 
 
 if __name__ == "__main__":
