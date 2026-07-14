@@ -13,6 +13,7 @@ using Cvte.Paint.Features.Elements;
 using Cvte.Paint.Features.Elements.Texts;
 using Cvte.Paint.Features.Elements.Shapes;
 using Cvte.Paint.Features.Elements.Images;
+using Cvte.Windows.TextEditorPlus.Api;
 using Cvte.Windows.TextEditorPlus.Storage;
 
 namespace MrePlugin;
@@ -163,7 +164,7 @@ public static class MreProcessor
         editor.FontStyle = data.Italic == true ? FontStyles.Italic : FontStyles.Normal;
         if (!string.IsNullOrWhiteSpace(data.FontFamily))
         {
-            try { editor.FontFamily = new FontFamily(data.FontFamily); }
+            try { editor.FontName = new FontName(data.FontFamily); }
             catch { /* 字体不可用时忽略 */ }
         }
         editor.TextWrapping = TextWrapping.Wrap;

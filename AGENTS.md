@@ -58,6 +58,7 @@
 | 提问质量、看图说话、事实复读、封闭确认 | `skills/ask-check/checklist.md`、`validators/ask-check/rules.md` |
 | 教材顺序、教材对应位置 | `skills/activities/checklist.md`、`tools/validate_activity_textbook_order.py` |
 | 课堂练习、检测题数量、调度稿答案页 | `skills/activities/checklist.md`、`skills/courseware/checklist.md`、`skills/question-dispatch/checklist.md`、`tools/validate_output.py` |
+| 教材-练习册双资源调度、当堂检测、课后作业、后移题 | `orchestrator/resource-scheduling.md`、`orchestrator/output-contract.md`、`skills/lesson-collab/SKILL.md`、`tools/validate_output.py` |
 | 题源字段与多题引用格式 | `orchestrator/output-contract.md`、`orchestrator/skill-contract.md`、`tools/validate_output.py` |
 | 课标注入、学情注入 | `orchestrator/precheck.md`、`orchestrator/skill-protocol.md`、对应 Skill 检查清单 |
 | 40 分钟课时上限 | `orchestrator/quality-gates.md`、`validators/timing/rules.md`、`tools/validate_lesson_timing.py` |

@@ -21,33 +21,49 @@ created_at: "2026-06-12 10:00"
 
 # 测试课教学设计
 
-> **阅读建议**：日常备课先看课堂实施导航，需要审核时展开完整结构化设计。
+## 一、教学内容
 
-## 课堂实施导航
+测试课内容。
 
-### 本课要解决的问题
+## 二、教学目标
 
-怎样解决这个问题？
+1. 能说出测试内容。
 
-### 10分钟流程总览
+## 三、教学重点与难点
 
-| 时间 | 教学环节 | 学生主要任务 | 教师支持 | 达成结果 |
-|---:|---|---|---|---|
-| 4分钟 | 环节一 | 观察 | 提示 | 发现 |
-| 6分钟 | 环节二 | 表达 | 反馈 | 归纳 |
+重点：测试重点。难点：测试难点。
 
-### 课堂实施要点
+## 四、教学准备
 
-- 学生先做。
+教材、练习本。
 
-### 核心提问
+## 五、教学过程
 
-- 为什么？
+### （一）环节一（4分钟）
 
-### 课堂练习与作业
+学生观察。
 
-- 课堂：完成练习。
-- 作业：完成作业。
+### （二）环节二（6分钟）
+
+学生表达。
+
+## 六、当堂检测
+
+1. 教材练习第1题，检测学生能否说出方法，限时3分钟。
+
+## 七、课后作业
+
+基础层必做：教材A组第1题、练习册第1题，预计20分钟。
+中间层必做：教材B组第2题，预计25分钟。
+拓展层选做：练习册第5题，增加1道。
+
+## 八、板书设计
+
+测试课板书。
+
+## 九、设计依据简记
+
+练习册第6题后移到习题课处理。
 {implementation_extra}
 
 <details>
@@ -62,8 +78,49 @@ created_at: "2026-06-12 10:00"
 ## lesson_flow
 ### ACT-B-01 环节一（4分钟）
 ### ACT-M-01 环节二（6分钟）
+## resource_audit
+- 教材练习第1题：当堂检测
+- A组第1题：基础层必做
+- B组第2题：中间层必做
+- 练习册第1题：基础层必做
+  source_id: workbook-test
+  source_type: exercise_bank
+  question_id: WB-TEST-001
+- 练习册第5题：拓展层选做
+  source_id: workbook-test
+  source_type: exercise_bank
+  question_id: WB-TEST-005
+- 练习册第6题：后移到习题课
+  source_id: workbook-test
+  source_type: exercise_bank
+  question_id: WB-TEST-006
 ## practice
+- 题目：教材练习第1题
+  检测目标: 能说出方法
+  限时: 3分钟
+  source_id: TEXTBOOK-TEST
+  source_type: textbook
+  question_id: T-001
 ## homework
+- 基础层必做（约20分钟）：教材A组第1题、练习册第1题
+  source_id: workbook-test
+  source_type: exercise_bank
+  question_id: WB-TEST-001
+- 中间层必做（约25分钟）：教材B组第2题
+  source_id: TEXTBOOK-TEST
+  source_type: textbook
+  question_id: T-B-002
+- 拓展层选做（增加1题，约5分钟）：练习册第5题
+  source_id: workbook-test
+  source_type: exercise_bank
+  question_id: WB-TEST-005
+## deferred_exercises
+- 题目：练习册第6题
+  去向: 习题课
+  理由: 综合度较高，留到阶段整理
+  source_id: workbook-test
+  source_type: exercise_bank
+  question_id: WB-TEST-006
 ## boardwork
 ## consistency_matrix
 ## quality_check
@@ -85,6 +142,10 @@ class LessonDualLayerTests(unittest.TestCase):
         errors = self.validate(lesson(implementation_extra="\n- ACT-B-01\n"))
         self.assertTrue(any("exposes backend activity ID" in error for error in errors))
 
+    def test_rejects_workbook_id_in_implementation_layer(self) -> None:
+        errors = self.validate(lesson(implementation_extra="\n- WB-TEST-001\n"))
+        self.assertTrue(any("exposes backend workbook question ID" in error for error in errors))
+
     def test_rejects_activity_time_mismatch(self) -> None:
         text = lesson().replace("### ACT-M-01 环节二（6分钟）", "### ACT-M-01 环节二（5分钟）")
         errors = self.validate(text)
@@ -99,6 +160,26 @@ class LessonDualLayerTests(unittest.TestCase):
         text = lesson(implementation_extra="\n- 课堂补充：A组第7题。\n")
         errors = self.validate(text)
         self.assertTrue(any("missing from structured layer: A组第7题" in error for error in errors))
+
+    def test_rejects_missing_traditional_heading(self) -> None:
+        text = lesson().replace("## 六、当堂检测\n", "")
+        errors = self.validate(text)
+        self.assertTrue(any("missing heading: ## 六、当堂检测" in error for error in errors))
+
+    def test_rejects_missing_deferred_plan(self) -> None:
+        text = lesson().replace("练习册第6题后移到习题课处理。", "")
+        errors = self.validate(text)
+        self.assertTrue(any("missing 后移题安排" in error for error in errors))
+
+    def test_rejects_workbook_audit_without_destination(self) -> None:
+        text = lesson().replace("question_id: WB-TEST-006", "question_id: WB-TEST-009", 1)
+        errors = self.validate(text)
+        self.assertTrue(any("missing practice/homework/deferred_exercises" in error for error in errors))
+
+    def test_rejects_homework_without_layer_time(self) -> None:
+        text = lesson().replace("基础层必做（约20分钟）", "基础层必做")
+        errors = self.validate(text)
+        self.assertTrue(any("基础层必做 missing estimated time" in error for error in errors))
 
 
 if __name__ == "__main__":

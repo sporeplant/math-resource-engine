@@ -35,8 +35,8 @@ public class MreImportMenuItem : HeadToolBarItem
 
         SetValue(TextProperty, "MRE导入");
 
-        // 仅在备课模式下可用（Shell 端非授课模式）
-        Predicate = _ => !EN.CommandOptions.IsCloud;
+        // 允许在所有非授课模式下显示（Predicate 在运行时过滤）
+        Predicate = _ => true;
 
         Command = new DelegateCommand(MreImportCommand.Run);
 
@@ -71,7 +71,7 @@ public class MreImportBoardMenuItem : BoardEditMenuItem
     {
         SortHint = 50;
         Command = new DelegateCommand(MreImportCommand.Run);
-        Predicate = elements => elements.Count == 0 && !EN.CommandOptions.IsCloud;
+        Predicate = elements => elements.Count == 0;
     }
 }
 

@@ -32,84 +32,20 @@
 
 ---
 
-## 2. `/lesson` 强制链（已归档）
-
-> `/lesson` 不再执行。本节仅保留供 `/lesson-collab` 复用的基础文件映射和步骤规范。
-
-`/lesson` 的完整步骤见 `orchestrator/workflow-registry.md`。
-
-**前置环节：课题确认**
-
-在执行 `/lesson` 强制链之前，必须先完成课题确认：
-
-```text
-解析课时名称（章节号或课时名称）
-  ↓
-读取 knowledge/textbooks/教材原文_教材课时分配.md
-  ↓
-匹配对应课时信息
-  ↓
-显示确认信息（章节、节次、课时、教材文件）
-  ↓
-等待用户确认（用户回复"确认"、"是"、"对"、"正确"等）
-  ↓
-用户确认 → 进入强制链
-用户否认 → 提示重新输入正确的课时名称
-```
-
-强制读取：
-
-- `AGENTS.md`
-- `orchestrator/workflow-registry.md`
-- `orchestrator/output-contract.md`
-- `orchestrator/skill-contract.md`
-- `orchestrator/quality-gates.md`
-- `orchestrator/review-protocol.md`
-- `knowledge/textbooks/教材原文_教材课时分配.md`（课题确认阶段）
-- `skills/objectives/SKILL.md` 和 `检查清单.md`
-- `skills/assessment/SKILL.md` 和 `检查清单.md`
-- `skills/activities/SKILL.md` 和 `检查清单.md`
-- `skills/homework/SKILL.md` 和 `检查清单.md`
-- `skills/ask-check/SKILL.md` 和 `检查清单.md`
-- `validators/objectives/rules.md`
-- `validators/assessment/rules.md`
-- `validators/activities/rules.md`
-- `validators/lesson/rules.md`
-- `validators/pedagogy/rules.md`
-- `validators/math/rules.md`
-- `validators/fit/rules.md`
-- `validators/alignment/rules.md`
-- 对应课标、教材、习题、students文件
-
-outputs：
-
-- `outputs/{课时名}_完整教学设计.md`
-- `review_status: pending_human_review`
-
-禁止：
-
-- 生成课件。
-- 生成课堂提问调度稿。
-- 执行课件validators。
-- 自动标记 `审核通过`。
-- 在用户未确认课题前直接开始生成教学设计。
-
----
-
 ## 2a. `/lesson-collab` 强制链（当前教学设计主链）
 
 `/lesson-collab` 的完整步骤见 `orchestrator/workflow-registry.md` §2a。
 
-`/lesson-collab` 是当前唯一教学设计入口，复用 §2 的基础规范，并在知识分析、学习目标、评价设计、活动设计四个关键节点设置确认门。
+`/lesson-collab` 是当前唯一教学设计入口，在知识分析、学习目标、评价设计、活动设计四个关键节点设置确认门。
 
 **前置环节：课题确认**
 
-按 §2 的课题匹配规则执行。
+按课题确认规则执行。
 
 **强制步骤链：**
 
 ```text
-课题确认（按 §2 的课题匹配规则执行）
+课题确认（按课题确认规则执行）
   ↓
 定位并校验对应课时教材参考解答（缺失、验证失败或 review_status ≠ 审核通过立即终止）
   ↓
@@ -185,11 +121,11 @@ outputs完整教学设计
 3. 教师确认后才可进入下一步
 4. 教师修改意见必须被完整采纳，AI 修订后重新呈现
 5. 确认后的内容作为下游的锁定输入，不可回退修改（除非后续环节发现逻辑矛盾）
-6. 每个确认门的确认结果记录在教学设计 YAML front matter 的 `collab_gates` 字段
+6. 每个确认门的确认结果记录在独立日志文件 `{output_dir}/collab-gates.log.md`，不写入教学设计的 YAML front matter
 
 强制读取：
 
-- 读取 §2 的基础强制文件列表
+- 读取以下基础强制文件：
 - 额外读取 `orchestrator/workflow-registry.md` §2a 中的确认门交互协议和呈现模板
 - `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md`
 - 对应课时 `knowledge/workbooks/workbook-*.md`
@@ -205,7 +141,7 @@ outputs：
 - `outputs/{课时名}_教学设计.md`
 - `review_status: pending_human_review`
 - `command: lesson-collab`
-- YAML front matter 包含 `collab_gates` 字段
+- 确认门记录写入独立日志 `collab-gates.log.md`（YAML front matter 不得包含 `collab_gates` 字段）
 
 禁止：
 
@@ -221,94 +157,20 @@ outputs：
 
 ---
 
-## 3. `/courseware` 强制链（已归档）
-
-> `/courseware` 不再执行。本节仅保留供 `/courseware-collab` 复用的基础文件映射和转换规范。
-
-`/courseware` 的完整步骤见 `orchestrator/workflow-registry.md`。
-
-**前置环节：课题确认**
-
-在执行 `/courseware` 强制链之前，必须先完成课题确认：
-
-```text
-解析课时名称（章节号或课时名称）
-  ↓
-读取 knowledge/textbooks/教材原文_教材课时分配.md
-  ↓
-匹配对应课时信息
-  ↓
-检查教学设计文件是否存在且状态为 审核通过
-  ↓
-显示确认信息（章节、节次、课时、教学设计文件、状态）
-  ↓
-等待用户确认（用户回复"确认"、"是"、"对"、"正确"等）
-  ↓
-用户确认 → 进入强制链
-用户否认 → 提示重新输入正确的课时名称
-```
-
-强制读取：
-
-- `AGENTS.md`
-- `orchestrator/workflow-registry.md`
-- `orchestrator/output-contract.md`
-- `orchestrator/image-protocol.md`
-- `orchestrator/review-protocol.md`
-- `knowledge/textbooks/教材原文_教材课时分配.md`（课题确认阶段）
-- `skills/tier-ask/SKILL.md` 和 `检查清单.md`
-- `skills/question-dispatch/SKILL.md` 和 `检查清单.md`
-- `skills/courseware/SKILL.md` 和 `检查清单.md`
-- `skills/images/SKILL.md`
-- `validators/courseware/rules.md`
-- `validators/question-dispatch/rules.md`
-- `validators/images/rules.md`
-- `outputs/{课时名}_完整教学设计.md`
-- 对应章节题源文件、学生成绩数据、提问历史记录
-
-前置条件：
-
-- 教学设计必须为 `content_type: lesson`。
-- 教学设计必须为 `review_status: 审核通过`。
-
-outputs：
-
-- `outputs/{课时名}_课件.md`
-- `outputs/{课时名}_课堂提问调度稿.md`
-
-执行流程：
-
-1. 课题确认：解析课时名称，匹配教材课时分配表，检查教学设计状态，等待用户确认
-2. 读取并验证人工审核通过的教学设计
-3. 调用分层提问skills，分配学生姓名，outputs学生选取结果
-4. 调用课堂提问调度稿生成skills，生成课堂提问调度稿文件
-5. 调用课件设计skills，生成课件
-6. 依次执行验证：课堂提问调度稿validators → 课件validators → 图片资源validators
-7. 验证通过后outputs
-
-禁止：
-
-- 重新生成学习目标、评价任务、活动设计或教学设计。
-- 消费未人工审核通过的教学设计。
-- 使用非同级 `images/` 的图片路径。
-- 在用户未确认课题前直接开始生成课件。
-
----
-
 ## 3a. `/courseware-collab` 强制链（当前课件主链）
 
 `/courseware-collab` 的完整步骤见 `orchestrator/workflow-registry.md` §4a。
 
-`/courseware-collab` 是当前唯一课件入口，复用 §3 的基础规范，并在**课件结构规划**、**课堂提问设计**、**分层提问分配**三个关键节点设置确认门。
+`/courseware-collab` 是当前唯一课件入口，在**课件结构规划**、**课堂提问设计**、**分层提问分配**三个关键节点设置确认门。
 
 **前置环节：课题确认**
 
-按 §3 的课题匹配与教学设计状态检查规则执行。
+按课题确认与教学设计状态检查规则执行。
 
 **强制步骤链：**
 
 ```text
-课题确认（按 §3 的课题匹配与教学设计状态检查规则执行）
+课题确认（按课题确认与教学设计状态检查规则执行）
   ↓
 定位并校验对应课时教材参考解答（缺失或失败立即终止）
   ↓
@@ -353,7 +215,7 @@ outputs课件与课堂提问调度稿
 
 强制读取：
 
-- 读取 §3 的基础强制文件列表
+- 读取以下基础强制文件：
 - 额外读取 `orchestrator/workflow-registry.md` §4a 中的确认门交互协议和呈现模板
 - `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md`
 - 对应课时 `knowledge/workbooks/workbook-*.md`
@@ -366,7 +228,7 @@ outputs课件与课堂提问调度稿
 
 outputs：
 
-- 按 §3 的课件与课堂提问调度稿outputs规范执行
+- 按课件与课堂提问调度稿outputs规范执行
 - 课堂提问调度稿 YAML front matter 包含 `collab_gates` 字段；学生课件不设置 YAML
 
 禁止：

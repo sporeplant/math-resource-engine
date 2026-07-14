@@ -45,6 +45,7 @@ skills运行时，PROJECT_ROOT 为 `E:\OneDrive\math-resource-engine\`。
 | 4 | `orchestrator/output-contract.md` | outputs模板和 YAML 元数据规则 |
 | 5 | `orchestrator/skill-contract.md` | Skill 间传递接口 |
 | 6 | `orchestrator/precheck.md` | 生成前逐项自检 |
+| 7 | `orchestrator/resource-scheduling.md` | 教材-练习册双资源调度策略 |
 
 ### 3.2 核心skills定义
 
@@ -170,6 +171,8 @@ skills运行时，PROJECT_ROOT 为 `E:\OneDrive\math-resource-engine\`。
 课题确认（按orchestrator登记的课题匹配规则执行）
   ↓
 定位并校验对应课时教材参考解答、练习册题库、练习册答案和逐题索引
+  ↓
+教材-练习册双资源盘点（生成 resource_audit，确定当堂检测、课后作业、后移题）
   ↓
 知识分析（AI 生成草稿）
   ↓
@@ -341,7 +344,6 @@ outputs完整教学设计
    - **修改意见**：指出需要调整的具体内容 → AI 修订后重新呈现，回到步骤1
    - **补充信息**：提供 AI 未考虑的学情/教学信息 → AI 整合后重新呈现，回到步骤1
 4. **锁定确认版本**：教师确认后，该环节outputs作为下游的锁定输入，不可回退修改（除非后续环节发现逻辑矛盾）
-5. **确认记录**：每个确认门的确认结果记录在教学设计 YAML front matter 的 `collab_gates` 字段中
 
 ### 7.3 各确认门的关键决策点
 
@@ -360,7 +362,7 @@ outputs完整教学设计
 - 禁止跳过任何确认门
 - 禁止在教师未确认时继续下游环节
 - 禁止忽略教师修改意见直接使用原草稿继续
-- 禁止将确认门交互过程写入最终教学设计正文（仅记录在 YAML front matter 的 `collab_gates` 字段）
+- 禁止将确认门交互过程写入最终教学设计正文
 - 禁止将运行时读取文件清单、路径列表或溯源过程写入最终教学设计正文或 YAML front matter。
 
 ## 8. outputs要求
@@ -380,58 +382,31 @@ command: lesson-collab
 workflow_version: v2
 review_status: pending_human_review
 created_at: ""
-collab_gates:
-  - gate: knowledge_analysis
-    status: confirmed
-    confirmed_at: "YYYY-MM-DD HH:mm"
-    teacher_notes: ""
-  - gate: learning_objectives
-    status: confirmed
-    confirmed_at: "YYYY-MM-DD HH:mm"
-    teacher_notes: ""
-  - gate: assessment_design
-    status: confirmed
-    confirmed_at: "YYYY-MM-DD HH:mm"
-    teacher_notes: ""
-  - gate: activity_4_1_textbook_order
-    status: confirmed
-    confirmed_at: "YYYY-MM-DD HH:mm"
-    teacher_notes: ""
-  - gate: activity_4_2_steps
-    status: confirmed
-    confirmed_at: "YYYY-MM-DD HH:mm"
-    teacher_notes: ""
-  - gate: activity_4_3_questions
-    status: confirmed
-    confirmed_at: "YYYY-MM-DD HH:mm"
-    teacher_notes: ""
-  - gate: activity_4_4_integration
-    status: confirmed
-    confirmed_at: "YYYY-MM-DD HH:mm"
-    teacher_notes: ""
 ---
 ```
 
 ### 8.3 教学设计正文结构
 
-正文必须采用双层教学设计：第一层供教师直接实施，第二层供审核、溯源和下游课件生成。两层必须位于同一文件中，且内容一致。
+正文必须采用“传统正文 + 后台折叠结构”：第一层供教师直接实施，第二层供审核、溯源和下游课件生成。两层必须位于同一文件中，且内容一致。
 
 ```markdown
-> **阅读建议**：日常备课先看“课堂实施导航”和“课堂实施要点”；需要审核目标、评价、题源或提问细节时，再展开文末的“完整结构化设计”。
+## 一、教学内容
 
-## 课堂实施导航
+## 二、教学目标
 
-### 本课要解决的问题
+## 三、教学重点与难点
 
-### {duration}分钟流程总览
+## 四、教学准备
 
-| 时间 | 教学环节 | 学生主要任务 | 教师支持 | 达成结果 |
+## 五、教学过程
 
-### 课堂实施要点
+## 六、当堂检测
 
-### 核心提问
+## 七、课后作业
 
-### 课堂练习与作业
+## 八、板书设计
+
+## 九、设计依据简记
 
 <details>
 <summary><strong>展开完整结构化设计（目标、评价、活动、题源及审核信息）</strong></summary>
@@ -466,9 +441,13 @@ collab_gates:
 
 ## lesson_flow
 
+## resource_audit
+
 ## practice
 
 ## homework
+
+## deferred_exercises
 
 ## boardwork
 
@@ -482,11 +461,19 @@ collab_gates:
 双层强制规则：
 
 - 第一层不得出现 `LO-*`、`AS-*`、`ACT-*`、`ASK_*`、`source_id`、`source_type`、`question_id` 等后台字段。
-- 第一层流程总览每行对应第二层一个活动，活动数量、顺序和时间一致。
-- 第一层核心问题与第二层 `core_question` 一致。
+- 第一层教学过程与第二层 `lesson_flow` 的活动数量、顺序和时间一致。
 - 第一层练习和作业只能压缩表达第二层已有任务，不得新增无题源任务。
+- 第一层必须说明后移到习题课、讲评课或周练的题目安排，并能在第二层 `deferred_exercises` 找到对应记录。
 - 每个 `ACT-*` 必须包含 `time_priority` 和六字段 `time_budget`，并通过 `tools/validate_lesson_timing.py`。
 - 时间验证“有条件通过”时，第一层课堂实施要点必须写明可后移的 `flex` 或 `backup` 活动；“不通过”时不得outputs教学设计。
+
+### 8.3a 教材-练习册双资源调度
+
+- 生成教学设计前必须读取 `orchestrator/resource-scheduling.md`。
+- 必须先完成 `resource_audit`，盘点教材正文题、教材练习/习题、练习册题。
+- 当堂检测优先使用教材练习，练习册“夯实基础”只作补充。
+- 课后作业默认量：基础层约20分钟，中间层约25分钟，拓展层增加1道选做题。
+- 练习册未进入 `practice` 或 `homework` 的题目必须写入 `deferred_exercises`，说明后移到习题课、讲评课、周练、单元整理或暂不处理的理由。
 
 ### 8.4 题源字段
 
@@ -570,11 +557,10 @@ review_status: 审核通过
 
 只有 `审核通过` 的教学设计才能作为 `/courseware-collab` 的输入。
 
-## 12. 归档兼容说明
+## 12. 命令兼容说明
 
-- `/lesson` 已归档，不再作为可执行入口。
 - 收到 `/lesson` 时停止并提示用户改用 `/lesson-collab`，不得静默执行。
-- 新生成的教学设计必须写入 `command: lesson-collab` 和完整 `collab_gates`。
+- 新生成的教学设计必须写入 `command: lesson-collab`。
 
 ## 13. 前检查清单（生成前必须执行）
 

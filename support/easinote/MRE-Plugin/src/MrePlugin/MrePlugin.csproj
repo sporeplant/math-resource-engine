@@ -11,6 +11,8 @@
     <Company>遵化市苏家洼镇大刘庄中学</Company>
 
     <UseEasiNote>core</UseEasiNote>
+
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
 
   <ItemGroup>

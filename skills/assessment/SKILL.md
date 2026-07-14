@@ -15,6 +15,7 @@
 - 认知分层信息（来自 knowledge/learning-theory/cognitive-layers.md）
 - 练习册题库三件套（`knowledge/workbooks/`、`knowledge/workbook-answers/`、`knowledge/workbook-index/`）
 - 习题分析报告（来自 习题分析skills → 对应练习册题目的8维度分析）
+- 教材-练习册资源盘点（来自 `resource_audit`，按 `orchestrator/resource-scheduling.md` 生成）
 
 ---
 
@@ -65,6 +66,7 @@
 
 ## 8. 习题选用规则
 
+- 评价设计前必须先完成教材与练习册资源盘点，不得边生成评价边临时找题。
 - 评价任务应从教材题和练习册题库共同选题：
   - 基础层评价任务 → 教材练习栏目题目 + 练习册基础巩固题
   - 中间层评价任务 → 教材习题A组题目 + 练习册方法应用题
@@ -75,6 +77,8 @@
 - 中间层评价任务 → 选用习题分析报告标记为"中间层"的题目
 - 拓展层评价任务 → 选用习题分析报告标记为"拓展层"的题目
 - 每层至少选用 1 道题目；练习册题目必须标注 `source_type: exercise_bank` 和索引中的 `question_id`
+- 当堂评价优先选教材练习；练习册题进入当堂评价时，应优先来自“夯实基础”，并控制在 1-2 个小题。
+- 未选入评价、当堂检测或课后作业的练习册候选题，必须进入 `deferred_exercises` 或说明不采用理由。
 
 ---
 

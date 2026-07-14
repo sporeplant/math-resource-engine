@@ -24,13 +24,9 @@ internal class Program : EasiPlugin
     {
         Log("OnRunningAsync entered. IsCloud=" + EN.CommandOptions.IsCloud);
 
-        if (EN.CommandOptions.IsCloud)
-        {
-            Log("Cloud mode - skipping");
-            return Task.CompletedTask;
-        }
-
-        Log("Shell mode - waiting for App.Ready. IsReady=" + EN.App.IsReady);
+        // 现代希沃白板默认走云课件模式（所有 launchSettings 配置均为 --cloud），
+        // IsCloud 误判会导致 UI 注册整段跳过。移除早退，改为靠 Predicate 运行时过滤。
+        Log("Waiting for App.Ready. IsReady=" + EN.App.IsReady);
 
         if (EN.App.IsReady)
         {

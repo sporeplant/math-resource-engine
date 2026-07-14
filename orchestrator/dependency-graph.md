@@ -65,7 +65,3 @@ learning-outcome ──→ assessment ──→ activity ──→ lesson-design
 - 一致性validators：禁止跳过（最终校验）
 - 课件设计skills：仅在需要生成课件时执行
 
-## 已归档节点
-
-- 板书设计skills：已归档到 `archive/skills_暂停使用/`，不属于当前主链。
-- 数学活动课设计skills：已归档到 `archive/skills_暂停使用/`，不属于当前主链。

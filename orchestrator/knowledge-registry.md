@@ -17,8 +17,6 @@
 | 提问模板 | 低起点/高阶追问/快反馈/分层提问模板 | activity-design | 低 | v1.0 |
 | 课型 | 新授/习题/复习/讲评/单元复习课定义 | math-lesson-design | 中 | v1.0 |
 | 解题模型 | 审题/几何/函数/分类讨论解题模型 | math-exercise-analysis | 低 | v1.0 |
-| 板书模式 | 概念课/例题课/几何证明/函数课板书 | archived | 已归档 | v1.0 |
-| 课件模式 | 概念可视化/函数动态图/几何演示/反馈页 | archived | 已归档 | v1.0 |
 | 过渡脚手架 | 具体到抽象/观察到归纳/模仿到迁移/单一到综合 | activity-design | 中 | v1.0 |
 | 反馈模式 | 即时肯定/纠错/高阶推进/课堂激励 | activity-design, math-lesson-design | 中 | v1.0 |
 | 认知进阶 | 函数/几何/统计/方程认知进阶 | archived | 已归档 | v1.0 |

@@ -16,137 +16,9 @@
 
 ---
 
-## 2. `/lesson` 工作流（已归档）
-
-> 本命令入口已归档，不再执行。本节仅保留历史记录和供 `/lesson-collab` 复用的基础设计规范。
-
-输入格式：
-
-```text
-/lesson 课时名称
-```
-
-示例：
-```text
-/lesson 21.4
-/lesson 三角形的中位线
-/lesson 21.4 三角形的中位线
-```
-
-执行链：
-
-```text
-课题确认（解析课时名称 → 匹配教材课时分配表 → 显示确认信息 → 用户确认）
-  ↓
-知识分析（含课型判断、规则确认；调用 skills/knowledge/SKILL.md）
-  ↓
-学习目标设计（含目标审核；调用 skills/objectives/SKILL.md）
-  ↓
-评价任务设计（含评价审核；调用 skills/assessment/SKILL.md）
-  ↓
-问题链设计（调用 skills/questions/SKILL.md）
-  ↓
-活动设计（含活动审核；调用 skills/activities/SKILL.md）
-  ↓
-活动质量检查（调用 skills/act-check/SKILL.md）
-  ↓
-作业设计（调用 skills/homework/SKILL.md）
-  ↓
-质量检查（教学设计审核+教学法审核+数学审核+学情适配审核+提问质量审查+一致性校验）
-  ↓
-outputs完整教学设计
-  ↓
-标记 pending_human_review
-```
-
-### 课题确认环节
-
-在执行 `/lesson` 命令时，必须先进行课题确认，防止用户输入错误的章节号或课时名称。
-
-**确认流程：**
-
-1. **解析输入**：识别用户输入的章节号（如 `21.4`）或课时名称（如 `三角形的中位线`）
-2. **匹配教材**：从 `knowledge/textbooks/教材原文_教材课时分配.md` 中查找对应课时
-3. **显示确认信息**：
-   ```text
-   📋 请确认课题信息：
-   
-   章节：第21章 四边形
-   节次：21.4 三角形的中位线
-   课时：第1课时（共1课时）
-   教材文件：教材原文_21.4_三角形的中位线.md
-   
-   确认无误后，请回复"确认"或"是"继续生成教学设计。
-   如需修改，请重新输入正确的课时名称。
-   ```
-4. **等待用户确认**：用户回复"确认"、"是"、"对"、"正确"等肯定词后继续执行
-5. **处理异常**：
-   - 如果输入的章节号不存在，提示可用的章节列表
-   - 如果输入的课时名称模糊匹配到多个结果，列出所有匹配项让用户选择
-   - 如果完全无法匹配，提示用户检查输入或提供正确的课时名称
-
-**匹配规则：**
-
-| 输入类型 | 匹配方式 | 示例 |
-|---------|---------|------|
-| 纯章节号 | 精确匹配章节号 | `21.4` → 21.4 三角形的中位线 |
-| 纯课时名称 | 关键词匹配 | `三角形的中位线` → 21.4 三角形的中位线 |
-| 章节+名称 | 组合匹配 | `21.4 三角形的中位线` → 精确匹配 |
-| 模糊输入 | 智能匹配+提示 | `中位线` → 提示"是否指21.4 三角形的中位线？" |
-
-**禁止事项：**
-
-- 禁止在用户未确认前直接开始生成教学设计
-- 禁止忽略用户输入错误继续执行
-- 禁止猜测用户意图而不进行确认
-
-### `/lesson` 强制读取
-
-1. `AGENTS.md`
-2. `orchestrator/workflow-registry.md`
-3. `orchestrator/output-contract.md`
-4. `orchestrator/skill-contract.md`
-5. `orchestrator/quality-gates.md`
-6. `orchestrator/review-protocol.md`
-7. `skills/knowledge/SKILL.md`
-8. `skills/objectives/SKILL.md` 和 `检查清单.md`
-9. `skills/assessment/SKILL.md` 和 `检查清单.md`
-10. `skills/questions/SKILL.md`
-11. `skills/activities/SKILL.md` 和 `检查清单.md`
-12. `skills/act-check/SKILL.md`
-13. `skills/homework/SKILL.md` 和 `检查清单.md`
-14. `skills/ask-check/SKILL.md` 和 `检查清单.md`
-15. `validators/objectives/rules.md`
-16. `validators/assessment/rules.md`
-17. `validators/activities/rules.md`
-18. `validators/lesson/rules.md`
-19. `validators/pedagogy/rules.md`
-20. `validators/math/rules.md`
-21. `validators/fit/rules.md`
-22. `validators/alignment/rules.md`
-23. 对应课时的课标（knowledge/standards/）、教材原文（knowledge/textbooks/）、练习册题库（knowledge/workbooks/）、students文件（students/）、课型定义（knowledge/types/）
-
-### `/lesson` outputs
-
-- `outputs/{课时名}_教学设计.md`
-- 文件头部必须包含 YAML front matter。
-- `content_type: lesson`
-- `command: lesson`
-- `review_status: pending_human_review`
-
-### `/lesson` 禁止事项
-
-- 禁止生成课件。
-- 禁止生成课堂提问调度稿。
-- 禁止执行课件validators。
-- 禁止写入具体学生姓名；教学设计只标注提问层级。
-- 禁止将未人工审核的教学设计标记为 `审核通过`。
-
----
-
 ## 2a. `/lesson-collab` 工作流（当前教学设计主链）
 
-`/lesson-collab` 是当前唯一教学设计入口。它复用 §2 的基础设计规范，并在知识分析、学习目标、评价设计、活动设计四个关键节点设置**确认门**。
+`/lesson-collab` 是当前唯一教学设计入口。它在知识分析、学习目标、评价设计、活动设计四个关键节点设置**确认门**。
 
 输入格式：
 
@@ -165,13 +37,17 @@ outputs完整教学设计
 执行链：
 
 ```text
-课题确认（按 §2 的课题匹配规则执行）
+课题确认（解析课时名称 → 匹配教材课时分配表 → 显示确认信息 → 用户确认）
   ↓
 定位并校验对应课时教材参考解答
   文件缺失、课时不匹配、验证失败或 review_status ≠ 审核通过 → 立即终止本次任务
   ↓
 定位并校验对应课时练习册题库、答案和逐题索引
   任一缺失、课时不匹配或验证失败 → 立即终止本次任务
+  ↓
+教材-练习册双资源盘点
+  按 `orchestrator/resource-scheduling.md` 形成 resource_audit
+  明确当堂检测、课后作业、后移到习题课或讲评课的题目去向
   ↓
 知识分析（AI 生成草稿）
   ↓
@@ -240,7 +116,7 @@ outputs完整教学设计
    - **修改意见**：指出需要调整的具体内容 → AI 修订后重新呈现，回到步骤1
    - **补充信息**：提供 AI 未考虑的学情/教学信息 → AI 整合后重新呈现，回到步骤1
 4. **锁定确认版本**：教师确认后，该环节outputs作为下游的锁定输入，不可回退修改（除非后续环节发现逻辑矛盾）
-5. **确认记录**：每个确认门的确认结果应记录在教学设计 YAML front matter 的 `collab_gates` 字段中
+5. **确认记录**：每个确认门的确认结果应记录在独立日志文件 `{output_dir}/collab-gates.log.md` 中，不写入教学设计的 YAML front matter
 
 ### 确认门呈现模板
 
@@ -275,23 +151,95 @@ outputs完整教学设计
 
 ### `/lesson-collab` 课题确认环节
 
-按 §2 的课题匹配规则执行（解析课时名称 → 匹配教材课时分配表 → 显示确认信息 → 用户确认）。
+按以下课题确认规则执行：
+
+### 课题确认环节
+
+在执行 `/lesson` 命令时，必须先进行课题确认，防止用户输入错误的章节号或课时名称。
+
+**确认流程：**
+
+1. **解析输入**：识别用户输入的章节号（如 `21.4`）或课时名称（如 `三角形的中位线`）
+2. **匹配教材**：从 `knowledge/textbooks/教材原文_教材课时分配.md` 中查找对应课时
+3. **显示确认信息**：
+   ```text
+   📋 请确认课题信息：
+   
+   章节：第21章 四边形
+   节次：21.4 三角形的中位线
+   课时：第1课时（共1课时）
+   教材文件：教材原文_21.4_三角形的中位线.md
+   
+   确认无误后，请回复"确认"或"是"继续生成教学设计。
+   如需修改，请重新输入正确的课时名称。
+   ```
+4. **等待用户确认**：用户回复"确认"、"是"、"对"、"正确"等肯定词后继续执行
+5. **处理异常**：
+   - 如果输入的章节号不存在，提示可用的章节列表
+   - 如果输入的课时名称模糊匹配到多个结果，列出所有匹配项让用户选择
+   - 如果完全无法匹配，提示用户检查输入或提供正确的课时名称
+
+**匹配规则：**
+
+| 输入类型 | 匹配方式 | 示例 |
+|---------|---------|------|
+| 纯章节号 | 精确匹配章节号 | `21.4` → 21.4 三角形的中位线 |
+| 纯课时名称 | 关键词匹配 | `三角形的中位线` → 21.4 三角形的中位线 |
+| 章节+名称 | 组合匹配 | `21.4 三角形的中位线` → 精确匹配 |
+| 模糊输入 | 智能匹配+提示 | `中位线` → 提示"是否指21.4 三角形的中位线？" |
+
+**禁止事项：**
+
+- 禁止在用户未确认前直接开始生成教学设计
+- 禁止忽略用户输入错误继续执行
+- 禁止猜测用户意图而不进行确认
 
 ### `/lesson-collab` 强制读取
 
-读取 §2 登记的基础文件，额外增加：
+强制读取以下文件：
+
+### `/lesson` 强制读取
+
+1. `AGENTS.md`
+2. `orchestrator/workflow-registry.md`
+3. `orchestrator/output-contract.md`
+4. `orchestrator/skill-contract.md`
+5. `orchestrator/quality-gates.md`
+6. `orchestrator/review-protocol.md`
+7. `skills/knowledge/SKILL.md`
+8. `skills/objectives/SKILL.md` 和 `检查清单.md`
+9. `skills/assessment/SKILL.md` 和 `检查清单.md`
+10. `skills/questions/SKILL.md`
+11. `skills/activities/SKILL.md` 和 `检查清单.md`
+12. `skills/act-check/SKILL.md`
+13. `skills/homework/SKILL.md` 和 `检查清单.md`
+14. `skills/ask-check/SKILL.md` 和 `检查清单.md`
+15. `validators/objectives/rules.md`
+16. `validators/assessment/rules.md`
+17. `validators/activities/rules.md`
+18. `validators/lesson/rules.md`
+19. `validators/pedagogy/rules.md`
+20. `validators/math/rules.md`
+21. `validators/fit/rules.md`
+22. `validators/alignment/rules.md`
+23. 对应课时的课标（knowledge/standards/）、教材原文（knowledge/textbooks/）、练习册题库（knowledge/workbooks/）、students文件（students/）、课型定义（knowledge/types/）
+
+额外增加：
 
 24. `orchestrator/skill-protocol.md` 中 §2a `/lesson-collab` 强制链
-25. `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md`
-26. 对应课时 `knowledge/workbooks/workbook-*.md`
-27. 对应课时 `knowledge/workbook-answers/workbook-answer-*.md`
-28. 对应课时 `knowledge/workbook-index/workbook-index-*.yaml`
+25. `orchestrator/resource-scheduling.md`
+26. `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md`
+27. 对应课时 `knowledge/workbooks/workbook-*.md`
+28. 对应课时 `knowledge/workbook-answers/workbook-answer-*.md`
+29. 对应课时 `knowledge/workbook-index/workbook-index-*.yaml`
 
 教材参考解答必须在知识分析开始前完成校验：文件存在，`content_type: textbook_solution`，`lesson_id` 与当前课时一致，`review_status: 审核通过`，并通过教材问题解答validators。任一条件不满足时立即终止本次任务，报告预期路径或失败项，并提示执行 `/教材问题解答 {课时}` 后重新发起 `/lesson-collab`。禁止自动补齐、降级读取教材原文临时推导、跳过校验或继续任何确认门。
 
 评价设计和活动设计必须按 `question_id` 使用教材参考解答核对教材任务清单、评价证据、成功标准、预期回答、反馈要点和课堂练习答案。教学设计的 `source_files` 必须登记该教材参考解答文件。
 
 练习册题库必须在评价设计前完成三件套校验：题库文件通过 `tools/validate-workbook-split.py`，答案文件通过 `tools/validate-workbook-answer-split.py`，逐题索引通过 `tools/validate-workbook-index.py`。任一条件不满足时立即终止本次任务，提示先执行练习册拆分、答案拆分或索引生成。评价、活动和作业中引用练习册题目时，必须使用索引中的 `WB-...` 题号，并在 `source_files` 登记题库、答案和索引。
+
+教材与练习册资源必须先盘点后选题。教学设计必须在后台折叠层输出 `resource_audit`、`practice`、`homework`、`deferred_exercises`：当堂检测优先使用教材练习，练习册“夯实基础”可作为补充；课后作业必须分基础层必做、中间层必做、拓展层选做并标注预计用时；未进入当堂检测或课后作业的练习册题必须登记后移去向，不得静默遗漏。
 
 ### `/lesson-collab` outputs
 
@@ -300,46 +248,13 @@ outputs完整教学设计
 - `content_type: lesson`
 - `command: lesson-collab`
 - `review_status: pending_human_review`
-- 额外字段 `collab_gates`：
-
-```yaml
-collab_gates:
-  - gate: knowledge_analysis
-    status: confirmed
-    confirmed_at: "YYYY-MM-DD HH:mm"
-    teacher_notes: ""
-  - gate: learning_objectives
-    status: confirmed
-    confirmed_at: "YYYY-MM-DD HH:mm"
-    teacher_notes: ""
-  - gate: assessment_design
-    status: confirmed
-    confirmed_at: "YYYY-MM-DD HH:mm"
-    teacher_notes: ""
-  - gate: activity_4_1_textbook_order
-    status: confirmed
-    confirmed_at: "YYYY-MM-DD HH:mm"
-    teacher_notes: ""
-  - gate: activity_4_2_steps
-    status: confirmed
-    confirmed_at: "YYYY-MM-DD HH:mm"
-    teacher_notes: ""
-  - gate: activity_4_3_questions
-    status: confirmed
-    confirmed_at: "YYYY-MM-DD HH:mm"
-    teacher_notes: ""
-  - gate: activity_4_4_integration
-    status: confirmed
-    confirmed_at: "YYYY-MM-DD HH:mm"
-    teacher_notes: ""
-```
 
 ### `/lesson-collab` 禁止事项
 
 - 禁止跳过任何确认门。
 - 禁止在教师未确认时继续下游环节。
 - 禁止忽略教师修改意见直接使用原草稿继续。
-- 禁止将确认门交互过程写入最终教学设计正文（仅记录在 YAML front matter 的 `collab_gates` 字段）。
+- 禁止将确认门交互过程写入最终教学设计正文（确认记录写入独立日志 `collab-gates.log.md`）。
 - 禁止生成课件。
 - 禁止生成课堂提问调度稿。
 - 禁止执行课件validators。
@@ -362,129 +277,9 @@ review_status: 审核通过
 
 ---
 
-## 4. `/courseware` 工作流（已归档）
-
-> 本命令入口已归档，不再执行。本节仅保留历史记录和供 `/courseware-collab` 复用的基础转换规范。
-
-输入格式：
-
-```text
-/courseware 课时名称
-```
-
-示例：
-```text
-/courseware 21.4
-/courseware 三角形的中位线
-/courseware 21.4 三角形的中位线
-```
-
-执行链：
-
-```text
-课题确认（解析课时名称 → 匹配教材课时分配表 → 显示确认信息 → 用户确认）
-  ↓
-规则确认
-  ↓
-读取人工审核通过的教学设计
-  ↓
-读取图片规则
-  ↓
-读取题源清单
-  ↓
-分层提问分配
-  ↓
-生成课堂提问调度稿
-  ↓
-生成 Markdown 课件
-  ↓
-课件验证
-  ↓
-图片验证
-  ↓
-outputs课件与课堂提问调度稿
-```
-
-### `/courseware` 课题确认环节
-
-在执行 `/courseware` 命令时，同样需要先进行课题确认，防止用户输入错误的章节号或课时名称。
-
-**确认流程：**
-
-1. **解析输入**：识别用户输入的章节号（如 `21.4`）或课时名称（如 `三角形的中位线`）
-2. **匹配教材**：从 `knowledge/textbooks/教材原文_教材课时分配.md` 中查找对应课时
-3. **检查教学设计状态**：确认对应的教学设计文件存在且状态为 `review_status: 审核通过`
-4. **显示确认信息**：
-   ```text
-   📋 请确认课题信息：
-   
-   章节：第21章 四边形
-   节次：21.4 三角形的中位线
-   课时：第1课时（共1课时）
-   教学设计文件：outputs/21.4_三角形的中位线_完整教学设计.md
-   教学设计状态：审核通过（已通过人工审核）
-   
-   确认无误后，请回复"确认"或"是"继续生成课件。
-   如需修改，请重新输入正确的课时名称。
-   ```
-5. **等待用户确认**：用户回复"确认"、"是"、"对"、"正确"等肯定词后继续执行
-6. **处理异常**：
-   - 如果输入的章节号不存在，提示可用的章节列表
-   - 如果教学设计文件不存在，提示先执行 `/lesson-collab` 生成教学设计
-   - 如果教学设计状态不是 `审核通过`，提示先完成人工审核
-   - 如果输入的课时名称模糊匹配到多个结果，列出所有匹配项让用户选择
-
-**禁止事项：**
-
-- 禁止在用户未确认前直接开始生成课件
-- 禁止忽略用户输入错误继续执行
-- 禁止消费未人工审核通过的教学设计
-
-### `/courseware` 强制读取
-
-1. `AGENTS.md`
-2. `orchestrator/workflow-registry.md`
-3. `orchestrator/output-contract.md`
-4. `orchestrator/image-protocol.md`
-5. `orchestrator/review-protocol.md`
-6. `skills/tier-ask/SKILL.md` 和 `检查清单.md`
-7. `skills/courseware/SKILL.md` 和 `检查清单.md`
-8. `skills/images/SKILL.md`
-9. `validators/courseware/rules.md`
-10. `validators/images/rules.md`
-11. `outputs/{课时名}_完整教学设计.md`
-12. 对应章节的教材、习题、学生成绩数据、提问历史记录
-
-### `/courseware` 前置条件
-
-- 教学设计必须存在。
-- 教学设计必须包含 YAML front matter。
-- 教学设计必须满足 `content_type: lesson`。
-- 教学设计必须满足 `review_status: 审核通过`。
-
-若状态为 `draft`、`pending_human_review` 或 `rejected`，必须停止并提示先完成人工审核。
-
-### `/courseware` outputs
-
-- `outputs/lessons/ch{章节号}/{lesson_id}/lesson-{lesson_id}-courseware.md`
-- `outputs/lessons/ch{章节号}/{lesson_id}/lesson-{lesson_id}-question-dispatch.md`
-
-课件与课堂提问调度稿必须引用同一个教学设计 `lesson_id`，并记录来源教学设计文件。
-
-### `/courseware` 禁止事项
-
-- 禁止重新生成学习目标。
-- 禁止重新生成评价任务。
-- 禁止重新生成活动设计。
-- 禁止消费未人工审核的教学设计。
-- 禁止引用本机绝对路径、`outputs/images/` 或 `outputs/assets/`。
-- 禁止虚构学生姓名。
-
----
-
 ## 4a. `/courseware-collab` 工作流（当前课件主链）
 
-`/courseware-collab` 是当前唯一课件入口。它复用 §4 的基础转换规范，并在**课件结构规划**、**课堂提问设计**、**分层提问分配**三个关键节点设置**确认门**。
+`/courseware-collab` 是当前唯一课件入口。它在**课件结构规划**、**课堂提问设计**、**分层提问分配**三个关键节点设置**确认门**。
 
 输入格式：
 
@@ -503,7 +298,7 @@ outputs课件与课堂提问调度稿
 执行链：
 
 ```text
-课题确认（按 §4 的课题匹配与教学设计状态检查规则执行）
+课题确认（解析课时名称 → 匹配教材课时分配表 → 检查教学设计状态 → 用户确认）
   ↓
 定位并校验对应课时教材参考解答
   文件缺失、课时不匹配或验证失败 → 立即终止本次任务
@@ -581,11 +376,11 @@ outputs课件与课堂提问调度稿
 
 ### `/courseware-collab` 课题确认环节
 
-按 §4 的课题匹配与教学设计状态检查规则执行（解析课时名称 → 匹配教材课时分配表 → 检查教学设计状态 → 用户确认）。
+按以下规则执行：解析课时名称 → 匹配教材课时分配表 → 检查教学设计状态 → 用户确认。
 
 ### `/courseware-collab` 强制读取
 
-读取 §4 登记的基础文件，额外增加：
+强制读取以下文件，额外增加：
 
 12. `orchestrator/skill-protocol.md` 中 §3a `/courseware-collab` 强制链
 13. `skills/ask-check/SKILL.md` 和 `skills/ask-check/checklist.md`（到确认门2前再读取并自检）
@@ -637,16 +432,6 @@ collab_gates:
 - 禁止消费未人工审核的教学设计。
 - 禁止使用非同级 `images/` 的图片路径。
 - 禁止虚构学生姓名。
-
----
-
-## 5. 已归档的可选outputs
-
-板书设计已从当前三条主工作流中移出，并归档到 `archive/skills_暂停使用/`：
-
-- 当前 `/lesson-collab` 不生成板书设计。
-- 当前 `/courseware-collab` 不读取板书设计。
-- 如后续恢复板书能力，需同步恢复skills目录、注册表状态和相关检查项。
 
 ---
 
@@ -893,16 +678,3 @@ outputs复习讲义到outputs目录
 - 禁止遗漏任何题型N 典例（当堂练习必须全量纳入）。
 - 禁止在统计确认前直接开始生成讲义。
 - 禁止原始数量与选用数量对比表行数与统计项不一致。
-
----
-
-## 9. 旧规则废弃声明
-
-以下旧写法全部废弃：
-
-- 将课件生成放入 `/lesson-collab`。
-- 将课件validators放入 `/lesson-collab`。
-- 旧的外部课件生成表述。
-- 将课件产物称为演示结构草案。
-- 使用旧的中间层别名。
-- 使用非同级 `images/` 的图片路径。

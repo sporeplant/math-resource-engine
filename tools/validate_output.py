@@ -362,6 +362,12 @@ def check_common(path: Path, text: str, errors: list[str]) -> dict[str, str]:
     if meta.get("review_status") and meta["review_status"] not in VALID_REVIEW_STATUS:
         errors.append(f"invalid review_status: {meta['review_status']}")
 
+    if "collab_gates" in meta:
+        errors.append(
+            "YAML front matter contains collab_gates field; "
+            "confirmation gate records must be written to collab-gates.log.md instead"
+        )
+
     if meta.get("content_type") not in {"courseware", "review_lesson"} and re.search(
         r"!\[[^\]]*\]\([^)]+\)", text
     ):

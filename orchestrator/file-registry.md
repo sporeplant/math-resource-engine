@@ -27,6 +27,14 @@
 
 ---
 
+## 2.1 策略文件
+
+| 策略 | 位置 | 用途 |
+|------|------|------|
+| 教材-练习册双资源调度策略 | `orchestrator/resource-scheduling.md` | `/lesson-collab` 生成前盘点教材与练习册题目，决定当堂检测、课后作业和后移题 |
+
+---
+
 ## 3. 图片目录规则
 
 正式 outputs Markdown 默认引用 `knowledge/images/` 对应 CDN URL。knowledge 源文件可继续使用自身约定的相对图片目录。

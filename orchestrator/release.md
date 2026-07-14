@@ -48,7 +48,6 @@ outputs/
 │   ├── lesson-{id}-assessment.md
 │   ├── lesson-{id}-activities.md
 │   ├── lesson-{id}-lesson-plan.md
-│   ├── lesson-{id}-blackboard.md
 │   ├── lesson-{id}-courseware-structure.md
 │   ├── lesson-{id}-exercise-analysis.md
 │   ├── lesson-{id}-review-report.md
