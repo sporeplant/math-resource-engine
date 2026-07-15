@@ -132,7 +132,7 @@ outputs完整教学设计
 - 对应课时 `knowledge/workbook-answers/workbook-answer-*.md`
 - 对应课时 `knowledge/workbook-index/workbook-index-*.yaml`
 
-教材参考解答必须在知识分析前校验文件存在、`content_type: textbook_solution`、`lesson_id` 匹配、`review_status: 审核通过`，并通过教材问题解答validators。缺失或校验失败时终止本次任务，禁止自动生成、降级推导、跳过校验或继续确认门。教学设计的 `source_files` 必须登记该文件，教材题的评价证据、活动预期回答和练习答案必须按 `question_id` 与之核对。
+教材参考解答必须在知识分析前校验：文件存在，`content_type: textbook_solution`，`lesson_id` 匹配，`review_status: 审核通过`，并通过教材问题解答validators。标准模式下缺失或校验失败时终止本次任务。auto 模式下缺失或校验失败时自动触发 `/教材问题解答` 生成，与知识分析、学习目标并行推进，评价设计在解答就绪后开始。教学设计的 `source_files` 必须登记该文件，教材题的评价证据、活动预期回答和练习答案必须按 `question_id` 与之核对。
 
 练习册为可选项。存在时必须在评价设计前校验通过。练习册题目进入评价、活动或作业时，必须使用索引中的 `WB-...` 题号，教学设计 `source_files` 必须登记对应题库、答案和索引。缺失时不阻断，相关字段标记 `N/A`。
 
@@ -222,7 +222,7 @@ outputs课件与课堂提问调度稿
 - 对应课时 `knowledge/workbook-answers/workbook-answer-*.md`
 - 对应课时 `knowledge/workbook-index/workbook-index-*.yaml`
 
-教材参考解答必须在读取教学设计和进入确认门1前校验文件存在、`content_type: textbook_solution`、`lesson_id` 匹配并通过教材问题解答validators。缺失或校验失败时终止本次任务。教材题答案按 `question_id` 复用，练习册题继续使用原题源；课堂提问调度稿的 `source_files` 必须登记该文件。
+教材参考解答必须在读取教学设计和进入确认门1前校验：文件存在，`content_type: textbook_solution`，`lesson_id` 匹配，并通过教材问题解答validators。标准模式下缺失或校验失败时终止本次任务。auto 模式下缺失时自动触发 `/教材问题解答` 生成，与课件结构规划并行推进，课堂提问设计在解答就绪后开始。教材题答案按 `question_id` 复用，练习册题继续使用原题源；课堂提问调度稿的 `source_files` 必须登记该文件。
 
 练习册为可选项。存在时必须在进入确认门1前校验通过。调度稿中所有练习册题目的 `question_id` 必须能在逐题索引中找到，并按索引的 `answer_ref` 读取答案文件。缺失时不阻断，相关字段标记 `N/A`。
 
