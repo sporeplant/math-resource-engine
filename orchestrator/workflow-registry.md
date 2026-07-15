@@ -166,6 +166,29 @@ outputs/{课时名}/
 
 **auto 模式 quality check / output 与标准模式完全相同。** 最终教学设计 `review_status` 仍为 `pending_human_review`，必须经人工审核通过后方可用于 `/courseware-collab`。
 
+**执行指引（主 Agent 并行调度）：**
+
+auto 模式下主 Agent 不自行生成所有内容，而是按以下规则派发后台子 Agent：
+
+1. **课题确认后**，同时推进：
+   - 教材解答缺失时：`task(run_in_background=true)` 派发子 Agent 执行 `/教材问题解答 {课时}`，子 Agent 写入 `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md`，完成后返回校验摘要
+   - 练习册存在时：主 Agent 自行校验三件套（纯文件校验，轻量），与知识分析并行
+   - 主 Agent 自行推进知识分析 → 学习目标，写入 `01-knowledge-analysis.md`、`02-objectives.md`
+
+2. **评价设计前 wait 点**：若派发了教材解答子 Agent，调用 `wait` 等待其完成并校验返回报告；子 Agent 间通过中间 MD 文件传递结果，主 Agent 读取校验不通过则终止并报告
+
+3. **活动设计完成后**，同时派发：
+   - `task(run_in_background=true)` 派发子 Agent 执行作业设计，子 Agent 写入 `05-homework.md`
+   - 主 Agent 自行执行活动质量检查
+   - `wait` 作业设计子 Agent 完成后继续
+
+4. **质量检查阶段**，用 `parallel_tasks` 同时派发四个只读审核：
+   - 数学正确性审核
+   - 教学法审核
+   - 学情适配审核
+   - 提问质量审查
+   - 四者全部返回后主 Agent 串行执行一致性校验，汇总后 output
+
 ### 确认门交互协议
 
 每个确认门必须遵循以下交互规范：
@@ -454,6 +477,22 @@ outputs/lessons/ch{章节号}/{lesson_id}/
 ```
 
 **auto 模式仍必须消费 `review_status: 审核通过` 的教学设计。** 课件验证和图片验证与标准模式完全相同。
+
+**执行指引（主 Agent 并行调度）：**
+
+1. **课题确认后**，同时推进：
+   - 教材解答缺失时：`task(run_in_background=true)` 派发子 Agent 执行 `/教材问题解答 {课时}`
+   - 练习册存在时：主 Agent 自行校验三件套，与课件结构规划并行
+   - 主 Agent 自行读取教学设计并推进课件结构规划，写入 `01-structure.md`
+
+2. **课堂提问设计前 wait 点**：若派发了教材解答子 Agent，调用 `wait` 等待其完成并校验返回报告
+
+3. **分层提问分配完成后**，同时派发：
+   - `task(run_in_background=true)` 派发子 Agent 执行课件生成，子 Agent 写入 `lesson-{lesson_id}-courseware.md`
+   - `task(run_in_background=true)` 派发子 Agent 执行课堂提问调度稿生成，子 Agent 写入 `lesson-{lesson_id}-question-dispatch.md`
+   - `wait` 两者全部完成后继续
+
+4. **验证阶段**，用 `parallel_tasks` 同时派发课件验证 + 图片验证，全部返回后 output
 
 ### 确认门交互协议
 

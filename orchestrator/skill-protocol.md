@@ -36,7 +36,7 @@
 
 `/lesson-collab` 的完整步骤见 `orchestrator/workflow-registry.md` §2a。
 
-`/lesson-collab` 是当前唯一教学设计入口，在知识分析、学习目标、评价设计、活动设计四个关键节点设置确认门。
+`/lesson-collab` 是当前唯一教学设计入口，在知识分析、学习目标、评价设计、活动设计四个关键节点设置确认门。auto 模式下使用子 Agent 并行调度（`task(run_in_background=true)`、`parallel_tasks`）执行，详见 `orchestrator/workflow-registry.md` §2a auto 模式执行指引。
 
 **前置环节：课题确认**
 
@@ -161,7 +161,7 @@ outputs：
 
 `/courseware-collab` 的完整步骤见 `orchestrator/workflow-registry.md` §4a。
 
-`/courseware-collab` 是当前唯一课件入口，在**课件结构规划**、**课堂提问设计**、**分层提问分配**三个关键节点设置确认门。
+`/courseware-collab` 是当前唯一课件入口，在**课件结构规划**、**课堂提问设计**、**分层提问分配**三个关键节点设置确认门。auto 模式下使用子 Agent 并行调度执行，详见 `orchestrator/workflow-registry.md` §4a auto 模式执行指引。
 
 **前置环节：课题确认**
 
