@@ -121,8 +121,17 @@ def check_all(paths: list[Path]) -> list[str]:
                 # Underscores allowed per orchestrator/naming.md:
                 #   - outputs/_tmp, outputs/_demo (explicit exception)
                 #   - knowledge/ dirs use snake_case convention
+                #   - outputs/ dirs (auto-generated assets may use underscores)
+                #   - tools/*.py (Python snake_case convention)
                 parent_is_knowledge = i > 0 and rel.parts[0] == "knowledge"
-                allow_underscore = part in UNDERSCORE_ALLOWED_NAMES or parent_is_knowledge
+                parent_is_outputs = i > 0 and rel.parts[0] == "outputs"
+                is_tools_py = rel.parts[0] == "tools" and path.suffix == ".py"
+                allow_underscore = (
+                    part in UNDERSCORE_ALLOWED_NAMES
+                    or parent_is_knowledge
+                    or parent_is_outputs
+                    or is_tools_py
+                )
                 errors.extend(check_name(part, allow_underscore=allow_underscore))
         if path.is_file() and path.suffix == ".md":
             errors.extend(check_content(path))

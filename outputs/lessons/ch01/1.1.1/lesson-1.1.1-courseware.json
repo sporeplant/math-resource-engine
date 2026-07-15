@@ -1,0 +1,897 @@
+{
+  "slides": [
+    {
+      "id": "s01",
+      "elements": [
+        {
+          "id": "s01_e001",
+          "type": "text",
+          "text": "📐 1.1 正数和负数（第一课时）",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s01_e002",
+          "type": "text",
+          "text": "第一章 有理数 | 冀教版七年级上册",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "elements": [
+        {
+          "id": "s02_e001",
+          "type": "text",
+          "text": "🎯 本课目标",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s02_e002",
+          "type": "text",
+          "text": "1. 能够从具体情境中辨认具有相反意义的量，说出相反意义的具体所指 2. 能够在给定\"规定\"的条件下，用带\"+\"或\"-\"的数正确表示具有相反意义的量 3. 能够归纳判断关键：具有相反意义的量必须是同一类量的两个对立方向",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 206,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "elements": [
+        {
+          "id": "s03_e001",
+          "type": "text",
+          "text": "📖 气温中的\"不一样\"",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s03_e002",
+          "type": "text",
+          "text": "下面是某地 7 天最低气温的趋势预报。",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s03_e003",
+          "type": "image",
+          "src": "d8407aa9e03bba1297caa5daaf10442400999bd7c579a222f174dfbc0122e32a.jpg",
+          "x": 280,
+          "y": 170,
+          "width": 720,
+          "height": 293
+        },
+        {
+          "id": "s03_e004",
+          "type": "text",
+          "text": "这些气温数字，有些带\"-\"，有些不带 —— 它们有什么不一样？",
+          "x": 70,
+          "y": 479,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "elements": [
+        {
+          "id": "s04_e001",
+          "type": "text",
+          "text": "📖 观察与思考：图 1.1-1（上）",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s04_e002",
+          "type": "image",
+          "src": "552c7d1b350c160aba35073e801e5cdc25d0e467d0c7e304dd7f0e6bcc2cf1f1.jpg",
+          "x": 280,
+          "y": 112,
+          "width": 720,
+          "height": 473
+        },
+        {
+          "id": "s04_e003",
+          "type": "text",
+          "text": "甲汽车向东行驶 3 km，乙汽车向西行驶 1 km。",
+          "x": 70,
+          "y": 601,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "elements": [
+        {
+          "id": "s05_e001",
+          "type": "text",
+          "text": "📖 观察与思考：图 1.1-1（下）",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s05_e002",
+          "type": "image",
+          "src": "b7813a2cc0ff9d099165e297bc7b40fce7088255e5f039a22879cc26e78c8070.jpg",
+          "x": 280,
+          "y": 112,
+          "width": 720,
+          "height": 572
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "elements": [
+        {
+          "id": "s05_e003",
+          "type": "text",
+          "text": "超市购进某种饮料 100 箱，超市售出这种饮料 90 箱。",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "elements": [
+        {
+          "id": "s06_e001",
+          "type": "text",
+          "text": "🤔 思考讨论",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s06_e002",
+          "type": "text",
+          "text": "观察图 1.1-1 的两幅图片，每对量之间是什么关系？",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s06_e003",
+          "type": "text",
+          "text": "🗣️ 请一位基础层同学回答。",
+          "x": 70,
+          "y": 170,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "elements": [
+        {
+          "id": "s07_e001",
+          "type": "text",
+          "text": "📖 观察与思考：图 1.1-2（上）",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s07_e002",
+          "type": "text",
+          "text": "生活费收支清单",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "elements": [
+        {
+          "id": "s07_e003",
+          "type": "image",
+          "src": "t_s07_002_fb867ec6.png",
+          "x": 227,
+          "y": 54,
+          "width": 826,
+          "height": 839
+        },
+        {
+          "id": "s07_e004",
+          "type": "text",
+          "text": "21，188，100，80 的含义分别是什么？",
+          "x": 70,
+          "y": 909,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "elements": [
+        {
+          "id": "s08_e001",
+          "type": "text",
+          "text": "📖 观察与思考：图 1.1-2（下）",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s08_e002",
+          "type": "image",
+          "src": "fc1a5540d700d368a5a1e07cb5020c01fa8a2f5f4df858df3662f40bc83dfa47.jpg",
+          "x": 483,
+          "y": 112,
+          "width": 313,
+          "height": 600
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "elements": [
+        {
+          "id": "s08_e003",
+          "type": "text",
+          "text": "\"-4\" 与 \"3\" 这两个数所代表的含义有什么不同？",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "elements": [
+        {
+          "id": "s09_e001",
+          "type": "text",
+          "text": "🤔 思考讨论",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s09_e002",
+          "type": "text",
+          "text": "观察收支清单和温度计，怎样用\"+\"和\"-\"表示具有相反意义的量？",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s09_e003",
+          "type": "text",
+          "text": "🗣️ 请一位基础层同学回答。",
+          "x": 70,
+          "y": 222,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "elements": [
+        {
+          "id": "s10_e001",
+          "type": "text",
+          "text": "🤔 思考讨论",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s10_e002",
+          "type": "text",
+          "text": "温度计上\"-4\"中的\"-\"和我们做减法时的\"-\"一样吗？为什么？",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s10_e003",
+          "type": "text",
+          "text": "🗣️ 请一位中间层同学回答。",
+          "x": 70,
+          "y": 222,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "elements": [
+        {
+          "id": "s11_e001",
+          "type": "text",
+          "text": "📝 做一做 第1题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s11_e002",
+          "type": "text",
+          "text": "✏️ 请在练习本上完成",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s11_e003",
+          "type": "text",
+          "text": "仿照示例，完成下表填空：",
+          "x": 70,
+          "y": 170,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s11_e004",
+          "type": "image",
+          "src": "t_s11_003_556c9303.png",
+          "x": 227,
+          "y": 228,
+          "width": 826,
+          "height": 240
+        },
+        {
+          "id": "s11_e005",
+          "type": "text",
+          "text": "（限时 3 分钟）",
+          "x": 70,
+          "y": 484,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s11_e006",
+          "type": "text",
+          "text": "产出：在练习本上写出三个填空的答案。",
+          "x": 70,
+          "y": 542,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "elements": [
+        {
+          "id": "s12_e001",
+          "type": "text",
+          "text": "📝 当堂检测",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s12_e002",
+          "type": "text",
+          "text": "✏️ 请打开教材，在练习本上完成",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s12_e003",
+          "type": "text",
+          "text": "练习第 1 题（4小问）：判断哪对量是具有相反意义的量",
+          "x": 70,
+          "y": 170,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s12_e004",
+          "type": "text",
+          "text": "练习第 2 题（3小问）：在给定规定下用正负数填空",
+          "x": 70,
+          "y": 228,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s12_e005",
+          "type": "text",
+          "text": "（限时 6 分钟） 评分：共 7 小问，每问 1 分，满分 7 分",
+          "x": 70,
+          "y": 286,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "elements": [
+        {
+          "id": "s13_e001",
+          "type": "text",
+          "text": "📝 参考答案",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s13_e002",
+          "type": "text",
+          "text": "练习第 1 题： (1) 是 —— 得和扣是相反意义 (2) 是 —— 增加和减少是相反意义 (3) 是 —— 下去和上来是相反意义 (4) 不是 —— 周长和面积是两种不同的量，不是同一类事情",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 206,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s13_e003",
+          "type": "text",
+          "text": "练习第 2 题： (1) -300 m (2) +3 g；-2 g (3) +2000 m^3；-1500 m^3",
+          "x": 70,
+          "y": 326,
+          "width": 1120,
+          "height": 154,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "elements": [
+        {
+          "id": "s14_e001",
+          "type": "text",
+          "text": "✏️ 做一做 第2题",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s14_e002",
+          "type": "text",
+          "text": "✏️ 请在练习本上完成",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s14_e003",
+          "type": "text",
+          "text": "用带\"+\"或\"-\"的数表示下列具有相反意义的量：",
+          "x": 70,
+          "y": 170,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "elements": [
+        {
+          "id": "s14_e004",
+          "type": "text",
+          "text": "(1) 如果超市购进某种饮料 100 箱记作 +100 箱，那么超市售出这种饮料 90 箱可记作 ____ 箱。",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 154,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s14_e005",
+          "type": "text",
+          "text": "(2) 如果规定高于海平面记作正，那么，珠穆朗玛峰高于海平面 8848.86 m 可记作 ____ m，吐鲁番盆地最低点低于海平面 154.31 m 可记作 ____ m。",
+          "x": 70,
+          "y": 216,
+          "width": 1120,
+          "height": 206,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "elements": [
+        {
+          "id": "s14_e006",
+          "type": "text",
+          "text": "(3) 如果规定收入记作正，那么，小亮家的年收入 126800 元可记作 ____ 元，\"-77800 元\"表示小亮家 ____（填\"收入\"或\"支出\"）了 77800 元。",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 206,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s14_e007",
+          "type": "text",
+          "text": "（限时 4 分钟） 评分：共 5 个空，每空 1 分，满分 5 分 产出：在练习本上写出答案",
+          "x": 70,
+          "y": 268,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "elements": [
+        {
+          "id": "s15_e001",
+          "type": "text",
+          "text": "🤔 思考讨论",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s15_e002",
+          "type": "text",
+          "text": "练习第 1 题(4)：周长 24 cm 与面积 27 cm^2，为什么不是具有相反意义的量？",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s15_e003",
+          "type": "text",
+          "text": "判断具有相反意义的量，有哪两个关键？",
+          "x": 70,
+          "y": 222,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s15_e004",
+          "type": "text",
+          "text": "🗣️ 请一位中间层同学回答。",
+          "x": 70,
+          "y": 280,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "elements": [
+        {
+          "id": "s16_e001",
+          "type": "text",
+          "text": "💡 课堂小结",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s16_e002",
+          "type": "image",
+          "src": "t_s16_001_685e98ea.png",
+          "x": 227,
+          "y": 112,
+          "width": 826,
+          "height": 895
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "elements": [
+        {
+          "id": "s16_e003",
+          "type": "text",
+          "text": "请同学思考后回答。",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "elements": [
+        {
+          "id": "s17_e001",
+          "type": "text",
+          "text": "📝 课后作业",
+          "x": 70,
+          "y": 54,
+          "width": 1120,
+          "height": 50,
+          "fontSize": 33,
+          "bold": true,
+          "color": "#1f4e79",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s17_e002",
+          "type": "text",
+          "text": "必做： 1. 教材习题 A 组第 1 题（写出相反意义的量，4 小问） 2. 教材习题 A 组第 2 题（正负数填空，3 小问）",
+          "x": 70,
+          "y": 112,
+          "width": 1120,
+          "height": 154,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s17_e003",
+          "type": "text",
+          "text": "选作： 1. 教材习题 B 组第 4 题（举出生活中的相反意义实例，写在练习本上）",
+          "x": 70,
+          "y": 274,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        },
+        {
+          "id": "s17_e004",
+          "type": "text",
+          "text": "挑战： 1. 教材习题 B 组第 3 题（6 箱水果标准偏差计算）",
+          "x": 70,
+          "y": 384,
+          "width": 1120,
+          "height": 102,
+          "fontSize": 26,
+          "bold": false,
+          "color": "#222222",
+          "fontFamily": "方正小标宋简体"
+        }
+      ]
+    }
+  ]
+}

@@ -428,9 +428,21 @@ def check_lesson(text: str, meta: dict[str, str], errors: list[str]) -> None:
 
 
 def check_lesson_dual_layer(text: str, meta: dict[str, str], errors: list[str]) -> None:
-    """Check the teacher-facing and structured layers of a lesson design."""
+    """Check the teacher-facing and structured layers of a lesson design.
+
+    Enforces the nine-column traditional format and folded structured layer
+    defined in orchestrator/output-contract.md.
+    """
     if meta.get("content_type") != "lesson":
         return
+
+    # collab_gates belongs in separate log file, not in lesson YAML
+    front = text[: text.find("\n---", 4)] if text.startswith("---\n") else ""
+    if "collab_gates:" in front:
+        errors.append(
+            "lesson YAML front matter contains collab_gates; "
+            "confirmation records must only be written to collab-gates.log.md"
+        )
 
     body = strip_front_matter(text)
     details_match = re.search(
@@ -444,115 +456,73 @@ def check_lesson_dual_layer(text: str, meta: dict[str, str], errors: list[str]) 
     implementation = body[: details_match.start()]
     structured = details_match.group(1)
 
-    required_implementation = [
-        "## 课堂实施导航",
-        "### 本课要解决的问题",
-        "### 课堂实施要点",
-        "### 核心提问",
-        "### 课堂练习与作业",
+    TRADITIONAL_HEADINGS = [
+        "## 一、教学内容",
+        "## 二、教学目标",
+        "## 三、教学重点与难点",
+        "## 四、教学准备",
+        "## 五、教学过程",
+        "## 六、当堂检测",
+        "## 七、课后作业",
+        "## 八、板书设计",
+        "## 九、设计依据简记",
     ]
-    if "阅读建议" not in implementation:
-        errors.append("lesson implementation layer missing 阅读建议")
-    for heading in required_implementation:
-        if heading not in implementation:
+    previous_index = -1
+    for heading in TRADITIONAL_HEADINGS:
+        index = implementation.find(heading)
+        if index == -1:
             errors.append(f"lesson implementation layer missing heading: {heading}")
-    if not re.search(r"(?m)^###\s*\d+分钟流程总览\s*$", implementation):
-        errors.append(
-            "lesson implementation layer missing '{duration}分钟流程总览' heading"
-        )
-    expected_table_header = "| 时间 | 教学环节 | 学生主要任务 | 教师支持 | 达成结果 |"
-    if expected_table_header not in implementation:
-        errors.append(
-            "lesson implementation layer missing the required five-column flow table"
-        )
+        elif index < previous_index:
+            errors.append(f"lesson implementation headings are out of order: {heading}")
+        else:
+            previous_index = index
 
-    backend_patterns = {
+    BACKEND_PATTERNS = {
         "learning objective ID": r"\bLO-[BME]-\d{2}\b",
         "assessment ID": r"\bAS-[BME]-\d{2}\b",
         "activity ID": r"\bACT-[BME]-\d{2}\b",
         "question ID": r"\bASK[_-][BME][_-]\d{2}\b",
         "source field": r"\b(?:source_id|source_type|question_ids?)\s*[:：]",
     }
-    for label, pattern in backend_patterns.items():
+    for label, pattern in BACKEND_PATTERNS.items():
         if re.search(pattern, implementation):
             errors.append(f"lesson implementation layer exposes backend {label}")
 
-    required_structured_sections = [
+    STRUCTURED_SECTIONS = [
         "meta",
         "knowledge_analysis",
         "objectives",
         "assessment",
         "problem_chain",
         "lesson_flow",
+        "resource_audit",
         "practice",
         "homework",
+        "deferred_exercises",
         "boardwork",
         "consistency_matrix",
         "quality_check",
     ]
-    for section in required_structured_sections:
+    for section in STRUCTURED_SECTIONS:
         if not re.search(rf"(?m)^##\s+{re.escape(section)}\s*$", structured):
             errors.append(f"lesson structured layer missing section: {section}")
 
-    overview_match = re.search(
-        r"(?m)^###\s*\d+分钟流程总览\s*$([\s\S]*?)(?=^###\s|\Z)",
+    if not re.search(
+        r"(?m)^##\s+五、教学过程\s*$[\s\S]*?^###\s+.+（\s*\d+(?:\.\d+)?\s*分钟\s*）\s*$",
         implementation,
-    )
-    overview_rows: list[int] = []
-    if overview_match:
-        overview_rows = [
-            int(value)
-            for value in re.findall(
-                r"(?m)^\|\s*(\d+)\s*分钟\s*\|", overview_match.group(1)
-            )
-        ]
-        if not overview_rows:
-            errors.append("lesson implementation flow table has no timed activity rows")
+    ):
+        errors.append("lesson implementation layer lacks timed teaching-process steps")
 
-    activity_minutes = [
-        int(value)
-        for value in re.findall(
-            r"(?m)^###\s+ACT-[BME]-\d{2}\s+.+?（\s*(\d+)\s*分钟\s*）\s*$",
-            structured,
+    if not re.search(r"(?m)^##\s+六、当堂检测\s*$[\s\S]*?(?:检测目标|限时)", implementation):
+        errors.append(
+            "lesson implementation layer lacks a timed or goal-aligned 当堂检测"
         )
-    ]
-    if overview_rows and activity_minutes:
-        if len(overview_rows) != len(activity_minutes):
-            errors.append(
-                "dual-layer activity count mismatch: "
-                f"implementation={len(overview_rows)}, structured={len(activity_minutes)}"
-            )
-        if overview_rows != activity_minutes:
-            errors.append(
-                "dual-layer activity time/order mismatch: "
-                f"implementation={overview_rows}, structured={activity_minutes}"
-            )
 
-    implementation_question_match = re.search(
-        r"(?m)^###\s+本课要解决的问题\s*$\s*([^\n]+)", implementation
-    )
-    structured_question_match = re.search(
-        r"(?m)^-\s*core_question\s*:\s*(.+?)\s*$", structured
-    )
-    if implementation_question_match and structured_question_match:
-        implementation_question = implementation_question_match.group(1).strip()
-        structured_question = (
-            structured_question_match.group(1).strip().strip('"').strip("'")
-        )
-        if implementation_question != structured_question:
-            errors.append("dual-layer core question mismatch")
-
-    practice_homework_match = re.search(
-        r"(?m)^###\s+课堂练习与作业\s*$([\s\S]*?)(?=^###\s|<details>|\Z)",
+    if not re.search(
+        r"(?m)^##\s+七、课后作业\s*$[\s\S]*?基础层必做[\s\S]*?中间层必做[\s\S]*?拓展层选做",
         implementation,
-    )
-    if practice_homework_match:
-        task_refs = set(re.findall(r"[AB]组第\d+题", practice_homework_match.group(1)))
-        for task_ref in sorted(task_refs):
-            if task_ref not in structured:
-                errors.append(
-                    f"implementation practice/homework task missing from structured layer: {task_ref}"
-                )
+    ):
+        errors.append("lesson implementation layer lacks layered homework")
 
 
 def check_courseware(

@@ -8,8 +8,8 @@
   python tools/md_to_easinote_json.py foo.md out.json --assets-dir ./my-imgs
 
 约定:
-  - 输入须为按 <div style="page-break-after: always;"></div> 分页的 Markdown
-  - 图片路径相对于 MD 文件目录，自动复制到 assets 目录
+  - 支持按 `---` 水平线或 `<div style="page-break-after: always;"></div>` 分页的 Markdown
+  - 图片支持 CDN URL（自动从本地 knowledge/images/ 复制）和相对路径，自动复制到 assets 目录
   - LaTeX $...$ 自动转 Unicode（∠ ° △ ⊥ · 等）
   - Markdown 表格自动渲染为 PNG 图片
   - 超出 740px 的页面自动拆分
@@ -25,6 +25,11 @@ import sys
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+
+try:
+    from PIL import Image as PILImage
+except ImportError:
+    PILImage = None
 
 # ═══ 命令行 ═══
 if len(sys.argv) < 2:
@@ -70,6 +75,9 @@ CS = "#1f4e79"
 CB = "#222222"
 CD = "#333333"
 LIMIT = 740
+
+# 表格单元格溢出记录（由 _render_table 追加）
+TABLE_OVERFLOWS = []
 CN_FONT = "方正小标宋简体"
 EN_FONT = "Times New Roman"
 
@@ -136,6 +144,28 @@ def _cp(src):
     dst = os.path.join(assets_dir, fn)
     if os.path.exists(dst):
         return fn
+
+    # CDN URL → 本地 knowledge/images/
+    cdn_prefix = 'https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/'
+    if src.startswith(cdn_prefix):
+        rel = src[len(cdn_prefix):]  # e.g., knowledge/images/xxx.jpg
+        # 从 md_dir 向上找仓库根（含 knowledge/images/ 的目录）
+        repo_root = md_dir
+        while True:
+            local = os.path.join(repo_root, rel)
+            if os.path.exists(local):
+                break
+            parent = os.path.dirname(repo_root)
+            if parent == repo_root:  # 到达文件系统根
+                return None
+            repo_root = parent
+        try:
+            shutil.copy2(local, dst)
+        except Exception:
+            pass
+        return fn
+
+    # 本地相对路径
     src_full = os.path.join(md_dir, src)
     if os.path.exists(src_full):
         try:
@@ -166,29 +196,51 @@ def _parse_md_table(lines):
     return headers, data
 
 def _wrap_text(text, max_chars_per_line):
-    """手动换行：在 max_chars 处插入 \\n（在标点或空格后断行）"""
-    if len(text) <= max_chars_per_line:
+    """手动换行：按显示宽度（中文≈1.0，ASCII≈0.55）在标点或空格后断行"""
+    # 单字符显示宽度：CJK/中文标点=1.0，ASCII/数字/空格≈0.55
+    def _cw(ch):
+        cp = ord(ch)
+        if cp > 0x2000:  # CJK及中文标点
+            return 1.0
+        return 0.55
+
+    total_w = sum(_cw(ch) for ch in text)
+    if total_w <= max_chars_per_line:
         return text
-    # 中文标点 unicode 范围 + 空格
-    punct_set = set('\uff0c\u3002\uff1b\u3001\uff01\uff1f\uff09\u3011\u300d\u300f ')
+
+    # 断行标点（中文 + 英文标点 + 空格）
+    punct_set = set(
+        '\uff0c\u3002\uff1b\u3001\uff01\uff1f\uff09\u3011\u300d\u300f'
+        ',.;!?:) ]}\u2019\u201d'
+    )
     lines = []
     remaining = text
-    while len(remaining) > max_chars_per_line:
-        cut = max_chars_per_line
-        for offset in range(3, -6, -1):
-            pos = max_chars_per_line + offset
-            if 0 <= pos < len(remaining) and remaining[pos] in punct_set:
-                cut = pos + 1
+    while remaining:
+        # 累计显示宽度，找到超过 max_chars 的位置
+        w = 0.0
+        cut = len(remaining)  # 默认整行
+        for idx, ch in enumerate(remaining):
+            w += _cw(ch)
+            if w > max_chars_per_line:
+                cut = idx
                 break
-        if cut <= 0:
-            cut = max_chars_per_line
-        lines.append(remaining[:cut])
-        # 去掉下一行开头的标点
-        remaining = remaining[cut:]
+        if cut >= len(remaining):
+            lines.append(remaining)
+            break
+        # 在 cut 附近找标点作为更自然的断点
+        best = cut
+        for offset in range(3, -6, -1):
+            pos = cut + offset
+            if 0 <= pos < len(remaining) and remaining[pos] in punct_set:
+                best = pos + 1
+                break
+        if best <= 0:
+            best = cut
+        lines.append(remaining[:best])
+        remaining = remaining[best:]
+        # 去掉下一行开头的标点和空格
         while remaining and remaining[0] in punct_set:
             remaining = remaining[1:]
-    if remaining:
-        lines.append(remaining)
     return '\n'.join(lines)
 
 def _render_table(rows, slide_id, ei):
@@ -223,13 +275,12 @@ def _render_table(rows, slide_id, ei):
     # 估算每列字符数：中文字宽 ≈ font_size * 0.07cm，英文 ≈ font_size * 0.04cm
     col_width_cm = 10.5 / n_cols
     cn_cw = font_size * 0.07  # cm per Chinese char
-    chars_per_line = max(8, int(col_width_cm / cn_cw * 0.92))  # 92% 留边距
+    chars_per_line = max(3, round(col_width_cm / cn_cw * 0.92))  # 92% 留边距，四舍五入，下限3
 
-    # 对窄列（≤2列）且文本长的表格做换行
-    if n_cols <= 2:
-        for i in range(n_rows):
-            for j in range(n_cols):
-                cell_text[i][j] = _wrap_text(cell_text[i][j], chars_per_line)
+    # 对所有列宽的表格做换行
+    for i in range(n_rows):
+        for j in range(n_cols):
+            cell_text[i][j] = _wrap_text(cell_text[i][j], chars_per_line)
 
     # 重新估算高度
     max_lines = 1
@@ -261,6 +312,27 @@ def _render_table(rows, slide_id, ei):
             cell.set_text_props(fontsize=font_size)
 
     plt.tight_layout(pad=0.3)
+
+    # ── 单元格文字溢出检测 ──
+    r = fig.canvas.get_renderer()
+    for (row, col), cell in tbl.get_celld().items():
+        txt = cell.get_text()
+        if not txt or not txt.get_text().strip():
+            continue
+        try:
+            cell_bbox = cell.get_window_extent(r)
+            txt_bbox = txt.get_window_extent(r)
+            cell_w, txt_w = cell_bbox.width, txt_bbox.width
+            pad_w = cell_w * 0.85  # 留15%边距
+            if txt_w > pad_w:
+                TABLE_OVERFLOWS.append(
+                    f'[{slide_id} col{col}] "{txt.get_text()[:24]}" '
+                    f'text={txt_w:.0f}px > cell={cell_w:.0f}px (margin={pad_w:.0f}px)'
+                )
+        except Exception:
+            pass
+    # ── 检测完毕 ──
+
     key = hashlib.md5((raw_key + str(__import__('time').time())).encode()).hexdigest()[:8]
     fn = f"t_{slide_id}_{ei:03d}_{key}.png"
     dst = os.path.join(assets_dir, fn)
@@ -299,21 +371,37 @@ def _slide(si, raw):
         el.append(elem)
         y += h + 4 + eh
 
-    def _i(src, w=720, h=420):
+    IMG_DEF_W, IMG_MAX_H = 720, 600
+    def _i(src, w=None, h=None):
         nonlocal y, ei
         fn = _cp(src)
-        if fn:
-            ei += 1
-            el.append({
-                "id": f"{sid}_e{ei:03d}",
-                "type": "image",
-                "src": fn,
-                "x": max(0, (1280 - w) // 2),
-                "y": y,
-                "width": min(w, 1120),
-                "height": h,
-            })
-            y += h + 12
+        if not fn:
+            return
+        # 读真实尺寸，等比缩放，保持横纵比
+        if w is None and h is None and PILImage:
+            try:
+                img_path = os.path.join(assets_dir, fn)
+                orig_w, orig_h = PILImage.open(img_path).size
+                w = IMG_DEF_W
+                h = int(w * orig_h / orig_w)
+                if h > IMG_MAX_H:
+                    h = IMG_MAX_H
+                    w = int(h * orig_w / orig_h)
+            except Exception:
+                w, h = 720, 420
+        if w is None or h is None:
+            w, h = 720, 420
+        ei += 1
+        el.append({
+            "id": f"{sid}_e{ei:03d}",
+            "type": "image",
+            "src": fn,
+            "x": max(0, (1280 - w) // 2),
+            "y": y,
+            "width": min(w, 1120),
+            "height": h,
+        })
+        y += h + 12
 
     i = 0
     while i < len(ls):
@@ -414,6 +502,9 @@ def _split(ss):
                 sa -= 1
         if sa <= 1:
             sa = max(len(el) // 2, 2)
+        if sa >= len(el):  # 单元素或无法再拆分：保留原页，避免无限循环
+            res.append(s)
+            continue
         a, b = el[:sa], el[sa:]
         by = b[0]["y"] if b else 54
         for e in b:
@@ -427,9 +518,11 @@ def _split(ss):
 # ═══ 主 ═══
 with open(md_path, encoding="utf-8") as f:
     md = f.read()
+# 统一分页符：HTML div → ---，再按独立 --- 行切分
+md = md.replace('<div style="page-break-after: always;"></div>', '\n---\n')
 raw = [
     s.strip()
-    for s in re.split(r'<div style="page-break-after: always;"></div>', md)
+    for s in re.split(r'\n---\n', md)
     if s.strip()
 ]
 slides = [_slide(si, r) for si, r in enumerate(raw)]
@@ -473,3 +566,11 @@ if over:
     print(f"   WARN {len(over)} pages overflow: {over}")
 else:
     print(f"   all pages <= {LIMIT}px")
+
+# ── 表格单元格溢出报告 ──
+if TABLE_OVERFLOWS:
+    print(f"   TABLE TEXT OVERFLOW ({len(TABLE_OVERFLOWS)} cells):")
+    for entry in TABLE_OVERFLOWS:
+        print(f"     {entry}")
+else:
+    print(f"   all table cells fit")

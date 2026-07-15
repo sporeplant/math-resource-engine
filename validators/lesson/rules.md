@@ -23,6 +23,14 @@
 
 ---
 
+## 验证命令
+
+```bash
+python tools/validate_lesson_dual_layer.py outputs/lessons/ch{章节号}/{lesson_id}/lesson-{lesson_id}-lesson-plan.md
+```
+
+该命令不通过时，禁止将教学设计提交人工审核或进入后续课件生成流程。
+
 ## 验证流程
 
 1. 检查传统正文 + 后台折叠结构及两层必备栏目是否完整

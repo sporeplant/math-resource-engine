@@ -39,7 +39,7 @@ def find_solution_files(root: Path, chapter: int | None = None) -> list[Path]:
     if not solutions_dir.is_dir():
         return []
     results = []
-    for fp in sorted(solutions_dir.glob("solution-*.md")):
+    for fp in sorted(solutions_dir.rglob("solution-*.md")):
         name = fp.stem.replace("solution-", "")
         if chapter is not None:
             prefix = str(chapter) + "."
