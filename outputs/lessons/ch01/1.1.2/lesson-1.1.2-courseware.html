@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1.1 正数和负数（第二课时）· 课件 demo</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<style>
+  :root {
+    --ink: #1f2937;
+    --ink-soft: #4b5563;
+    --accent: #1d4ed8;
+    --accent-warm: #b45309;
+    --bg: #f4f6fb;
+    --card: #ffffff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    height: 100%;
+    background: #0f172a;
+    font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "Source Han Sans SC", sans-serif;
+    color: var(--ink);
+    overflow: hidden;
+  }
+  /* 16:9 舞台：按窗口等比缩放，始终完整可见 */
+  #viewport {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #stage {
+    width: 1280px;
+    height: 720px;
+    position: relative;
+    flex: none;
+    transform-origin: center center;
+  }
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: none;
+    background: var(--bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, .45);
+  }
+  .slide.active { display: flex; flex-direction: column; }
+
+  /* 顶部色条 + 标题区 */
+  .slide .bar {
+    height: 10px;
+    flex: none;
+  }
+  .bar.blue   { background: linear-gradient(90deg, #2563eb, #60a5fa); }
+  .bar.green  { background: linear-gradient(90deg, #059669, #34d399); }
+  .bar.amber  { background: linear-gradient(90deg, #d97706, #fbbf24); }
+
+  .slide .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px 80px 72px;
+    gap: 28px;
+  }
+
+  h2.page-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: .02em;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  h2.page-title .emoji { font-size: 44px; }
+
+  .content {
+    font-size: 28px;
+    line-height: 1.9;
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .content p { line-height: 1.9; }
+  .content .sub {
+    font-size: 24px;
+    color: var(--ink-soft);
+  }
+
+  /* 标题页 */
+  .slide.cover { text-align: left; }
+  .cover .body { justify-content: center; gap: 36px; }
+  .cover h1 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.35;
+    color: var(--ink);
+  }
+  .cover h1 .emoji { font-size: 60px; margin-right: 12px; }
+  .cover .tag {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    border-radius: 999px;
+    padding: 10px 28px;
+    width: fit-content;
+  }
+
+  /* 目标列表 */
+  ol.goals {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+  ol.goals li {
+    font-size: 28px;
+    line-height: 1.75;
+    padding: 18px 26px;
+    background: var(--card);
+    border-left: 8px solid var(--accent);
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, .08);
+  }
+  ol.goals li .no {
+    display: inline-block;
+    font-weight: 800;
+    color: var(--accent);
+    margin-right: 14px;
+  }
+
+  /* 提问提示行 */
+  .ask-line {
+    margin-top: 6px;
+    font-size: 26px;
+    color: var(--accent-warm);
+    font-weight: 600;
+  }
+
+  /* 底部页码 */
+  .pageno {
+    position: absolute;
+    right: 28px;
+    bottom: 18px;
+    font-size: 18px;
+    color: #94a3b8;
+    letter-spacing: .08em;
+  }
+  .brand {
+    position: absolute;
+    left: 28px;
+    bottom: 18px;
+    font-size: 18px;
+    color: #94a3b8;
+    letter-spacing: .04em;
+  }
+
+  /* 导航点击区 */
+  .navzone {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 12%;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .navzone.prev { left: 0; }
+  .navzone.next { right: 0; }
+
+  /* 结论引用块（0 的归属） */
+  .quote {
+    background: var(--card);
+    border-left: 10px solid var(--accent);
+    border-radius: 12px;
+    padding: 34px 40px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, .08);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .quote p {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.7;
+    color: var(--ink);
+  }
+
+  /* 有理数分类树 */
+  .tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    font-size: 24px;
+    color: var(--ink);
+  }
+  .tree-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+  }
+  .tree-node {
+    background: var(--card);
+    border: 2px solid #c7d2fe;
+    border-radius: 10px;
+    padding: 10px 22px;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(15, 23, 42, .06);
+    white-space: nowrap;
+  }
+  .tree-node.root {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    font-size: 26px;
+  }
+  .tree-node.branch {
+    border-color: #93c5fd;
+  }
+  .tree-node.leaf {
+    background: #eef2ff;
+    font-weight: 500;
+  }
+  .tree-node.zero {
+    background: #fef3c7;
+    border-color: #f59e0b;
+  }
+  .tree-caption {
+    font-size: 22px;
+    color: var(--ink-soft);
+  }
+
+  .katex { font-size: 1.06em; }
+</style>
+</head>
+<body>
+<div id="viewport">
+  <div id="stage">
+
+    <!-- 第 1 页：标题页 -->
+    <section class="slide cover active">
+      <div class="bar blue"></div>
+      <div class="body">
+        <h1><span class="emoji">📐</span>1.1 正数和负数（第二课时）</h1>
+        <span class="tag">冀教版 · 七年级上册 · 第一章 有理数</span>
+      </div>
+      <div class="brand">数学资源引擎 · demo</div>
+      <div class="pageno">1 / 10</div>
+    </section>
+
+    <!-- 第 2 页：本课目标 -->
+    <section class="slide">
+      <div class="bar green"></div>
+      <div class="body">
+        <h2 class="page-title"><span class="emoji">🎯</span>本课目标</h2>
+        <ol class="goals">
+          <li><span class="no">1</span>能说出正数和负数的定义，辨认正数和负数</li>
+          <li><span class="no">2</span>能解释 0 为什么既不是正数也不是负数，用两种标准对有理数分类</li>
+          <li><span class="no">3</span>能分析交叉条件，筛选满足条件的数</li>
+        </ol>
+      </div>
+      <div class="pageno">2 / 10</div>
+    </section>
+
+    <!-- 第 3 页：回顾引入 -->
+    <section class="slide">
+      <div class="bar blue"></div>
+      <div class="body">
+        <h2 class="page-title"><span class="emoji">📖</span>回顾引入</h2>
+        <div class="content">
+          <p>上节课我们学会了用带 "+" 和 "−" 的数表示相反意义的量。</p>
+          <p>今天，给这些数起正式的名字。</p>
+          <p class="ask-line">请一位同学回答：上节课我们学了什么？举例说说。</p>
+        </div>
+      </div>
+      <div class="pageno">3 / 10</div>
+    </section>
+
+    <!-- 第 4 页：正数和负数的定义 -->
+    <section class="slide">
+      <div class="bar blue"></div>
+      <div class="body">
+        <h2 class="page-title"><span class="emoji">📖</span>正数和负数的定义</h2>
+        <div class="content">
+          <p>默读教材第一段，然后回答：</p>
+          <p><strong>什么叫正数？什么叫负数？</strong></p>
+          <p class="ask-line">请一位同学回答。</p>
+        </div>
+      </div>
+      <div class="pageno">4 / 10</div>
+    </section>
+
+    <!-- 第 5 页：符号约定 -->
+    <section class="slide">
+      <div class="bar amber"></div>
+      <div class="body">
+        <h2 class="page-title"><span class="emoji">📖</span>符号约定</h2>
+        <div class="content">
+          <p>$+3$ 和 $3$ 是一样的数吗？</p>
+          <p>$-5$ 能省略 "$-$" 写成 $5$ 吗？为什么？</p>
+          <p class="ask-line">请一位同学回答。</p>
+        </div>
+      </div>
+      <div class="pageno">5 / 10</div>
+    </section>
+
+    <!-- 第 6 页：一起探究·警戒水位 -->
+    <section class="slide">
+      <div class="bar amber"></div>
+      <div class="body">
+        <h2 class="page-title"><span class="emoji">🤔</span>一起探究：警戒水位</h2>
+        <div class="content">
+          <p>某水库监测点将水深为 <strong>5 m</strong> 处的水面设定为警戒水位。</p>
+          <p>规定：超过警戒水位的部分记为正，低于警戒水位的部分记为负。</p>
+        </div>
+      </div>
+      <div class="pageno">6 / 10</div>
+    </section>
+
+    <!-- 第 7 页：一起探究 (1)(2) -->
+    <section class="slide">
+      <div class="bar amber"></div>
+      <div class="body">
+        <h2 class="page-title"><span class="emoji">🤔</span>一起探究 (1)(2)</h2>
+        <div class="content">
+          <p><strong>(1)</strong> "$+1$ m" 表示什么意义？此时实际水深是多少米？</p>
+          <p class="ask-line">请一位同学回答。</p>
+          <p><strong>(2)</strong> ⭐ "$0$ m" 表示 ______，此时实际水深是多少米？</p>
+          <p class="ask-line">请思考后回答。</p>
+        </div>
+      </div>
+      <div class="pageno">7 / 10</div>
+    </section>
+
+    <!-- 第 8 页：0 的归属 -->
+    <section class="slide">
+      <div class="bar green"></div>
+      <div class="body">
+        <h2 class="page-title"><span class="emoji">💡</span>0 的归属</h2>
+        <div class="quote">
+          <p>0 既不是正数，也不是负数。</p>
+          <p>0 是正数和负数的分界。</p>
+        </div>
+      </div>
+      <div class="pageno">8 / 10</div>
+    </section>
+
+    <!-- 第 9 页：一起探究 (3) -->
+    <section class="slide">
+      <div class="bar amber"></div>
+      <div class="body">
+        <h2 class="page-title"><span class="emoji">🤔</span>一起探究 (3)</h2>
+        <div class="content">
+          <p><strong>(3)</strong> "$-2$ m" 表示什么意义？此时实际水深是多少米？</p>
+          <p class="ask-line">请一位同学回答。</p>
+        </div>
+      </div>
+      <div class="pageno">9 / 10</div>
+    </section>
+
+    <!-- 第 10 页：有理数的分类 ① -->
+    <section class="slide">
+      <div class="bar blue"></div>
+      <div class="body">
+        <h2 class="page-title"><span class="emoji">📖</span>有理数的分类 ① —— 按整数 / 分数</h2>
+        <div class="tree">
+          <div class="tree-row"><span class="tree-node root">有理数</span></div>
+          <div class="tree-row">
+            <span class="tree-node branch">整数</span>
+            <span class="tree-node branch">分数</span>
+          </div>
+          <div class="tree-row">
+            <span class="tree-node leaf">正整数</span>
+            <span class="tree-node leaf zero">0</span>
+            <span class="tree-node leaf">负整数</span>
+            <span class="tree-node leaf">正分数</span>
+            <span class="tree-node leaf">负分数</span>
+          </div>
+          <p class="tree-caption">整数和分数统称为有理数</p>
+        </div>
+      </div>
+      <div class="pageno">10 / 10</div>
+    </section>
+
+    <div class="navzone prev" id="navPrev"></div>
+    <div class="navzone next" id="navNext"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script>
+  // 16:9 等比缩放
+  function fitStage() {
+    const stage = document.getElementById('stage');
+    const scale = Math.min(window.innerWidth / 1280, window.innerHeight / 720);
+    stage.style.transform = 'scale(' + scale + ')';
+  }
+  window.addEventListener('resize', fitStage);
+  fitStage();
+
+  // 翻页
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  let current = 0;
+  function show(i) {
+    if (i < 0 || i >= slides.length) return;
+    slides[current].classList.remove('active');
+    current = i;
+    slides[current].classList.add('active');
+  }
+  function next() { show(current + 1); }
+  function prev() { show(current - 1); }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === ' ') next();
+    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp'   || e.key === 'PageUp')   prev();
+    if (e.key === 'Home') show(0);
+    if (e.key === 'End')  show(slides.length - 1);
+  });
+  document.getElementById('navNext').addEventListener('click', next);
+  document.getElementById('navPrev').addEventListener('click', prev);
+
+  // KaTeX 渲染
+  if (typeof renderMathInElement === 'function') {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$',  right: '$',  display: false }
+      ],
+      throwOnError: false
+    });
+  }
+</script>
+</body>
+</html>

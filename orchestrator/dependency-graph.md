@@ -7,17 +7,18 @@
 ## 依赖链条
 
 ```
-学习目标skills
-       ↓
-评价设计skills
-       ↓
-活动设计skills
-       ↓
-教学设计skills
-       ↓
-课件设计skills
-       ↓
-一致性validators
+教材问题解答skills ──┐
+                     ├──→ 学习目标skills
+教材分析skills ──────┘         ↓
+                          评价设计skills
+                               ↓
+                          活动设计skills
+                               ↓
+                          教学设计skills
+                               ↓
+                          课件设计skills
+                               ↓
+                          一致性validators
 ```
 
 ---
@@ -33,6 +34,11 @@
                         │  math-exercise-analysis  │ ← 独立，并行
                         └─────────────────────────┘
 
+                        ┌──────────────────────────────────┐
+                        │  textbook-question-solutions      │ ← 独立生成，含台阶分析
+                        │  （含例题-习题全链台阶分析）        │    供给下游5个技能
+                        └──────────────────────────────────┘
+                                          ↓
 learning-outcome ──→ assessment ──→ activity ──→ lesson-design ──→ courseware
        │                  │              │              │
        ↓                  ↓              ↓              ↓
@@ -51,6 +57,7 @@ learning-outcome ──→ assessment ──→ activity ──→ lesson-design
 
 - 教材分析skills：与主流程完全并行
 - 习题分析skills：与主流程完全并行
+- 教材问题解答skills：独立生成，但必须在学习目标开始前完成（含台阶分析）
 - 课件设计skills：在 lesson-design 完成并人工审核后执行
 - 多个审核节点不能并行：每个审核必须等上游审核完成
 

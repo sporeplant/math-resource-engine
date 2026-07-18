@@ -81,6 +81,7 @@
   ↓
 🛑 确认门4-1：教材顺序与模块任务确认
   AI 呈现教材原文内容模块列表，标注每个模块对应的任务类型（读懂/思考/交流/书写/操作等）
+  → 同时呈现教材问题解答的台阶分析升格建议（如有）
   → 标注关键决策点
   → 暂停等待教师回复
   → 教师确认后继续 / 教师修改后AI修订再呈现
@@ -132,7 +133,7 @@ outputs完整教学设计
 - 对应课时 `knowledge/workbook-answers/workbook-answer-*.md`
 - 对应课时 `knowledge/workbook-index/workbook-index-*.yaml`
 
-教材参考解答必须在知识分析前校验：文件存在，`content_type: textbook_solution`，`lesson_id` 匹配，`review_status: 审核通过`，并通过教材问题解答validators。标准模式下缺失或校验失败时终止本次任务。auto 模式下缺失或校验失败时自动触发 `/教材问题解答` 生成，与知识分析、学习目标并行推进，评价设计在解答就绪后开始。教学设计的 `source_files` 必须登记该文件，教材题的评价证据、活动预期回答和练习答案必须按 `question_id` 与之核对。
+教材参考解答必须在知识分析前校验：文件存在，`content_type: textbook_solution`，`lesson_id` 匹配，`review_status: 审核通过`，包含"例题-习题台阶分析"章节，并通过教材问题解答validators。标准模式下缺失或校验失败时终止本次任务。auto 模式下缺失或校验失败时自动触发 `/教材问题解答` 生成，与知识分析、学习目标并行推进，评价设计在解答就绪后开始。教学设计的 `source_files` 必须登记该文件，教材题的评价证据、活动预期回答和练习答案必须按 `question_id` 与之核对。
 
 练习册为可选项。存在时必须在评价设计前校验通过。练习册题目进入评价、活动或作业时，必须使用索引中的 `WB-...` 题号，教学设计 `source_files` 必须登记对应题库、答案和索引。缺失时不阻断，相关字段标记 `N/A`。
 
@@ -289,7 +290,7 @@ outputs：
 
 - `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md`
 - `content_type: textbook_solution`
-- 不设置 `review_status`
+- `review_status: pending_human_review`（教师审核通过后手动改为 `审核通过`，下游工作流方可继续）
 
 禁止：
 

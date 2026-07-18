@@ -14,3 +14,14 @@ files:
       - "21.7"
     domain: geometry
     grade: 8
+  - path: rational-number.md
+    topic: rational_number
+    topic_zh: 有理数
+    aliases:
+      - 有理数
+      - 正数和负数
+      - 有理数分类
+    chapter_refs:
+      - "1.1"
+    domain: number-algebra
+    grade: 7

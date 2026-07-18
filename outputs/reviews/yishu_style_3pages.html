@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>统计调查与直方图复习 — 第13讲</title>
+<script>
+  MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+    startup: { typeset: true }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&display=swap');
+
+  :root {
+    --bg: #FDF6E3;
+    --ink: #1a1a2e;
+    --red: #C62828;
+    --blue: #1565C0;
+    --yellow: #FFEB3B;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #d4ccb8;
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  /* ===== 1920×1080 页面 ===== */
+  .slide {
+    width: 1920px;
+    height: 1080px;
+    background: var(--bg);
+    padding: 70px 100px;
+    position: relative;
+    overflow: hidden;
+    transform-origin: top center;
+    flex-shrink: 0;
+  }
+
+  /* ===== 手写体 ===== */
+  .hw {
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    letter-spacing: 0.5px;
+  }
+
+  .hw-bold {
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .hw-red {
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    color: var(--red);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .hw-blue {
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    color: var(--blue);
+    letter-spacing: 0.5px;
+  }
+
+  /* ===== 荧光笔 ===== */
+  .hl {
+    background: linear-gradient(180deg, transparent 60%, var(--yellow) 60%, var(--yellow) 90%, transparent 90%);
+    padding: 0 2px;
+  }
+
+  /* ===== 标题 ===== */
+  .title {
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    font-size: 64px;
+    font-weight: 900;
+    color: var(--ink);
+    display: inline-block;
+    position: relative;
+    padding: 4px 18px;
+    margin-bottom: 50px;
+    line-height: 1.2;
+  }
+
+  .title::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 4px;
+    height: 0.5em;
+    background: var(--yellow);
+    opacity: 0.5;
+    z-index: -1;
+    transform: rotate(-0.5deg);
+    border-radius: 2px;
+  }
+
+  /* ===== 正文 ===== */
+  .body-text {
+    font-size: 30px;
+    line-height: 2.0;
+  }
+
+  .body-text p { margin-bottom: 14px; }
+
+  .indent { padding-left: 50px; }
+
+  /* ===== 表格 ===== */
+  .sketch-table {
+    margin: 24px auto;
+    border-collapse: collapse;
+    font-size: 26px;
+  }
+
+  .sketch-table th, .sketch-table td {
+    border: 2.5px solid var(--ink);
+    padding: 10px 32px;
+    text-align: center;
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', serif;
+  }
+
+  .sketch-table th {
+    font-weight: 700;
+    border-bottom-width: 3px;
+  }
+
+  /* ===== 箭头 ===== */
+  .arrow {
+    display: inline-block;
+    font-size: 36px;
+    color: var(--blue);
+    margin: 0 12px;
+  }
+
+  /* ===== 红笔结论 ===== */
+  .conclusion {
+    margin-top: 40px;
+    padding: 20px 36px;
+    border: 3px solid var(--red);
+    border-radius: 4px;
+    display: inline-block;
+  }
+
+  .conclusion .hw-red {
+    font-size: 32px;
+    line-height: 1.8;
+  }
+
+  /* ===== 来源标注 ===== */
+  .source {
+    position: absolute;
+    bottom: 28px;
+    right: 40px;
+    font-size: 20px;
+    color: #a0906c;
+    font-family: 'Noto Serif SC', serif;
+  }
+
+  .source::before {
+    content: '● ';
+    color: var(--red);
+  }
+
+  /* ===== 页码 ===== */
+  .pagenum {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #b0a080;
+  }
+
+  /* ===== 导航 ===== */
+  .nav {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+
+  .nav button {
+    padding: 8px 28px;
+    border: 2px solid #a0906c;
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 18px;
+    font-family: 'Noto Serif SC', serif;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .nav button.active {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+
+  /* ===== 对比布局 ===== */
+  .vs-row {
+    display: flex;
+    gap: 80px;
+    margin: 30px 0;
+  }
+
+  .vs-col { flex: 1; }
+
+  .vs-col .vs-title {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--ink);
+  }
+
+  .vs-col .vs-body {
+    font-size: 28px;
+    line-height: 2.1;
+  }
+
+  /* ===== 数据行 ===== */
+  .data-line {
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 3px;
+    margin: 24px 0;
+    padding: 12px 0;
+    word-spacing: 6px;
+  }
+
+  /* ===== 缩放适配 ===== */
+  .scaler {
+    transform-origin: top center;
+  }
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <button class="active" onclick="show(0)">知识点</button>
+  <button onclick="show(1)">例题3</button>
+  <button onclick="show(2)">例题5</button>
+</div>
+
+<!-- ===== 第1页 ===== -->
+<div class="slide" id="s0">
+  <div class="title">全面调查 vs 抽样调查</div>
+
+  <div class="vs-row">
+    <div class="vs-col">
+      <div class="vs-title hw-bold" style="color: var(--blue);">全面调查</div>
+      <div class="vs-body hw">
+        <p><span class="hl">调查全体对象</span>的调查</p>
+        <p style="margin-top: 16px;">适用：<span class="hw-blue">范围小、无破坏性、要求精确</span></p>
+        <p style="margin-top: 10px;">优点：结果准确、全面</p>
+        <p>缺点：工作量大，有时有破坏性</p>
+      </div>
+    </div>
+
+    <div class="vs-col">
+      <div class="vs-title hw-bold" style="color: #E65100;">抽样调查</div>
+      <div class="vs-body hw">
+        <p><span class="hl">抽取部分对象</span>进行调查</p>
+        <p style="margin-top: 16px;">适用：<span class="hw-blue">范围广、有破坏性、条件受限</span></p>
+        <p style="margin-top: 10px;">优点：工作量小，省时省力</p>
+        <p>缺点：不如普查准确，可能有误差</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 60px;">
+    <div class="conclusion">
+      <span class="hw-red">怎么选？ → <span class="hl">看范围、看破坏性、看精度</span></span>
+    </div>
+  </div>
+
+  <div class="source">八年级 · 第十章 数据的收集、整理与描述</div>
+  <div class="pagenum">— 1 —</div>
+</div>
+
+<!-- ===== 第2页 ===== -->
+<div class="slide" id="s1" style="display:none;">
+  <div class="title">例题精讲</div>
+
+  <div class="body-text hw">
+    <p><span class="hw-bold" style="font-size: 34px;">第3题</span>　某家电卖场调查空调销售情况，得到下表（单位：万台）：</p>
+  </div>
+
+  <table class="sketch-table">
+    <tr><th>年份</th><th>A</th><th>B</th><th>C</th><th>其他</th><th>总量</th></tr>
+    <tr><td>2008</td><td>1.7</td><td>1</td><td>0.8</td><td>4.5</td><td>8</td></tr>
+    <tr><td>2009</td><td>1.6</td><td>1.2</td><td>1.2</td><td>5</td><td>9</td></tr>
+    <tr><td>2010</td><td>1.55</td><td>1.45</td><td><span class="hl">2</span></td><td>5</td><td>10</td></tr>
+  </table>
+
+  <div class="body-text hw" style="margin-top: 28px;">
+    <p>制作适当的统计图，反映：</p>
+    <p class="indent">（1）C品牌2008—2010年销售量的<span class="hl">变化情况</span></p>
+    <p class="indent">（2）2010年各品牌的<span class="hl">市场占有率</span></p>
+  </div>
+
+  <div style="margin-top: 36px;" class="hw">
+    <p class="hw-blue" style="font-size: 28px;">
+      （1）"变化情况" <span class="arrow">→</span> 折线统计图
+    </p>
+    <p class="hw-blue" style="font-size: 28px; margin-top: 10px;">
+      （2）"占有率" <span class="arrow">→</span> 扇形统计图
+    </p>
+    <p class="hw-blue" style="font-size: 26px; margin-top: 12px; padding-left: 40px;">
+      C品牌圆心角 = $360° \times \dfrac{2}{10} = 72°$
+    </p>
+  </div>
+
+  <div style="text-align: center; margin-top: 44px;">
+    <div class="conclusion">
+      <span class="hw-red">条形看数量，折线看变化，扇形看占比</span>
+    </div>
+  </div>
+
+  <div class="source">教材习题改编</div>
+  <div class="pagenum">— 2 —</div>
+</div>
+
+<!-- ===== 第3页 ===== -->
+<div class="slide" id="s2" style="display:none;">
+  <div class="title">计算演练</div>
+
+  <div class="body-text hw">
+    <p><span class="hw-bold" style="font-size: 34px;">第5题</span>　抽查20名学生每分钟跳绳次数（单位：次）：</p>
+  </div>
+
+  <div class="data-line hw">
+    65，74，83，87，88，<span class="hl">89，91，93，100，102，108</span>，111，117，121，130，133，146，158，177，188
+  </div>
+
+  <div class="body-text hw" style="margin-top: 20px;">
+    <p>跳绳次数在 <span class="hl">90～110</span> 这一组的频率是______．</p>
+  </div>
+
+  <div style="margin-top: 44px;" class="hw">
+    <p class="hw-blue" style="font-size: 28px;">① 90～110 范围内的数据：</p>
+    <p class="hw-blue" style="font-size: 28px; padding-left: 44px; margin-top: 6px;">
+      91，93，100，102，108 <span class="arrow">→</span> 共 <span class="hw-red" style="font-size: 36px;">5</span> 个
+    </p>
+
+    <p class="hw-blue" style="font-size: 28px; margin-top: 20px;">② 频率 = 频数 ÷ 总数</p>
+    <p style="padding-left: 44px; margin-top: 10px; font-size: 36px;" class="hw">
+      $\dfrac{5}{20} = \dfrac{1}{4} = 0.25$
+    </p>
+  </div>
+
+  <div style="text-align: center; margin-top: 50px;">
+    <div class="conclusion">
+      <span class="hw-red">频率 = 频数 ÷ 总数　　<span class="hl">各组频率之和 = 1</span></span>
+    </div>
+  </div>
+
+  <div class="source">课堂练习</div>
+  <div class="pagenum">— 3 —</div>
+</div>
+
+<script>
+  // 缩放适配屏幕
+  function fitSlides() {
+    const slides = document.querySelectorAll('.slide');
+    const scale = Math.min(window.innerWidth / 1920, 1);
+    slides.forEach(s => {
+      s.style.transform = `scale(${scale})`;
+      s.style.marginBottom = `${1080 * (scale - 1)}px`;
+    });
+  }
+
+  function show(i) {
+    document.querySelectorAll('.slide').forEach((s, idx) => {
+      s.style.display = idx === i ? 'block' : 'none';
+    });
+    document.querySelectorAll('.nav button').forEach((b, idx) => {
+      b.classList.toggle('active', idx === i);
+    });
+  }
+
+  window.addEventListener('resize', fitSlides);
+  fitSlides();
+</script>
+
+</body>
+</html>

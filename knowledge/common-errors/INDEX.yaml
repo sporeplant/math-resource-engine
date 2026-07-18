@@ -12,4 +12,5 @@ files:
     domain: number-algebra
     topic_zh: 数与代数
     chapter_refs:
+      - "1"
       - "14"
