@@ -1,0 +1,27 @@
+# md2htmlyishu 默认配置
+# 当没有匹配的课程配置时，使用此配置；默认不添加荧光笔或红笔结论。
+
+course:
+  name: "默认课程"
+  chapter: ""
+  section: ""
+
+# 荧光笔只用于关键条件和易错点。
+# 不标学习目标、法则、定义和普通术语。
+highlight_phrases: []
+
+# 红笔结论只用于法则、定义和策略归纳。
+red_conclusion_phrases: []
+
+# 针对指定页面标题的精确标注规则。
+page_highlights: []
+
+# 红笔正则仅用于兼容旧配置，优先使用 red_conclusion_phrases。
+red_conclusion_patterns: []
+
+# 蓝笔思路：仅在明确的思路提示处使用。
+blue_hint_keywords:
+  - 思路
+  - 引导
+blue_hint_patterns:
+  - "^[①②③④⑤]\\s*[^，。；]*[=→]"

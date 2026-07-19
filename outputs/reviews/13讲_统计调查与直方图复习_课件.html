@@ -46,6 +46,61 @@
     flex-shrink: 0;
   }
 
+  /* ===== 封面专用 ===== */
+  .cover-slide {
+    padding: 0 !important;
+    background: #000;
+  }
+
+  .cover-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(1.02);
+    max-height: none !important;
+    margin: 0 !important;
+  }
+
+  .cover-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(253, 246, 227, 0.92);
+    padding: 48px 80px;
+    border-radius: 4px;
+    box-shadow: 0 8px 40px rgba(26, 26, 46, 0.18);
+    text-align: center;
+    max-width: 80%;
+  }
+
+  .cover-title {
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    font-size: 84px;
+    font-weight: 900;
+    color: var(--ink);
+    line-height: 1.15;
+    letter-spacing: 4px;
+    display: inline-block;
+    position: relative;
+    padding: 4px 12px;
+  }
+
+  .cover-title::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 6px;
+    height: 0.45em;
+    background: var(--yellow);
+    opacity: 0.55;
+    z-index: -1;
+    transform: rotate(-0.4deg);
+    border-radius: 3px;
+  }
+
   /* ===== 手写体 ===== */
   .hw {
     font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
@@ -110,6 +165,12 @@
   }
 
   .body-text p { margin-bottom: 14px; }
+
+  /* MathJax 行间公式行距 3 倍 */
+  mjx-container[jax="CHTML"][display="true"] {
+    line-height: 3.0;
+    margin: 1.2em 0;
+  }
 
   .indent { padding-left: 50px; }
 
@@ -179,49 +240,7 @@
     color: #b0a080;
   }
 
-  /* ===== 浮动导航圆点（右下角，投屏时可隐藏） ===== */
-  .nav-dots {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    z-index: 9999;
-    max-height: 60vh;
-    overflow-y: auto;
-    padding: 8px;
-    background: rgba(253, 246, 227, 0.9);
-    border-radius: 20px;
-    border: 1.5px solid #d4c9a8;
-  }
 
-  .nav-dots button {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    border: 1.5px solid #a0906c;
-    background: transparent;
-    cursor: pointer;
-    padding: 0;
-    transition: all 0.2s;
-  }
-
-  .nav-dots button:hover {
-    background: #a0906c;
-    transform: scale(1.2);
-  }
-
-  .nav-dots button.active {
-    background: var(--ink);
-    border-color: var(--ink);
-    transform: scale(1.3);
-  }
-
-  /* 投屏时隐藏 */
-  @media print {
-    .nav-dots { display: none; }
-  }
 
   /* ===== 对比布局 ===== */
   .vs-row {
@@ -263,6 +282,53 @@
     margin: 20px auto;
   }
 
+  /* ===== 图片横排（自适应换行） ===== */
+  .img-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+  .img-item {
+    flex: 1 1 45%;
+    min-width: 0;
+    max-width: 48%;
+  }
+  .img-item img {
+    max-width: 100%;
+    max-height: 620px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* ===== 教学目标页：上下左右居中，正文序号左对齐 ===== */
+  .slide.objective-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .slide.objective-page p,
+  .slide.objective-page .indent {
+    text-align: left;
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  /* ===== 黑屏遮罩 ===== */
+  #blackscreen {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    z-index: 99999;
+    display: none;
+    cursor: pointer;
+  }
+
   @media print {
     body { background: white; }
     .slide { box-shadow: none; page-break-after: always; }
@@ -272,56 +338,17 @@
 </head>
 <body>
 
-<div class="nav-dots">
-  <button class="active" onclick="show(0)" title="第1页"></button>
-  <button class="" onclick="show(1)" title="第2页"></button>
-  <button class="" onclick="show(2)" title="第3页"></button>
-  <button class="" onclick="show(3)" title="第4页"></button>
-  <button class="" onclick="show(4)" title="第5页"></button>
-  <button class="" onclick="show(5)" title="第6页"></button>
-  <button class="" onclick="show(6)" title="第7页"></button>
-  <button class="" onclick="show(7)" title="第8页"></button>
-  <button class="" onclick="show(8)" title="第9页"></button>
-  <button class="" onclick="show(9)" title="第10页"></button>
-  <button class="" onclick="show(10)" title="第11页"></button>
-  <button class="" onclick="show(11)" title="第12页"></button>
-  <button class="" onclick="show(12)" title="第13页"></button>
-  <button class="" onclick="show(13)" title="第14页"></button>
-  <button class="" onclick="show(14)" title="第15页"></button>
-  <button class="" onclick="show(15)" title="第16页"></button>
-  <button class="" onclick="show(16)" title="第17页"></button>
-  <button class="" onclick="show(17)" title="第18页"></button>
-  <button class="" onclick="show(18)" title="第19页"></button>
-  <button class="" onclick="show(19)" title="第20页"></button>
-  <button class="" onclick="show(20)" title="第21页"></button>
-  <button class="" onclick="show(21)" title="第22页"></button>
-  <button class="" onclick="show(22)" title="第23页"></button>
-  <button class="" onclick="show(23)" title="第24页"></button>
-  <button class="" onclick="show(24)" title="第25页"></button>
-  <button class="" onclick="show(25)" title="第26页"></button>
-  <button class="" onclick="show(26)" title="第27页"></button>
-  <button class="" onclick="show(27)" title="第28页"></button>
-  <button class="" onclick="show(28)" title="第29页"></button>
-  <button class="" onclick="show(29)" title="第30页"></button>
-  <button class="" onclick="show(30)" title="第31页"></button>
-  <button class="" onclick="show(31)" title="第32页"></button>
-  <button class="" onclick="show(32)" title="第33页"></button>
-  <button class="" onclick="show(33)" title="第34页"></button>
-  <button class="" onclick="show(34)" title="第35页"></button>
-  <button class="" onclick="show(35)" title="第36页"></button>
-  <button class="" onclick="show(36)" title="第37页"></button>
-  <button class="" onclick="show(37)" title="第38页"></button>
-</div>
+<div id="blackscreen"></div>
 
-
-<div class="slide" id="s0">
-  <div class="title">📐 统计调查与直方图</div>
-  <p class="hw-bold" style="font-size:28px;margin-top:16px;">第13讲 复习</p>
-<p class="body-text hw">八年级数学 · 期末复习</p>
+<div class="slide cover-slide" id="s0">
+  <img class="cover-bg" src="./images/bg/20151130095051.jpg" alt="封面油画" />
+  <div class="cover-card">
+    <div class="cover-title">统计调查与直方图</div>
+  </div>
   <div class="pagenum">— 1 —</div>
 </div>
 
-<div class="slide" id="s1">
+<div class="slide objective-page" id="s1">
   <div class="title">🎯 复习目标</div>
   <div class="indent">
 <p class="body-text hw">• ① 掌握统计调查的步骤，区分<span class="hl">普查</span>与<span class="hl">抽样调查</span></p>
@@ -514,8 +541,7 @@
   <div class="title">✏️ 第6题</div>
   <p class="body-text hw" style="color:#888;">✏️ 请在练习本上完成</p>
 <p class="body-text hw">某校有学生3000人，准备开展学校社团活动，组建摄影社、国学社、篮球社、科技制作社四个社团．每名学生最多只能报一个社团，也可以不报．为了估计各社团人数，现在学校随机抽取了50名学生做问卷调查，得到了如图所示的两个不完整的统计图</p>
-<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e94ab8b748b31730edf0a0784e6163970906c10e887239511b7db7d3cddb4a1e.jpg" alt="" />
-<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b7935a10bca75306f8eedaae87963201f38f6fdede8f3378d8534305bbca3d17.jpg" alt="" />
+<div class="img-row"><div class="img-item"><img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/e94ab8b748b31730edf0a0784e6163970906c10e887239511b7db7d3cddb4a1e.jpg" alt="" /></div><div class="img-item"><img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/b7935a10bca75306f8eedaae87963201f38f6fdede8f3378d8534305bbca3d17.jpg" alt="" /></div></div>
 <p class="body-text hw">结合以上信息，回答下列问题：</p>
 <p class="body-text hw">（1）本次<span class="hl">抽样调查</span>的<span class="hl">样本容量</span>是 ；</p>
 <p class="body-text hw">（2）<span class="hl">条形统计图</span>国学（B）上的具体数据是 ；</p>
@@ -864,19 +890,14 @@
     document.querySelectorAll('.slide').forEach((s, idx) => {
       s.style.display = idx === i ? 'block' : 'none';
     });
-    document.querySelectorAll('.nav-dots button').forEach((b, idx) => {
-      b.classList.toggle('active', idx === i);
-    });
-    // 滚动到当前圆点可见位置
-    const activeBtn = document.querySelector('.nav-dots button.active');
-    if (activeBtn) {
-      activeBtn.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
-    }
   }
 
   // 键盘/翻页笔支持
   let currentSlide = 0;
   const totalSlides = document.querySelectorAll('.slide').length;
+  const LONG_PRESS = 380; // 长按阈值（毫秒）
+  let pressTimer = {};    // { key: timestamp }
+  let pressCount = {};    // { key: repeat count }
 
   function goToSlide(i) {
     if (i >= 0 && i < totalSlides) {
@@ -893,41 +914,95 @@
     goToSlide(currentSlide - 1);
   }
 
+  function exitPlayback() {
+    document.querySelectorAll('.slide').forEach(s => { s.style.display = 'block'; });
+    var isFS = !!(document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement);
+    if (isFS) {
+      var exit = document.exitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen;
+      if (exit) exit.call(document);
+    }
+  }
+
+  function toggleBlackscreen() {
+    const bs = document.getElementById('blackscreen');
+    bs.style.display = bs.style.display === 'block' ? 'none' : 'block';
+  }
+
   document.addEventListener('keydown', function(e) {
-    // 翻页笔常见按键：空格、PageDown、右箭头、下箭头、Enter
-    if (e.key === ' ' || e.key === 'PageDown' || e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'Enter') {
+    var k = e.key;
+
+    // PageUp / PageDown 需要区分长按短按，延迟到 keyup 处理
+    if (k === 'PageUp' || k === 'PageDown') {
       e.preventDefault();
-      nextSlide();
+      if (!(k in pressTimer)) {
+        pressTimer[k] = Date.now();
+        pressCount[k] = 0;
+      } else {
+        pressCount[k]++;
+      }
+      return;
     }
-    // 翻页笔后退：PageUp、左箭头、上箭头、Backspace
-    if (e.key === 'PageUp' || e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'Backspace') {
-      e.preventDefault();
-      prevSlide();
+
+    // 黑屏模式下仅响应 PageUp/PageDown（上面已拦截），其余按键忽略
+    if (document.getElementById('blackscreen').style.display === 'block') return;
+
+    // Escape：退出播放
+    if (k === 'Escape') { exitPlayback(); return; }
+    // 空格、右箭头、下箭头、Enter → 下一页
+    if (k === ' ' || k === 'ArrowRight' || k === 'ArrowDown' || k === 'Enter') {
+      e.preventDefault(); nextSlide();
     }
-    // Home 回第一页
-    if (e.key === 'Home') {
-      e.preventDefault();
-      goToSlide(0);
+    // 左箭头、上箭头、Backspace → 上一页
+    if (k === 'ArrowLeft' || k === 'ArrowUp' || k === 'Backspace') {
+      e.preventDefault(); prevSlide();
     }
-    // End 到最后一页
-    if (e.key === 'End') {
-      e.preventDefault();
-      goToSlide(totalSlides - 1);
+    // Home → 第一页
+    if (k === 'Home') { e.preventDefault(); goToSlide(0); }
+    // End → 最后一页
+    if (k === 'End') { e.preventDefault(); goToSlide(totalSlides - 1); }
+  });
+
+  document.addEventListener('keyup', function(e) {
+    var k = e.key;
+    if (!(k in pressTimer)) return;
+
+    var duration = Date.now() - pressTimer[k];
+    var count = pressCount[k] || 0;
+    delete pressTimer[k];
+    delete pressCount[k];
+
+    // 时长或重复次数达标均视为长按
+    var isLong = duration >= LONG_PRESS || count >= 2;
+
+    // 黑屏模式：长按任意翻页键退出黑屏
+    if (document.getElementById('blackscreen').style.display === 'block') {
+      if (isLong) { toggleBlackscreen(); }
+      return;
+    }
+
+    if (k === 'PageUp') {
+      if (isLong) { exitPlayback(); }
+      else { prevSlide(); }
+    } else if (k === 'PageDown') {
+      if (isLong) { toggleBlackscreen(); }
+      else { nextSlide(); }
     }
   });
 
-  // 点击页面任意位置也可以翻页（模拟翻页笔单击）
+  // 点击页面任意位置翻页
   document.addEventListener('click', function(e) {
-    // 点击导航圆点时不触发翻页
-    if (e.target.closest('.nav-dots')) return;
-    // 有选中文字时不翻页（避免复制时误触）
     if (window.getSelection().toString()) return;
+    // 黑屏点击关闭
+    if (e.target.id === 'blackscreen') { toggleBlackscreen(); return; }
+    // 黑屏模式下不翻页
+    if (document.getElementById('blackscreen').style.display === 'block') return;
     nextSlide();
   });
 
-  // 右键返回上一页（模拟翻页笔长按或功能键）
+  // 右键返回上一页
   document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
+    if (document.getElementById('blackscreen').style.display === 'block') return;
     prevSlide();
   });
 

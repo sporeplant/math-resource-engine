@@ -20,6 +20,10 @@
 /tools/mineru-cli/
 __pycache__/
 *.py[cod]
+node_modules/
+.playwright-mcp/
+12.2.1-page1.png
+snapshot-12.2.1.txt
 .env
 .env.*
 *.key

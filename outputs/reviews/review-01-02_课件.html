@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📐 统计调查与直方图</title>
+<script>
+  MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+    startup: { typeset: true }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&display=swap');
+
+  :root {
+    --bg: #FDF6E3;
+    --ink: #1a1a2e;
+    --red: #C62828;
+    --blue: #1565C0;
+    --yellow: #FFEB3B;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #d4ccb8;
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  /* ===== 1920×1080 页面 ===== */
+  .slide {
+    width: 1920px;
+    height: 1080px;
+    background: var(--bg);
+    padding: 70px 100px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  /* ===== 封面专用 ===== */
+  .cover-slide {
+    padding: 0 !important;
+    background: #000;
+  }
+
+  .cover-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(1.02);
+    max-height: none !important;
+    margin: 0 !important;
+  }
+
+  .cover-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(253, 246, 227, 0.92);
+    padding: 48px 80px;
+    border-radius: 4px;
+    box-shadow: 0 8px 40px rgba(26, 26, 46, 0.18);
+    text-align: center;
+    max-width: 80%;
+  }
+
+  .cover-title {
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    font-size: 84px;
+    font-weight: 900;
+    color: var(--ink);
+    line-height: 1.15;
+    letter-spacing: 4px;
+    display: inline-block;
+    position: relative;
+    padding: 4px 12px;
+  }
+
+  .cover-title::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 6px;
+    height: 0.45em;
+    background: var(--yellow);
+    opacity: 0.55;
+    z-index: -1;
+    transform: rotate(-0.4deg);
+    border-radius: 3px;
+  }
+
+  .cover-subtitle {
+    margin-top: 28px;
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    font-size: 30px;
+    color: var(--ink);
+    opacity: 0.85;
+    line-height: 1.8;
+  }
+
+  .cover-credit {
+    position: absolute;
+    bottom: 24px;
+    right: 36px;
+    font-size: 18px;
+    color: rgba(253, 246, 227, 0.75);
+    font-family: 'Noto Serif SC', serif;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+  }
+
+  /* ===== 手写体 ===== */
+  .hw {
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    letter-spacing: 0.5px;
+  }
+
+  .hw-bold {
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .hw-red {
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    color: var(--red);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .hw-blue {
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    color: var(--blue);
+    letter-spacing: 0.5px;
+  }
+
+  /* ===== 荧光笔 ===== */
+  .hl {
+    background: linear-gradient(180deg, transparent 60%, var(--yellow) 60%, var(--yellow) 90%, transparent 90%);
+    padding: 0 2px;
+  }
+
+  /* ===== 标题 ===== */
+  .title {
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    font-size: 64px;
+    font-weight: 900;
+    color: var(--ink);
+    display: inline-block;
+    position: relative;
+    padding: 4px 18px;
+    margin-bottom: 50px;
+    line-height: 1.2;
+  }
+
+  .title::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 4px;
+    height: 0.5em;
+    background: var(--yellow);
+    opacity: 0.5;
+    z-index: -1;
+    transform: rotate(-0.5deg);
+    border-radius: 2px;
+  }
+
+  /* ===== 正文 ===== */
+  .body-text {
+    font-size: 30px;
+    line-height: 2.0;
+  }
+
+  .body-text p { margin-bottom: 14px; }
+
+  .indent { padding-left: 50px; }
+
+  /* ===== 表格 ===== */
+  .sketch-table {
+    margin: 24px auto;
+    border-collapse: collapse;
+    font-size: 26px;
+  }
+
+  .sketch-table th, .sketch-table td {
+    border: 2.5px solid var(--ink);
+    padding: 10px 32px;
+    text-align: center;
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', serif;
+  }
+
+  .sketch-table th {
+    font-weight: 700;
+    border-bottom-width: 3px;
+  }
+
+  /* ===== 箭头 ===== */
+  .arrow {
+    display: inline-block;
+    font-size: 36px;
+    color: var(--blue);
+    margin: 0 12px;
+  }
+
+  /* ===== 红笔结论 ===== */
+  .conclusion {
+    margin-top: 40px;
+    padding: 20px 36px;
+    border: 3px solid var(--red);
+    border-radius: 4px;
+    display: inline-block;
+  }
+
+  .conclusion .hw-red {
+    font-size: 32px;
+    line-height: 1.8;
+  }
+
+  /* ===== 来源标注 ===== */
+  .source {
+    position: absolute;
+    bottom: 28px;
+    right: 40px;
+    font-size: 20px;
+    color: #a0906c;
+    font-family: 'Noto Serif SC', serif;
+  }
+
+  .source::before {
+    content: '● ';
+    color: var(--red);
+  }
+
+  /* ===== 页码 ===== */
+  .pagenum {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #b0a080;
+  }
+
+  /* ===== 浮动导航圆点（右下角，投屏时可隐藏） ===== */
+  .nav-dots {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 9999;
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: 8px;
+    background: rgba(253, 246, 227, 0.9);
+    border-radius: 20px;
+    border: 1.5px solid #d4c9a8;
+  }
+
+  .nav-dots button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1.5px solid #a0906c;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.2s;
+  }
+
+  .nav-dots button:hover {
+    background: #a0906c;
+    transform: scale(1.2);
+  }
+
+  .nav-dots button.active {
+    background: var(--ink);
+    border-color: var(--ink);
+    transform: scale(1.3);
+  }
+
+  /* 投屏时隐藏 */
+  @media print {
+    .nav-dots { display: none; }
+  }
+
+  /* ===== 对比布局 ===== */
+  .vs-row {
+    display: flex;
+    gap: 80px;
+    margin: 30px 0;
+  }
+
+  .vs-col { flex: 1; }
+
+  .vs-col .vs-title {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--ink);
+  }
+
+  .vs-col .vs-body {
+    font-size: 28px;
+    line-height: 2.1;
+  }
+
+  /* ===== 数据行 ===== */
+  .data-line {
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 3px;
+    margin: 24px 0;
+    padding: 12px 0;
+    word-spacing: 6px;
+  }
+
+  /* ===== 图片 ===== */
+  .slide img {
+    max-width: 100%;
+    max-height: 500px;
+    display: block;
+    margin: 20px auto;
+  }
+
+  /* ===== 图片横排 ===== */
+  .img-row {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+  .img-col {
+    flex: 1;
+    min-width: 0;
+  }
+  .img-col img {
+    max-width: 100%;
+    max-height: 620px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* ===== 黑屏遮罩 ===== */
+  #blackscreen {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    z-index: 99999;
+    display: none;
+    cursor: pointer;
+  }
+
+  @media print {
+    body { background: white; }
+    .slide { box-shadow: none; page-break-after: always; }
+    .nav { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="nav-dots">
+  <button class="active" onclick="show(0)" title="第1页"></button>
+  <button class="" onclick="show(1)" title="第2页"></button>
+  <button class="" onclick="show(2)" title="第3页"></button>
+  <button class="" onclick="show(3)" title="第4页"></button>
+  <button class="" onclick="show(4)" title="第5页"></button>
+  <button class="" onclick="show(5)" title="第6页"></button>
+  <button class="" onclick="show(6)" title="第7页"></button>
+  <button class="" onclick="show(7)" title="第8页"></button>
+  <button class="" onclick="show(8)" title="第9页"></button>
+  <button class="" onclick="show(9)" title="第10页"></button>
+  <button class="" onclick="show(10)" title="第11页"></button>
+  <button class="" onclick="show(11)" title="第12页"></button>
+  <button class="" onclick="show(12)" title="第13页"></button>
+  <button class="" onclick="show(13)" title="第14页"></button>
+  <button class="" onclick="show(14)" title="第15页"></button>
+  <button class="" onclick="show(15)" title="第16页"></button>
+  <button class="" onclick="show(16)" title="第17页"></button>
+  <button class="" onclick="show(17)" title="第18页"></button>
+  <button class="" onclick="show(18)" title="第19页"></button>
+  <button class="" onclick="show(19)" title="第20页"></button>
+  <button class="" onclick="show(20)" title="第21页"></button>
+  <button class="" onclick="show(21)" title="第22页"></button>
+  <button class="" onclick="show(22)" title="第23页"></button>
+  <button class="" onclick="show(23)" title="第24页"></button>
+  <button class="" onclick="show(24)" title="第25页"></button>
+  <button class="" onclick="show(25)" title="第26页"></button>
+  <button class="" onclick="show(26)" title="第27页"></button>
+</div>
+
+
+<div id="blackscreen"></div>
+
+<div class="slide cover-slide" id="s0">
+  <img class="cover-bg" src="./images/monet_haystacks_1891.jpg" alt="封面油画" />
+  <div class="cover-card">
+    <div class="cover-title">统计调查与直方图</div>
+    <div class="cover-subtitle">第 01-02 讲 复习<br>八年级数学 · 期末复习</div>
+  </div>
+  <div class="cover-credit">Claude Monet, Stacks of Wheat (End of Summer), 1890/91</div>
+  <div class="pagenum">— 1 —</div>
+</div>
+
+<div class="slide" id="s1">
+  <div class="title">🎯 复习目标</div>
+  <div class="indent">
+<p class="body-text hw">• ① 能说出统计调查的一般步骤，区分<span class="hl">普查</span>与<span class="hl">抽样调查</span>的适用场景</p>
+<p class="body-text hw">• ② 能正确判断<span class="hl">总体</span>、<span class="hl">个体</span>、<span class="hl">样本</span>和<span class="hl">样本容量</span>，用<span class="hl">样本</span>估算<span class="hl">总体</span></p>
+<p class="body-text hw">• ③ 能根据数据绘制<span class="hl">频数</span>分布直方图，从统计图中读取信息并计算</p>
+</div>
+  <div class="pagenum">— 2 —</div>
+</div>
+
+<div class="slide" id="s2">
+  <div class="title">📖 普查与抽样 · 数据描述</div>
+  <table class="sketch-table">
+  <tr>
+    <td><strong>对象</strong></td>
+    <td>全体</td>
+    <td>部分</td>
+  </tr>
+  <tr>
+    <td><strong>优点</strong></td>
+    <td>准确、全面</td>
+    <td>省时省力</td>
+  </tr>
+  <tr>
+    <td><strong>适用</strong></td>
+    <td>范围小、无破坏性</td>
+    <td>范围广、有破坏性</td>
+  </tr>
+</table>
+<p class="body-text hw"><strong><span class="hl">简单随机抽样</span></strong>：机会相等，<span class="hl">样本</span>要有<strong><span class="hl">代表性</span></strong>和<strong><span class="hl">广泛性</span></strong>。</p>
+<table class="sketch-table">
+  <tr>
+    <th>统计图</th>
+    <th>优势</th>
+    <th>不足</th>
+  </tr>
+  <tr>
+    <td><strong>条形图</strong></td>
+    <td>显示每组具体数据</td>
+    <td>看不出变化和<span class="hl">占比</span></td>
+  </tr>
+  <tr>
+    <td><strong>折线图</strong></td>
+    <td>反映数据变化趋势</td>
+    <td>看不出<span class="hl">占比</span></td>
+  </tr>
+  <tr>
+    <td><strong>扇形图</strong></td>
+    <td>显示各部分<span class="hl">占比</span></td>
+    <td>看不出每项数目</td>
+  </tr>
+</table>
+<p class="body-text hw">扇形图圆心角 = <strong>360° × 百分比</strong></p>
+  <div class="pagenum">— 3 —</div>
+</div>
+
+<div class="slide" id="s3">
+  <div class="title">📖 总体·样本 · 频数直方图</div>
+  <div class="indent">
+<p class="body-text hw">• <strong><span class="hl">总体</span></strong>：全体对象；<strong><span class="hl">个体</span></strong>：每一个；<strong><span class="hl">样本</span></strong>：抽取的集合</p>
+<p class="body-text hw">• <strong><span class="hl">样本容量</span></strong>：<span class="hl">样本</span>中<span class="hl">个体</span><strong>数目</strong>（纯数字，无单位）</p>
+<p class="body-text hw">• <strong>估算</strong>：<span class="hl">总体</span>数量 ≈ <span class="hl">总体</span>总数 ×（<span class="hl">样本</span>比例）</p>
+</div>
+<div class="indent">
+<p class="body-text hw">• <strong><span class="hl">极差</span></strong> = 最大值 − 最小值；<strong><span class="hl">组数</span></strong> ≈ <span class="hl">极差</span> ÷ <span class="hl">组距</span></p>
+<p class="body-text hw">• <strong><span class="hl">频数</span></strong>：每<span class="hl">组数</span>据个数；<strong><span class="hl">频率</span></strong> = <span class="hl">频数</span> ÷ 数据总数</p>
+<p class="body-text hw">• <strong>画直方图</strong>：算<span class="hl">极差</span> → 定<span class="hl">组距</span> → 列<span class="hl">频数</span>表 → 画图（无间隙）</p>
+</div>
+  <div class="pagenum">— 4 —</div>
+</div>
+
+<div class="slide" id="s4">
+  <div class="title">💡 统计图选用小结</div>
+  <table class="sketch-table">
+  <tr>
+    <th>需求</th>
+    <th>选用</th>
+  </tr>
+  <tr>
+    <td>比较各组具体数量</td>
+    <td><span class="hl">条形统计图</span></td>
+  </tr>
+  <tr>
+    <td>看变化趋势</td>
+    <td><span class="hl">折线统计图</span></td>
+  </tr>
+  <tr>
+    <td>看各部分<span class="hl">占比</span></td>
+    <td><span class="hl">扇形统计图</span></td>
+  </tr>
+  <tr>
+    <td>看数据分布规律</td>
+    <td><span class="hl">频数</span>分布直方图</td>
+  </tr>
+</table>
+<p class="body-text hw"><strong>核心方法</strong>：从图中读数据 → 算比例 → 用<span class="hl">样本</span>估计<span class="hl">总体</span>。</p>
+  <div class="pagenum">— 5 —</div>
+</div>
+
+<div class="slide" id="s5">
+  <div class="title">✏️ 例题1 调查步骤</div>
+  <p class="body-text hw">实施"双减"政策后，为了解我县初中生每天完成家庭作业所花时间及质量情况，根据以下四个步骤完成调查：①收集数据；②分析数据；③制作并发放调查问卷；④得出结论，提出建议和整改意见．你认为这四个步骤合理的先后排序为（ ）</p>
+<p class="body-text hw">A．①②③④　B．①③②④　C．③①②④　D．②③④①</p>
+<p class="body-text hw">请一位同学给出答案并说明理由。</p>
+  <div class="pagenum">— 6 —</div>
+</div>
+
+<div class="slide" id="s6">
+  <div class="title">✏️ 例题1 解析</div>
+  <p class="hw-bold" style="font-size:28px;margin-top:16px;">答案：C</p>
+<p class="body-text hw"><strong>统计调查的一般步骤</strong>：</p>
+<p class="body-text hw">制作并发放调查问卷 → 收集数据 → 分析数据 → 得出结论、提出建议</p>
+<div class="indent">
+<p class="body-text hw">• ③ → ① → ② → ④</p>
+</div>
+  <div class="pagenum">— 7 —</div>
+</div>
+
+<div class="slide" id="s7">
+  <div class="title">✏️ 例题2-3 调查方法与普查抽样</div>
+  <p class="body-text hw"><strong>例2</strong> 万州区教师进修学院调查某校学生每日睡眠时长问题，选用下列哪种方法最恰当（ ）</p>
+<p class="body-text hw">A．查阅文献资料　B．对学生问卷调查　C．上网查询　D．对校领导问卷调查</p>
+<p class="body-text hw"><strong>例3</strong> 下列调查中，适宜采用<span class="hl">普查</span>方式的是（ ）</p>
+<p class="body-text hw">A．了解神舟飞船的设备零部件的质量情况　B．了解一批灯泡的使用寿命　C．了解江苏省中学生观看电影《第二十条》的情况　D．了解无锡市中小学生的课外阅读时间</p>
+<p class="body-text hw">请一位同学回答</p>
+  <div class="pagenum">— 8 —</div>
+</div>
+
+<div class="slide" id="s8">
+  <div class="title">✏️ 例题2-3 解析</div>
+  <p class="body-text hw"><strong>例2 答案：B</strong> — 调查对象是学生，应直接向学生收集数据</p>
+<p class="hw-bold" style="font-size:28px;margin-top:16px;">例3 答案：A</p>
+<table class="sketch-table">
+  <tr>
+    <th>选项</th>
+    <th>方式</th>
+    <th>理由</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td><span class="hl">普查</span> ✓</td>
+    <td>安全关键，必须逐一检查</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>抽样</td>
+    <td>破坏性试验</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>抽样</td>
+    <td>涉及范围太广</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>抽样</td>
+    <td>涉及范围太广</td>
+  </tr>
+</table>
+  <div class="pagenum">— 9 —</div>
+</div>
+
+<div class="slide" id="s9">
+  <div class="title">✏️ 例题4 概念辨析</div>
+  <p class="body-text hw">为了解我校八年级600名学生期中数学考试成绩，从中抽取了100名学生的数学成绩进行统计．下列判断正确的是（ ）</p>
+<p class="body-text hw">A．被抽取的100名学生的数学成绩是<span class="hl">总体</span></p>
+<p class="body-text hw">B．<span class="hl">样本容量</span>是600</p>
+<p class="body-text hw">C．被抽取的100名学生是<span class="hl">总体</span>的一个<span class="hl">样本</span></p>
+<p class="body-text hw">D．<span class="hl">样本容量</span>是100</p>
+<p class="body-text hw"><strong>关键</strong>：<span class="hl">总体</span>/<span class="hl">样本</span>/<span class="hl">样本容量</span>分别指什么？</p>
+<p class="body-text hw">请一位同学回答。</p>
+  <div class="pagenum">— 10 —</div>
+</div>
+
+<div class="slide" id="s10">
+  <div class="title">✏️ 例题4 解析</div>
+  <p class="hw-bold" style="font-size:28px;margin-top:16px;">答案：D</p>
+<div class="indent">
+<p class="body-text hw">• <strong><span class="hl">总体</span></strong>：八年级600名学生的数学<strong>成绩</strong>（不是学生）</p>
+<p class="body-text hw">• <strong><span class="hl">个体</span></strong>：每名学生的数学<strong>成绩</strong></p>
+<p class="body-text hw">• <strong><span class="hl">样本</span></strong>：被抽取的100名学生的数学<strong>成绩</strong>（不是100名学生）</p>
+<p class="body-text hw">• <strong><span class="hl">样本容量</span></strong>：<strong>100</strong>（纯数字，不带单位）</p>
+</div>
+  <div class="pagenum">— 11 —</div>
+</div>
+
+<div class="slide" id="s11">
+  <div class="title">✏️ 例题5 样本估算总体</div>
+  <p class="body-text hw">某厂生产了1000只灯泡．为了解这1000只灯泡的使用寿命，从中随机抽取了50只灯泡进行检测，结果有28只灯泡的使用寿命超过了2500小时，那么估计这1000只灯泡中使用寿命超过2500小时的灯泡的数量为 ______ 只．</p>
+<p class="body-text hw">✏️ 请在练习本上计算</p>
+<p class="body-text hw">请一位同学回答并展示计算过程。</p>
+  <div class="pagenum">— 12 —</div>
+</div>
+
+<div class="slide" id="s12">
+  <div class="title">✏️ 例题5 解析</div>
+  <p class="hw-bold" style="font-size:28px;margin-top:16px;">答案：560</p>
+<p class="body-text hw"><span class="hl">样本</span>中超过2500小时的比例：</p>
+<p class="body-text hw">$\dfrac{28}{50} = 0.56$</p>
+<p class="body-text hw">估计<span class="hl">总体</span>：</p>
+<p class="body-text hw">$1000 \times 0.56 = 560$（只）</p>
+<p class="body-text hw"><strong>公式</strong>：<span class="hl">总体</span>中数量 ≈ <span class="hl">总体</span>总数 ×（<span class="hl">样本</span>比例）</p>
+  <div class="pagenum">— 13 —</div>
+</div>
+
+<div class="slide" id="s13">
+  <div class="title">✏️ 例题6 频数与频率</div>
+  <p class="body-text hw">在一次数学测试中，将某班40名学生的成绩分为5组，第一组到第四组的<span class="hl">频率</span>之和为0.8，则第5组的<span class="hl">频数</span>是（ ）</p>
+<p class="body-text hw">A．7　B．8　C．9　D．10</p>
+<p class="body-text hw">✏️ 请在练习本上计算</p>
+  <div class="pagenum">— 14 —</div>
+</div>
+
+<div class="slide" id="s14">
+  <div class="title">✏️ 例题6 解析</div>
+  <p class="hw-bold" style="font-size:28px;margin-top:16px;">答案：B</p>
+<p class="body-text hw">第5组的<span class="hl">频率</span>：</p>
+<p class="body-text hw">$1 - 0.8 = 0.2$</p>
+<p class="body-text hw">第5组的<span class="hl">频数</span>：</p>
+<p class="body-text hw">$40 \times 0.2 = 8$</p>
+
+<div style="text-align: center; margin-top: 40px;">
+  <div class="conclusion">
+    <span class="hw-red"><strong>公式</strong>：<span class="hl">频率</span> = <span class="hl">频数</span> ÷ 总数，各组<span class="hl">频率</span>之和 = 1</span>
+  </div>
+</div>
+  <div class="pagenum">— 15 —</div>
+</div>
+
+<div class="slide" id="s15">
+  <div class="title">✏️ 例题7 频数分布表</div>
+  <p class="body-text hw">某校为了解九年级1000名学生一分钟跳绳的情况，随机抽取50名学生进行测试，数据整理如下：</p>
+<table class="sketch-table">
+  <tr>
+    <th>个数</th>
+    <th>115~135</th>
+    <th>135~155</th>
+    <th>155~175</th>
+    <th>175~195</th>
+    <th>≥195</th>
+  </tr>
+  <tr>
+    <td>人数</td>
+    <td>2</td>
+    <td>5</td>
+    <td>13</td>
+    <td>24</td>
+    <td>6</td>
+  </tr>
+</table>
+<p class="body-text hw">估计九年级1000名学生中跳绳个数不低于175个的人数为 ______ 人．</p>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/771dcc14159cab49f024e0335ff27d2babfc4955addc71e79a02a19d735888d3.jpg" alt="频数分布示例" />
+<p class="body-text hw">✏️ 请在练习本上计算</p>
+  <div class="pagenum">— 16 —</div>
+</div>
+
+<div class="slide" id="s16">
+  <div class="title">✏️ 例题7 解析</div>
+  <p class="hw-bold" style="font-size:28px;margin-top:16px;">答案：600</p>
+<p class="body-text hw"><span class="hl">样本</span>中不低于175个的人数：$24 + 6 = 30$</p>
+<p class="body-text hw"><span class="hl">样本</span>比例：$\dfrac{30}{50} = 0.6$</p>
+<p class="body-text hw">估计<span class="hl">总体</span>：$1000 \times 0.6 = 600$（人）</p>
+  <div class="pagenum">— 17 —</div>
+</div>
+
+<div class="slide" id="s17">
+  <div class="title">✏️ 例题8 频数直方图应用</div>
+  <p class="body-text hw">兰州市现行居民用水量划分为三级，水价分级递增．某小区随机<span class="hl">抽样调查</span>了50户家庭的年用水量，并绘制了<span class="hl">频数</span>分布直方图．若该小区共有1000户居民，估计年用水量达到第三级标准（超出180m³）的户数为（ ）</p>
+<p class="body-text hw">A．30　B．45　C．60　D．90</p>
+<img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/afdc0b39c2ecd9f3035f13f806f4ef547c7f9f78456d0cbaf67002284a483513.jpg" alt="频数直方图示例" />
+<p class="body-text hw">请一位同学回答</p>
+  <div class="pagenum">— 18 —</div>
+</div>
+
+<div class="slide" id="s18">
+  <div class="title">✏️ 例题8 解析</div>
+  <p class="hw-bold" style="font-size:28px;margin-top:16px;">答案：C</p>
+<p class="body-text hw">从直方图得出：<span class="hl">样本</span>中第三级（x > 180）有 3 户</p>
+<p class="body-text hw">比例：$\dfrac{3}{50} = 0.06$</p>
+<p class="body-text hw">估计<span class="hl">总体</span>：$1000 \times 0.06 = 60$（户）</p>
+  <div class="pagenum">— 19 —</div>
+</div>
+
+<div class="slide" id="s19">
+  <div class="title">✏️ 例题9 统计图综合</div>
+  <p class="body-text hw">某校有学生3000人，准备开展学校社团活动，组建摄影社、国学社、篮球社、科技制作社四个社团．随机抽取了50名学生做问卷调查，得到了如图所示的两个不完整的统计图．</p>
+<div class="img-row"><div class="img-col"><img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/2fa3684851071382d31031005e07635b59916073c20e2321a41d2ae83b1339bc.jpg" alt="条形统计图" /></div><div class="img-col"><img src="https://cdn.jsdelivr.net/gh/sporeplant/math-resource-engine@main/knowledge/images/720fcecd8fc4d31b78dbd1198d6f2cfa435f332fa240b3bb73d1c461296a8f7b.jpg" alt="扇形统计图" /></div></div>
+<p class="body-text hw">（1）本次<span class="hl">抽样调查</span>的<span class="hl">样本容量</span>是 ______；</p>
+<p class="body-text hw">（2）国学（B）上的具体数据是 ______；</p>
+<p class="body-text hw">（3）科技制作社团（D）所在扇形的圆心角度数是 ______；</p>
+<p class="body-text hw">（4）估计全校有多少学生报名参加篮球社团活动．</p>
+<p class="body-text hw">✏️ 请在练习本上完成（限时 5 分钟）</p>
+  <div class="pagenum">— 20 —</div>
+</div>
+
+<div class="slide" id="s20">
+  <div class="title">✏️ 例题9 参考答案</div>
+  <p class="body-text hw">（1）<strong>50</strong>（<span class="hl">样本容量</span> = 抽取人数）</p>
+<p class="body-text hw">（2）<strong>10 人</strong>（国学占20%，50 × 20% = 10）</p>
+<p class="body-text hw">（3）<strong>100.8°</strong></p>
+<p class="body-text hw">科技制作<span class="hl">占比</span>：$1 - 24\% - 20\% - 28\% = 28\%$</p>
+<p class="body-text hw">圆心角：$360° \times 28\% = 100.8°$</p>
+<p class="body-text hw">（4）<strong>840 人</strong></p>
+<p class="body-text hw">$3000 \times 28\% = 840$（人）</p>
+  <div class="pagenum">— 21 —</div>
+</div>
+
+<div class="slide" id="s21">
+  <div class="title">📝 当堂练习</div>
+  <p class="body-text hw">✏️ 请在练习本上完成（限时 8 分钟）</p>
+<p class="body-text hw"><strong>第10题</strong>：为调查九年级1200学生体重，将步骤排序：①收集数据；②设计调查问卷；③用<span class="hl">样本</span>估计<span class="hl">总体</span>；④整理数据；⑤分析数据．</p>
+<p class="body-text hw"><strong>第11题</strong>：调查学生最喜欢的体育运动，在"①蛙泳，②球类，③游泳，④篮球，⑤自由泳，⑥排球"中选取四个作为问卷备选项，最合理的是（ ）</p>
+<p class="body-text hw">A．①②③④　B．①④⑤⑥　C．②③⑤⑥　D．②③④⑤</p>
+<p class="body-text hw"><strong>第12题</strong>：下列适宜<span class="hl">普查</span>的是（ ）A．调查市场上蔬菜保鲜情况　B．调查乘坐高铁旅客是否携带违禁物品　C．调查某品牌电池使用寿命　D．调查某地区初中生一天完成作业所用时间</p>
+  <div class="pagenum">— 22 —</div>
+</div>
+
+<div class="slide" id="s22">
+  <div class="title">📝 当堂练习（续）</div>
+  <p class="body-text hw">✏️ 请在练习本上完成（限时 8 分钟）</p>
+<p class="body-text hw"><strong>第13题</strong>：下列适合<span class="hl">抽样调查</span>的是（ ）A．了解全班中学生每周使用手机的时间　B．对乘坐高铁的乘客进行安全检查　C．调查我校初三某班的视力情况　D．环保部门调查任河全域水质情况</p>
+<p class="body-text hw"><strong>第14题</strong>：为了解某校初二年级900名学生每天花费在数学学习上的时间，抽取了100名学生进行调查，以下说法正确的是（ ）A．<span class="hl">样本容量</span>是100　B．每名学生是<span class="hl">个体</span>　C．抽取的100名学生是<span class="hl">样本</span>　D．初二年级900名学生是<span class="hl">总体</span></p>
+<p class="body-text hw"><strong>第15题</strong>：<span class="hl">抽查</span>20名学生每分钟跳绳次数：65，74，83，87，88，89，91，93，100，102，108，111，117，121，130，133，146，158，177，188．则跳绳次数在90～110这一组的<span class="hl">频率</span>是 ______．</p>
+  <div class="pagenum">— 23 —</div>
+</div>
+
+<div class="slide" id="s23">
+  <div class="title">📝 当堂练习 参考答案</div>
+  <p class="body-text hw"><strong>第10题</strong>：②①④⑤③</p>
+<p class="body-text hw"><strong>第11题</strong>：D（选项应互不包含且具<span class="hl">代表性</span>）</p>
+<p class="body-text hw"><strong>第12题</strong>：B（高铁安检须全面检查）</p>
+<p class="body-text hw"><strong>第13题</strong>：D（全域水质涉及范围广）</p>
+<p class="body-text hw"><strong>第14题</strong>：A（<span class="hl">个体</span>是每名学生每天花在数学上的<strong>时间</strong>，<span class="hl">样本</span>是100名学生的时间数据，<span class="hl">总体</span>是900名学生的时间数据）</p>
+<p class="body-text hw"><strong>第15题</strong>：$0.25$（90～110有 91,93,100,102,108 共5个，5÷20=0.25）</p>
+  <div class="pagenum">— 24 —</div>
+</div>
+
+<div class="slide" id="s24">
+  <div class="title">📝 课后作业</div>
+  <p class="body-text hw"><strong>必做</strong>：</p>
+<div class="indent">
+<p class="body-text hw">• 讲义第16-20题（选择题，巩固<span class="hl">普查</span>/抽样/概念辨析）</p>
+<p class="body-text hw">• 讲义第21-24题（<span class="hl">频数</span>、<span class="hl">频率</span>、<span class="hl">组数</span>计算）</p>
+</div>
+<p class="body-text hw"><strong>选作</strong>：</p>
+<div class="indent">
+<p class="body-text hw">• 讲义第22题（<span class="hl">频数</span>直方图估算）</p>
+<p class="body-text hw">• 讲义第25题（直方图综合应用，含图片）</p>
+</div>
+<p class="body-text hw"><strong>挑战</strong>：</p>
+<div class="indent">
+<p class="body-text hw">• 讲义第9题全部四问独立完成，写出完整推理过程</p>
+</div>
+  <div class="pagenum">— 25 —</div>
+</div>
+
+<div class="slide" id="s25">
+  <div class="title">💡 课堂小结</div>
+  <table class="sketch-table">
+  <tr>
+    <th>层次</th>
+    <th>问题</th>
+  </tr>
+  <tr>
+    <td><strong>基础层</strong></td>
+    <td><span class="hl">普查</span>和<span class="hl">抽样调查</span>各适用于什么场景？请各举一例</td>
+  </tr>
+  <tr>
+    <td><strong>中间层</strong></td>
+    <td>"从600名学生中抽100名调查，<span class="hl">样本容量</span>是100名"这句话对吗？为什么？</td>
+  </tr>
+  <tr>
+    <td><strong>拓展层</strong></td>
+    <td>给了<span class="hl">频数</span>直方图，如何用<span class="hl">样本</span>估计<span class="hl">总体</span>？请说出完整步骤</td>
+  </tr>
+</table>
+<p class="body-text hw">请一位对应层级同学回答</p>
+  <div class="pagenum">— 26 —</div>
+</div>
+
+<div class="slide" id="s26">
+  <div class="title">💡 课堂小结 参考答案</div>
+  <table class="sketch-table">
+  <tr>
+    <th>层次</th>
+    <th>要点</th>
+  </tr>
+  <tr>
+    <td><strong>基础层</strong></td>
+    <td><span class="hl">普查</span>：范围小、无破坏性、要精确（如全班身高）；抽样：范围广、有破坏性（如灯泡寿命）</td>
+  </tr>
+  <tr>
+    <td><strong>中间层</strong></td>
+    <td>不对。<span class="hl">样本容量</span>是<strong>纯数字100</strong>，不带单位"名"</td>
+  </tr>
+  <tr>
+    <td><strong>拓展层</strong></td>
+    <td>从直方图读目标组<span class="hl">频数</span> → 除以<span class="hl">样本容量</span>得比例 → 乘以<span class="hl">总体</span>总数得估算值</td>
+  </tr>
+</table>
+  <div class="pagenum">— 27 —</div>
+</div>
+
+<script>
+  function fitSlides() {
+    const slides = document.querySelectorAll('.slide');
+    const scale = Math.min(window.innerWidth / 1920, 1);
+    slides.forEach(s => {
+      s.style.transform = `scale(${scale})`;
+      s.style.marginBottom = `${1080 * (scale - 1)}px`;
+    });
+  }
+
+  function show(i) {
+    document.querySelectorAll('.slide').forEach((s, idx) => {
+      s.style.display = idx === i ? 'block' : 'none';
+    });
+    document.querySelectorAll('.nav-dots button').forEach((b, idx) => {
+      b.classList.toggle('active', idx === i);
+    });
+    // 滚动到当前圆点可见位置
+    const activeBtn = document.querySelector('.nav-dots button.active');
+    if (activeBtn) {
+      activeBtn.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    }
+  }
+
+  // 键盘/翻页笔支持
+  let currentSlide = 0;
+  const totalSlides = document.querySelectorAll('.slide').length;
+  const LONG_PRESS = 380; // 长按阈值（毫秒）
+  let pressTimer = {};    // { key: timestamp }
+  let pressCount = {};    // { key: repeat count }
+
+  function goToSlide(i) {
+    if (i >= 0 && i < totalSlides) {
+      currentSlide = i;
+      show(i);
+    }
+  }
+
+  function nextSlide() {
+    goToSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+    goToSlide(currentSlide - 1);
+  }
+
+  function exitPlayback() {
+    document.querySelectorAll('.slide').forEach(s => { s.style.display = 'block'; });
+    document.querySelectorAll('.nav-dots button').forEach(b => { b.classList.remove('active'); });
+    var isFS = !!(document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement);
+    if (isFS) {
+      var exit = document.exitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen;
+      if (exit) exit.call(document);
+    }
+  }
+
+  function toggleBlackscreen() {
+    const bs = document.getElementById('blackscreen');
+    bs.style.display = bs.style.display === 'block' ? 'none' : 'block';
+  }
+
+  document.addEventListener('keydown', function(e) {
+    var k = e.key;
+
+    // PageUp / PageDown 需要区分长按短按，延迟到 keyup 处理
+    if (k === 'PageUp' || k === 'PageDown') {
+      e.preventDefault();
+      if (!(k in pressTimer)) {
+        pressTimer[k] = Date.now();
+        pressCount[k] = 0;
+      } else {
+        pressCount[k]++;
+      }
+      return;
+    }
+
+    // 黑屏模式下仅响应 PageUp/PageDown（上面已拦截），其余按键忽略
+    if (document.getElementById('blackscreen').style.display === 'block') return;
+
+    // Escape：退出播放
+    if (k === 'Escape') { exitPlayback(); return; }
+    // 空格、右箭头、下箭头、Enter → 下一页
+    if (k === ' ' || k === 'ArrowRight' || k === 'ArrowDown' || k === 'Enter') {
+      e.preventDefault(); nextSlide();
+    }
+    // 左箭头、上箭头、Backspace → 上一页
+    if (k === 'ArrowLeft' || k === 'ArrowUp' || k === 'Backspace') {
+      e.preventDefault(); prevSlide();
+    }
+    // Home → 第一页
+    if (k === 'Home') { e.preventDefault(); goToSlide(0); }
+    // End → 最后一页
+    if (k === 'End') { e.preventDefault(); goToSlide(totalSlides - 1); }
+  });
+
+  document.addEventListener('keyup', function(e) {
+    var k = e.key;
+    if (!(k in pressTimer)) return;
+
+    var duration = Date.now() - pressTimer[k];
+    var count = pressCount[k] || 0;
+    delete pressTimer[k];
+    delete pressCount[k];
+
+    // 时长或重复次数达标均视为长按
+    var isLong = duration >= LONG_PRESS || count >= 2;
+
+    // 黑屏模式：长按任意翻页键退出黑屏
+    if (document.getElementById('blackscreen').style.display === 'block') {
+      if (isLong) { toggleBlackscreen(); }
+      return;
+    }
+
+    if (k === 'PageUp') {
+      if (isLong) { exitPlayback(); }
+      else { prevSlide(); }
+    } else if (k === 'PageDown') {
+      if (isLong) { toggleBlackscreen(); }
+      else { nextSlide(); }
+    }
+  });
+
+  // 点击页面任意位置翻页
+  document.addEventListener('click', function(e) {
+    if (e.target.closest('.nav-dots')) return;
+    if (window.getSelection().toString()) return;
+    // 黑屏点击关闭
+    if (e.target.id === 'blackscreen') { toggleBlackscreen(); return; }
+    // 黑屏模式下不翻页
+    if (document.getElementById('blackscreen').style.display === 'block') return;
+    nextSlide();
+  });
+
+  // 右键返回上一页
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    if (document.getElementById('blackscreen').style.display === 'block') return;
+    prevSlide();
+  });
+
+  window.addEventListener('resize', fitSlides);
+  fitSlides();
+</script>
+
+</body>
+</html>

@@ -27,4 +27,6 @@
 | 临界生帮扶表skills | 根据学生成绩和学习内容生成临界生分工帮扶表 | 责任教师、任教班级、教材章节、学生成绩数据 | 临界生分工表-YYYY-MM-DD.md | 无（独立） | 无 | active | v1.0 |
 | DOCX导出skills | 将 Markdown 复习讲义/教师版解析导出为单栏或 A4 双栏紧凑 DOCX | Markdown 文件路径、输出模式（single/compact/both） | `{文件名}.docx`、`{文件名}_分栏压缩.docx` | tools/review_docx_pipeline.py, tools/md2docx.py, tools/compact_review_docx.py, Pandoc, python-docx, matplotlib | 无 | active | v1.0 |
 | 栏目图标清除skills | 清除教材原文 MD 中栏目标题前的图标图片引用及图片文件 | 教材原文 MD 目录、栏目列表（可选） | 修改后的 MD 文件（移除图标引用行）、已删除图片文件 | tools/remove_section_icons.py | 自检清单 | active | v1.0 |
+| 一数风格HTML课件skills | 将课件 Markdown 转换为一数风格 HTML 投屏页面（1920×1080，手写板书风） | 课件 MD 文件 | 同目录 `.html` 文件 | tools/md2htmlyishu.py, skills/md2htmlyishu/template.html | 自检清单 (checklist.md) | active | v1.0 |
+| HTML转希沃skills | 将 HTML 课件转为希沃白板可导入包（lesson.json + 逐页PNG截图） | HTML 课件文件路径 | `lesson.json` + `assets/slide_*.png` | tools/html_to_seewo.py | Playwright 截图验证 | active | v1.0 |
 

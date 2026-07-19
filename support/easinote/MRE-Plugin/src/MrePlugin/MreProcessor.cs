@@ -87,8 +87,36 @@ public static class MreProcessor
 
             try
             {
-                // 创建 Slide，添加元素后插入到当前课件
-                var slide = new Slide(slideData.Id ?? $"mre_{i}");
+                Slide slide;
+                bool reuseCurrent = false;
+
+                // 第一页：尝试复用当前空白页，避免导入后首页为空
+                if (i == 0)
+                {
+                    try
+                    {
+                        var current = editingBoard.CurrentSlide;
+                        if (current != null)
+                        {
+                            slide = current;
+                            reuseCurrent = true;
+                            Log("复用当前首页，避免空白第一页");
+                        }
+                        else
+                        {
+                            slide = new Slide(slideData.Id ?? $"mre_{i}");
+                        }
+                    }
+                    catch
+                    {
+                        slide = new Slide(slideData.Id ?? $"mre_{i}");
+                    }
+                }
+                else
+                {
+                    slide = new Slide(slideData.Id ?? $"mre_{i}");
+                }
+
                 foreach (var elemData in slideData.Elements)
                 {
                     try
@@ -102,7 +130,8 @@ public static class MreProcessor
                     }
                 }
 
-                editingBoard.InsertSlide(slide);
+                if (!reuseCurrent)
+                    editingBoard.InsertSlide(slide);
             }
             catch (Exception ex)
             {
@@ -247,15 +276,14 @@ public static class MreProcessor
     {
         try
         {
-            // Board 通过 EditingBoardApi 暴露
-            var boardProperty = typeof(EN).Assembly
-                .GetType("Cvte.EasiNote.EditingBoardApi")?
-                .GetProperty("Board");
-            if (boardProperty is null) return null;
+            // 从 EN.EditingBoardApi 实例获取 Board 属性
+            var api = EN.EditingBoardApi;
+            if (api is null) return null;
 
-            // EditingBoardApi 的获取方式取决于 EN 框架版本
-            // EN.EditingBoardApi 是公共属性
-            return boardProperty.GetValue(null) as Board;
+            var boardProp = api.GetType().GetProperty("Board");
+            if (boardProp is null) return null;
+
+            return boardProp.GetValue(api) as Board;
         }
         catch
         {

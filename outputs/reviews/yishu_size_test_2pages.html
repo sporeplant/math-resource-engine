@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>课堂课件字号测试</title>
+<script>
+  MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+    startup: { typeset: true }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&display=swap');
+
+  :root {
+    --bg: #FDF6E3;
+    --ink: #1a1a2e;
+    --red: #C62828;
+    --blue: #1565C0;
+    --yellow: #FFEB3B;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #d4ccb8;
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  /* ===== 1920×1080 页面 ===== */
+  .slide {
+    width: 1920px;
+    height: 1080px;
+    background: var(--bg);
+    padding: 70px 100px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  /* ===== 封面专用 ===== */
+  .cover-slide {
+    padding: 0 !important;
+    background: #000;
+  }
+
+  .cover-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(1.02);
+    max-height: none !important;
+    margin: 0 !important;
+  }
+
+  .cover-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(253, 246, 227, 0.92);
+    padding: 48px 80px;
+    border-radius: 4px;
+    box-shadow: 0 8px 40px rgba(26, 26, 46, 0.18);
+    text-align: center;
+    max-width: 80%;
+  }
+
+  .cover-title {
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    font-size: 86px;
+    font-weight: 900;
+    color: var(--ink);
+    line-height: 1.15;
+    letter-spacing: 4px;
+    display: inline-block;
+    position: relative;
+    padding: 4px 12px;
+  }
+
+  .cover-title::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 6px;
+    height: 0.45em;
+    background: var(--yellow);
+    opacity: 0.55;
+    z-index: -1;
+    transform: rotate(-0.4deg);
+    border-radius: 3px;
+  }
+
+  /* ===== 手写体 ===== */
+  .hw {
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    letter-spacing: 0.5px;
+  }
+
+  .hw-bold {
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .hw-red {
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    color: var(--red);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .hw-blue {
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    color: var(--blue);
+    letter-spacing: 0.5px;
+  }
+
+  /* ===== 荧光笔 ===== */
+  .hl {
+    background: linear-gradient(180deg, transparent 60%, var(--yellow) 60%, var(--yellow) 90%, transparent 90%);
+    padding: 0 2px;
+  }
+
+  /* ===== 标题 ===== */
+  .title {
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', 'STKaiti', serif;
+    font-size: 66px;
+    font-weight: 900;
+    color: var(--ink);
+    display: inline-block;
+    position: relative;
+    padding: 4px 18px;
+    margin-bottom: 50px;
+    line-height: 1.2;
+  }
+
+  .title::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 4px;
+    height: 0.5em;
+    background: var(--yellow);
+    opacity: 0.5;
+    z-index: -1;
+    transform: rotate(-0.5deg);
+    border-radius: 2px;
+  }
+
+  /* ===== 正文 ===== */
+  .body-text {
+    font-size: 42px;
+    line-height: 2.0;
+  }
+
+  .body-text p { margin-bottom: 14px; }
+
+  /* MathJax 行间公式：48px，并增加上下留白 */
+  mjx-container[jax="CHTML"][display="true"] {
+    line-height: 2.4;
+    margin: 1.4em 0;
+    padding: 0.35em 0;
+  }
+
+  /* LaTeX 公式字号：课堂投影统一 48px */
+  mjx-container[jax="CHTML"] {
+    font-size: 48px !important;
+  }
+
+  .indent { padding-left: 50px; }
+
+  /* ===== 表格 ===== */
+  .sketch-table {
+    margin: 24px auto;
+    border-collapse: collapse;
+    font-size: 38px;
+  }
+
+  .sketch-table th, .sketch-table td {
+    border: 2.5px solid var(--ink);
+    padding: 10px 32px;
+    text-align: center;
+    font-family: 'Noto Serif SC', 'Kaiti SC', 'KaiTi', serif;
+  }
+
+  .sketch-table th {
+    font-weight: 700;
+    border-bottom-width: 3px;
+  }
+
+  /* ===== 箭头 ===== */
+  .arrow {
+    display: inline-block;
+    font-size: 38px;
+    color: var(--blue);
+    margin: 0 12px;
+  }
+
+  /* ===== 红笔结论 ===== */
+  .conclusion {
+    margin-top: 40px;
+    padding: 20px 36px;
+    border: 3px solid var(--red);
+    border-radius: 4px;
+    display: inline-block;
+  }
+
+  .conclusion .hw-red {
+    font-size: 34px;
+    line-height: 1.8;
+  }
+
+  /* ===== 来源标注 ===== */
+  .source {
+    position: absolute;
+    bottom: 28px;
+    right: 40px;
+    font-size: 22px;
+    color: #a0906c;
+    font-family: 'Noto Serif SC', serif;
+  }
+
+  .source::before {
+    content: '● ';
+    color: var(--red);
+  }
+
+  /* ===== 页码 ===== */
+  .pagenum {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    color: #b0a080;
+  }
+
+
+
+  /* ===== 对比布局 ===== */
+  .vs-row {
+    display: flex;
+    gap: 80px;
+    margin: 30px 0;
+  }
+
+  .vs-col { flex: 1; }
+
+  .vs-col .vs-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--ink);
+  }
+
+  .vs-col .vs-body {
+    font-size: 30px;
+    line-height: 2.1;
+  }
+
+  /* ===== 数据行 ===== */
+  .data-line {
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin: 24px 0;
+    padding: 12px 0;
+    word-spacing: 6px;
+  }
+
+  /* ===== 图片 ===== */
+  .slide img {
+    max-width: 100%;
+    max-height: 500px;
+    display: block;
+    margin: 20px auto;
+  }
+
+  /* ===== 图片横排（自适应换行） ===== */
+  .img-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+  .img-item {
+    flex: 1 1 45%;
+    min-width: 0;
+    max-width: 48%;
+  }
+  .img-item img {
+    max-width: 100%;
+    max-height: 620px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* ===== 多题横排（空间不足时自动纵向换行） ===== */
+  .question-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    align-items: flex-start;
+    margin: 16px 0;
+  }
+  .question-item {
+    flex: 1 1 45%;
+    min-width: 0;
+    max-width: 48%;
+  }
+  .question-item .body-text { margin: 0; }
+
+  /* ===== 多个完整解答块：默认横排，实质溢出时由 JS 分页 ===== */
+  .solution-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 42px;
+    align-items: flex-start;
+    margin: 16px 0;
+  }
+  .solution-item {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+  .solution-heading {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+  .solution-item .body-text { margin-bottom: 8px; }
+
+  /* ===== 教学目标页：上下左右居中，正文序号左对齐 ===== */
+  .slide.objective-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .slide.objective-page p,
+  .slide.objective-page .indent {
+    text-align: left;
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  /* ===== 黑屏遮罩 ===== */
+  #blackscreen {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    z-index: 99999;
+    display: none;
+    cursor: pointer;
+  }
+
+  @media print {
+    body { background: white; }
+    .slide { box-shadow: none; page-break-after: always; }
+    .nav { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div id="blackscreen"></div>
+
+<div class="slide cover-slide" id="s0">
+  <img class="cover-bg" src="../../knowledge/images/bg/20151130194139.jpg" alt="封面油画" />
+  <div class="cover-card">
+    <div class="cover-title">课堂课件字号测试</div>
+  </div>
+  <div class="pagenum">— 1 —</div>
+</div>
+
+<div class="slide" id="s1">
+  <div class="title">一元一次方程的解法</div>
+  <p class="body-text hw-blue">解方程的基本思路是：通过等式的基本性质，把含有未知数的项逐步集中到一边，把常数项逐步集中到另一边。</p>
+<p class="body-text hw">例如，解方程</p>
+<p class="body-text hw">$2x+6=18$</p>
+<p class="body-text hw">先把常数项移到等式右边，得</p>
+<p class="body-text hw">$2x=12$</p>
+<p class="body-text hw">再把未知数的系数化为 1，得</p>
+<p class="body-text hw">$x=6$</p>
+<table class="sketch-table">
+  <tr>
+    <th>步骤</th>
+    <th>变形依据</th>
+    <th>得到的结果</th>
+  </tr>
+  <tr>
+    <td>第一步</td>
+    <td>等式两边同时减去 6</td>
+    <td>$2x=12$</td>
+  </tr>
+  <tr>
+    <td>第二步</td>
+    <td>等式两边同时除以 2</td>
+    <td>$x=6$</td>
+  </tr>
+</table>
+<p class="body-text hw"><strong>结论：</strong> 解方程的每一步变形都必须依据等式的基本性质。</p>
+  <div class="pagenum">— 2 —</div>
+</div>
+
+<script>
+  function fitSlides() {
+    const slides = document.querySelectorAll('.slide');
+    const scale = Math.min(window.innerWidth / 1920, 1);
+    slides.forEach(s => {
+      s.style.transform = `scale(${scale})`;
+      s.style.marginBottom = `${1080 * (scale - 1)}px`;
+    });
+  }
+
+  function show(i) {
+    document.querySelectorAll('.slide').forEach((s, idx) => {
+      s.style.display = idx === i ? 'block' : 'none';
+    });
+  }
+
+  // 键盘/翻页笔支持
+  let currentSlide = 0;
+  function totalSlides() { return document.querySelectorAll('.slide').length; }
+  const LONG_PRESS = 380; // 长按阈值（毫秒）
+  let pressTimer = {};    // { key: timestamp }
+  let pressCount = {};    // { key: repeat count }
+
+  function goToSlide(i) {
+    if (i >= 0 && i < totalSlides()) {
+      currentSlide = i;
+      show(i);
+    }
+  }
+
+  function nextSlide() {
+    goToSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+    goToSlide(currentSlide - 1);
+  }
+
+  function exitPlayback() {
+    document.querySelectorAll('.slide').forEach(s => { s.style.display = 'block'; });
+    var isFS = !!(document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement);
+    if (isFS) {
+      var exit = document.exitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen;
+      if (exit) exit.call(document);
+    }
+  }
+
+  function toggleBlackscreen() {
+    const bs = document.getElementById('blackscreen');
+    bs.style.display = bs.style.display === 'block' ? 'none' : 'block';
+  }
+
+  document.addEventListener('keydown', function(e) {
+    var k = e.key;
+
+    // PageUp / PageDown 需要区分长按短按，延迟到 keyup 处理
+    if (k === 'PageUp' || k === 'PageDown') {
+      e.preventDefault();
+      if (!(k in pressTimer)) {
+        pressTimer[k] = Date.now();
+        pressCount[k] = 0;
+      } else {
+        pressCount[k]++;
+      }
+      return;
+    }
+
+    // 黑屏模式下仅响应 PageUp/PageDown（上面已拦截），其余按键忽略
+    if (document.getElementById('blackscreen').style.display === 'block') return;
+
+    // Escape：退出播放
+    if (k === 'Escape') { exitPlayback(); return; }
+    // 空格、右箭头、下箭头、Enter → 下一页
+    if (k === ' ' || k === 'ArrowRight' || k === 'ArrowDown' || k === 'Enter') {
+      e.preventDefault(); nextSlide();
+    }
+    // 左箭头、上箭头、Backspace → 上一页
+    if (k === 'ArrowLeft' || k === 'ArrowUp' || k === 'Backspace') {
+      e.preventDefault(); prevSlide();
+    }
+    // Home → 第一页
+    if (k === 'Home') { e.preventDefault(); goToSlide(0); }
+    // End → 最后一页
+    if (k === 'End') { e.preventDefault(); goToSlide(totalSlides() - 1); }
+  });
+
+  document.addEventListener('keyup', function(e) {
+    var k = e.key;
+    if (!(k in pressTimer)) return;
+
+    var duration = Date.now() - pressTimer[k];
+    var count = pressCount[k] || 0;
+    delete pressTimer[k];
+    delete pressCount[k];
+
+    // 时长或重复次数达标均视为长按
+    var isLong = duration >= LONG_PRESS || count >= 2;
+
+    // 黑屏模式：长按任意翻页键退出黑屏
+    if (document.getElementById('blackscreen').style.display === 'block') {
+      if (isLong) { toggleBlackscreen(); }
+      return;
+    }
+
+    if (k === 'PageUp') {
+      if (isLong) { exitPlayback(); }
+      else { prevSlide(); }
+    } else if (k === 'PageDown') {
+      if (isLong) { toggleBlackscreen(); }
+      else { nextSlide(); }
+    }
+  });
+
+  // 点击页面任意位置翻页
+  document.addEventListener('click', function(e) {
+    if (window.getSelection().toString()) return;
+    // 黑屏点击关闭
+    if (e.target.id === 'blackscreen') { toggleBlackscreen(); return; }
+    // 黑屏模式下不翻页
+    if (document.getElementById('blackscreen').style.display === 'block') return;
+    nextSlide();
+  });
+
+  // 右键返回上一页
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    if (document.getElementById('blackscreen').style.display === 'block') return;
+    prevSlide();
+  });
+
+  function updatePageNumbers() {
+    document.querySelectorAll('.slide').forEach((slide, index) => {
+      slide.id = `s${index}`;
+      const pageNumber = slide.querySelector('.pagenum');
+      if (pageNumber) pageNumber.textContent = `— ${index + 1} —`;
+    });
+  }
+
+  function paginateOverflowingSolutions() {
+    document.querySelectorAll('.solution-row').forEach(row => {
+      const slide = row.closest('.slide');
+      if (!slide || row.dataset.paginated) return;
+      const hasHorizontalOverflow = row.scrollWidth > row.clientWidth + 1;
+      const hasVerticalOverflow = slide.scrollHeight > slide.clientHeight + 1;
+      if (!hasHorizontalOverflow && !hasVerticalOverflow) return;
+
+      const items = [...row.querySelectorAll('.solution-item')];
+      if (items.length < 2) return;
+      row.dataset.paginated = 'true';
+      const title = slide.querySelector('.title')?.innerHTML || '';
+      const insertAfter = slide;
+      items.forEach((item, index) => {
+        const page = slide.cloneNode(false);
+        page.classList.add('solution-continuation');
+        page.innerHTML = `<div class="title">${title}（续 ${index + 1}）</div>` +
+          `<div class="solution-row">${item.outerHTML}</div>` +
+          '<div class="pagenum"></div>';
+        insertAfter.parentNode.insertBefore(page, insertAfter.nextSibling);
+      });
+      slide.remove();
+    });
+    updatePageNumbers();
+  }
+
+  window.addEventListener('resize', function() {
+    fitSlides();
+  });
+  Promise.resolve(window.MathJax?.startup?.promise)
+    .then(paginateOverflowingSolutions)
+    .finally(fitSlides);
+</script>
+
+</body>
+</html>

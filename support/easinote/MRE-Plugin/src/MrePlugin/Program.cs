@@ -88,6 +88,10 @@ internal class Program : EasiPlugin
             new UIItemAttribute(UIItemPurposes.HeadToolBar));
 
         manager.Append(
+            c => new MreImportMenuItem(),
+            new UIItemAttribute(UIItemPurposes.CloudTitleBar));
+
+        manager.Append(
             c => new MreImportBoardMenuItem(),
             new UIItemAttribute(UIItemPurposes.BoardEditMenu));
 

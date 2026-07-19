@@ -98,22 +98,114 @@ outputs：
 
 ## 3. 工具类任务
 
-### 希沃白板 JSON 生成
+### 希沃课件生成（MD → HTML → JSON+PNG）— 主路径
 
 特征：
 
-- 用户要求"生成希沃 JSON"、"转成希沃课件"、"导出希沃格式"等。
-- 用户提供或指向一个 `*-courseware.md` 文件。
+- 用户要求"生成希沃课件"、"导出希沃"、"生成希沃白板"等。
+- 用户提供或指向一个 `*课件.md` / `*-courseware.md` 文件。
 
 路由：
 
-1. 确认目标 Markdown 文件路径（如果用户未明确，列出候选并请用户选择）。
+1. 确认目标 Markdown 文件路径。
+2. 执行一数风格 HTML 生成：
+   ```bash
+   python tools/md2htmlyishu.py "path/to/课件.md"
+   ```
+3. 输出同名 `.html` 至 MD 同级目录。
+4. 自动继续执行 HTML 转希沃导入包：
+   ```bash
+   python tools/html_to_seewo.py "{HTML 文件路径}"
+   ```
+5. 完成后告知用户导入方式。
+
+前置条件：
+
+- Markdown 文件必须存在，且符合课件 MD 规范（`---` 分页）。
+- Playwright + Chromium 已安装。
+
+outputs：
+
+- `{路径}/{文件名}.html`：1920×1080 一数风格投屏课件（中间产物，可单独用于浏览器投屏）
+- `{目录}/lesson.json` — MrePlugin 课件描述文件
+- `{目录}/assets/slide_01.png` ~ `slide_N.png` — 逐页截图
+
+---
+
+### 一数风格 HTML 课件生成（MD → HTML）— 仅 HTML
+
+特征：
+
+- 用户**仅**要求"生成一数风格 HTML"、"转成投屏课件"、"MD 转 HTML 课件"，且**未提希沃**。
+- 用户提供或指向一个 `*课件.md` 文件。
+
+路由：`skills/md2htmlyishu/SKILL.md`
+
+1. 确认目标 Markdown 文件路径。
+2. 执行：
+   ```bash
+   python tools/md2htmlyishu.py "path/to/课件.md"
+   ```
+3. 输出同名 `.html` 至 MD 同级目录。
+4. **必须询问用户**是否继续生成希沃白板导入包。
+
+前置条件：
+
+- Markdown 文件必须存在，且符合课件 MD 规范（`---` 分页）。
+
+outputs：
+
+- `{路径}/{文件名}.html`：1920×1080 一数风格投屏课件。
+
+---
+
+### HTML 转希沃导入包（HTML → JSON + PNG）— 独立转换
+
+特征：
+
+- 用户**已有 HTML 文件**，要求"HTML 转希沃"、"把这个 HTML 导成希沃课件"、"生成希沃导入包"。
+- 用户提供或指向一个 HTML 课件文件（路径含 `.html`）。
+
+路由：`skills/html-to-seewo/SKILL.md`
+
+1. 确认目标 HTML 文件路径。
+2. 执行：
+   ```bash
+   python tools/html_to_seewo.py "{HTML 文件路径}"
+   ```
+3. 完成后告知用户导入方式。
+
+前置条件：
+
+- HTML 文件必须存在，且包含 `.slide` 元素。
+- Playwright + Chromium 已安装。
+
+outputs：
+
+- `{目录}/lesson.json` — MrePlugin 课件描述文件
+- `{目录}/assets/slide_01.png` ~ `slide_N.png` — 逐页截图
+
+---
+
+### 希沃白板 JSON 生成（MD → JSON）[已归档]
+
+> **已归档**：此管线已被「希沃课件生成（MD → HTML → JSON+PNG）主路径」取代。
+> 旧工具 `tools/md_to_easinote_json.py` 保留但不再作为默认推荐路径。
+> 归档原因：直接 JSON 管线产出的文本/公式对象在希沃端兼容性不稳定，截图版（HTML → PNG）视觉一致性更好。
+
+特征：
+
+- 用户**明确**要求"生成希沃 JSON"、"MD 直接转希沃 JSON"（显式指定 JSON 格式）。
+
+路由：
+
+1. 确认目标 Markdown 文件路径。
 2. 执行：
    ```bash
    python tools/md_to_easinote_json.py <courseware.md> [output.json]
    ```
-3. 输出 `<stem>.json` 至 MD 同级目录（默认），或用户指定路径。
-4. 告知用户用希沃插件导入：右键空白页 → `MRE导入` → 选择 JSON。
+3. 输出 `<stem>.json` 至 MD 同级目录（默认）。
+4. 告知用户用希沃插件导入。
 
 前置条件：
 

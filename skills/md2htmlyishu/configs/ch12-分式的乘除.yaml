@@ -1,0 +1,47 @@
+# 12.2 分式的乘除（第一课时）
+# 由 agent 根据课件内容自动生成
+
+course:
+  name: "分式的乘除（第一课时）"
+  chapter: "第12章 分式的运算"
+  section: "12.2.1"
+
+# 荧光笔：仅标注关键条件和易错点；不标学习目标、法则或定义。
+highlight_phrases: []
+
+# 按页面标题限定关键条件、易错点、法则、定义和策略归纳。
+# 精确短语需与课件中去 Markdown 格式后的整行文本一致。
+page_highlights:
+  - title_contains: "分式乘法法则"
+    highlight_phrases:
+      - "B \\neq 0"
+      - "D \\neq 0"
+    red_conclusion_phrases:
+      - "分式与分式相乘，用分子的积作为积的分子，分母的积作为积的分母。"
+  - title_contains: "最简分式与步骤归纳"
+    highlight_phrases:
+      - "约去分子分母的公因式"
+      - "检查结果是否为最简分式或整式"
+    red_conclusion_phrases:
+      - "最简分式：分子与分母没有公因式的分式。"
+      - "分式乘法完整步骤："
+  - title_contains: "含因式分解"
+    highlight_phrases:
+      - "先因式分解"
+  - title_contains: "两种策略对比"
+    red_conclusion_phrases:
+      - "先乘再约"
+      - "先分解再约"
+
+# 红笔结论：仅用于法则、定义和策略归纳。
+red_conclusion_phrases: []
+
+# 红笔结论正则仅作兼容补充；优先使用 red_conclusion_phrases。
+red_conclusion_patterns: []
+
+# 蓝笔思路：保守标记，仅标记明确的思路提示。
+blue_hint_keywords:
+  - 思路
+  - 引导
+blue_hint_patterns:
+  - "^[①②③④⑤]\\s*[^，。；]*[=→]"
