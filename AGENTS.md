@@ -122,14 +122,11 @@
 
 ## 7. Git 远程仓库规则
 
-本项目配置两个远程仓库：
-
 | Remote 名称 | 地址 | 说明 |
 | ---------- | ---- | ---- |
-| `origin` | `github.com/sporeplant/math-resource-engine` | GitHub，原始仓库 |
-| `gitee` | `gitee.com/teacher_lee/MRE` | Gitee，国内镜像 |
+| `gitee` | `gitee.com/teacher_lee/MRE` | 主推送目标，已配置自动镜像到 GitHub |
 
-**默认 Gitee，指定才 GitHub。** 所有涉及远程仓库的 Git 操作（fetch / pull / push）默认使用 `gitee`，除非用户显式指定 GitHub（`origin` / `github`）或要求全部（`all`）。本地操作（commit / status / log 等）不受影响。
+所有涉及远程仓库的 Git 操作（fetch / pull / push）统一使用 `gitee`。Gitee 已配置镜像推送至 GitHub，无需本地双推送。本地操作（commit / status / log 等）不受影响。
 
 ---
 
@@ -137,16 +134,11 @@
 
 | 用户输入 | 执行 |
 |---------|------|
-| `commit`、`commit all` | `git add -A && git commit`，然后 `git push gitee main && git push origin main` |
+| `commit`、`commit all` | `git add -A && git commit && git push gitee main` |
 | `push` | `git push gitee main` |
-| `push github`、`push origin` | `git push origin main` |
-| `push all` | `git push gitee main && git push origin main` |
 | `fetch`、`pull` | 走 `gitee` |
-| `fetch github`、`pull github` | 走 `origin` |
 
 `git add -A` 暂存所有变更（新增、修改、删除）；`.gitignore` 是唯一的过滤闸门——若某文件不应提交，先将其加入 `.gitignore`。
-
-当变更涉及 `knowledge/images/` 下的图片文件时，推送会自动覆盖两边，确保 jsDelivr CDN 同步更新。
 
 
 
