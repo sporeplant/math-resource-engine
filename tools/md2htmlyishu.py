@@ -596,7 +596,7 @@ def convert_page_to_html(page_text: str, page_idx: int, total_pages: int) -> str
                 content_parts.append(render_solution_row(solution_blocks, highlight_phrases))
             else:
                 heading = strip_markdown(solution_blocks[0][0])
-                content_parts.append(f'<p class="hw-bold" style="font-size:28px;margin-top:16px;">{heading}</p>')
+                content_parts.append(f'<p class="hw-bold" style="margin-top:16px;">{heading}</p>')
                 for body_line in solution_blocks[0][1:]:
                     content_parts.append(render_body_paragraph(body_line, highlight_phrases))
             continue
