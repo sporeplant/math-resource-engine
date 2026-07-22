@@ -50,6 +50,7 @@ description: >
 
 ### 生成与验证前读取
 
+- `orchestrator/output-contract.md` §10（课件规划 YAML schema）
 - `skills/question-dispatch/SKILL.md` 与 `skills/question-dispatch/checklist.md`
 - `skills/images/SKILL.md`
 - `validators/question-dispatch/rules.md`
@@ -63,8 +64,18 @@ description: >
 2. 确认门1：课件结构规划。页面顺序必须对应教学设计 `lesson_flow`，并标注教材对应位置、页面用途和教材材料来源。必须同时呈现“教材材料转化清单”，逐项说明教材原文中的背景、原始数据、表格、图片、练习题干或题干摘要安排到哪一页；缺失任一支撑作答材料时不得进入确认。
 3. 确认门2：课堂提问设计。呈现前必须按提问质量skills自检；低质量、冗余或脱节问题必须先删除、合并或改写。每个问题必须标注“材料锚点页”，证明学生在课件内可见材料基础上可以作答；缺少材料锚点的问题必须回退到确认门1补页或补材料。
 4. 确认门3：分层提问分配。按学生成绩数据和提问历史记录分配真实学生，遵守 `skip`、`priority` 与不重复规则。
-5. 基于已确认的结构、提问、学生分配生成课堂提问调度稿。
-6. 基于已确认内容生成 Markdown 课件。生成前必须执行“教材材料锚点复核”：逐页核对确认门1材料清单与确认门2问题锚点是否全部落入课件正文。
+5. 基于三个确认门已确认的全部决策（结构规划、提问设计、分层分配），整合为**课件规划 YAML**。YAML 格式严格遵循 `orchestrator/output-contract.md` §10（课件规划 YAML schema），必须包含：页面序列（对应 `lesson_flow` 顺序）、每页类型/层级标识/emoji、教材材料锚点清单、提问表（含材料锚点页）、分层学生分配、学习目标、三问三答、课后作业。LLM 负责将确认门决策转化为结构化 YAML 字段，不写 Markdown 正文。
+6. 调用脚本机械生成最终文件：
+   ```bash
+   python tools/build_courseware.py {规划YAML路径}
+   ```
+   脚本输出：
+   - `lesson-{lesson_id}-courseware.md` — 学生投屏课件（纯 Markdown，无 YAML front matter）
+   - `lesson-{lesson_id}-dispatch.md` — 教师手持课堂提问调度稿
+   
+   课件格式规则（emoji 映射、分页、层级标识、单页容量、禁止项等）全部由脚本内置强制，LLM 只需保证 YAML 字段完整准确。
+   
+   **禁止 LLM 绕过 `build_courseware.py` 手写最终课件 MD 或调度稿 MD。**
 7. 依次执行课堂提问调度稿验证、课件验证、图片验证和 `tools/validate_output.py`。
 
 教师未确认当前确认门前，不得进入下一步；教师提出修改意见时，必须修订并重新呈现当前确认门。
@@ -101,7 +112,9 @@ description: >
 
 ## 5. outputs元数据
 
-课件 front matter 必须包含：
+课件为纯 Markdown（无 YAML front matter），格式由  强制保证。
+
+课堂提问调度稿 front matter 必须包含：
 
 ```yaml
 content_type: courseware

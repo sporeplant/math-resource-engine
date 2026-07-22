@@ -26,13 +26,13 @@
 
 - 格式：`lesson-{lesson_id}-{功能描述}.md`
 - 全部小写，连字符连接
-- 示例：`lesson-8-1-04-02-01-2505-outcomes.md`
+- 示例：`lesson-8-1-04-02-01-2505-lesson-plan.md`
 
 ## outputs资源包命名
 
 - 新授/课时资源包：`outputs/lessons/ch{章节号}/{lesson_id}/`
 - 复习/讲评资源包：`outputs/reviews/{review_id}/`
-- 软件或离线导出包：`outputs/packages/{package_id}/`
+- 软件或离线导出包：`outputs/lessons/ch{章节号}/{lesson_id}/exports/`
 - 临时中间文件：`outputs/_tmp/`
 - 演示和渲染验证：`outputs/_demo/`
 

@@ -3,9 +3,9 @@
 md2htmlyishu — 将课件 Markdown 转换为一数风格 HTML（1920×1080）
 
 用法：
-  python tools/md2htmlyishu.py <input.md>
+  python tools/md2htmlyishu.py <input.md> [--output-dir <dir>]
 
-输出：与输入文件同目录，同名但扩展名为 .html
+输出：默认与输入文件同目录，可通过 --output-dir 指定输出目录
 
 设计原则：
   - 最大限度覆盖 skills/md2htmlyishu/SKILL.md 的所有规范
@@ -24,6 +24,7 @@ import os
 import re
 import random
 import pathlib
+import argparse
 from typing import List, Tuple, Optional, Dict, Any
 
 import yaml
@@ -660,12 +661,19 @@ def convert_page_to_html(page_text: str, page_idx: int, total_pages: int) -> str
 
 
 
-def convert(md_path: str) -> str:
+def convert(md_path: str, output_dir: str = None) -> str:
     """主转换函数"""
     md_path = pathlib.Path(md_path)
     if not md_path.exists():
         print(f"错误：文件未找到 {md_path}")
         sys.exit(1)
+
+    # 确定输出目录
+    if output_dir:
+        out_dir = pathlib.Path(output_dir)
+        out_dir.mkdir(parents=True, exist_ok=True)
+    else:
+        out_dir = md_path.parent
 
     # 加载课程配置（关键词、正则等）
     load_config(str(md_path))
@@ -674,7 +682,7 @@ def convert(md_path: str) -> str:
 
     # 记录输出目录（用于封面图片相对路径计算）
     global _output_dir
-    _output_dir = str(md_path.parent.resolve())
+    _output_dir = str(out_dir.resolve())
 
     # 分页
     pages = split_pages(md_text)
@@ -694,8 +702,8 @@ def convert(md_path: str) -> str:
     output_html = template.replace('{{TITLE}}', title)
     output_html = output_html.replace('{{SLIDES}}', '\n\n'.join(slides_html))
 
-    # 输出到同目录
-    output_path = md_path.with_suffix('.html')
+    # 输出
+    output_path = out_dir / (md_path.stem + '.html')
     output_html = output_html.replace('$$', '$')
     output_path.write_text(output_html, encoding='utf-8')
 
@@ -714,7 +722,9 @@ def convert(md_path: str) -> str:
 
 
 if __name__ == '__main__':
-    if len(sys.argv) < 2:
-        print("用法：python tools/md2htmlyishu.py <input.md>")
-        sys.exit(1)
-    convert(sys.argv[1])
+    parser = argparse.ArgumentParser(description='将课件 Markdown 转换为一数风格 HTML')
+    parser.add_argument('input', help='输入 Markdown 文件路径')
+    parser.add_argument('--output-dir', '-o', default=None,
+                        help='输出目录（默认与输入文件同目录）')
+    args = parser.parse_args()
+    convert(args.input, args.output_dir)

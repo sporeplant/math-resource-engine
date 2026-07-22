@@ -4,7 +4,7 @@ lesson_id: "12.1.1"
 lesson_name: "12.1 分式（第一课时）"
 command: lesson-collab
 workflow_version: v2
-review_status: pending_human_review
+review_status: 审核通过
 source_files:
   - "knowledge/textbooks/ch12/textbook-12.1-1.md"
   - "knowledge/solutions/ch12/solution-12.1.1.md"

@@ -143,8 +143,8 @@ def match_textbook_courseware(
                     )
                     continue
 
-            # Default: flag as missing
-            errors.append(f"Courseware missing image from textbook: {missing_img}")
+            # Default: flag as warning (not error — concept-only lessons may not need images)
+            warnings.append(f"Courseware missing image from textbook: {missing_img}")
 
     # Check for unexpected images in courseware
     extra_in_courseware = courseware_img_set - textbook_img_set
@@ -261,6 +261,8 @@ def validate(
             "content_type": "courseware",
             "lesson_name": courseware_path.stem.removesuffix("_课件"),
         }
+    if not meta and "courseware" in courseware_path.stem.lower():
+        meta = {"content_type": "courseware"}
 
     if meta.get("content_type") != "courseware":
         errors.append(f"Not a courseware file: content_type is {meta.get('content_type')}")

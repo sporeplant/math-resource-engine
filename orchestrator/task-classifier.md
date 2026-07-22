@@ -34,6 +34,7 @@ outputs：
 - 不生成课件。
 - 不生成课堂提问调度稿。
 - 不在用户未确认课题前直接开始生成。
+- 禁止 LLM 绕过 `build_courseware.py` 手写最终课件 MD 或调度稿 MD。
 
 ### `/courseware-collab`
 
@@ -61,13 +62,15 @@ outputs：
 
 outputs：
 
-- `outputs/{课时名}_课件.md`
-- `outputs/{课时名}_课堂提问调度稿.md`
+- `outputs/{课时名}_课件规划.yaml`（确认门产出，LLM 填充）
+- `outputs/{课时名}_课件.md`（由 `build_courseware.py` 从 YAML 机械生成）
+- `outputs/{课时名}_课堂提问调度稿.md`（由 `build_courseware.py` 从 YAML 机械生成）
 
 禁止：
 
 - 不重新生成学习目标、评价任务、活动设计或教学设计。
 - 不在用户未确认课题前直接开始生成。
+- 禁止 LLM 绕过 `build_courseware.py` 手写最终课件 MD 或调度稿 MD。
 
 ---
 
@@ -110,12 +113,12 @@ outputs：
 1. 确认目标 Markdown 文件路径。
 2. 执行一数风格 HTML 生成：
    ```bash
-   python tools/md2htmlyishu.py "path/to/课件.md"
+   python tools/md2htmlyishu.py "path/to/课件.md" --output-dir "path/to/exports/"
    ```
-3. 输出同名 `.html` 至 MD 同级目录。
+3. 输出同名 `.html` 至 `exports/`。
 4. 自动继续执行 HTML 转希沃导入包：
    ```bash
-   python tools/html_to_seewo.py "{HTML 文件路径}"
+   python tools/html_to_seewo.py "{HTML 文件路径}" --output-dir "{exports/路径}"
    ```
 5. 完成后告知用户导入方式。
 
@@ -126,9 +129,9 @@ outputs：
 
 outputs：
 
-- `{路径}/{文件名}.html`：1920×1080 一数风格投屏课件（中间产物，可单独用于浏览器投屏）
-- `{目录}/lesson.json` — MrePlugin 课件描述文件
-- `{目录}/assets/slide_01.png` ~ `slide_N.png` — 逐页截图
+- `{路径}/exports/{文件名}.html`：1920×1080 一数风格投屏课件
+- `{路径}/exports/{文件名}.json` — MrePlugin 课件描述文件
+- `{路径}/exports/assets/slide_01.png` ~ `slide_N.png` — 逐页截图
 
 ---
 
@@ -144,9 +147,9 @@ outputs：
 1. 确认目标 Markdown 文件路径。
 2. 执行：
    ```bash
-   python tools/md2htmlyishu.py "path/to/课件.md"
+   python tools/md2htmlyishu.py "path/to/课件.md" --output-dir "path/to/exports/"
    ```
-3. 输出同名 `.html` 至 MD 同级目录。
+3. 输出同名 `.html` 至 `exports/`。
 4. **必须询问用户**是否继续生成希沃白板导入包。
 
 前置条件：
@@ -155,7 +158,7 @@ outputs：
 
 outputs：
 
-- `{路径}/{文件名}.html`：1920×1080 一数风格投屏课件。
+- `{路径}/exports/{文件名}.html`：1920×1080 一数风格投屏课件。
 
 ---
 
@@ -171,7 +174,7 @@ outputs：
 1. 确认目标 HTML 文件路径。
 2. 执行：
    ```bash
-   python tools/html_to_seewo.py "{HTML 文件路径}"
+   python tools/html_to_seewo.py "{HTML 文件路径}" --output-dir "exports/"
    ```
 3. 完成后告知用户导入方式。
 
@@ -182,8 +185,8 @@ outputs：
 
 outputs：
 
-- `{目录}/lesson.json` — MrePlugin 课件描述文件
-- `{目录}/assets/slide_01.png` ~ `slide_N.png` — 逐页截图
+- `{目录}/exports/{文件名}.json` — MrePlugin 课件描述文件
+- `{目录}/exports/assets/slide_01.png` ~ `slide_N.png` — 逐页截图
 
 ---
 
@@ -213,7 +216,7 @@ outputs：
 
 outputs：
 
-- `{路径}/{文件名}.json`：可直接导入希沃白板 5 的 lesson.json。
+- `{路径}/{文件名}.json`：可直接导入希沃白板 5 的 MrePlugin 格式课件。
 
 ---
 

@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 """
-HTML课件 → MrePlugin lesson.json + 逐页PNG截图
+HTML课件 → MrePlugin JSON + 逐页PNG截图（JSON 与源 HTML 文件同名）
 
-输出格式遵循 MrePlugin (support/easinote/MRE-Plugin) 的 lesson.json 规范。
-图片存入 assets/ 子目录，lesson.json 引用相对路径。
+输出格式遵循 MrePlugin (support/easinote/MRE-Plugin) 规范。
+图片存入 assets/ 子目录，JSON 引用相对路径。
 
 用法:
     pip install playwright
     playwright install chromium
     python tools/html_to_seewo.py "outputs/reviews/review-01-02_课件.html"
+    python tools/html_to_seewo.py "file.html" --output-dir "exports/"
 
 输出（在 HTML 同级目录）:
-    lesson.json           — MrePlugin 课件描述文件
+    {stem}.json           — MrePlugin 课件描述文件（与 HTML 同名）
     assets/slide_01.png   — 第1页全页截图
     assets/slide_02.png   — 第2页全页截图
     ...
@@ -20,12 +21,13 @@ HTML课件 → MrePlugin lesson.json + 逐页PNG截图
 导入方式:
     1. 安装 MrePlugin.enp 到希沃白板5
     2. 在希沃白板5中打开或新建任意课件
-    3. 插件菜单 → 导入 lesson.json
+    3. 插件菜单 → MRE导入 → 选择生成的 .json 文件
 """
 
 import sys
 import os
 import json
+import argparse
 from pathlib import Path
 
 if sys.stdout.encoding != 'utf-8':
@@ -151,8 +153,8 @@ def screenshot_and_json(html_path: str, output_dir: str = None):
 
         browser.close()
 
-    # ── 生成 lesson.json（MrePlugin 格式，参考 Models.cs） ──
-    json_path = output_dir / 'lesson.json'
+    # ── 生成 JSON（MrePlugin 格式，与 HTML 同名，参考 Models.cs） ──
+    json_path = output_dir / (html_path.stem + '.json')
 
     # 从 HTML 提取标题
     title_text = "统计调查与直方图"
@@ -195,9 +197,9 @@ def screenshot_and_json(html_path: str, output_dir: str = None):
 
     print(f"\n[完成] 截图: {assets_dir}/  ({slide_count} 张 PNG)")
     print(f"[完成] JSON: {json_path}")
-    print(f"\n[导入] 希沃白板5 → MRE插件 → 导入 lesson.json")
+    print(f"\n[导入] 希沃白板5 → MRE插件 → 导入 {json_path.name}")
     print(f"[结构] {output_dir}/")
-    print(f"       ├── lesson.json")
+    print(f"       ├── {json_path.name}")
     print(f"       └── assets/")
     for i in range(min(slide_count, 5)):
         print(f"           ├── slide_{i+1:02d}.png")
@@ -209,10 +211,9 @@ def screenshot_and_json(html_path: str, output_dir: str = None):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) < 2:
-        print("用法: python tools/html_to_seewo.py <HTML文件路径> [输出目录]")
-        sys.exit(1)
-
-    src = sys.argv[1]
-    dst = sys.argv[2] if len(sys.argv) > 2 else None
-    screenshot_and_json(src, dst)
+    parser = argparse.ArgumentParser(description='HTML课件 → MrePlugin JSON + 逐页PNG截图')
+    parser.add_argument('input', help='输入 HTML 文件路径')
+    parser.add_argument('--output-dir', '-o', default=None,
+                        help='输出目录（默认与输入文件同目录）')
+    args = parser.parse_args()
+    screenshot_and_json(args.input, args.output_dir)

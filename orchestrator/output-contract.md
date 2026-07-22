@@ -14,7 +14,6 @@
 |------|----------|
 | 新授/课时资源包 | `outputs/lessons/ch{章节号}/{lesson_id}/` |
 | 复习/讲评资源包 | `outputs/reviews/{review_id}/` |
-| 软件或离线导出包 | `outputs/packages/{package_id}/` |
 | 教材问题参考解答 | `knowledge/solutions/ch{章节号}/solution-{lesson_id}.md` |
 
 新授/课时资源包建议结构：
@@ -24,9 +23,15 @@ outputs/lessons/ch{章节号}/{lesson_id}/
 ├── metadata.yaml
 ├── lesson-{lesson_id}-lesson-plan.md
 ├── lesson-{lesson_id}-courseware.md
-├── lesson-{lesson_id}-question-dispatch.md
-├── lesson-{lesson_id}-review-report.md
+├── lesson-{lesson_id}-dispatch.md
 └── exports/
+    ├── lesson-{lesson_id}-courseware.html    # 一数风格投屏课件
+    ├── lesson-{lesson_id}-courseware.json    # 希沃白板导入包
+    ├── assets/                               # 希沃逐页截图
+    │   ├── slide_01.png
+    │   └── ...
+    ├── lesson-{lesson_id}-lesson-plan.docx   # Word 导出（可选）
+    └── lesson-{lesson_id}-lesson-plan.pdf    # PDF 导出（可选）
 ```
 
 复习/讲评资源包建议结构：
@@ -41,9 +46,7 @@ outputs/reviews/{review_id}/
 └── exports/
 ```
 
-`exports/` 仅存放从源 Markdown 导出的 `.docx`、`.pdf`、`.pptx` 等成品文件。导出工具能够嵌入 CDN 图片时，不再生成本地图片副本。
-
-`outputs/packages/{package_id}/` 用于希沃、EasiNote、PPTX 等需要离线打包的机器可读资源。此类目录可按目标格式生成 `assets/`，但 `assets/` 是导出包的一部分，不作为通用图片目录。
+`exports/` 存放从核心 Markdown 源文件生成的所有导出成品：HTML 投屏课件、希沃 JSON + PNG 截图、DOCX、PDF 等。希沃离线资源（JSON、PNG）统一归入 `exports/`，不再使用独立的 `outputs/packages/` 目录。
 
 ### 1.2 临时与演示产物
 
@@ -248,7 +251,7 @@ question_ids:
 导出规则：
 
 - `.docx`、`.pdf` 导出优先从 CDN 拉取图片并嵌入成品文件。
-- `.pptx`、希沃、EasiNote 或其他离线软件包如需本地资源，只在 `outputs/packages/{package_id}/assets/` 中生成本地副本。
+- `.pptx`、希沃、EasiNote 或其他离线软件包如需本地资源，统一归入 `exports/assets/`。
 - 仅在离线审阅、网络不可用或目标工具不支持远程图片时，才允许为单个资源包临时生成本地图片缓存；缓存不得作为正式 Markdown 的默认引用方式。
 
 ---
@@ -418,3 +421,108 @@ question_ids:
 - `boardwork` 代码块内的板书示意图模拟黑板书写，不受此规则约束
 
 此规则为全局出口约束，各 Skill 的检查清单在此基础上可补充各自特殊要求（如教材问题解答要求 `aligned` 环境用于多步推导）。
+
+---
+
+## 10. 课件规划 YAML schema
+
+`/courseware-collab` 三个确认门确认后，LLM 产出本 YAML 文件，由 `tools/build_courseware.py` 读取并机械生成课件 MD 和调度稿 MD。
+
+### 10.1 顶层字段
+
+```yaml
+lesson_id: "1.1.1"                    # 课时唯一标识
+lesson_name: "1.1 正数和负数（第一课时）"  # 课时名称
+source_lesson_plan: "outputs/lessons/ch01/1.1.1/lesson-1.1.1-lesson-plan.md"
+textbook_file: "knowledge/textbooks/ch01/textbook-1.1-1.md"  # 可选
+
+collab_gates:                         # 确认门记录（写入调度稿 front matter）
+  - gate: structure_planning
+    status: confirmed
+    confirmed_at: "YYYY-MM-DD HH:mm"
+  - gate: question_design
+    status: confirmed
+    confirmed_at: "YYYY-MM-DD HH:mm"
+  - gate: student_assignment
+    status: confirmed
+    confirmed_at: "YYYY-MM-DD HH:mm"
+
+objectives:                           # 学习目标（3条，课件目标页自动生成）
+  - level: B                          # B=基础层 M=中间层 E=拓展层
+    text: "能够从具体情境中辨认具有相反意义的量..."
+  - level: M
+    text: "能够..."
+
+pages:                                # 页面序列（严格对应 lesson_flow 顺序）
+  - page_num: 1                       # 页面序号（从1开始）
+    type: title                       # title|objectives|teaching|example|practice|thinking|summary|homework|hint|answer
+    level: null                       # B|M|E|null（层级标识，自动生成页可为null）
+    title: "1.1 正数和负数（第一课时）"  # 标题文字
+    content: |                        # 正文（objectives/summary/homework 类型自动生成，无需content）
+      **第一章 有理数** | 冀教版七年级上册
+    textbook_ref: null                # 教材对应位置（可选）
+  # ... 更多页面
+
+questions:                            # 课堂提问表（供调度稿板块A生成）
+  - id: "ASK-B-01"                    # 稳定ID
+    page_num: 4                       # 课件中问题所在页码
+    level: B
+    question_text: "观察图1.1-1，每对量之间是什么关系？"
+    hints:                            # 分级备用提示（1~3条）
+      - "每一对中的两个量，方向是否相反？"
+    expected_answer:                  # 教师参考预期（字符串或列表）
+      - "第一幅：向东和向西方向相反"
+      - "第二幅：购进和售出过程相反"
+    assigned_student: "张三"           # 确认门3分配的学生姓名
+    backup_student: "李四"            # 备用学生（可选）
+    activity_ref: "ACT-B-01"          # 对应教学设计活动ID
+    intent: "引入相反意义的量的概念"    # 提问意图
+    evidence: "能否说出方向/过程的相反关系"  # 观察证据
+    adjust_rules: []                  # 即时调整规则（可选，列表）
+    scoring: []                       # 评分要点（可选，列表）
+
+summary_questions:                    # 课堂小结三问三答（课件小结页自动生成表格）
+  - level: B
+    question: "什么是具有相反意义的量？请举一个生活中的例子。"
+  - level: M
+    question: "怎样用符号表示具有相反意义的量？关键步骤是什么？"
+  - level: E
+    question: "有了正负号，和只用文字描述相比，有什么好处？"
+
+homework:                             # 课后作业（课件作业页自动生成）
+  required:                           # 必做（🌱）
+    - "教材习题 A 组第 1 题"
+  optional:                           # 选作（🌿）
+    - "教材习题 B 组第 4 题"
+  challenge:                          # 挑战（🌳）
+    - "教材习题 B 组第 3 题"
+```
+
+### 10.2 页面类型（type）与 emoji 映射
+
+| type | emoji | 说明 | 内容来源 |
+|------|-------|------|----------|
+| `title` | 📐 | 标题页 | `content` 字段 |
+| `objectives` | 🎯 | 学习目标页 | `objectives` 字段自动生成 |
+| `teaching` | 📖 | 新知讲授 | `content` 字段 |
+| `example` | ✏️ | 例题示范 | `content` 字段 |
+| `practice` | 📝 | 课堂练习/检测 | `content` 字段 |
+| `thinking` | 🤔 | 思考讨论 | `content` 字段 |
+| `summary` | 💡 | 课堂小结 | `summary_questions` 字段自动生成 |
+| `homework` | 📝 | 课后作业 | `homework` 字段自动生成 |
+| `hint` | 💡 | 备用提示页 | `content` 字段 |
+| `answer` | ✏️ | 参考答案页 | `content` 字段 |
+
+层级标识（🌱🌿🌳）由 `level` 字段控制，与页面类型 emoji 搭配显示，不计入每页 1 个 emoji 限制。
+
+### 10.3 脚本内置硬保证
+
+以下规则由 `build_courseware.py` 代码强制，LLM 无需在 YAML 中显式处理：
+
+- 学生课件禁止出现 `ASK_*`、学生姓名、`source_id`/`source_type`/`question_id`
+- 学生课件禁止 YAML front matter、HTML 标签、围栏代码块
+- 每页 1 个页面类型 emoji（层级标识不计）
+- 目标页 ≤ 3 条目标
+- `---` 分页符
+- 问题页 → 备用提示页 → 答案页的排列顺序
+- 调度稿板块A/B 的固定结构

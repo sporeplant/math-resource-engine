@@ -6,38 +6,29 @@
 
 ## 1. 各阶段outputs文件
 
+`/lesson-collab` 的知识分析、学习目标、评价设计、活动设计为会话内中间环节，不产生独立文件，最终汇入教学设计。
+
 | 阶段 | 产出文件 | 格式 |
 |------|----------|------|
-| 教材分析 | lesson-{id}-textbook-analysis.md | Markdown |
-| 学习目标 | lesson-{id}-outcomes.md | Markdown |
-| 评价任务 | lesson-{id}-assessment.md | Markdown |
-| 教学活动 | lesson-{id}-activities.md | Markdown |
 | 课时设计 | lesson-{id}-lesson-plan.md | Markdown |
 | Markdown课件 | lesson-{id}-courseware.md | Markdown |
-| 审核报告 | lesson-{id}-review-report.md | Markdown |
+| 课堂提问调度稿 | lesson-{id}-dispatch.md | Markdown |
 
 ---
 
 ## 2. outputs顺序
 
-1. 教材分析（可并行）
-2. 学习目标
-3. 评价任务
-4. 教学活动
-5. 课时设计
-6. Markdown课件（`/courseware-collab`，需人工审核通过的教学设计）
-7. 审核报告（最终）
+1. 课时设计（`/lesson-collab`，内部含知识分析→学习目标→评价设计→活动设计流水线）
+2. Markdown课件（`/courseware-collab`，需人工审核通过的教学设计）
+3. 课堂提问调度稿（`/courseware-collab`，与课件同步生成）
 
 ---
 
 ## 3. outputs依赖关系
 
-- 学习目标依赖教材分析
-- 评价任务依赖学习目标
-- 教学活动依赖学习目标和评价任务
-- 课时设计依赖学习目标、评价任务、教学活动
+- 课时设计依赖知识分析→学习目标→评价任务→教学活动（均为会话内环节，不产生独立文件）
 - Markdown课件依赖人工审核通过的课时设计
-- 审核报告依赖所有前置outputs
+- 课堂提问调度稿与课件同步生成（`build_courseware.py`）
 
 ---
 
@@ -59,15 +50,14 @@
 ```
 outputs/lessons/ch{章节号}/{id}/
 ├── metadata.yaml              # 元数据
-├── lesson-{id}-textbook-analysis.md
-├── lesson-{id}-outcomes.md
-├── lesson-{id}-assessment.md
-├── lesson-{id}-activities.md
 ├── lesson-{id}-lesson-plan.md
 ├── lesson-{id}-courseware.md
-├── lesson-{id}-question-dispatch.md
-├── lesson-{id}-review-report.md
-└── exports/                   # docx/pdf/pptx 等导出成品
+├── lesson-{id}-dispatch.md
+└── exports/
+    ├── lesson-{id}-courseware.html
+    ├── lesson-{id}-courseware.json
+    └── assets/
+        └── slide_01.png ~ slide_N.png
 ```
 
-正式 Markdown 图片默认使用 CDN URL，不在资源包内常驻 `images/`。需要离线打包的软件资源写入 `outputs/packages/{package_id}/`，并在该包内按需生成 `assets/`。
+正式 Markdown 图片默认使用 CDN URL，不在资源包内常驻 `images/`。离线资源（截图、JSON 等）统一归入 `exports/`。

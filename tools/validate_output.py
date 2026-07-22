@@ -77,10 +77,20 @@ def split_pages(text: str) -> list[Page]:
     return pages
 
 
-def count_emojis(text: str) -> int:
-    """Count emoji characters in text."""
+LEVEL_EMOJIS = {"🌱", "🌿", "🌳"}
+
+
+def count_emojis(text: str, exclude_level: bool = False) -> int:
+    """Count emoji characters in text.
+
+    When exclude_level is True, level markers (🌱🌿🌳) are not counted;
+    they are not page-type emojis per skills/courseware/SKILL.md §2a-1.
+    """
     emoji_pattern = re.compile(r"[\U00010000-\U0010ffff]", flags=re.UNICODE)
-    return len(emoji_pattern.findall(text))
+    matches = emoji_pattern.findall(text)
+    if exclude_level:
+        matches = [m for m in matches if m not in LEVEL_EMOJIS]
+    return len(matches)
 
 
 def extract_mermaid_diagrams(text: str) -> list[str]:
@@ -101,14 +111,25 @@ def count_mermaid_nodes(mermaid_code: str) -> int:
     return len(node_lines) + len(node_lines2)
 
 
-def extract_title_emoji(page_content: str) -> str | None:
-    """Extract the emoji from the page title (first heading)."""
+def extract_title_emoji(page_content: str, skip_level: bool = True) -> str | None:
+    """Extract the page-type emoji from the page title (first heading).
+
+    When skip_level is True, level markers (🌱🌿🌳) are skipped and the next
+    emoji (the page-type emoji) is returned, per skills/courseware/SKILL.md §2a-1.
+    """
     heading_match = re.search(
         r"^#{1,3}\s*([\U00010000-\U0010ffff])", page_content, re.MULTILINE
     )
-    if heading_match:
-        return heading_match.group(1)
-    return None
+    if not heading_match:
+        return None
+    first_emoji = heading_match.group(1)
+    if skip_level and first_emoji in LEVEL_EMOJIS:
+        rest = page_content[heading_match.end():]
+        next_match = re.search(r"([\U00010000-\U0010ffff])", rest)
+        if next_match:
+            return next_match.group(1)
+        return None
+    return first_emoji
 
 
 def read_text(path: Path) -> str:
@@ -331,7 +352,7 @@ def extract_called_students(text: str) -> list[str]:
 def check_common(path: Path, text: str, errors: list[str]) -> dict[str, str]:
     meta = parse_front_matter(text)
     if not meta:
-        if path.name.endswith("_课件.md"):
+        if path.name.endswith("_课件.md") or "courseware" in path.stem.lower():
             return {"content_type": "courseware", "command": "courseware-collab"}
         errors.append("missing YAML front matter")
         return meta
@@ -705,7 +726,8 @@ def check_courseware_group_a(text: str, pages: list[Page], errors: list[str]) ->
 
     # Rule 4: Summary with three questions (三问三答)
     has_summary_table = bool(re.search(r"层次.*问题", text)) and (
-        "基础层" in text and "中间层" in text and "拓展层" in text
+        ("基础层" in text and "中间层" in text and "拓展层" in text)
+        or ("🌱" in text and "🌿" in text and "🌳" in text)
     )
     if not has_summary_table:
         errors.append(
@@ -739,9 +761,14 @@ def check_courseware_group_b(text: str, pages: list[Page], errors: list[str]) ->
         )
         group_b_violations += 1
 
+    # Emoji allowed in body text as output-type markers (§13)
+    OUTPUT_MARKER_EMOJIS = {"✏️", "🗣️"}
     for i, page in enumerate(pages, 1):
-        # Rule B1: Max 1 emoji per page
-        emoji_count = count_emojis(page.content)
+        # Rule B1: Max 1 page-type emoji per page
+        # Exclude level markers (🌱🌿🌳, via exclude_level) and output-type markers
+        emoji_count = count_emojis(page.content, exclude_level=True)
+        for marker in OUTPUT_MARKER_EMOJIS:
+            emoji_count -= page.content.count(marker)
         if emoji_count > MAX_EMOJIS_PER_PAGE:
             errors.append(
                 f"page {i}: too many emojis ({emoji_count}), max {MAX_EMOJIS_PER_PAGE}"
@@ -1457,7 +1484,10 @@ def validate(
     check_reference_answer(text, meta, errors)
     check_learning_objectives(text, meta, errors)
     check_ask_prompt_order(text, meta, errors)
-    errors.extend(validate_dependency(path, text, meta, textbook_solution))
+    # Typora courseware MUST NOT have YAML front matter (SKILL.md §6);
+    # skip source_files dependency check for raw courseware files.
+    if not (meta.get("content_type") == "courseware" and not parse_front_matter(text)):
+        errors.extend(validate_dependency(path, text, meta, textbook_solution))
     errors.extend(validate_workbook_dependency(path, text, meta))
 
     if meta.get("content_type") == "review_lesson":

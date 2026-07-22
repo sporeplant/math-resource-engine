@@ -10,7 +10,7 @@ description: 将课件 Markdown 转换为一数风格 HTML 投屏页面（1920×
 将课件 Markdown 文件转换为可在浏览器中直接播放的 HTML 投屏页面，复刻一数视频的"手写板书"风格。
 
 **输入**：课件 MD 文件（`---` 分页，LaTeX 公式，图片引用）
-**输出**：单个 HTML 文件，与源文件同目录，每页 1920×1080，自动缩放适配屏幕
+**输出**：单个 HTML 文件，放入 `exports/` 目录，每页 1920×1080，自动缩放适配屏幕
 
 ## 2. 风格规范
 
@@ -296,10 +296,10 @@ document.addEventListener('keydown', function(e) {
 ### 4.1 脚本转换（推荐）
 
 ```bash
-python tools/md2htmlyishu.py "path/to/课件.md"
+python tools/md2htmlyishu.py "path/to/课件.md" --output-dir "path/to/exports/"
 ```
 
-输出：与源文件同目录的 `.html` 文件，38 页秒出。
+输出：`exports/{源文件名}.html`。
 
 **脚本自动完成**：分页、标题荧光笔、正文荧光笔关键词标记、表格、图片 CDN、LaTeX、红笔结论识别、页码。
 
@@ -313,7 +313,7 @@ python tools/md2htmlyishu.py "path/to/课件.md"
 
 ### 4.3 输出文件
 
-- 文件名：`{源文件名}.html`（与源 MD 同目录）
+- 文件名：`{源文件名}.html`（放入 `exports/` 目录）
 - 单文件，内嵌全部 CSS + JS，无需外部依赖（除 MathJax CDN 和 Google Fonts）
 - 支持浏览器直接打开，支持打印（每页一页）
 
@@ -355,42 +355,4 @@ python tools/md2htmlyishu.py "path/to/课件.md"
 
 ## 7. 后续步骤：导入希沃白板
 
-HTML 生成完成后的行为取决于调用来源：
-
-| 调用来源 | 行为 |
-|----------|------|
-| **希沃课件主路径**（用户要求"生成希沃课件"等） | **自动继续**执行 §7.2，不询问 |
-| **仅 HTML**（用户仅要求"生成一数风格 HTML"） | **必须询问**用户是否需要继续（§7.1） |
-
-### 7.1 询问（仅 HTML 路径）
-
-```
-✅ HTML 课件已生成：`{路径}.html`
-
-是否继续生成希沃白板导入包？
-这将自动完成：
-  - 逐页高清截图（assets/slide_01.png ~ slide_N.png）
-  - MrePlugin lesson.json
-
-确认后可在希沃白板5 中通过 MrePlugin 一键导入。
-```
-
-### 7.2 执行（主路径自动 / 仅 HTML 路径用户确认后）
-
-```bash
-python tools/html_to_seewo.py "{HTML 文件路径}"
-```
-
-该脚本一步完成截图 + lesson.json 生成，输出在 HTML 同级目录：
-- `lesson.json` — MrePlugin 课件描述文件
-- `assets/slide_01.png` ~ `slide_N.png` — 逐页截图
-
-底层通过 Playwright（Chromium）精确截取每张 `.slide` 元素。
-
-### 7.3 输出后告知导入方式
-
-> 📦 希沃导入包已生成：
-> - `{目录}/lesson.json`
-> - `{目录}/assets/slide_01.png` ~ `slide_N.png`
->
-> 导入方式：希沃白板5 → 打开或新建课件 → 右键空白页 → 插件菜单 → MRE导入 → 选择 `lesson.json`
+HTML 生成后如需导入希沃白板，路由决策见 `orchestrator/task-classifier.md`（主路径自动衔接 / 仅 HTML 路径先询问），执行端见 `skills/html-to-seewo/SKILL.md`。

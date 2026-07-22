@@ -1,6 +1,6 @@
 # html-to-seewo 检查清单
 
-生成 lesson.json 和截图后，逐项检查：
+生成 JSON 和截图后，逐项检查：
 
 ## 截图完整性
 
@@ -10,7 +10,7 @@
 - [ ] 公式已渲染，无 `$` 源码残留
 - [ ] 中文正常显示，无乱码或 tofu 字符
 
-## lesson.json 合规
+## JSON 合规
 
 - [ ] 文件为合法 JSON，可直接解析
 - [ ] 每页 `imagePath` 指向正确的 `assets/slide_*.png`
@@ -24,6 +24,6 @@
 
 ## 导入验证（可选）
 
-- [ ] 希沃白板5 中 MrePlugin 能成功导入 `lesson.json`
+- [ ] 希沃白板5 中 MrePlugin 能成功导入生成的 `.json` 文件
 - [ ] 导入后页数与截图一致
 - [ ] 每页图片清晰，缩放正确

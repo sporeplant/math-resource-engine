@@ -1,5 +1,16 @@
 # 检查清单
 
+> **格式合规类（脚本强制）**：以下格式性规则已由 `tools/build_courseware.py` 在代码层面强制保证，LLM 和 validator 无需重复检查：
+> - 每页标题 emoji（📐/🎯/📖/✏️/📝/💡/🤔）及映射正确性
+> - 每页 1 个页面类型 emoji（层级标识 🌱🌿🌳 不计入）
+> - 目标页 ≤ 4 条目标，前缀层级标识
+> - 学生课件不出现 YAML front matter、`ASK_*`、学生姓名、`source_id`/`source_type`/`question_id`、HTML 标签、围栏代码块
+> - `---` 分页符
+> - 标题页→目标页→正文页→小结页→作业页的整体结构
+> - 问题页/备用提示页/答案页排列顺序
+>
+> **语义复核类（LLM + validator 检查）**：以下项目涉及教学内容正确性和教材材料覆盖，仍须逐项核实。
+
 ## 基础检查项
 
 - [ ] 课件是Markdown格式，每页用 `<div style="page-break-after: always;"></div>` 分隔
